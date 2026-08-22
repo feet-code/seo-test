@@ -10,8 +10,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: `Next.js Blog Example with ${CMS_NAME}`,
-  description: `A statically generated blog example using Next.js and ${CMS_NAME}.`,
+  title: `Blog about AI Meeting Assistants`,
+  // title: `Next.js Blog Example with ${CMS_NAME}`,
+  description: `A statically generated blog about meeting assistants using Next.js and ${CMS_NAME}.`,
   openGraph: {
     images: [HOME_OG_IMAGE_URL],
   },
@@ -56,6 +57,7 @@ export default function RootLayout({
         />
         <meta name="theme-color" content="#000" />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+        <meta name="google-site-verification" content="rlmMBJ_xLc8is4d_3f31rKkAQwGEdgtRyvwGLpjaZuo" />
       </head>
       <body
         className={cn(inter.className, "dark:bg-slate-900 dark:text-slate-400")}
