@@ -1,5 +1,5 @@
 import Footer from "@/app/_components/footer";
-import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
+import { HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import cn from "classnames";
@@ -8,8 +8,10 @@ import { PostHog } from "./_components/posthog";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+const siteUrl = process.env.SITE_URL || "http://localhost:3000";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: process.env.SITE_PRODUCT_NAME || "Blog",
   description: process.env.SITE_DESCRIPTION || `Helpful information about ${process.env.SITE_TOPIC || "this topic"}.`,
   openGraph: { images: [HOME_OG_IMAGE_URL] },
