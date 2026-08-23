@@ -9,8 +9,6 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
-
 
 def http(method: str, url: str, body=None, headers=None):
     data = None if body is None else json.dumps(body).encode()
@@ -52,14 +50,21 @@ def provision_pages(config: dict) -> None:
 
 def posthog(config: dict) -> None:
     key = os.environ.get("POSTHOG_PERSONAL_API_KEY")
-    if not key or config.get("monitoring", {}).get("posthogKey"):
+    organization = os.environ.get("POSTHOG_ORGANIZATION_ID")
+    if not key or not organization or config.get("monitoring", {}).get("posthogKey"):
         return
     host = os.environ.get("POSTHOG_HOST", "https://us.posthog.com").rstrip("/")
-    result = http("POST", f"{host}/api/projects/", {"name": config.get("name", config["id"])}, {
-        "Authorization": f"Bearer {key}", "Content-Type": "application/json"
-    })
-    project_id = result.get("id") or result.get("project_id")
-    public_key = result.get("api_token") or result.get("api_key") or result.get("token")
+    base = f"{host}/api/organizations/{urllib.parse.quote(organization, safe='')}/projects/"
+    headers = {"Authorization": f"Bearer {key}", "Content-Type": "application/json"}
+    name = config.get("name", config["id"])
+    # Reuse an existing project with the same name; otherwise create one.
+    listing = http("GET", base + "?search=" + urllib.parse.quote(name), headers=headers)
+    matches = listing.get("results", [])
+    project = next((p for p in matches if p.get("name") == name), None)
+    if project is None:
+        project = http("POST", base, {"name": name}, headers)
+    project_id = project.get("id")
+    public_key = project.get("api_token")
     if project_id and public_key:
         config.setdefault("monitoring", {}).update({
             "posthogProjectId": project_id,
@@ -123,8 +128,6 @@ def provision(config: dict, site_dir: Path, site_url: str) -> None:
     if config.get("deploy", {}).get("provider") == "cloudflare-pages" and os.environ.get("CLOUDFLARE_API_TOKEN"):
         provision_pages(config)
     posthog(config)
-    # URL-prefix verification works with pages.dev and custom domains. Domain DNS verification
-    # is intentionally not required for this path, so the first run can be fully automated.
     verify_and_register(config, site_url)
     save(config, site_dir / "site.json")
 
