@@ -1,72 +1,165 @@
-# A statically generated blog example using Next.js, Markdown, and TypeScript
+# SEO site automation
 
-This is the existing [blog-starter](https://github.com/vercel/next.js/tree/canary/examples/blog-starter) plus TypeScript.
+This repository is a shared static blog generator and portfolio automation system for launching and monitoring 100+ independent SEO sites.
 
-This example showcases Next.js's [Static Generation](https://nextjs.org/docs/app/building-your-application/routing/layouts-and-templates) feature using Markdown files as the data source.
+## One command
 
-The blog posts are stored in `/_posts` as Markdown files with front matter support. Adding a new Markdown file in there will create a new blog post.
-
-To create the blog posts we use [`remark`](https://github.com/remarkjs/remark) and [`remark-html`](https://github.com/remarkjs/remark-html) to convert the Markdown files into an HTML string, and then send it down as a prop to the page. The metadata of every post is handled by [`gray-matter`](https://github.com/jonschlinkert/gray-matter) and also sent in props to the page.
-
-## Demo
-
-[https://next-blog-starter.vercel.app/](https://next-blog-starter.vercel.app/)
-
-## Deploy your own
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/blog-starter&project-name=blog-starter&repository-name=blog-starter)
-
-### Related examples
-
-- [AgilityCMS](/examples/cms-agilitycms)
-- [Builder.io](/examples/cms-builder-io)
-- [ButterCMS](/examples/cms-buttercms)
-- [Contentful](/examples/cms-contentful)
-- [Cosmic](/examples/cms-cosmic)
-- [DatoCMS](/examples/cms-datocms)
-- [DotCMS](/examples/cms-dotcms)
-- [Drupal](/examples/cms-drupal)
-- [Enterspeed](/examples/cms-enterspeed)
-- [Ghost](/examples/cms-ghost)
-- [GraphCMS](/examples/cms-graphcms)
-- [Kontent.ai](/examples/cms-kontent-ai)
-- [MakeSwift](/examples/cms-makeswift)
-- [Payload](/examples/cms-payload)
-- [Plasmic](/examples/cms-plasmic)
-- [Prepr](/examples/cms-prepr)
-- [Prismic](/examples/cms-prismic)
-- [Sanity](/examples/cms-sanity)
-- [Sitecore XM Cloud](/examples/cms-sitecore-xmcloud)
-- [Sitefinity](/examples/cms-sitefinity)
-- [Storyblok](/examples/cms-storyblok)
-- [TakeShape](/examples/cms-takeshape)
-- [Tina](/examples/cms-tina)
-- [Umbraco](/examples/cms-umbraco)
-- [Umbraco heartcore](/examples/cms-umbraco-heartcore)
-- [Webiny](/examples/cms-webiny)
-- [WordPress](/examples/cms-wordpress)
-- [Blog Starter](/examples/blog-starter)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+After credentials are configured:
 
 ```bash
-npx create-next-app --example blog-starter blog-starter-app
+pip install -r requirements.txt
+npm install
+python scripts/launch.py
 ```
+
+Use a safe local/mock smoke test first. It does not call Gemini or external monitoring APIs:
 
 ```bash
-yarn create next-app --example blog-starter blog-starter-app
+python scripts/launch.py --mock --provider static --limit 1
 ```
+
+## Editable ideas
+
+The editable portfolio lives at `ideas/ideas.json`. The repository includes **one example idea** so you can copy its structure and manually add ideas. If `ideas/ideas.json` exists, the launcher does not generate a new idea list. Existing `sites/*/site.json` files are never overwritten.
+
+If you intentionally want AI to create the 99-idea portfolio later, use:
 
 ```bash
-pnpm create next-app --example blog-starter blog-starter-app
+python scripts/ideas.py --regenerate
 ```
 
-Your blog should be up and running on [http://localhost:3000](http://localhost:3000)! If it doesn't work, post on [GitHub discussions](https://github.com/vercel/next.js/discussions).
+For a deterministic example without an LLM:
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+```bash
+python scripts/ideas.py --mock
+```
 
-# Notes
+## Deploy a subset
 
-`blog-starter` uses [Tailwind CSS](https://tailwindcss.com) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3).
+```bash
+python scripts/launch.py --site my-site
+python scripts/launch.py --site site-a --site site-b --site site-c
+python scripts/launch.py --sites site-a,site-b,site-c
+python scripts/launch.py --limit 5
+```
+
+## Easy redeployment
+
+All sites share the same frontend code. Change the frontend, then:
+
+```bash
+python scripts/launch.py --frontend-only
+```
+
+This rebuilds/redeploys every selected site without calling Gemini. To regenerate blog content:
+
+```bash
+python scripts/launch.py --blogs-only
+```
+
+To publish existing/manual Markdown without regeneration:
+
+```bash
+python scripts/launch.py --skip-generation
+```
+
+Use `--mock` with any of these modes for fast iteration without LLM or monitoring API calls.
+
+## Gemini model failover and resume
+
+Blog generation automatically cycles through `GEMINI_MODELS` (or the default free-tier-capable list) when a model is rate-limited or temporarily unavailable. Configure the order with:
+
+```text
+GEMINI_MODELS=gemini-2.5-flash-lite,gemini-2.5-flash
+```
+
+If every configured model fails for a site, the process **terminates immediately** instead of silently skipping sites. It persists `.deploy/state/checkpoint.json` with the exact site/idea index where it stopped. After credits/rate limits recover:
+
+```bash
+python scripts/launch.py --resume
+```
+
+The launcher continues from that site. This also works with a selected subset when the same subset is supplied again.
+
+## Product-interest email signup
+
+Every site config can contain:
+
+```json
+"signup": {
+  "enabled": true,
+  "headline": "Interested? Get notified when this is available.",
+  "endpoint": "https://your-form-endpoint.example/subscribe",
+  "email": "hello@example.com"
+}
+```
+
+The generated site displays an email signup form. If `endpoint` is configured, it POSTs `{ "email": "...", "product": "..." }` as JSON. If no endpoint is configured but `email` is present, it opens a pre-filled email message instead. This keeps the frontend static and lets you use any email/form backend you choose.
+
+## Monitoring
+
+All sites use **one shared PostHog project**, suitable for a free-tier portfolio. Google Search Console verification and sitemap submission are automated when Google credentials are configured. An hourly GitHub Actions workflow health-checks configured sites.
+
+## Deployment
+
+The build produces a portable `out/` static artifact. Deployment adapters support:
+
+```bash
+python scripts/launch.py --provider cloudflare-pages
+python scripts/launch.py --provider cloudflare-workers
+python scripts/launch.py --provider vercel
+python scripts/launch.py --provider netlify
+python scripts/launch.py --provider static
+```
+
+Cloudflare Pages projects are created/reused automatically when the required Cloudflare API credentials are supplied. Custom domains can be associated when configured, but domains must already be owned/controlled by you.
+
+## Credentials
+
+Never commit credentials:
+
+```text
+GEMINI_API_KEY=...
+GEMINI_MODELS=gemini-2.5-flash-lite,gemini-2.5-flash
+CLOUDFLARE_API_TOKEN=...
+CLOUDFLARE_ACCOUNT_ID=...
+POSTHOG_PERSONAL_API_KEY=...
+POSTHOG_ORGANIZATION_ID=...
+GOOGLE_APPLICATION_CREDENTIALS=/path/to/service-account.json
+```
+
+Rotate the Gemini key that was previously committed in the old generator.
+
+## Architecture
+
+```text
+                 ideas/ideas.json (human editable)
+                              |
+                    optional AI generation of 99
+                              |
+                              v
+                     sites/*/site.json
+                              |
+               +--------------+--------------+
+               |                             |
+               v                             v
+         Gemini SEO posts             Monitoring setup
+               |                 shared PostHog / GSC
+               v                             |
+        sites/*/_posts                       |
+               +--------------+--------------+
+                              v
+                        static build
+                              |
+                              v
+                            out/
+                              |
+          +-------------------+-------------------+
+          |                   |                   |
+          v                   v                   v
+      Cloudflare           Vercel              Netlify
+      Pages/Workers
+                              |
+                              v
+                    hourly health monitoring
+```

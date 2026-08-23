@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "ideas": [
+    {
+      "id": "example-invoice-followup",
+      "name": "Example Invoice Follow-Up",
+      "product": "A lightweight tool that reminds small businesses to follow up on overdue invoices.",
+      "audience": "freelancers and small service businesses",
+      "problem": "Small businesses lose time and cash manually tracking overdue invoices.",
+      "valueProposition": "Automates polite payment reminders without requiring a full accounting platform.",
+      "topic": "invoice follow-up and overdue invoice collection",
+      "monetization": "low-cost monthly subscription",
+      "startupCost": "Static frontend plus inexpensive email/API usage; no heavy infrastructure.",
+      "seoAngle": "People search for invoice reminder templates, overdue invoice workflows, and payment follow-up tools.",
+      "score": 75,
+      "domain": null
+    }
+  ]
+}

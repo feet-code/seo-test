@@ -1,0 +1,22 @@
+{
+  "id": "example",
+  "name": "Example SEO Site",
+  "domain": "example.com",
+  "product": "Your product or service",
+  "productUrl": "https://example.com",
+  "audience": "People who would benefit from the product or service",
+  "topic": "The specific topic this site should own in search",
+  "valueProposition": "The main problem your product solves",
+  "articleCount": 5,
+  "author": {
+    "name": "JJ Kasper",
+    "picture": "/assets/blog/authors/jj.jpeg"
+  },
+  "images": {
+    "coverImage": "/assets/blog/preview/cover.jpg",
+    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "deploy": {
+    "project": "example-seo-site"
+  }
+}
