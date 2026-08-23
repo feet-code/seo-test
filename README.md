@@ -17,15 +17,15 @@ That command:
 1. asks Gemini for exactly 99 ranked micro-SaaS opportunities when `ideas.json` does not exist;
 2. writes the ideas to **editable `ideas.json`**;
 3. creates one `sites/<site-id>/site.json` for every idea without overwriting existing/manual configs;
-4. creates/reuses Cloudflare Pages projects and custom domains when Cloudflare credentials are available;
-5. provisions PostHog projects and injects the public project key into each static build;
+4. creates/reuses Cloudflare Pages projects and associates custom domains when Cloudflare credentials are available;
+5. provisions/reuses one PostHog project per site and injects its public project key into each static build;
 6. requests Google Search Console URL-prefix verification tokens, embeds them in each build, verifies the live sites, and submits `sitemap.xml`;
 7. generates 3–10 SEO articles per site with Gemini when that site's `_posts/` is empty;
 8. builds each site independently to `out/`;
 9. deploys each site to the selected provider;
 10. health-checks every deployed site and writes `.deploy/state/summary.json`.
 
-Cloudflare Pages Direct Upload projects can be created with the Cloudflare Pages API, then deployed with Wrangler. No manual Pages-project creation step is required when the Cloudflare API token/account credentials are configured.
+Cloudflare Pages Direct Upload projects can be created programmatically through the Cloudflare API, then deployed with Wrangler. No manual Pages-project creation step is required when the Cloudflare API credentials are configured.
 
 ## Editable idea portfolio
 
@@ -57,6 +57,7 @@ GEMINI_API_KEY=...
 CLOUDFLARE_API_TOKEN=...
 CLOUDFLARE_ACCOUNT_ID=...
 POSTHOG_PERSONAL_API_KEY=...
+POSTHOG_ORGANIZATION_ID=...
 POSTHOG_HOST=https://us.posthog.com
 POSTHOG_INGEST_HOST=https://us.i.posthog.com
 GOOGLE_APPLICATION_CREDENTIALS=/path/to/service-account.json
@@ -78,7 +79,7 @@ python scripts/launch.py --provider netlify
 python scripts/launch.py --provider static
 ```
 
-Cloudflare Pages is the default because it can create Direct Upload projects programmatically. Cloudflare Workers uses Wrangler static assets. Vercel and Netlify use their CLIs.
+Cloudflare Pages is the default because it supports programmatic Direct Upload project creation. Cloudflare Workers uses Wrangler static assets. Vercel and Netlify use their CLIs.
 
 Use `--limit 1` for a smoke test before launching the whole portfolio:
 
@@ -90,7 +91,7 @@ python scripts/launch.py --limit 1
 
 An hourly GitHub Actions workflow runs `scripts/monitor.py` and checks every configured site's URL. The launcher also writes per-site deployment status under `.deploy/state/`.
 
-PostHog provides product/site analytics once its public project key is provisioned. Google Search Console is automatically verified and the sitemap submitted when Google credentials are configured.
+PostHog provides site analytics once its project is provisioned. Google Search Console is automatically verified and the sitemap submitted when Google credentials are configured.
 
 ## Architecture
 
