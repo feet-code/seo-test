@@ -25,12 +25,14 @@ def main():
     ap.add_argument("--site",action="append"); ap.add_argument("--sites"); ap.add_argument("--limit",type=int,default=0); ap.add_argument("--resume",action="store_true"); ap.add_argument("--mock",action="store_true"); ap.add_argument("--skip-generation",action="store_true"); ap.add_argument("--provider",default="cloudflare-pages",choices=["cloudflare-pages","cloudflare-workers","vercel","netlify","static"]); args=ap.parse_args()
     env=os.environ.copy();
     if args.mock:env["MOCK_LLM"]="1"
+    STATE.mkdir(parents=True,exist_ok=True); marker=STATE/"gemini_exhausted.json";
+    if marker.exists() and not args.resume: marker.unlink()
     run([sys.executable,"scripts/ideas.py"],env=env); sites=selected_sites(args); ids=[p.name for p in sites]; start=0
     if args.resume and CHECKPOINT.exists():
         cp=json.loads(CHECKPOINT.read_text(encoding="utf-8"));
         if cp.get("siteIds")==ids:start=min(int(cp.get("nextIndex",0)),len(ids)); print(f"Resuming at {start+1}/{len(ids)}: {ids[start] if start<len(ids) else 'complete'}")
         else:print("Checkpoint site set differs from current subset; starting from the selected subset's beginning.")
-    print(f"Processing {len(sites)-start} sites",flush=True); STATE.mkdir(parents=True,exist_ok=True); shared_posthog={}
+    print(f"Processing {len(sites)-start} sites",flush=True); shared_posthog={}
     if not args.mock:
         try:
             from monitoring import provision_shared_posthog; shared_posthog=provision_shared_posthog()
@@ -47,19 +49,19 @@ def main():
                 cmd=[sys.executable,"scripts/generate_posts.py",site_id];
                 if args.mock:cmd.append("--mock")
                 run(cmd,env=env)
-            env2=env.copy(); mon=config.get("monitoring",{}); signup=config.get("signup",{})
-            env2.update({"SITE_URL":target,"SEO_POSTS_DIR":str((site_dir/"_posts").resolve()),"GOOGLE_SITE_VERIFICATION":mon.get("googleVerificationToken","") if not args.mock else "","NEXT_PUBLIC_POSTHOG_KEY":mon.get("posthogKey","") if not args.mock else "","NEXT_PUBLIC_POSTHOG_HOST":mon.get("posthogHost","https://us.i.posthog.com"),"SIGNUP_ENDPOINT":signup.get("endpoint",""),"SIGNUP_EMAIL":signup.get("email",""),"SIGNUP_HEADLINE":signup.get("headline","Interested? Get notified when this is available."),"SITE_PRODUCT_NAME":config.get("product",config.get("name",site_id)),"SITE_DESCRIPTION":config.get("valueProposition",""),"SITE_TOPIC":config.get("topic","")})
+            env2=env.copy(); mon=config.get("monitoring",{}); signup=config.get("signup",{}); env2.update({"SITE_URL":target,"SEO_POSTS_DIR":str((site_dir/"_posts").resolve()),"GOOGLE_SITE_VERIFICATION":mon.get("googleVerificationToken","") if not args.mock else "","NEXT_PUBLIC_POSTHOG_KEY":mon.get("posthogKey","") if not args.mock else "","NEXT_PUBLIC_POSTHOG_HOST":mon.get("posthogHost","https://us.i.posthog.com"),"SIGNUP_ENDPOINT":signup.get("endpoint",""),"SIGNUP_EMAIL":signup.get("email",""),"SIGNUP_HEADLINE":signup.get("headline","Interested? Get notified when this is available."),"SITE_PRODUCT_NAME":config.get("product",config.get("name",site_id)),"SITE_DESCRIPTION":config.get("valueProposition",""),"SITE_TOPIC":config.get("topic","")})
             run(["npm","run","build"],env=env2)
             if args.provider!="static":run([sys.executable,"scripts/site.py","deploy",site_id,args.provider],env=env2)
             if not args.mock:
                 from monitoring import finalize; finalize(config)
             result.update({"ok":True,"url":target,"health":health(target)})
         except subprocess.CalledProcessError as exc:
-            exhausted=(STATE/"gemini_exhausted.json").exists(); result.update({"ok":False,"error":str(exc)})
+            exhausted=marker.exists(); result.update({"ok":False,"error":str(exc)})
             if exhausted:
                 save_checkpoint(ids,index,"Gemini fallback chain exhausted; resume here when credits/rate limits recover."); (STATE/f"{site_id}.json").write_text(json.dumps(result,indent=2)+"\n",encoding="utf-8"); print(f"Gemini exhausted at idea/site {index+1}: {site_id}. Checkpoint saved. Re-run with --resume.",file=sys.stderr); raise SystemExit(2)
         except Exception as exc:result.update({"ok":False,"error":str(exc)})
-        result["durationSeconds"]=round(time.time()-started,2); results.append(result); (STATE/f"{site_id}.json").write_text(json.dumps(result,indent=2)+"\n",encoding="utf-8"); save_checkpoint(ids,index+1); print(f"[{index+1}/{len(sites)}] {site_id}: {'OK' if result['ok'] else 'FAILED'}",flush=True)
+        result["durationSeconds"]=round(time.time()-started,2); (STATE/f"{site_id}.json").write_text(json.dumps(result,indent=2)+"\n",encoding="utf-8"); save_checkpoint(ids,index+1); print(f"[{index+1}/{len(sites)}] {site_id}: {'OK' if result['ok'] else 'FAILED'}",flush=True)
+        results.append(result)
     summary={"timestamp":time.time(),"total":len(results),"successful":sum(r["ok"] for r in results),"failed":sum(not r["ok"] for r in results),"results":results}; (STATE/"summary.json").write_text(json.dumps(summary,indent=2)+"\n",encoding="utf-8"); print(json.dumps({k:summary[k] for k in ("total","successful","failed")},indent=2));
     if summary["failed"]:raise SystemExit(1)
 if __name__=="__main__":main()
