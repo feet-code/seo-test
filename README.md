@@ -12,64 +12,91 @@ npm install
 python scripts/launch.py
 ```
 
-That command:
+That command generates the editable 99-idea portfolio, creates/updates site configs, provisions hosting and monitoring, generates posts, builds each site, deploys it, and health-checks the result.
 
-1. asks Gemini for exactly 99 ranked micro-SaaS opportunities when `ideas.json` does not exist;
-2. writes the ideas to **editable `ideas.json`**;
-3. creates one `sites/<site-id>/site.json` for every idea without overwriting existing/manual configs;
-4. creates/reuses Cloudflare Pages projects and associates custom domains when Cloudflare credentials are available;
-5. provisions/reuses one PostHog project per site and injects its public project key into each static build;
-6. requests Google Search Console URL-prefix verification tokens, embeds them in each build, verifies the live sites, and submits `sitemap.xml`;
-7. generates 3–10 SEO articles per site with Gemini when that site's `_posts/` is empty;
-8. builds each site independently to `out/`;
-9. deploys each site to the selected provider;
-10. health-checks every deployed site and writes `.deploy/state/summary.json`.
+Use a one-site smoke test first:
 
-Cloudflare Pages Direct Upload projects can be created programmatically through the Cloudflare API, then deployed with Wrangler. No manual Pages-project creation step is required when the Cloudflare API credentials are configured.
+```bash
+python scripts/launch.py --limit 1
+```
+
+## Easy frontend/blog redeployment
+
+The Next.js frontend is shared by every site. You do **not** need to copy frontend changes into 99 projects.
+
+After changing files under `src/`, shared assets, or other frontend code:
+
+```bash
+python scripts/launch.py --frontend-only
+```
+
+This skips Gemini and rebuilds/redeploys the current Markdown for every site.
+
+To regenerate all blog content and redeploy:
+
+```bash
+python scripts/launch.py --blogs-only
+```
+
+To publish existing/manual Markdown without regenerating it:
+
+```bash
+python scripts/launch.py --skip-generation
+```
+
+To work on one site:
+
+```bash
+python scripts/launch.py --site my-site
+```
 
 ## Editable idea portfolio
 
-`ideas.json` is deliberately a normal editable file. The first run generates 99 ideas. You can delete ideas, edit them, or append your own ideas. Existing `site.json` files are never overwritten by the idea materializer.
+`ideas.json` is deliberately a normal editable file. The first run generates 99 ranked micro-SaaS opportunities. You can delete ideas, edit them, or append your own ideas. Existing `site.json` files are preserved.
 
-To intentionally regenerate the 99 AI ideas:
+The idea prompt prioritizes narrow painful problems, identifiable buyers, recurring revenue, willingness to pay, low infrastructure cost, solo-founder feasibility, and SEO potential. The scores are heuristic AI judgments, not guarantees of profitability.
+
+## Gemini free-model failover
+
+Blog generation automatically cycles through a configurable model list. The current defaults are:
+
+```text
+gemini-3.5-flash-lite
+gemini-3.1-flash-lite
+gemini-2.5-flash-lite
+gemini-2.5-flash
+```
+
+If a model returns a rate-limit or temporary availability error, it retries briefly and then switches to the next model. Configure the list without editing code:
 
 ```bash
-python scripts/ideas.py --regenerate
+GEMINI_MODELS=gemini-3.5-flash-lite,gemini-2.5-flash-lite python scripts/launch.py --blogs-only
 ```
 
-This replaces `ideas.json`, so only use it when you want to discard your edits.
+Google's rate limits are model/project dependent, so failover improves resilience but cannot bypass a quota that is shared by the project. Keep the list to models available on your current free tier. The repository does not use the shut-down Gemini 2.0 models.
 
-Each generated site has its own config:
+## One shared PostHog project
 
-```text
-sites/<site-id>/site.json
-sites/<site-id>/_posts/*.md
-```
+All websites intentionally use **one PostHog project**, which is appropriate for a free-tier portfolio. The first run creates/reuses the project named `SEO Site Portfolio` and stores its public project information in `.deploy/posthog.json` (ignored by git). Every site's frontend receives the same PostHog project key.
 
-The idea prompt prioritizes narrow painful problems, identifiable buyers, recurring revenue, willingness to pay, low infrastructure cost, solo-founder feasibility, and SEO acquisition. The scores are heuristic AI judgments, not guarantees of profitability.
-
-## Credentials
-
-Set these as environment variables/secrets and never commit them:
+Set:
 
 ```text
-GEMINI_API_KEY=...
-CLOUDFLARE_API_TOKEN=...
-CLOUDFLARE_ACCOUNT_ID=...
 POSTHOG_PERSONAL_API_KEY=...
 POSTHOG_ORGANIZATION_ID=...
-POSTHOG_HOST=https://us.posthog.com
-POSTHOG_INGEST_HOST=https://us.i.posthog.com
-GOOGLE_APPLICATION_CREDENTIALS=/path/to/service-account.json
 ```
 
-Google automation requires a Google service account with the Site Verification and Search Console APIs enabled. The service account is the authenticated Google identity used for verification and Search Console API operations.
+Optional:
 
-For custom domains, the domain must actually be owned/configured by you. The automation can associate a domain with the Cloudflare Pages project, but it cannot buy a domain you do not own.
+```text
+POSTHOG_PROJECT_NAME=SEO Site Portfolio
+POSTHOG_HOST=https://us.posthog.com
+POSTHOG_INGEST_HOST=https://us.i.posthog.com
+```
 
 ## Deployment providers
 
-The content/build layer is provider-neutral. `out/` is the portable static artifact.
+The content/build layer is provider-neutral. `out/` remains the portable static artifact.
 
 ```bash
 python scripts/launch.py --provider cloudflare-pages
@@ -79,19 +106,13 @@ python scripts/launch.py --provider netlify
 python scripts/launch.py --provider static
 ```
 
-Cloudflare Pages is the default because it supports programmatic Direct Upload project creation. Cloudflare Workers uses Wrangler static assets. Vercel and Netlify use their CLIs.
-
-Use `--limit 1` for a smoke test before launching the whole portfolio:
-
-```bash
-python scripts/launch.py --limit 1
-```
+Cloudflare Pages projects are created/reused automatically when the Cloudflare API credentials are supplied. Custom domains can be associated when configured, but the automation cannot purchase domains or change registrar DNS that you do not control.
 
 ## Monitoring
 
-An hourly GitHub Actions workflow runs `scripts/monitor.py` and checks every configured site's URL. The launcher also writes per-site deployment status under `.deploy/state/`.
+An hourly GitHub Actions monitor checks every configured site's URL. The launcher also writes per-site deployment state under `.deploy/state/`.
 
-PostHog provides site analytics once its project is provisioned. Google Search Console is automatically verified and the sitemap submitted when Google credentials are configured.
+Google Search Console automation requests URL-prefix verification tokens, embeds them in the build, verifies the live property after deployment, adds it to Search Console, and submits `sitemap.xml` when Google credentials are configured.
 
 ## Architecture
 
@@ -109,7 +130,7 @@ PostHog provides site analytics once its project is provisioned. Google Search C
                |                             |
                v                             v
         Gemini SEO posts                Monitoring setup
-               |                    CF / PostHog / GSC
+               |                    CF / shared PostHog / GSC
                v                             |
         sites/*/_posts                       |
                |                             |
@@ -130,6 +151,17 @@ PostHog provides site analytics once its project is provisioned. Google Search C
                    hourly health monitoring
 ```
 
-## Security
+## Credentials
 
-Rotate the Gemini key that was previously committed in the old `geminirequest.py`. API credentials belong in environment variables or CI secrets only.
+Never commit API keys. Use environment variables or CI secrets:
+
+```text
+GEMINI_API_KEY=...
+CLOUDFLARE_API_TOKEN=...
+CLOUDFLARE_ACCOUNT_ID=...
+POSTHOG_PERSONAL_API_KEY=...
+POSTHOG_ORGANIZATION_ID=...
+GOOGLE_APPLICATION_CREDENTIALS=/path/to/service-account.json
+```
+
+Rotate the Gemini key that was previously committed in the old `geminirequest.py`.
