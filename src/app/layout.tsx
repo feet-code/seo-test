@@ -5,14 +5,13 @@ import { Inter } from "next/font/google";
 import cn from "classnames";
 import { ThemeSwitcher } from "./_components/theme-switcher";
 import { PostHog } from "./_components/posthog";
-
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: `Blog about AI Meeting Assistants`,
-  description: `A statically generated blog about meeting assistants using Next.js and ${CMS_NAME}.`,
+  title: process.env.SITE_PRODUCT_NAME || "Blog",
+  description: process.env.SITE_DESCRIPTION || `Helpful information about ${process.env.SITE_TOPIC || "this topic"}.`,
   openGraph: { images: [HOME_OG_IMAGE_URL] },
 };
 
