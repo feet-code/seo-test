@@ -26,7 +26,7 @@ def site_config(site_id: str) -> tuple[dict, Path]:
 
 def run(command: list[str], *, env: dict[str, str] | None = None) -> None:
     print("$", " ".join(command), flush=True)
-    subprocess.run(command, cwd=ROOT, env=env, check=True)
+    subprocess.run(command, cwd=ROOT, env=env, check=True, encoding="utf-8", errors="replace")
 
 
 def generate(site_id: str) -> None:
@@ -43,7 +43,7 @@ def build(site_id: str, env_overrides: dict[str, str] | None = None) -> None:
         shutil.rmtree(OUT)
     run(["npm", "run", "build"], env=env)
     if not OUT.exists():
-        raise SystemExit("Next.js build completed but out/ was not produced.")
+        raise SystemExit("Build completed but out/ was not produced.")
 
 
 def deploy(site_id: str, provider: str) -> None:
