@@ -1,10 +1,10 @@
 # SEO site automation
 
-This repository is a reusable Next.js static blog template plus a portfolio automation system for launching and monitoring 100+ independent SEO sites.
+This repository is a shared static blog generator and portfolio automation system for launching and monitoring 100+ independent SEO sites.
 
 ## One command
 
-After the required API credentials are configured:
+After credentials are configured:
 
 ```bash
 pip install -r requirements.txt
@@ -12,91 +12,97 @@ npm install
 python scripts/launch.py
 ```
 
-That command generates the editable 99-idea portfolio, creates/updates site configs, provisions hosting and monitoring, generates posts, builds each site, deploys it, and health-checks the result.
-
-Use a one-site smoke test first:
+Use a safe local/mock smoke test first. It does not call Gemini or external monitoring APIs:
 
 ```bash
-python scripts/launch.py --limit 1
+python scripts/launch.py --mock --provider static --limit 1
 ```
 
-## Easy frontend/blog redeployment
+## Editable ideas
 
-The Next.js frontend is shared by every site. You do **not** need to copy frontend changes into 99 projects.
+The editable portfolio lives at `ideas/ideas.json`. The repository includes **one example idea** so you can copy its structure and manually add ideas. If `ideas/ideas.json` exists, the launcher does not generate a new idea list. Existing `sites/*/site.json` files are never overwritten.
 
-After changing files under `src/`, shared assets, or other frontend code:
+If you intentionally want AI to create the 99-idea portfolio later, use:
+
+```bash
+python scripts/ideas.py --regenerate
+```
+
+For a deterministic example without an LLM:
+
+```bash
+python scripts/ideas.py --mock
+```
+
+## Deploy a subset
+
+```bash
+python scripts/launch.py --site my-site
+python scripts/launch.py --site site-a --site site-b --site site-c
+python scripts/launch.py --sites site-a,site-b,site-c
+python scripts/launch.py --limit 5
+```
+
+## Easy redeployment
+
+All sites share the same frontend code. Change the frontend, then:
 
 ```bash
 python scripts/launch.py --frontend-only
 ```
 
-This skips Gemini and rebuilds/redeploys the current Markdown for every site.
-
-To regenerate all blog content and redeploy:
+This rebuilds/redeploys every selected site without calling Gemini. To regenerate blog content:
 
 ```bash
 python scripts/launch.py --blogs-only
 ```
 
-To publish existing/manual Markdown without regenerating it:
+To publish existing/manual Markdown without regeneration:
 
 ```bash
 python scripts/launch.py --skip-generation
 ```
 
-To work on one site:
+Use `--mock` with any of these modes for fast iteration without LLM or monitoring API calls.
+
+## Gemini model failover and resume
+
+Blog generation automatically cycles through `GEMINI_MODELS` (or the default free-tier-capable list) when a model is rate-limited or temporarily unavailable. Configure the order with:
+
+```text
+GEMINI_MODELS=gemini-2.5-flash-lite,gemini-2.5-flash
+```
+
+If every configured model fails for a site, the process **terminates immediately** instead of silently skipping sites. It persists `.deploy/state/checkpoint.json` with the exact site/idea index where it stopped. After credits/rate limits recover:
 
 ```bash
-python scripts/launch.py --site my-site
+python scripts/launch.py --resume
 ```
 
-## Editable idea portfolio
+The launcher continues from that site. This also works with a selected subset when the same subset is supplied again.
 
-`ideas.json` is deliberately a normal editable file. The first run generates 99 ranked micro-SaaS opportunities. You can delete ideas, edit them, or append your own ideas. Existing `site.json` files are preserved.
+## Product-interest email signup
 
-The idea prompt prioritizes narrow painful problems, identifiable buyers, recurring revenue, willingness to pay, low infrastructure cost, solo-founder feasibility, and SEO potential. The scores are heuristic AI judgments, not guarantees of profitability.
+Every site config can contain:
 
-## Gemini free-model failover
-
-Blog generation automatically cycles through a configurable model list. The current defaults are:
-
-```text
-gemini-3.5-flash-lite
-gemini-3.1-flash-lite
-gemini-2.5-flash-lite
-gemini-2.5-flash
+```json
+"signup": {
+  "enabled": true,
+  "headline": "Interested? Get notified when this is available.",
+  "endpoint": "https://your-form-endpoint.example/subscribe",
+  "email": "hello@example.com"
+}
 ```
 
-If a model returns a rate-limit or temporary availability error, it retries briefly and then switches to the next model. Configure the list without editing code:
+The generated site displays an email signup form. If `endpoint` is configured, it POSTs `{ "email": "...", "product": "..." }` as JSON. If no endpoint is configured but `email` is present, it opens a pre-filled email message instead. This keeps the frontend static and lets you use any email/form backend you choose.
 
-```bash
-GEMINI_MODELS=gemini-3.5-flash-lite,gemini-2.5-flash-lite python scripts/launch.py --blogs-only
-```
+## Monitoring
 
-Google's rate limits are model/project dependent, so failover improves resilience but cannot bypass a quota that is shared by the project. Keep the list to models available on your current free tier. The repository does not use the shut-down Gemini 2.0 models.
+All sites use **one shared PostHog project**, suitable for a free-tier portfolio. Google Search Console verification and sitemap submission are automated when Google credentials are configured. An hourly GitHub Actions workflow health-checks configured sites.
 
-## One shared PostHog project
+## Deployment
 
-All websites intentionally use **one PostHog project**, which is appropriate for a free-tier portfolio. The first run creates/reuses the project named `SEO Site Portfolio` and stores its public project information in `.deploy/posthog.json` (ignored by git). Every site's frontend receives the same PostHog project key.
-
-Set:
-
-```text
-POSTHOG_PERSONAL_API_KEY=...
-POSTHOG_ORGANIZATION_ID=...
-```
-
-Optional:
-
-```text
-POSTHOG_PROJECT_NAME=SEO Site Portfolio
-POSTHOG_HOST=https://us.posthog.com
-POSTHOG_INGEST_HOST=https://us.i.posthog.com
-```
-
-## Deployment providers
-
-The content/build layer is provider-neutral. `out/` remains the portable static artifact.
+The build produces a portable `out/` static artifact. Deployment adapters support:
 
 ```bash
 python scripts/launch.py --provider cloudflare-pages
@@ -106,37 +112,44 @@ python scripts/launch.py --provider netlify
 python scripts/launch.py --provider static
 ```
 
-Cloudflare Pages projects are created/reused automatically when the Cloudflare API credentials are supplied. Custom domains can be associated when configured, but the automation cannot purchase domains or change registrar DNS that you do not control.
+Cloudflare Pages projects are created/reused automatically when the required Cloudflare API credentials are supplied. Custom domains can be associated when configured, but domains must already be owned/controlled by you.
 
-## Monitoring
+## Credentials
 
-An hourly GitHub Actions monitor checks every configured site's URL. The launcher also writes per-site deployment state under `.deploy/state/`.
+Never commit credentials:
 
-Google Search Console automation requests URL-prefix verification tokens, embeds them in the build, verifies the live property after deployment, adds it to Search Console, and submits `sitemap.xml` when Google credentials are configured.
+```text
+GEMINI_API_KEY=...
+GEMINI_MODELS=gemini-2.5-flash-lite,gemini-2.5-flash
+CLOUDFLARE_API_TOKEN=...
+CLOUDFLARE_ACCOUNT_ID=...
+POSTHOG_PERSONAL_API_KEY=...
+POSTHOG_ORGANIZATION_ID=...
+GOOGLE_APPLICATION_CREDENTIALS=/path/to/service-account.json
+```
+
+Rotate the Gemini key that was previously committed in the old generator.
 
 ## Architecture
 
 ```text
-                    Gemini: 99 micro-SaaS ideas
+                 ideas/ideas.json (human editable)
+                              |
+                    optional AI generation of 99
                               |
                               v
-                         ideas.json
-                    (human editable)
-                              |
-                              v
-                    sites/*/site.json
+                     sites/*/site.json
                               |
                +--------------+--------------+
                |                             |
                v                             v
-        Gemini SEO posts                Monitoring setup
-               |                    CF / shared PostHog / GSC
+         Gemini SEO posts             Monitoring setup
+               |                 shared PostHog / GSC
                v                             |
         sites/*/_posts                       |
-               |                             |
                +--------------+--------------+
                               v
-                        Next.js build
+                        static build
                               |
                               v
                             out/
@@ -148,20 +161,5 @@ Google Search Console automation requests URL-prefix verification tokens, embeds
       Pages/Workers
                               |
                               v
-                   hourly health monitoring
+                    hourly health monitoring
 ```
-
-## Credentials
-
-Never commit API keys. Use environment variables or CI secrets:
-
-```text
-GEMINI_API_KEY=...
-CLOUDFLARE_API_TOKEN=...
-CLOUDFLARE_ACCOUNT_ID=...
-POSTHOG_PERSONAL_API_KEY=...
-POSTHOG_ORGANIZATION_ID=...
-GOOGLE_APPLICATION_CREDENTIALS=/path/to/service-account.json
-```
-
-Rotate the Gemini key that was previously committed in the old `geminirequest.py`.
