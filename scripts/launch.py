@@ -3,7 +3,11 @@ from __future__ import annotations
 import argparse,json,os,subprocess,sys,time,urllib.request
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]; SITES=ROOT/"sites"; STATE=ROOT/".deploy"/"state"; CHECKPOINT=STATE/"checkpoint.json"
-def run(args,env=None): print("$"," ".join(args),flush=True); return subprocess.run(args,cwd=ROOT,env=env or os.environ.copy(),check=True)
+def run(args,env=None):
+    print("$"," ".join(args),flush=True)
+    # Force UTF-8 decoding for captured subprocess output on Windows. Some Node tools emit
+    # UTF-8 bytes that Windows cp1252 cannot decode.
+    return subprocess.run(args,cwd=ROOT,env=env or os.environ.copy(),check=True,encoding="utf-8",errors="replace")
 def site_url(c): return "https://"+c["domain"].rstrip("/") if c.get("domain") else f"https://{c.get('deploy',{}).get('project',c['id'])}.pages.dev"
 def health(url):
     try:
@@ -60,7 +64,7 @@ def main():
             if exhausted:
                 save_checkpoint(ids,index,"Gemini fallback chain exhausted; resume here when credits/rate limits recover."); (STATE/f"{site_id}.json").write_text(json.dumps(result,indent=2)+"\n",encoding="utf-8"); print(f"Gemini exhausted at idea/site {index+1}: {site_id}. Checkpoint saved. Re-run with --resume.",file=sys.stderr); raise SystemExit(2)
         except Exception as exc:result.update({"ok":False,"error":str(exc)})
-        result["durationSeconds"]=round(time.time()-started,2); (STATE/f"{site_id}.json").write_text(json.dumps(result,indent=2)+"\n",encoding="utf-8"); save_checkpoint(ids,index+1); print(f"[{index+1}/{len(sites)}] {site_id}: {'OK' if result['ok'] else 'FAILED'}",flush=True)
+        result["durationSeconds"]=round(time.time()-started,2); (STATE/f"{site_id}.json").write_text(json.dumps(result,indent=2)+"\n",encoding="utf-8"); save_checkpoint(ids,index+1); print(f"[{index+1}/{len(ids)}] {site_id}: {'OK' if result['ok'] else 'FAILED'}",flush=True)
         results.append(result)
     summary={"timestamp":time.time(),"total":len(results),"successful":sum(r["ok"] for r in results),"failed":sum(not r["ok"] for r in results),"results":results}; (STATE/"summary.json").write_text(json.dumps(summary,indent=2)+"\n",encoding="utf-8"); print(json.dumps({k:summary[k] for k in ("total","successful","failed")},indent=2));
     if summary["failed"]:raise SystemExit(1)
