@@ -25,7 +25,7 @@ def site_config(site_id: str) -> tuple[dict, Path]:
 
 
 def run(command: list[str], *, env: dict[str, str] | None = None) -> None:
-    print("$", " ".join(command))
+    print("$", " ".join(command), flush=True)
     subprocess.run(command, cwd=ROOT, env=env, check=True)
 
 
@@ -33,10 +33,12 @@ def generate(site_id: str) -> None:
     run([sys.executable, "scripts/generate_posts.py", site_id])
 
 
-def build(site_id: str) -> None:
+def build(site_id: str, env_overrides: dict[str, str] | None = None) -> None:
     _, site_dir = site_config(site_id)
     env = os.environ.copy()
     env["SEO_POSTS_DIR"] = str((site_dir / "_posts").resolve())
+    if env_overrides:
+        env.update(env_overrides)
     if OUT.exists():
         shutil.rmtree(OUT)
     run(["npm", "run", "build"], env=env)
@@ -49,61 +51,40 @@ def deploy(site_id: str, provider: str) -> None:
     project = config.get("deploy", {}).get("project", config.get("id", site_id))
     if not OUT.exists():
         raise SystemExit("out/ does not exist. Run the build command first.")
+    env = os.environ.copy()
 
     if provider == "static":
         print(f"Static artifact ready at {OUT}")
         return
-
     if provider == "cloudflare-pages":
-        run(["npx", "wrangler", "pages", "deploy", str(OUT), "--project-name", project])
+        run(["npx", "wrangler", "pages", "deploy", str(OUT), "--project-name", project], env=env)
         return
-
     if provider == "cloudflare-workers":
-        # Wrangler resolves assets.directory relative to the generated config file.
         deploy_dir = DEPLOY / "cloudflare-workers" / site_id
         deploy_dir.mkdir(parents=True, exist_ok=True)
         config_path = deploy_dir / "wrangler.jsonc"
-        config_path.write_text(
-            json.dumps(
-                {
-                    "name": project,
-                    "compatibility_date": "2026-08-22",
-                    "assets": {"directory": "../../../out"},
-                },
-                indent=2,
-            )
-            + "\n",
-            encoding="utf-8",
-        )
-        run(["npx", "wrangler", "deploy", "--config", str(config_path)])
+        config_path.write_text(json.dumps({
+            "name": project,
+            "compatibility_date": "2026-08-22",
+            "assets": {"directory": str(OUT.resolve())},
+        }, indent=2) + "\n", encoding="utf-8")
+        run(["npx", "wrangler", "deploy", "--config", str(config_path), "--yes"], env=env)
         return
-
     if provider == "vercel":
-        run(["npx", "vercel", str(OUT), "--prod"])
+        run(["npx", "vercel", str(OUT), "--prod", "--yes"], env=env)
         return
-
     if provider == "netlify":
-        run(["npx", "netlify", "deploy", "--dir", str(OUT), "--prod"])
+        run(["npx", "netlify", "deploy", "--dir", str(OUT), "--prod"], env=env)
         return
-
-    raise SystemExit(
-        f"Unsupported provider '{provider}'. Choose: static, cloudflare-pages, "
-        "cloudflare-workers, vercel, netlify."
-    )
+    raise SystemExit(f"Unsupported provider '{provider}'.")
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Generate, build, and deploy an SEO site")
     parser.add_argument("action", choices=["generate", "build", "deploy", "all"])
     parser.add_argument("site_id")
-    parser.add_argument(
-        "provider",
-        nargs="?",
-        choices=["static", "cloudflare-pages", "cloudflare-workers", "vercel", "netlify"],
-        default="static",
-    )
+    parser.add_argument("provider", nargs="?", choices=["static", "cloudflare-pages", "cloudflare-workers", "vercel", "netlify"], default="static")
     args = parser.parse_args()
-
     if args.action in ("generate", "all"):
         generate(args.site_id)
     if args.action in ("build", "all"):
