@@ -3,7 +3,6 @@ from __future__ import annotations
 import argparse,json,os,subprocess,sys,time,urllib.request
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]; SITES=ROOT/"sites"; STATE=ROOT/".deploy"/"state"; CHECKPOINT=STATE/"checkpoint.json"
-
 def run(args,env=None): print("$"," ".join(args),flush=True); return subprocess.run(args,cwd=ROOT,env=env or os.environ.copy(),check=True)
 def site_url(c): return "https://"+c["domain"].rstrip("/") if c.get("domain") else f"https://{c.get('deploy',{}).get('project',c['id'])}.pages.dev"
 def health(url):
@@ -15,20 +14,16 @@ def save_checkpoint(site_ids,next_index,reason=None):
     if reason:d["reason"]=reason
     CHECKPOINT.write_text(json.dumps(d,indent=2)+"\n",encoding="utf-8")
 def selected_sites(args):
-    sites=sorted(p for p in SITES.iterdir() if (p/"site.json").exists()); wanted=[]
-    if args.site:wanted+=args.site
-    if args.sites:wanted += [x.strip() for x in args.sites.split(",") if x.strip()]
+    sites=sorted(p for p in SITES.iterdir() if (p/"site.json").exists()); wanted=(args.site or [])+([x.strip() for x in args.sites.split(",") if x.strip()] if args.sites else [])
     if wanted:
         ids=set(wanted); missing=ids-{p.name for p in sites}
         if missing:raise SystemExit(f"Unknown site(s): {', '.join(sorted(missing))}")
         sites=[p for p in sites if p.name in ids]
-    if args.limit:sites=sites[:args.limit]
-    return sites
-
+    return sites[:args.limit] if args.limit else sites
 def main():
     ap=argparse.ArgumentParser(description="Generate, deploy, and monitor the SEO site portfolio"); mode=ap.add_mutually_exclusive_group(); mode.add_argument("--frontend-only",action="store_true"); mode.add_argument("--blogs-only",action="store_true")
-    ap.add_argument("--site",action="append",help="Process one site; repeat for multiple sites"); ap.add_argument("--sites",help="Comma-separated subset of site IDs"); ap.add_argument("--limit",type=int,default=0); ap.add_argument("--resume",action="store_true"); ap.add_argument("--mock",action="store_true"); ap.add_argument("--skip-generation",action="store_true"); ap.add_argument("--provider",default="cloudflare-pages",choices=["cloudflare-pages","cloudflare-workers","vercel","netlify","static"]); args=ap.parse_args()
-    env=os.environ.copy()
+    ap.add_argument("--site",action="append"); ap.add_argument("--sites"); ap.add_argument("--limit",type=int,default=0); ap.add_argument("--resume",action="store_true"); ap.add_argument("--mock",action="store_true"); ap.add_argument("--skip-generation",action="store_true"); ap.add_argument("--provider",default="cloudflare-pages",choices=["cloudflare-pages","cloudflare-workers","vercel","netlify","static"]); args=ap.parse_args()
+    env=os.environ.copy();
     if args.mock:env["MOCK_LLM"]="1"
     run([sys.executable,"scripts/ideas.py"],env=env); sites=selected_sites(args); ids=[p.name for p in sites]; start=0
     if args.resume and CHECKPOINT.exists():
@@ -45,18 +40,20 @@ def main():
         site_dir=sites[index]; site_id=site_dir.name; save_checkpoint(ids,index); started=time.time(); result={"site":site_id,"startedAt":started}
         try:
             config=json.loads((site_dir/"site.json").read_text(encoding="utf-8")); config.setdefault("deploy",{})["provider"]=args.provider; target=site_url(config)
-            from monitoring import provision; config=provision(config,site_dir,target,shared_posthog)
+            if not args.mock:
+                from monitoring import provision; config=provision(config,site_dir,target,shared_posthog)
             posts_exist=bool(list((site_dir/"_posts").glob("*.md")))
             if not skip_generation and (force_generation or not posts_exist):
                 cmd=[sys.executable,"scripts/generate_posts.py",site_id];
                 if args.mock:cmd.append("--mock")
                 run(cmd,env=env)
-            env2=env.copy(); env2.update({"SITE_URL":target,"SEO_POSTS_DIR":str((site_dir/"_posts").resolve()),"GOOGLE_SITE_VERIFICATION":config.get("monitoring",{}).get("googleVerificationToken","")})
-            mon=config.get("monitoring",{}); env2["NEXT_PUBLIC_POSTHOG_KEY"]=mon.get("posthogKey",""); env2["NEXT_PUBLIC_POSTHOG_HOST"]=mon.get("posthogHost","https://us.i.posthog.com")
-            signup=config.get("signup",{}); env2["SIGNUP_ENDPOINT"]=signup.get("endpoint",""); env2["SIGNUP_EMAIL"]=signup.get("email",""); env2["SIGNUP_HEADLINE"]=signup.get("headline","Interested? Get notified when this is available."); env2["SITE_PRODUCT_NAME"]=config.get("product",config.get("name",site_id)); env2["SITE_DESCRIPTION"]=config.get("valueProposition",""); env2["SITE_TOPIC"]=config.get("topic","")
+            env2=env.copy(); mon=config.get("monitoring",{}); signup=config.get("signup",{})
+            env2.update({"SITE_URL":target,"SEO_POSTS_DIR":str((site_dir/"_posts").resolve()),"GOOGLE_SITE_VERIFICATION":mon.get("googleVerificationToken","") if not args.mock else "","NEXT_PUBLIC_POSTHOG_KEY":mon.get("posthogKey","") if not args.mock else "","NEXT_PUBLIC_POSTHOG_HOST":mon.get("posthogHost","https://us.i.posthog.com"),"SIGNUP_ENDPOINT":signup.get("endpoint",""),"SIGNUP_EMAIL":signup.get("email",""),"SIGNUP_HEADLINE":signup.get("headline","Interested? Get notified when this is available."),"SITE_PRODUCT_NAME":config.get("product",config.get("name",site_id)),"SITE_DESCRIPTION":config.get("valueProposition",""),"SITE_TOPIC":config.get("topic","")})
             run(["npm","run","build"],env=env2)
             if args.provider!="static":run([sys.executable,"scripts/site.py","deploy",site_id,args.provider],env=env2)
-            from monitoring import finalize; finalize(config); result.update({"ok":True,"url":target,"health":health(target)})
+            if not args.mock:
+                from monitoring import finalize; finalize(config)
+            result.update({"ok":True,"url":target,"health":health(target)})
         except subprocess.CalledProcessError as exc:
             exhausted=(STATE/"gemini_exhausted.json").exists(); result.update({"ok":False,"error":str(exc)})
             if exhausted:
