@@ -115,7 +115,7 @@ def call_gemini(prompt: str) -> str:
     raise AssertionError("unreachable")
 
 
-def clean_json(text: str) -> list[dict]:
+def clean_json(text: str, expected_count: int) -> list[dict]:
     text = text.strip()
     text = re.sub(r"^```(?:json)?\s*", "", text)
     text = re.sub(r"\s*```$", "", text)
@@ -123,8 +123,11 @@ def clean_json(text: str) -> list[dict]:
         data = json.loads(text)
     except json.JSONDecodeError as exc:
         raise SystemExit(f"Gemini returned invalid JSON: {exc}") from exc
-    if not isinstance(data, list) or not data:
-        raise SystemExit("Gemini returned no articles.")
+    if not isinstance(data, list) or len(data) != expected_count:
+        raise SystemExit(
+            f"Gemini returned {len(data) if isinstance(data, list) else 'non-list'} articles; "
+            f"expected exactly {expected_count}."
+        )
     return data
 
 
@@ -138,6 +141,11 @@ def safe_slug(slug: str) -> str:
 def write_posts(site: dict, site_dir: Path, articles: list[dict]) -> None:
     posts_dir = site_dir / "_posts"
     posts_dir.mkdir(parents=True, exist_ok=True)
+    # Generated site posts are fully managed by this generator. Remove old generated
+    # Markdown first so reducing articleCount cannot leave stale articles published.
+    for old_post in posts_dir.glob("*.md"):
+        old_post.unlink()
+
     now = datetime.now(timezone.utc)
     seen: set[str] = set()
 
@@ -152,8 +160,6 @@ def write_posts(site: dict, site_dir: Path, articles: list[dict]) -> None:
             raise SystemExit(f"Duplicate generated slug: {slug}")
         seen.add(slug)
 
-        # Spread timestamps by one minute so sorting is deterministic while preserving
-        # the current date for newly generated content.
         date = now.replace(microsecond=0)
         frontmatter = "\n".join([
             "---",
@@ -179,8 +185,9 @@ def main() -> None:
     parser.add_argument("site_id")
     args = parser.parse_args()
     site, site_dir = load_site(args.site_id)
-    print(f"Generating {site.get('articleCount', 5)} posts for {args.site_id} using {MODEL}...")
-    articles = clean_json(call_gemini(prompt_for(site)))
+    count = max(1, min(int(site.get("articleCount", 5)), 10))
+    print(f"Generating {count} posts for {args.site_id} using {MODEL}...")
+    articles = clean_json(call_gemini(prompt_for(site)), count)
     write_posts(site, site_dir, articles)
     print(f"Wrote {len(articles)} posts to {site_dir / '_posts'}")
 
