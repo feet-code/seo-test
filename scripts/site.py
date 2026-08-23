@@ -59,6 +59,7 @@ def deploy(site_id: str, provider: str) -> None:
         return
 
     if provider == "cloudflare-workers":
+        # Wrangler resolves assets.directory relative to the generated config file.
         deploy_dir = DEPLOY / "cloudflare-workers" / site_id
         deploy_dir.mkdir(parents=True, exist_ok=True)
         config_path = deploy_dir / "wrangler.jsonc"
@@ -67,7 +68,7 @@ def deploy(site_id: str, provider: str) -> None:
                 {
                     "name": project,
                     "compatibility_date": "2026-08-22",
-                    "assets": {"directory": str(OUT.resolve())},
+                    "assets": {"directory": "../../../out"},
                 },
                 indent=2,
             )
