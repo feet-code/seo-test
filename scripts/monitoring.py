@@ -2,19 +2,14 @@
 """Provision Cloudflare Pages domains, Google Search Console, and PostHog."""
 from __future__ import annotations
 
-import base64
-import hashlib
 import json
 import os
-import time
 import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SITES = ROOT / "sites"
-STATE = ROOT / ".deploy" / "state"
 
 
 def http(method: str, url: str, body=None, headers=None):
@@ -37,8 +32,9 @@ def cloudflare(method: str, path: str, body=None):
 
 def provision_pages(config: dict) -> None:
     project = config["deploy"]["project"]
+    encoded_project = urllib.parse.quote(project, safe="")
     try:
-        cloudflare("GET", f"/pages/projects/{urllib.parse.quote(project, safe='')}")
+        cloudflare("GET", f"/pages/projects/{encoded_project}")
     except urllib.error.HTTPError as exc:
         if exc.code != 404:
             raise
@@ -46,38 +42,35 @@ def provision_pages(config: dict) -> None:
 
     domain = config.get("domain")
     if domain:
+        encoded_domain = urllib.parse.quote(domain, safe="")
         try:
-            cloudflare("GET", f"/pages/projects/{urllib.parse.quote(project, safe='')}/domains/{urllib.parse.quote(domain, safe='')}")
+            cloudflare("GET", f"/pages/projects/{encoded_project}/domains/{encoded_domain}")
         except urllib.error.HTTPError as exc:
             if exc.code != 404:
                 raise
-            cloudflare("POST", f"/pages/projects/{urllib.parse.quote(project, safe='')}/domains", {"name": domain})
+            cloudflare("POST", f"/pages/projects/{encoded_project}/domains", {"name": domain})
 
 
 def posthog(config: dict) -> None:
     key = os.environ.get("POSTHOG_PERSONAL_API_KEY")
-    if not key:
+    if not key or config.get("monitoring", {}).get("posthogKey"):
         return
     host = os.environ.get("POSTHOG_HOST", "https://us.posthog.com").rstrip("/")
-    # PostHog exposes project creation through its authenticated API. Keep the endpoint
-    # configurable because self-hosted PostHog installations may use a different base.
     project_name = config.get("name", config["id"])
-    try:
-        result = http("POST", f"{host}/api/projects/", {"name": project_name}, {
-            "Authorization": f"Bearer {key}", "Content-Type": "application/json"
+    result = http("POST", f"{host}/api/projects/", {"name": project_name}, {
+        "Authorization": f"Bearer {key}", "Content-Type": "application/json"
+    })
+    project_id = result.get("id") or result.get("project_id")
+    public_key = result.get("api_token") or result.get("api_key") or result.get("token")
+    if project_id and public_key:
+        config.setdefault("monitoring", {}).update({
+            "posthogProjectId": project_id,
+            "posthogKey": public_key,
+            "posthogHost": os.environ.get("POSTHOG_INGEST_HOST", "https://us.i.posthog.com"),
         })
-        project = result.get("id") or result.get("project_id")
-        public_key = result.get("api_token") or result.get("api_key") or result.get("token")
-        if project and public_key:
-            config["monitoring"] = {"posthogProjectId": project, "posthogKey": public_key, "posthogHost": host}
-    except urllib.error.HTTPError as exc:
-        # A 409/400 may mean the project already exists. Existing keys can be supplied in site.json.
-        if exc.code not in (400, 409):
-            raise
 
 
 def google_access_token() -> str:
-    """Use a Google service-account JSON file with google-auth when available."""
     try:
         from google.oauth2 import service_account
         from google.auth.transport.requests import Request
@@ -103,17 +96,13 @@ def verify_and_register(config: dict, site_url: str) -> None:
     if not os.environ.get("GOOGLE_APPLICATION_CREDENTIALS"):
         return
     token = google_access_token()
-    # URL-prefix verification is portable and works for pages.dev as well as custom domains.
     property_url = site_url.rstrip("/") + "/"
     token_result = google_api("POST", "https://www.googleapis.com/siteVerification/v1/token", token, {
         "site": {"identifier": property_url, "type": "SITE"},
         "verificationMethod": "META",
     })
-    verification_token = token_result["token"]
-    config.setdefault("monitoring", {})["googleVerificationToken"] = verification_token
-    # The build embeds the token in the HTML. Rebuilding/deploying is handled by launch.py.
+    config.setdefault("monitoring", {})["googleVerificationToken"] = token_result["token"]
     config["monitoring"]["googleProperty"] = property_url
-    # Verification itself happens after the new HTML is live.
 
 
 def finalize_google(config: dict) -> None:
@@ -122,19 +111,15 @@ def finalize_google(config: dict) -> None:
     if not property_url or not os.environ.get("GOOGLE_APPLICATION_CREDENTIALS"):
         return
     token = google_access_token()
+    # Site Verification API records ownership after it finds the META token in the live HTML.
+    google_api("POST", "https://www.googleapis.com/siteVerification/v1/webResource?verificationMethod=META", token, {
+        "site": {"identifier": property_url, "type": "SITE"}
+    })
     encoded = urllib.parse.quote(property_url, safe="")
-    try:
-        google_api("PUT", f"https://www.googleapis.com/webmasters/v3/sites/{encoded}", token)
-    except urllib.error.HTTPError as exc:
-        if exc.code not in (200, 204):
-            raise
+    google_api("PUT", f"https://www.googleapis.com/webmasters/v3/sites/{encoded}", token)
     sitemap = property_url + "sitemap.xml"
     feed = urllib.parse.quote(sitemap, safe="")
-    try:
-        google_api("PUT", f"https://www.googleapis.com/webmasters/v3/sites/{encoded}/sitemaps/{feed}", token)
-    except urllib.error.HTTPError as exc:
-        if exc.code not in (200, 204):
-            raise
+    google_api("PUT", f"https://www.googleapis.com/webmasters/v3/sites/{encoded}/sitemaps/{feed}", token)
 
 
 def save(config: dict, path: Path) -> None:
@@ -152,7 +137,12 @@ def provision(config: dict, site_dir: Path) -> None:
 
 
 def finalize(config: dict) -> None:
-    finalize_google(config)
+    try:
+        finalize_google(config)
+    except urllib.error.HTTPError as exc:
+        # A verification race (DNS/cache/deployment propagation) should be recorded by the
+        # portfolio monitor rather than making the entire 100-site deployment abort.
+        print(f"Search Console verification/submission pending: HTTP {exc.code}")
 
 
 if __name__ == "__main__":
