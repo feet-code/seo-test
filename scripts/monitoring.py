@@ -39,7 +39,6 @@ def provision_pages(config: dict) -> None:
         if exc.code != 404:
             raise
         cloudflare("POST", "/pages/projects", {"name": project, "production_branch": "main"})
-
     domain = config.get("domain")
     if domain:
         encoded_domain = urllib.parse.quote(domain, safe="")
@@ -56,8 +55,7 @@ def posthog(config: dict) -> None:
     if not key or config.get("monitoring", {}).get("posthogKey"):
         return
     host = os.environ.get("POSTHOG_HOST", "https://us.posthog.com").rstrip("/")
-    project_name = config.get("name", config["id"])
-    result = http("POST", f"{host}/api/projects/", {"name": project_name}, {
+    result = http("POST", f"{host}/api/projects/", {"name": config.get("name", config["id"])}, {
         "Authorization": f"Bearer {key}", "Content-Type": "application/json"
     })
     project_id = result.get("id") or result.get("project_id")
@@ -79,10 +77,7 @@ def google_access_token() -> str:
     credentials_path = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS")
     if not credentials_path:
         raise RuntimeError("GOOGLE_APPLICATION_CREDENTIALS is required for Search Console automation")
-    scopes = [
-        "https://www.googleapis.com/auth/siteverification",
-        "https://www.googleapis.com/auth/webmasters",
-    ]
+    scopes = ["https://www.googleapis.com/auth/siteverification", "https://www.googleapis.com/auth/webmasters"]
     creds = service_account.Credentials.from_service_account_file(credentials_path, scopes=scopes)
     creds.refresh(Request())
     return creds.token
@@ -98,8 +93,7 @@ def verify_and_register(config: dict, site_url: str) -> None:
     token = google_access_token()
     property_url = site_url.rstrip("/") + "/"
     token_result = google_api("POST", "https://www.googleapis.com/siteVerification/v1/token", token, {
-        "site": {"identifier": property_url, "type": "SITE"},
-        "verificationMethod": "META",
+        "site": {"identifier": property_url, "type": "SITE"}, "verificationMethod": "META"
     })
     config.setdefault("monitoring", {})["googleVerificationToken"] = token_result["token"]
     config["monitoring"]["googleProperty"] = property_url
@@ -111,7 +105,6 @@ def finalize_google(config: dict) -> None:
     if not property_url or not os.environ.get("GOOGLE_APPLICATION_CREDENTIALS"):
         return
     token = google_access_token()
-    # Site Verification API records ownership after it finds the META token in the live HTML.
     google_api("POST", "https://www.googleapis.com/siteVerification/v1/webResource?verificationMethod=META", token, {
         "site": {"identifier": property_url, "type": "SITE"}
     })
@@ -126,13 +119,13 @@ def save(config: dict, path: Path) -> None:
     path.write_text(json.dumps(config, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
-def provision(config: dict, site_dir: Path) -> None:
+def provision(config: dict, site_dir: Path, site_url: str) -> None:
     if config.get("deploy", {}).get("provider") == "cloudflare-pages" and os.environ.get("CLOUDFLARE_API_TOKEN"):
         provision_pages(config)
     posthog(config)
-    domain = config.get("domain")
-    if domain:
-        verify_and_register(config, f"https://{domain}")
+    # URL-prefix verification works with pages.dev and custom domains. Domain DNS verification
+    # is intentionally not required for this path, so the first run can be fully automated.
+    verify_and_register(config, site_url)
     save(config, site_dir / "site.json")
 
 
@@ -140,10 +133,4 @@ def finalize(config: dict) -> None:
     try:
         finalize_google(config)
     except urllib.error.HTTPError as exc:
-        # A verification race (DNS/cache/deployment propagation) should be recorded by the
-        # portfolio monitor rather than making the entire 100-site deployment abort.
         print(f"Search Console verification/submission pending: HTTP {exc.code}")
-
-
-if __name__ == "__main__":
-    raise SystemExit("Use scripts/launch.py rather than invoking monitoring.py directly")
