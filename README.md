@@ -1,80 +1,134 @@
 # SEO site automation
 
-This repository contains one reusable Next.js static blog template plus a data-driven pipeline for generating and deploying many independent SEO sites.
+This repository is a reusable Next.js static blog template plus a portfolio automation system for launching and monitoring 100+ independent SEO sites.
+
+## One command
+
+After the required API credentials are configured:
+
+```bash
+pip install -r requirements.txt
+npm install
+python scripts/launch.py
+```
+
+That command:
+
+1. asks Gemini for exactly 99 ranked micro-SaaS opportunities when `ideas.json` does not exist;
+2. writes the ideas to **editable `ideas.json`**;
+3. creates one `sites/<site-id>/site.json` for every idea without overwriting existing/manual configs;
+4. creates/reuses Cloudflare Pages projects and custom domains when Cloudflare credentials are available;
+5. provisions PostHog projects and injects the public project key into each static build;
+6. requests Google Search Console URL-prefix verification tokens, embeds them in each build, verifies the live sites, and submits `sitemap.xml`;
+7. generates 3–10 SEO articles per site with Gemini when that site's `_posts/` is empty;
+8. builds each site independently to `out/`;
+9. deploys each site to the selected provider;
+10. health-checks every deployed site and writes `.deploy/state/summary.json`.
+
+Cloudflare Pages Direct Upload projects can be created with the Cloudflare Pages API, then deployed with Wrangler. No manual Pages-project creation step is required when the Cloudflare API token/account credentials are configured.
+
+## Editable idea portfolio
+
+`ideas.json` is deliberately a normal editable file. The first run generates 99 ideas. You can delete ideas, edit them, or append your own ideas. Existing `site.json` files are never overwritten by the idea materializer.
+
+To intentionally regenerate the 99 AI ideas:
+
+```bash
+python scripts/ideas.py --regenerate
+```
+
+This replaces `ideas.json`, so only use it when you want to discard your edits.
+
+Each generated site has its own config:
+
+```text
+sites/<site-id>/site.json
+sites/<site-id>/_posts/*.md
+```
+
+The idea prompt prioritizes narrow painful problems, identifiable buyers, recurring revenue, willingness to pay, low infrastructure cost, solo-founder feasibility, and SEO acquisition. The scores are heuristic AI judgments, not guarantees of profitability.
+
+## Credentials
+
+Set these as environment variables/secrets and never commit them:
+
+```text
+GEMINI_API_KEY=...
+CLOUDFLARE_API_TOKEN=...
+CLOUDFLARE_ACCOUNT_ID=...
+POSTHOG_PERSONAL_API_KEY=...
+POSTHOG_HOST=https://us.posthog.com
+POSTHOG_INGEST_HOST=https://us.i.posthog.com
+GOOGLE_APPLICATION_CREDENTIALS=/path/to/service-account.json
+```
+
+Google automation requires a Google service account with the Site Verification and Search Console APIs enabled. The service account is the authenticated Google identity used for verification and Search Console API operations.
+
+For custom domains, the domain must actually be owned/configured by you. The automation can associate a domain with the Cloudflare Pages project, but it cannot buy a domain you do not own.
+
+## Deployment providers
+
+The content/build layer is provider-neutral. `out/` is the portable static artifact.
+
+```bash
+python scripts/launch.py --provider cloudflare-pages
+python scripts/launch.py --provider cloudflare-workers
+python scripts/launch.py --provider vercel
+python scripts/launch.py --provider netlify
+python scripts/launch.py --provider static
+```
+
+Cloudflare Pages is the default because it can create Direct Upload projects programmatically. Cloudflare Workers uses Wrangler static assets. Vercel and Netlify use their CLIs.
+
+Use `--limit 1` for a smoke test before launching the whole portfolio:
+
+```bash
+python scripts/launch.py --limit 1
+```
+
+## Monitoring
+
+An hourly GitHub Actions workflow runs `scripts/monitor.py` and checks every configured site's URL. The launcher also writes per-site deployment status under `.deploy/state/`.
+
+PostHog provides product/site analytics once its public project key is provisioned. Google Search Console is automatically verified and the sitemap submitted when Google credentials are configured.
 
 ## Architecture
 
-Each site lives under `sites/<site-id>/` and contains a `site.json` plus generated Markdown in `_posts/`. The Next.js app reads the selected post directory from `SEO_POSTS_DIR` during the build, so the template itself is shared by every site.
-
-The build artifact is always `out/`. Deployment is a separate step, keeping the system portable across hosting providers.
-
-Supported deployment adapters:
-
-- `static` — leave the `out/` artifact ready for any static host
-- `cloudflare-pages` — Wrangler Pages deployment
-- `cloudflare-workers` — Wrangler Workers static-assets deployment
-- `vercel` — Vercel CLI deployment
-- `netlify` — Netlify CLI deployment
-
-## Setup
-
-1. Install Node.js/npm and Python 3.10+.
-2. Run `npm install`.
-3. Set `GEMINI_API_KEY` in your shell. Never commit API keys.
-4. Copy `sites/example/site.json` to a new directory and customize the product, audience, topic, images, author, and article count.
-
-## Commands
-
-Generate posts:
-
-```bash
-python scripts/site.py generate example
+```text
+                    Gemini: 99 micro-SaaS ideas
+                              |
+                              v
+                         ideas.json
+                    (human editable)
+                              |
+                              v
+                    sites/*/site.json
+                              |
+               +--------------+--------------+
+               |                             |
+               v                             v
+        Gemini SEO posts                Monitoring setup
+               |                    CF / PostHog / GSC
+               v                             |
+        sites/*/_posts                       |
+               |                             |
+               +--------------+--------------+
+                              v
+                        Next.js build
+                              |
+                              v
+                            out/
+                              |
+          +-------------------+-------------------+
+          |                   |                   |
+          v                   v                   v
+      Cloudflare           Vercel              Netlify
+      Pages/Workers
+                              |
+                              v
+                   hourly health monitoring
 ```
-
-Build one site:
-
-```bash
-python scripts/site.py build example
-```
-
-Generate + build + produce a static artifact:
-
-```bash
-python scripts/site.py all example static
-```
-
-Deploy to Cloudflare Pages:
-
-```bash
-python scripts/site.py all example cloudflare-pages
-```
-
-Deploy the static assets as a Cloudflare Worker:
-
-```bash
-python scripts/site.py all example cloudflare-workers
-```
-
-Deploy to Vercel:
-
-```bash
-python scripts/site.py all example vercel
-```
-
-Deploy to Netlify:
-
-```bash
-python scripts/site.py all example netlify
-```
-
-The Vercel and Netlify CLIs are invoked through `npx`, so they are not dependencies of the blog application itself. Authenticate each provider using its normal CLI/environment configuration.
-
-## Scaling to hundreds of sites
-
-Add one directory and one `site.json` per website. Generated articles are isolated under that site's `_posts/` directory. Builds are performed serially because Next.js writes to the shared `out/` directory.
-
-For production-scale generation, run Gemini generation in controlled batches to respect API quotas and review/validate generated content before publishing.
 
 ## Security
 
-The old hard-coded Gemini key must not be used. Rotate any key that was previously committed and use `GEMINI_API_KEY` instead.
+Rotate the Gemini key that was previously committed in the old `geminirequest.py`. API credentials belong in environment variables or CI secrets only.
