@@ -15,5 +15,8 @@
   "images": {
     "coverImage": "/assets/blog/preview/cover.jpg",
     "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "deploy": {
+    "project": "example-seo-site"
   }
 }
