@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Provision Cloudflare Pages domains, Google Search Console, and PostHog."""
+"""Provision hosting, shared PostHog analytics, and Google Search Console."""
 from __future__ import annotations
 
 import json
@@ -48,29 +48,48 @@ def provision_pages(config: dict) -> None:
             cloudflare("POST", f"/pages/projects/{encoded_project}/domains", {"name": domain})
 
 
-def posthog(config: dict) -> None:
+def provision_shared_posthog() -> dict:
+    """Create/reuse exactly one PostHog project for the entire portfolio."""
     key = os.environ.get("POSTHOG_PERSONAL_API_KEY")
     organization = os.environ.get("POSTHOG_ORGANIZATION_ID")
-    if not key or not organization or config.get("monitoring", {}).get("posthogKey"):
-        return
+    if not key or not organization:
+        return {}
+
     host = os.environ.get("POSTHOG_HOST", "https://us.posthog.com").rstrip("/")
+    state_path = Path(os.environ.get("POSTHOG_STATE_FILE", ".deploy/posthog.json"))
+    state_path.parent.mkdir(parents=True, exist_ok=True)
+    if state_path.exists():
+        try:
+            saved = json.loads(state_path.read_text(encoding="utf-8"))
+            if saved.get("posthogProjectId") and saved.get("posthogKey"):
+                return saved
+        except json.JSONDecodeError:
+            pass
+
     base = f"{host}/api/organizations/{urllib.parse.quote(organization, safe='')}/projects/"
     headers = {"Authorization": f"Bearer {key}", "Content-Type": "application/json"}
-    name = config.get("name", config["id"])
-    # Reuse an existing project with the same name; otherwise create one.
-    listing = http("GET", base + "?search=" + urllib.parse.quote(name), headers=headers)
+    project_name = os.environ.get("POSTHOG_PROJECT_NAME", "SEO Site Portfolio")
+    listing = http("GET", base + "?search=" + urllib.parse.quote(project_name), headers=headers)
     matches = listing.get("results", [])
-    project = next((p for p in matches if p.get("name") == name), None)
+    project = next((p for p in matches if p.get("name") == project_name), None)
     if project is None:
-        project = http("POST", base, {"name": name}, headers)
-    project_id = project.get("id")
-    public_key = project.get("api_token")
-    if project_id and public_key:
-        config.setdefault("monitoring", {}).update({
-            "posthogProjectId": project_id,
-            "posthogKey": public_key,
-            "posthogHost": os.environ.get("POSTHOG_INGEST_HOST", "https://us.i.posthog.com"),
-        })
+        project = http("POST", base, {"name": project_name}, headers)
+
+    result = {
+        "posthogProjectId": project.get("id"),
+        "posthogKey": project.get("api_token"),
+        "posthogHost": os.environ.get("POSTHOG_INGEST_HOST", "https://us.i.posthog.com"),
+        "posthogProjectName": project_name,
+    }
+    if not result["posthogProjectId"] or not result["posthogKey"]:
+        raise RuntimeError("PostHog project was found/created but no public API key was returned")
+    state_path.write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
+    return result
+
+
+def apply_shared_posthog(config: dict, shared: dict) -> None:
+    if shared:
+        config.setdefault("monitoring", {}).update(shared)
 
 
 def google_access_token() -> str:
@@ -124,12 +143,13 @@ def save(config: dict, path: Path) -> None:
     path.write_text(json.dumps(config, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
-def provision(config: dict, site_dir: Path, site_url: str) -> None:
+def provision(config: dict, site_dir: Path, site_url: str, shared_posthog: dict | None = None) -> dict:
     if config.get("deploy", {}).get("provider") == "cloudflare-pages" and os.environ.get("CLOUDFLARE_API_TOKEN"):
         provision_pages(config)
-    posthog(config)
+    apply_shared_posthog(config, shared_posthog or {})
     verify_and_register(config, site_url)
     save(config, site_dir / "site.json")
+    return config
 
 
 def finalize(config: dict) -> None:
