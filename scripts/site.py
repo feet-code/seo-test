@@ -61,7 +61,7 @@ def deploy(site_id: str, provider: str) -> None:
         print(f"Static artifact ready at {OUT}")
         return
     if provider == "cloudflare-pages":
-        run(["npx", "wrangler", "pages", "deploy", str(OUT), "--project-name", project], env=env)
+        run(["npx", "wrangler", "pages", "deploy", str(OUT), "--project-name", project, "--branch=main"], env=env)
         return
     if provider == "cloudflare-workers":
         deploy_dir = DEPLOY / "cloudflare-workers" / site_id

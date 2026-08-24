@@ -1,7 +1,7 @@
 {
   "id": "example",
   "name": "Example SEO Site",
-  "domain": "example.com",
+  "domain": "",
   "product": "Your product or service",
   "productUrl": "https://example.com",
   "audience": "People who would benefit from the product or service",
@@ -19,5 +19,11 @@
   "deploy": {
     "project": "example-seo-site",
     "provider": "cloudflare-pages"
+  },
+  "monitoring": {
+    "posthogProjectId": "223772",
+    "posthogKey": "phc_Ry7RnM5QX3IfylEnMJIme5TxMBOsasBFeHAMqtb4wyi",
+    "posthogHost": "https://us.i.posthog.com",
+    "posthogProjectName": "Shared PostHog Project"
   }
 }
