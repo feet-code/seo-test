@@ -25,6 +25,10 @@ def site_config(site_id: str) -> tuple[dict, Path]:
 
 
 def run(command: list[str], *, env: dict[str, str] | None = None) -> None:
+    # Windows npm installs expose npx as npx.cmd, which subprocess cannot
+    # resolve when invoked directly as "npx".
+    if os.name == "nt" and command and command[0] == "npx":
+        command = ["npx.cmd", *command[1:]]
     print("$", " ".join(command), flush=True)
     subprocess.run(command, cwd=ROOT, env=env, check=True, encoding="utf-8", errors="replace")
 
