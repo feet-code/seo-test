@@ -49,42 +49,18 @@ def provision_pages(config: dict) -> None:
 
 
 def provision_shared_posthog() -> dict:
-    """Create/reuse exactly one PostHog project for the entire portfolio."""
-    key = os.environ.get("POSTHOG_PERSONAL_API_KEY")
-    organization = os.environ.get("POSTHOG_ORGANIZATION_ID")
-    if not key or not organization:
+    """Use one explicitly configured existing PostHog project for every site."""
+    project_id = os.environ.get("POSTHOG_PROJECT_ID")
+    project_key = os.environ.get("POSTHOG_PROJECT_API_KEY") or os.environ.get("POSTHOG_API_KEY")
+    if not project_id or not project_key:
         return {}
 
-    host = os.environ.get("POSTHOG_HOST", "https://us.posthog.com").rstrip("/")
-    state_path = Path(os.environ.get("POSTHOG_STATE_FILE", ".deploy/posthog.json"))
-    state_path.parent.mkdir(parents=True, exist_ok=True)
-    if state_path.exists():
-        try:
-            saved = json.loads(state_path.read_text(encoding="utf-8"))
-            if saved.get("posthogProjectId") and saved.get("posthogKey"):
-                return saved
-        except json.JSONDecodeError:
-            pass
-
-    base = f"{host}/api/organizations/{urllib.parse.quote(organization, safe='')}/projects/"
-    headers = {"Authorization": f"Bearer {key}", "Content-Type": "application/json"}
-    project_name = os.environ.get("POSTHOG_PROJECT_NAME", "SEO Site Portfolio")
-    listing = http("GET", base + "?search=" + urllib.parse.quote(project_name), headers=headers)
-    matches = listing.get("results", [])
-    project = next((p for p in matches if p.get("name") == project_name), None)
-    if project is None:
-        project = http("POST", base, {"name": project_name}, headers)
-
-    result = {
-        "posthogProjectId": project.get("id"),
-        "posthogKey": project.get("api_token"),
+    return {
+        "posthogProjectId": project_id,
+        "posthogKey": project_key,
         "posthogHost": os.environ.get("POSTHOG_INGEST_HOST", "https://us.i.posthog.com"),
-        "posthogProjectName": project_name,
+        "posthogProjectName": os.environ.get("POSTHOG_PROJECT_NAME", "Shared PostHog Project"),
     }
-    if not result["posthogProjectId"] or not result["posthogKey"]:
-        raise RuntimeError("PostHog project was found/created but no public API key was returned")
-    state_path.write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
-    return result
 
 
 def apply_shared_posthog(config: dict, shared: dict) -> None:
