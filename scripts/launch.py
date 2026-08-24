@@ -1,23 +1,32 @@
 #!/usr/bin/env python3
 from __future__ import annotations
-import argparse,json,os,subprocess,sys,time,urllib.request
+import argparse,json,os,subprocess,sys,time,urllib.request,shutil
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]; SITES=ROOT/"sites"; STATE=ROOT/".deploy"/"state"; LOGS=ROOT/".deploy"/"logs"; CHECKPOINT=STATE/"checkpoint.json"
 def run(args,env=None,*,site_id=None,step=None):
-    label=f"{site_id}/{step}" if site_id and step else (step or "command"); log_path=LOGS/(site_id or "global")/(f"{step}.log" if step else "command.log"); log_path.parent.mkdir(parents=True,exist_ok=True); command=" ".join(str(x) for x in args)
-    print("\n"+"="*72,flush=True); print(f"STEP: {label}",flush=True); print(f"COMMAND: {command}",flush=True); print(f"LOG: {log_path.relative_to(ROOT)}",flush=True); print("="*72,flush=True)
-    started=time.time(); child_env=env or os.environ.copy()
+    args=[str(x) for x in args]
+    if os.name=="nt" and args and args[0].lower()=="npm": args[0]="npm.cmd"
+    label=f"{site_id}/{step}" if site_id and step else (step or "command"); log_path=LOGS/(site_id or "global")/(f"{step}.log" if step else "command.log"); log_path.parent.mkdir(parents=True,exist_ok=True); command=" ".join(args)
+    child_env=(env or os.environ.copy()).copy(); cwd=str(ROOT); path=child_env.get("PATH",""); resolved=shutil.which(args[0],path=path)
+    print("\n"+"="*72,flush=True); print(f"STEP: {label}",flush=True); print(f"COMMAND: {command}",flush=True); print(f"CWD: {cwd}",flush=True); print(f"EXECUTABLE: {resolved or '<not found>'}",flush=True); print(f"PYTHON: {sys.executable}",flush=True); print(f"LOG: {log_path.relative_to(ROOT)}",flush=True); print("="*72,flush=True)
+    started=time.time()
     with log_path.open("w",encoding="utf-8",errors="replace") as log:
-        log.write(f"COMMAND: {command}\nSTARTED: {time.ctime()}\n\n")
-        proc=subprocess.Popen(args,cwd=ROOT,env=child_env,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,text=True,encoding="utf-8",errors="replace",bufsize=1)
+        log.write(f"COMMAND: {command}\nCWD: {cwd}\nEXECUTABLE: {resolved or '<not found>'}\nPYTHON: {sys.executable}\nSTARTED: {time.ctime()}\n\n")
+        try:
+            proc=subprocess.Popen(args,cwd=ROOT,env=child_env,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,text=True,encoding="utf-8",errors="replace",bufsize=1)
+        except FileNotFoundError as exc:
+            detail=f"Could not start process. executable={args[0]!r}; resolved={resolved!r}; cwd={cwd!r}; PATH={path!r}; error={exc!r}"
+            log.write(detail+"\n"); print("\n✗ PROCESS START FAILED",file=sys.stderr,flush=True); print(detail,file=sys.stderr,flush=True); print(f"  Check log: {log_path.relative_to(ROOT)}",file=sys.stderr,flush=True); raise RuntimeError(detail) from exc
+        except OSError as exc:
+            detail=f"Could not start process. executable={args[0]!r}; resolved={resolved!r}; cwd={cwd!r}; error={exc!r}"
+            log.write(detail+"\n"); print("\n✗ PROCESS START FAILED",file=sys.stderr,flush=True); print(detail,file=sys.stderr,flush=True); raise RuntimeError(detail) from exc
         assert proc.stdout is not None
         for line in proc.stdout:
             print(line,end="",flush=True); log.write(line); log.flush()
         code=proc.wait(); duration=round(time.time()-started,2); log.write(f"\nEXIT CODE: {code}\nDURATION: {duration}s\n")
     print(f"\nEXIT CODE: {code} | DURATION: {duration}s",flush=True)
     if code:
-        print(f"\n✗ {label.upper()} FAILED",file=sys.stderr,flush=True); print(f"  Exit code: {code}",file=sys.stderr,flush=True); print(f"  Full log: {log_path.relative_to(ROOT)}",file=sys.stderr,flush=True)
-        raise subprocess.CalledProcessError(code,args)
+        print(f"\n✗ {label.upper()} FAILED",file=sys.stderr,flush=True); print(f"  Exit code: {code}",file=sys.stderr,flush=True); print(f"  Full log: {log_path.relative_to(ROOT)}",file=sys.stderr,flush=True); raise subprocess.CalledProcessError(code,args)
     print(f"✓ {label.upper()} COMPLETED",flush=True); return subprocess.CompletedProcess(args,code)
 def site_url(c): return "https://"+c["domain"].rstrip("/") if c.get("domain") else f"https://{c.get('deploy',{}).get('project',c['id'])}.pages.dev"
 def health(url):
@@ -78,8 +87,7 @@ def main():
             exhausted=marker.exists(); result.update({"ok":False,"error":f"Command failed with exit code {exc.returncode}"})
             step=(json.loads(CHECKPOINT.read_text(encoding="utf-8")).get("step") if CHECKPOINT.exists() else "unknown"); reason="Gemini fallback chain exhausted; resume here when credits/rate limits recover." if exhausted else "Command failed; fix the error and resume."
             save_checkpoint(ids,index,reason,step); (STATE/f"{site_id}.json").write_text(json.dumps(result,indent=2)+"\n",encoding="utf-8")
-            print(f"\n✗ STOPPED at site {index+1}/{len(ids)}: {site_id}\n  Failed step: {step}\n  Checkpoint: .deploy/state/checkpoint.json\n  Fix the failure and run: python scripts/launch.py --resume",file=sys.stderr,flush=True)
-            raise SystemExit(2 if exhausted else 1)
+            print(f"\n✗ STOPPED at site {index+1}/{len(ids)}: {site_id}\n  Failed step: {step}\n  Checkpoint: .deploy/state/checkpoint.json\n  Fix the failure and run: python scripts/launch.py --resume",file=sys.stderr,flush=True); raise SystemExit(2 if exhausted else 1)
         except Exception as exc:
             result.update({"ok":False,"error":repr(exc)}); save_checkpoint(ids,index,"Unexpected error; fix the error and resume.","python"); (STATE/f"{site_id}.json").write_text(json.dumps(result,indent=2)+"\n",encoding="utf-8"); print(f"\n✗ UNEXPECTED FAILURE at site {index+1}/{len(ids)}: {site_id}\n  {exc!r}\n  Checkpoint saved. Run: python scripts/launch.py --resume",file=sys.stderr,flush=True); raise SystemExit(1)
         result["durationSeconds"]=round(time.time()-started,2); (STATE/f"{site_id}.json").write_text(json.dumps(result,indent=2)+"\n",encoding="utf-8"); save_checkpoint(ids,index+1,step="complete"); print(f"[{index+1}/{len(ids)}] {site_id}: OK ({result['durationSeconds']}s)",flush=True); results.append(result)
