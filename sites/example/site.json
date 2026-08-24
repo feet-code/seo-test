@@ -17,6 +17,7 @@
     "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
   },
   "deploy": {
-    "project": "example-seo-site"
+    "project": "example-seo-site",
+    "provider": "cloudflare-pages"
   }
 }
