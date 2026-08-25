@@ -1,58 +1,285 @@
 #!/usr/bin/env python3
-"""Generate and materialize the editable portfolio of SEO micro-SaaS sites."""
+"""Import, validate, and materialize an editable NicheScout portfolio."""
 from __future__ import annotations
-import argparse, json, os, re, urllib.error, urllib.request
+
+import argparse
+import json
+import os
+import re
 from pathlib import Path
-ROOT=Path(__file__).resolve().parents[1]; IDEAS_DIR=ROOT/"ideas"; IDEAS=IDEAS_DIR/"ideas.json"; SITES=ROOT/"sites"
+from typing import Any
 
-def mock_ideas():
-    return [{"id":"example-invoice-followup","name":"Example Invoice Follow-Up","product":"A lightweight tool that reminds small businesses to follow up on overdue invoices.","audience":"freelancers and small service businesses","problem":"Small businesses lose time and cash manually tracking overdue invoices.","valueProposition":"Automates polite payment reminders without requiring a full accounting platform.","topic":"invoice follow-up and overdue invoice collection","monetization":"low-cost monthly subscription","startupCost":"Static frontend plus inexpensive email/API usage; no heavy infrastructure.","seoAngle":"People search for invoice reminder templates, overdue invoice workflows, and payment follow-up tools.","score":75,"domain":None}]
+ROOT = Path(__file__).resolve().parents[1]
+IDEAS_DIR = ROOT / "ideas"
+IDEAS = IDEAS_DIR / "ideas.json"
+SITES = ROOT / "sites"
 
-def call_gemini(prompt):
-    if os.environ.get("MOCK_LLM","").lower() in {"1","true","yes"}: return mock_ideas()
-    key=os.environ.get("GEMINI_API_KEY")
-    if not key: raise SystemExit("GEMINI_API_KEY is required (or use --mock)")
-    models=[m.strip() for m in os.environ.get("GEMINI_MODELS","gemini-2.5-flash-lite,gemini-2.5-flash").split(",") if m.strip()]; last_error=None
-    for model in models:
-        url=f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}"
-        body={"contents":[{"parts":[{"text":prompt}]}],"generationConfig":{"temperature":0.9,"responseMimeType":"application/json"}}
-        req=urllib.request.Request(url,json.dumps(body).encode(),{"Content-Type":"application/json"})
-        try:
-            with urllib.request.urlopen(req,timeout=180) as response: data=json.load(response)
-            raw=re.sub(r"^```json\\s*|\\s*```$","",data["candidates"][0]["content"]["parts"][0]["text"].strip()); ideas=json.loads(raw)
-            if not isinstance(ideas,list) or len(ideas)!=99: raise ValueError("expected exactly 99 ideas")
-            return ideas
-        except urllib.error.HTTPError as exc:
-            last_error=exc
-            if exc.code not in {408,429,500,502,503,504}: break
-        except Exception as exc: last_error=exc
-    raise SystemExit(f"All Gemini idea-generation models failed: {last_error}")
 
-def generate_ideas():
-    return call_gemini("""Generate exactly 99 distinct micro-SaaS product/service ideas for a solo technical founder. Favor painful, narrow business problems, clear buyers, recurring revenue, willingness to pay, low infrastructure/API costs, solo-founder feasibility, and SEO acquisition. Avoid generic AI wrappers, broad project-management apps, saturated consumer apps, regulated medical/financial/legal products, and expensive proprietary data or hardware. Each idea solves one specific problem for one specific customer. Return a ranked JSON array with id, name, product, audience, problem, valueProposition, topic, monetization, startupCost, seoAngle, score (1-100), and domain (null). Do not invent market-size numbers.""")
+class PortfolioError(ValueError):
+    pass
 
-def load_or_generate(mock=False):
-    IDEAS_DIR.mkdir(parents=True,exist_ok=True)
-    if IDEAS.exists(): return json.loads(IDEAS.read_text(encoding="utf-8")).get("ideas",[])
-    ideas=mock_ideas() if mock else generate_ideas(); IDEAS.write_text(json.dumps({"version":1,"ideas":ideas},indent=2,ensure_ascii=False)+"\n",encoding="utf-8"); return ideas
 
-def slug(value): return re.sub(r"[^a-z0-9]+","-",value.lower()).strip("-")
+def slug(value: Any) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", str(value).lower()).strip("-")
 
-def materialize(ideas):
-    count=0
-    for idea in ideas:
-        site_id=slug(str(idea.get("id") or idea.get("name","")))
-        if not site_id: continue
-        site_dir=SITES/site_id; config_path=site_dir/"site.json"
-        if config_path.exists(): continue
-        config={"id":site_id,"name":idea.get("name",site_id),"domain":idea.get("domain"),"product":idea.get("product",""),"productUrl":"","audience":idea.get("audience",""),"topic":idea.get("topic",""),"valueProposition":idea.get("valueProposition",idea.get("problem","")),"articleCount":5,"author":{"name":"John Smith","picture":"/assets/blog/authors/jj.jpeg"},"images":{"coverImage":"/assets/blog/preview/cover.jpg","ogImage":"/assets/blog/dynamic-routing/cover.jpg"},"signup":{"enabled":True,"headline":"Interested? Get notified when this is available.","endpoint":"","email":""},"deploy":{"provider":"cloudflare-pages","project":site_id},"ideaScore":idea.get("score"),"monetization":idea.get("monetization",""),"startupCost":idea.get("startupCost",""),"seoAngle":idea.get("seoAngle","")}
-        site_dir.mkdir(parents=True,exist_ok=True); (site_dir/"_posts").mkdir(exist_ok=True); (site_dir/"_posts"/".gitkeep").write_text("",encoding="utf-8"); config_path.write_text(json.dumps(config,indent=2,ensure_ascii=False)+"\n",encoding="utf-8"); count+=1
-    return count
 
-def main():
-    parser=argparse.ArgumentParser(); parser.add_argument("--regenerate",action="store_true"); parser.add_argument("--mock",action="store_true"); args=parser.parse_args()
-    if args.regenerate:
-        ideas=mock_ideas() if args.mock else generate_ideas(); IDEAS_DIR.mkdir(parents=True,exist_ok=True); IDEAS.write_text(json.dumps({"version":1,"ideas":ideas},indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
-    else: ideas=load_or_generate(args.mock)
-    print(f"Idea portfolio contains {len(ideas)} ideas; created {materialize(ideas)} new site configurations.")
-if __name__=="__main__": main()
+def mock_document() -> dict[str, Any]:
+    products = []
+    for index, name in enumerate(
+        ("Invoice Nudge", "Scope Guard", "Client Intake Check", "Change Log", "Handoff Pack"),
+        1,
+    ):
+        product_id = slug(name)
+        products.append(
+            {
+                "id": product_id,
+                "siteId": "freelancer-operations",
+                "name": name,
+                "product": f"A focused {name.lower()} tool for independent service businesses.",
+                "audience": "freelancers and independent service businesses",
+                "problem": f"Teams manually handle the recurring {name.lower()} workflow.",
+                "valueProposition": f"Makes {name.lower()} repeatable without a large business suite.",
+                "topic": f"{name.lower()} workflows",
+                "monetization": "$19/month",
+                "startupCost": "Static frontend and inexpensive transactional storage.",
+                "seoAngle": f"Templates, checklists, and software searches around {name.lower()}.",
+                "score": 75 - index,
+                "domain": None,
+            }
+        )
+    return {
+        "version": 2,
+        "sites": [
+            {
+                "id": "freelancer-operations",
+                "name": "Freelancer Operations Tools",
+                "audience": "freelancers and independent service businesses",
+                "topic": "client operations for independent service businesses",
+                "productIds": [product["id"] for product in products],
+                "domain": None,
+            }
+        ],
+        "ideas": products,
+    }
+
+
+def load_document(path: Path = IDEAS) -> dict[str, Any]:
+    if not path.exists():
+        raise PortfolioError(
+            f"Portfolio not found: {path}. Import NicheScout output with --portfolio PATH."
+        )
+    try:
+        document = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        raise PortfolioError(f"Invalid JSON in {path}: {exc}") from exc
+    if not isinstance(document, dict):
+        raise PortfolioError("Portfolio root must be a JSON object")
+    validate_document(document)
+    return document
+
+
+def validate_document(document: dict[str, Any]) -> None:
+    version = int(document.get("version", 1))
+    ideas = document.get("ideas")
+    if not isinstance(ideas, list) or not ideas:
+        raise PortfolioError("ideas must be a non-empty array")
+
+    idea_ids: set[str] = set()
+    for index, idea in enumerate(ideas):
+        if not isinstance(idea, dict):
+            raise PortfolioError(f"ideas[{index}] must be an object")
+        idea_id = slug(idea.get("id") or idea.get("name"))
+        if not idea_id:
+            raise PortfolioError(f"ideas[{index}] needs a usable id or name")
+        if len(idea_id) > 80:
+            raise PortfolioError(f"Idea id is too long for portable URLs/files: {idea_id}")
+        if idea_id in idea_ids:
+            raise PortfolioError(f"Duplicate idea id: {idea_id}")
+        idea_ids.add(idea_id)
+        for field in ("name", "product", "audience", "problem", "topic"):
+            if not str(idea.get(field, "")).strip():
+                raise PortfolioError(f"Idea {idea_id!r} is missing {field}")
+
+    if version < 2:
+        return
+    sites = document.get("sites")
+    if not isinstance(sites, list) or not sites:
+        raise PortfolioError("Version-2 portfolio requires a non-empty sites array")
+    site_ids: set[str] = set()
+    referenced_products: set[str] = set()
+    idea_by_id = {slug(idea.get("id") or idea.get("name")): idea for idea in ideas}
+    for index, site in enumerate(sites):
+        if not isinstance(site, dict):
+            raise PortfolioError(f"sites[{index}] must be an object")
+        site_id = slug(site.get("id") or site.get("name"))
+        if not site_id or site_id in site_ids:
+            raise PortfolioError(f"Invalid or duplicate site id: {site_id!r}")
+        if len(site_id) > 58:
+            raise PortfolioError(f"Site id exceeds the portable/deployment limit (58): {site_id}")
+        site_ids.add(site_id)
+        product_ids = [slug(item) for item in site.get("productIds", [])]
+        if not product_ids:
+            raise PortfolioError(f"Site {site_id!r} has no productIds")
+        if len(product_ids) != len(set(product_ids)):
+            raise PortfolioError(f"Site {site_id!r} repeats a product id")
+        missing = set(product_ids) - idea_ids
+        if missing:
+            raise PortfolioError(
+                f"Site {site_id!r} references unknown product(s): {', '.join(sorted(missing))}"
+            )
+        overlap = referenced_products & set(product_ids)
+        if overlap:
+            raise PortfolioError(
+                f"Products assigned to more than one site: {', '.join(sorted(overlap))}"
+            )
+        for product_id in product_ids:
+            declared_site = slug(idea_by_id[product_id].get("siteId", ""))
+            if declared_site and declared_site != site_id:
+                raise PortfolioError(
+                    f"Idea {product_id!r} says siteId={declared_site!r}, expected {site_id!r}"
+                )
+        referenced_products.update(product_ids)
+    orphaned = idea_ids - referenced_products
+    if orphaned:
+        raise PortfolioError(
+            "Every version-2 idea must appear in one site.productIds list; orphaned: "
+            + ", ".join(sorted(orphaned))
+        )
+
+
+def normalized_sites(document: dict[str, Any]) -> list[tuple[dict[str, Any], list[dict[str, Any]]]]:
+    ideas = document["ideas"]
+    if int(document.get("version", 1)) < 2:
+        return [
+            (
+                {
+                    "id": slug(idea.get("id") or idea.get("name")),
+                    "name": idea.get("name"),
+                    "audience": idea.get("audience"),
+                    "topic": idea.get("topic"),
+                    "domain": idea.get("domain"),
+                },
+                [idea],
+            )
+            for idea in ideas
+        ]
+    idea_by_id = {slug(idea.get("id") or idea.get("name")): idea for idea in ideas}
+    return [
+        (site, [idea_by_id[slug(product_id)] for product_id in site["productIds"]])
+        for site in document["sites"]
+    ]
+
+
+def materialize(document: dict[str, Any]) -> int:
+    created = 0
+    for site, ideas in normalized_sites(document):
+        site_id = slug(site.get("id") or site.get("name"))
+        site_dir = SITES / site_id
+        config_path = site_dir / "site.json"
+        if config_path.exists():
+            continue
+        products = [_product_config(idea) for idea in ideas]
+        primary = products[0]
+        config = {
+            "id": site_id,
+            "name": site.get("name") or f"{str(site.get('audience') or primary['audience']).title()} Tools",
+            "domain": site.get("domain"),
+            "audience": site.get("audience") or primary["audience"],
+            "topic": site.get("topic") or primary["topic"],
+            "products": products,
+            "articlesPerProduct": 10 if len(products) > 1 else 5,
+            # Backward-compatible primary-product fields for older scripts/config readers.
+            "product": primary["product"],
+            "productUrl": primary.get("productUrl", ""),
+            "valueProposition": primary["valueProposition"],
+            "articleCount": 10 if len(products) > 1 else 5,
+            "author": {"name": "John Smith", "picture": "/assets/blog/authors/jj.jpeg"},
+            "images": {
+                "coverImage": "/assets/blog/preview/cover.jpg",
+                "ogImage": "/assets/blog/dynamic-routing/cover.jpg",
+            },
+            "signup": {
+                "enabled": True,
+                "headline": "Interested? Get notified when this is available.",
+                "endpoint": "",
+                "email": "",
+            },
+            "deploy": {"provider": "cloudflare-pages", "project": site_id},
+            "portfolioVersion": int(document.get("version", 1)),
+        }
+        site_dir.mkdir(parents=True, exist_ok=True)
+        (site_dir / "_posts").mkdir(exist_ok=True)
+        (site_dir / "_posts" / ".gitkeep").touch(exist_ok=True)
+        _atomic_json(config_path, config)
+        created += 1
+    return created
+
+
+def _product_config(idea: dict[str, Any]) -> dict[str, Any]:
+    return {
+        "id": slug(idea.get("id") or idea.get("name")),
+        "name": idea.get("name"),
+        "product": idea.get("product"),
+        "productUrl": idea.get("productUrl", ""),
+        "audience": idea.get("audience"),
+        "problem": idea.get("problem"),
+        "valueProposition": idea.get("valueProposition") or idea.get("problem"),
+        "topic": idea.get("topic"),
+        "monetization": idea.get("monetization", ""),
+        "startupCost": idea.get("startupCost", ""),
+        "seoAngle": idea.get("seoAngle", ""),
+        "score": idea.get("score"),
+    }
+
+
+def import_portfolio(source: Path) -> dict[str, Any]:
+    document = load_document(source)
+    IDEAS_DIR.mkdir(parents=True, exist_ok=True)
+    _atomic_json(IDEAS, document)
+    return document
+
+
+def _atomic_json(path: Path, document: dict[str, Any]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_name(path.name + f".tmp-{os.getpid()}")
+    temporary.write_text(
+        json.dumps(document, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+    )
+    os.replace(temporary, path)
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(
+        description="Import NicheScout ideas.json and materialize grouped SEO sites"
+    )
+    parser.add_argument("--portfolio", type=Path, help="NicheScout ideas.json to import")
+    parser.add_argument("--mock", action="store_true", help="Use an isolated five-product fixture")
+    parser.add_argument("--validate-only", action="store_true")
+    args = parser.parse_args()
+
+    if args.portfolio and args.mock:
+        raise SystemExit("Choose either --portfolio or --mock")
+    try:
+        if args.mock:
+            document = mock_document()
+            validate_document(document)
+        elif args.portfolio:
+            document = import_portfolio(args.portfolio)
+        else:
+            document = load_document()
+    except PortfolioError as exc:
+        raise SystemExit(f"Portfolio validation failed: {exc}") from exc
+
+    site_count = len(normalized_sites(document))
+    if args.validate_only:
+        print(f"Valid portfolio: {len(document['ideas'])} products across {site_count} sites.")
+        return
+    created = materialize(document)
+    print(
+        f"Portfolio contains {len(document['ideas'])} products across {site_count} sites; "
+        f"created {created} new site configurations."
+    )
+
+
+if __name__ == "__main__":
+    main()

@@ -71,12 +71,12 @@ def main():
             config=json.loads((site_dir/"site.json").read_text(encoding="utf-8")); config.setdefault("deploy",{})["provider"]=args.provider; target=site_url(config)
             if not args.mock:
                 from monitoring import provision; config=provision(config,site_dir,target,shared_posthog)
-            posts_exist=bool(list((site_dir/"_posts").glob("*.md")))
-            if not skip_generation and (force_generation or not posts_exist):
+            if not skip_generation:
                 save_checkpoint(ids,index,step="generate"); cmd=[sys.executable,"scripts/generate_posts.py",site_id];
                 if args.mock:cmd.append("--mock")
+                if force_generation:cmd.append("--force")
                 run(cmd,env=env,site_id=site_id,step="generate")
-            env2=env.copy(); mon=config.get("monitoring",{}); signup=config.get("signup",{}); env2.update({"SITE_URL":target,"SEO_POSTS_DIR":str((site_dir/"_posts").resolve()),"GOOGLE_SITE_VERIFICATION":mon.get("googleVerificationToken","") if not args.mock else "","NEXT_PUBLIC_POSTHOG_KEY":mon.get("posthogKey","") if not args.mock else "","NEXT_PUBLIC_POSTHOG_HOST":mon.get("posthogHost","https://us.i.posthog.com"),"SIGNUP_ENDPOINT":signup.get("endpoint",""),"SIGNUP_EMAIL":signup.get("email",""),"SIGNUP_HEADLINE":signup.get("headline","Interested? Get notified when this is available."),"SITE_PRODUCT_NAME":config.get("product",config.get("name",site_id)),"SITE_DESCRIPTION":config.get("valueProposition",""),"SITE_TOPIC":config.get("topic","")})
+            env2=env.copy(); mon=config.get("monitoring",{}); signup=config.get("signup",{}); products=config.get("products") or [{"id":config.get("id",site_id),"name":config.get("name",site_id),"product":config.get("product",""),"audience":config.get("audience",""),"problem":config.get("valueProposition",""),"valueProposition":config.get("valueProposition",""),"topic":config.get("topic","")}]; env2.update({"SITE_URL":target,"SEO_POSTS_DIR":str((site_dir/"_posts").resolve()),"GOOGLE_SITE_VERIFICATION":mon.get("googleVerificationToken","") if not args.mock else "","NEXT_PUBLIC_POSTHOG_KEY":mon.get("posthogKey","") if not args.mock else "","NEXT_PUBLIC_POSTHOG_HOST":mon.get("posthogHost","https://us.i.posthog.com"),"SIGNUP_ENDPOINT":signup.get("endpoint",""),"SIGNUP_EMAIL":signup.get("email",""),"SIGNUP_HEADLINE":signup.get("headline","Interested? Get notified when this is available."),"SITE_PRODUCT_NAME":config.get("name",site_id),"SITE_NAME":config.get("name",site_id),"SITE_AUDIENCE":config.get("audience",""),"SITE_DESCRIPTION":config.get("valueProposition",config.get("topic","")),"SITE_TOPIC":config.get("topic",""),"SITE_PRODUCTS_JSON":json.dumps(products,ensure_ascii=False)})
             save_checkpoint(ids,index,step="build"); run(["npm","run","build"],env=env2,site_id=site_id,step="build")
             if args.provider!="static":
                 save_checkpoint(ids,index,step="deploy"); run([sys.executable,"scripts/site.py","deploy",site_id,args.provider],env=env2,site_id=site_id,step="deploy")

@@ -16,7 +16,10 @@ export function PostHog() {
     script.async = true;
     script.onload = () => {
       const ph = (window as any).posthog;
-      if (ph?.init) ph.init(key, { api_host: host, capture_pageview: true, persistence: "localStorage" });
+      if (ph?.init) {
+        ph.init(key, { api_host: host, capture_pageview: true, persistence: "localStorage" });
+        window.dispatchEvent(new Event("posthog-ready"));
+      }
     };
     document.head.appendChild(script);
   }, [key, host]);

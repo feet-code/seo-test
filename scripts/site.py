@@ -38,9 +38,34 @@ def generate(site_id: str) -> None:
 
 
 def build(site_id: str, env_overrides: dict[str, str] | None = None) -> None:
-    _, site_dir = site_config(site_id)
+    config, site_dir = site_config(site_id)
     env = os.environ.copy()
-    env["SEO_POSTS_DIR"] = str((site_dir / "_posts").resolve())
+    products = config.get("products") or [{
+        "id": config.get("id", site_id),
+        "name": config.get("name", site_id),
+        "product": config.get("product", ""),
+        "audience": config.get("audience", ""),
+        "problem": config.get("valueProposition", ""),
+        "valueProposition": config.get("valueProposition", ""),
+        "topic": config.get("topic", ""),
+    }]
+    monitoring = config.get("monitoring", {})
+    signup = config.get("signup", {})
+    env.update({
+        "SEO_POSTS_DIR": str((site_dir / "_posts").resolve()),
+        "SITE_NAME": config.get("name", site_id),
+        "SITE_PRODUCT_NAME": config.get("name", site_id),
+        "SITE_AUDIENCE": config.get("audience", ""),
+        "SITE_TOPIC": config.get("topic", ""),
+        "SITE_DESCRIPTION": config.get("valueProposition", config.get("topic", "")),
+        "SITE_PRODUCTS_JSON": json.dumps(products, ensure_ascii=False),
+        "SIGNUP_ENDPOINT": signup.get("endpoint", ""),
+        "SIGNUP_EMAIL": signup.get("email", ""),
+        "SIGNUP_HEADLINE": signup.get("headline", "Interested? Get notified when this is available."),
+        "GOOGLE_SITE_VERIFICATION": monitoring.get("googleVerificationToken", ""),
+        "NEXT_PUBLIC_POSTHOG_KEY": monitoring.get("posthogKey", ""),
+        "NEXT_PUBLIC_POSTHOG_HOST": monitoring.get("posthogHost", "https://us.i.posthog.com"),
+    })
     if env_overrides:
         env.update(env_overrides)
     if OUT.exists():
