@@ -1,0 +1,63 @@
+{
+  "id": "catering-event-ops",
+  "name": "Catering Event Operations",
+  "domain": null,
+  "audience": "independent caterers and small event-food teams",
+  "topic": "dietary confirmation and event-change control for caterers",
+  "products": [
+    {
+      "id": "dietary-confirmation-register",
+      "name": "Dietary Confirmation Register",
+      "product": "A focused catering dietary and allergen confirmation workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent caterers and small event-food teams",
+      "problem": "Dietary requests arrive through proposals, guest lists, planners, and last-minute emails, while kitchens need one approved interpretation tied to menu and service decisions.",
+      "valueProposition": "Turns catering dietary and allergen confirmation into a visible operating queue so every declared dietary or allergen requirement is clarified, approved into the event plan, and communicated to production and service owners.",
+      "topic": "catering dietary and allergen confirmation",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets catering allergy tracker, dietary requirements event, allergen catering checklist, and special meal register searches.",
+      "score": 89
+    },
+    {
+      "id": "event-change-cutoff-log",
+      "name": "Event Change Cutoff Log",
+      "product": "A focused catering event change control workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent caterers and small event-food teams",
+      "problem": "Guest count, menu, timing, rentals, venue instructions, and staffing changes continue after proposals are signed, but affected teams may work from different versions.",
+      "valueProposition": "Turns catering event change control into a visible operating queue so every accepted event change has authority, cost and production impact, an effective version, and acknowledgment from affected owners.",
+      "topic": "catering event change control",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets catering change order, banquet event order changes, event change log, and catering production cutoff searches.",
+      "score": 86
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused catering dietary and allergen confirmation workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns catering dietary and allergen confirmation into a visible operating queue so every declared dietary or allergen requirement is clarified, approved into the event plan, and communicated to production and service owners.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith",
+    "picture": "/assets/blog/authors/jj.jpeg"
+  },
+  "images": {
+    "coverImage": "/assets/blog/preview/cover.jpg",
+    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-pages",
+    "project": "catering-event-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

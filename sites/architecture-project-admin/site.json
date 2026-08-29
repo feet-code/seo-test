@@ -1,0 +1,63 @@
+{
+  "id": "architecture-project-admin",
+  "name": "Architecture Project Administration",
+  "domain": null,
+  "audience": "small architecture firms and design-project administrators",
+  "topic": "consultant deliverables and construction-administration decisions for architects",
+  "products": [
+    {
+      "id": "consultant-deliverable-board",
+      "name": "Consultant Deliverable Board",
+      "product": "A focused architecture consultant deliverable tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "small architecture firms and design-project administrators",
+      "problem": "Structural, MEP, civil, landscape, and specialist deliverables arrive through separate transmittals, making current version, review status, and drawing dependencies difficult to see.",
+      "valueProposition": "Turns architecture consultant deliverable tracking into a visible operating queue so every consultant deliverable is received to the agreed milestone, reviewed against dependencies, and incorporated into the controlled project set.",
+      "topic": "architecture consultant deliverable tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets architect consultant deliverables, design consultant tracker, architecture coordination log, and consultant submittal schedule searches.",
+      "score": 86
+    },
+    {
+      "id": "rfi-decision-register",
+      "name": "RFI Decision Register",
+      "product": "A focused architectural RFI decision tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "small architecture firms and design-project administrators",
+      "problem": "RFI questions, responses, sketches, cost impacts, and drawing updates are linked imperfectly, so a answered item can still leave unresolved design work.",
+      "valueProposition": "Turns architectural RFI decision tracking into a visible operating queue so every RFI response identifies the authoritative decision, impact, and required document updates before operational closure.",
+      "topic": "architectural RFI decision tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets RFI tracking for architects, RFI decision log, construction administration RFI, and architect RFI workflow searches.",
+      "score": 88
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused architecture consultant deliverable tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns architecture consultant deliverable tracking into a visible operating queue so every consultant deliverable is received to the agreed milestone, reviewed against dependencies, and incorporated into the controlled project set.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith",
+    "picture": "/assets/blog/authors/jj.jpeg"
+  },
+  "images": {
+    "coverImage": "/assets/blog/preview/cover.jpg",
+    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-pages",
+    "project": "architecture-project-admin"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

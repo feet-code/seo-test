@@ -1,0 +1,63 @@
+{
+  "id": "equipment-rental-ops",
+  "name": "Equipment Rental Operations",
+  "domain": null,
+  "audience": "independent equipment, tool, and event-rental businesses",
+  "topic": "return condition and overdue follow-up for rental operations",
+  "products": [
+    {
+      "id": "return-damage-evidence",
+      "name": "Return Damage Evidence",
+      "product": "A focused equipment rental return damage documentation workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent equipment, tool, and event-rental businesses",
+      "problem": "Return condition, checkout condition, photos, meter readings, customer acknowledgment, repair cost, and availability decisions often live in separate yard and office workflows.",
+      "valueProposition": "Turns equipment rental return damage documentation into a visible operating queue so every returned asset is inspected against checkout evidence and any damage decision is documented before billing or release.",
+      "topic": "equipment rental return damage documentation",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets rental equipment damage inspection, rental return checklist, equipment damage documentation, and rental asset condition report searches.",
+      "score": 87
+    },
+    {
+      "id": "overdue-rental-followup",
+      "name": "Overdue Rental Follow-Up",
+      "product": "A focused overdue equipment rental follow-up workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent equipment, tool, and event-rental businesses",
+      "problem": "When an asset is not returned, contract status, customer contact, extension approval, future reservation impact, and billing changes are coordinated manually.",
+      "valueProposition": "Turns overdue equipment rental follow-up into a visible operating queue so every overdue contract has confirmed asset status, an authorized return or extension plan, and protected downstream reservations.",
+      "topic": "overdue equipment rental follow-up",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets overdue rental equipment, rental return reminder, equipment rental extension, and rental asset recovery workflow searches.",
+      "score": 84
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused equipment rental return damage documentation workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns equipment rental return damage documentation into a visible operating queue so every returned asset is inspected against checkout evidence and any damage decision is documented before billing or release.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith",
+    "picture": "/assets/blog/authors/jj.jpeg"
+  },
+  "images": {
+    "coverImage": "/assets/blog/preview/cover.jpg",
+    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-pages",
+    "project": "equipment-rental-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

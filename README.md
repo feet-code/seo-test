@@ -27,9 +27,9 @@ The first command writes `ideas/ideas.json` and materializes its grouped site co
 
 Before deploying, inspect and freely edit the file. Every idea has one authoritative `"siteId"` naming the website/audience group in `sites[]`. To add a product to an existing website, copy an idea object, give it a unique `id`, edit its research fields, and set `siteId`; there is no duplicate `productIds` list to maintain. To create a new website, first add its metadata to `sites[]`, then point one or more ideas at its `id`. `python scripts/ideas.py --plan` validates the file and previews site-config changes without writing them; `launch.py` applies the sync automatically.
 
-### Included first editorial batch
+### Included editorial batches
 
-This branch already includes a reviewed `ideas/ideas.json` and 220 committed probes for 22 products across 10 audience websites. Group sizes range from one to three products according to audience fit. The old `example` verification fixture is retired, so it is excluded from bulk launches.
+This branch already includes a reviewed `ideas/ideas.json` and 640 committed probes for 64 products across 30 audience websites. Batch 001 contributed 10 sites, 22 products, and 220 probes; batch 002 adds 20 sites, 42 products, and 420 probes. Group sizes range from one to three products according to audience fit. The old `example` verification fixture is retired, so it is excluded from bulk launches.
 
 Deploy the included batch directly:
 

@@ -1,0 +1,63 @@
+{
+  "id": "salon-spa-ops",
+  "name": "Salon and Spa Operations",
+  "domain": null,
+  "audience": "independent salons, spas, and small wellness studios",
+  "topic": "rebooking and service-room operations for salons and spas",
+  "products": [
+    {
+      "id": "rebooking-recovery-list",
+      "name": "Rebooking Recovery List",
+      "product": "A focused salon and spa rebooking follow-up workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent salons, spas, and small wellness studios",
+      "problem": "Clients who leave without a next appointment disappear into broad marketing lists even when the provider knows the right return window and service context.",
+      "valueProposition": "Turns salon and spa rebooking follow-up into a visible operating queue so every eligible client receives a timely, contextual rebooking option or a documented no-contact reason.",
+      "topic": "salon and spa rebooking follow-up",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets salon rebooking system, spa rebooking follow up, client rebooking tracker, and salon retention workflow searches.",
+      "score": 85
+    },
+    {
+      "id": "service-room-par-tracker",
+      "name": "Service Room Par Tracker",
+      "product": "A focused salon and spa room inventory par tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent salons, spas, and small wellness studios",
+      "problem": "Back-bar and treatment-room supplies run out between formal inventory counts because usage, room transfers, and replenishment ownership are not visible at the service level.",
+      "valueProposition": "Turns salon and spa room inventory par tracking into a visible operating queue so each service room is replenished to an agreed par before its next booked service without hiding inventory variance.",
+      "topic": "salon and spa room inventory par tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets salon back bar inventory, spa room stock checklist, treatment room par levels, and salon supply tracker searches.",
+      "score": 76
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused salon and spa rebooking follow-up workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns salon and spa rebooking follow-up into a visible operating queue so every eligible client receives a timely, contextual rebooking option or a documented no-contact reason.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith",
+    "picture": "/assets/blog/authors/jj.jpeg"
+  },
+  "images": {
+    "coverImage": "/assets/blog/preview/cover.jpg",
+    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-pages",
+    "project": "salon-spa-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

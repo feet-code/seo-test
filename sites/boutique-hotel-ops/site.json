@@ -1,0 +1,77 @@
+{
+  "id": "boutique-hotel-ops",
+  "name": "Boutique Hotel Operations",
+  "domain": null,
+  "audience": "independent boutique hotels and small hospitality teams",
+  "topic": "guest issues, lost items, and group-arrival readiness for boutique hotels",
+  "products": [
+    {
+      "id": "guest-maintenance-handoff",
+      "name": "Guest Maintenance Handoff",
+      "product": "A focused hotel guest maintenance handoff workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent boutique hotels and small hospitality teams",
+      "problem": "In-stay maintenance reports pass among front desk, housekeeping, engineering, and vendors while room access, guest promises, compensations, and verification are tracked separately.",
+      "valueProposition": "Turns hotel guest maintenance handoff into a visible operating queue so every guest-impacting maintenance issue has a coordinated access plan, verified repair, and completed guest follow-up.",
+      "topic": "hotel guest maintenance handoff",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets hotel guest maintenance, hotel maintenance request workflow, room repair tracking, and hotel engineering handoff searches.",
+      "score": 87
+    },
+    {
+      "id": "lost-found-claim-desk",
+      "name": "Lost and Found Claim Desk",
+      "product": "A focused hotel lost and found claim tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent boutique hotels and small hospitality teams",
+      "problem": "Found-item logs, guest descriptions, storage locations, identity checks, shipping choices, and release evidence are difficult to reconcile across shifts.",
+      "valueProposition": "Turns hotel lost and found claim tracking into a visible operating queue so every found item and guest claim is matched, released, retained, or disposed under policy with a complete custody trail.",
+      "topic": "hotel lost and found claim tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets hotel lost and found software, lost property claim tracker, hotel found item log, and lost and found chain of custody searches.",
+      "score": 86
+    },
+    {
+      "id": "group-rooming-list-chaser",
+      "name": "Group Rooming List Chaser",
+      "product": "A focused hotel group rooming list tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent boutique hotels and small hospitality teams",
+      "problem": "Names, room types, arrival details, accessibility notes, billing instructions, and changes arrive from group contacts in repeated spreadsheet versions near cutoff.",
+      "valueProposition": "Turns hotel group rooming list tracking into a visible operating queue so every contracted group block reaches a validated rooming list and reconciled reservation set by the operational cutoff.",
+      "topic": "hotel group rooming list tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets hotel rooming list tracker, group block rooming list, rooming list cutoff, and hotel group reservation workflow searches.",
+      "score": 85
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused hotel guest maintenance handoff workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns hotel guest maintenance handoff into a visible operating queue so every guest-impacting maintenance issue has a coordinated access plan, verified repair, and completed guest follow-up.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith",
+    "picture": "/assets/blog/authors/jj.jpeg"
+  },
+  "images": {
+    "coverImage": "/assets/blog/preview/cover.jpg",
+    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-pages",
+    "project": "boutique-hotel-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

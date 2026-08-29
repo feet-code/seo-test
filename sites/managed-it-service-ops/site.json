@@ -1,0 +1,77 @@
+{
+  "id": "managed-it-service-ops",
+  "name": "Managed IT Service Operations",
+  "domain": null,
+  "audience": "small managed service providers and multi-client IT support teams",
+  "topic": "access, recurring evidence, and escalation workflows for MSPs",
+  "products": [
+    {
+      "id": "client-access-request-gate",
+      "name": "Client Access Request Gate",
+      "product": "A focused MSP client access request approval workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "small managed service providers and multi-client IT support teams",
+      "problem": "Access changes arrive through tickets, email, and chat without consistent requester validation, client approval, scope, or proof that the change was completed and reviewed.",
+      "valueProposition": "Turns MSP client access request approval into a visible operating queue so every client access change is authorized by the right person, implemented to the approved scope, and evidenced in the client record.",
+      "topic": "MSP client access request approval",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets MSP access request workflow, client user access approval, IT access request template, and managed service provider onboarding access searches.",
+      "score": 89
+    },
+    {
+      "id": "maintenance-evidence-runbook",
+      "name": "Maintenance Evidence Runbook",
+      "product": "A focused MSP recurring maintenance evidence tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "small managed service providers and multi-client IT support teams",
+      "problem": "Recurring maintenance can show as completed in a task list even when scripts partially fail, devices are excluded, or client-facing evidence is never attached.",
+      "valueProposition": "Turns MSP recurring maintenance evidence tracking into a visible operating queue so every scheduled maintenance control has scoped execution evidence, reviewed exceptions, and a client-record outcome.",
+      "topic": "MSP recurring maintenance evidence tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets MSP maintenance checklist, IT maintenance evidence, managed services runbook, and recurring IT task audit searches.",
+      "score": 86
+    },
+    {
+      "id": "ticket-escalation-handoff",
+      "name": "Ticket Escalation Handoff",
+      "product": "A focused MSP ticket escalation handoff workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "small managed service providers and multi-client IT support teams",
+      "problem": "Escalated tickets lose diagnostic context and client promises when the next technician must reconstruct work from long comments, private chat, and monitoring alerts.",
+      "valueProposition": "Turns MSP ticket escalation handoff into a visible operating queue so every escalation transfers a reproducible problem statement, completed diagnostics, client promise, and explicit acceptance by the next owner.",
+      "topic": "MSP ticket escalation handoff",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets MSP ticket escalation, IT support handoff template, help desk escalation process, and ticket escalation checklist searches.",
+      "score": 87
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused MSP client access request approval workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns MSP client access request approval into a visible operating queue so every client access change is authorized by the right person, implemented to the approved scope, and evidenced in the client record.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith",
+    "picture": "/assets/blog/authors/jj.jpeg"
+  },
+  "images": {
+    "coverImage": "/assets/blog/preview/cover.jpg",
+    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-pages",
+    "project": "managed-it-service-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

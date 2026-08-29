@@ -56,8 +56,11 @@ class EditorialProbeTests(unittest.TestCase):
                     bodies.add(article["content"])
                     article_count += 1
 
-        self.assertEqual(len(products_by_site), 10)
-        self.assertEqual(article_count, 220)
+        self.assertEqual(len(products_by_site), len(document["sites"]))
+        self.assertEqual(
+            article_count,
+            len(document["ideas"]) * document["articlesPerProduct"],
+        )
 
     def test_missing_probe_context_is_rejected(self) -> None:
         generator = load_editorial_probes()
