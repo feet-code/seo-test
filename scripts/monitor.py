@@ -35,6 +35,8 @@ def main() -> None:
         if not path.exists():
             continue
         config = json.loads(path.read_text(encoding="utf-8"))
+        if str(config.get("status", "active")).lower() in {"retired", "destroyed"}:
+            continue
         target = url(config)
         result = {"site": site_dir.name, "url": target, **check(target)}
         results.append(result)

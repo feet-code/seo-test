@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import re
@@ -22,6 +23,7 @@ DEFAULT_MODELS = [
     "gemini-2.5-flash-lite",
     "gemini-2.5-flash",
 ]
+GENERATION_VERSION = 2
 
 
 class GeminiExhausted(Exception):
@@ -63,6 +65,33 @@ def site_products(site: dict[str, Any]) -> list[dict[str, Any]]:
 def article_target(site: dict[str, Any]) -> int:
     value = site.get("articlesPerProduct", site.get("articleCount", 5))
     return max(1, min(int(value), 12))
+
+
+def generation_fingerprint(
+    site: dict[str, Any], product: dict[str, Any], count: int
+) -> str:
+    """Fingerprint only inputs that should invalidate this product's probes."""
+    payload = {
+        "version": GENERATION_VERSION,
+        "siteAudience": site.get("audience", ""),
+        "count": count,
+        "product": {
+            key: product.get(key, "")
+            for key in (
+                "id",
+                "name",
+                "product",
+                "productUrl",
+                "audience",
+                "problem",
+                "valueProposition",
+                "topic",
+                "seoAngle",
+            )
+        },
+    }
+    encoded = json.dumps(payload, sort_keys=True, ensure_ascii=False).encode("utf-8")
+    return hashlib.sha256(encoded).hexdigest()[:20]
 
 
 def example_format() -> str:
@@ -247,11 +276,25 @@ def existing_product_posts(directory: Path, product_id: str) -> list[Path]:
     return result
 
 
+def attributed_product_ids(directory: Path) -> set[str]:
+    result: set[str] = set()
+    pattern = re.compile(r'^productId:\s*["\']?([^"\'\n]+)', re.MULTILINE)
+    for path in (directory / "_posts").glob("*.md"):
+        try:
+            match = pattern.search(path.read_text(encoding="utf-8")[:1800])
+        except OSError:
+            continue
+        if match:
+            result.add(match.group(1).strip())
+    return result
+
+
 def write_product_posts(
     site: dict[str, Any],
     directory: Path,
     product: dict[str, Any],
     articles: list[dict[str, Any]],
+    fingerprint: str,
 ) -> list[Path]:
     posts = directory / "_posts"
     posts.mkdir(parents=True, exist_ok=True)
@@ -283,6 +326,7 @@ def write_product_posts(
                 f"excerpt: {json.dumps(excerpt, ensure_ascii=False)}",
                 f"productId: {json.dumps(product_id, ensure_ascii=False)}",
                 f"productName: {json.dumps(product.get('name') or product_id, ensure_ascii=False)}",
+                f"generationFingerprint: {json.dumps(fingerprint)}",
                 f"coverImage: {json.dumps(images.get('coverImage', '/assets/blog/preview/cover.jpg'))}",
                 f"date: {json.dumps(now.isoformat().replace('+00:00', 'Z'))}",
                 "author:",
@@ -302,29 +346,75 @@ def write_product_posts(
     return written
 
 
-def generate_site(site_id: str, *, mock: bool, force: bool) -> int:
+def generate_site(
+    site_id: str,
+    *,
+    mock: bool,
+    force: bool,
+    product_ids: list[str] | None = None,
+) -> int:
     site, directory = load_site(site_id)
-    products = site_products(site)
+    all_products = site_products(site)
+    requested = set(product_ids or [])
+    known = {
+        safe_slug(str(product.get("id") or product.get("name"))): product
+        for product in all_products
+    }
+    missing = requested - known.keys()
+    if missing:
+        raise SystemExit(
+            f"Unknown product(s) for {site_id}: {', '.join(sorted(missing))}"
+        )
+    products = [product for product_id, product in known.items() if not requested or product_id in requested]
     count = article_target(site)
     checkpoint = STATE / f"generate-{site_id}.json"
     generated = 0
     STATE.mkdir(parents=True, exist_ok=True)
+
+    fingerprints: dict[str, str] = {}
+    if checkpoint.exists():
+        try:
+            fingerprints = dict(
+                json.loads(checkpoint.read_text(encoding="utf-8")).get("fingerprints", {})
+            )
+        except (OSError, ValueError, TypeError):
+            fingerprints = {}
+
+    if not requested:
+        current_ids = set(known)
+        for stale_id in sorted(attributed_product_ids(directory) - current_ids):
+            stale_posts = existing_product_posts(directory, stale_id)
+            for path in stale_posts:
+                path.unlink()
+            fingerprints.pop(stale_id, None)
+            print(f"Removed {len(stale_posts)} posts for removed product {stale_id}", flush=True)
+
     for index, product in enumerate(products):
         product_id = safe_slug(str(product.get("id") or product.get("name")))
+        fingerprint = generation_fingerprint(site, product, count)
         existing = existing_product_posts(directory, product_id)
-        if not force and len(existing) >= count:
+        stored_fingerprint = fingerprints.get(product_id)
+        if not force and len(existing) >= count and (
+            stored_fingerprint == fingerprint or stored_fingerprint is None
+        ):
+            # Adopt legacy count-only checkpoints once, without an expensive surprise regeneration.
+            fingerprints[product_id] = fingerprint
             print(
                 f"[{index + 1}/{len(products)}] {product_id}: already has {len(existing)} posts; skipped",
                 flush=True,
             )
-            _generation_checkpoint(checkpoint, site_id, products, index + 1, product_id)
+            _generation_checkpoint(
+                checkpoint, site_id, products, index + 1, product_id, fingerprints
+            )
             continue
+        if existing and stored_fingerprint and stored_fingerprint != fingerprint:
+            print(f"[{index + 1}/{len(products)}] {product_id}: inputs changed; regenerating", flush=True)
         print(
             f"[{index + 1}/{len(products)}] Generating {count} posts for {product_id} "
             f"({'mock' if mock else 'Gemini failover'})",
             flush=True,
         )
-        _generation_checkpoint(checkpoint, site_id, products, index, product_id)
+        _generation_checkpoint(checkpoint, site_id, products, index, product_id, fingerprints)
         articles = (
             mock_articles(product, count)
             if mock
@@ -332,10 +422,23 @@ def generate_site(site_id: str, *, mock: bool, force: bool) -> int:
                 prompt_for(site, product, count), site_id, product_id, count
             )
         )
-        written = write_product_posts(site, directory, product, articles)
+        written = write_product_posts(
+            site, directory, product, articles, fingerprint
+        )
         generated += len(written)
-        _generation_checkpoint(checkpoint, site_id, products, index + 1, product_id)
-    _generation_checkpoint(checkpoint, site_id, products, len(products), None, complete=True)
+        fingerprints[product_id] = fingerprint
+        _generation_checkpoint(
+            checkpoint, site_id, products, index + 1, product_id, fingerprints
+        )
+    _generation_checkpoint(
+        checkpoint,
+        site_id,
+        products,
+        len(products),
+        None,
+        fingerprints,
+        complete=True,
+    )
     exhausted_marker = STATE / "gemini_exhausted.json"
     if exhausted_marker.exists():
         exhausted_marker.unlink()
@@ -348,6 +451,7 @@ def _generation_checkpoint(
     products: list[dict[str, Any]],
     next_index: int,
     product_id: str | None,
+    fingerprints: dict[str, str],
     *,
     complete: bool = False,
 ) -> None:
@@ -358,6 +462,7 @@ def _generation_checkpoint(
             "productIds": [item.get("id") for item in products],
             "nextIndex": next_index,
             "currentProduct": product_id,
+            "fingerprints": fingerprints,
             "complete": complete,
             "updatedAt": time.time(),
         },
@@ -376,9 +481,15 @@ def main() -> None:
     parser.add_argument("site_id")
     parser.add_argument("--mock", action="store_true")
     parser.add_argument("--force", action="store_true")
+    parser.add_argument("--product", action="append", help="Generate only this product ID")
     args = parser.parse_args()
     mock = args.mock or os.getenv("MOCK_LLM", "").lower() in {"1", "true", "yes"}
-    generated = generate_site(args.site_id, mock=mock, force=args.force)
+    generated = generate_site(
+        args.site_id,
+        mock=mock,
+        force=args.force,
+        product_ids=args.product,
+    )
     print(f"Wrote {generated} new posts to {SITES / args.site_id / '_posts'}")
 
 

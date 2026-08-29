@@ -1,135 +1,114 @@
 # SEO portfolio automation
 
-This repository is the downstream deployment and forever-feedback loop for a NicheScout seed portfolio. NicheScout does the finite pre-deployment research; this repo turns its editable `ideas.json` into sites, blog probes, product-interest events, deployments, GSC, and PostHog data.
+This repository deploys NicheScout finalists as audience-grouped SEO portfolios. Each website contains the products that belong to one coherent audience; a site may contain one, three, seven, or another useful number of products. NicheScout decides group boundaries from audience similarity and a maximum-size guardrail, not an exact product quota.
 
-The version-2 portfolio shape is **100 websites × five complementary products = 500 product probes**. Products on one site share an audience, so visitors can cross-discover adjacent tools without mixing unrelated search intent.
+Every product remains independently measurable through its landing page, blog frontmatter, signup payload, and PostHog properties.
 
-## Import NicheScout output
+## First deployment
 
-From this repository:
-
-```bash
-python scripts/ideas.py --portfolio ../NicheScout/exports/ideas.json
-python scripts/ideas.py --validate-only
-```
-
-The importer validates unique IDs, `siteId`/`productIds` consistency, orphaned products, and required deployment fields before atomically replacing `ideas/ideas.json`. It then creates one `sites/<site-id>/site.json` per group with a `products` array.
-
-Existing site configs are never overwritten. That protects manual domain, signup, monitoring, and deployment edits. Version-1 one-product portfolios/configs remain supported.
-
-`ideas/ideas.json` remains human editable. You can add your own products or regroup finalists after observing NicheScout’s report; keep every idea in exactly one `site.productIds` list.
-
-## Safe local smoke test
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 npm ci
-python -m unittest discover -s tests -v
-python scripts/launch.py --mock --provider static --limit 1
 ```
 
-`--mock` makes no Gemini, monitoring, or deployment API calls.
-
-## Launch
-
-After credentials are configured:
+Preview and import the latest NicheScout export:
 
 ```bash
+python scripts/ideas.py --portfolio ../NicheScout/exports/ideas.json --plan
+python scripts/ideas.py --portfolio ../NicheScout/exports/ideas.json
+python scripts/portfolio.py status
+```
+
+Deploy one audience portfolio first, then all remaining active sites:
+
+```bash
+python scripts/launch.py --site <site-id>
 python scripts/launch.py
 ```
 
-Useful subsets and modes:
-
-```bash
-python scripts/launch.py --site my-site
-python scripts/launch.py --sites site-a,site-b,site-c
-python scripts/launch.py --limit 5
-python scripts/launch.py --frontend-only
-python scripts/launch.py --blogs-only
-python scripts/launch.py --skip-generation
-```
-
-All sites share the same Next.js frontend. `--frontend-only` rebuilds without calling Gemini. `--blogs-only` intentionally regenerates every selected product’s posts. `--skip-generation` publishes existing/manual Markdown.
-
-## Product-attributed SEO probes
-
-Grouped sites default to ten articles per product (50 per five-product site). Generation runs one product at a time and persists `.deploy/state/generate-<site>.json`. Completed products are skipped on rerun; a partial product is regenerated only after a complete replacement response has been validated.
-
-Every generated post has:
-
-```yaml
-productId: invoice-nudge
-productName: Invoice Nudge
-```
-
-The static frontend uses that attribution to:
-
-- create an indexable `/products/<product-id>` landing page;
-- show only that product’s guides on its landing page;
-- attach a product-specific interest form to every product page and post;
-- include all product pages and posts in `sitemap.xml`;
-- cross-link the five complementary products on the same site;
-- capture PostHog event `product_probe_viewed` on attributed landing/post views and `product_interest_submitted` on form submission, with product/source properties;
-- POST the same product identity to an optional signup endpoint.
-
-This means GSC queries/clicks, PostHog behavior, and signups can be rolled up by the original NicheScout idea even though five probes share one domain.
-
-## Gemini failover and resume
-
-Blog generation cycles through `GEMINI_MODELS`. Defaults are free-tier text models, with 2.5 Flash models as the broad compatibility fallback:
-
-```text
-GEMINI_MODELS=gemini-3.5-flash-lite,gemini-3.1-flash-lite,gemini-2.5-flash-lite,gemini-2.5-flash
-```
-
-Unsupported model IDs advance immediately; transient/rate-limit failures retry and advance through the chain. Authentication failures stop immediately. If every model fails, the generator writes `.deploy/state/gemini_exhausted.json` with the exact site, product, models, attempts, and error. The site launcher saves its own checkpoint and terminates instead of silently skipping work.
-
-Resume with the same selected subset:
+A failed run stops and writes a checkpoint. After fixing the failure, resume the same selected set with:
 
 ```bash
 python scripts/launch.py --resume
 ```
 
-The site checkpoint resumes the site, and the product checkpoint skips every product already completed inside that site.
+For a no-network smoke test:
 
-## Product-interest signup
-
-Each site config can contain:
-
-```json
-{
-  "signup": {
-    "enabled": true,
-    "headline": "Interested? Get notified when this is available.",
-    "endpoint": "https://your-form-endpoint.example/subscribe",
-    "email": "hello@example.com"
-  }
-}
+```bash
+python -m unittest discover -s tests -v
+python scripts/ideas.py --mock
+python scripts/launch.py --mock --provider static --site freelancer-operations
 ```
 
-If `endpoint` is configured, the frontend sends:
+`--mock` makes no Gemini, monitoring, or deployment API calls.
 
-```json
-{
-  "email": "person@example.com",
-  "productId": "invoice-nudge",
-  "product": "Invoice Nudge",
-  "site": "Freelancer Operations Tools",
-  "sourcePath": "/posts/invoice-nudge-overdue-invoice-template"
-}
+## Safe portfolio sync
+
+The importer validates unique IDs, non-empty variable-size groups, `siteId`/`productIds` consistency, and orphaned products. `--plan` performs no writes.
+
+Repeated imports update portfolio-managed content while preserving site-local operations:
+
+- updated from `ideas.json`: site name, audience, topic, product membership, and product research/copy;
+- preserved from `sites/<site-id>/site.json`: domain, hosting project/provider, signup, GSC/PostHog state, author/images, lifecycle status, and article count.
+
+Sites missing from a newer export are reported as `STALE (kept)`. They are never silently deleted. Review them and explicitly retire or tear them down.
+
+## Launch modes
+
+```bash
+python scripts/launch.py --site site-a
+python scripts/launch.py --sites site-a,site-b
+python scripts/launch.py --limit 1
+python scripts/launch.py --frontend-only --site site-a
+python scripts/launch.py --product product-id
+python scripts/launch.py --blogs-only --site site-a
+python scripts/launch.py --skip-generation --site site-a
 ```
 
-Without an endpoint, a configured email opens a prefilled message. Even without either backend, a configured PostHog project still records the product-interest event.
+A normal launch always invokes the restart-safe product generator. Products whose input fingerprint and required post count are complete are skipped. If one product's audience, problem, value proposition, topic, or SEO angle changes, only that product regenerates.
 
-## Monitoring
+`--product product-id` finds the containing site, force-regenerates that product, then builds, deploys, registers, and checks that site.
 
-All sites use one shared PostHog project, suitable for a free-tier portfolio. Google Search Console verification and sitemap submission are automated when Google credentials are configured. An hourly GitHub Actions workflow health-checks configured sites.
+`--limit 1` selects one site but still runs its complete pipeline, including Gemini for missing or changed products. Use `--frontend-only --limit 1` when only shared frontend/configuration changed.
 
-The grouping affects presentation only: downstream learning remains product-specific via post frontmatter, landing-page route, signup payload, and PostHog properties.
+`--blogs-only` force-regenerates all selected product posts. `--skip-generation` and `--frontend-only` publish existing Markdown.
+
+## Product-attributed probes
+
+For every product, the build creates:
+
+- an indexable `/products/<product-id>` landing page;
+- only that product's guides on its landing page;
+- product-specific signup attribution;
+- sitemap entries for product pages and posts;
+- PostHog events `product_probe_viewed` and `product_interest_submitted`;
+- cross-discovery links to complementary products on the same audience site.
+
+Generated post frontmatter includes `productId`, `productName`, and a generation fingerprint.
+
+## Google Search Console
+
+Use desktop OAuth so verification, `sites.add`, and sitemap submission run as the same Google account visible in Search Console. Enable the Google Site Verification API and Search Console API, create a Desktop app OAuth client, then set:
+
+```text
+GOOGLE_OAUTH_CLIENT_SECRETS=/path/to/oauth-client.json
+```
+
+The first real launch opens one browser authorization. Choose the Google account you use in Search Console. Its refresh token is cached under `.deploy/state/`, so the remaining sites run unattended:
+
+```text
+META token -> deploy -> verify ownership -> sites.add -> submit sitemap
+```
+
+You do not register every site manually. Each successful launch calls `sites.add` for the exact URL-prefix property, so it appears in that OAuth user's GSC account.
+
+A service account remains supported with `GOOGLE_APPLICATION_CREDENTIALS`, but its properties do not automatically appear in a human account. `GOOGLE_SEARCH_CONSOLE_OWNER_EMAIL` can delegate verified ownership; desktop OAuth is preferred.
 
 ## Deployment providers
 
-The build produces a portable static `out/` artifact:
+The build produces a static `out/` artifact:
 
 ```bash
 python scripts/launch.py --provider cloudflare-pages
@@ -139,7 +118,7 @@ python scripts/launch.py --provider netlify
 python scripts/launch.py --provider static
 ```
 
-Cloudflare Pages projects are created/reused automatically when credentials are supplied. Custom domains must already be owned and controlled by you.
+Cloudflare Pages projects are created or reused automatically. Custom domains must already be owned and controlled by you.
 
 ## Credentials
 
@@ -150,37 +129,45 @@ GEMINI_API_KEY=...
 GEMINI_MODELS=gemini-3.5-flash-lite,gemini-3.1-flash-lite,gemini-2.5-flash-lite,gemini-2.5-flash
 CLOUDFLARE_API_TOKEN=...
 CLOUDFLARE_ACCOUNT_ID=...
-POSTHOG_PERSONAL_API_KEY=...
-POSTHOG_ORGANIZATION_ID=...
-GOOGLE_APPLICATION_CREDENTIALS=/path/to/service-account.json
+POSTHOG_PROJECT_ID=...
+POSTHOG_PROJECT_API_KEY=...
+GOOGLE_OAUTH_CLIENT_SECRETS=/path/to/desktop-oauth-client.json
+GOOGLE_OAUTH_TOKEN_FILE=/optional/path/to/oauth-token.json
+GOOGLE_SEARCH_CONSOLE_OWNER_EMAIL=you@example.com
 ```
+
+All sites intentionally share one configured PostHog project.
+
+## Editing, redeploying, and teardown
+
+See [OPERATIONS.md](OPERATIONS.md) for exact workflows covering portfolio updates, shared frontend changes, product-only regeneration, domain changes, pause/reactivate, one-site teardown, and confirmed teardown of all external sites.
+
+Safe lifecycle commands:
+
+```bash
+python scripts/portfolio.py status
+python scripts/portfolio.py retire <site-id>
+python scripts/portfolio.py activate <site-id>
+python scripts/portfolio.py teardown <site-id>
+python scripts/portfolio.py teardown --all
+```
+
+`teardown` is preview-only unless the exact confirmation printed by the command is supplied. It preserves local configs and content as an audit/redeployment source.
 
 ## Architecture boundary
 
 ```text
-NicheScout (finite public-evidence tournament)
-                    |
-                    v
-       ideas/ideas.json v2 (editable)
-                    |
-                    v
-       100 site configs × 5 products
-                    |
-        +-----------+-----------+
-        |                       |
-        v                       v
-product-attributed posts   product landing pages
-        |                       |
-        +-----------+-----------+
-                    v
-       static build and deployment
-                    |
-        +-----------+-----------+
-        |           |           |
-        v           v           v
-       GSC       PostHog      signups
-        |           |           |
-        +-----------+-----------+
-                    v
-        forever deployment feedback loop
+NicheScout research
+        |
+        v
+variable audience groups in ideas/ideas.json
+        |
+        v
+safe site-config sync
+        |
+        v
+product-attributed posts + landing pages
+        |
+        v
+build -> hosting -> GSC + PostHog + signups
 ```

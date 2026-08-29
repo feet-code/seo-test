@@ -22,7 +22,7 @@ def load_script(name: str):
 
 
 class PortfolioTests(unittest.TestCase):
-    def test_version_two_materializes_one_site_with_five_products(self) -> None:
+    def test_version_two_materializes_a_variable_size_site(self) -> None:
         ideas = load_script("ideas")
         document = ideas.mock_document()
         ideas.validate_document(document)
@@ -36,9 +36,68 @@ class PortfolioTests(unittest.TestCase):
                     encoding="utf-8"
                 )
             )
-            self.assertEqual(len(config["products"]), 5)
+            self.assertEqual(len(config["products"]), 3)
             self.assertEqual(config["articlesPerProduct"], 10)
             self.assertEqual(ideas.materialize(document), 0)
+
+    def test_uneven_group_sizes_are_valid(self) -> None:
+        ideas = load_script("ideas")
+        document = ideas.mock_document()
+        first, rest = document["ideas"][0], document["ideas"][1:]
+        document["sites"] = [
+            {
+                "id": "solo-audience",
+                "name": "Solo Audience",
+                "audience": "solo audience",
+                "topic": "solo topic",
+                "productIds": [first["id"]],
+            },
+            {
+                "id": "paired-audience",
+                "name": "Paired Audience",
+                "audience": "paired audience",
+                "topic": "paired topic",
+                "productIds": [product["id"] for product in rest],
+            },
+        ]
+        first["siteId"] = "solo-audience"
+        for product in rest:
+            product["siteId"] = "paired-audience"
+
+        ideas.validate_document(document)
+
+    def test_sync_updates_portfolio_content_but_preserves_operations(self) -> None:
+        ideas = load_script("ideas")
+        document = ideas.mock_document()
+        with TemporaryDirectory() as directory:
+            ideas.SITES = Path(directory) / "sites"
+            ideas.materialize(document)
+            path = ideas.SITES / "freelancer-operations" / "site.json"
+            config = json.loads(path.read_text(encoding="utf-8"))
+            config.update(
+                {
+                    "domain": "tools.example.com",
+                    "status": "retired",
+                    "articlesPerProduct": 3,
+                    "monitoring": {"googleProperty": "https://tools.example.com/"},
+                }
+            )
+            config["deploy"]["project"] = "stable-project"
+            path.write_text(json.dumps(config), encoding="utf-8")
+            document["ideas"][0]["name"] = "Invoice Nudge Pro"
+
+            plan = ideas.sync_document(document, apply=True)
+            updated = json.loads(path.read_text(encoding="utf-8"))
+
+            self.assertEqual(plan.update, ["freelancer-operations"])
+            self.assertEqual(updated["products"][0]["name"], "Invoice Nudge Pro")
+            self.assertEqual(updated["domain"], "tools.example.com")
+            self.assertEqual(updated["status"], "retired")
+            self.assertEqual(updated["articlesPerProduct"], 3)
+            self.assertEqual(updated["deploy"]["project"], "stable-project")
+            self.assertEqual(
+                updated["monitoring"]["googleProperty"], "https://tools.example.com/"
+            )
 
     def test_cross_site_product_mismatch_is_rejected(self) -> None:
         ideas = load_script("ideas")
@@ -65,9 +124,9 @@ class PortfolioTests(unittest.TestCase):
             first = generator.generate_site("freelancer-operations", mock=True, force=False)
             second = generator.generate_site("freelancer-operations", mock=True, force=False)
             posts = sorted((site_path.parent / "_posts").glob("*.md"))
-            self.assertEqual(first, 10)
+            self.assertEqual(first, 6)
             self.assertEqual(second, 0)
-            self.assertEqual(len(posts), 10)
+            self.assertEqual(len(posts), 6)
             for product in site["products"]:
                 attributed = generator.existing_product_posts(site_path.parent, product["id"])
                 self.assertEqual(len(attributed), 2)
@@ -81,6 +140,13 @@ class PortfolioTests(unittest.TestCase):
                 )
             )
             self.assertTrue(checkpoint["complete"])
+
+            site["products"][0]["topic"] = "updated invoice follow-up workflows"
+            site_path.write_text(json.dumps(site), encoding="utf-8")
+            changed = generator.generate_site(
+                "freelancer-operations", mock=True, force=False
+            )
+            self.assertEqual(changed, 2)
 
 
 if __name__ == "__main__":
