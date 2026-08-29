@@ -1,0 +1,63 @@
+{
+  "id": "small-property-manager-ops",
+  "name": "Small Property Manager Operations",
+  "domain": null,
+  "audience": "independent residential property managers and small property teams",
+  "topic": "maintenance and turnover operations for small rental portfolios",
+  "products": [
+    {
+      "id": "maintenance-triage-board",
+      "name": "Maintenance Triage Board",
+      "product": "A lightweight intake and routing queue for maintenance requests across a small rental portfolio.",
+      "productUrl": "",
+      "audience": "independent residential property managers and small property teams",
+      "problem": "Maintenance requests arrive through calls, texts, email, and tenant portals with inconsistent details, making urgency and ownership hard to assess.",
+      "valueProposition": "Standardizes request evidence, urgency, access, vendor ownership, tenant updates, and completion confirmation.",
+      "topic": "rental property maintenance request triage",
+      "monetization": "$19-$79/month based on active records or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets maintenance request triage template, landlord maintenance tracker, property manager work order spreadsheet, and tenant repair intake searches.",
+      "score": 85
+    },
+    {
+      "id": "unit-turnover-runbook",
+      "name": "Unit Turnover Runbook",
+      "product": "A dependency-aware checklist for coordinating inspections, repairs, cleaning, photos, and listing readiness between tenancies.",
+      "productUrl": "",
+      "audience": "independent residential property managers and small property teams",
+      "problem": "Turnover tasks live in separate vendor texts and checklists, so one missed dependency can delay listing or move-in readiness.",
+      "valueProposition": "Makes task dependencies, evidence, vendor dates, blockers, and final readiness visible for every vacant unit.",
+      "topic": "rental unit turnover checklist and make-ready tracking",
+      "monetization": "$19-$79/month based on active records or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets apartment turnover checklist, rental make-ready template, property turnover tracker, and unit inspection workflow searches.",
+      "score": 81
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A lightweight intake and routing queue for maintenance requests across a small rental portfolio.",
+  "productUrl": "",
+  "valueProposition": "Standardizes request evidence, urgency, access, vendor ownership, tenant updates, and completion confirmation.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith",
+    "picture": "/assets/blog/authors/jj.jpeg"
+  },
+  "images": {
+    "coverImage": "/assets/blog/preview/cover.jpg",
+    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-pages",
+    "project": "small-property-manager-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

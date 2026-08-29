@@ -1,0 +1,63 @@
+{
+  "id": "local-contractor-office",
+  "name": "Local Contractor Office",
+  "domain": null,
+  "audience": "owner-operated HVAC, plumbing, electrical, and repair contractors",
+  "topic": "estimate follow-up and field-to-office documentation for local contractors",
+  "products": [
+    {
+      "id": "estimate-followup-queue",
+      "name": "Estimate Follow-Up Queue",
+      "product": "A next-action pipeline for sent estimates that preserves job context, customer questions, decision dates, and closed reasons.",
+      "productUrl": "",
+      "audience": "owner-operated HVAC, plumbing, electrical, and repair contractors",
+      "problem": "Estimates are sent from one system, then followed up from memory, causing inconsistent timing and little insight into why work is won or lost.",
+      "valueProposition": "Creates a visible follow-up sequence that stops on a decision and records actionable loss reasons.",
+      "topic": "contractor estimate follow-up and quote tracking",
+      "monetization": "$19-$79/month based on active records or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets estimate follow-up text, contractor quote reminder, open estimate tracker, and field service sales pipeline searches.",
+      "score": 86
+    },
+    {
+      "id": "job-photo-handoff",
+      "name": "Job Photo Handoff",
+      "product": "A field-to-office workflow that organizes before, progress, completion, and exception photos by job and purpose.",
+      "productUrl": "",
+      "audience": "owner-operated HVAC, plumbing, electrical, and repair contractors",
+      "problem": "Job photos remain on technicians' phones or in group chat without labels, making office review, invoicing, warranty response, and customer updates harder.",
+      "valueProposition": "Prompts technicians for the required photo set, context, exceptions, and office acknowledgement before the job closes.",
+      "topic": "contractor job photo documentation and field office handoff",
+      "monetization": "$19-$79/month based on active records or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets jobsite photo checklist, contractor photo documentation app, before-and-after job photos, and technician closeout template searches.",
+      "score": 83
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A next-action pipeline for sent estimates that preserves job context, customer questions, decision dates, and closed reasons.",
+  "productUrl": "",
+  "valueProposition": "Creates a visible follow-up sequence that stops on a decision and records actionable loss reasons.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith",
+    "picture": "/assets/blog/authors/jj.jpeg"
+  },
+  "images": {
+    "coverImage": "/assets/blog/preview/cover.jpg",
+    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-pages",
+    "project": "local-contractor-office"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

@@ -1,0 +1,77 @@
+{
+  "id": "boutique-recruiter-ops",
+  "name": "Boutique Recruiter Operations",
+  "domain": null,
+  "audience": "independent recruiters and boutique recruiting firms",
+  "topic": "repeatable candidate and client workflows for boutique recruiters",
+  "products": [
+    {
+      "id": "candidate-followup-desk",
+      "name": "Candidate Follow-Up Desk",
+      "product": "A lightweight queue that shows which candidates need a response, what was promised, and when a recruiter should follow up.",
+      "productUrl": "",
+      "audience": "independent recruiters and boutique recruiting firms",
+      "problem": "Candidate communication is spread across email, LinkedIn, calendars, and ATS notes, so promised updates are easy to miss.",
+      "valueProposition": "Turns candidate follow-up into a visible queue with owners, next dates, outcomes, and stop conditions.",
+      "topic": "candidate follow-up tracking for recruiting agencies",
+      "monetization": "$19-$79/month based on active records or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets candidate follow-up spreadsheet, recruiter follow-up template, candidate communication tracker, and recruiting CRM reminder searches.",
+      "score": 84
+    },
+    {
+      "id": "search-intake-scorecard",
+      "name": "Search Intake Scorecard",
+      "product": "A structured client-intake and calibration record for boutique recruiters opening a new search.",
+      "productUrl": "",
+      "audience": "independent recruiters and boutique recruiting firms",
+      "problem": "Recruiters start sourcing with vague or conflicting requirements, then lose time recalibrating after weak candidate submissions.",
+      "valueProposition": "Makes must-haves, tradeoffs, evidence, interview ownership, and calibration decisions explicit before sourcing scales.",
+      "topic": "recruiting search intake and candidate calibration scorecards",
+      "monetization": "$19-$79/month based on active records or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets recruiting intake form, job intake meeting checklist, candidate scorecard template, and recruiter calibration questions.",
+      "score": 82
+    },
+    {
+      "id": "interview-debrief-collector",
+      "name": "Interview Debrief Collector",
+      "product": "A focused workflow for collecting independent interviewer feedback before the hiring discussion drifts into group consensus.",
+      "productUrl": "",
+      "audience": "independent recruiters and boutique recruiting firms",
+      "problem": "Interview feedback arrives late, lacks evidence, or is shaped by the loudest interviewer, delaying client decisions and weakening candidate communication.",
+      "valueProposition": "Collects structured evidence, decision confidence, and follow-up questions before a time-boxed debrief.",
+      "topic": "interview feedback collection and hiring debrief workflows",
+      "monetization": "$19-$79/month based on active records or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets interview feedback form, hiring debrief template, interviewer scorecard, and late feedback reminder searches.",
+      "score": 79
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A lightweight queue that shows which candidates need a response, what was promised, and when a recruiter should follow up.",
+  "productUrl": "",
+  "valueProposition": "Turns candidate follow-up into a visible queue with owners, next dates, outcomes, and stop conditions.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith",
+    "picture": "/assets/blog/authors/jj.jpeg"
+  },
+  "images": {
+    "coverImage": "/assets/blog/preview/cover.jpg",
+    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-pages",
+    "project": "boutique-recruiter-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

@@ -1,6 +1,7 @@
 {
   "id": "example",
   "name": "Example SEO Site",
+  "status": "retired",
   "domain": "",
   "product": "Your product or service",
   "productUrl": "https://example.com",

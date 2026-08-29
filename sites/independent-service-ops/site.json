@@ -1,0 +1,63 @@
+{
+  "id": "independent-service-ops",
+  "name": "Independent Service Operations",
+  "domain": null,
+  "audience": "freelancers and independent professional service businesses",
+  "topic": "payment follow-up and client handoffs for independent service businesses",
+  "products": [
+    {
+      "id": "invoice-followup-queue",
+      "name": "Invoice Follow-Up Queue",
+      "product": "A polite, evidence-based reminder workflow for independent service businesses managing unpaid invoices.",
+      "productUrl": "",
+      "audience": "freelancers and independent professional service businesses",
+      "problem": "Payment reminders depend on memory, while invoice delivery, client questions, promises, disputes, and next actions remain scattered.",
+      "valueProposition": "Creates a clear reminder sequence that pauses for questions, records payment promises, and stops immediately on resolution.",
+      "topic": "freelancer invoice follow-up and overdue payment reminders",
+      "monetization": "$19-$79/month based on active records or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets overdue invoice reminder, freelancer payment follow-up email, unpaid invoice tracker, and invoice reminder schedule searches.",
+      "score": 89
+    },
+    {
+      "id": "client-handoff-pack",
+      "name": "Client Handoff Pack",
+      "product": "A structured project-close workflow for delivering files, access, decisions, instructions, and open items to a service client.",
+      "productUrl": "",
+      "audience": "freelancers and independent professional service businesses",
+      "problem": "Projects are called finished while files, credentials, ownership, maintenance instructions, and unresolved decisions remain across tools and conversations.",
+      "valueProposition": "Builds a client-ready handoff index with acceptance, secure access transfer, training, open items, and closure evidence.",
+      "topic": "freelancer client project handoff and offboarding checklists",
+      "monetization": "$19-$79/month based on active records or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets client handoff checklist, project completion email, freelancer offboarding template, and website handover document searches.",
+      "score": 84
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A polite, evidence-based reminder workflow for independent service businesses managing unpaid invoices.",
+  "productUrl": "",
+  "valueProposition": "Creates a clear reminder sequence that pauses for questions, records payment promises, and stops immediately on resolution.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith",
+    "picture": "/assets/blog/authors/jj.jpeg"
+  },
+  "images": {
+    "coverImage": "/assets/blog/preview/cover.jpg",
+    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-pages",
+    "project": "independent-service-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

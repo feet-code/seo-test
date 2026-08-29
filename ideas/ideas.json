@@ -1,19 +1,2156 @@
 {
-  "version": 1,
+  "version": 2,
+  "articlesPerProduct": 10,
+  "generatedAt": "2026-08-29T06:00:00+00:00",
+  "generation": {
+    "source": "codex-editorial-batch",
+    "mode": "reviewed-current-market-signals",
+    "runId": "batch-001-2026-08-29",
+    "requestedProducts": 22,
+    "requestedSites": 10,
+    "preferredProductsPerSite": 2,
+    "maxProductsPerSite": 4,
+    "grouping": "specific shared buyer and adjacent operating workflows",
+    "notes": "Ideas are editable. Each idea.siteId is the authoritative website assignment."
+  },
+  "researchSources": [
+    "https://www.greenhouse.com/blog/best-recruiting-tools",
+    "https://www.screendragon.com/blog/scope-creep-meaning-and-how-to-avoid/",
+    "https://learn.sweptworks.com/best-janitorial-commercial-cleaning-software",
+    "https://doublehq.com/",
+    "https://field-ascend.com/en-us/field-service-software-small-business",
+    "https://ordercircle.com/features/order-management/",
+    "https://www.ruzuku.com/learn/articles/best-platform-cohort-courses",
+    "https://www.sopact.com/use-case/nonprofit-evaluation",
+    "https://www.getharvest.com/resources/software-for-invoicing"
+  ],
+  "sites": [
+    {
+      "id": "boutique-recruiter-ops",
+      "name": "Boutique Recruiter Operations",
+      "audience": "independent recruiters and boutique recruiting firms",
+      "topic": "repeatable candidate and client workflows for boutique recruiters",
+      "domain": null
+    },
+    {
+      "id": "small-property-manager-ops",
+      "name": "Small Property Manager Operations",
+      "audience": "independent residential property managers and small property teams",
+      "topic": "maintenance and turnover operations for small rental portfolios",
+      "domain": null
+    },
+    {
+      "id": "creative-agency-delivery",
+      "name": "Creative Agency Delivery",
+      "audience": "small creative, design, and digital agencies",
+      "topic": "scope, client inputs, and delivery control for small agencies",
+      "domain": null
+    },
+    {
+      "id": "commercial-cleaning-ops",
+      "name": "Commercial Cleaning Operations",
+      "audience": "owner-operated commercial cleaning and janitorial companies",
+      "topic": "quality, supplies, and crew handoffs across cleaning locations",
+      "domain": null
+    },
+    {
+      "id": "bookkeeping-firm-ops",
+      "name": "Bookkeeping Firm Operations",
+      "audience": "small bookkeeping firms and client accounting service teams",
+      "topic": "client inputs and recurring close workflows for bookkeeping firms",
+      "domain": null
+    },
+    {
+      "id": "local-contractor-office",
+      "name": "Local Contractor Office",
+      "audience": "owner-operated HVAC, plumbing, electrical, and repair contractors",
+      "topic": "estimate follow-up and field-to-office documentation for local contractors",
+      "domain": null
+    },
+    {
+      "id": "specialty-wholesale-ops",
+      "name": "Specialty Wholesale Operations",
+      "audience": "small specialty wholesalers and B2B distributors",
+      "topic": "reorders, backorders, and account operations for specialty distributors",
+      "domain": null
+    },
+    {
+      "id": "cohort-course-ops",
+      "name": "Cohort Course Operations",
+      "audience": "independent cohort-course creators and small training businesses",
+      "topic": "learner engagement and intervention workflows for live cohort courses",
+      "domain": null
+    },
+    {
+      "id": "nonprofit-program-ops",
+      "name": "Nonprofit Program Operations",
+      "audience": "small nonprofit direct-service and program teams",
+      "topic": "participant follow-up and evidence workflows for nonprofit programs",
+      "domain": null
+    },
+    {
+      "id": "independent-service-ops",
+      "name": "Independent Service Operations",
+      "audience": "freelancers and independent professional service businesses",
+      "topic": "payment follow-up and client handoffs for independent service businesses",
+      "domain": null
+    }
+  ],
   "ideas": [
     {
-      "id": "example-invoice-followup",
-      "name": "Example Invoice Follow-Up",
-      "product": "A lightweight tool that reminds small businesses to follow up on overdue invoices.",
-      "audience": "freelancers and small service businesses",
-      "problem": "Small businesses lose time and cash manually tracking overdue invoices.",
-      "valueProposition": "Automates polite payment reminders without requiring a full accounting platform.",
-      "topic": "invoice follow-up and overdue invoice collection",
-      "monetization": "low-cost monthly subscription",
-      "startupCost": "Static frontend plus inexpensive email/API usage; no heavy infrastructure.",
-      "seoAngle": "People search for invoice reminder templates, overdue invoice workflows, and payment follow-up tools.",
-      "score": 75,
-      "domain": null
+      "id": "candidate-followup-desk",
+      "siteId": "boutique-recruiter-ops",
+      "name": "Candidate Follow-Up Desk",
+      "product": "A lightweight queue that shows which candidates need a response, what was promised, and when a recruiter should follow up.",
+      "audience": "independent recruiters and boutique recruiting firms",
+      "problem": "Candidate communication is spread across email, LinkedIn, calendars, and ATS notes, so promised updates are easy to miss.",
+      "valueProposition": "Turns candidate follow-up into a visible queue with owners, next dates, outcomes, and stop conditions.",
+      "topic": "candidate follow-up tracking for recruiting agencies",
+      "monetization": "$19-$79/month based on active records or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets candidate follow-up spreadsheet, recruiter follow-up template, candidate communication tracker, and recruiting CRM reminder searches.",
+      "score": 84,
+      "domain": null,
+      "contentBatch": "batch-001",
+      "probeContext": {
+        "outcome": "every active candidate receives the promised next update or a documented closed reason",
+        "workflow": [
+          "Capture the communication promise",
+          "Set the next-contact date",
+          "Send the contextual update",
+          "Record the response",
+          "Close or schedule the next step"
+        ],
+        "fields": [
+          "Candidate and role",
+          "Last meaningful contact",
+          "Promised update",
+          "Next-contact date",
+          "Channel",
+          "Owner",
+          "Response outcome",
+          "Closed reason"
+        ],
+        "mistakes": [
+          "Recording messages without a next-contact date",
+          "Sending generic check-ins with no useful update",
+          "Continuing reminders after a candidate withdraws",
+          "Keeping ownership implicit when a role changes hands"
+        ],
+        "metrics": [
+          {
+            "name": "Promise kept rate",
+            "formula": "promised updates delivered on time / promised updates due",
+            "decision": "find where candidate commitments break"
+          },
+          {
+            "name": "Open follow-up age",
+            "formula": "current date - oldest unresolved next-contact date",
+            "decision": "prioritize neglected relationships"
+          },
+          {
+            "name": "Response outcome mix",
+            "formula": "count by advanced, waiting, declined, or no response",
+            "decision": "adjust message timing and channel"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Recruiter inbox, LinkedIn reminders, and calendar tasks",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "ATS tasks or a shared candidate follow-up spreadsheet",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "a promised update date passes without a logged message",
+          "a candidate replies with a question or changed availability",
+          "a role is paused, filled, or reassigned"
+        ],
+        "examples": [
+          "A shortlisted candidate was promised feedback Friday but the client has not responded",
+          "A passive candidate asks to reconnect after a compensation review",
+          "A recruiter leaves and twenty active conversations need a new owner"
+        ],
+        "rules": [
+          "A reminder must stop when the candidate or role closes",
+          "Every message should communicate a real status or next decision",
+          "The ATS remains the candidate system of record",
+          "Sensitive candidate details should not be copied into unnecessary tools"
+        ]
+      }
+    },
+    {
+      "id": "search-intake-scorecard",
+      "siteId": "boutique-recruiter-ops",
+      "name": "Search Intake Scorecard",
+      "product": "A structured client-intake and calibration record for boutique recruiters opening a new search.",
+      "audience": "independent recruiters and boutique recruiting firms",
+      "problem": "Recruiters start sourcing with vague or conflicting requirements, then lose time recalibrating after weak candidate submissions.",
+      "valueProposition": "Makes must-haves, tradeoffs, evidence, interview ownership, and calibration decisions explicit before sourcing scales.",
+      "topic": "recruiting search intake and candidate calibration scorecards",
+      "monetization": "$19-$79/month based on active records or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets recruiting intake form, job intake meeting checklist, candidate scorecard template, and recruiter calibration questions.",
+      "score": 82,
+      "domain": null,
+      "contentBatch": "batch-001",
+      "probeContext": {
+        "outcome": "the recruiter and client can evaluate the same candidate evidence against the same explicit tradeoffs",
+        "workflow": [
+          "Capture the business outcome",
+          "Separate must-haves from preferences",
+          "Define evidence and disqualifiers",
+          "Calibrate on sample profiles",
+          "Approve the search brief"
+        ],
+        "fields": [
+          "Role outcome",
+          "Must-have criteria",
+          "Flexible criteria",
+          "Acceptable evidence",
+          "Disqualifiers",
+          "Compensation boundary",
+          "Interview owners",
+          "Calibration notes"
+        ],
+        "mistakes": [
+          "Treating every preference as mandatory",
+          "Using adjectives that cannot be evaluated",
+          "Skipping compensation and location boundaries",
+          "Changing criteria after submissions without logging the decision"
+        ],
+        "metrics": [
+          {
+            "name": "Calibration change count",
+            "formula": "criteria changes after sourcing begins",
+            "decision": "identify unstable or underspecified searches"
+          },
+          {
+            "name": "Submission acceptance rate",
+            "formula": "candidates advanced / candidates submitted",
+            "decision": "test whether recruiter and client are aligned"
+          },
+          {
+            "name": "Decision turnaround",
+            "formula": "decision timestamp - submission timestamp",
+            "decision": "surface client feedback bottlenecks"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "A kickoff call followed by recruiter notes",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "ATS job fields, forms, or a shared intake document",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "two sample profiles receive conflicting evaluations",
+          "the client adds a new requirement after sourcing starts",
+          "submitted candidates wait beyond the agreed feedback window"
+        ],
+        "examples": [
+          "A founder says they need a strategic operator but screens only for a specific title",
+          "Two interviewers disagree about whether industry experience is mandatory",
+          "The compensation ceiling excludes every approved sample profile"
+        ],
+        "rules": [
+          "Criteria must describe observable evidence",
+          "Tradeoffs belong in the brief before sourcing volume increases",
+          "Every post-launch change needs an owner and reason",
+          "The client approves the scorecard, not just the job description"
+        ]
+      }
+    },
+    {
+      "id": "interview-debrief-collector",
+      "siteId": "boutique-recruiter-ops",
+      "name": "Interview Debrief Collector",
+      "product": "A focused workflow for collecting independent interviewer feedback before the hiring discussion drifts into group consensus.",
+      "audience": "independent recruiters and boutique recruiting firms",
+      "problem": "Interview feedback arrives late, lacks evidence, or is shaped by the loudest interviewer, delaying client decisions and weakening candidate communication.",
+      "valueProposition": "Collects structured evidence, decision confidence, and follow-up questions before a time-boxed debrief.",
+      "topic": "interview feedback collection and hiring debrief workflows",
+      "monetization": "$19-$79/month based on active records or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets interview feedback form, hiring debrief template, interviewer scorecard, and late feedback reminder searches.",
+      "score": 79,
+      "domain": null,
+      "contentBatch": "batch-001",
+      "probeContext": {
+        "outcome": "the client reaches an evidence-based candidate decision while the interview is still fresh",
+        "workflow": [
+          "Assign evaluation areas",
+          "Collect independent feedback",
+          "Flag missing evidence",
+          "Run the debrief",
+          "Record the decision and candidate update"
+        ],
+        "fields": [
+          "Candidate and stage",
+          "Interviewer",
+          "Evaluation area",
+          "Evidence observed",
+          "Concern",
+          "Confidence",
+          "Follow-up question",
+          "Decision"
+        ],
+        "mistakes": [
+          "Collecting only an overall rating",
+          "Letting interviewers see peers' opinions before submitting",
+          "Accepting personality labels without evidence",
+          "Holding the candidate update until every minor note is perfect"
+        ],
+        "metrics": [
+          {
+            "name": "Feedback completion time",
+            "formula": "feedback timestamp - interview end",
+            "decision": "schedule reminders and debriefs realistically"
+          },
+          {
+            "name": "Evidence completeness",
+            "formula": "evaluations with evidence / evaluations due",
+            "decision": "improve interview training"
+          },
+          {
+            "name": "Decision cycle time",
+            "formula": "decision timestamp - final interview end",
+            "decision": "find delayed hiring decisions"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Email requests and a live debrief call",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "ATS scorecards or a shared interview feedback form",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "an interviewer has not submitted before the debrief cutoff",
+          "two evaluations conflict on the same criterion",
+          "a concern has no supporting example or follow-up question"
+        ],
+        "examples": [
+          "A technical interviewer rates low confidence but provides no observed evidence",
+          "A panel splits on client-facing ability and needs one targeted follow-up",
+          "The final interviewer submits notes after the recruiter already promised an update"
+        ],
+        "rules": [
+          "Independent feedback is captured before group discussion",
+          "Evidence is separated from conclusions",
+          "Missing feedback has a cutoff and escalation owner",
+          "The final decision includes the candidate communication owner"
+        ]
+      }
+    },
+    {
+      "id": "maintenance-triage-board",
+      "siteId": "small-property-manager-ops",
+      "name": "Maintenance Triage Board",
+      "product": "A lightweight intake and routing queue for maintenance requests across a small rental portfolio.",
+      "audience": "independent residential property managers and small property teams",
+      "problem": "Maintenance requests arrive through calls, texts, email, and tenant portals with inconsistent details, making urgency and ownership hard to assess.",
+      "valueProposition": "Standardizes request evidence, urgency, access, vendor ownership, tenant updates, and completion confirmation.",
+      "topic": "rental property maintenance request triage",
+      "monetization": "$19-$79/month based on active records or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets maintenance request triage template, landlord maintenance tracker, property manager work order spreadsheet, and tenant repair intake searches.",
+      "score": 85,
+      "domain": null,
+      "contentBatch": "batch-001",
+      "probeContext": {
+        "outcome": "every request has enough evidence for a clear priority, owner, tenant update, and verified resolution",
+        "workflow": [
+          "Capture the request",
+          "Assess urgency and missing evidence",
+          "Assign an owner or vendor",
+          "Coordinate access and updates",
+          "Verify completion"
+        ],
+        "fields": [
+          "Property and unit",
+          "Issue description",
+          "Photo or video",
+          "Safety or habitability signal",
+          "Access instructions",
+          "Priority",
+          "Assigned owner",
+          "Tenant update",
+          "Completion evidence"
+        ],
+        "mistakes": [
+          "Assigning a vendor before collecting usable evidence",
+          "Using urgent as a catch-all priority",
+          "Failing to record access constraints",
+          "Closing when the vendor says done without tenant or manager confirmation"
+        ],
+        "metrics": [
+          {
+            "name": "Time to triage",
+            "formula": "priority-set timestamp - request-received timestamp",
+            "decision": "improve intake coverage"
+          },
+          {
+            "name": "Reopen rate",
+            "formula": "reopened requests / completed requests",
+            "decision": "find weak diagnosis or verification"
+          },
+          {
+            "name": "Tenant update compliance",
+            "formula": "requests updated by promised time / updates due",
+            "decision": "improve communication reliability"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Calls, texts, email, and a maintenance calendar",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Property-management software work orders or a shared tracker",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "the request mentions water, electrical, security, heat, or another safety signal",
+          "required photos or access details are missing",
+          "a vendor misses the scheduled window or reports a changed scope"
+        ],
+        "examples": [
+          "A tenant texts a blurry photo of water under a sink after business hours",
+          "A vendor cannot enter because access instructions were never confirmed",
+          "A repair is marked complete but the tenant reports the symptom returned"
+        ],
+        "rules": [
+          "Local emergency and legal requirements remain outside the tool's automated judgment",
+          "Urgency decisions require a reason and reviewer",
+          "Tenants receive a clear next-update time",
+          "Completion requires evidence, not only a status click"
+        ]
+      }
+    },
+    {
+      "id": "unit-turnover-runbook",
+      "siteId": "small-property-manager-ops",
+      "name": "Unit Turnover Runbook",
+      "product": "A dependency-aware checklist for coordinating inspections, repairs, cleaning, photos, and listing readiness between tenancies.",
+      "audience": "independent residential property managers and small property teams",
+      "problem": "Turnover tasks live in separate vendor texts and checklists, so one missed dependency can delay listing or move-in readiness.",
+      "valueProposition": "Makes task dependencies, evidence, vendor dates, blockers, and final readiness visible for every vacant unit.",
+      "topic": "rental unit turnover checklist and make-ready tracking",
+      "monetization": "$19-$79/month based on active records or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets apartment turnover checklist, rental make-ready template, property turnover tracker, and unit inspection workflow searches.",
+      "score": 81,
+      "domain": null,
+      "contentBatch": "batch-001",
+      "probeContext": {
+        "outcome": "the unit reaches a documented ready state with every dependency and exception resolved",
+        "workflow": [
+          "Complete the move-out inspection",
+          "Define repair and cleaning scope",
+          "Schedule dependent vendors",
+          "Capture readiness evidence",
+          "Approve listing or move-in readiness"
+        ],
+        "fields": [
+          "Property and unit",
+          "Target ready date",
+          "Inspection findings",
+          "Task dependency",
+          "Vendor and appointment",
+          "Estimate or approval",
+          "Completion photo",
+          "Blocker",
+          "Final approver"
+        ],
+        "mistakes": [
+          "Scheduling cleaning before dusty repair work is finished",
+          "Mixing optional improvements with readiness blockers",
+          "Tracking vendor promises without appointments",
+          "Using photos that cannot be tied to a room or task"
+        ],
+        "metrics": [
+          {
+            "name": "Turnover cycle time",
+            "formula": "ready timestamp - possession timestamp",
+            "decision": "compare workflow changes by unit type"
+          },
+          {
+            "name": "Blocked-task age",
+            "formula": "current date - blocker-open timestamp",
+            "decision": "escalate dependencies"
+          },
+          {
+            "name": "Post-ready correction count",
+            "formula": "tasks reopened after ready approval",
+            "decision": "improve inspection and evidence quality"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Vendor texts, calendar events, and printed make-ready lists",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Property-management tasks or a shared turnover spreadsheet",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "a predecessor task slips past its dependent appointment",
+          "a finding changes the approved repair scope",
+          "the target ready date is at risk"
+        ],
+        "examples": [
+          "Floor repair pushes cleaning and photography into the same afternoon",
+          "An inspection reveals an appliance issue requiring owner approval",
+          "The unit looks ready in photos but a smoke-alarm check is undocumented"
+        ],
+        "rules": [
+          "Readiness blockers are distinct from cosmetic preferences",
+          "Dependent work cannot be marked ready out of sequence",
+          "Every task has room-level evidence",
+          "One named person approves the final ready state"
+        ]
+      }
+    },
+    {
+      "id": "scope-change-ledger",
+      "siteId": "creative-agency-delivery",
+      "name": "Scope Change Ledger",
+      "product": "A client-visible record that turns out-of-scope requests into explicit impact and approval decisions.",
+      "audience": "small creative, design, and digital agencies",
+      "problem": "Extra requests are accepted in calls and chat without a clear record of their effect on deliverables, time, fees, or deadlines.",
+      "valueProposition": "Creates a lightweight path from request to impact estimate, client decision, updated plan, and invoice evidence.",
+      "topic": "agency scope change and change request tracking",
+      "monetization": "$19-$79/month based on active records or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets scope creep tracker, agency change request template, out-of-scope email, and project change log searches.",
+      "score": 88,
+      "domain": null,
+      "contentBatch": "batch-001",
+      "probeContext": {
+        "outcome": "every meaningful scope change is accepted, traded, deferred, or declined with its delivery impact visible",
+        "workflow": [
+          "Capture the request verbatim",
+          "Compare it with agreed scope",
+          "Estimate impact and options",
+          "Obtain a client decision",
+          "Update delivery and billing records"
+        ],
+        "fields": [
+          "Client and project",
+          "Original deliverable",
+          "Requested change",
+          "Source and date",
+          "Impact on hours or fee",
+          "Impact on timeline",
+          "Tradeoff option",
+          "Decision",
+          "Approver"
+        ],
+        "mistakes": [
+          "Calling a request small before estimating it",
+          "Letting work begin while approval is ambiguous",
+          "Recording price impact but not schedule impact",
+          "Hiding agency-added gold plating inside client scope"
+        ],
+        "metrics": [
+          {
+            "name": "Unapproved change exposure",
+            "formula": "estimated impact of requested work without a decision",
+            "decision": "stop work from drifting ahead of approval"
+          },
+          {
+            "name": "Change decision time",
+            "formula": "decision timestamp - request timestamp",
+            "decision": "improve client escalation"
+          },
+          {
+            "name": "Estimate variance by change",
+            "formula": "actual effort - approved change estimate",
+            "decision": "calibrate future impact estimates"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Call notes, chat messages, and account-manager memory",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Agency project-management custom fields or a change-log spreadsheet",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "a request alters an approved deliverable or acceptance criterion",
+          "a revision exceeds the agreed round or source material changes",
+          "the team begins work before a decision is recorded"
+        ],
+        "examples": [
+          "A client asks for a new landing page during a status call",
+          "Late brand assets force the agency to redo approved layouts",
+          "An account lead offers an extra revision to preserve the relationship"
+        ],
+        "rules": [
+          "Change is allowed; invisible change is not",
+          "No extra work starts without a named decision owner",
+          "Tradeoffs are offered alongside fees when useful",
+          "The delivery plan and invoice evidence reflect the same decision"
+        ]
+      }
+    },
+    {
+      "id": "client-asset-chaser",
+      "siteId": "creative-agency-delivery",
+      "name": "Client Asset Chaser",
+      "product": "A structured request-and-reminder workflow for collecting copy, credentials, files, approvals, and other client inputs.",
+      "audience": "small creative, design, and digital agencies",
+      "problem": "Teams repeatedly ask for missing client inputs without a shared definition of what is complete, which blocks delivery while making the agency look late.",
+      "valueProposition": "Gives each input an owner, acceptance criteria, due date, dependency, reminder path, and received status.",
+      "topic": "client asset collection and missing content tracking for agencies",
+      "monetization": "$19-$79/month based on active records or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets client asset request template, website content collection checklist, client onboarding documents, and missing assets reminder searches.",
+      "score": 86,
+      "domain": null,
+      "contentBatch": "batch-001",
+      "probeContext": {
+        "outcome": "the agency receives usable client inputs by the date required for the dependent deliverable",
+        "workflow": [
+          "Define each required input",
+          "Send one organized request",
+          "Validate received material",
+          "Escalate blockers",
+          "Release the dependent work"
+        ],
+        "fields": [
+          "Client and project",
+          "Requested asset",
+          "Acceptance criteria",
+          "Example or format",
+          "Client owner",
+          "Required-by date",
+          "Dependent deliverable",
+          "Received link",
+          "Validation status"
+        ],
+        "mistakes": [
+          "Requesting vague buckets such as all website content",
+          "Marking a file received before checking usability",
+          "Sending reminders from multiple teammates",
+          "Keeping the delivery date unchanged after a critical input slips"
+        ],
+        "metrics": [
+          {
+            "name": "Usable-on-first-receipt rate",
+            "formula": "inputs accepted without re-request / inputs received",
+            "decision": "improve request clarity"
+          },
+          {
+            "name": "Client-input delay",
+            "formula": "usable timestamp - required-by timestamp",
+            "decision": "explain delivery risk"
+          },
+          {
+            "name": "Blocked deliverable count",
+            "formula": "active deliverables waiting on client input",
+            "decision": "focus escalation"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Email threads, shared folders, and account-manager reminders",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Client portal forms or an agency project board",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "an input is missing at the first reminder date",
+          "a received file fails its acceptance criteria",
+          "a critical input threatens the dependent delivery date"
+        ],
+        "examples": [
+          "A logo arrives as a low-resolution screenshot instead of a source file",
+          "Six page drafts are complete but legal copy has no client owner",
+          "Credentials are sent in an unsafe channel and must be re-requested securely"
+        ],
+        "rules": [
+          "Every request includes an example and acceptance criteria",
+          "One agency owner coordinates reminders",
+          "Sensitive credentials use an appropriate secure channel",
+          "Delivery impacts are surfaced when required inputs slip"
+        ]
+      }
+    },
+    {
+      "id": "site-inspection-followup",
+      "siteId": "commercial-cleaning-ops",
+      "name": "Site Inspection Follow-Up",
+      "product": "A corrective-action queue that connects cleaning inspection findings to owners, evidence, client updates, and verified resolution.",
+      "audience": "owner-operated commercial cleaning and janitorial companies",
+      "problem": "Inspection scores and photos are collected, but individual findings are not consistently assigned and verified before the next service cycle.",
+      "valueProposition": "Turns each finding into a traceable corrective action with location context, due date, proof, and closure review.",
+      "topic": "commercial cleaning inspection corrective action tracking",
+      "monetization": "$19-$79/month based on active records or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets janitorial inspection checklist, cleaning quality corrective action, site audit template, and inspection follow-up software searches.",
+      "score": 84,
+      "domain": null,
+      "contentBatch": "batch-001",
+      "probeContext": {
+        "outcome": "every material inspection finding is corrected, verified, and communicated before it becomes a repeat complaint",
+        "workflow": [
+          "Record the finding",
+          "Classify severity and recurrence",
+          "Assign corrective action",
+          "Capture completion evidence",
+          "Verify and close"
+        ],
+        "fields": [
+          "Client and location",
+          "Area or fixture",
+          "Finding",
+          "Inspection photo",
+          "Severity",
+          "Assigned supervisor",
+          "Due service",
+          "Corrective instruction",
+          "Completion photo",
+          "Verifier"
+        ],
+        "mistakes": [
+          "Saving only an overall inspection score",
+          "Assigning the whole inspection instead of each finding",
+          "Accepting a completion photo with no location context",
+          "Closing repeat findings without changing the instruction or training"
+        ],
+        "metrics": [
+          {
+            "name": "Finding closure time",
+            "formula": "verified timestamp - finding timestamp",
+            "decision": "set realistic correction windows"
+          },
+          {
+            "name": "Repeat finding rate",
+            "formula": "findings repeated in same area / findings closed",
+            "decision": "target training or scope problems"
+          },
+          {
+            "name": "Evidence acceptance rate",
+            "formula": "completion submissions accepted / submissions reviewed",
+            "decision": "improve proof quality"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Paper inspection sheets, photos, and supervisor texts",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Janitorial management inspections or a shared corrective-action board",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "a high-severity finding is recorded",
+          "the same area fails on consecutive inspections",
+          "completion evidence is missing or rejected"
+        ],
+        "examples": [
+          "A restroom consumable issue repeats despite a completed task",
+          "A photo proves the floor was cleaned but not which building area",
+          "A client complaint arrives between scheduled inspections"
+        ],
+        "rules": [
+          "Findings are assigned individually",
+          "Severity has a defined reason",
+          "The person completing work is not the only verifier for serious issues",
+          "Repeat findings trigger a workflow change, not another identical reminder"
+        ]
+      }
+    },
+    {
+      "id": "location-supply-par-tracker",
+      "siteId": "commercial-cleaning-ops",
+      "name": "Location Supply Par Tracker",
+      "product": "A simple replenishment workflow for chemicals, liners, paper goods, and consumables stored across client locations.",
+      "audience": "owner-operated commercial cleaning and janitorial companies",
+      "problem": "Supplies are reordered after crews report a shortage, while counts, storage locations, usage spikes, and delivery ownership remain inconsistent.",
+      "valueProposition": "Uses location-level par levels, count evidence, reorder ownership, delivery confirmation, and exception review.",
+      "topic": "janitorial supply inventory and location replenishment tracking",
+      "monetization": "$19-$79/month based on active records or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets cleaning supply inventory spreadsheet, janitorial par level template, site supply checklist, and consumable reorder software searches.",
+      "score": 78,
+      "domain": null,
+      "contentBatch": "batch-001",
+      "probeContext": {
+        "outcome": "each location has enough approved supplies for the next service window without uncontrolled overstock",
+        "workflow": [
+          "Define the item and par level",
+          "Count usable stock",
+          "Calculate the replenishment need",
+          "Place and track the order",
+          "Confirm location delivery"
+        ],
+        "fields": [
+          "Client location",
+          "Storage area",
+          "Item and unit",
+          "Approved product",
+          "Par level",
+          "Usable on hand",
+          "Count date",
+          "Reorder quantity",
+          "Order owner",
+          "Delivery evidence"
+        ],
+        "mistakes": [
+          "Mixing cases, rolls, and individual units",
+          "Counting damaged or inaccessible stock as usable",
+          "Using one par level for locations with different service patterns",
+          "Marking delivered when supplies reached the office rather than the site"
+        ],
+        "metrics": [
+          {
+            "name": "Stockout event count",
+            "formula": "confirmed shortages by location and item",
+            "decision": "adjust par levels or count cadence"
+          },
+          {
+            "name": "Inventory days above par",
+            "formula": "days usable stock exceeds defined par",
+            "decision": "find over-ordering"
+          },
+          {
+            "name": "Replenishment lead time",
+            "formula": "site-delivery timestamp - reorder trigger timestamp",
+            "decision": "choose reorder points"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Crew texts and periodic supply-room checks",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Inventory spreadsheets or janitorial platform supply modules",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "usable stock falls below the reorder point",
+          "usage changes sharply from the prior count",
+          "an approved item is unavailable or substituted"
+        ],
+        "examples": [
+          "A site runs out of liners after an event-heavy weekend",
+          "Two crews count the same chemical in different units",
+          "A substitute paper product does not fit the installed dispenser"
+        ],
+        "rules": [
+          "Every quantity has a unit",
+          "Only usable and accessible stock counts",
+          "Substitutions require compatibility confirmation",
+          "Delivery closes at the client storage location"
+        ]
+      }
+    },
+    {
+      "id": "crew-shift-handoff-log",
+      "siteId": "commercial-cleaning-ops",
+      "name": "Crew Shift Handoff Log",
+      "product": "A location-specific shift record for exceptions, unfinished work, access issues, supply problems, and follow-up ownership.",
+      "audience": "owner-operated commercial cleaning and janitorial companies",
+      "problem": "Critical details are passed verbally or in group chat, so the next crew cannot distinguish a resolved issue from work that still needs attention.",
+      "valueProposition": "Creates a short, searchable handoff with issue type, location, evidence, next action, owner, and acknowledgement.",
+      "topic": "commercial cleaning shift handoff and crew communication logs",
+      "monetization": "$19-$79/month based on active records or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets janitorial shift report template, cleaning crew handoff checklist, supervisor log book, and location communication app searches.",
+      "score": 80,
+      "domain": null,
+      "contentBatch": "batch-001",
+      "probeContext": {
+        "outcome": "the next responsible person starts with a clear list of unresolved location-specific exceptions",
+        "workflow": [
+          "Capture the exception at the site",
+          "Classify whether work is complete or blocked",
+          "Assign the next action",
+          "Acknowledge the handoff",
+          "Resolve or escalate"
+        ],
+        "fields": [
+          "Client location",
+          "Shift and timestamp",
+          "Area",
+          "Exception type",
+          "Description",
+          "Photo",
+          "Work already attempted",
+          "Next action",
+          "Owner",
+          "Acknowledgement"
+        ],
+        "mistakes": [
+          "Writing general notes with no area",
+          "Treating a handoff as completion",
+          "Sending the same issue to an entire group without one owner",
+          "Deleting resolved notes instead of preserving the outcome"
+        ],
+        "metrics": [
+          {
+            "name": "Unacknowledged handoff age",
+            "formula": "acknowledged timestamp - submitted timestamp",
+            "decision": "adjust supervisor coverage"
+          },
+          {
+            "name": "Repeat exception rate",
+            "formula": "repeated issue records / exception records",
+            "decision": "identify training, scope, or facility causes"
+          },
+          {
+            "name": "Shift-close completeness",
+            "formula": "shifts with required handoff or explicit no-exception / shifts worked",
+            "decision": "improve adoption"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Paper logbooks, group texts, and supervisor calls",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Team chat channels or janitorial communication modules",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "a task cannot be completed during the assigned shift",
+          "access, equipment, or supply conditions block work",
+          "an issue could affect the client before the next routine review"
+        ],
+        "examples": [
+          "A locked office prevents one scheduled task and the day crew needs to retry",
+          "A floor machine fails after part of the area is complete",
+          "A spill is cleaned but damaged material requires client follow-up"
+        ],
+        "rules": [
+          "A handoff describes unfinished reality, not blame",
+          "Every unresolved item has one next owner",
+          "Urgent client-impacting exceptions follow a separate escalation path",
+          "Resolution preserves what was done and verified"
+        ]
+      }
+    },
+    {
+      "id": "client-document-chaser",
+      "siteId": "bookkeeping-firm-ops",
+      "name": "Client Document Chaser",
+      "product": "A recurring request tracker for statements, receipts, payroll records, and explanations needed to complete bookkeeping work.",
+      "audience": "small bookkeeping firms and client accounting service teams",
+      "problem": "Client requests are repeated across email threads without a clear item-level status, acceptance check, or effect on the close schedule.",
+      "valueProposition": "Makes every requested input specific, secure, owned, validated, and connected to the blocked bookkeeping task.",
+      "topic": "bookkeeping client document collection and reminder tracking",
+      "monetization": "$19-$79/month based on active records or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets bookkeeping document request list, client reminder email, month-end document checklist, and accounting client portal searches.",
+      "score": 87,
+      "domain": null,
+      "contentBatch": "batch-001",
+      "probeContext": {
+        "outcome": "the firm receives usable client inputs early enough to complete the agreed recurring work",
+        "workflow": [
+          "Create the period request list",
+          "Send the secure itemized request",
+          "Validate each submission",
+          "Escalate missing or unusable items",
+          "Release blocked close tasks"
+        ],
+        "fields": [
+          "Client and period",
+          "Requested item",
+          "Purpose",
+          "Secure upload location",
+          "Client owner",
+          "Required-by date",
+          "Received date",
+          "Validation status",
+          "Blocked task"
+        ],
+        "mistakes": [
+          "Requesting documents in one vague paragraph",
+          "Marking an upload complete before checking the period and account",
+          "Sending duplicate reminders from different staff",
+          "Failing to show which deliverable a missing item blocks"
+        ],
+        "metrics": [
+          {
+            "name": "First-pass acceptance rate",
+            "formula": "items accepted on first submission / items received",
+            "decision": "improve request descriptions"
+          },
+          {
+            "name": "Missing-item age",
+            "formula": "current date - required-by date for unresolved items",
+            "decision": "focus escalation"
+          },
+          {
+            "name": "Close delay from client input",
+            "formula": "days blocked by unresolved client items",
+            "decision": "set expectations and improve cadence"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Recurring email templates and inbox folders",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Client portal requests or an accounting workflow board",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "an item remains missing at the reminder date",
+          "a file is unreadable, incomplete, or for the wrong period",
+          "a missing item threatens the agreed delivery date"
+        ],
+        "examples": [
+          "A client uploads one bank statement but omits the second account",
+          "A receipt export covers the wrong month",
+          "A transaction explanation arrives in email but is not attached to the open request"
+        ],
+        "rules": [
+          "Sensitive files use an approved secure channel",
+          "Every request names the exact item and period",
+          "One firm owner coordinates reminders",
+          "Received is distinct from reviewed and accepted"
+        ]
+      }
+    },
+    {
+      "id": "portfolio-close-monitor",
+      "siteId": "bookkeeping-firm-ops",
+      "name": "Portfolio Close Monitor",
+      "product": "A cross-client month-end close view that highlights task ownership, evidence, blockers, review queues, and delivery risk.",
+      "audience": "small bookkeeping firms and client accounting service teams",
+      "problem": "Firm owners cannot see which client closes are truly at risk without opening multiple checklists, inboxes, and accounting files.",
+      "valueProposition": "Standardizes close stages and exceptions across clients while keeping accounting work in the underlying ledger systems.",
+      "topic": "bookkeeping month-end close checklist and portfolio tracking",
+      "monetization": "$19-$79/month based on active records or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets bookkeeping month-end checklist, accounting close tracker, client close dashboard, and recurring workflow software searches.",
+      "score": 85,
+      "domain": null,
+      "contentBatch": "batch-001",
+      "probeContext": {
+        "outcome": "the firm can identify the next action and delivery risk for every client close without reconstructing status manually",
+        "workflow": [
+          "Instantiate the client close checklist",
+          "Complete preparer tasks with evidence",
+          "Resolve exceptions and missing inputs",
+          "Complete reviewer sign-off",
+          "Deliver and close the period"
+        ],
+        "fields": [
+          "Client and period",
+          "Task template",
+          "Preparer",
+          "Reviewer",
+          "Due date",
+          "Evidence link",
+          "Exception",
+          "Waiting reason",
+          "Review status",
+          "Delivery date"
+        ],
+        "mistakes": [
+          "Marking tasks complete without evidence",
+          "Using percent complete when one critical blocker remains",
+          "Sending every task to review at the same deadline",
+          "Changing a recurring template without recording why"
+        ],
+        "metrics": [
+          {
+            "name": "On-time close rate",
+            "formula": "client closes delivered by agreed date / closes due",
+            "decision": "plan capacity and client escalation"
+          },
+          {
+            "name": "Review queue age",
+            "formula": "review-complete timestamp - submitted-for-review timestamp",
+            "decision": "balance reviewer workload"
+          },
+          {
+            "name": "Exception recurrence",
+            "formula": "repeated exception types by client across periods",
+            "decision": "improve templates or client process"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Individual client checklists and owner status meetings",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Accounting workflow software or a portfolio close spreadsheet",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "a critical task passes its internal due date",
+          "a close waits on client input or ledger correction",
+          "review workload exceeds the remaining delivery window"
+        ],
+        "examples": [
+          "A close appears nearly complete but one unreconciled account blocks delivery",
+          "Five clients enter partner review on the same afternoon",
+          "The same uncategorized transaction issue returns for a client every month"
+        ],
+        "rules": [
+          "Task completion includes evidence",
+          "Critical path matters more than percent complete",
+          "Preparer and reviewer ownership are separate",
+          "Recurring exceptions feed back into next period's template"
+        ]
+      }
+    },
+    {
+      "id": "estimate-followup-queue",
+      "siteId": "local-contractor-office",
+      "name": "Estimate Follow-Up Queue",
+      "product": "A next-action pipeline for sent estimates that preserves job context, customer questions, decision dates, and closed reasons.",
+      "audience": "owner-operated HVAC, plumbing, electrical, and repair contractors",
+      "problem": "Estimates are sent from one system, then followed up from memory, causing inconsistent timing and little insight into why work is won or lost.",
+      "valueProposition": "Creates a visible follow-up sequence that stops on a decision and records actionable loss reasons.",
+      "topic": "contractor estimate follow-up and quote tracking",
+      "monetization": "$19-$79/month based on active records or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets estimate follow-up text, contractor quote reminder, open estimate tracker, and field service sales pipeline searches.",
+      "score": 86,
+      "domain": null,
+      "contentBatch": "batch-001",
+      "probeContext": {
+        "outcome": "every sent estimate reaches a documented customer decision or a deliberate next review date",
+        "workflow": [
+          "Confirm estimate delivery",
+          "Schedule the first contextual follow-up",
+          "Capture questions and changes",
+          "Ask for the decision",
+          "Close won, lost, deferred, or unreachable"
+        ],
+        "fields": [
+          "Customer and job",
+          "Estimate number",
+          "Sent date",
+          "Delivery confirmation",
+          "Estimate value band",
+          "Next-contact date",
+          "Customer question",
+          "Revision status",
+          "Decision",
+          "Closed reason"
+        ],
+        "mistakes": [
+          "Sending did you see this with no job context",
+          "Continuing reminders after the customer declines",
+          "Treating no response as a price objection",
+          "Failing to connect revised estimates to the original follow-up history"
+        ],
+        "metrics": [
+          {
+            "name": "Decision rate",
+            "formula": "estimates with a recorded decision / estimates sent",
+            "decision": "improve pipeline hygiene"
+          },
+          {
+            "name": "Time to decision",
+            "formula": "decision timestamp - confirmed delivery timestamp",
+            "decision": "set follow-up timing"
+          },
+          {
+            "name": "Loss reason completeness",
+            "formula": "lost estimates with actionable reason / lost estimates",
+            "decision": "improve pricing, scope, or response process"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Sent-email folders, calendar reminders, and owner memory",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Field-service CRM pipelines or an open-estimate spreadsheet",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "delivery is unconfirmed after the send event",
+          "the customer asks a scope, scheduling, or financing question",
+          "the next-contact date passes without a logged outcome"
+        ],
+        "examples": [
+          "A homeowner opens the estimate but needs an alternate equipment option",
+          "A property manager delays the job until the next budget period",
+          "A customer accepts verbally but has not completed the required approval step"
+        ],
+        "rules": [
+          "Every follow-up references the specific job and next decision",
+          "Automation stops on any clear customer decision",
+          "Closed reasons separate price, timing, scope, competition, and no decision",
+          "The estimating system remains the source for price and scope"
+        ]
+      }
+    },
+    {
+      "id": "job-photo-handoff",
+      "siteId": "local-contractor-office",
+      "name": "Job Photo Handoff",
+      "product": "A field-to-office workflow that organizes before, progress, completion, and exception photos by job and purpose.",
+      "audience": "owner-operated HVAC, plumbing, electrical, and repair contractors",
+      "problem": "Job photos remain on technicians' phones or in group chat without labels, making office review, invoicing, warranty response, and customer updates harder.",
+      "valueProposition": "Prompts technicians for the required photo set, context, exceptions, and office acknowledgement before the job closes.",
+      "topic": "contractor job photo documentation and field office handoff",
+      "monetization": "$19-$79/month based on active records or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets jobsite photo checklist, contractor photo documentation app, before-and-after job photos, and technician closeout template searches.",
+      "score": 83,
+      "domain": null,
+      "contentBatch": "batch-001",
+      "probeContext": {
+        "outcome": "the office receives a job-linked, labeled photo record that is sufficient for the next billing, customer, or service decision",
+        "workflow": [
+          "Define the required photo set",
+          "Capture photos at the correct job stage",
+          "Label context and exceptions",
+          "Submit the field closeout",
+          "Review and release the office workflow"
+        ],
+        "fields": [
+          "Customer and job number",
+          "Technician",
+          "Photo stage",
+          "Equipment or area",
+          "Caption",
+          "Timestamp",
+          "Exception",
+          "Customer-facing permission",
+          "Office review status"
+        ],
+        "mistakes": [
+          "Uploading photos with no job or area label",
+          "Taking only completion photos when before evidence matters",
+          "Mixing private/internal and customer-facing images",
+          "Closing the job before the office confirms the required set"
+        ],
+        "metrics": [
+          {
+            "name": "Complete photo-set rate",
+            "formula": "jobs with every required photo stage / jobs requiring photos",
+            "decision": "improve technician prompts"
+          },
+          {
+            "name": "Office clarification rate",
+            "formula": "jobs requiring photo follow-up / photo handoffs",
+            "decision": "find unclear captions or requirements"
+          },
+          {
+            "name": "Handoff review time",
+            "formula": "office-accepted timestamp - field-submit timestamp",
+            "decision": "align billing and review capacity"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Technician camera rolls, text messages, and shared folders",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Field-service job attachments or cloud-storage folders",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "a required stage photo is missing",
+          "the technician identifies changed scope or concealed conditions",
+          "an image may contain customer-sensitive information"
+        ],
+        "examples": [
+          "A technician photographs new equipment but not the removed unit or nameplate",
+          "A concealed pipe condition changes the quoted scope",
+          "A completed repair photo includes unrelated personal material in the background"
+        ],
+        "rules": [
+          "Every image is linked to a job and purpose",
+          "Required stages are defined before the visit",
+          "Sensitive images have access and sharing rules",
+          "The office can reject an incomplete handoff before billing"
+        ]
+      }
+    },
+    {
+      "id": "account-reorder-signal",
+      "siteId": "specialty-wholesale-ops",
+      "name": "Account Reorder Signal",
+      "product": "A lightweight account-level reminder that surfaces likely replenishment opportunities using prior cadence and rep judgment.",
+      "audience": "small specialty wholesalers and B2B distributors",
+      "problem": "Repeat customers fall outside a rep's memory when expected reorder timing varies by account, item family, season, and open inventory issue.",
+      "valueProposition": "Creates explainable reorder review dates with account context, prior order evidence, outreach ownership, and outcome tracking.",
+      "topic": "wholesale customer reorder reminders and account follow-up",
+      "monetization": "$19-$79/month based on active records or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets wholesale reorder reminder, distributor sales follow-up, reorder cadence spreadsheet, and B2B customer reactivation searches.",
+      "score": 82,
+      "domain": null,
+      "contentBatch": "batch-001",
+      "probeContext": {
+        "outcome": "the rep reviews each plausible reorder opportunity at the right time without sending irrelevant automated messages",
+        "workflow": [
+          "Establish the account-item cadence",
+          "Create an explainable review date",
+          "Check stock and account context",
+          "Send or defer contextual outreach",
+          "Record the reorder outcome"
+        ],
+        "fields": [
+          "Account",
+          "Item family",
+          "Prior order date",
+          "Typical interval",
+          "Season or event",
+          "Current stock status",
+          "Review date",
+          "Rep owner",
+          "Outreach note",
+          "Outcome"
+        ],
+        "mistakes": [
+          "Treating past cadence as a guaranteed purchase",
+          "Contacting an account when core items are unavailable",
+          "Ignoring seasonal or project-based purchasing",
+          "Resetting the signal without recording the outcome"
+        ],
+        "metrics": [
+          {
+            "name": "Reviewed-signal conversion",
+            "formula": "signals resulting in order / signals reviewed",
+            "decision": "calibrate which signals are useful"
+          },
+          {
+            "name": "Irrelevant outreach rate",
+            "formula": "outreach marked mistimed or not applicable / outreach sent",
+            "decision": "protect account relationships"
+          },
+          {
+            "name": "Reorder interval change",
+            "formula": "current order interval - prior typical interval",
+            "decision": "identify changing account behavior"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Rep memory, calendar reminders, and order-history searches",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "CRM tasks, ERP reports, or a reorder spreadsheet",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "the review date arrives with no open order",
+          "core items are backordered or substituted",
+          "the account reports a changed season, project, or purchasing policy"
+        ],
+        "examples": [
+          "A restaurant account usually reorders packaging monthly but is closed for renovation",
+          "A retailer may need seasonal stock earlier than last year",
+          "A buyer changed roles and the prior rep contact is no longer valid"
+        ],
+        "rules": [
+          "Signals explain why they appeared",
+          "A person reviews context before outreach",
+          "No model invents customer inventory",
+          "Outcome data improves future review timing"
+        ]
+      }
+    },
+    {
+      "id": "backorder-update-desk",
+      "siteId": "specialty-wholesale-ops",
+      "name": "Backorder Update Desk",
+      "product": "A customer-communication queue for open order lines affected by supply delay, substitution, partial fulfillment, or changed ETA.",
+      "audience": "small specialty wholesalers and B2B distributors",
+      "problem": "Operations updates ETAs in one system while account reps manually reconstruct which customers need an update and what alternatives can be offered.",
+      "valueProposition": "Connects each affected line to the latest source, customer promise, option, owner, and next-update date.",
+      "topic": "wholesale backorder customer update tracking",
+      "monetization": "$19-$79/month based on active records or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets backorder email template, customer delay notification, wholesale order status tracker, and proactive ETA communication searches.",
+      "score": 85,
+      "domain": null,
+      "contentBatch": "batch-001",
+      "probeContext": {
+        "outcome": "every affected customer receives an accurate update and explicit option before a missed promise becomes a surprise",
+        "workflow": [
+          "Identify affected order lines",
+          "Verify the latest supply evidence",
+          "Determine customer options",
+          "Send the account-specific update",
+          "Track the decision and next update"
+        ],
+        "fields": [
+          "Account and order",
+          "Affected item and quantity",
+          "Original promise",
+          "Latest source and timestamp",
+          "Current ETA",
+          "Partial availability",
+          "Approved substitute",
+          "Customer option",
+          "Next-update date",
+          "Owner"
+        ],
+        "mistakes": [
+          "Repeating an old ETA without source and timestamp",
+          "Offering a substitute before checking account requirements",
+          "Updating the order system but not the customer",
+          "Closing communication when the customer has not chosen an option"
+        ],
+        "metrics": [
+          {
+            "name": "Proactive update rate",
+            "formula": "affected orders updated before promise date / affected orders",
+            "decision": "improve customer communication coverage"
+          },
+          {
+            "name": "ETA revision count",
+            "formula": "number of ETA changes per affected line",
+            "decision": "identify unstable supply signals"
+          },
+          {
+            "name": "Decision turnaround",
+            "formula": "customer-option timestamp - update-sent timestamp",
+            "decision": "plan escalation and allocation"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "ERP notes, email drafts, and rep-managed follow-up lists",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Order-management notifications or a shared backorder tracker",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "an ETA changes or passes its confidence window",
+          "partial stock or an approved substitute becomes available",
+          "the customer has not chosen an option before the next operational cutoff"
+        ],
+        "examples": [
+          "Half an order can ship now while the remainder has an uncertain ETA",
+          "A substitute differs in packaging and needs buyer approval",
+          "A supplier changes the ETA twice after the rep already contacted the customer"
+        ],
+        "rules": [
+          "Every ETA includes its source and freshness",
+          "Customer options are explicit",
+          "Substitutes are approved, not improvised",
+          "Communication stays open until the customer decision is recorded"
+        ]
+      }
+    },
+    {
+      "id": "new-account-packet",
+      "siteId": "specialty-wholesale-ops",
+      "name": "New Account Packet",
+      "product": "A guided onboarding checklist for collecting wholesale account terms, contacts, tax documents, ordering preferences, and operational setup.",
+      "audience": "small specialty wholesalers and B2B distributors",
+      "problem": "New accounts bounce between sales, operations, and accounting because required information and approvals are collected in separate emails.",
+      "valueProposition": "Creates one itemized packet with secure uploads, validation, internal approvals, and a clear ready-to-order state.",
+      "topic": "wholesale customer onboarding and new account setup checklists",
+      "monetization": "$19-$79/month based on active records or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets wholesale account application, distributor onboarding checklist, new customer packet, and B2B account setup workflow searches.",
+      "score": 79,
+      "domain": null,
+      "contentBatch": "batch-001",
+      "probeContext": {
+        "outcome": "a new account reaches ready-to-order status with every required operational field and approval complete",
+        "workflow": [
+          "Select the account path",
+          "Request customer information and documents",
+          "Validate and approve terms",
+          "Configure ordering and fulfillment",
+          "Confirm ready-to-order"
+        ],
+        "fields": [
+          "Legal business name",
+          "Billing and ship-to contacts",
+          "Ordering contact",
+          "Tax or resale document status",
+          "Payment terms decision",
+          "Price list",
+          "Shipping method",
+          "Minimums",
+          "Internal owner",
+          "Ready date"
+        ],
+        "mistakes": [
+          "Using one packet for cash and terms accounts",
+          "Collecting sensitive documents through informal email",
+          "Marking complete before price and shipping rules are configured",
+          "Failing to tell the buyer how to place the first order"
+        ],
+        "metrics": [
+          {
+            "name": "Onboarding cycle time",
+            "formula": "ready timestamp - application start timestamp",
+            "decision": "find validation and approval bottlenecks"
+          },
+          {
+            "name": "First-order correction rate",
+            "formula": "first orders requiring account-setup correction / first orders",
+            "decision": "improve readiness checks"
+          },
+          {
+            "name": "Missing-item touch count",
+            "formula": "customer contacts about missing onboarding items",
+            "decision": "simplify the packet"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "PDF applications, email attachments, and internal handoffs",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "CRM onboarding pipelines or order-management account setup",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "a required document is missing or rejected",
+          "requested terms require internal review",
+          "the first-order path is not configured by the target ready date"
+        ],
+        "examples": [
+          "A prepaid account is incorrectly routed through a credit-terms approval",
+          "A resale document is uploaded with a mismatched legal name",
+          "The account is approved but the buyer never receives ordering instructions"
+        ],
+        "rules": [
+          "The packet branches by account type",
+          "Sensitive documents use appropriate secure handling",
+          "Ready-to-order has an explicit checklist",
+          "The customer receives next-step instructions and an owner"
+        ]
+      }
+    },
+    {
+      "id": "learner-intervention-queue",
+      "siteId": "cohort-course-ops",
+      "name": "Learner Intervention Queue",
+      "product": "A privacy-conscious workflow for identifying disengagement signals, assigning human outreach, and recording support outcomes during a live cohort.",
+      "audience": "independent cohort-course creators and small training businesses",
+      "problem": "Attendance, assignment, and community signals live in separate tools, so struggling learners are noticed late or receive generic reminders.",
+      "valueProposition": "Combines explicit engagement signals with a human-reviewed outreach queue, support plan, next date, and outcome.",
+      "topic": "cohort course learner engagement and intervention tracking",
+      "monetization": "$19-$79/month based on active records or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets cohort engagement tracker, student follow-up template, course completion intervention, and learner progress dashboard searches.",
+      "score": 83,
+      "domain": null,
+      "contentBatch": "batch-001",
+      "probeContext": {
+        "outcome": "learners who may need support receive timely, respectful outreach tied to a concrete next step",
+        "workflow": [
+          "Define transparent engagement signals",
+          "Review the learner context",
+          "Assign personal outreach",
+          "Agree on a support next step",
+          "Record the outcome and next review"
+        ],
+        "fields": [
+          "Cohort and learner",
+          "Signal and source",
+          "Signal date",
+          "Context known",
+          "Outreach owner",
+          "Contact channel",
+          "Learner response",
+          "Support next step",
+          "Review date",
+          "Outcome"
+        ],
+        "mistakes": [
+          "Treating one missed event as proof of disengagement",
+          "Sending automated pressure without checking context",
+          "Collecting sensitive learner information that is not needed",
+          "Closing the record because a message was sent"
+        ],
+        "metrics": [
+          {
+            "name": "Reviewed-signal time",
+            "formula": "human-review timestamp - signal timestamp",
+            "decision": "staff intervention coverage"
+          },
+          {
+            "name": "Support-plan acceptance",
+            "formula": "learners agreeing to next step / learners reached",
+            "decision": "improve outreach relevance"
+          },
+          {
+            "name": "Resolved intervention mix",
+            "formula": "outcomes by re-engaged, deferred, withdrawn, or no response",
+            "decision": "adapt cohort design"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Attendance sheets, LMS reports, and instructor memory",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "LMS progress reports or a shared learner-support board",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "a defined combination of attendance, assignment, or communication signals appears",
+          "the learner requests help or a schedule change",
+          "outreach receives no response by the agreed review date"
+        ],
+        "examples": [
+          "A learner misses one live session but submitted the assignment early",
+          "A participant stops posting after reporting a work deadline",
+          "A learner asks to defer and needs a clear transition plan"
+        ],
+        "rules": [
+          "Signals prompt review; they do not label the learner",
+          "Outreach is supportive and specific",
+          "Only necessary information is recorded",
+          "A sent message is not the same as a resolved intervention"
+        ]
+      }
+    },
+    {
+      "id": "participant-followup-queue",
+      "siteId": "nonprofit-program-ops",
+      "name": "Participant Follow-Up Queue",
+      "product": "A minimal, permission-aware workflow for program follow-ups, referrals, missing steps, and outcome check-ins.",
+      "audience": "small nonprofit direct-service and program teams",
+      "problem": "Follow-up commitments are distributed across staff notes and spreadsheets, making it hard to see which participant is waiting and what consented action comes next.",
+      "valueProposition": "Tracks the minimum necessary commitment, consent boundary, owner, next date, referral status, and outcome.",
+      "topic": "nonprofit participant follow-up and referral tracking",
+      "monetization": "$19-$79/month based on active records or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets nonprofit follow-up tracker, participant contact log, referral follow-up template, and program case workflow searches.",
+      "score": 82,
+      "domain": null,
+      "contentBatch": "batch-001",
+      "probeContext": {
+        "outcome": "every consented program follow-up reaches a documented next step or closed reason without unnecessary data collection",
+        "workflow": [
+          "Record the follow-up commitment",
+          "Confirm consent and preferred contact",
+          "Assign the action",
+          "Complete or coordinate the follow-up",
+          "Record the outcome and next review"
+        ],
+        "fields": [
+          "Program and participant ID",
+          "Follow-up purpose",
+          "Consent boundary",
+          "Preferred channel",
+          "Owner",
+          "Due date",
+          "Referral or action",
+          "Attempt outcome",
+          "Next date",
+          "Closed reason"
+        ],
+        "mistakes": [
+          "Recording more personal detail than the workflow needs",
+          "Using message sent as the completion outcome",
+          "Failing to distinguish referral made from referral connected",
+          "Leaving overdue records ownerless after staff changes"
+        ],
+        "metrics": [
+          {
+            "name": "On-time follow-up rate",
+            "formula": "follow-ups completed or reviewed by due date / follow-ups due",
+            "decision": "plan caseload coverage"
+          },
+          {
+            "name": "Connection rate",
+            "formula": "referrals confirmed connected / referrals made",
+            "decision": "improve coordination"
+          },
+          {
+            "name": "Closed-reason completeness",
+            "formula": "closed records with defined outcome / records closed",
+            "decision": "strengthen program learning"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Staff notes, calendar reminders, and program spreadsheets",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Nonprofit case-management tasks or a shared follow-up board",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "a promised follow-up date arrives",
+          "a referral has no confirmation by its review date",
+          "staff ownership or participant contact preference changes"
+        ],
+        "examples": [
+          "A participant requests a resource list by text after a workshop",
+          "A referral is sent but the partner cannot reach the participant",
+          "A staff member leaves with open check-ins assigned"
+        ],
+        "rules": [
+          "Collect only information needed for the action",
+          "Consent and contact preferences control outreach",
+          "Referral sent and referral connected are separate outcomes",
+          "Supervisors can reassign open commitments without exposing unnecessary detail"
+        ]
+      }
+    },
+    {
+      "id": "grant-evidence-organizer",
+      "siteId": "nonprofit-program-ops",
+      "name": "Grant Evidence Organizer",
+      "product": "A source-linked evidence index that maps program activities and outcomes to reporting questions without becoming a second case-management system.",
+      "audience": "small nonprofit direct-service and program teams",
+      "problem": "Teams reconstruct grant reports from folders and spreadsheets because evidence is not linked to the reporting question, period, program, source, and reviewer.",
+      "valueProposition": "Creates a traceable evidence inventory with ownership, permissions, gaps, review status, and report-ready summaries.",
+      "topic": "nonprofit grant reporting evidence and outcome documentation",
+      "monetization": "$19-$79/month based on active records or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets grant reporting checklist, nonprofit evidence tracker, program outcome documentation, and funder report workflow searches.",
+      "score": 84,
+      "domain": null,
+      "contentBatch": "batch-001",
+      "probeContext": {
+        "outcome": "each reporting statement can be traced to reviewed, appropriately handled evidence for the correct period and program",
+        "workflow": [
+          "Map reporting questions",
+          "Inventory available evidence",
+          "Identify gaps and owners",
+          "Review quality and permissions",
+          "Package report-ready evidence"
+        ],
+        "fields": [
+          "Grant and report period",
+          "Reporting question",
+          "Program or activity",
+          "Evidence type",
+          "Source link",
+          "Collection date",
+          "Permission or sensitivity",
+          "Gap",
+          "Owner",
+          "Reviewer status"
+        ],
+        "mistakes": [
+          "Collecting documents without mapping them to a question",
+          "Copying participant-level data when aggregate evidence is enough",
+          "Using a source outside the report period",
+          "Writing the narrative before evidence gaps are visible"
+        ],
+        "metrics": [
+          {
+            "name": "Evidence coverage",
+            "formula": "reporting questions with reviewed evidence / questions due",
+            "decision": "prioritize gaps"
+          },
+          {
+            "name": "Review rejection rate",
+            "formula": "evidence items returned for correction / items reviewed",
+            "decision": "improve collection guidance"
+          },
+          {
+            "name": "Source traceability",
+            "formula": "report claims linked to approved source / claims checked",
+            "decision": "strengthen reporting quality"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Shared folders, report drafts, and staff memory",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Grant-management software or an evidence-index spreadsheet",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "a reporting question has no approved evidence",
+          "an item contains sensitivity or permission uncertainty",
+          "review finds a period, definition, or source mismatch"
+        ],
+        "examples": [
+          "Attendance evidence covers the program year but the grant asks for the quarter",
+          "A participant quote lacks documented permission for external use",
+          "Two spreadsheets use different definitions for program completion"
+        ],
+        "rules": [
+          "Start from the reporting question",
+          "Prefer the least sensitive evidence that answers it",
+          "Definitions and periods are recorded with the source",
+          "A reviewer approves evidence before it enters the narrative"
+        ]
+      }
+    },
+    {
+      "id": "invoice-followup-queue",
+      "siteId": "independent-service-ops",
+      "name": "Invoice Follow-Up Queue",
+      "product": "A polite, evidence-based reminder workflow for independent service businesses managing unpaid invoices.",
+      "audience": "freelancers and independent professional service businesses",
+      "problem": "Payment reminders depend on memory, while invoice delivery, client questions, promises, disputes, and next actions remain scattered.",
+      "valueProposition": "Creates a clear reminder sequence that pauses for questions, records payment promises, and stops immediately on resolution.",
+      "topic": "freelancer invoice follow-up and overdue payment reminders",
+      "monetization": "$19-$79/month based on active records or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets overdue invoice reminder, freelancer payment follow-up email, unpaid invoice tracker, and invoice reminder schedule searches.",
+      "score": 89,
+      "domain": null,
+      "contentBatch": "batch-001",
+      "probeContext": {
+        "outcome": "every unpaid invoice has a professional next action, documented client context, and clear resolution",
+        "workflow": [
+          "Confirm invoice delivery and terms",
+          "Schedule the first reminder",
+          "Capture questions or disputes",
+          "Track the payment promise",
+          "Close paid, adjusted, disputed, or written off"
+        ],
+        "fields": [
+          "Client and invoice",
+          "Amount band",
+          "Sent date",
+          "Due date",
+          "Delivery confirmation",
+          "Last reminder",
+          "Client response",
+          "Payment promise",
+          "Next-contact date",
+          "Resolution"
+        ],
+        "mistakes": [
+          "Sending reminders before confirming delivery",
+          "Using the same message after a client raises a question",
+          "Continuing automation after payment or dispute",
+          "Threatening consequences not present in the agreement"
+        ],
+        "metrics": [
+          {
+            "name": "Resolved invoice rate",
+            "formula": "invoices resolved / invoices entering follow-up",
+            "decision": "evaluate the process without claiming causation"
+          },
+          {
+            "name": "Promise kept rate",
+            "formula": "payment promises completed by promised date / promises due",
+            "decision": "set review dates"
+          },
+          {
+            "name": "Follow-up age",
+            "formula": "current date - first overdue follow-up date",
+            "decision": "prioritize old unresolved items"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Calendar reminders and sent-email searches",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Invoicing software reminders or an accounts-receivable spreadsheet",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "the due date passes with no recorded payment",
+          "the client raises a scope, approval, or invoice-detail question",
+          "a promised payment date passes"
+        ],
+        "examples": [
+          "A client says the invoice went to an old billing contact",
+          "A client disputes one line while accepting the rest",
+          "A payment promise falls on the next accounts-payable run"
+        ],
+        "rules": [
+          "Confirm facts before changing tone",
+          "A client question pauses the standard reminder path",
+          "Do not invent legal rights, fees, or deadlines",
+          "Automation stops when the invoice resolves"
+        ]
+      }
+    },
+    {
+      "id": "client-handoff-pack",
+      "siteId": "independent-service-ops",
+      "name": "Client Handoff Pack",
+      "product": "A structured project-close workflow for delivering files, access, decisions, instructions, and open items to a service client.",
+      "audience": "freelancers and independent professional service businesses",
+      "problem": "Projects are called finished while files, credentials, ownership, maintenance instructions, and unresolved decisions remain across tools and conversations.",
+      "valueProposition": "Builds a client-ready handoff index with acceptance, secure access transfer, training, open items, and closure evidence.",
+      "topic": "freelancer client project handoff and offboarding checklists",
+      "monetization": "$19-$79/month based on active records or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets client handoff checklist, project completion email, freelancer offboarding template, and website handover document searches.",
+      "score": 84,
+      "domain": null,
+      "contentBatch": "batch-001",
+      "probeContext": {
+        "outcome": "the client can operate the delivered work and locate every agreed artifact without depending on the freelancer's memory",
+        "workflow": [
+          "Inventory deliverables and ownership",
+          "Prepare files and secure access transfer",
+          "Document operation and maintenance",
+          "Review open items with the client",
+          "Obtain acceptance and close"
+        ],
+        "fields": [
+          "Client and project",
+          "Deliverable",
+          "Final file or system link",
+          "Owner after handoff",
+          "Access transfer status",
+          "Operating instruction",
+          "Open item",
+          "Acceptance criterion",
+          "Client acknowledgement"
+        ],
+        "mistakes": [
+          "Sending a folder with no index",
+          "Sharing credentials in an unsafe channel",
+          "Treating training as proof of client acceptance",
+          "Closing before unresolved items have owners and dates"
+        ],
+        "metrics": [
+          {
+            "name": "First-pass acceptance rate",
+            "formula": "deliverables accepted without rework / deliverables reviewed",
+            "decision": "improve completion criteria"
+          },
+          {
+            "name": "Post-handoff clarification count",
+            "formula": "client questions requiring missing handoff context",
+            "decision": "improve documentation"
+          },
+          {
+            "name": "Open-item closure time",
+            "formula": "closed timestamp - handoff timestamp for declared open items",
+            "decision": "set support boundaries"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "A final email and shared drive folder",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Project-management closeout templates or a client portal",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "a deliverable lacks an agreed final format or owner",
+          "access transfer is incomplete or insecure",
+          "the client identifies an unresolved item during review"
+        ],
+        "examples": [
+          "A website launches but analytics ownership remains on the freelancer's account",
+          "Final design files are present but fonts and licenses are undocumented",
+          "The client accepts delivery while one content item has a named post-launch date"
+        ],
+        "rules": [
+          "The handoff has a human-readable index",
+          "Access transfer follows appropriate security practice",
+          "Acceptance criteria come from the agreed scope",
+          "Open items have owners, dates, and support boundaries"
+        ]
+      }
     }
   ]
 }
