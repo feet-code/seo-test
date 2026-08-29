@@ -1,0 +1,63 @@
+{
+  "id": "fitness-studio-ops",
+  "name": "Fitness Studio Operations",
+  "domain": null,
+  "audience": "boutique fitness studios and group-class operators",
+  "topic": "trial conversion and instructor coverage for fitness studios",
+  "products": [
+    {
+      "id": "trial-member-followup",
+      "name": "Trial Member Follow-Up",
+      "product": "A focused fitness studio trial follow-up workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "boutique fitness studios and group-class operators",
+      "problem": "Trial visitors enter through forms, class bookings, guest passes, and walk-ins, but staff cannot see who attended, what they wanted, or whether someone followed up.",
+      "valueProposition": "Turns fitness studio trial follow-up into a visible operating queue so every attended trial receives one relevant membership next step or a documented no-contact outcome.",
+      "topic": "fitness studio trial follow-up",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets gym trial follow up, fitness studio lead tracker, trial class conversion, and boutique fitness sales workflow searches.",
+      "score": 85
+    },
+    {
+      "id": "instructor-cover-board",
+      "name": "Instructor Cover Board",
+      "product": "A focused fitness instructor substitution tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "boutique fitness studios and group-class operators",
+      "problem": "Instructor absences are solved in group chats, so managers may not know whether a qualified substitute, access instructions, payroll changes, and member notices are all complete.",
+      "valueProposition": "Turns fitness instructor substitution tracking into a visible operating queue so every instructor absence is covered by an eligible substitute or escalated to a documented class change before members arrive.",
+      "topic": "fitness instructor substitution tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets fitness instructor substitute, gym class coverage app, instructor sub request, and fitness class cancellation workflow searches.",
+      "score": 83
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused fitness studio trial follow-up workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns fitness studio trial follow-up into a visible operating queue so every attended trial receives one relevant membership next step or a documented no-contact outcome.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith",
+    "picture": "/assets/blog/authors/jj.jpeg"
+  },
+  "images": {
+    "coverImage": "/assets/blog/preview/cover.jpg",
+    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-pages",
+    "project": "fitness-studio-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}
