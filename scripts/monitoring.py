@@ -6,9 +6,11 @@ import html
 import json
 import os
 import re
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
+from html.parser import HTMLParser
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -16,6 +18,9 @@ GOOGLE_SCOPES = [
     "https://www.googleapis.com/auth/siteverification",
     "https://www.googleapis.com/auth/webmasters",
 ]
+DEFAULT_GOOGLE_VERIFICATION_TIMEOUT_SECONDS = 300.0
+DEFAULT_GOOGLE_VERIFICATION_POLL_SECONDS = 5.0
+MAX_GOOGLE_VERIFICATION_POLL_SECONDS = 20.0
 
 
 def _safe_headers(headers: dict | None) -> dict:
@@ -35,6 +40,9 @@ def http(method: str, url: str, body=None, headers=None):
     except urllib.error.HTTPError as exc:
         raw = exc.read()
         detail = raw.decode("utf-8", errors="replace") if raw else "<empty response>"
+        # Preserve the consumed body so callers can distinguish a transient
+        # token-propagation failure from other 400 responses.
+        exc.response_detail = detail
         print(f"HTTP error: {exc.code} {method} {url}\nResponse: {detail}")
         raise
     result = json.loads(raw) if raw else {}
@@ -170,17 +178,158 @@ def google_verification_content(token: str) -> str:
     return html.unescape(match.group(1)).strip() if match else token
 
 
+class _GoogleVerificationMetaParser(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.contents: list[str] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag.lower() != "meta":
+            return
+        values = {key.lower(): value for key, value in attrs if value is not None}
+        if values.get("name", "").lower() == "google-site-verification":
+            content = values.get("content", "").strip()
+            if content:
+                self.contents.append(content)
+
+
+def google_verification_meta_contents(document: str) -> list[str]:
+    parser = _GoogleVerificationMetaParser()
+    parser.feed(document)
+    return parser.contents
+
+
+def _positive_seconds(name: str, default: float) -> float:
+    value = os.environ.get(name)
+    if value is None:
+        return default
+    try:
+        parsed = float(value)
+    except ValueError as exc:
+        raise RuntimeError(f"{name} must be a positive number, got {value!r}") from exc
+    if parsed <= 0:
+        raise RuntimeError(f"{name} must be positive, got {value!r}")
+    return parsed
+
+
+def _verification_timing() -> tuple[float, float]:
+    return (
+        _positive_seconds(
+            "GOOGLE_VERIFICATION_TIMEOUT_SECONDS",
+            DEFAULT_GOOGLE_VERIFICATION_TIMEOUT_SECONDS,
+        ),
+        _positive_seconds(
+            "GOOGLE_VERIFICATION_POLL_SECONDS",
+            DEFAULT_GOOGLE_VERIFICATION_POLL_SECONDS,
+        ),
+    )
+
+
+def _verification_retry_delay(poll_seconds: float, attempt: int, remaining: float) -> float:
+    growing = poll_seconds * (1.5 ** min(max(attempt - 1, 0), 6))
+    return min(growing, MAX_GOOGLE_VERIFICATION_POLL_SECONDS, remaining)
+
+
+def _fetch_public_html(url: str) -> str:
+    request = urllib.request.Request(
+        url,
+        headers={
+            "Accept": "text/html,application/xhtml+xml",
+            "Cache-Control": "no-cache",
+            "Pragma": "no-cache",
+            "User-Agent": "seo-site-verifier/1.0",
+        },
+    )
+    with urllib.request.urlopen(request, timeout=30) as response:
+        raw = response.read()
+        charset = response.headers.get_content_charset() or "utf-8"
+    return raw.decode(charset, errors="replace")
+
+
+def wait_for_verification_meta(
+    property_url: str,
+    expected_token: str,
+    *,
+    deadline: float | None = None,
+    timeout_seconds: float | None = None,
+    poll_seconds: float | None = None,
+) -> None:
+    """Wait until the exact META token is visible at the public production URL."""
+    configured_timeout, configured_poll = _verification_timing()
+    timeout = timeout_seconds if timeout_seconds is not None else configured_timeout
+    poll = poll_seconds if poll_seconds is not None else configured_poll
+    started = time.monotonic()
+    deadline = deadline if deadline is not None else started + timeout
+    attempt = 0
+    last_observation = "the site has not been fetched yet"
+
+    while True:
+        attempt += 1
+        try:
+            document = _fetch_public_html(property_url)
+            contents = google_verification_meta_contents(document)
+            if expected_token in contents:
+                elapsed = time.monotonic() - started
+                print(
+                    f"Google META token is public at {property_url} "
+                    f"(attempt {attempt}, {elapsed:.1f}s)"
+                )
+                return
+            last_observation = (
+                "no google-site-verification META tag was present"
+                if not contents
+                else "a stale/different google-site-verification token was present"
+            )
+        except Exception as exc:
+            last_observation = f"public fetch failed: {type(exc).__name__}: {exc}"
+
+        remaining = deadline - time.monotonic()
+        if remaining <= 0:
+            elapsed = time.monotonic() - started
+            raise RuntimeError(
+                f"Timed out after {elapsed:.1f}s waiting for the deployed Google META token at "
+                f"{property_url}; last observation: {last_observation}. "
+                "Increase GOOGLE_VERIFICATION_TIMEOUT_SECONDS if this host propagates slowly."
+            )
+        delay = _verification_retry_delay(poll, attempt, remaining)
+        print(
+            f"Google META token is not public yet at {property_url}; "
+            f"retrying in {delay:.1f}s ({last_observation})"
+        )
+        time.sleep(delay)
+
+
+def _verification_token_missing(exc: urllib.error.HTTPError) -> bool:
+    detail = str(getattr(exc, "response_detail", "")).lower()
+    return (
+        exc.code == 400
+        and "verification token" in detail
+        and "could not be found" in detail
+    )
+
+
 def verify_and_register(config: dict, site_url: str) -> None:
     if not google_configured():
         return
-    token = google_access_token()
     property_url = site_url.rstrip("/") + "/"
+    monitoring = config.setdefault("monitoring", {})
+    existing_property = str(monitoring.get("googleProperty", "")).rstrip("/") + "/"
+    existing_token = google_verification_content(
+        str(monitoring.get("googleVerificationToken", ""))
+    )
+    if existing_property == property_url and existing_token:
+        monitoring["googleVerificationToken"] = existing_token
+        monitoring["googleProperty"] = property_url
+        print("Reusing existing Google META verification token for", property_url)
+        return
+
+    token = google_access_token()
     print("Getting Google META verification token for", property_url)
     token_result = google_api("POST", "https://www.googleapis.com/siteVerification/v1/token", token, {
         "site": {"identifier": property_url, "type": "SITE"}, "verificationMethod": "META"
     })
-    config.setdefault("monitoring", {})["googleVerificationToken"] = google_verification_content(token_result["token"])
-    config["monitoring"]["googleProperty"] = property_url
+    monitoring["googleVerificationToken"] = google_verification_content(token_result["token"])
+    monitoring["googleProperty"] = property_url
 
 
 def finalize_google(config: dict) -> None:
@@ -189,17 +338,53 @@ def finalize_google(config: dict) -> None:
     property_url = monitoring.get("googleProperty")
     if not property_url or not google_configured():
         return
+    expected_token = google_verification_content(
+        str(monitoring.get("googleVerificationToken", ""))
+    )
+    if not expected_token:
+        raise RuntimeError(
+            f"No Google META verification token is configured for {property_url}"
+        )
+    timeout, poll = _verification_timing()
+    deadline = time.monotonic() + timeout
+    wait_for_verification_meta(
+        property_url,
+        expected_token,
+        deadline=deadline,
+        poll_seconds=poll,
+    )
     token = google_access_token()
     verification = {"site": {"identifier": property_url, "type": "SITE"}}
     delegated_owner = os.environ.get("GOOGLE_SEARCH_CONSOLE_OWNER_EMAIL")
     if delegated_owner:
         verification["owners"] = [delegated_owner]
-    verified = google_api(
-        "POST",
-        "https://www.googleapis.com/siteVerification/v1/webResource?verificationMethod=META",
-        token,
-        verification,
-    )
+    verification_attempt = 0
+    while True:
+        verification_attempt += 1
+        try:
+            verified = google_api(
+                "POST",
+                "https://www.googleapis.com/siteVerification/v1/webResource?verificationMethod=META",
+                token,
+                verification,
+            )
+            break
+        except urllib.error.HTTPError as exc:
+            if not _verification_token_missing(exc):
+                raise
+            remaining = deadline - time.monotonic()
+            if remaining <= 0:
+                raise RuntimeError(
+                    f"Google still could not observe the deployed META token for {property_url} "
+                    f"after {timeout:.1f}s. Increase GOOGLE_VERIFICATION_TIMEOUT_SECONDS "
+                    "if this host propagates slowly."
+                ) from exc
+            delay = _verification_retry_delay(poll, verification_attempt, remaining)
+            print(
+                f"The token is public, but Google has not observed it yet for {property_url}; "
+                f"retrying ownership verification in {delay:.1f}s"
+            )
+            time.sleep(delay)
     print("Google ownership verified:", verified.get("id", property_url))
     encoded = urllib.parse.quote(property_url, safe="")
     google_api("PUT", f"https://www.googleapis.com/webmasters/v3/sites/{encoded}", token)

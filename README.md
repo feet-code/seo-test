@@ -131,8 +131,10 @@ GOOGLE_OAUTH_CLIENT_SECRETS=/path/to/oauth-client.json
 The first real launch opens one browser authorization. Choose the Google account you use in Search Console. Its refresh token is cached under `.deploy/state/`, so the remaining sites run unattended:
 
 ```text
-META token -> deploy -> verify ownership -> sites.add -> submit sitemap
+META token -> deploy -> wait for public token -> verify ownership -> sites.add -> submit sitemap
 ```
+
+Cloudflare's production alias and Google's verifier can observe a new deployment at different times. The launcher therefore waits until the exact META token is visible at the public URL, then retries only Google's specific “verification token could not be found” response. The default shared deadline is five minutes; set `GOOGLE_VERIFICATION_TIMEOUT_SECONDS=600` if a custom domain or host propagates more slowly. Progress is printed during the wait, so a normal bulk launch should not require repeated `--resume` commands.
 
 You do not register every site manually. Each successful launch calls `sites.add` for the exact URL-prefix property, so it appears in that OAuth user's GSC account.
 

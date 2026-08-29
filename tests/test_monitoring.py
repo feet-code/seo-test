@@ -3,6 +3,7 @@ from __future__ import annotations
 import importlib.util
 import sys
 import unittest
+import urllib.error
 from pathlib import Path
 from unittest.mock import patch
 
@@ -18,6 +19,148 @@ def load_monitoring():
     sys.modules[spec.name] = module
     spec.loader.exec_module(module)
     return module
+
+
+class MonitoringVerificationTests(unittest.TestCase):
+    def test_meta_parser_handles_attribute_order_and_html_entities(self) -> None:
+        monitoring = load_monitoring()
+
+        self.assertEqual(
+            monitoring.google_verification_meta_contents(
+                '<html><head><meta content="token&amp;value" data-x="1" '
+                'name="google-site-verification"></head></html>'
+            ),
+            ["token&value"],
+        )
+
+    def test_public_meta_wait_retries_until_the_exact_token_is_visible(self) -> None:
+        monitoring = load_monitoring()
+        stale = '<meta name="google-site-verification" content="old-token">'
+        current = '<meta content="new-token" name="google-site-verification">'
+
+        with (
+            patch.object(
+                monitoring,
+                "_fetch_public_html",
+                side_effect=[stale, current],
+            ) as fetch,
+            patch.object(monitoring.time, "sleep") as sleep,
+        ):
+            monitoring.wait_for_verification_meta(
+                "https://audience-tools.pages.dev/",
+                "new-token",
+                timeout_seconds=10,
+                poll_seconds=0.01,
+            )
+
+        self.assertEqual(fetch.call_count, 2)
+        sleep.assert_called_once()
+
+    def test_existing_token_is_reused_on_resume(self) -> None:
+        monitoring = load_monitoring()
+        config = {
+            "monitoring": {
+                "googleProperty": "https://audience-tools.pages.dev/",
+                "googleVerificationToken": "existing-token",
+            }
+        }
+
+        with (
+            patch.object(monitoring, "google_configured", return_value=True),
+            patch.object(monitoring, "google_access_token") as access_token,
+            patch.object(monitoring, "google_api") as google_api,
+        ):
+            monitoring.verify_and_register(
+                config,
+                "https://audience-tools.pages.dev",
+            )
+
+        access_token.assert_not_called()
+        google_api.assert_not_called()
+        self.assertEqual(
+            config["monitoring"]["googleVerificationToken"],
+            "existing-token",
+        )
+
+    def test_google_token_not_found_is_retried_before_gsc_registration(self) -> None:
+        monitoring = load_monitoring()
+        calls = []
+        verification_attempts = 0
+
+        def fake_api(method, url, token, body=None):
+            nonlocal verification_attempts
+            calls.append((method, url, token, body))
+            if method == "POST" and "webResource?verificationMethod=META" in url:
+                verification_attempts += 1
+                if verification_attempts == 1:
+                    error = urllib.error.HTTPError(
+                        url,
+                        400,
+                        "Bad Request",
+                        {},
+                        None,
+                    )
+                    error.response_detail = (
+                        '{"error":{"message":"The necessary verification token '
+                        'could not be found on your site."}}'
+                    )
+                    raise error
+                return {"id": "verified-resource"}
+            return {}
+
+        config = {
+            "monitoring": {
+                "googleProperty": "https://audience-tools.pages.dev/",
+                "googleVerificationToken": "expected-token",
+            }
+        }
+        with (
+            patch.object(monitoring, "google_configured", return_value=True),
+            patch.object(monitoring, "google_access_token", return_value="oauth-token"),
+            patch.object(monitoring, "google_api", side_effect=fake_api),
+            patch.object(monitoring, "wait_for_verification_meta") as wait_for_meta,
+            patch.object(monitoring, "_verification_timing", return_value=(30.0, 0.01)),
+            patch.object(monitoring.time, "sleep") as sleep,
+        ):
+            monitoring.finalize_google(config)
+
+        wait_for_meta.assert_called_once()
+        sleep.assert_called_once()
+        self.assertEqual(
+            [method for method, _url, _token, _body in calls],
+            ["POST", "POST", "PUT", "PUT"],
+        )
+
+    def test_unrelated_google_bad_request_is_not_retried(self) -> None:
+        monitoring = load_monitoring()
+        error = urllib.error.HTTPError(
+            "https://www.googleapis.com/siteVerification/v1/webResource",
+            400,
+            "Bad Request",
+            {},
+            None,
+        )
+        error.response_detail = '{"error":{"message":"Invalid site identifier"}}'
+        config = {
+            "monitoring": {
+                "googleProperty": "https://audience-tools.pages.dev/",
+                "googleVerificationToken": "expected-token",
+            }
+        }
+
+        with (
+            patch.object(monitoring, "google_configured", return_value=True),
+            patch.object(monitoring, "google_access_token", return_value="oauth-token"),
+            patch.object(monitoring, "google_api", side_effect=error) as google_api,
+            patch.object(monitoring, "wait_for_verification_meta"),
+            patch.object(monitoring, "_verification_timing", return_value=(30.0, 0.01)),
+            patch.object(monitoring.time, "sleep") as sleep,
+        ):
+            with self.assertRaises(urllib.error.HTTPError):
+                monitoring.finalize_google(config)
+
+        google_api.assert_called_once()
+        sleep.assert_not_called()
 
 
 class MonitoringTeardownTests(unittest.TestCase):

@@ -93,6 +93,17 @@ python scripts/launch.py --frontend-only
 
 `--frontend-only` never calls Gemini. It still deploys, completes GSC registration/sitemap submission, and health-checks each site.
 
+After each deploy, the launcher waits for the exact Google META token at the public production URL and retries Google's token-not-found response within a five-minute deadline. This absorbs normal Pages/Google propagation delays without stopping the batch. For unusually slow custom-domain propagation, increase the deadline before launching:
+
+```bash
+# PowerShell
+$env:GOOGLE_VERIFICATION_TIMEOUT_SECONDS="600"
+python scripts/launch.py --resume
+
+# bash/zsh
+GOOGLE_VERIFICATION_TIMEOUT_SECONDS=600 python scripts/launch.py --resume
+```
+
 ## Change domain, signup, hosting, or article count
 
 Edit `sites/SITE_ID/site.json`. These site-local fields survive portfolio imports:
