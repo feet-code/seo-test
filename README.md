@@ -1,126 +1,132 @@
-# SEO site automation
+# SEO portfolio automation
 
-This repository is a shared static blog generator and portfolio automation system for launching and monitoring 100+ independent SEO sites.
+This repository generates and deploys audience-grouped SEO product portfolios. Each website contains the products that belong to one coherent audience; a site may contain one, three, seven, or another useful number of products. Audience fit decides group boundaries, with a maximum-size guardrail rather than an exact product quota.
 
-## One command
+Every product remains independently measurable through its landing page, blog frontmatter, signup payload, and PostHog properties.
 
-After credentials are configured:
+## Main workflow
+
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
-npm install
+npm ci
+```
+
+Then use the same workflow for 1 product or 100+ products:
+
+```bash
+python scripts/ideas.py --generate --count 100
+# Inspect/edit ideas/ideas.json; optionally preview with:
+python scripts/ideas.py --plan
+python scripts/launch.py --limit 1
 python scripts/launch.py
 ```
 
-Use a safe local/mock smoke test first. It does not call Gemini or external monitoring APIs:
+The first command writes `ideas/ideas.json` and materializes its grouped site configs. Gemini first plans specific audience websites, then generates each website's complementary products. Five products is only a soft target; `--max-products-per-site 8` is the default hard guardrail.
+
+Before deploying, inspect and freely edit the file. Every idea has one authoritative `"siteId"` naming the website/audience group in `sites[]`. To add a product to an existing website, copy an idea object, give it a unique `id`, edit its research fields, and set `siteId`; there is no duplicate `productIds` list to maintain. To create a new website, first add its metadata to `sites[]`, then point one or more ideas at its `id`. `python scripts/ideas.py --plan` validates the file and previews site-config changes without writing them; `launch.py` applies the sync automatically.
+
+Idea generation checkpoints after every audience group in `.deploy/state/ideas-generation.json`. Rerun the same `--generate` command to resume. Use `--regenerate` only when you intentionally want a completely new portfolio:
 
 ```bash
-python scripts/launch.py --mock --provider static --limit 1
+python scripts/ideas.py --regenerate --count 100
 ```
 
-## Editable ideas
+The second command runs the complete production pipeline for one site: product posts, build, deployment, Google verification/`sites.add`, sitemap submission, and health check. Only after it passes should you run the third command. The full run safely skips already-complete product generation by fingerprint, so the smoke-tested site does not consume duplicate Gemini work.
 
-The editable portfolio lives at `ideas/ideas.json`. The repository includes **one example idea** so you can copy its structure and manually add ideas. If `ideas/ideas.json` exists, the launcher does not generate a new idea list. Existing `sites/*/site.json` files are never overwritten.
-
-If you intentionally want AI to create the 99-idea portfolio later, use:
-
-```bash
-python scripts/ideas.py --regenerate
-```
-
-For a deterministic example without an LLM:
-
-```bash
-python scripts/ideas.py --mock
-```
-
-## Deploy a subset
-
-```bash
-python scripts/launch.py --site my-site
-python scripts/launch.py --site site-a --site site-b --site site-c
-python scripts/launch.py --sites site-a,site-b,site-c
-python scripts/launch.py --limit 5
-```
-
-## Easy redeployment
-
-All sites share the same frontend code. Change the frontend, then:
-
-```bash
-python scripts/launch.py --frontend-only
-```
-
-This rebuilds/redeploys every selected site without calling Gemini. To regenerate blog content:
-
-```bash
-python scripts/launch.py --blogs-only
-```
-
-To publish existing/manual Markdown without regeneration:
-
-```bash
-python scripts/launch.py --skip-generation
-```
-
-Use `--mock` with any of these modes for fast iteration without LLM or monitoring API calls.
-
-## Gemini model failover and resume
-
-Blog generation automatically cycles through `GEMINI_MODELS` (or the default free-tier-capable list) when a model is rate-limited or temporarily unavailable. Configure the order with:
-
-```text
-GEMINI_MODELS=gemini-2.5-flash-lite,gemini-2.5-flash
-```
-
-If every configured model fails for a site, the process **terminates immediately** instead of silently skipping sites. It persists `.deploy/state/checkpoint.json` with the exact site/idea index where it stopped. After credits/rate limits recover:
+A failed deployment stops and writes a separate launch checkpoint. After fixing the failure, resume with the same selection flags. For a full rollout:
 
 ```bash
 python scripts/launch.py --resume
 ```
 
-The launcher continues from that site. This also works with a selected subset when the same subset is supplied again.
+For the one-site smoke test, use `python scripts/launch.py --limit 1 --resume`.
 
-## Product-interest email signup
+For a no-network smoke test:
 
-Every site config can contain:
-
-```json
-"signup": {
-  "enabled": true,
-  "headline": "Interested? Get notified when this is available.",
-  "endpoint": "https://your-form-endpoint.example/subscribe",
-  "email": "hello@example.com"
-}
+```bash
+python -m unittest discover -s tests -v
+python scripts/ideas.py --mock
+python scripts/launch.py --mock --provider static --site freelancer-operations
 ```
 
-The generated site displays an email signup form. If `endpoint` is configured, it POSTs `{ "email": "...", "product": "..." }` as JSON. If no endpoint is configured but `email` is present, it opens a pre-filled email message instead. This keeps the frontend static and lets you use any email/form backend you choose.
+`--mock` makes no Gemini, monitoring, or deployment API calls.
 
-## Monitoring
+## Optional NicheScout import
 
-All sites use **one shared PostHog project**, suitable for a free-tier portfolio. Google Search Console verification and sitemap submission are automated when Google credentials are configured. An hourly GitHub Actions workflow health-checks configured sites.
+`seo-test` can generate its own portfolio, but a NicheScout export remains supported as an optional research source:
 
-### Make verified properties appear in your Google Search Console
+```bash
+python scripts/ideas.py --portfolio ../NicheScout/exports/ideas.json --plan
+python scripts/ideas.py --portfolio ../NicheScout/exports/ideas.json
+```
 
-Use desktop OAuth so ownership verification, `sites.add`, and sitemap submission all run as the same Google account you use at Search Console. In Google Cloud Console, enable the **Google Site Verification API** and **Google Search Console API**. Configure the OAuth consent screen (for an External app in Testing, add your Google account as a test user), create an OAuth client with application type **Desktop app**, download its JSON file, and set:
+## Safe portfolio sync
+
+The sync step validates unique IDs, idea `siteId` references, variable-size groups, and legacy `productIds` imports. `--plan` performs no writes.
+
+Repeated imports update portfolio-managed content while preserving site-local operations:
+
+- updated from `ideas.json`: site name, audience, topic, product membership, and product research/copy;
+- preserved from `sites/<site-id>/site.json`: domain, hosting project/provider, signup, GSC/PostHog state, author/images, lifecycle status, and article count.
+
+Sites missing from a newer export are reported as `STALE (kept)`. They are never silently deleted. Review them and explicitly retire or tear them down.
+
+## Launch modes
+
+```bash
+python scripts/launch.py --site site-a
+python scripts/launch.py --sites site-a,site-b
+python scripts/launch.py --limit 1
+python scripts/launch.py --frontend-only --site site-a
+python scripts/launch.py --product product-id
+python scripts/launch.py --blogs-only --site site-a
+python scripts/launch.py --skip-generation --site site-a
+```
+
+A normal launch always invokes the restart-safe product generator. Products whose input fingerprint and required post count are complete are skipped. If one product's audience, problem, value proposition, topic, or SEO angle changes, only that product regenerates.
+
+`--product product-id` finds the containing site, force-regenerates that product, then builds, deploys, registers, and checks that site.
+
+`--limit 1` selects one site but still runs its complete pipeline, including Gemini for missing or changed products. Use `--frontend-only --limit 1` when only shared frontend/configuration changed.
+
+`--blogs-only` force-regenerates all selected product posts. `--skip-generation` and `--frontend-only` publish existing Markdown.
+
+## Product-attributed probes
+
+For every product, the build creates:
+
+- an indexable `/products/<product-id>` landing page;
+- only that product's guides on its landing page;
+- product-specific signup attribution;
+- sitemap entries for product pages and posts;
+- PostHog events `product_probe_viewed` and `product_interest_submitted`;
+- cross-discovery links to complementary products on the same audience site.
+
+Generated post frontmatter includes `productId`, `productName`, and a generation fingerprint.
+
+## Google Search Console
+
+Use desktop OAuth so verification, `sites.add`, and sitemap submission run as the same Google account visible in Search Console. Enable the Google Site Verification API and Search Console API, create a Desktop app OAuth client, then set:
 
 ```text
-GOOGLE_OAUTH_CLIENT_SECRETS=C:\path\to\oauth-client.json
+GOOGLE_OAUTH_CLIENT_SECRETS=/path/to/oauth-client.json
 ```
 
-The first real launch opens a browser once. Choose your Search Console Google account and approve access. The refresh token is stored under `.deploy/state/` (gitignored), so future site launches are unattended and each successful run immediately performs:
+The first real launch opens one browser authorization. Choose the Google account you use in Search Console. Its refresh token is cached under `.deploy/state/`, so the remaining sites run unattended:
 
 ```text
 META token -> deploy -> verify ownership -> sites.add -> submit sitemap
 ```
 
-`GOOGLE_APPLICATION_CREDENTIALS` service-account JSON remains supported as a fallback, but `sites.add` then adds the property to the service account rather than the human account shown in your GSC UI. You can optionally set `GOOGLE_SEARCH_CONSOLE_OWNER_EMAIL` to delegate verified ownership to a human email, but desktop OAuth is the reliable way to have `sites.add` execute for your visible GSC account.
+You do not register every site manually. Each successful launch calls `sites.add` for the exact URL-prefix property, so it appears in that OAuth user's GSC account.
 
-`--limit` only limits how many sites are processed; it does not skip content generation. For example, `--limit 1` performs the full pipeline for the first site and calls Gemini if that site has no Markdown posts. Use `--frontend-only --limit 1` when you only want to rebuild, deploy, and register one existing site.
+A service account remains supported with `GOOGLE_APPLICATION_CREDENTIALS`, but its properties do not automatically appear in a human account. `GOOGLE_SEARCH_CONSOLE_OWNER_EMAIL` can delegate verified ownership; desktop OAuth is preferred.
 
-## Deployment
+## Deployment providers
 
-The build produces a portable `out/` static artifact. Deployment adapters support:
+The build produces a static `out/` artifact:
 
 ```bash
 python scripts/launch.py --provider cloudflare-pages
@@ -130,7 +136,7 @@ python scripts/launch.py --provider netlify
 python scripts/launch.py --provider static
 ```
 
-Cloudflare Pages projects are created/reused automatically when the required Cloudflare API credentials are supplied. Custom domains can be associated when configured, but domains must already be owned/controlled by you.
+Cloudflare Pages projects are created or reused automatically. Custom domains must already be owned and controlled by you.
 
 ## Credentials
 
@@ -138,49 +144,48 @@ Never commit credentials:
 
 ```text
 GEMINI_API_KEY=...
-GEMINI_MODELS=gemini-2.5-flash-lite,gemini-2.5-flash
+GEMINI_MODELS=gemini-3.5-flash-lite,gemini-3.1-flash-lite,gemini-2.5-flash-lite,gemini-2.5-flash
 CLOUDFLARE_API_TOKEN=...
 CLOUDFLARE_ACCOUNT_ID=...
-POSTHOG_PERSONAL_API_KEY=...
-POSTHOG_ORGANIZATION_ID=...
-GOOGLE_APPLICATION_CREDENTIALS=/path/to/service-account.json
+POSTHOG_PROJECT_ID=...
+POSTHOG_PROJECT_API_KEY=...
 GOOGLE_OAUTH_CLIENT_SECRETS=/path/to/desktop-oauth-client.json
 GOOGLE_OAUTH_TOKEN_FILE=/optional/path/to/oauth-token.json
 GOOGLE_SEARCH_CONSOLE_OWNER_EMAIL=you@example.com
 ```
 
-Rotate the Gemini key that was previously committed in the old generator.
+All sites intentionally share one configured PostHog project.
 
-## Architecture
+## Editing, redeploying, and teardown
+
+See [OPERATIONS.md](OPERATIONS.md) for exact workflows covering portfolio updates, shared frontend changes, product-only regeneration, domain changes, pause/reactivate, one-site teardown, and confirmed teardown of all external sites.
+
+Safe lifecycle commands:
+
+```bash
+python scripts/portfolio.py status
+python scripts/portfolio.py retire <site-id>
+python scripts/portfolio.py activate <site-id>
+python scripts/portfolio.py teardown <site-id>
+python scripts/portfolio.py teardown --all
+```
+
+`teardown` is preview-only unless the exact confirmation printed by the command is supplied. It preserves local configs and content as an audit/redeployment source.
+
+## Architecture boundary
 
 ```text
-                 ideas/ideas.json (human editable)
-                              |
-                    optional AI generation of 99
-                              |
-                              v
-                     sites/*/site.json
-                              |
-               +--------------+--------------+
-               |                             |
-               v                             v
-         Gemini SEO posts             Monitoring setup
-               |                 shared PostHog / GSC
-               v                             |
-        sites/*/_posts                       |
-               +--------------+--------------+
-                              v
-                        static build
-                              |
-                              v
-                            out/
-                              |
-          +-------------------+-------------------+
-          |                   |                   |
-          v                   v                   v
-      Cloudflare           Vercel              Netlify
-      Pages/Workers
-                              |
-                              v
-                    hourly health monitoring
+seo-test generation or optional NicheScout research
+        |
+        v
+variable audience groups in ideas/ideas.json
+        |
+        v
+safe site-config sync
+        |
+        v
+product-attributed posts + landing pages
+        |
+        v
+build -> hosting -> GSC + PostHog + signups
 ```

@@ -2,6 +2,7 @@
 """Build every configured site serially so generated output never collides."""
 from __future__ import annotations
 
+import json
 import subprocess
 import sys
 from pathlib import Path
@@ -11,7 +12,14 @@ SITES = ROOT / "sites"
 
 
 def main() -> None:
-    sites = sorted(p.name for p in SITES.iterdir() if (p / "site.json").exists())
+    sites = []
+    for path in sorted(SITES.iterdir()):
+        config_path = path / "site.json"
+        if not config_path.exists():
+            continue
+        config = json.loads(config_path.read_text(encoding="utf-8"))
+        if str(config.get("status", "active")).lower() not in {"retired", "destroyed"}:
+            sites.append(path.name)
     if not sites:
         raise SystemExit("No configured sites found in sites/")
     for site_id in sites:

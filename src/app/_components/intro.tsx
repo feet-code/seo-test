@@ -1,14 +1,18 @@
-import { CMS_NAME } from "@/lib/constants";
-
 export function Intro() {
+  const name = process.env.SITE_NAME || process.env.SITE_PRODUCT_NAME || "Practical tools";
+  const audience = process.env.SITE_AUDIENCE;
+  const topic = process.env.SITE_TOPIC;
   return (
-    <section className="flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12">
-      <h1 className="text-5xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
-        Blog.
+    <section className="mt-16 mb-16 max-w-5xl md:mb-20">
+      <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-neutral-500">
+        {audience ? `Built for ${audience}` : "Focused workflow software"}
+      </p>
+      <h1 className="text-5xl md:text-8xl font-bold tracking-tighter leading-tight">
+        {name}
       </h1>
-      <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
-        All about AI meeting assistants
-      </h4>
+      <p className="mt-6 max-w-3xl text-xl leading-relaxed md:text-2xl">
+        Practical tools and field-tested guides for {topic || "recurring work"}.
+      </p>
     </section>
   );
 }

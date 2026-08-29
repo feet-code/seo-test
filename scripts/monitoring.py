@@ -210,6 +210,96 @@ def finalize_google(config: dict) -> None:
     print("Search Console sitemap submitted:", sitemap)
 
 
+def _ignore_not_found(callable_, *args, **kwargs):
+    try:
+        return callable_(*args, **kwargs)
+    except urllib.error.HTTPError as exc:
+        if exc.code != 404:
+            raise
+        return {}
+
+
+def remove_google_property(config: dict) -> None:
+    """Remove the URL-prefix property from the authenticated user's GSC account."""
+    property_url = config.get("monitoring", {}).get("googleProperty")
+    if not property_url:
+        return
+    if not google_configured():
+        raise RuntimeError(
+            "Google credentials are required to remove the Search Console property before teardown"
+        )
+    token = google_access_token()
+    normalized = property_url.rstrip("/") + "/"
+    encoded = urllib.parse.quote(normalized, safe="")
+    _ignore_not_found(
+        google_api,
+        "DELETE",
+        f"https://www.googleapis.com/webmasters/v3/sites/{encoded}",
+        token,
+    )
+    print("Search Console property removed:", normalized)
+
+
+def remove_google_ownership(config: dict) -> None:
+    """Remove ownership after hosting deletion makes the META token unreachable."""
+    property_url = config.get("monitoring", {}).get("googleProperty")
+    if not property_url:
+        return
+    if not google_configured():
+        raise RuntimeError("Google credentials are required to remove Site Verification ownership")
+    token = google_access_token()
+    normalized = property_url.rstrip("/") + "/"
+
+    resources = google_api(
+        "GET", "https://www.googleapis.com/siteVerification/v1/webResource", token
+    )
+    for resource in resources.get("items", []):
+        identifier = resource.get("site", {}).get("identifier", "")
+        if identifier.rstrip("/") + "/" != normalized:
+            continue
+        resource_id = urllib.parse.quote(str(resource.get("id", "")), safe="")
+        if resource_id:
+            _ignore_not_found(
+                google_api,
+                "DELETE",
+                f"https://www.googleapis.com/siteVerification/v1/webResource/{resource_id}",
+                token,
+            )
+            print("Google ownership record removed:", normalized)
+
+
+def remove_pages_project(config: dict) -> None:
+    provider = config.get("deploy", {}).get("provider", "cloudflare-pages")
+    if provider != "cloudflare-pages":
+        raise RuntimeError(
+            f"Automated teardown currently supports cloudflare-pages, not {provider!r}"
+        )
+    project = config.get("deploy", {}).get("project", config.get("id"))
+    if not project:
+        raise RuntimeError("Site config has no Cloudflare Pages project name")
+    encoded = urllib.parse.quote(str(project), safe="")
+    _ignore_not_found(cloudflare, "DELETE", f"/pages/projects/{encoded}")
+    print("Cloudflare Pages project removed:", project)
+
+
+def teardown(config: dict) -> None:
+    """Remove external discovery/hosting resources; keep the local config as an audit record."""
+    provider = config.get("deploy", {}).get("provider", "cloudflare-pages")
+    if provider != "cloudflare-pages":
+        raise RuntimeError(
+            f"Automated teardown currently supports cloudflare-pages, not {provider!r}"
+        )
+    if config.get("monitoring", {}).get("googleProperty") and not google_configured():
+        raise RuntimeError(
+            "Google credentials are required to remove GSC and ownership before teardown"
+        )
+    remove_google_property(config)
+    remove_pages_project(config)
+    # Google rejects webResource.delete while its META token is still reachable.
+    # Deleting the Pages project first removes that token; a retry is safe if propagation lags.
+    remove_google_ownership(config)
+
+
 def save(config: dict, path: Path) -> None:
     path.write_text(json.dumps(config, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 

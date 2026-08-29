@@ -2,22 +2,32 @@
 
 import { FormEvent, useState } from "react";
 
-type Props = { endpoint?: string; fallbackEmail?: string; productName?: string; headline?: string };
+type Props = {
+  endpoint?: string;
+  fallbackEmail?: string;
+  productId?: string;
+  productName?: string;
+  siteName?: string;
+  headline?: string;
+};
 
-export default function SignupForm({ endpoint = "", fallbackEmail = "", productName = "this product", headline = "Interested? Get notified when this is available." }: Props) {
+export default function SignupForm({ endpoint = "", fallbackEmail = "", productId = "product", productName = "this product", siteName = "", headline = "Interested? Get notified when this is available." }: Props) {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState("");
 
   async function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (!email) return;
+    const properties = { product_id: productId, product_name: productName, site_name: siteName, source_path: window.location.pathname };
+    const posthog = (window as typeof window & { posthog?: { capture?: (event: string, properties: Record<string, string>) => void } }).posthog;
+    posthog?.capture?.("product_interest_submitted", properties);
     if (!endpoint) {
       if (fallbackEmail) window.location.href = `mailto:${fallbackEmail}?subject=${encodeURIComponent(`Interest in ${productName}`)}&body=${encodeURIComponent(`I am interested in ${productName}. My email is ${email}.`)}`;
       else setStatus("Signup is not configured yet.");
       return;
     }
     try {
-      const response = await fetch(endpoint, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email, product: productName }) });
+      const response = await fetch(endpoint, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email, productId, product: productName, site: siteName, sourcePath: window.location.pathname }) });
       if (!response.ok) throw new Error("request failed");
       setEmail(""); setStatus("Thanks — we'll be in touch.");
     } catch { setStatus("Something went wrong. Please try again."); }

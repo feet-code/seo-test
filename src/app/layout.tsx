@@ -17,7 +17,7 @@ const googleVerification =
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: process.env.SITE_PRODUCT_NAME || "Blog",
+  title: process.env.SITE_NAME || process.env.SITE_PRODUCT_NAME || "Focused workflow tools",
   description: process.env.SITE_DESCRIPTION || `Helpful information about ${process.env.SITE_TOPIC || "this topic"}.`,
   openGraph: { images: [HOME_OG_IMAGE_URL] },
   verification: googleVerification ? { google: googleVerification } : undefined,
