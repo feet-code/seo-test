@@ -100,6 +100,24 @@ The generated site displays an email signup form. If `endpoint` is configured, i
 
 All sites use **one shared PostHog project**, suitable for a free-tier portfolio. Google Search Console verification and sitemap submission are automated when Google credentials are configured. An hourly GitHub Actions workflow health-checks configured sites.
 
+### Make verified properties appear in your Google Search Console
+
+Use desktop OAuth so ownership verification, `sites.add`, and sitemap submission all run as the same Google account you use at Search Console. In Google Cloud Console, enable the **Google Site Verification API** and **Google Search Console API**. Configure the OAuth consent screen (for an External app in Testing, add your Google account as a test user), create an OAuth client with application type **Desktop app**, download its JSON file, and set:
+
+```text
+GOOGLE_OAUTH_CLIENT_SECRETS=C:\path\to\oauth-client.json
+```
+
+The first real launch opens a browser once. Choose your Search Console Google account and approve access. The refresh token is stored under `.deploy/state/` (gitignored), so future site launches are unattended and each successful run immediately performs:
+
+```text
+META token -> deploy -> verify ownership -> sites.add -> submit sitemap
+```
+
+`GOOGLE_APPLICATION_CREDENTIALS` service-account JSON remains supported as a fallback, but `sites.add` then adds the property to the service account rather than the human account shown in your GSC UI. You can optionally set `GOOGLE_SEARCH_CONSOLE_OWNER_EMAIL` to delegate verified ownership to a human email, but desktop OAuth is the reliable way to have `sites.add` execute for your visible GSC account.
+
+`--limit` only limits how many sites are processed; it does not skip content generation. For example, `--limit 1` performs the full pipeline for the first site and calls Gemini if that site has no Markdown posts. Use `--frontend-only --limit 1` when you only want to rebuild, deploy, and register one existing site.
+
 ## Deployment
 
 The build produces a portable `out/` static artifact. Deployment adapters support:
@@ -126,6 +144,9 @@ CLOUDFLARE_ACCOUNT_ID=...
 POSTHOG_PERSONAL_API_KEY=...
 POSTHOG_ORGANIZATION_ID=...
 GOOGLE_APPLICATION_CREDENTIALS=/path/to/service-account.json
+GOOGLE_OAUTH_CLIENT_SECRETS=/path/to/desktop-oauth-client.json
+GOOGLE_OAUTH_TOKEN_FILE=/optional/path/to/oauth-token.json
+GOOGLE_SEARCH_CONSOLE_OWNER_EMAIL=you@example.com
 ```
 
 Rotate the Gemini key that was previously committed in the old generator.

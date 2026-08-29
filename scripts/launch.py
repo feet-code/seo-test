@@ -73,14 +73,20 @@ def main():
                 from monitoring import provision; config=provision(config,site_dir,target,shared_posthog)
             posts_exist=bool(list((site_dir/"_posts").glob("*.md")))
             if not skip_generation and (force_generation or not posts_exist):
+                print(f"{site_id}: no existing Markdown posts; full run will call Gemini before build/deploy.",flush=True)
                 save_checkpoint(ids,index,step="generate"); cmd=[sys.executable,"scripts/generate_posts.py",site_id];
                 if args.mock:cmd.append("--mock")
                 run(cmd,env=env,site_id=site_id,step="generate")
+            elif skip_generation:
+                print(f"{site_id}: content generation skipped by --frontend-only/--skip-generation.",flush=True)
+            else:
+                print(f"{site_id}: existing Markdown posts found; Gemini generation skipped.",flush=True)
             env2=env.copy(); mon=config.get("monitoring",{}); signup=config.get("signup",{}); env2.update({"SITE_URL":target,"SEO_POSTS_DIR":str((site_dir/"_posts").resolve()),"GOOGLE_SITE_VERIFICATION":mon.get("googleVerificationToken","") if not args.mock else "","NEXT_PUBLIC_POSTHOG_KEY":mon.get("posthogKey","") if not args.mock else "","NEXT_PUBLIC_POSTHOG_HOST":mon.get("posthogHost","https://us.i.posthog.com"),"SIGNUP_ENDPOINT":signup.get("endpoint",""),"SIGNUP_EMAIL":signup.get("email",""),"SIGNUP_HEADLINE":signup.get("headline","Interested? Get notified when this is available."),"SITE_PRODUCT_NAME":config.get("product",config.get("name",site_id)),"SITE_DESCRIPTION":config.get("valueProposition",""),"SITE_TOPIC":config.get("topic","")})
             save_checkpoint(ids,index,step="build"); run(["npm","run","build"],env=env2,site_id=site_id,step="build")
             if args.provider!="static":
                 save_checkpoint(ids,index,step="deploy"); run([sys.executable,"scripts/site.py","deploy",site_id,args.provider],env=env2,site_id=site_id,step="deploy")
             if not args.mock:
+                save_checkpoint(ids,index,step="gsc")
                 from monitoring import finalize; finalize(config)
             result.update({"ok":True,"url":target,"health":health(target)})
         except subprocess.CalledProcessError as exc:
@@ -89,7 +95,7 @@ def main():
             save_checkpoint(ids,index,reason,step); (STATE/f"{site_id}.json").write_text(json.dumps(result,indent=2)+"\n",encoding="utf-8")
             print(f"\n✗ STOPPED at site {index+1}/{len(ids)}: {site_id}\n  Failed step: {step}\n  Checkpoint: .deploy/state/checkpoint.json\n  Fix the failure and run: python scripts/launch.py --resume",file=sys.stderr,flush=True); raise SystemExit(2 if exhausted else 1)
         except Exception as exc:
-            result.update({"ok":False,"error":repr(exc)}); save_checkpoint(ids,index,"Unexpected error; fix the error and resume.","python"); (STATE/f"{site_id}.json").write_text(json.dumps(result,indent=2)+"\n",encoding="utf-8"); print(f"\n✗ UNEXPECTED FAILURE at site {index+1}/{len(ids)}: {site_id}\n  {exc!r}\n  Checkpoint saved. Run: python scripts/launch.py --resume",file=sys.stderr,flush=True); raise SystemExit(1)
+            step=(json.loads(CHECKPOINT.read_text(encoding="utf-8")).get("step") if CHECKPOINT.exists() else "python"); result.update({"ok":False,"error":repr(exc)}); save_checkpoint(ids,index,"Unexpected error; fix the error and resume.",step); (STATE/f"{site_id}.json").write_text(json.dumps(result,indent=2)+"\n",encoding="utf-8"); print(f"\n✗ UNEXPECTED FAILURE at site {index+1}/{len(ids)}: {site_id}\n  Failed step: {step}\n  {exc!r}\n  Checkpoint saved. Run: python scripts/launch.py --resume",file=sys.stderr,flush=True); raise SystemExit(1)
         result["durationSeconds"]=round(time.time()-started,2); (STATE/f"{site_id}.json").write_text(json.dumps(result,indent=2)+"\n",encoding="utf-8"); save_checkpoint(ids,index+1,step="complete"); print(f"[{index+1}/{len(ids)}] {site_id}: OK ({result['durationSeconds']}s)",flush=True); results.append(result)
     summary={"timestamp":time.time(),"total":len(results),"successful":sum(r["ok"] for r in results),"failed":sum(not r["ok"] for r in results),"results":results}; (STATE/"summary.json").write_text(json.dumps(summary,indent=2)+"\n",encoding="utf-8"); print("\nFINAL SUMMARY\n"+json.dumps({k:summary[k] for k in ("total","successful","failed")},indent=2));
     if summary["failed"]:raise SystemExit(1)

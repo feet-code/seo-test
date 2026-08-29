@@ -11,15 +11,35 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
+ROOT = Path(__file__).resolve().parents[1]
+GOOGLE_SCOPES = [
+    "https://www.googleapis.com/auth/siteverification",
+    "https://www.googleapis.com/auth/webmasters",
+]
+
+
+def _safe_headers(headers: dict | None) -> dict:
+    return {
+        key: ("<redacted>" if key.lower() == "authorization" else value)
+        for key, value in (headers or {}).items()
+    }
+
 
 def http(method: str, url: str, body=None, headers=None):
     data = None if body is None else json.dumps(body).encode()
     req = urllib.request.Request(url, data=data, headers=headers or {}, method=method)
-    print('http method, url, body, headers', method, url, body, headers)
-    with urllib.request.urlopen(req, timeout=60) as response:
-        raw = response.read()
-        print('http json response', json.loads(raw) if raw else {})
-        return json.loads(raw) if raw else {}
+    print("HTTP request:", method, url, "body=", body, "headers=", _safe_headers(headers))
+    try:
+        with urllib.request.urlopen(req, timeout=60) as response:
+            raw = response.read()
+    except urllib.error.HTTPError as exc:
+        raw = exc.read()
+        detail = raw.decode("utf-8", errors="replace") if raw else "<empty response>"
+        print(f"HTTP error: {exc.code} {method} {url}\nResponse: {detail}")
+        raise
+    result = json.loads(raw) if raw else {}
+    print("HTTP response:", result)
+    return result
 
 
 def cloudflare(method: str, path: str, body=None):
@@ -72,19 +92,68 @@ def apply_shared_posthog(config: dict, shared: dict) -> None:
         config.setdefault("monitoring", {}).update(shared)
 
 
-def google_access_token() -> str:
+def google_configured() -> bool:
+    return bool(
+        os.environ.get("GOOGLE_OAUTH_CLIENT_SECRETS")
+        or os.environ.get("GOOGLE_APPLICATION_CREDENTIALS")
+    )
+
+
+def _oauth_token_path() -> Path:
+    configured = os.environ.get("GOOGLE_OAUTH_TOKEN_FILE")
+    path = Path(configured) if configured else ROOT / ".deploy" / "state" / "google-oauth-token.json"
+    return path if path.is_absolute() else ROOT / path
+
+
+def google_credentials():
+    try:
+        from google.auth.transport.requests import Request
+    except ImportError as exc:
+        raise RuntimeError("Install requirements.txt before using Google automation") from exc
+
+    oauth_client = os.environ.get("GOOGLE_OAUTH_CLIENT_SECRETS")
+    if oauth_client:
+        try:
+            from google.oauth2.credentials import Credentials
+            from google_auth_oauthlib.flow import InstalledAppFlow
+        except ImportError as exc:
+            raise RuntimeError("Run: pip install -r requirements.txt") from exc
+
+        token_path = _oauth_token_path()
+        credentials = None
+        if token_path.exists():
+            credentials = Credentials.from_authorized_user_file(str(token_path), GOOGLE_SCOPES)
+        if credentials and credentials.expired and credentials.refresh_token:
+            credentials.refresh(Request())
+        if not credentials or not credentials.valid:
+            print("Opening Google authorization in your browser. Choose the account you use in Search Console.")
+            flow = InstalledAppFlow.from_client_secrets_file(oauth_client, GOOGLE_SCOPES)
+            credentials = flow.run_local_server(port=0, access_type="offline", prompt="consent")
+        token_path.parent.mkdir(parents=True, exist_ok=True)
+        token_path.write_text(credentials.to_json(), encoding="utf-8")
+        print(f"Google authentication: user OAuth (cached at {token_path})")
+        return credentials
+
     try:
         from google.oauth2 import service_account
-        from google.auth.transport.requests import Request
     except ImportError as exc:
         raise RuntimeError("Install requirements.txt before using Google automation") from exc
     credentials_path = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS")
     if not credentials_path:
-        raise RuntimeError("GOOGLE_APPLICATION_CREDENTIALS is required for Search Console automation")
-    scopes = ["https://www.googleapis.com/auth/siteverification", "https://www.googleapis.com/auth/webmasters"]
-    creds = service_account.Credentials.from_service_account_file(credentials_path, scopes=scopes)
-    creds.refresh(Request())
-    return creds.token
+        raise RuntimeError(
+            "Set GOOGLE_OAUTH_CLIENT_SECRETS for properties visible in your GSC account, "
+            "or GOOGLE_APPLICATION_CREDENTIALS for service-account-only access."
+        )
+    credentials = service_account.Credentials.from_service_account_file(
+        credentials_path, scopes=GOOGLE_SCOPES
+    )
+    credentials.refresh(Request())
+    print(f"Google authentication: service account {credentials.service_account_email}")
+    return credentials
+
+
+def google_access_token() -> str:
+    return google_credentials().token
 
 
 def google_api(method: str, url: str, token: str, body=None):
@@ -102,11 +171,11 @@ def google_verification_content(token: str) -> str:
 
 
 def verify_and_register(config: dict, site_url: str) -> None:
-    if not os.environ.get("GOOGLE_APPLICATION_CREDENTIALS"):
+    if not google_configured():
         return
     token = google_access_token()
     property_url = site_url.rstrip("/") + "/"
-    print('getting meta tag token')
+    print("Getting Google META verification token for", property_url)
     token_result = google_api("POST", "https://www.googleapis.com/siteVerification/v1/token", token, {
         "site": {"identifier": property_url, "type": "SITE"}, "verificationMethod": "META"
     })
@@ -115,20 +184,30 @@ def verify_and_register(config: dict, site_url: str) -> None:
 
 
 def finalize_google(config: dict) -> None:
-    print('finalize_google')
+    print("Finalizing Google ownership, Search Console property, and sitemap")
     monitoring = config.get("monitoring", {})
     property_url = monitoring.get("googleProperty")
-    if not property_url or not os.environ.get("GOOGLE_APPLICATION_CREDENTIALS"):
+    if not property_url or not google_configured():
         return
     token = google_access_token()
-    print(google_api("POST", "https://www.googleapis.com/siteVerification/v1/webResource?verificationMethod=META", token, {
-        "site": {"identifier": property_url, "type": "SITE"}
-    }))
+    verification = {"site": {"identifier": property_url, "type": "SITE"}}
+    delegated_owner = os.environ.get("GOOGLE_SEARCH_CONSOLE_OWNER_EMAIL")
+    if delegated_owner:
+        verification["owners"] = [delegated_owner]
+    verified = google_api(
+        "POST",
+        "https://www.googleapis.com/siteVerification/v1/webResource?verificationMethod=META",
+        token,
+        verification,
+    )
+    print("Google ownership verified:", verified.get("id", property_url))
     encoded = urllib.parse.quote(property_url, safe="")
     google_api("PUT", f"https://www.googleapis.com/webmasters/v3/sites/{encoded}", token)
+    print("Search Console sites.add completed:", property_url)
     sitemap = property_url + "sitemap.xml"
     feed = urllib.parse.quote(sitemap, safe="")
     google_api("PUT", f"https://www.googleapis.com/webmasters/v3/sites/{encoded}/sitemaps/{feed}", token)
+    print("Search Console sitemap submitted:", sitemap)
 
 
 def save(config: dict, path: Path) -> None:
@@ -145,7 +224,4 @@ def provision(config: dict, site_dir: Path, site_url: str, shared_posthog: dict 
 
 
 def finalize(config: dict) -> None:
-    try:
-        finalize_google(config)
-    except urllib.error.HTTPError as exc:
-        print(f"Search Console verification/submission pending: HTTP {exc.code}")
+    finalize_google(config)
