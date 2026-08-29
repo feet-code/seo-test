@@ -1,10 +1,10 @@
 # SEO portfolio automation
 
-This repository deploys NicheScout finalists as audience-grouped SEO portfolios. Each website contains the products that belong to one coherent audience; a site may contain one, three, seven, or another useful number of products. NicheScout decides group boundaries from audience similarity and a maximum-size guardrail, not an exact product quota.
+This repository generates and deploys audience-grouped SEO product portfolios. Each website contains the products that belong to one coherent audience; a site may contain one, three, seven, or another useful number of products. Audience fit decides group boundaries, with a maximum-size guardrail rather than an exact product quota.
 
 Every product remains independently measurable through its landing page, blog frontmatter, signup payload, and PostHog properties.
 
-## First deployment
+## Main workflow
 
 Install dependencies:
 
@@ -13,26 +13,35 @@ pip install -r requirements.txt
 npm ci
 ```
 
-Preview and import the latest NicheScout export:
+Then use the same workflow for 1 product or 100+ products:
 
 ```bash
-python scripts/ideas.py --portfolio ../NicheScout/exports/ideas.json --plan
-python scripts/ideas.py --portfolio ../NicheScout/exports/ideas.json
-python scripts/portfolio.py status
-```
-
-Deploy one audience portfolio first, then all remaining active sites:
-
-```bash
-python scripts/launch.py --site <site-id>
+python scripts/ideas.py --generate --count 100
+# Inspect/edit ideas/ideas.json; optionally preview with:
+python scripts/ideas.py --plan
+python scripts/launch.py --limit 1
 python scripts/launch.py
 ```
 
-A failed run stops and writes a checkpoint. After fixing the failure, resume the same selected set with:
+The first command writes `ideas/ideas.json` and materializes its grouped site configs. Gemini first plans specific audience websites, then generates each website's complementary products. Five products is only a soft target; `--max-products-per-site 8` is the default hard guardrail.
+
+Before deploying, inspect and freely edit the file. Every idea has one authoritative `"siteId"` naming the website/audience group in `sites[]`. To add a product to an existing website, copy an idea object, give it a unique `id`, edit its research fields, and set `siteId`; there is no duplicate `productIds` list to maintain. To create a new website, first add its metadata to `sites[]`, then point one or more ideas at its `id`. `python scripts/ideas.py --plan` validates the file and previews site-config changes without writing them; `launch.py` applies the sync automatically.
+
+Idea generation checkpoints after every audience group in `.deploy/state/ideas-generation.json`. Rerun the same `--generate` command to resume. Use `--regenerate` only when you intentionally want a completely new portfolio:
+
+```bash
+python scripts/ideas.py --regenerate --count 100
+```
+
+The second command runs the complete production pipeline for one site: product posts, build, deployment, Google verification/`sites.add`, sitemap submission, and health check. Only after it passes should you run the third command. The full run safely skips already-complete product generation by fingerprint, so the smoke-tested site does not consume duplicate Gemini work.
+
+A failed deployment stops and writes a separate launch checkpoint. After fixing the failure, resume with the same selection flags. For a full rollout:
 
 ```bash
 python scripts/launch.py --resume
 ```
+
+For the one-site smoke test, use `python scripts/launch.py --limit 1 --resume`.
 
 For a no-network smoke test:
 
@@ -44,9 +53,18 @@ python scripts/launch.py --mock --provider static --site freelancer-operations
 
 `--mock` makes no Gemini, monitoring, or deployment API calls.
 
+## Optional NicheScout import
+
+`seo-test` can generate its own portfolio, but a NicheScout export remains supported as an optional research source:
+
+```bash
+python scripts/ideas.py --portfolio ../NicheScout/exports/ideas.json --plan
+python scripts/ideas.py --portfolio ../NicheScout/exports/ideas.json
+```
+
 ## Safe portfolio sync
 
-The importer validates unique IDs, non-empty variable-size groups, `siteId`/`productIds` consistency, and orphaned products. `--plan` performs no writes.
+The sync step validates unique IDs, idea `siteId` references, variable-size groups, and legacy `productIds` imports. `--plan` performs no writes.
 
 Repeated imports update portfolio-managed content while preserving site-local operations:
 
@@ -157,7 +175,7 @@ python scripts/portfolio.py teardown --all
 ## Architecture boundary
 
 ```text
-NicheScout research
+seo-test generation or optional NicheScout research
         |
         v
 variable audience groups in ideas/ideas.json
