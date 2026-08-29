@@ -1,0 +1,63 @@
+{
+  "id": "bike-repair-shop-ops",
+  "name": "Bike Repair Shop Operations",
+  "domain": null,
+  "audience": "independent bicycle repair shops and service departments",
+  "topic": "repair authorization and completed-bike pickup readiness",
+  "products": [
+    {
+      "id": "bike-repair-authorization",
+      "name": "Bike Repair Authorization",
+      "product": "A focused bike repair estimate approval tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent bicycle repair shops and service departments",
+      "problem": "A bicycle diagnosis uncovers extra labor or parts after intake, but revised scope, safety-critical work, price ceiling, parts choice, customer decision, and mechanic release are scattered across calls and paper tags.",
+      "valueProposition": "Turns bike repair estimate approval tracking into a visible operating queue so every material repair change has an itemized current estimate, recorded customer decision, parts implication, and explicit mechanic release.",
+      "topic": "bike repair estimate approval tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets bike repair estimate, bicycle repair authorization, bike shop work order, and bike repair approval software searches.",
+      "score": 89
+    },
+    {
+      "id": "bike-pickup-readiness",
+      "name": "Bike Pickup Readiness",
+      "product": "A focused bike repair pickup readiness workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent bicycle repair shops and service departments",
+      "problem": "Customers are notified before the bicycle has passed final safety check, accessories and removed parts are gathered, balance is correct, declined work is explained, and the bike is staged for release.",
+      "valueProposition": "Turns bike repair pickup readiness into a visible operating queue so every completed bicycle is quality-checked, fully assembled with customer property, reconciled financially, and staged before pickup notification.",
+      "topic": "bike repair pickup readiness",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets bike repair pickup, bicycle service completion checklist, bike shop ready notification, and bike repair quality control searches.",
+      "score": 85
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused bike repair estimate approval tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns bike repair estimate approval tracking into a visible operating queue so every material repair change has an itemized current estimate, recorded customer decision, parts implication, and explicit mechanic release.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith",
+    "picture": "/assets/blog/authors/jj.jpeg"
+  },
+  "images": {
+    "coverImage": "/assets/blog/preview/cover.jpg",
+    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-pages",
+    "project": "bike-repair-shop-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

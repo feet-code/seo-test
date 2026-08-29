@@ -1,0 +1,63 @@
+{
+  "id": "community-theater-ops",
+  "name": "Community Theater Operations",
+  "domain": null,
+  "audience": "community theaters and volunteer-led stage-production teams",
+  "topic": "rehearsal conflict resolution and production-asset returns",
+  "products": [
+    {
+      "id": "rehearsal-conflict-resolution",
+      "name": "Rehearsal Conflict Resolution",
+      "product": "A focused community theater rehearsal conflict tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "community theaters and volunteer-led stage-production teams",
+      "problem": "Cast and crew availability, scene requirements, music or fight calls, room access, volunteer schedules, and newly added conflicts cause calendar changes that do not reach everyone affected.",
+      "valueProposition": "Turns community theater rehearsal conflict tracking into a visible operating queue so every material rehearsal conflict is resolved against scene and role dependencies, published as one current schedule, and acknowledged by affected participants.",
+      "topic": "community theater rehearsal conflict tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets theater rehearsal scheduling, cast availability tracker, community theater software, and rehearsal conflict management searches.",
+      "score": 86
+    },
+    {
+      "id": "production-asset-return",
+      "name": "Production Asset Return",
+      "product": "A focused theater prop and costume return tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "community theaters and volunteer-led stage-production teams",
+      "problem": "Props, costumes, wigs, scripts, keys, microphones, tools, and borrowed items leave storage with cast or departments, then strike and return status disappear across paper sign-outs.",
+      "valueProposition": "Turns theater prop and costume return tracking into a visible operating queue so every production asset has assigned custody, condition evidence, return deadline, storage destination, and an explicit lost damage repair or closed outcome.",
+      "topic": "theater prop and costume return tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets theater prop tracking, costume inventory software, community theater asset checkout, and theater strike checklist searches.",
+      "score": 87
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused community theater rehearsal conflict tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns community theater rehearsal conflict tracking into a visible operating queue so every material rehearsal conflict is resolved against scene and role dependencies, published as one current schedule, and acknowledged by affected participants.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith",
+    "picture": "/assets/blog/authors/jj.jpeg"
+  },
+  "images": {
+    "coverImage": "/assets/blog/preview/cover.jpg",
+    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-pages",
+    "project": "community-theater-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

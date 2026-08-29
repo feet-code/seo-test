@@ -29,7 +29,7 @@ Before deploying, inspect and freely edit the file. Every idea has one authorita
 
 ### Included editorial batches
 
-This branch already includes a reviewed `ideas/ideas.json` and 970 committed probes for 97 products across 45 audience websites. Batch 001 contributed 10 sites, 22 products, and 220 probes; batch 002 added 20 sites, 42 products, and 420 probes; batch 003 adds 15 sites, 33 products, and 330 probes. Group sizes range from one to three products according to audience fit. The old `example` verification fixture is retired, so it is excluded from bulk launches.
+This branch already includes a reviewed `ideas/ideas.json` and 1,530 committed probes for 153 products across 70 audience websites. Batch 001 contributed 10 sites, 22 products, and 220 probes; batch 002 added 20 sites, 42 products, and 420 probes; batch 003 added 15 sites, 33 products, and 330 probes; batch 004 adds 25 sites, 56 products, and 560 probes. Group sizes range from one to three products according to audience fit. The old `example` verification fixture is retired, so it is excluded from bulk launches.
 
 Deploy the included batch directly:
 

@@ -1,0 +1,63 @@
+{
+  "id": "makerspace-ops",
+  "name": "Makerspace Operations",
+  "domain": null,
+  "audience": "community makerspaces, fabrication labs, and shared technical workshops",
+  "topic": "equipment training authorization and machine downtime handoffs",
+  "products": [
+    {
+      "id": "equipment-training-authorization",
+      "name": "Equipment Training Authorization",
+      "product": "A focused makerspace equipment training authorization tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "community makerspaces, fabrication labs, and shared technical workshops",
+      "problem": "Membership, waiver, orientation, machine-specific training, supervised practice, expiration, suspension, and access-control state can diverge before a member uses higher-risk equipment.",
+      "valueProposition": "Turns makerspace equipment training authorization tracking into a visible operating queue so every equipment access grant is tied to current membership, documented prerequisites, named trainer approval, policy version, and matching access-control state.",
+      "topic": "makerspace equipment training authorization tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets makerspace training tracker, equipment authorization software, fablab access control, and makerspace member certification searches.",
+      "score": 89
+    },
+    {
+      "id": "machine-downtime-handoff",
+      "name": "Machine Downtime Handoff",
+      "product": "A focused makerspace machine downtime and maintenance tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "community makerspaces, fabrication labs, and shared technical workshops",
+      "problem": "A CNC, laser cutter, printer, saw, kiln, or shop tool is tagged out, but bookings, member notices, diagnosis, parts, volunteer ownership, safety review, and return testing are not synchronized.",
+      "valueProposition": "Turns makerspace machine downtime and maintenance tracking into a visible operating queue so every equipment incident immediately blocks affected access and bookings, transfers with named repair ownership, and restores only after the required review and test.",
+      "topic": "makerspace machine downtime and maintenance tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets makerspace maintenance software, fablab equipment downtime, makerspace machine booking outage, and shared workshop maintenance searches.",
+      "score": 88
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused makerspace equipment training authorization tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns makerspace equipment training authorization tracking into a visible operating queue so every equipment access grant is tied to current membership, documented prerequisites, named trainer approval, policy version, and matching access-control state.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith",
+    "picture": "/assets/blog/authors/jj.jpeg"
+  },
+  "images": {
+    "coverImage": "/assets/blog/preview/cover.jpg",
+    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-pages",
+    "project": "makerspace-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

@@ -1,0 +1,63 @@
+{
+  "id": "laundromat-ops",
+  "name": "Laundromat Operations",
+  "domain": null,
+  "audience": "independent laundromats offering self-service and wash-dry-fold",
+  "topic": "machine outage handoffs and wash-dry-fold order reconciliation",
+  "products": [
+    {
+      "id": "laundromat-machine-outage",
+      "name": "Laundromat Machine Outage",
+      "product": "A focused laundromat washer and dryer outage tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent laundromats offering self-service and wash-dry-fold",
+      "problem": "Out-of-order signs reveal little about payment impact, customer claim, diagnosis, part or vendor status, repeated faults, and whether a washer or dryer was truly tested before reopening.",
+      "valueProposition": "Turns laundromat washer and dryer outage tracking into a visible operating queue so every machine outage has immediate customer containment, repair ownership, status visibility, and a documented loaded-cycle return test.",
+      "topic": "laundromat washer and dryer outage tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets laundromat maintenance software, washer out of order tracker, laundromat machine repair log, and dryer downtime searches.",
+      "score": 88
+    },
+    {
+      "id": "wash-fold-handoff",
+      "name": "Wash-Fold Handoff",
+      "product": "A focused laundromat wash dry fold order tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent laundromats offering self-service and wash-dry-fold",
+      "problem": "Drop-off orders can be mixed, delayed, underweighed, split across machines, missing a preference, assembled incorrectly, or released before payment because each production stage has a separate handoff.",
+      "valueProposition": "Turns laundromat wash dry fold order tracking into a visible operating queue so every wash-dry-fold order preserves customer instructions and bag identity through processing, assembly, quality check, payment, and authorized release.",
+      "topic": "laundromat wash dry fold order tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets wash dry fold tracking, laundromat drop off software, laundry order status, and wash and fold ticket searches.",
+      "score": 87
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused laundromat washer and dryer outage tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns laundromat washer and dryer outage tracking into a visible operating queue so every machine outage has immediate customer containment, repair ownership, status visibility, and a documented loaded-cycle return test.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith",
+    "picture": "/assets/blog/authors/jj.jpeg"
+  },
+  "images": {
+    "coverImage": "/assets/blog/preview/cover.jpg",
+    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-pages",
+    "project": "laundromat-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

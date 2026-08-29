@@ -1,0 +1,69 @@
+---
+title: "Community Theater Rehearsal Conflict Tracking Checklist for Community Theaters And Volunteer-Led Stage-Production Teams"
+excerpt: "A copyable quality-control checklist for community theaters and volunteer-led stage-production teams, with concrete fields, decision rules, and implementation steps."
+productId: "rehearsal-conflict-resolution"
+productName: "Rehearsal Conflict Resolution"
+generationFingerprint: "a66c5290c49a9ef998c7"
+coverImage: "/assets/blog/preview/cover.jpg"
+date: "2026-08-29T21:59:24Z"
+author:
+  name: "John Smith"
+  picture: "/assets/blog/authors/jj.jpeg"
+ogImage:
+  url: "/assets/blog/dynamic-routing/cover.jpg"
+---
+
+A checklist for community theater rehearsal conflict tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for community theaters and volunteer-led stage-production teams and centers on one result: **every material rehearsal conflict is resolved against scene and role dependencies, published as one current schedule, and acknowledged by affected participants**.
+
+## Before the work starts
+
+- Confirm Production rehearsal and schedule version
+- Confirm Conflict source role and timing
+- Confirm Scenes numbers and required participants
+- Confirm Room staff and technical dependencies
+
+Also name the owner and the expected completion condition. If either is unknown, the work is not ready to enter the active queue.
+
+## While the work is moving
+
+- Update Register the conflict against the current schedule
+- Update Identify scenes roles staff and rooms affected
+- Update Compare approved resolution options
+- Update Publish the revised call and supersede old versions
+- Update Collect acknowledgments and handle remaining exceptions
+
+Every update should change a decision. Notes such as “followed up” are weak unless they also include the channel, result, next date, and owner.
+
+## Before marking it complete
+
+- Verify Resolution options and director decision
+- Verify New call times locations and notes
+- Verify Notification recipients and acknowledgments
+- Verify Remaining exception owner and review time
+
+Confirm that the actual outcome—not just an activity—has been recorded. If the process ended early, use a closed reason rather than deleting the record.
+
+## Copy-and-paste weekly review
+
+- [ ] Review records where a cast crew room or director conflict is reported
+- [ ] Review records where a resolution changes another role or scene call
+- [ ] Review records where an affected participant misses the acknowledgment cutoff
+
+- [ ] Check for moving a rehearsal without checking scene dependencies
+- [ ] Check for announcing a change only in group chat
+- [ ] Check for keeping two schedule files labeled final
+- [ ] Check for treating a sent message as acknowledgment for a critical call
+
+## Make the checklist measurable
+
+Choose one metric before the next cycle. Good options for this workflow are Conflict decision time, Acknowledged-change rate, Lost-rehearsal time. A checklist that never changes a metric or prevents a known failure mode is probably administrative overhead.
+
+## Assign ownership and escalation
+
+Put one role—not a group—next to every item that can remain open. Define a backup owner and an escalation time for work that affects a customer, client, participant, or delivery promise. During review, separate **not started**, **waiting on someone**, and **failed validation**; those states need different actions. If a checklist item repeatedly waits on the same dependency, redesign the intake or handoff instead of adding more reminder boxes.
+
+## Next step
+
+[Explore the Rehearsal Conflict Resolution workflow concept](/products/rehearsal-conflict-resolution) and record whether this is painful enough to justify a focused tool.
+
+For the adjacent workflow, see [Production Asset Return](/products/production-asset-return).

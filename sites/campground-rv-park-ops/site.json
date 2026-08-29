@@ -1,0 +1,77 @@
+{
+  "id": "campground-rv-park-ops",
+  "name": "Campground and RV Park Operations",
+  "domain": null,
+  "audience": "independent campgrounds, RV parks, and small outdoor lodging properties",
+  "topic": "site turnover, after-hours arrival, and cancellation-fill workflows",
+  "products": [
+    {
+      "id": "campsite-turn-readiness",
+      "name": "Campsite Turn Readiness",
+      "product": "A focused campground campsite turnover readiness workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent campgrounds, RV parks, and small outdoor lodging properties",
+      "problem": "Departed sites remain unavailable or are released too early because checkout, utilities, cleanup, damage, fire-ring or amenity checks, maintenance, and reservation status close separately.",
+      "valueProposition": "Turns campground campsite turnover readiness into a visible operating queue so every departing site is inspected, serviced, reconciled, and released for the next arrival or held with a visible reason.",
+      "topic": "campground campsite turnover readiness",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets campground site turnover, RV site inspection checklist, campsite cleaning tracker, and campground maintenance handoff searches.",
+      "score": 87
+    },
+    {
+      "id": "after-hours-arrival-handoff",
+      "name": "After-Hours Arrival Handoff",
+      "product": "A focused campground late arrival check in coordination workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent campgrounds, RV parks, and small outdoor lodging properties",
+      "problem": "Guests arriving after the office closes may lack an updated site assignment, entry method, payment or agreement status, rig-specific directions, quiet-hours guidance, or a reachable escalation contact.",
+      "valueProposition": "Turns campground late arrival check in coordination into a visible operating queue so every confirmed after-hours guest receives a current, secure arrival path tied to a ready site and a next-morning verification.",
+      "topic": "campground late arrival check in coordination",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets campground late arrival, RV park after hours check in, campground lockbox instructions, and late check in workflow searches.",
+      "score": 85
+    },
+    {
+      "id": "cancellation-fill-queue",
+      "name": "Cancellation Fill Queue",
+      "product": "A focused campground cancellation waitlist fill tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent campgrounds, RV parks, and small outdoor lodging properties",
+      "problem": "A desirable site reopens after cancellation, but waitlist preferences, rig fit, date flexibility, contact attempts, response deadlines, and released inventory are managed manually.",
+      "valueProposition": "Turns campground cancellation waitlist fill tracking into a visible operating queue so every cancellation opportunity is offered to eligible waitlist guests in a fair visible sequence and returns to public inventory at a defined cutoff.",
+      "topic": "campground cancellation waitlist fill tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets campground waitlist software, RV park cancellation fill, campsite waitlist tracker, and campground vacancy alert searches.",
+      "score": 84
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused campground campsite turnover readiness workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns campground campsite turnover readiness into a visible operating queue so every departing site is inspected, serviced, reconciled, and released for the next arrival or held with a visible reason.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith",
+    "picture": "/assets/blog/authors/jj.jpeg"
+  },
+  "images": {
+    "coverImage": "/assets/blog/preview/cover.jpg",
+    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-pages",
+    "project": "campground-rv-park-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}
