@@ -1,0 +1,63 @@
+{
+  "id": "security-guard-ops",
+  "name": "Security Guard Operations",
+  "domain": null,
+  "audience": "small contract security companies and guard supervisors",
+  "topic": "incident review and post-order control for guard companies",
+  "products": [
+    {
+      "id": "incident-report-review",
+      "name": "Incident Report Review",
+      "product": "A focused security incident report review workflow workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "small contract security companies and guard supervisors",
+      "problem": "Guard reports can be submitted with missing timeline, people, location, actions, or media, while supervisors need to review and deliver client-ready records quickly.",
+      "valueProposition": "Turns security incident report review workflow into a visible operating queue so every submitted incident report is checked for completeness, corrected with an audit trail, and delivered to authorized recipients.",
+      "topic": "security incident report review workflow",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets security incident report review, guard report approval, incident report quality control, and security supervisor workflow searches.",
+      "score": 87
+    },
+    {
+      "id": "post-order-acknowledgment",
+      "name": "Post Order Acknowledgment",
+      "product": "A focused security guard post order acknowledgment workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "small contract security companies and guard supervisors",
+      "problem": "Updated post orders may sit in binders, messages, or portals without proof that every assigned guard received the effective instructions before the shift.",
+      "valueProposition": "Turns security guard post order acknowledgment into a visible operating queue so every guard assigned to a post acknowledges the effective order and required briefing before working under it.",
+      "topic": "security guard post order acknowledgment",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets security post orders, guard post order acknowledgment, security site instructions, and guard training confirmation searches.",
+      "score": 85
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused security incident report review workflow workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns security incident report review workflow into a visible operating queue so every submitted incident report is checked for completeness, corrected with an audit trail, and delivered to authorized recipients.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith",
+    "picture": "/assets/blog/authors/jj.jpeg"
+  },
+  "images": {
+    "coverImage": "/assets/blog/preview/cover.jpg",
+    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-pages",
+    "project": "security-guard-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

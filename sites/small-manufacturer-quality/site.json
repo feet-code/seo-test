@@ -1,0 +1,77 @@
+{
+  "id": "small-manufacturer-quality",
+  "name": "Small Manufacturer Quality Operations",
+  "domain": null,
+  "audience": "small manufacturers and lean quality teams",
+  "topic": "nonconformance, instructions, and supplier corrective actions for manufacturers",
+  "products": [
+    {
+      "id": "nonconformance-closeout",
+      "name": "Nonconformance Closeout",
+      "product": "A focused manufacturing nonconformance closeout workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "small manufacturers and lean quality teams",
+      "problem": "Small quality teams can log a defect but struggle to connect containment, disposition, cause, corrective work, and effectiveness evidence before closing the record.",
+      "valueProposition": "Turns manufacturing nonconformance closeout into a visible operating queue so every nonconformance is contained, dispositioned by authority, corrected, and closed only after required effectiveness evidence.",
+      "topic": "manufacturing nonconformance closeout",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets nonconformance tracking, NCR closeout checklist, manufacturing quality action tracker, and nonconforming material workflow searches.",
+      "score": 88
+    },
+    {
+      "id": "work-instruction-acknowledgment",
+      "name": "Work Instruction Acknowledgment",
+      "product": "A focused controlled work instruction acknowledgment workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "small manufacturers and lean quality teams",
+      "problem": "Revised work instructions reach shared folders or binders without proof that affected operators received the right revision and completed any required qualification.",
+      "valueProposition": "Turns controlled work instruction acknowledgment into a visible operating queue so every effective instruction revision is distributed to the affected roles and acknowledged with required training before use.",
+      "topic": "controlled work instruction acknowledgment",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets work instruction acknowledgment, manufacturing document control, SOP training tracker, and controlled document distribution searches.",
+      "score": 84
+    },
+    {
+      "id": "supplier-corrective-action-desk",
+      "name": "Supplier Corrective Action Desk",
+      "product": "A focused supplier corrective action request tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "small manufacturers and lean quality teams",
+      "problem": "Supplier defects generate emails and replacement shipments, but containment, root cause, corrective action, and effectiveness responses are rarely managed as one accountable request.",
+      "valueProposition": "Turns supplier corrective action request tracking into a visible operating queue so every material supplier issue requiring corrective action receives accepted containment, cause, action, and effectiveness evidence by agreed deadlines.",
+      "topic": "supplier corrective action request tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets supplier corrective action request, SCAR tracking software, supplier quality action, and 8D response tracker searches.",
+      "score": 87
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused manufacturing nonconformance closeout workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns manufacturing nonconformance closeout into a visible operating queue so every nonconformance is contained, dispositioned by authority, corrected, and closed only after required effectiveness evidence.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith",
+    "picture": "/assets/blog/authors/jj.jpeg"
+  },
+  "images": {
+    "coverImage": "/assets/blog/preview/cover.jpg",
+    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-pages",
+    "project": "small-manufacturer-quality"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}
