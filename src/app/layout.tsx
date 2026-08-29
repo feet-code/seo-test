@@ -9,16 +9,21 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 const siteUrl = process.env.SITE_URL || "http://localhost:3000";
+const googleVerificationRaw = process.env.GOOGLE_SITE_VERIFICATION?.trim() || "";
+// Google's API returns either the content token or an entire <meta> tag.
+// Normalize both forms so Next can emit one real, static tag in the HTML source.
+const googleVerification =
+  googleVerificationRaw.match(/content\s*=\s*["']([^"']+)["']/i)?.[1] || googleVerificationRaw;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: process.env.SITE_PRODUCT_NAME || "Blog",
   description: process.env.SITE_DESCRIPTION || `Helpful information about ${process.env.SITE_TOPIC || "this topic"}.`,
   openGraph: { images: [HOME_OG_IMAGE_URL] },
+  verification: googleVerification ? { google: googleVerification } : undefined,
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  const googleVerification = process.env.GOOGLE_SITE_VERIFICATION;
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -30,11 +35,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
         <meta name="theme-color" content="#000" />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `document.head.insertAdjacentHTML('beforeend', ${JSON.stringify(googleVerification)})`
-          }}
-        />
       </head>
       <body className={cn(inter.className, "dark:bg-slate-900 dark:text-slate-400")}>
         <PostHog />

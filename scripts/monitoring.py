@@ -2,8 +2,10 @@
 """Provision hosting, shared PostHog analytics, and Google Search Console."""
 from __future__ import annotations
 
+import html
 import json
 import os
+import re
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -89,6 +91,16 @@ def google_api(method: str, url: str, token: str, body=None):
     return http(method, url, body, {"Authorization": f"Bearer {token}", "Content-Type": "application/json"})
 
 
+_GOOGLE_META_CONTENT = re.compile(r"""content\s*=\s*["']([^"']+)["']""", re.IGNORECASE)
+
+
+def google_verification_content(token: str) -> str:
+    """Return only the value for <meta name="google-site-verification" content="...">."""
+    token = token.strip()
+    match = _GOOGLE_META_CONTENT.search(token)
+    return html.unescape(match.group(1)).strip() if match else token
+
+
 def verify_and_register(config: dict, site_url: str) -> None:
     if not os.environ.get("GOOGLE_APPLICATION_CREDENTIALS"):
         return
@@ -98,7 +110,7 @@ def verify_and_register(config: dict, site_url: str) -> None:
     token_result = google_api("POST", "https://www.googleapis.com/siteVerification/v1/token", token, {
         "site": {"identifier": property_url, "type": "SITE"}, "verificationMethod": "META"
     })
-    config.setdefault("monitoring", {})["googleVerificationToken"] = token_result["token"]
+    config.setdefault("monitoring", {})["googleVerificationToken"] = google_verification_content(token_result["token"])
     config["monitoring"]["googleProperty"] = property_url
 
 
