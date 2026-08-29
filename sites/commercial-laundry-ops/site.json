@@ -1,0 +1,63 @@
+{
+  "id": "commercial-laundry-ops",
+  "name": "Commercial Laundry Operations",
+  "domain": null,
+  "audience": "small commercial laundries and linen or uniform rental services",
+  "topic": "route delivery and textile-accountability workflows for commercial laundries",
+  "products": [
+    {
+      "id": "linen-delivery-exception",
+      "name": "Linen Delivery Exception",
+      "product": "A focused commercial laundry delivery exception tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "small commercial laundries and linen or uniform rental services",
+      "problem": "Short deliveries, wrong carts, rejected items, access delays, emergency requests, and unsigned tickets move between route driver, plant, customer service, and billing.",
+      "valueProposition": "Turns commercial laundry delivery exception tracking into a visible operating queue so every route delivery exception has verified quantities, customer acknowledgment, recovery plan, and corrected inventory and billing records.",
+      "topic": "commercial laundry delivery exception tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets linen delivery exception, commercial laundry route issue, linen shortage tracker, and laundry delivery credit searches.",
+      "score": 87
+    },
+    {
+      "id": "customer-linen-loss-review",
+      "name": "Customer Linen Loss Review",
+      "product": "A focused commercial laundry linen loss and replacement tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "small commercial laundries and linen or uniform rental services",
+      "problem": "Customer shortages, replacement charges, discard records, rag-out, route counts, and circulating inventory are debated without one period-based evidence trail.",
+      "valueProposition": "Turns commercial laundry linen loss and replacement tracking into a visible operating queue so every material textile-loss difference is reconstructed, reviewed with the customer, and resolved to count correction, replacement, charge, or process action.",
+      "topic": "commercial laundry linen loss and replacement tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets linen loss tracking, commercial laundry replacement charges, textile inventory variance, and linen reconciliation searches.",
+      "score": 84
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused commercial laundry delivery exception tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns commercial laundry delivery exception tracking into a visible operating queue so every route delivery exception has verified quantities, customer acknowledgment, recovery plan, and corrected inventory and billing records.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith",
+    "picture": "/assets/blog/authors/jj.jpeg"
+  },
+  "images": {
+    "coverImage": "/assets/blog/preview/cover.jpg",
+    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-pages",
+    "project": "commercial-laundry-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

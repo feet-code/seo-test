@@ -1,0 +1,63 @@
+{
+  "id": "self-storage-facility-ops",
+  "name": "Self-Storage Facility Operations",
+  "domain": null,
+  "audience": "independent self-storage facilities and small multi-site operators",
+  "topic": "delinquency and unit-turn workflows for self-storage facilities",
+  "products": [
+    {
+      "id": "delinquency-promise-board",
+      "name": "Delinquency Promise Board",
+      "product": "A focused self-storage delinquency follow-up tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent self-storage facilities and small multi-site operators",
+      "problem": "Payment reminders, tenant promises, access changes, policy milestones, and manager exceptions are recorded in different places, making the next compliant action hard to see.",
+      "valueProposition": "Turns self-storage delinquency follow-up tracking into a visible operating queue so every delinquent account has a policy-based next action, documented tenant response, and verified stop condition.",
+      "topic": "self-storage delinquency follow-up tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets self storage delinquency tracker, storage tenant payment follow up, self storage collections workflow, and storage promise to pay searches.",
+      "score": 87
+    },
+    {
+      "id": "unit-turn-readiness",
+      "name": "Unit Turn Readiness",
+      "product": "A focused self-storage move-out inspection and unit turn tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent self-storage facilities and small multi-site operators",
+      "problem": "A vacated unit can remain unrentable because final access, inspection, cleaning, damage, billing, and availability updates do not close as one workflow.",
+      "valueProposition": "Turns self-storage move-out inspection and unit turn tracking into a visible operating queue so every vacated unit is inspected, cleared, reconciled, and published as rentable or held with a named reason.",
+      "topic": "self-storage move-out inspection and unit turn tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets self storage unit turnover, storage move out inspection, vacant unit readiness, and storage unit cleaning checklist searches.",
+      "score": 83
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused self-storage delinquency follow-up tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns self-storage delinquency follow-up tracking into a visible operating queue so every delinquent account has a policy-based next action, documented tenant response, and verified stop condition.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith",
+    "picture": "/assets/blog/authors/jj.jpeg"
+  },
+  "images": {
+    "coverImage": "/assets/blog/preview/cover.jpg",
+    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-pages",
+    "project": "self-storage-facility-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

@@ -1,0 +1,63 @@
+{
+  "id": "sign-print-shop-ops",
+  "name": "Sign and Print Shop Operations",
+  "domain": null,
+  "audience": "independent sign shops, commercial printers, and display fabricators",
+  "topic": "proof approvals and installation readiness for sign and print shops",
+  "products": [
+    {
+      "id": "proof-approval-queue",
+      "name": "Proof Approval Queue",
+      "product": "A focused print and sign proof approval tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent sign shops, commercial printers, and display fabricators",
+      "problem": "Proof PDFs, marked-up screenshots, revised artwork, colors, dimensions, copy, and customer approvals move through email without one production-authorized version.",
+      "valueProposition": "Turns print and sign proof approval tracking into a visible operating queue so every job enters production only from an exact proof version approved by the authorized customer contact.",
+      "topic": "print and sign proof approval tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets print proof approval, sign proofing software, customer artwork approval, and print shop proof tracker searches.",
+      "score": 89
+    },
+    {
+      "id": "install-readiness-board",
+      "name": "Install Readiness Board",
+      "product": "A focused sign installation readiness tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent sign shops, commercial printers, and display fabricators",
+      "problem": "Fabrication completion does not guarantee install readiness when permits, site access, survey dimensions, hardware, equipment, crew, weather, and customer windows remain open.",
+      "valueProposition": "Turns sign installation readiness tracking into a visible operating queue so every installation dispatch has verified product, site, permission, equipment, crew, and customer readiness.",
+      "topic": "sign installation readiness tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets sign installation checklist, sign shop install scheduling, sign job readiness, and sign installation workflow searches.",
+      "score": 87
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused print and sign proof approval tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns print and sign proof approval tracking into a visible operating queue so every job enters production only from an exact proof version approved by the authorized customer contact.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith",
+    "picture": "/assets/blog/authors/jj.jpeg"
+  },
+  "images": {
+    "coverImage": "/assets/blog/preview/cover.jpg",
+    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-pages",
+    "project": "sign-print-shop-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

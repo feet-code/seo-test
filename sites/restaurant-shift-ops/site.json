@@ -1,0 +1,77 @@
+{
+  "id": "restaurant-shift-ops",
+  "name": "Restaurant Shift Operations",
+  "domain": null,
+  "audience": "independent restaurants and small multi-location restaurant groups",
+  "topic": "prep shortages, item availability, and manager shift handoffs",
+  "products": [
+    {
+      "id": "prep-shortage-recovery",
+      "name": "Prep Shortage Recovery",
+      "product": "A focused restaurant prep shortage tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent restaurants and small multi-location restaurant groups",
+      "problem": "A missed prep item is often announced verbally, but quantity, affected menu items, substitute decision, owner, and recovery time are not visible across kitchen and management.",
+      "valueProposition": "Turns restaurant prep shortage tracking into a visible operating queue so every service-impacting prep shortage has a quantified gap, approved response, owner, and communicated menu consequence.",
+      "topic": "restaurant prep shortage tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets restaurant prep shortage, kitchen prep tracker, restaurant par list exception, and prep recovery workflow searches.",
+      "score": 84
+    },
+    {
+      "id": "menu-availability-publisher",
+      "name": "Menu Availability Publisher",
+      "product": "A focused restaurant 86 list and menu availability tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent restaurants and small multi-location restaurant groups",
+      "problem": "When an item or modifier sells out, staff may update one POS screen but miss online ordering, third-party channels, service teams, or the later un-86 decision.",
+      "valueProposition": "Turns restaurant 86 list and menu availability tracking into a visible operating queue so every availability change is approved, published to all intended channels, acknowledged by service staff, and reversed only after supply is verified.",
+      "topic": "restaurant 86 list and menu availability tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets restaurant 86 list, menu item availability software, restaurant sold out tracking, and POS item out of stock searches.",
+      "score": 86
+    },
+    {
+      "id": "manager-shift-handoff",
+      "name": "Manager Shift Handoff",
+      "product": "A focused restaurant manager shift handoff tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent restaurants and small multi-location restaurant groups",
+      "problem": "Guest promises, equipment issues, staffing gaps, vendor arrivals, product holds, and incomplete tasks disappear in narrative log entries between managers.",
+      "valueProposition": "Turns restaurant manager shift handoff tracking into a visible operating queue so every unresolved shift issue transfers with impact, owner, next action, due time, and explicit acceptance by the next manager.",
+      "topic": "restaurant manager shift handoff tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets restaurant shift handoff, manager logbook restaurant, restaurant daily log, and restaurant issue tracker searches.",
+      "score": 85
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused restaurant prep shortage tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns restaurant prep shortage tracking into a visible operating queue so every service-impacting prep shortage has a quantified gap, approved response, owner, and communicated menu consequence.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith",
+    "picture": "/assets/blog/authors/jj.jpeg"
+  },
+  "images": {
+    "coverImage": "/assets/blog/preview/cover.jpg",
+    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-pages",
+    "project": "restaurant-shift-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

@@ -1,0 +1,63 @@
+{
+  "id": "conference-organizer-ops",
+  "name": "Conference Organizer Operations",
+  "domain": null,
+  "audience": "independent conference organizers and small trade-show teams",
+  "topic": "speaker assets and sponsor obligations for conference organizers",
+  "products": [
+    {
+      "id": "speaker-asset-chaser",
+      "name": "Speaker Asset Chaser",
+      "product": "A focused conference speaker asset tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent conference organizers and small trade-show teams",
+      "problem": "Bios, headshots, titles, abstracts, slides, releases, travel details, and AV needs arrive through different speaker email threads and versions.",
+      "valueProposition": "Turns conference speaker asset tracking into a visible operating queue so every confirmed speaker has the approved assets and permissions required for agenda publication, production, and session delivery.",
+      "topic": "conference speaker asset tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets conference speaker management, speaker asset checklist, speaker portal workflow, and conference presentation tracker searches.",
+      "score": 86
+    },
+    {
+      "id": "sponsor-deliverable-register",
+      "name": "Sponsor Deliverable Register",
+      "product": "A focused conference sponsor deliverable tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent conference organizers and small trade-show teams",
+      "problem": "Logo placements, booth entitlements, tickets, sessions, lead capture, signage, mentions, and post-event reporting are sold in contracts but fulfilled across separate teams.",
+      "valueProposition": "Turns conference sponsor deliverable tracking into a visible operating queue so every contracted sponsor obligation has an approved input, delivery owner, placement evidence, and accepted outcome.",
+      "topic": "conference sponsor deliverable tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets event sponsor deliverables, sponsorship fulfillment tracker, conference sponsor management, and sponsor asset checklist searches.",
+      "score": 88
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused conference speaker asset tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns conference speaker asset tracking into a visible operating queue so every confirmed speaker has the approved assets and permissions required for agenda publication, production, and session delivery.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith",
+    "picture": "/assets/blog/authors/jj.jpeg"
+  },
+  "images": {
+    "coverImage": "/assets/blog/preview/cover.jpg",
+    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-pages",
+    "project": "conference-organizer-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}
