@@ -13,8 +13,10 @@ from pathlib import Path
 def http(method: str, url: str, body=None, headers=None):
     data = None if body is None else json.dumps(body).encode()
     req = urllib.request.Request(url, data=data, headers=headers or {}, method=method)
+    print('http method, url, body, headers', method, url, body, headers)
     with urllib.request.urlopen(req, timeout=60) as response:
         raw = response.read()
+        print('http json response', json.loads(raw) if raw else {})
         return json.loads(raw) if raw else {}
 
 
@@ -92,6 +94,7 @@ def verify_and_register(config: dict, site_url: str) -> None:
         return
     token = google_access_token()
     property_url = site_url.rstrip("/") + "/"
+    print('getting meta tag token')
     token_result = google_api("POST", "https://www.googleapis.com/siteVerification/v1/token", token, {
         "site": {"identifier": property_url, "type": "SITE"}, "verificationMethod": "META"
     })
@@ -100,14 +103,15 @@ def verify_and_register(config: dict, site_url: str) -> None:
 
 
 def finalize_google(config: dict) -> None:
+    print('finalize_google')
     monitoring = config.get("monitoring", {})
     property_url = monitoring.get("googleProperty")
     if not property_url or not os.environ.get("GOOGLE_APPLICATION_CREDENTIALS"):
         return
     token = google_access_token()
-    google_api("POST", "https://www.googleapis.com/siteVerification/v1/webResource?verificationMethod=META", token, {
+    print(google_api("POST", "https://www.googleapis.com/siteVerification/v1/webResource?verificationMethod=META", token, {
         "site": {"identifier": property_url, "type": "SITE"}
-    })
+    }))
     encoded = urllib.parse.quote(property_url, safe="")
     google_api("PUT", f"https://www.googleapis.com/webmasters/v3/sites/{encoded}", token)
     sitemap = property_url + "sitemap.xml"

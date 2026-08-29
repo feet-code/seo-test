@@ -30,7 +30,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
         <meta name="theme-color" content="#000" />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
-        {googleVerification ? <meta name="google-site-verification" content={googleVerification} /> : null}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `document.head.insertAdjacentHTML('beforeend', ${JSON.stringify(googleVerification)})`
+          }}
+        />
       </head>
       <body className={cn(inter.className, "dark:bg-slate-900 dark:text-slate-400")}>
         <PostHog />

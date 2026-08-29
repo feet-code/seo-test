@@ -24,6 +24,8 @@
     "posthogProjectId": "223772",
     "posthogKey": "phc_Ry7RnM5QX3IfylEnMJIme5TxMBOsasBFeHAMqtb4wyi",
     "posthogHost": "https://us.i.posthog.com",
-    "posthogProjectName": "Shared PostHog Project"
+    "posthogProjectName": "Shared PostHog Project",
+    "googleVerificationToken": "<meta name=\"google-site-verification\" content=\"R-JcsDflzn8U1dVrleG73RV_gmkFNu6FCBrf6-A8TeU\" />",
+    "googleProperty": "https://example-seo-site.pages.dev/"
   }
 }
