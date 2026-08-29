@@ -1,0 +1,77 @@
+{
+  "id": "specialty-wholesale-ops",
+  "name": "Specialty Wholesale Operations",
+  "domain": null,
+  "audience": "small specialty wholesalers and B2B distributors",
+  "topic": "reorders, backorders, and account operations for specialty distributors",
+  "products": [
+    {
+      "id": "account-reorder-signal",
+      "name": "Account Reorder Signal",
+      "product": "A lightweight account-level reminder that surfaces likely replenishment opportunities using prior cadence and rep judgment.",
+      "productUrl": "",
+      "audience": "small specialty wholesalers and B2B distributors",
+      "problem": "Repeat customers fall outside a rep's memory when expected reorder timing varies by account, item family, season, and open inventory issue.",
+      "valueProposition": "Creates explainable reorder review dates with account context, prior order evidence, outreach ownership, and outcome tracking.",
+      "topic": "wholesale customer reorder reminders and account follow-up",
+      "monetization": "$19-$79/month based on active records or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets wholesale reorder reminder, distributor sales follow-up, reorder cadence spreadsheet, and B2B customer reactivation searches.",
+      "score": 82
+    },
+    {
+      "id": "backorder-update-desk",
+      "name": "Backorder Update Desk",
+      "product": "A customer-communication queue for open order lines affected by supply delay, substitution, partial fulfillment, or changed ETA.",
+      "productUrl": "",
+      "audience": "small specialty wholesalers and B2B distributors",
+      "problem": "Operations updates ETAs in one system while account reps manually reconstruct which customers need an update and what alternatives can be offered.",
+      "valueProposition": "Connects each affected line to the latest source, customer promise, option, owner, and next-update date.",
+      "topic": "wholesale backorder customer update tracking",
+      "monetization": "$19-$79/month based on active records or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets backorder email template, customer delay notification, wholesale order status tracker, and proactive ETA communication searches.",
+      "score": 85
+    },
+    {
+      "id": "new-account-packet",
+      "name": "New Account Packet",
+      "product": "A guided onboarding checklist for collecting wholesale account terms, contacts, tax documents, ordering preferences, and operational setup.",
+      "productUrl": "",
+      "audience": "small specialty wholesalers and B2B distributors",
+      "problem": "New accounts bounce between sales, operations, and accounting because required information and approvals are collected in separate emails.",
+      "valueProposition": "Creates one itemized packet with secure uploads, validation, internal approvals, and a clear ready-to-order state.",
+      "topic": "wholesale customer onboarding and new account setup checklists",
+      "monetization": "$19-$79/month based on active records or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets wholesale account application, distributor onboarding checklist, new customer packet, and B2B account setup workflow searches.",
+      "score": 79
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A lightweight account-level reminder that surfaces likely replenishment opportunities using prior cadence and rep judgment.",
+  "productUrl": "",
+  "valueProposition": "Creates explainable reorder review dates with account context, prior order evidence, outreach ownership, and outcome tracking.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith",
+    "picture": "/assets/blog/authors/jj.jpeg"
+  },
+  "images": {
+    "coverImage": "/assets/blog/preview/cover.jpg",
+    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-pages",
+    "project": "specialty-wholesale-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

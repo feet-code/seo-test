@@ -9,6 +9,7 @@ Run commands from the repository root. Start with `python scripts/portfolio.py s
 | Generate/resume 100 products | `python scripts/ideas.py --generate --count 100` | `ideas/ideas.json`, generation checkpoint, managed site/product fields |
 | Intentionally start over | `python scripts/ideas.py --regenerate --count 100` | Replaces the generation checkpoint and, after success, `ideas/ideas.json` |
 | Validate/preview manual edits | `python scripts/ideas.py --plan` | Nothing |
+| Rebuild reviewed probes from `probeContext` | `python scripts/editorial_probes.py --site SITE_ID` | Missing posts for that site's products |
 | Preview a NicheScout handoff | `python scripts/ideas.py --portfolio ../NicheScout/exports/ideas.json --plan` | Nothing |
 | Apply a handoff | `python scripts/ideas.py --portfolio ../NicheScout/exports/ideas.json` | Portfolio file and managed site/product fields |
 | Smoke-test one generated site | `python scripts/launch.py --limit 1` | Complete pipeline for the first active site |

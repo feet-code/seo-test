@@ -27,6 +27,20 @@ The first command writes `ideas/ideas.json` and materializes its grouped site co
 
 Before deploying, inspect and freely edit the file. Every idea has one authoritative `"siteId"` naming the website/audience group in `sites[]`. To add a product to an existing website, copy an idea object, give it a unique `id`, edit its research fields, and set `siteId`; there is no duplicate `productIds` list to maintain. To create a new website, first add its metadata to `sites[]`, then point one or more ideas at its `id`. `python scripts/ideas.py --plan` validates the file and previews site-config changes without writing them; `launch.py` applies the sync automatically.
 
+### Included first editorial batch
+
+This branch already includes a reviewed `ideas/ideas.json` and 220 committed probes for 22 products across 10 audience websites. Group sizes range from one to three products according to audience fit. The old `example` verification fixture is retired, so it is excluded from bulk launches.
+
+Deploy the included batch directly:
+
+```bash
+python scripts/ideas.py --plan
+python scripts/launch.py --limit 1
+python scripts/launch.py
+```
+
+The normal launcher recognizes the committed post fingerprints and does not call Gemini for complete products. Future reviewed batches can be reproduced from each idea's `probeContext` with `python scripts/editorial_probes.py`; use `--site SITE_ID` for one website and `--force` only when intentionally replacing that site's existing probes.
+
 Idea generation checkpoints after every audience group in `.deploy/state/ideas-generation.json`. Rerun the same `--generate` command to resume. Use `--regenerate` only when you intentionally want a completely new portfolio:
 
 ```bash
