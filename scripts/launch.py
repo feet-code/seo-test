@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate, deploy, register, and monitor an audience-grouped site portfolio."""
+"""Generate, deploy, register, and monitor an SEO product portfolio."""
 from __future__ import annotations
 
 import argparse

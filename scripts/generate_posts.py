@@ -87,6 +87,8 @@ def generation_fingerprint(
                 "valueProposition",
                 "topic",
                 "seoAngle",
+                "seoThesis",
+                "searchQueries",
             )
         },
     }
@@ -119,12 +121,16 @@ Specific audience: {product.get('audience') or site.get('audience')}
 Problem: {product.get('problem')}
 Value proposition: {product.get('valueProposition')}
 Topic: {product.get('topic')}
-SEO thesis: {product.get('seoAngle', '')}
+SEO angle: {product.get('seoAngle', '')}
+SEO ranking thesis: {product.get('seoThesis', '')}
+Validated query hypotheses: {json.dumps(product.get('searchQueries', []), ensure_ascii=False)}
 Complementary product pages: {json.dumps(peers, ensure_ascii=False)}
 
-The posts are demand probes. Cover distinct high-intent searches across templates, calculators/checklists,
-problem diagnosis, comparisons/alternatives, workflow instructions, and purchase-ready software terms. Each
-post must be genuinely useful and specific enough to rank independently. Where contextually helpful, include
+The posts are demand probes. Use the query hypotheses as intent evidence, not as phrases to stuff. Cover distinct
+high-intent searches across templates, calculators/checklists, problem diagnosis, comparisons/alternatives,
+implementation instructions, and purchase-ready software terms. Every post needs a different primary intent
+and must naturally connect that intent to the product's measurable economic outcome. Each post must be genuinely
+useful and specific enough to rank independently. Where contextually helpful, include
 one natural Markdown link to a complementary product page. Do not force cross-links. Do not invent statistics,
 customers, quotes, laws, product capabilities, or keyword-volume numbers. Do not keyword-stuff or write generic
 filler. Do not include photos, image Markdown, HTML image tags, or image placeholders. Return ONLY a JSON array

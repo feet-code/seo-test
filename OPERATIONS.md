@@ -17,7 +17,7 @@ Run commands from the repository root. Start with `python scripts/portfolio.py s
 | Deploy one site | `python scripts/launch.py --site SITE_ID` | Changed/missing product content, frontend, hosting, GSC |
 | Smoke-test a batch | `python scripts/launch.py --batch BATCH_ID --limit 1` | Complete pipeline for the first site in that batch |
 | Deploy one batch | `python scripts/launch.py --batch BATCH_ID` | Only websites containing that `contentBatch` |
-| Deploy several batches | `python scripts/launch.py --batches batch-004,batch-005` | Union of affected websites, each deployed once |
+| Deploy several batches | `python scripts/launch.py --batches BATCH_A,BATCH_B` | Union of affected websites, each deployed once |
 | Resume a stopped batch | `python scripts/launch.py --resume` | Restores and continues the exact saved subset |
 | Publish a shared UI change | `python scripts/launch.py --frontend-only` | Every active site, no Gemini |
 | Rebuild one UI/config change | `python scripts/launch.py --frontend-only --site SITE_ID` | One site, no Gemini |
@@ -37,14 +37,13 @@ python scripts/ideas.py --generate --count 100
 python scripts/portfolio.py status
 ```
 
-Review the site count and product distribution in `ideas/ideas.json`. Counts vary because audience fit closes or grows a website; five is only a soft preferred size. To change the guardrails for a new run:
+Review all candidates, scores, query hypotheses, and risks in `ideas/ideas.json`. The default output is exactly one product per website. To change the restart-safe call size for a new run:
 
 ```bash
-python scripts/ideas.py --regenerate --count 150 \
-  --preferred-products-per-site 4 --max-products-per-site 7
+python scripts/ideas.py --regenerate --count 150 --batch-size 5
 ```
 
-An interrupted idea run is safe to resume with the exact same `--generate` command. `ideas/ideas.json` is replaced atomically only after every audience group is complete.
+An interrupted idea run is safe to resume with the exact same `--generate` command. `ideas/ideas.json` is replaced atomically only after every independent batch is complete.
 
 Before deploying, inspect `ideas/ideas.json`. Each idea's `siteId` is its single source of truth for website membership. You can change copy, add ideas, remove ideas, or move an idea to another existing audience website without editing a second membership list. Run `python scripts/ideas.py --plan` after manual edits; the launcher applies the same validated sync automatically.
 
@@ -55,11 +54,11 @@ python scripts/launch.py --limit 1
 python scripts/launch.py
 ```
 
-For a newly added editorial batch, scope both commands so older websites are not redeployed:
+For a reviewed editorial batch, scope both commands so unrelated websites are not redeployed:
 
 ```bash
-python scripts/launch.py --batch batch-005 --limit 1
-python scripts/launch.py --batch batch-005
+python scripts/launch.py --batch profitability-001 --limit 1
+python scripts/launch.py --batch profitability-001
 ```
 
 Batch membership comes from each idea's `contentBatch`. A site shared by two selected batches is built and deployed once. `--limit` applies after batch selection. If a run stops, plain `--resume` restores the checkpoint's site list; you may also repeat the original batch flags.
@@ -73,7 +72,7 @@ python scripts/ideas.py --portfolio ../NicheScout/exports/ideas.json --plan
 python scripts/ideas.py --portfolio ../NicheScout/exports/ideas.json
 ```
 
-## Change an idea, audience, or grouping
+## Change an idea or its site
 
 Edit `ideas/ideas.json`, not a generated site's managed product fields.
 
@@ -86,7 +85,7 @@ For a copy/product change:
 
 The fingerprint checkpoint regenerates only products whose generation inputs changed.
 
-For regrouping, change only the idea's `siteId`. Preview and apply the sync, then deploy both the old and new site. A full generator run removes attributed posts for products no longer assigned to the old site.
+Generated portfolios use one product per site, so change the matching idea and site records together if you rename an ID. Legacy imported portfolios can still be regrouped by changing an idea's `siteId`; preview and apply the sync, then deploy both affected sites.
 
 To add an idea to an existing website, copy an idea object and edit its unique `id`, `name`, `product`, `audience`, `problem`, `valueProposition`, `topic`, and `siteId` (plus the research fields you want to preserve). To create a new website, also add one `sites[]` object with a unique `id`, `name`, `audience`, and `topic`; point the new ideas' `siteId` at it. Generated files do not contain `productIds`. Older imported portfolios that do are still supported, with an idea's explicit `siteId` taking precedence.
 
@@ -130,9 +129,9 @@ Edit `sites/SITE_ID/site.json`. These site-local fields survive portfolio import
 }
 ```
 
-`cloudflare-auto` is the default for new sites. It preserves an already resolved host; otherwise it reuses an existing Pages project, creates Pages while the account is below its actual project cap, and assigns overflow to Workers Static Assets on `*.workers.dev`. A capacity response while creating Pages also triggers the Workers fallback. The resulting `resolvedProvider` and `url` are saved in the config.
+`cloudflare-auto` is the default for new sites. It preserves an already resolved host; otherwise it reuses an existing Pages project, creates Pages while the account is below its configured or observed project cap, and assigns overflow to Workers Static Assets on `*.workers.dev`. Cloudflare error `8000027` triggers the Workers fallback immediately, records the observed cap, and routes later new sites directly to Workers. If the live Pages count falls below that observed cap, the marker is cleared. The resulting `resolvedProvider` and `url` are saved in the config.
 
-You can pin a site with `cloudflare-pages` or `cloudflare-workers`, or override a run with `--provider`. A Workers-capable API token needs Workers Scripts write access. If account-subdomain discovery is unavailable, set `CLOUDFLARE_WORKERS_SUBDOMAIN` to the part before `.workers.dev` and resume.
+You can select `cloudflare-pages` or `cloudflare-workers`, or override a run with `--provider`; a Pages capacity rejection still falls back safely to Workers. A Workers-capable API token needs Workers Scripts write access. If account-subdomain discovery is unavailable, set `CLOUDFLARE_WORKERS_SUBDOMAIN` to the part before `.workers.dev` and resume.
 
 ## Keep blogs image-free
 

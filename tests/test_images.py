@@ -22,9 +22,11 @@ def load_script(name: str):
 
 class ImageFreeBlogTests(unittest.TestCase):
     def test_every_committed_blog_is_image_free(self) -> None:
-        paths = sorted((ROOT / "_posts").glob("*.md"))
-        paths.extend(sorted((ROOT / "sites").glob("*/_posts/*.md")))
-        self.assertGreater(len(paths), 2700)
+        root_paths = sorted((ROOT / "_posts").glob("*.md"))
+        site_paths = sorted((ROOT / "sites").glob("*/_posts/*.md"))
+        self.assertGreater(len(root_paths), 0)
+        self.assertEqual(site_paths, [])
+        paths = root_paths
         forbidden = re.compile(
             r"^(?:coverImage|ogImage):|^\s+picture:|!\[[^\]]*\]\(|<img\b",
             re.MULTILINE | re.IGNORECASE,

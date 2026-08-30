@@ -394,6 +394,7 @@ class CloudflareHostingTests(unittest.TestCase):
                     return_value="cloudflare-pages",
                 ),
                 patch.object(monitoring, "provision_pages", side_effect=error),
+                patch.object(monitoring, "pages_project_count", return_value=100),
                 patch.object(
                     monitoring,
                     "worker_url",
@@ -410,7 +411,54 @@ class CloudflareHostingTests(unittest.TestCase):
                 config["deploy"]["url"],
                 "https://audience-tools.account.workers.dev",
             )
+            self.assertEqual(config["deploy"]["provider"], "cloudflare-auto")
             self.assertTrue((site_dir / "site.json").exists())
+
+    def test_error_8000027_falls_back_even_for_legacy_explicit_pages_config(self) -> None:
+        monitoring = load_monitoring()
+        error = urllib.error.HTTPError(
+            "https://api.cloudflare.com/client/v4/accounts/test/pages/projects",
+            400,
+            "Bad Request",
+            {},
+            None,
+        )
+        error.response_detail = (
+            '{"errors":[{"code":8000027,"message":"You have reached the limit '
+            'of projects you can have on your account."}]}'
+        )
+        config = self.config()
+        config["deploy"]["provider"] = "cloudflare-pages"
+
+        with TemporaryDirectory() as directory:
+            site_dir = Path(directory)
+            with (
+                patch.object(monitoring, "provision_pages", side_effect=error),
+                patch.object(monitoring, "pages_project_count", return_value=37),
+                patch.object(
+                    monitoring,
+                    "worker_url",
+                    return_value="https://audience-tools.account.workers.dev",
+                ),
+            ):
+                result = monitoring.prepare_hosting(config, site_dir)
+
+        self.assertEqual(result["deploy"]["resolvedProvider"], "cloudflare-workers")
+        self.assertEqual(result["deploy"]["provider"], "cloudflare-auto")
+        self.assertEqual(monitoring._known_pages_capacity(), 37)
+
+    def test_observed_pages_limit_routes_following_projects_to_workers(self) -> None:
+        monitoring = load_monitoring()
+        monitoring._record_pages_capacity(37)
+
+        with (
+            patch.object(monitoring, "_page_project_exists", return_value=False),
+            patch.object(monitoring, "pages_project_count", return_value=37),
+            patch.object(monitoring, "worker_names", return_value=set()),
+        ):
+            provider = monitoring.resolve_cloudflare_auto(self.config())
+
+        self.assertEqual(provider, "cloudflare-workers")
 
 
 if __name__ == "__main__":

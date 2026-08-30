@@ -66,7 +66,7 @@ class PortfolioTests(unittest.TestCase):
 
         ideas.validate_document(document)
 
-    def test_mock_generation_writes_a_flexible_grouped_portfolio(self) -> None:
+    def test_mock_generation_writes_independent_profitability_sites(self) -> None:
         ideas = load_script("ideas")
         with TemporaryDirectory() as directory:
             root = Path(directory)
@@ -75,20 +75,25 @@ class PortfolioTests(unittest.TestCase):
             ideas.SITES = root / "sites"
             ideas.STATE = root / "state"
 
-            document = ideas.generate_portfolio(
-                17, preferred=5, maximum=7, mock=True
-            )
+            document = ideas.generate_portfolio(17, batch_size=5, mock=True)
             sizes = [
                 sum(idea["siteId"] == site["id"] for idea in document["ideas"])
                 for site in document["sites"]
             ]
 
             self.assertEqual(len(document["ideas"]), 17)
+            self.assertEqual(len(document["sites"]), 17)
             self.assertEqual(sum(sizes), 17)
-            self.assertGreater(len(set(sizes)), 1)
-            self.assertTrue(all(1 <= size <= 7 for size in sizes))
+            self.assertEqual(set(sizes), {1})
             self.assertTrue(
                 all("productIds" not in site for site in document["sites"])
+            )
+            self.assertTrue(
+                all("scoreBreakdown" in idea for idea in document["ideas"])
+            )
+            self.assertEqual(
+                document["generation"]["grouping"],
+                "none; every product is an independent one-product site",
             )
             self.assertTrue(ideas.IDEAS.exists())
             ideas.validate_document(document)
@@ -100,21 +105,19 @@ class PortfolioTests(unittest.TestCase):
             )
             self.assertTrue(checkpoint["complete"])
 
-            repeated = ideas.generate_portfolio(
-                17, preferred=5, maximum=7, mock=True
-            )
+            repeated = ideas.generate_portfolio(17, batch_size=5, mock=True)
             self.assertEqual(repeated["generation"]["runId"], document["generation"]["runId"])
 
-    def test_generation_resumes_completed_audience_groups(self) -> None:
+    def test_generation_resumes_completed_profitability_batches(self) -> None:
         ideas = load_script("ideas")
         with TemporaryDirectory() as directory:
             root = Path(directory)
             ideas.IDEAS_DIR = root / "ideas"
             ideas.IDEAS = ideas.IDEAS_DIR / "ideas.json"
             ideas.STATE = root / "state"
-            plan = ideas.mock_audience_plan(12, preferred=5, maximum=7)
+            plan = ideas._generation_plan(12, batch_size=5)
             first_products = ideas.mock_products(plan[0], set())
-            settings = ideas._generation_settings(12, 5, 7, True)
+            settings = ideas._generation_settings(12, 5, True)
             checkpoint = {
                 "version": ideas.IDEA_GENERATION_VERSION,
                 "runId": "resume-test",
@@ -127,16 +130,14 @@ class PortfolioTests(unittest.TestCase):
             }
             ideas._atomic_json(ideas._generation_checkpoint(), checkpoint)
 
-            document = ideas.generate_portfolio(
-                12, preferred=5, maximum=7, mock=True
-            )
+            document = ideas.generate_portfolio(12, batch_size=5, mock=True)
 
             self.assertEqual(document["generation"]["runId"], "resume-test")
             self.assertEqual(
                 [
                     product["id"]
                     for product in document["ideas"]
-                    if product["siteId"] == plan[0]["id"]
+                    if product["id"] in {value["id"] for value in first_products}
                 ],
                 [product["id"] for product in first_products],
             )
@@ -161,9 +162,32 @@ class PortfolioTests(unittest.TestCase):
 
             ideas._call_gemini_json = fail
             with self.assertRaisesRegex(ideas.GenerationError, "simulated"):
-                ideas.generate_portfolio(9, preferred=4, maximum=6)
+                ideas.generate_portfolio(9, batch_size=4)
 
             self.assertEqual(ideas.IDEAS.read_text(encoding="utf-8"), before)
+
+    def test_profitability_prompt_rejects_grouping_and_thin_trackers(self) -> None:
+        ideas = load_script("ideas")
+        prompt = ideas._profitability_batch_prompt(
+            {"id": "batch-001", "productCount": 5},
+            [],
+        )
+
+        self.assertIn("Do not group ideas", prompt)
+        self.assertIn("generic trackers", prompt)
+        self.assertIn("winning or recovering revenue", prompt)
+        self.assertIn("SEO must be a credible", prompt)
+        self.assertIn("serpWinnability", prompt)
+
+    def test_profitability_score_is_computed_from_named_dimensions(self) -> None:
+        ideas = load_script("ideas")
+        breakdown = {name: 8 for name in ideas.PROFIT_SCORE_WEIGHTS}
+
+        normalized, score = ideas._profitability_score(breakdown, 0)
+
+        self.assertEqual(normalized, breakdown)
+        self.assertEqual(score, 80)
+        self.assertEqual(sum(ideas.PROFIT_SCORE_WEIGHTS.values()), 100)
 
     def test_sync_updates_portfolio_content_but_preserves_operations(self) -> None:
         ideas = load_script("ideas")

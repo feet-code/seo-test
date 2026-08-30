@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate, import, validate, and safely sync an audience-grouped portfolio."""
+"""Generate, import, validate, and safely sync profitability-first SEO probes."""
 from __future__ import annotations
 
 import argparse
@@ -20,15 +20,26 @@ IDEAS = IDEAS_DIR / "ideas.json"
 SITES = ROOT / "sites"
 STATE = ROOT / ".deploy" / "state"
 DEFAULT_MODELS = [
-    "gemini-3.5-flash-lite",
-    "gemini-3.1-flash-lite",
-    "gemini-2.5-flash-lite",
+    "gemini-3.7-flash",
+    "gemini-3.6-flash",
+    "gemini-3.5-flash",
     "gemini-2.5-flash",
 ]
-IDEA_GENERATION_VERSION = 1
+IDEA_GENERATION_VERSION = 3
 DEFAULT_IDEA_COUNT = 100
-DEFAULT_PREFERRED_PRODUCTS = 5
-DEFAULT_MAX_PRODUCTS = 8
+DEFAULT_BATCH_SIZE = 5
+MAX_BATCH_SIZE = 10
+PROFIT_SCORE_WEIGHTS = {
+    "economicPain": 15,
+    "buyerBudget": 10,
+    "recurrenceRetention": 10,
+    "monetizationExpansion": 15,
+    "searchDemand": 10,
+    "commercialIntent": 10,
+    "contentDepth": 10,
+    "serpWinnability": 10,
+    "buildSupportFeasibility": 10,
+}
 
 
 class PortfolioError(ValueError):
@@ -92,8 +103,9 @@ def _call_model(model: str, prompt: str) -> str:
     )
     body = {
         "contents": [{"parts": [{"text": prompt}]}],
+        "tools": [{"google_search": {}}],
         "generationConfig": {
-            "temperature": 0.85,
+            "temperature": 0.65,
             "responseMimeType": "application/json",
         },
     }
@@ -137,10 +149,14 @@ def _call_gemini_json(
                 attempts.append(
                     {"model": model, "attempt": attempt + 1, "status": exc.code}
                 )
-                if exc.code in {401, 403}:
+                if exc.code == 401:
                     raise GenerationError(
                         f"Gemini authentication failed: HTTP {exc.code}"
                     ) from exc
+                if exc.code == 403:
+                    # A free-tier key can be valid while one model is unavailable
+                    # or quota-blocked. Continue through the configured model chain.
+                    break
                 if exc.code in {400, 404, 422}:
                     break
                 if exc.code not in {408, 409, 425, 429, 500, 502, 503, 504}:
@@ -189,267 +205,375 @@ def _unique_slug(value: Any, used: set[str], *, limit: int) -> str:
     return candidate
 
 
-def _audience_plan_prompt(count: int, preferred: int, maximum: int) -> str:
-    return f"""Design an audience-grouped portfolio for exactly {count} distinct micro-SaaS products.
-
-Return ONLY a JSON array. Each item must contain id, name, audience, topic, and productCount.
-The sum of productCount must be exactly {count}; every productCount must be between 1 and {maximum}.
-
-Group only products bought or used by the same specific buyer/audience. A single website should feel like a
-coherent toolbox for that audience, not a random software directory. Choose group size from the number of
-genuinely complementary opportunities. {preferred} is a soft planning target, not a quota: deliberately use
-variable group sizes and never pad a group merely to reach {preferred}. Keep audiences narrow enough for one
-SEO content strategy and distinct enough that websites do not compete for the same searches.
-
-Favor painful business workflows, clear buyers, recurring revenue, willingness to pay, low infrastructure/API
-costs, solo-founder feasibility, and organic-search acquisition. Avoid generic AI wrappers, broad project
-management apps, saturated consumer apps, regulated medical/financial/legal products, expensive proprietary
-data, and hardware. Do not include the products yet and do not invent market-size or keyword-volume numbers."""
-
-
-def _normalize_audience_plan(
-    payload: Any,
-    count: int,
-    preferred: int,
-    maximum: int,
-) -> list[dict[str, Any]]:
-    if not isinstance(payload, list) or not payload:
-        raise ValueError("audience plan must be a non-empty JSON array")
-    result: list[dict[str, Any]] = []
-    used_ids: set[str] = set()
-    for index, raw in enumerate(payload):
-        if not isinstance(raw, dict):
-            raise ValueError(f"audience plan item {index} is not an object")
-        audience = str(raw.get("audience", "")).strip()
-        topic = str(raw.get("topic", "")).strip()
-        name = str(raw.get("name") or audience).strip()
-        if not audience or not topic or not name:
-            raise ValueError(f"audience plan item {index} is missing name/audience/topic")
-        try:
-            product_count = int(raw.get("productCount"))
-        except (TypeError, ValueError) as exc:
-            raise ValueError(
-                f"audience plan item {index} has an invalid productCount"
-            ) from exc
-        if not 1 <= product_count <= maximum:
-            raise ValueError(
-                f"audience plan item {index} productCount must be 1..{maximum}"
-            )
-        site_id = _unique_slug(raw.get("id") or name, used_ids, limit=58)
-        result.append(
-            {
-                "id": site_id,
-                "name": name,
-                "audience": audience,
-                "topic": topic,
-                "productCount": product_count,
-            }
-        )
-    actual = sum(site["productCount"] for site in result)
-    if actual != count:
-        raise ValueError(f"audience plan contains {actual} products; expected {count}")
-    sizes = {site["productCount"] for site in result}
-    if len(result) >= 3 and sizes == {preferred}:
-        raise ValueError(
-            f"audience plan padded every site to the soft target of {preferred}"
-        )
-    return result
-
-
-_MOCK_AUDIENCES = (
-    (
-        "freelancer-operations",
-        "Freelancer Operations",
-        "freelancers and independent service businesses",
-        "client operations for independent service businesses",
-    ),
-    (
-        "property-manager-workflows",
-        "Property Manager Workflows",
-        "independent residential property managers",
-        "tenant and vendor operations for small property portfolios",
-    ),
-    (
-        "agency-client-delivery",
-        "Agency Client Delivery",
-        "small marketing and creative agencies",
-        "repeatable client delivery workflows for small agencies",
-    ),
-    (
-        "field-service-office",
-        "Field Service Office",
-        "owner-operated field service businesses",
-        "office workflows for local field service teams",
-    ),
-    (
-        "course-creator-operations",
-        "Course Creator Operations",
-        "independent cohort and course creators",
-        "launch and learner operations for small education businesses",
-    ),
-    (
-        "recruiter-desk-tools",
-        "Recruiter Desk Tools",
-        "independent recruiters and boutique recruiting firms",
-        "candidate and client workflows for boutique recruiters",
-    ),
-    (
-        "wholesale-operations",
-        "Wholesale Operations",
-        "small specialty wholesalers",
-        "order and account workflows for specialty wholesalers",
-    ),
-    (
-        "nonprofit-program-ops",
-        "Nonprofit Program Operations",
-        "small nonprofit program teams",
-        "program delivery and reporting workflows for small nonprofits",
-    ),
-)
-
-
-def mock_audience_plan(
-    count: int,
-    preferred: int = DEFAULT_PREFERRED_PRODUCTS,
-    maximum: int = DEFAULT_MAX_PRODUCTS,
-) -> list[dict[str, Any]]:
-    pattern = [
-        max(1, min(maximum, preferred - 2)),
-        max(1, min(maximum, preferred + 2)),
-        max(1, min(maximum, preferred - 3)),
-        max(1, min(maximum, preferred)),
-        max(1, min(maximum, preferred + 3)),
-        max(1, min(maximum, preferred - 1)),
+def _generation_plan(count: int, batch_size: int) -> list[dict[str, int | str]]:
+    return [
+        {
+            "id": f"batch-{index + 1:03d}",
+            "offset": offset,
+            "productCount": min(batch_size, count - offset),
+        }
+        for index, offset in enumerate(range(0, count, batch_size))
     ]
-    remaining = count
-    index = 0
-    result: list[dict[str, Any]] = []
-    while remaining:
-        base_id, name, audience, topic = _MOCK_AUDIENCES[index % len(_MOCK_AUDIENCES)]
-        cycle = index // len(_MOCK_AUDIENCES) + 1
-        site_id = base_id if cycle == 1 else f"{base_id}-{cycle}"
-        product_count = min(remaining, pattern[index % len(pattern)])
-        result.append(
-            {
-                "id": site_id,
-                "name": name if cycle == 1 else f"{name} {cycle}",
-                "audience": audience,
-                "topic": topic,
-                "productCount": product_count,
-            }
-        )
-        remaining -= product_count
-        index += 1
-    return result
 
 
-def _products_prompt(
-    site: dict[str, Any],
-    used_names: list[str],
+def _profitability_batch_prompt(
+    batch: dict[str, Any],
+    used_ideas: list[dict[str, str]],
 ) -> str:
-    count = site["productCount"]
-    return f"""Generate exactly {count} distinct micro-SaaS products for one audience website.
+    count = int(batch["productCount"])
+    return f"""Use Google Search and return exactly {count} independent, profit-and-SEO-first micro-SaaS
+finalists as a JSON array. You are selecting investment hypotheses, not brainstorming filler. Silently examine
+at least {count * 4} candidates across different industries and return only the strongest {count} at the
+intersection of expected bootstrapped profit and attainable organic-search acquisition.
 
-Website: {site['name']}
-Exact audience: {site['audience']}
-Shared SEO territory: {site['topic']}
+Each finalist gets its own website and does NOT need to share an audience, topic, or product family with any
+other finalist. Do not group ideas. Optimize the probability of durable bootstrapped profit, subject to a solo
+technical founder being able to launch a narrow MVP without employees or large upfront capital.
 
-Return ONLY a JSON array. Every item must contain id, name, product, problem, valueProposition, topic,
-monetization, startupCost, seoAngle, and score (integer 1-100). Do not include siteId or domain.
+Prioritize products tied directly to an economic event: winning or recovering revenue, raising margin,
+utilizing scarce capacity, preventing an expensive operational risk, enabling a transaction, retaining a
+valuable customer, or eliminating a measurable recurring cost. A workflow is not valuable by itself. Reject
+thin dashboards, generic trackers, queues, checklists, directories, generic AI wrappers, and products that a
+buyer can reproduce in a spreadsheet in under an hour unless there is a defensible data, automation,
+optimization, transaction, or compliance advantage.
 
-Every product must be bought or used by the exact audience above and must fit the shared SEO territory. Make
-the products complementary but independently testable: do not create feature tiers, near-duplicates, or renamed
-versions of one tool. Each should solve one narrow, painful workflow for a clear buyer, support a plausible
-recurring-revenue offer, be feasible for a solo technical founder, and have a specific organic-search angle.
-Avoid regulated workflows, generic AI wrappers, expensive proprietary data, hardware, invented statistics,
-and claims about keyword volume. Previously generated names to avoid: {json.dumps(used_names[-40:])}."""
+Prefer specific business buyers with budgets, frequent pain, strong retention mechanics, high-intent organic
+searches, weak or disliked substitutes, and room to expand pricing or product depth. SEO must be a credible
+primary acquisition channel, not an afterthought: the named buyer must already search for the problem, method,
+calculator, comparison, or software category; the idea must support several durable, non-duplicative content
+clusters; and a focused new site must have a plausible path around incumbent vendors, marketplaces, publishers,
+and government domains. Reject ideas that mainly require outbound sales, depend on a single head keyword, have
+only generic informational traffic, or cannot naturally connect useful articles to the product's money outcome.
+Do not invent keyword volume or ranking difficulty. Treat broad or incumbent-dominated SERPs skeptically.
+
+Include a deliberate mix
+of revenue capture, pricing/margin, forecasting/optimization, capacity/scheduling, risk/evidence,
+transactional, integration/data, and customer-retention products. Do not default to monthly subscriptions:
+choose the business model that best captures value. Avoid medical diagnosis, legal advice, lending/insurance
+underwriting, custody of funds, hardware, two-sided-market cold starts, expensive proprietary data, and ideas
+requiring enterprise sales before validation. Do not invent market-size, search-volume, or ROI statistics.
+
+Return ONLY a JSON array. Every object must contain:
+- id, name, siteName, audience, buyer, product, problem, valueProposition, topic
+- economicDriver, monetization, startupCost, seoAngle, seoThesis, profitRationale, primaryRisk
+- marketEvidence: at least 2 short evidence objects with signal and sourceUrl, based on your searches
+- searchQueries: at least 6 realistic queries spanning commercial software, problem-aware, calculator/template,
+  comparison/alternative, pricing/cost, and specific how-to intent; never include invented volume numbers
+- scoreBreakdown: integer 1-10 values for economicPain, buyerBudget, recurrenceRetention,
+  monetizationExpansion, searchDemand, commercialIntent, contentDepth, serpWinnability,
+  and buildSupportFeasibility
+
+Scoring meanings: 10 is unusually strong, 5 is uncertain/average, and 1 is disqualifying. Be skeptical. Budget
+means the named buyer can plausibly approve meaningful spend. MonetizationExpansion covers value-based pricing,
+account growth, and adjacent paid depth. Search demand measures how naturally and repeatedly buyers search;
+commercial intent measures proximity to a purchase; content depth measures how many genuinely useful clusters
+can be published without thin repetition; and SERP winnability must score low when dominant software, publishers,
+marketplaces, or government sites control the relevant results. Build/support feasibility includes integrations,
+onboarding, data access, reliability, and customer support—not just coding. Use varied scores; do not make every
+idea an 8 or 9. The program computes the weighted total, so do not return an overall score.
+
+Already selected ideas to avoid duplicating or lightly renaming:
+{json.dumps(used_ideas[-60:], ensure_ascii=False)}"""
+
+
+def _profitability_score(raw: Any, index: int) -> tuple[dict[str, int], int]:
+    if not isinstance(raw, dict):
+        raise ValueError(f"product {index} scoreBreakdown must be an object")
+    scores: dict[str, int] = {}
+    for name, weight in PROFIT_SCORE_WEIGHTS.items():
+        try:
+            value = int(raw.get(name))
+        except (TypeError, ValueError) as exc:
+            raise ValueError(f"product {index} has invalid {name} score") from exc
+        if not 1 <= value <= 10:
+            raise ValueError(f"product {index} {name} score must be 1..10")
+        scores[name] = value
+    total = round(
+        sum(scores[name] * weight for name, weight in PROFIT_SCORE_WEIGHTS.items())
+        / 10
+    )
+    return scores, total
+
+
+def _evidence_items(raw: Any, index: int) -> list[dict[str, str]]:
+    if not isinstance(raw, list) or len(raw) < 2:
+        raise ValueError(f"product {index} needs at least two marketEvidence items")
+    evidence: list[dict[str, str]] = []
+    for item in raw:
+        if not isinstance(item, dict):
+            raise ValueError(f"product {index} marketEvidence item is not an object")
+        signal = str(item.get("signal", "")).strip()
+        source = str(item.get("sourceUrl", "")).strip()
+        if not signal or not source.startswith(("https://", "http://")):
+            raise ValueError(
+                f"product {index} marketEvidence needs signal and sourceUrl"
+            )
+        evidence.append({"signal": signal, "sourceUrl": source})
+    return evidence
+
+
+def _profit_probe_context(values: dict[str, str]) -> dict[str, Any]:
+    topic = values["topic"]
+    buyer = values["buyer"]
+    driver = values["economicDriver"]
+    return {
+        "outcome": values["valueProposition"],
+        "workflow": [
+            f"Collect the minimum source records needed to evaluate {topic}.",
+            "Normalize revenue, cost, volume, timing, and exception inputs before calculation.",
+            f"Calculate the {driver} result and expose the assumptions behind it.",
+            f"Let the {buyer} approve an action and compare the eventual result with the forecast.",
+        ],
+        "fields": [
+            "source record and reporting period",
+            "customer, job, asset, location, or contract identifier",
+            "revenue or avoided-loss amount",
+            "variable cost and allocated capacity cost",
+            "volume, timing, utilization, or risk inputs",
+            "recommended action, owner, confidence, and review date",
+        ],
+        "mistakes": [
+            "Treating revenue as profit while omitting variable and capacity costs.",
+            "Automating a recommendation before source data and assumptions are reviewable.",
+            "Using one threshold for unlike customers, jobs, assets, or seasons.",
+            "Measuring recommendations without recording the action and eventual outcome.",
+        ],
+        "metrics": [
+            {
+                "name": "incremental gross profit or avoided loss",
+                "formula": "realized revenue plus avoided loss minus variable and capacity cost",
+                "decision": "keep only actions that create a positive realized contribution",
+            },
+            {
+                "name": "financial realization rate",
+                "formula": "realized financial result divided by the approved expected result",
+                "decision": "find recommendations whose promised value does not survive execution",
+            },
+            {
+                "name": "forecast error",
+                "formula": "absolute expected-versus-realized difference divided by the realized result",
+                "decision": "recalibrate assumptions or separate unlike cases",
+            },
+            {
+                "name": "decision cycle time",
+                "formula": "approved-action timestamp minus qualifying-trigger timestamp",
+                "decision": "remove delays that cause an otherwise valuable opportunity to expire",
+            },
+        ],
+        "alternatives": [
+            {
+                "name": "Owner-maintained spreadsheet",
+                "best": "volume is low, one person owns the decision, and assumptions change often",
+                "limit": "manual joins and inconsistent follow-through become hard to audit",
+            },
+            {
+                "name": "Existing industry-system reports",
+                "best": "the source system already contains costs, outcomes, and decision rules",
+                "limit": "reports often stop at activity or revenue instead of the full money outcome",
+            },
+            {
+                "name": "General BI tool or analyst",
+                "best": "the buyer has data skills and needs several adjacent analyses",
+                "limit": "analysis alone may not put an approved action back into the operating cycle",
+            },
+        ],
+        "triggers": [
+            "a new quote, order, job, customer, asset, or contract",
+            "a material change in cost, price, utilization, or timing",
+            "a renewal, repricing, planning, or exception-review cycle",
+        ],
+        "examples": [
+            "a high-revenue case that becomes unattractive after variable costs",
+            "an underused capacity slot where a targeted action creates incremental margin",
+            "an exception whose missing evidence would otherwise hide revenue or increase risk",
+        ],
+        "rules": [
+            "Never recommend an action when required source inputs are missing or stale.",
+            "Show the financial formula and assumptions beside every recommendation.",
+            "Require human approval for customer-facing price, contract, or schedule changes.",
+            "Recalculate after the realized outcome so future recommendations can improve.",
+        ],
+    }
 
 
 def _normalize_products(
     payload: Any,
-    site: dict[str, Any],
+    batch: dict[str, Any],
     used_ids: set[str],
 ) -> list[dict[str, Any]]:
-    expected = site["productCount"]
+    expected = int(batch["productCount"])
     if not isinstance(payload, list) or len(payload) != expected:
         actual = len(payload) if isinstance(payload, list) else "invalid"
-        raise ValueError(f"product group contains {actual} products; expected {expected}")
+        raise ValueError(f"idea batch contains {actual} products; expected {expected}")
     local_ids = set(used_ids)
     result: list[dict[str, Any]] = []
+    required = (
+        "name",
+        "siteName",
+        "audience",
+        "buyer",
+        "product",
+        "problem",
+        "valueProposition",
+        "topic",
+        "economicDriver",
+        "monetization",
+        "startupCost",
+        "seoAngle",
+        "seoThesis",
+        "profitRationale",
+        "primaryRisk",
+    )
     for index, raw in enumerate(payload):
         if not isinstance(raw, dict):
             raise ValueError(f"product {index} is not an object")
-        name = str(raw.get("name", "")).strip()
-        product = str(raw.get("product", "")).strip()
-        problem = str(raw.get("problem", "")).strip()
-        if not name or not product or not problem:
-            raise ValueError(f"product {index} is missing name/product/problem")
-        product_id = _unique_slug(raw.get("id") or name, local_ids, limit=80)
-        try:
-            score = max(1, min(100, int(float(raw.get("score", 70)))))
-        except (TypeError, ValueError):
-            score = 70
-        value = str(raw.get("valueProposition") or problem).strip()
-        topic = str(raw.get("topic") or site["topic"]).strip()
+        values = {name: str(raw.get(name, "")).strip() for name in required}
+        missing = [name for name, value in values.items() if not value]
+        if missing:
+            raise ValueError(f"product {index} is missing {', '.join(missing)}")
+        product_id = _unique_slug(raw.get("id") or values["name"], local_ids, limit=58)
+        search_queries = [
+            str(value).strip()
+            for value in (raw.get("searchQueries") or [])
+            if str(value).strip()
+        ]
+        if len(search_queries) < 6:
+            raise ValueError(f"product {index} needs at least six searchQueries")
+        scores, score = _profitability_score(raw.get("scoreBreakdown"), index)
         result.append(
             {
                 "id": product_id,
-                "siteId": site["id"],
-                "name": name,
-                "product": product,
-                "audience": site["audience"],
-                "problem": problem,
-                "valueProposition": value,
-                "topic": topic,
-                "monetization": str(
-                    raw.get("monetization") or "Low-cost monthly subscription"
-                ).strip(),
-                "startupCost": str(
-                    raw.get("startupCost")
-                    or "Static frontend and inexpensive managed services"
-                ).strip(),
-                "seoAngle": str(
-                    raw.get("seoAngle")
-                    or f"High-intent searches around {topic}"
-                ).strip(),
+                "siteId": product_id,
+                "siteName": values["siteName"],
+                "name": values["name"],
+                "product": values["product"],
+                "audience": values["audience"],
+                "buyer": values["buyer"],
+                "problem": values["problem"],
+                "valueProposition": values["valueProposition"],
+                "topic": values["topic"],
+                "economicDriver": values["economicDriver"],
+                "monetization": values["monetization"],
+                "startupCost": values["startupCost"],
+                "seoAngle": values["seoAngle"],
+                "seoThesis": values["seoThesis"],
+                "profitRationale": values["profitRationale"],
+                "primaryRisk": values["primaryRisk"],
+                "marketEvidence": _evidence_items(raw.get("marketEvidence"), index),
+                "searchQueries": search_queries,
+                "scoreBreakdown": scores,
                 "score": score,
+                "contentBatch": "profitability-generated",
+                "probeContext": _profit_probe_context(values),
                 "domain": None,
             }
         )
     return result
 
 
+_MOCK_PROFIT_IDEAS = (
+    (
+        "Pool Route Margin",
+        "owners of residential pool service companies",
+        "route-level account profitability and repricing",
+        "margin",
+    ),
+    (
+        "Shop Bay Yield",
+        "independent auto repair shop owners",
+        "repair bay utilization and schedule profitability",
+        "capacity",
+    ),
+    (
+        "Distributor Margin Leak",
+        "specialty wholesale distributors",
+        "order-line margin leakage detection",
+        "margin",
+    ),
+    (
+        "Agency Fee Burn",
+        "small professional-service agencies",
+        "project fee burn and profitability forecasting",
+        "risk",
+    ),
+    (
+        "Venue Date Yield",
+        "independent wedding and event venues",
+        "event-date pricing and displacement analysis",
+        "revenue",
+    ),
+)
+
+
 def mock_products(
-    site: dict[str, Any],
+    batch: dict[str, Any],
     used_ids: set[str],
 ) -> list[dict[str, Any]]:
-    payload = []
-    for index in range(1, site["productCount"] + 1):
-        label = f"{site['name']} Workflow {index}"
+    payload: list[dict[str, Any]] = []
+    offset = int(batch.get("offset", 0))
+    for local_index in range(int(batch["productCount"])):
+        absolute = offset + local_index
+        name, audience, topic, driver = _MOCK_PROFIT_IDEAS[
+            absolute % len(_MOCK_PROFIT_IDEAS)
+        ]
+        cycle = absolute // len(_MOCK_PROFIT_IDEAS) + 1
+        label = name if cycle == 1 else f"{name} {cycle}"
         payload.append(
             {
                 "id": slug(label),
                 "name": label,
-                "product": f"A focused workflow tool for {site['audience']}.",
-                "problem": f"The audience manually repeats workflow {index} with inconsistent results.",
-                "valueProposition": f"Makes workflow {index} repeatable without a broad business suite.",
-                "topic": f"{site['topic']} workflow {index}",
-                "monetization": "$19/month",
-                "startupCost": "Static frontend and inexpensive managed storage.",
-                "seoAngle": f"Templates and software searches for workflow {index}.",
-                "score": 80 - (index % 10),
+                "siteName": label,
+                "audience": audience,
+                "buyer": "owner or general manager",
+                "product": f"A focused decision tool for {topic}.",
+                "problem": f"The buyer cannot reliably quantify {topic} before money is lost.",
+                "valueProposition": f"Turns operating data into an explainable {driver} decision.",
+                "topic": topic,
+                "economicDriver": driver,
+                "monetization": "$99-$299/month based on locations or transaction volume",
+                "startupCost": "Solo-buildable web MVP with managed storage and CSV imports.",
+                "seoAngle": f"Commercial software and calculator searches for {topic}.",
+                "seoThesis": (
+                    "A narrow industry site can connect decision guides, calculators, "
+                    "comparisons, and software pages to the same measurable money outcome."
+                ),
+                "profitRationale": "The product is attached to a measurable financial decision.",
+                "primaryRisk": "Source data may require customer onboarding and cleanup.",
+                "marketEvidence": [
+                    {"signal": "Buyers already track the decision in operating software.", "sourceUrl": "https://example.com/source-one"},
+                    {"signal": "The decision recurs as volume or schedules change.", "sourceUrl": "https://example.com/source-two"},
+                ],
+                "searchQueries": [
+                    f"{topic} software",
+                    f"{topic} calculator",
+                    f"best tool for {topic}",
+                    f"how to improve {topic}",
+                    f"{topic} software pricing",
+                    f"{topic} spreadsheet alternative",
+                ],
+                "scoreBreakdown": {
+                    "economicPain": 8,
+                    "buyerBudget": 7,
+                    "recurrenceRetention": 8,
+                    "monetizationExpansion": 7,
+                    "searchDemand": 7,
+                    "commercialIntent": 8,
+                    "contentDepth": 8,
+                    "serpWinnability": 6,
+                    "buildSupportFeasibility": 8,
+                },
             }
         )
-    return _normalize_products(payload, site, used_ids)
+    return _normalize_products(payload, batch, used_ids)
 
 
-def _generation_settings(count: int, preferred: int, maximum: int, mock: bool) -> dict[str, Any]:
+def _generation_settings(count: int, batch_size: int, mock: bool) -> dict[str, Any]:
     return {
         "count": count,
-        "preferredProductsPerSite": preferred,
-        "maxProductsPerSite": maximum,
+        "batchSize": batch_size,
         "mock": mock,
         "generationVersion": IDEA_GENERATION_VERSION,
+        "objective": "maximum-profit-and-attainable-seo-independent-products",
     }
 
 
@@ -476,19 +600,18 @@ def _load_generation_state(settings: dict[str, Any]) -> dict[str, Any] | None:
 
 def generate_portfolio(
     count: int = DEFAULT_IDEA_COUNT,
-    preferred: int = DEFAULT_PREFERRED_PRODUCTS,
-    maximum: int = DEFAULT_MAX_PRODUCTS,
+    batch_size: int = DEFAULT_BATCH_SIZE,
     *,
     mock: bool = False,
     regenerate: bool = False,
 ) -> dict[str, Any]:
-    """Generate or resume a grouped portfolio, writing ideas.json only when complete."""
+    """Generate or resume independent finalists, replacing ideas.json only when complete."""
     if count < 1:
         raise GenerationError("count must be at least 1")
-    if preferred < 1 or maximum < 1 or preferred > maximum:
-        raise GenerationError("group sizes require 1 <= preferred <= maximum")
+    if not 1 <= batch_size <= MAX_BATCH_SIZE:
+        raise GenerationError(f"batch size must be 1..{MAX_BATCH_SIZE}")
     mock = mock or os.getenv("MOCK_LLM", "").lower() in {"1", "true", "yes"}
-    settings = _generation_settings(count, preferred, maximum, mock)
+    settings = _generation_settings(count, batch_size, mock)
     state = None if regenerate else _load_generation_state(settings)
 
     if state and state.get("complete") and IDEAS.exists():
@@ -499,17 +622,12 @@ def generate_portfolio(
             return document
 
     if state is None:
-        print(f"Planning audience groups for {count} products...", flush=True)
-        if mock:
-            plan = mock_audience_plan(count, preferred, maximum)
-        else:
-            plan = _call_gemini_json(
-                _audience_plan_prompt(count, preferred, maximum),
-                "audience plan",
-                lambda payload: _normalize_audience_plan(
-                    payload, count, preferred, maximum
-                ),
-            )
+        plan = _generation_plan(count, batch_size)
+        print(
+            f"Generating {count} independent profitability finalists in "
+            f"{len(plan)} restart-safe batches...",
+            flush=True,
+        )
         now = _utc_timestamp()
         state = {
             "version": IDEA_GENERATION_VERSION,
@@ -526,27 +644,27 @@ def generate_portfolio(
         plan = state["plan"]
         print(
             f"Resuming idea generation: {len(state['completedProducts'])}/{len(plan)} "
-            "audience groups complete.",
+            "profitability batches complete.",
             flush=True,
         )
 
     completed = state["completedProducts"]
-    plan_ids = {site["id"] for site in plan}
+    plan_ids = {batch["id"] for batch in plan}
     unexpected = set(completed) - plan_ids
     if unexpected:
         raise GenerationError(
-            "Idea-generation checkpoint contains unknown audience groups; "
+            "Idea-generation checkpoint contains unknown batches; "
             "use --regenerate to start a fresh run"
         )
     used_ids: set[str] = set()
-    used_names: list[str] = []
-    for site in plan:
-        products = completed.get(site["id"])
+    used_ideas: list[dict[str, str]] = []
+    for batch in plan:
+        products = completed.get(batch["id"])
         if products is None:
             continue
-        if not isinstance(products, list) or len(products) != site["productCount"]:
+        if not isinstance(products, list) or len(products) != batch["productCount"]:
             raise GenerationError(
-                f"Checkpoint group {site['id']} is incomplete; use --regenerate"
+                f"Checkpoint batch {batch['id']} is incomplete; use --regenerate"
             )
         for product in products:
             product_id = str(product.get("id", ""))
@@ -555,38 +673,51 @@ def generate_portfolio(
                     "Checkpoint has missing or duplicate product IDs; use --regenerate"
                 )
             used_ids.add(product_id)
-            used_names.append(str(product.get("name", "")))
+            used_ideas.append(
+                {
+                    "name": str(product.get("name", "")),
+                    "audience": str(product.get("audience", "")),
+                    "topic": str(product.get("topic", "")),
+                }
+            )
 
-    for index, site in enumerate(plan, 1):
-        if site["id"] in completed:
+    for index, batch in enumerate(plan, 1):
+        if batch["id"] in completed:
             print(
-                f"[{index}/{len(plan)}] {site['id']}: checkpoint complete "
-                f"({site['productCount']} products)",
+                f"[{index}/{len(plan)}] {batch['id']}: checkpoint complete "
+                f"({batch['productCount']} finalists)",
                 flush=True,
             )
             continue
         print(
-            f"[{index}/{len(plan)}] Generating {site['productCount']} products for "
-            f"{site['audience']}...",
+            f"[{index}/{len(plan)}] Researching and selecting "
+            f"{batch['productCount']} independent finalists...",
             flush=True,
         )
         if mock:
-            products = mock_products(site, used_ids)
+            products = mock_products(batch, used_ids)
         else:
             products = _call_gemini_json(
-                _products_prompt(site, used_names),
-                f"products for {site['id']}",
-                lambda payload, current=site: _normalize_products(
+                _profitability_batch_prompt(batch, used_ideas),
+                f"profitability finalists {batch['id']}",
+                lambda payload, current=batch: _normalize_products(
                     payload, current, used_ids
                 ),
             )
-        completed[site["id"]] = products
+        completed[batch["id"]] = products
         used_ids.update(product["id"] for product in products)
-        used_names.extend(str(product["name"]) for product in products)
+        used_ideas.extend(
+            {
+                "name": str(product["name"]),
+                "audience": str(product["audience"]),
+                "topic": str(product["topic"]),
+            }
+            for product in products
+        )
         state["updatedAt"] = _utc_timestamp()
         _atomic_json(_generation_checkpoint(), state)
 
-    ideas = [product for site in plan for product in completed[site["id"]]]
+    ideas = [product for batch in plan for product in completed[batch["id"]]]
     document = {
         "version": 2,
         "articlesPerProduct": 10,
@@ -596,19 +727,22 @@ def generate_portfolio(
             "mode": "mock" if mock else "gemini",
             "runId": state["runId"],
             "requestedProducts": count,
-            "preferredProductsPerSite": preferred,
-            "maxProductsPerSite": maximum,
-            "grouping": "semantic audience plan with a soft preferred size",
+            "requestedSites": count,
+            "batchSize": batch_size,
+            "objective": "maximum expected bootstrapped profitability and attainable SEO",
+            "grouping": "none; every product is an independent one-product site",
+            "grounding": "Google Search enabled for every Gemini model",
+            "scoreWeights": PROFIT_SCORE_WEIGHTS,
         },
         "sites": [
             {
-                "id": site["id"],
-                "name": site["name"],
-                "audience": site["audience"],
-                "topic": site["topic"],
+                "id": product["siteId"],
+                "name": product["siteName"],
+                "audience": product["audience"],
+                "topic": product["topic"],
                 "domain": None,
             }
-            for site in plan
+            for product in ideas
         ],
         "ideas": ideas,
     }
@@ -817,6 +951,13 @@ def _product_config(idea: dict[str, Any]) -> dict[str, Any]:
         "monetization": idea.get("monetization", ""),
         "startupCost": idea.get("startupCost", ""),
         "seoAngle": idea.get("seoAngle", ""),
+        "seoThesis": idea.get("seoThesis", ""),
+        "searchQueries": idea.get("searchQueries", []),
+        "buyer": idea.get("buyer", ""),
+        "economicDriver": idea.get("economicDriver", ""),
+        "profitRationale": idea.get("profitRationale", ""),
+        "primaryRisk": idea.get("primaryRisk", ""),
+        "scoreBreakdown": idea.get("scoreBreakdown", {}),
         "score": idea.get("score"),
         "contentBatch": idea.get("contentBatch", ""),
     }
@@ -1005,7 +1146,7 @@ def _print_plan(plan: SyncPlan, *, dry_run: bool) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Generate/import ideas.json and safely sync audience-grouped SEO sites"
+        description="Generate/import independent profitability-first SEO probes"
     )
     source = parser.add_mutually_exclusive_group()
     source.add_argument("--portfolio", type=Path, help="Existing ideas.json to import")
@@ -1027,16 +1168,13 @@ def main() -> None:
         help=f"Products to generate (default: {DEFAULT_IDEA_COUNT})",
     )
     parser.add_argument(
-        "--preferred-products-per-site",
+        "--batch-size",
         type=int,
-        default=DEFAULT_PREFERRED_PRODUCTS,
-        help="Soft grouping target, never an exact quota",
-    )
-    parser.add_argument(
-        "--max-products-per-site",
-        type=int,
-        default=DEFAULT_MAX_PRODUCTS,
-        help="Hard audience-site size guardrail",
+        default=DEFAULT_BATCH_SIZE,
+        help=(
+            "Independent finalists per grounded Gemini call "
+            f"(default: {DEFAULT_BATCH_SIZE}, max: {MAX_BATCH_SIZE})"
+        ),
     )
     parser.add_argument("--validate-only", action="store_true")
     parser.add_argument("--plan", action="store_true", help="Show changes without writing files")
@@ -1051,11 +1189,8 @@ def main() -> None:
         parser.error("--plan cannot generate a new file; generate first, then run --plan")
     if args.count < 1:
         parser.error("--count must be at least 1")
-    if not 1 <= args.preferred_products_per_site <= args.max_products_per_site:
-        parser.error(
-            "group sizes require 1 <= --preferred-products-per-site "
-            "<= --max-products-per-site"
-        )
+    if not 1 <= args.batch_size <= MAX_BATCH_SIZE:
+        parser.error(f"--batch-size must be between 1 and {MAX_BATCH_SIZE}")
 
     # Preserve the old first-run behavior without making dry-run commands mutate files.
     auto_generate = (
@@ -1071,8 +1206,7 @@ def main() -> None:
         if generating:
             document = generate_portfolio(
                 args.count,
-                args.preferred_products_per_site,
-                args.max_products_per_site,
+                args.batch_size,
                 mock=args.mock,
                 regenerate=args.regenerate,
             )
@@ -1098,7 +1232,7 @@ def main() -> None:
     _print_plan(plan, dry_run=args.plan)
     print(
         f"Portfolio contains {len(document['ideas'])} products across {site_count} "
-        "audience-grouped sites."
+        "sites."
     )
     if generating:
         print(f"Generated {IDEAS.relative_to(ROOT)} successfully.")

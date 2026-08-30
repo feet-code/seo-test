@@ -23,6 +23,7 @@ DEFAULT_GOOGLE_VERIFICATION_POLL_SECONDS = 5.0
 MAX_GOOGLE_VERIFICATION_POLL_SECONDS = 20.0
 DEFAULT_CLOUDFLARE_PAGES_PROJECT_LIMIT = 100
 _pages_project_count_cache: int | None = None
+_pages_observed_limit: int | None = None
 _worker_names_cache: set[str] | None = None
 
 
@@ -173,8 +174,70 @@ def _pages_limit() -> int:
     return value
 
 
+def _pages_capacity_marker() -> Path | None:
+    account = os.environ.get("CLOUDFLARE_ACCOUNT_ID", "").strip()
+    if not account:
+        return None
+    safe_account = re.sub(r"[^a-zA-Z0-9_-]+", "-", account)
+    return ROOT / ".deploy" / "state" / f"cloudflare-pages-capacity-{safe_account}.json"
+
+
+def _known_pages_capacity() -> int | None:
+    if _pages_observed_limit is not None:
+        return _pages_observed_limit
+    marker = _pages_capacity_marker()
+    if marker is None or not marker.exists():
+        return None
+    try:
+        value = int(json.loads(marker.read_text(encoding="utf-8"))["projectCount"])
+    except (OSError, KeyError, TypeError, ValueError, json.JSONDecodeError):
+        return None
+    return value if value >= 0 else None
+
+
+def _record_pages_capacity(project_count: int) -> None:
+    global _pages_observed_limit
+    _pages_observed_limit = max(0, int(project_count))
+    marker = _pages_capacity_marker()
+    if marker is None:
+        return
+    marker.parent.mkdir(parents=True, exist_ok=True)
+    marker.write_text(
+        json.dumps(
+            {
+                "projectCount": _pages_observed_limit,
+                "observedAt": time.time(),
+                "reason": "Cloudflare error 8000027: Pages project limit reached",
+            },
+            indent=2,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+
+
+def _clear_pages_capacity() -> None:
+    global _pages_observed_limit
+    _pages_observed_limit = None
+    marker = _pages_capacity_marker()
+    if marker is not None and marker.exists():
+        marker.unlink()
+
+
 def _pages_capacity_error(exc: urllib.error.HTTPError) -> bool:
-    detail = (str(getattr(exc, "response_detail", "")) + " " + str(exc)).lower()
+    response_detail = str(getattr(exc, "response_detail", ""))
+    try:
+        payload = json.loads(response_detail)
+        codes = {
+            int(error.get("code"))
+            for error in (payload.get("errors") or [])
+            if isinstance(error, dict) and error.get("code") is not None
+        }
+    except (TypeError, ValueError, json.JSONDecodeError):
+        codes = set()
+    if 8000027 in codes:
+        return True
+    detail = (response_detail + " " + str(exc)).lower()
     capacity_words = ("limit", "quota", "maximum", "too many", "capacity")
     return exc.code in {400, 403, 409} and any(word in detail for word in capacity_words)
 
@@ -185,9 +248,21 @@ def resolve_cloudflare_auto(config: dict) -> str:
         print(f"Cloudflare auto: reusing existing Pages project {project}.")
         return "cloudflare-pages"
     count = pages_project_count()
-    if count >= _pages_limit():
+    observed_limit = _known_pages_capacity()
+    if observed_limit is not None and count < observed_limit:
+        # A project was removed after the capacity response; Pages has room again.
+        _clear_pages_capacity()
+        observed_limit = None
+    effective_limit = min(
+        _pages_limit(),
+        observed_limit if observed_limit is not None else _pages_limit(),
+    )
+    if count >= effective_limit:
         action = "reusing existing Worker" if project in worker_names() else "using Workers Static Assets for"
-        print(f"Cloudflare auto: Pages has {count} projects; {action} {project}.")
+        print(
+            f"Cloudflare auto: Pages has {count} projects and its effective limit is "
+            f"{effective_limit}; {action} {project}."
+        )
         return "cloudflare-workers"
     print(f"Cloudflare auto: Pages has {count} projects; assigning {project} to Pages.")
     return "cloudflare-pages"
@@ -221,9 +296,18 @@ def prepare_hosting(
             if created and _pages_project_count_cache is not None:
                 _pages_project_count_cache += 1
         except urllib.error.HTTPError as exc:
-            if not automatic or not _pages_capacity_error(exc):
+            if not _pages_capacity_error(exc):
                 raise
+            project_count = (
+                _pages_project_count_cache
+                if _pages_project_count_cache is not None
+                else pages_project_count()
+            )
+            _record_pages_capacity(project_count)
             provider = "cloudflare-workers"
+            # Persist auto mode so a legacy config that explicitly named Pages
+            # does not retry the full account on every resume.
+            deploy["provider"] = "cloudflare-auto"
             print(
                 "Cloudflare rejected the new Pages project at its account capacity; "
                 "falling back to Workers Static Assets."

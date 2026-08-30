@@ -1,6 +1,6 @@
 # SEO portfolio automation
 
-This repository generates and deploys audience-grouped SEO product portfolios. Each website contains the products that belong to one coherent audience; a site may contain one, three, seven, or another useful number of products. Audience fit decides group boundaries, with a maximum-size guardrail rather than an exact product quota.
+This repository generates and deploys profitability-first SEO product probes. The default generator selects independent micro-SaaS hypotheses at the intersection of direct economic value and attainable organic-search demand. Every generated idea gets its own website; ideas are never weakened or discarded to make an audience group work.
 
 Every product remains independently measurable through its landing page, blog frontmatter, signup payload, and PostHog properties.
 
@@ -23,31 +23,31 @@ python scripts/launch.py --limit 1
 python scripts/launch.py
 ```
 
-The first command writes `ideas/ideas.json` and materializes its grouped site configs. Gemini first plans specific audience websites, then generates each website's complementary products. Five products is only a soft target; `--max-products-per-site 8` is the default hard guardrail.
+The first command uses Google Search-grounded Gemini calls in restart-safe five-idea batches, writes `ideas/ideas.json` only after all 100 ideas pass validation, and materializes one site config per idea. It silently considers at least four candidates per finalist and scores each result on a 50-point profit, 40-point SEO, and 10-point build/support feasibility model. SEO qualification separately covers demand, commercial intent, content depth, and SERP winnability; each finalist needs six concrete query hypotheses and a ranking thesis.
 
-Before deploying, inspect and freely edit the file. Every idea has one authoritative `"siteId"` naming the website/audience group in `sites[]`. To add a product to an existing website, copy an idea object, give it a unique `id`, edit its research fields, and set `siteId`; there is no duplicate `productIds` list to maintain. To create a new website, first add its metadata to `sites[]`, then point one or more ideas at its `id`. `python scripts/ideas.py --plan` validates the file and previews site-config changes without writing them; `launch.py` applies the sync automatically.
+Before deploying, inspect and freely edit the file. Every generated idea has one authoritative `"siteId"` matching its own entry in `sites[]`. `python scripts/ideas.py --plan` validates the file and previews site-config changes without writing them; `launch.py` applies the sync automatically. Legacy imported portfolios may still place several products on one site, but the built-in generator does not optimize for grouping.
 
-### Included editorial batches
+### Included profitability seed
 
-This branch includes a reviewed `ideas/ideas.json` and 2,720 committed probes for 272 products across 120 audience websites. Batch 001 contributed 10 sites, 22 products, and 220 probes; batch 002 added 20 sites, 42 products, and 420 probes; batch 003 added 15 sites, 33 products, and 330 probes; batch 004 added 25 sites, 56 products, and 560 probes; batch 005 adds 50 sites, 119 products, and 1,190 probes. Group sizes range from one to three products according to audience fit. The old `example` verification fixture is retired, so it is excluded from bulk launches.
+This branch starts over with 100 independent ideas selected from 109 curated candidates. Every idea has a direct economic driver, monetization hypothesis, explicit buyer, six query hypotheses, SEO thesis, score breakdown, and structured `probeContext`. No managed site configs or blog probes are committed yet; the root `_posts/` examples remain only as generator format fixtures.
 
-Deploy the included batch directly:
+When the ideas are approved, materialize their site configs and generate probes in a separate review step:
 
 ```bash
 python scripts/ideas.py --plan
-python scripts/launch.py --batch batch-005 --limit 1
-python scripts/launch.py --batch batch-005
+python scripts/ideas.py
+python scripts/editorial_probes.py --batch profitability-001 --limit 1
 ```
 
-The normal launcher recognizes the committed post fingerprints and does not call Gemini for complete products. Future reviewed batches can be reproduced from each idea's `probeContext` with `python scripts/editorial_probes.py --batch BATCH_ID`; use `--site SITE_ID` for one website and `--force` only when intentionally replacing existing probes.
+Review those posts before any launch. The normal launcher generates missing probes, while reviewed batches can be reproduced from each idea's `probeContext` with `python scripts/editorial_probes.py --batch BATCH_ID`; use `--site SITE_ID` for one website and `--force` only when intentionally replacing existing probes.
 
-Idea generation checkpoints after every audience group in `.deploy/state/ideas-generation.json`. Rerun the same `--generate` command to resume. Use `--regenerate` only when you intentionally want a completely new portfolio:
+Idea generation checkpoints after every independent batch in `.deploy/state/ideas-generation.json`. Rerun the same `--generate` command to resume. Use `--regenerate` only when you intentionally want a completely new portfolio:
 
 ```bash
 python scripts/ideas.py --regenerate --count 100
 ```
 
-The second command runs the complete production pipeline for one site: product posts, build, deployment, Google verification/`sites.add`, sitemap submission, and health check. Only after it passes should you run the third command. The full run safely skips already-complete product generation by fingerprint, so the smoke-tested site does not consume duplicate Gemini work.
+The one-site launch runs the complete production pipeline: product posts, build, deployment, Google verification/`sites.add`, sitemap submission, and health check. Only after it passes should you run the full launch. The full run safely skips already-complete product generation by fingerprint, so the smoke-tested site does not consume duplicate Gemini work.
 
 A failed deployment stops and writes a separate launch checkpoint. After fixing the failure, resume with the same selection flags. For a full rollout:
 
@@ -94,9 +94,9 @@ Sites missing from a newer export are reported as `STALE (kept)`. They are never
 ```bash
 python scripts/launch.py --site site-a
 python scripts/launch.py --sites site-a,site-b
-python scripts/launch.py --batch batch-005
-python scripts/launch.py --batches batch-004,batch-005
-python scripts/launch.py --batch batch-005 --limit 1
+python scripts/launch.py --batch profitability-001
+python scripts/launch.py --batches BATCH_A,BATCH_B
+python scripts/launch.py --batch profitability-001 --limit 1
 python scripts/launch.py --limit 1
 python scripts/launch.py --frontend-only --site site-a
 python scripts/launch.py --product product-id
@@ -110,7 +110,7 @@ A normal launch always invokes the restart-safe product generator. Products whos
 
 `--limit 1` selects one site but still runs its complete pipeline, including Gemini for missing or changed products. Use `--frontend-only --limit 1` when only shared frontend/configuration changed.
 
-`--batch` selects every website containing at least one product with that `contentBatch`. `--batches` unions several batches, and each affected website deploys only once even if it contains products from more than one selected batch. `--limit` is applied after batch selection, which makes `--batch batch-005 --limit 1` the smoke test for exactly that batch. A plain `--resume` restores the exact site subset saved by the failed run; repeating the batch flags is also valid.
+`--batch` selects every website containing at least one product with that `contentBatch`. `--batches` unions several batches, and each affected website deploys only once. `--limit` is applied after batch selection, which makes `--batch profitability-001 --limit 1` the smoke test for this portfolio. A plain `--resume` restores the exact site subset saved by the failed run; repeating the batch flags is also valid.
 
 `--blogs-only` force-regenerates all selected product posts. `--skip-generation` and `--frontend-only` publish existing Markdown.
 
@@ -123,7 +123,7 @@ For every product, the build creates:
 - product-specific signup attribution;
 - sitemap entries for product pages and posts;
 - PostHog events `product_probe_viewed` and `product_interest_submitted`;
-- cross-discovery links to complementary products on the same audience site.
+- cross-discovery links when a legacy imported site contains complementary products.
 
 Generated post frontmatter includes `productId`, `productName`, and a generation fingerprint. It deliberately contains no image metadata.
 
@@ -160,7 +160,7 @@ python scripts/launch.py --provider netlify
 python scripts/launch.py --provider static
 ```
 
-New portfolio sites default to `cloudflare-auto`. The launcher first reuses a persisted provider or an existing Pages project. For a genuinely new site it reads the account's real Pages project count: below the configured limit it creates Pages, at the limit it deploys the static export as an individual Worker on `*.workers.dev`. If Cloudflare rejects a Pages create with a capacity response, the same run falls back to Workers. The resolved provider and exact URL are written to `site.json`, so redeploy, GSC verification, health checks, resume, and teardown all use the same host.
+New portfolio sites default to `cloudflare-auto`. The launcher first reuses a persisted provider or an existing Pages project. For a genuinely new site it reads the account's Pages project count: below the configured guardrail it creates Pages, at the limit it deploys the static export as an individual Worker on `*.workers.dev`. If Cloudflare returns capacity error `8000027`, the same run falls back to Workers even for an older config that explicitly named `cloudflare-pages`. The observed account limit is persisted so later sites go straight to Workers instead of repeating failed Pages creates; it is cleared automatically if the project count later drops. The resolved provider and exact URL are written to `site.json`, so redeploy, GSC verification, health checks, resume, and teardown all use the same host.
 
 Cloudflare documents a 100-project Pages account limit and separate Worker limits. `CLOUDFLARE_PAGES_PROJECT_LIMIT=100` is the default and can be lowered for a controlled migration test. Workers deployment requires a token with Workers Scripts write access. The launcher discovers the account's existing workers.dev subdomain; set `CLOUDFLARE_WORKERS_SUBDOMAIN=name` only if you want to override discovery. Custom domains must already be owned and controlled by you.
 
@@ -170,7 +170,7 @@ Never commit credentials:
 
 ```text
 GEMINI_API_KEY=...
-GEMINI_MODELS=gemini-3.5-flash-lite,gemini-3.1-flash-lite,gemini-2.5-flash-lite,gemini-2.5-flash
+GEMINI_MODELS=gemini-3.7-flash,gemini-3.6-flash,gemini-3.5-flash,gemini-2.5-flash
 CLOUDFLARE_API_TOKEN=...
 CLOUDFLARE_ACCOUNT_ID=...
 CLOUDFLARE_WORKERS_SUBDOMAIN=...  # optional override
@@ -206,7 +206,7 @@ python scripts/portfolio.py teardown --all
 seo-test generation or optional NicheScout research
         |
         v
-variable audience groups in ideas/ideas.json
+independent profit + SEO finalists in ideas/ideas.json
         |
         v
 safe site-config sync
