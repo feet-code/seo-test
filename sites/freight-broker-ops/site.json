@@ -1,0 +1,63 @@
+{
+  "id": "freight-broker-ops",
+  "name": "Freight Broker Operations",
+  "domain": null,
+  "audience": "small freight brokerages and shipper-carrier coordination teams",
+  "topic": "carrier qualification and accessorial evidence for freight brokers",
+  "products": [
+    {
+      "id": "carrier-packet-completeness",
+      "name": "Carrier Packet Completeness",
+      "product": "A focused freight carrier packet completeness tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "small freight brokerages and shipper-carrier coordination teams",
+      "problem": "Carrier onboarding documents, authority checks, insurance evidence, agreements, payment details, and internal approvals arrive through portals and email without one load-ready decision.",
+      "valueProposition": "Turns freight carrier packet completeness tracking into a visible operating queue so every carrier assigned to a load has current required evidence, approved exceptions, and a verified qualification decision.",
+      "topic": "freight carrier packet completeness tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets freight carrier packet, carrier onboarding checklist, freight broker carrier compliance, and carrier qualification tracker searches.",
+      "score": 88
+    },
+    {
+      "id": "detention-evidence-desk",
+      "name": "Detention Evidence Desk",
+      "product": "A focused freight detention evidence tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "small freight brokerages and shipper-carrier coordination teams",
+      "problem": "Arrival and departure times, free-time terms, driver messages, location evidence, facility acknowledgments, customer approval, and carrier payment are difficult to reconcile after a load.",
+      "valueProposition": "Turns freight detention evidence tracking into a visible operating queue so every detention request is evaluated from agreed terms and time evidence, then reconciled across customer charge and carrier payment.",
+      "topic": "freight detention evidence tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets freight detention tracker, driver detention evidence, accessorial approval workflow, and freight detention claim searches.",
+      "score": 90
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused freight carrier packet completeness tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns freight carrier packet completeness tracking into a visible operating queue so every carrier assigned to a load has current required evidence, approved exceptions, and a verified qualification decision.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith",
+    "picture": "/assets/blog/authors/jj.jpeg"
+  },
+  "images": {
+    "coverImage": "/assets/blog/preview/cover.jpg",
+    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-pages",
+    "project": "freight-broker-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

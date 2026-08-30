@@ -1,19 +1,19 @@
 {
   "version": 2,
   "articlesPerProduct": 10,
-  "generatedAt": "2026-08-29T21:03:46+00:00",
+  "generatedAt": "2026-08-29T21:32:17+00:00",
   "generation": {
     "source": "codex-editorial-batches",
     "mode": "reviewed-current-market-signals",
-    "runId": "batch-002-2026-08-29",
-    "requestedProducts": 64,
-    "requestedSites": 30,
+    "runId": "batch-003-2026-08-29",
+    "requestedProducts": 97,
+    "requestedSites": 45,
     "preferredProductsPerSite": 2,
     "maxProductsPerSite": 4,
     "grouping": "specific shared buyer and adjacent operating workflows",
     "notes": "Ideas are editable. Each idea.siteId is the authoritative website assignment.",
-    "newProducts": 42,
-    "newSites": 20
+    "newProducts": 33,
+    "newSites": 15
   },
   "researchSources": [
     "https://www.greenhouse.com/blog/best-recruiting-tools",
@@ -46,7 +46,22 @@
     "https://www.localline.co/customers/csa-software",
     "https://www.xlrestorationsoftware.com/water-damage-restoration",
     "https://www.roomnexa.com/learn/blog/hotel-lost-and-found-software-guide",
-    "https://snapfix.com/news/best-hotel-maintenance-software-list"
+    "https://snapfix.com/news/best-hotel-maintenance-software-list",
+    "https://www.storable.com/resources/from-lead-to-lease-automating-the-self-storage-tenant-lifecycle/",
+    "https://kennelconnection.com/blog/simplify-dog-health-records-with-dog-boarding-software/",
+    "https://www.stb.gov/resources/need-assistance/hhg-moving/hhg-lost-or-damaged-items/",
+    "https://support.toasttab.com/en/article/86-an-Item",
+    "https://www.travelbooster.com/blog_post/mid-office-workflows-travel-agents/",
+    "https://www.bokun.io/tour-operations-management",
+    "https://sportlynx.com/leagues/",
+    "https://www.bizzabo.com/blog/streamlined-event-sponsorship-management",
+    "https://reviewstudio.com/photography-proofing-software/",
+    "https://www.corebridge.net/post/sign-shop-management-software",
+    "https://www.shipbob.com/blog/3pl-warehouse-management-system/",
+    "https://truckstop.com/blog/freight-broker-software/",
+    "https://www.vendsoft.com/",
+    "https://www.linentech.net/commercial-mix",
+    "https://blog.dockwa.com/marinas/how-many-systems-does-it-take-to-run-your-marina"
   ],
   "sites": [
     {
@@ -257,6 +272,111 @@
       "name": "Boutique Hotel Operations",
       "audience": "independent boutique hotels and small hospitality teams",
       "topic": "guest issues, lost items, and group-arrival readiness for boutique hotels",
+      "domain": null
+    },
+    {
+      "id": "self-storage-facility-ops",
+      "name": "Self-Storage Facility Operations",
+      "audience": "independent self-storage facilities and small multi-site operators",
+      "topic": "delinquency and unit-turn workflows for self-storage facilities",
+      "domain": null
+    },
+    {
+      "id": "pet-boarding-ops",
+      "name": "Pet Boarding and Daycare Operations",
+      "audience": "independent pet boarding facilities and dog daycare operators",
+      "topic": "record readiness and pickup handoffs for pet boarding teams",
+      "domain": null
+    },
+    {
+      "id": "moving-company-ops",
+      "name": "Moving Company Operations",
+      "audience": "independent household moving companies and local moving crews",
+      "topic": "move changes, crew readiness, and damage evidence for moving companies",
+      "domain": null
+    },
+    {
+      "id": "restaurant-shift-ops",
+      "name": "Restaurant Shift Operations",
+      "audience": "independent restaurants and small multi-location restaurant groups",
+      "topic": "prep shortages, item availability, and manager shift handoffs",
+      "domain": null
+    },
+    {
+      "id": "travel-agency-ops",
+      "name": "Travel Agency Operations",
+      "audience": "independent travel advisors and boutique travel agencies",
+      "topic": "supplier confirmations and traveler readiness for travel agencies",
+      "domain": null
+    },
+    {
+      "id": "tour-operator-ops",
+      "name": "Tour Operator Operations",
+      "audience": "small day-tour, activity, and multi-day tour operators",
+      "topic": "departure manifests and guide coverage for tour operators",
+      "domain": null
+    },
+    {
+      "id": "sports-league-ops",
+      "name": "Community Sports League Operations",
+      "audience": "community sports leagues and small tournament operators",
+      "topic": "weather rescheduling and official assignments for sports leagues",
+      "domain": null
+    },
+    {
+      "id": "conference-organizer-ops",
+      "name": "Conference Organizer Operations",
+      "audience": "independent conference organizers and small trade-show teams",
+      "topic": "speaker assets and sponsor obligations for conference organizers",
+      "domain": null
+    },
+    {
+      "id": "photography-studio-ops",
+      "name": "Photography Studio Operations",
+      "audience": "independent photography studios and small commercial photo teams",
+      "topic": "client proofing and shoot readiness for photography studios",
+      "domain": null
+    },
+    {
+      "id": "sign-print-shop-ops",
+      "name": "Sign and Print Shop Operations",
+      "audience": "independent sign shops, commercial printers, and display fabricators",
+      "topic": "proof approvals and installation readiness for sign and print shops",
+      "domain": null
+    },
+    {
+      "id": "third-party-logistics-ops",
+      "name": "Third-Party Logistics Operations",
+      "audience": "small third-party logistics warehouses and fulfillment operators",
+      "topic": "receiving, fulfillment, and inventory exceptions for multi-client 3PLs",
+      "domain": null
+    },
+    {
+      "id": "freight-broker-ops",
+      "name": "Freight Broker Operations",
+      "audience": "small freight brokerages and shipper-carrier coordination teams",
+      "topic": "carrier qualification and accessorial evidence for freight brokers",
+      "domain": null
+    },
+    {
+      "id": "vending-route-ops",
+      "name": "Vending Route Operations",
+      "audience": "independent vending machine and micro-market route operators",
+      "topic": "route loading, service exceptions, and reconciliation for vending fleets",
+      "domain": null
+    },
+    {
+      "id": "commercial-laundry-ops",
+      "name": "Commercial Laundry Operations",
+      "audience": "small commercial laundries and linen or uniform rental services",
+      "topic": "route delivery and textile-accountability workflows for commercial laundries",
+      "domain": null
+    },
+    {
+      "id": "marina-dock-ops",
+      "name": "Marina and Dock Operations",
+      "audience": "independent marinas, yacht clubs, and small dock operations",
+      "topic": "transient arrival and dock maintenance handoffs for marinas",
       "domain": null
     }
   ],
@@ -6177,6 +6297,3042 @@
           "Completion requires recorded evidence that every contracted group block reaches a validated rooming list and reconciled reservation set by the operational cutoff",
           "Automated reminders stop after verified completion or a documented closed reason",
           "Keep PMS, room-status, maintenance, and guest-service systems as the system of record; only necessary coordination data belongs here"
+        ]
+      }
+    },
+    {
+      "id": "delinquency-promise-board",
+      "siteId": "self-storage-facility-ops",
+      "name": "Delinquency Promise Board",
+      "product": "A focused self-storage delinquency follow-up tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "audience": "independent self-storage facilities and small multi-site operators",
+      "problem": "Payment reminders, tenant promises, access changes, policy milestones, and manager exceptions are recorded in different places, making the next compliant action hard to see.",
+      "valueProposition": "Turns self-storage delinquency follow-up tracking into a visible operating queue so every delinquent account has a policy-based next action, documented tenant response, and verified stop condition.",
+      "topic": "self-storage delinquency follow-up tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets self storage delinquency tracker, storage tenant payment follow up, self storage collections workflow, and storage promise to pay searches.",
+      "score": 87,
+      "domain": null,
+      "contentBatch": "batch-003",
+      "probeContext": {
+        "outcome": "every delinquent account has a policy-based next action, documented tenant response, and verified stop condition",
+        "workflow": [
+          "Open the delinquency action from the account ledger",
+          "Apply the current facility policy and milestone",
+          "Contact the tenant through the approved channel",
+          "Record a payment, promise, dispute, move-out, or escalation",
+          "Verify the ledger and access outcome before closure"
+        ],
+        "fields": [
+          "Facility, tenant, unit, and lease",
+          "Balance and aging date",
+          "Policy version and current milestone",
+          "Notice channel and delivery evidence",
+          "Tenant response and promise date",
+          "Manager exception and approval",
+          "Access or move-out status",
+          "Payment evidence or next review"
+        ],
+        "mistakes": [
+          "Keeping a tenant promise only in call notes",
+          "Changing access before the required policy milestone",
+          "Continuing reminders after payment posts",
+          "Granting an exception without recording who approved it"
+        ],
+        "metrics": [
+          {
+            "name": "Promise-kept rate",
+            "formula": "promises paid or resolved by promised date / promises due",
+            "decision": "adjust follow-up and exception rules"
+          },
+          {
+            "name": "Open delinquency age",
+            "formula": "current date - first overdue date",
+            "decision": "prioritize aging accounts"
+          },
+          {
+            "name": "Ledger-to-action accuracy",
+            "formula": "reviewed accounts at the correct policy step / accounts reviewed",
+            "decision": "find integration or training gaps"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Tenant calls, payment notes, unit walks, and manager spreadsheets",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Facility-management tasks or a shared property-operations sheet",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "a balance reaches the next policy milestone",
+          "a tenant makes or misses a payment promise",
+          "payment, access, or move-out status changes in another system"
+        ],
+        "examples": [
+          "A tenant promises Friday payment after a reminder",
+          "An online payment posts after an access action was queued",
+          "A manager approves a move-out resolution instead of another collection step"
+        ],
+        "rules": [
+          "Every open delinquent tenant action needs one owner and a next review time",
+          "Completion requires recorded evidence that every delinquent account has a policy-based next action, documented tenant response, and verified stop condition",
+          "Automated reminders stop after verified completion or a documented closed reason",
+          "Keep the facility-management, access, lease, and payment platform as the system of record; only necessary coordination data belongs here"
+        ]
+      }
+    },
+    {
+      "id": "unit-turn-readiness",
+      "siteId": "self-storage-facility-ops",
+      "name": "Unit Turn Readiness",
+      "product": "A focused self-storage move-out inspection and unit turn tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "audience": "independent self-storage facilities and small multi-site operators",
+      "problem": "A vacated unit can remain unrentable because final access, inspection, cleaning, damage, billing, and availability updates do not close as one workflow.",
+      "valueProposition": "Turns self-storage move-out inspection and unit turn tracking into a visible operating queue so every vacated unit is inspected, cleared, reconciled, and published as rentable or held with a named reason.",
+      "topic": "self-storage move-out inspection and unit turn tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets self storage unit turnover, storage move out inspection, vacant unit readiness, and storage unit cleaning checklist searches.",
+      "score": 83,
+      "domain": null,
+      "contentBatch": "batch-003",
+      "probeContext": {
+        "outcome": "every vacated unit is inspected, cleared, reconciled, and published as rentable or held with a named reason",
+        "workflow": [
+          "Confirm tenant move-out and possession",
+          "Inspect condition and capture evidence",
+          "Assign cleaning, repair, or removal work",
+          "Reconcile charges, access, and unit status",
+          "Verify readiness and publish availability"
+        ],
+        "fields": [
+          "Facility and unit",
+          "Tenant move-out and key or access return",
+          "Inspection time and inspector",
+          "Condition photos and findings",
+          "Cleaning or repair tasks",
+          "Property-left-behind decision",
+          "Final account and access status",
+          "Rentable time or hold reason"
+        ],
+        "mistakes": [
+          "Marking vacant before confirming possession",
+          "Cleaning before condition evidence is captured",
+          "Publishing availability while repair work remains open",
+          "Closing the account without updating gate or unit status"
+        ],
+        "metrics": [
+          {
+            "name": "Vacant-to-rentable time",
+            "formula": "rentable time - possession confirmed time",
+            "decision": "improve turn staffing"
+          },
+          {
+            "name": "First-inspection completeness",
+            "formula": "turns with all required evidence / turns inspected",
+            "decision": "tighten move-out checks"
+          },
+          {
+            "name": "Availability correction rate",
+            "formula": "units removed after being marked rentable / units published",
+            "decision": "strengthen final verification"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Tenant calls, payment notes, unit walks, and manager spreadsheets",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Facility-management tasks or a shared property-operations sheet",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "a tenant reports move-out or access ends",
+          "inspection finds damage, property, or unresolved access",
+          "all work closes but the unit is not yet available online"
+        ],
+        "examples": [
+          "A unit is empty but the lock and access record remain active",
+          "Inspection finds shelving that must be removed",
+          "Cleaning finishes Friday but web availability still shows occupied"
+        ],
+        "rules": [
+          "Every open unit-turn task needs one owner and a next review time",
+          "Completion requires recorded evidence that every vacated unit is inspected, cleared, reconciled, and published as rentable or held with a named reason",
+          "Automated reminders stop after verified completion or a documented closed reason",
+          "Keep the facility-management, access, lease, and payment platform as the system of record; only necessary coordination data belongs here"
+        ]
+      }
+    },
+    {
+      "id": "vaccination-record-chaser",
+      "siteId": "pet-boarding-ops",
+      "name": "Vaccination Record Chaser",
+      "product": "A focused pet boarding vaccination record tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "audience": "independent pet boarding facilities and dog daycare operators",
+      "problem": "Bookings reach check-in with missing, unreadable, expired, or unreviewed vaccination documents because upload status and facility approval are treated as the same event.",
+      "valueProposition": "Turns pet boarding vaccination record tracking into a visible operating queue so every scheduled pet has verified facility-required records or a documented booking decision before arrival.",
+      "topic": "pet boarding vaccination record tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets pet boarding vaccination tracker, kennel vaccine records, dog daycare document reminder, and boarding record approval searches.",
+      "score": 86,
+      "domain": null,
+      "contentBatch": "batch-003",
+      "probeContext": {
+        "outcome": "every scheduled pet has verified facility-required records or a documented booking decision before arrival",
+        "workflow": [
+          "Create requirements from the booking and facility policy",
+          "Request the missing document from the owner",
+          "Review identity, dates, and issuing source",
+          "Approve, reject, or request clarification",
+          "Confirm booking readiness or route the exception"
+        ],
+        "fields": [
+          "Pet, owner, and booking",
+          "Facility requirement and policy version",
+          "Required-by and arrival times",
+          "Document upload and source",
+          "Pet identity match",
+          "Relevant date and expiration",
+          "Reviewer and decision",
+          "Owner notice and booking outcome"
+        ],
+        "mistakes": [
+          "Treating any uploaded image as approved",
+          "Reading medical meaning beyond the facility's documented requirement",
+          "Sending reminders after a booking is canceled",
+          "Discovering an unreadable document only at check-in"
+        ],
+        "metrics": [
+          {
+            "name": "Ready-before-arrival rate",
+            "formula": "bookings approved by cutoff / bookings requiring records",
+            "decision": "time reminders and review coverage"
+          },
+          {
+            "name": "First-review acceptance",
+            "formula": "documents approved without resubmission / documents reviewed",
+            "decision": "improve owner instructions"
+          },
+          {
+            "name": "Check-in record exceptions",
+            "formula": "arrivals blocked by record issue / arrivals",
+            "decision": "test the pre-arrival workflow"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Booking notes, uploaded documents, staff chats, and kennel cards",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Pet-business software tasks or a shared front-desk tracker",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "a booked pet lacks an approved required record",
+          "a document is unreadable, mismatched, or outside the facility requirement",
+          "a booking date changes the applicable expiration check"
+        ],
+        "examples": [
+          "An owner uploads a crop that omits the pet name",
+          "A record is current today but not on the boarding date",
+          "A canceled stay still has reminder messages queued"
+        ],
+        "rules": [
+          "Every open boarding record requirement needs one owner and a next review time",
+          "Completion requires recorded evidence that every scheduled pet has verified facility-required records or a documented booking decision before arrival",
+          "Automated reminders stop after verified completion or a documented closed reason",
+          "Keep the booking, pet-record, waiver, and payment platform as the system of record; only necessary coordination data belongs here"
+        ]
+      }
+    },
+    {
+      "id": "boarding-pickup-handoff",
+      "siteId": "pet-boarding-ops",
+      "name": "Boarding Pickup Handoff",
+      "product": "A focused pet boarding pickup readiness workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "audience": "independent pet boarding facilities and dog daycare operators",
+      "problem": "Pickup becomes a front-desk scramble when authorized collector, belongings, add-on services, stay notes, balance, and pet location are split across cards and messages.",
+      "valueProposition": "Turns pet boarding pickup readiness into a visible operating queue so every departing pet is released to an authorized person with belongings, balance, and approved stay handoff reconciled.",
+      "topic": "pet boarding pickup readiness",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets pet boarding pickup checklist, kennel checkout workflow, dog daycare handoff, and boarding belongings tracker searches.",
+      "score": 81,
+      "domain": null,
+      "contentBatch": "batch-003",
+      "probeContext": {
+        "outcome": "every departing pet is released to an authorized person with belongings, balance, and approved stay handoff reconciled",
+        "workflow": [
+          "Flag the stay for expected pickup",
+          "Reconcile pet location, services, and belongings",
+          "Prepare the approved owner-facing handoff",
+          "Verify collector authority and payment",
+          "Record release and any remaining follow-up"
+        ],
+        "fields": [
+          "Pet, owner, and stay",
+          "Expected pickup window",
+          "Pet and housing location",
+          "Belongings inventory",
+          "Completed add-on services",
+          "Approved stay-note summary",
+          "Balance and authorized collector",
+          "Release time, recipient, and exception"
+        ],
+        "mistakes": [
+          "Preparing release before confirming the pet's current location",
+          "Sharing internal staff notes as owner-facing guidance",
+          "Releasing to a person not listed or verified",
+          "Closing the stay while belongings or charges remain unresolved"
+        ],
+        "metrics": [
+          {
+            "name": "Pickup preparation lead",
+            "formula": "ready time - expected pickup window start",
+            "decision": "staff departure workload"
+          },
+          {
+            "name": "Pickup exception rate",
+            "formula": "releases with missing item, authority, or balance issue / releases",
+            "decision": "improve check-in capture"
+          },
+          {
+            "name": "Release dwell time",
+            "formula": "release time - owner arrival time",
+            "decision": "remove front-desk bottlenecks"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Booking notes, uploaded documents, staff chats, and kennel cards",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Pet-business software tasks or a shared front-desk tracker",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "a pickup window approaches",
+          "the collector, time, service, or balance changes",
+          "a belonging, stay note, or pet location is unresolved"
+        ],
+        "examples": [
+          "A spouse arrives but is not on the authorized list",
+          "A labeled food container cannot be found at checkout",
+          "A late grooming add-on is complete but not on the bill"
+        ],
+        "rules": [
+          "Every open pet pickup handoff needs one owner and a next review time",
+          "Completion requires recorded evidence that every departing pet is released to an authorized person with belongings, balance, and approved stay handoff reconciled",
+          "Automated reminders stop after verified completion or a documented closed reason",
+          "Keep the booking, pet-record, waiver, and payment platform as the system of record; only necessary coordination data belongs here"
+        ]
+      }
+    },
+    {
+      "id": "move-inventory-change-register",
+      "siteId": "moving-company-ops",
+      "name": "Move Inventory Change Register",
+      "product": "A focused moving inventory change authorization workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "audience": "independent household moving companies and local moving crews",
+      "problem": "Added items, access conditions, packing work, dates, and address changes can alter labor and price after the estimate, but field and office teams may work from different scope versions.",
+      "valueProposition": "Turns moving inventory change authorization into a visible operating queue so every material move change is priced, authorized, and published to dispatch and crew before the affected work proceeds.",
+      "topic": "moving inventory change authorization",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets moving inventory change order, moving estimate revision, mover scope change, and moving company change authorization searches.",
+      "score": 88,
+      "domain": null,
+      "contentBatch": "batch-003",
+      "probeContext": {
+        "outcome": "every material move change is priced, authorized, and published to dispatch and crew before the affected work proceeds",
+        "workflow": [
+          "Log the requested or observed scope change",
+          "Compare it with the approved estimate and inventory",
+          "Assess labor, equipment, timing, and price impact",
+          "Obtain customer and operations authorization",
+          "Publish the effective scope and preserve the prior version"
+        ],
+        "fields": [
+          "Customer, move, and estimate",
+          "Original and changed inventory",
+          "Change source and time",
+          "Origin or destination access change",
+          "Labor, vehicle, equipment, and date impact",
+          "Price and valuation impact",
+          "Customer and operations approval",
+          "Effective version and crew acknowledgment"
+        ],
+        "mistakes": [
+          "Editing the original estimate without a change record",
+          "Letting the crew negotiate undocumented scope",
+          "Pricing a change without checking vehicle or schedule capacity",
+          "Sending an updated total without identifying what changed"
+        ],
+        "metrics": [
+          {
+            "name": "Pre-work authorization rate",
+            "formula": "material changes authorized before work / material changes",
+            "decision": "tighten estimator-to-crew handoff"
+          },
+          {
+            "name": "Change review time",
+            "formula": "decision time - change reported time",
+            "decision": "staff day-of approvals"
+          },
+          {
+            "name": "Post-move scope disputes",
+            "formula": "moves with disputed change / moves with changes",
+            "decision": "improve evidence and signoff"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Estimator notes, crew texts, paper inventories, photos, and email",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Moving-company software or a shared job-operations board",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "the customer adds or removes inventory",
+          "crew observes access or packing work outside the estimate",
+          "date, address, vehicle, or labor requirements change"
+        ],
+        "examples": [
+          "A customer adds a garage after the estimate",
+          "A long carry is discovered at destination",
+          "An elevator window forces a different crew start"
+        ],
+        "rules": [
+          "Every open move scope change needs one owner and a next review time",
+          "Completion requires recorded evidence that every material move change is priced, authorized, and published to dispatch and crew before the affected work proceeds",
+          "Automated reminders stop after verified completion or a documented closed reason",
+          "Keep the estimate, bill-of-lading, dispatch, inventory, and claims system as the system of record; only necessary coordination data belongs here"
+        ]
+      }
+    },
+    {
+      "id": "crew-arrival-readiness",
+      "siteId": "moving-company-ops",
+      "name": "Crew Arrival Readiness",
+      "product": "A focused moving crew arrival readiness workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "audience": "independent household moving companies and local moving crews",
+      "problem": "Crews lose time when addresses, access windows, contacts, parking, inventory, equipment, paperwork, or customer confirmations are incomplete at dispatch.",
+      "valueProposition": "Turns moving crew arrival readiness into a visible operating queue so every dispatched crew leaves with a confirmed job scope, access plan, equipment load, and customer arrival promise.",
+      "topic": "moving crew arrival readiness",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets moving crew checklist, moving day dispatch, mover job readiness, and moving company pre move confirmation searches.",
+      "score": 84,
+      "domain": null,
+      "contentBatch": "batch-003",
+      "probeContext": {
+        "outcome": "every dispatched crew leaves with a confirmed job scope, access plan, equipment load, and customer arrival promise",
+        "workflow": [
+          "Review the next move against the schedule",
+          "Confirm customer, address, and access details",
+          "Match crew, vehicle, and equipment to scope",
+          "Resolve missing documents or readiness exceptions",
+          "Release dispatch and communicate arrival"
+        ],
+        "fields": [
+          "Move, date, and service type",
+          "Origin and destination contacts",
+          "Address, parking, stairs, and access windows",
+          "Current inventory and special items",
+          "Crew roles and qualifications",
+          "Vehicle and equipment load",
+          "Required job documents",
+          "Customer confirmation and dispatch release"
+        ],
+        "mistakes": [
+          "Dispatching from an outdated estimate",
+          "Assuming building access from a prior move",
+          "Loading equipment without matching the special-item list",
+          "Promising arrival before crew and vehicle are released"
+        ],
+        "metrics": [
+          {
+            "name": "On-time dispatch readiness",
+            "formula": "jobs released by dispatch cutoff / jobs due",
+            "decision": "run an earlier readiness review"
+          },
+          {
+            "name": "Arrival delay causes",
+            "formula": "late arrivals by access, customer, crew, vehicle, or equipment",
+            "decision": "target recurring blockers"
+          },
+          {
+            "name": "Day-of scope surprise rate",
+            "formula": "moves with material uncaptured condition / moves started",
+            "decision": "improve pre-move confirmation"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Estimator notes, crew texts, paper inventories, photos, and email",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Moving-company software or a shared job-operations board",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "a scheduled move nears the readiness cutoff",
+          "customer or building access details change",
+          "assigned crew, vehicle, or required equipment becomes unavailable"
+        ],
+        "examples": [
+          "A condo requires a certificate before elevator access",
+          "A piano move is missing the planned equipment",
+          "The assigned truck needs replacement on departure morning"
+        ],
+        "rules": [
+          "Every open move departure check needs one owner and a next review time",
+          "Completion requires recorded evidence that every dispatched crew leaves with a confirmed job scope, access plan, equipment load, and customer arrival promise",
+          "Automated reminders stop after verified completion or a documented closed reason",
+          "Keep the estimate, bill-of-lading, dispatch, inventory, and claims system as the system of record; only necessary coordination data belongs here"
+        ]
+      }
+    },
+    {
+      "id": "damage-claim-evidence-desk",
+      "siteId": "moving-company-ops",
+      "name": "Damage Claim Evidence Desk",
+      "product": "A focused moving company damage claim evidence tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "audience": "independent household moving companies and local moving crews",
+      "problem": "Written claims, shipment identity, inventory numbers, photos, valuation terms, estimates, deadlines, and customer updates arrive through separate channels.",
+      "valueProposition": "Turns moving company damage claim evidence tracking into a visible operating queue so every damage or loss claim is acknowledged, completed with required evidence, reviewed, and resolved with a documented decision.",
+      "topic": "moving company damage claim evidence tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets moving damage claim tracker, mover claims software, moving loss damage documentation, and moving claim evidence searches.",
+      "score": 89,
+      "domain": null,
+      "contentBatch": "batch-003",
+      "probeContext": {
+        "outcome": "every damage or loss claim is acknowledged, completed with required evidence, reviewed, and resolved with a documented decision",
+        "workflow": [
+          "Register the written claim and shipment",
+          "Itemize loss or damage against inventory",
+          "Collect photos, value, and repair evidence",
+          "Review responsibility and authorized remedy",
+          "Communicate the decision and record settlement or closure"
+        ],
+        "fields": [
+          "Customer, shipment, and bill of lading",
+          "Claim received date and deadline",
+          "Item and inventory number",
+          "Damage or loss description",
+          "Pickup, delivery, and claim photos",
+          "Value, repair estimate, and valuation terms",
+          "Reviewer and decision rationale",
+          "Offer, settlement, denial, or follow-up"
+        ],
+        "mistakes": [
+          "Handling a phone complaint without preserving a written claim",
+          "Combining several items into one unverifiable amount",
+          "Losing pickup-condition evidence",
+          "Treating an acknowledgment as a final decision"
+        ],
+        "metrics": [
+          {
+            "name": "Complete-claim time",
+            "formula": "evidence complete - claim received",
+            "decision": "improve claimant instructions"
+          },
+          {
+            "name": "Decision cycle time",
+            "formula": "decision issued - evidence complete",
+            "decision": "staff claims review"
+          },
+          {
+            "name": "Reopened decision rate",
+            "formula": "claims reopened for missing fact / claims decided",
+            "decision": "strengthen evidence checks"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Estimator notes, crew texts, paper inventories, photos, and email",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Moving-company software or a shared job-operations board",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "a written loss or damage claim arrives",
+          "required item, shipment, photo, or value evidence is missing",
+          "inspection, estimate, or customer response changes the proposed remedy"
+        ],
+        "examples": [
+          "A dresser scratch is tied to one inventory tag",
+          "A missing carton claim lacks delivery inventory evidence",
+          "A repair estimate arrives after the initial claim submission"
+        ],
+        "rules": [
+          "Every open moving damage claim needs one owner and a next review time",
+          "Completion requires recorded evidence that every damage or loss claim is acknowledged, completed with required evidence, reviewed, and resolved with a documented decision",
+          "Automated reminders stop after verified completion or a documented closed reason",
+          "Keep the estimate, bill-of-lading, dispatch, inventory, and claims system as the system of record; only necessary coordination data belongs here"
+        ]
+      }
+    },
+    {
+      "id": "prep-shortage-recovery",
+      "siteId": "restaurant-shift-ops",
+      "name": "Prep Shortage Recovery",
+      "product": "A focused restaurant prep shortage tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "audience": "independent restaurants and small multi-location restaurant groups",
+      "problem": "A missed prep item is often announced verbally, but quantity, affected menu items, substitute decision, owner, and recovery time are not visible across kitchen and management.",
+      "valueProposition": "Turns restaurant prep shortage tracking into a visible operating queue so every service-impacting prep shortage has a quantified gap, approved response, owner, and communicated menu consequence.",
+      "topic": "restaurant prep shortage tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets restaurant prep shortage, kitchen prep tracker, restaurant par list exception, and prep recovery workflow searches.",
+      "score": 84,
+      "domain": null,
+      "contentBatch": "batch-003",
+      "probeContext": {
+        "outcome": "every service-impacting prep shortage has a quantified gap, approved response, owner, and communicated menu consequence",
+        "workflow": [
+          "Identify the shortage against the service plan",
+          "Quantify available and required amount",
+          "Choose additional prep, substitution, purchase, or menu action",
+          "Assign and execute the recovery",
+          "Verify supply and communicate the final status"
+        ],
+        "fields": [
+          "Location, shift, and station",
+          "Prep item and unit",
+          "Par, on-hand, and expected demand",
+          "Affected menu items",
+          "Shortage cause",
+          "Approved recovery action",
+          "Owner and ready-by time",
+          "Verified quantity and communication"
+        ],
+        "mistakes": [
+          "Calling low without a quantity",
+          "Substituting an ingredient without authorized recipe review",
+          "Sending staff to purchase before comparing demand",
+          "Closing when work starts rather than when supply is verified"
+        ],
+        "metrics": [
+          {
+            "name": "Recovery cycle time",
+            "formula": "verified recovery - shortage reported",
+            "decision": "set escalation thresholds"
+          },
+          {
+            "name": "Shortage frequency",
+            "formula": "service-impacting shortages by item and station",
+            "decision": "change pars or prep ownership"
+          },
+          {
+            "name": "Recovered-before-impact rate",
+            "formula": "shortages resolved before guest impact / shortages",
+            "decision": "improve pre-shift checks"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Prep sheets, line calls, manager logs, group chats, and whiteboards",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Restaurant-operations software or a shared shift log",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "verified quantity falls below service demand",
+          "the recovery action misses its ready-by time",
+          "a substitution or outage changes guest-facing availability"
+        ],
+        "examples": [
+          "Sauce yield is half the dinner par",
+          "A delivery shortage forces an approved garnish substitute",
+          "Additional prep will finish after the first reservation wave"
+        ],
+        "rules": [
+          "Every open prep shortage needs one owner and a next review time",
+          "Completion requires recorded evidence that every service-impacting prep shortage has a quantified gap, approved response, owner, and communicated menu consequence",
+          "Automated reminders stop after verified completion or a documented closed reason",
+          "Keep the POS, inventory, recipe, scheduling, and maintenance systems as the system of record; only necessary coordination data belongs here"
+        ]
+      }
+    },
+    {
+      "id": "menu-availability-publisher",
+      "siteId": "restaurant-shift-ops",
+      "name": "Menu Availability Publisher",
+      "product": "A focused restaurant 86 list and menu availability tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "audience": "independent restaurants and small multi-location restaurant groups",
+      "problem": "When an item or modifier sells out, staff may update one POS screen but miss online ordering, third-party channels, service teams, or the later un-86 decision.",
+      "valueProposition": "Turns restaurant 86 list and menu availability tracking into a visible operating queue so every availability change is approved, published to all intended channels, acknowledged by service staff, and reversed only after supply is verified.",
+      "topic": "restaurant 86 list and menu availability tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets restaurant 86 list, menu item availability software, restaurant sold out tracking, and POS item out of stock searches.",
+      "score": 86,
+      "domain": null,
+      "contentBatch": "batch-003",
+      "probeContext": {
+        "outcome": "every availability change is approved, published to all intended channels, acknowledged by service staff, and reversed only after supply is verified",
+        "workflow": [
+          "Open the item availability change",
+          "Confirm item, modifier, location, and expected duration",
+          "Approve guest-facing wording and alternatives",
+          "Publish across POS, online, and team channels",
+          "Verify live state and schedule reactivation review"
+        ],
+        "fields": [
+          "Location and shift",
+          "Menu item or modifier",
+          "Reason and remaining quantity",
+          "Unavailable-from and expected return",
+          "Affected channels",
+          "Approved alternative or message",
+          "Publisher and verification evidence",
+          "Reactivation owner and time"
+        ],
+        "mistakes": [
+          "86ing the parent item but not affected modifiers",
+          "Updating the POS but not online channels",
+          "Un-86ing from an expected delivery rather than verified stock",
+          "Leaving servers to discover the change from failed orders"
+        ],
+        "metrics": [
+          {
+            "name": "Channel consistency time",
+            "formula": "all channels verified - change approved",
+            "decision": "remove publishing gaps"
+          },
+          {
+            "name": "Availability correction rate",
+            "formula": "changes reversed for incorrect state / changes",
+            "decision": "improve verification"
+          },
+          {
+            "name": "Guest-impact orders",
+            "formula": "orders attempted after approved unavailability",
+            "decision": "test channel propagation"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Prep sheets, line calls, manager logs, group chats, and whiteboards",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Restaurant-operations software or a shared shift log",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "an item cannot support expected demand",
+          "one channel differs from the approved availability state",
+          "verified supply returns or the expected return time passes"
+        ],
+        "examples": [
+          "Salmon sells out but remains on a delivery marketplace",
+          "One sauce modifier makes two dishes unavailable",
+          "A produce delivery arrives and the chef verifies the item can return"
+        ],
+        "rules": [
+          "Every open menu availability change needs one owner and a next review time",
+          "Completion requires recorded evidence that every availability change is approved, published to all intended channels, acknowledged by service staff, and reversed only after supply is verified",
+          "Automated reminders stop after verified completion or a documented closed reason",
+          "Keep the POS, inventory, recipe, scheduling, and maintenance systems as the system of record; only necessary coordination data belongs here"
+        ]
+      }
+    },
+    {
+      "id": "manager-shift-handoff",
+      "siteId": "restaurant-shift-ops",
+      "name": "Manager Shift Handoff",
+      "product": "A focused restaurant manager shift handoff tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "audience": "independent restaurants and small multi-location restaurant groups",
+      "problem": "Guest promises, equipment issues, staffing gaps, vendor arrivals, product holds, and incomplete tasks disappear in narrative log entries between managers.",
+      "valueProposition": "Turns restaurant manager shift handoff tracking into a visible operating queue so every unresolved shift issue transfers with impact, owner, next action, due time, and explicit acceptance by the next manager.",
+      "topic": "restaurant manager shift handoff tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets restaurant shift handoff, manager logbook restaurant, restaurant daily log, and restaurant issue tracker searches.",
+      "score": 85,
+      "domain": null,
+      "contentBatch": "batch-003",
+      "probeContext": {
+        "outcome": "every unresolved shift issue transfers with impact, owner, next action, due time, and explicit acceptance by the next manager",
+        "workflow": [
+          "Capture the unresolved issue during the shift",
+          "Classify impact and immediate containment",
+          "Assign the next action and due time",
+          "Review and accept at manager handoff",
+          "Resolve, escalate, or carry forward with evidence"
+        ],
+        "fields": [
+          "Location, date, and shift",
+          "Issue category and description",
+          "Guest, order, equipment, or vendor reference",
+          "Impact and containment",
+          "Current owner",
+          "Next action and due time",
+          "Handoff manager and acceptance",
+          "Resolution evidence or carry-forward reason"
+        ],
+        "mistakes": [
+          "Writing heads up with no action",
+          "Assigning an issue to the whole management team",
+          "Closing an equipment issue after placing a service call",
+          "Copying stale issues into every daily log"
+        ],
+        "metrics": [
+          {
+            "name": "Handoff acceptance rate",
+            "formula": "open issues explicitly accepted / issues transferred",
+            "decision": "make ownership visible"
+          },
+          {
+            "name": "Carry-forward age",
+            "formula": "current time - issue opened for unresolved items",
+            "decision": "escalate chronic blockers"
+          },
+          {
+            "name": "Promise-kept rate",
+            "formula": "guest or vendor updates delivered on time / updates promised",
+            "decision": "protect external commitments"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Prep sheets, line calls, manager logs, group chats, and whiteboards",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Restaurant-operations software or a shared shift log",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "a shift ends with unresolved work",
+          "an issue affects the next shift's service or staffing",
+          "a promised update or vendor response becomes overdue"
+        ],
+        "examples": [
+          "A guest recovery call is due tomorrow morning",
+          "The ice machine repair has a vendor ETA but no verification",
+          "A staffing callout remains uncovered for brunch"
+        ],
+        "rules": [
+          "Every open shift issue needs one owner and a next review time",
+          "Completion requires recorded evidence that every unresolved shift issue transfers with impact, owner, next action, due time, and explicit acceptance by the next manager",
+          "Automated reminders stop after verified completion or a documented closed reason",
+          "Keep the POS, inventory, recipe, scheduling, and maintenance systems as the system of record; only necessary coordination data belongs here"
+        ]
+      }
+    },
+    {
+      "id": "supplier-confirmation-chaser",
+      "siteId": "travel-agency-ops",
+      "name": "Supplier Confirmation Chaser",
+      "product": "A focused travel supplier confirmation tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "audience": "independent travel advisors and boutique travel agencies",
+      "problem": "A client itinerary can look booked while hotel, transfer, activity, or special-request confirmations remain pending in supplier email threads.",
+      "valueProposition": "Turns travel supplier confirmation tracking into a visible operating queue so every itinerary component has a supplier confirmation, matching terms, and an owner for unresolved differences.",
+      "topic": "travel supplier confirmation tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets travel supplier confirmation, travel booking confirmation tracker, travel agency operations workflow, and itinerary confirmation checklist searches.",
+      "score": 87,
+      "domain": null,
+      "contentBatch": "batch-003",
+      "probeContext": {
+        "outcome": "every itinerary component has a supplier confirmation, matching terms, and an owner for unresolved differences",
+        "workflow": [
+          "Register the booked component and expected confirmation",
+          "Request or import supplier confirmation",
+          "Compare dates, travelers, service, price, and terms",
+          "Resolve missing or conflicting details",
+          "Publish the confirmed component to the itinerary"
+        ],
+        "fields": [
+          "Trip, traveler, and component",
+          "Supplier and booking channel",
+          "Service dates and travelers",
+          "Booked product and special request",
+          "Price, currency, and payment terms",
+          "Supplier confirmation number and time",
+          "Mismatch and owner",
+          "Verified itinerary version"
+        ],
+        "mistakes": [
+          "Counting payment as supplier confirmation",
+          "Copying a confirmation number without checking dates",
+          "Updating the itinerary but not the supplier record",
+          "Sending repeated requests after a component is canceled"
+        ],
+        "metrics": [
+          {
+            "name": "Confirmation lead time",
+            "formula": "verified time - booking submitted time",
+            "decision": "select follow-up cadence"
+          },
+          {
+            "name": "First-match rate",
+            "formula": "confirmations matching booked terms / confirmations received",
+            "decision": "find supplier or data-entry errors"
+          },
+          {
+            "name": "Unconfirmed departure exposure",
+            "formula": "open components inside trip readiness window",
+            "decision": "prioritize traveler risk"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Supplier emails, itinerary documents, client forms, and task lists",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Travel-advisor CRM tasks or a shared trip-readiness sheet",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "a booking lacks confirmation by its expected time",
+          "supplier terms differ from the sold itinerary",
+          "a trip amendment or cancellation changes the component"
+        ],
+        "examples": [
+          "A hotel confirms the wrong room category",
+          "An airport transfer has payment but no pickup confirmation",
+          "A date change leaves the old tour confirmation active"
+        ],
+        "rules": [
+          "Every open supplier booking confirmation needs one owner and a next review time",
+          "Completion requires recorded evidence that every itinerary component has a supplier confirmation, matching terms, and an owner for unresolved differences",
+          "Automated reminders stop after verified completion or a documented closed reason",
+          "Keep the booking, itinerary, CRM, payment, and supplier record as the system of record; only necessary coordination data belongs here"
+        ]
+      }
+    },
+    {
+      "id": "traveler-requirement-readiness",
+      "siteId": "travel-agency-ops",
+      "name": "Traveler Requirement Readiness",
+      "product": "A focused travel document requirement readiness tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "audience": "independent travel advisors and boutique travel agencies",
+      "problem": "Travelers receive scattered reminders for names, preferences, payments, supplier forms, and destination requirements without one minimum-data readiness view.",
+      "valueProposition": "Turns travel document requirement readiness tracking into a visible operating queue so every traveler-facing booking requirement is acknowledged or completed by its supplier or departure cutoff without copying unnecessary sensitive data.",
+      "topic": "travel document requirement readiness tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets travel document checklist, travel client document reminder, trip readiness tracker, and travel advisor workflow searches.",
+      "score": 82,
+      "domain": null,
+      "contentBatch": "batch-003",
+      "probeContext": {
+        "outcome": "every traveler-facing booking requirement is acknowledged or completed by its supplier or departure cutoff without copying unnecessary sensitive data",
+        "workflow": [
+          "Define required items from the booked trip",
+          "Assign the traveler or agency owner and cutoff",
+          "Request status or approved evidence",
+          "Review completion and resolve exceptions",
+          "Confirm final trip readiness and stop reminders"
+        ],
+        "fields": [
+          "Trip and traveler",
+          "Requirement category",
+          "Authoritative source and effective date",
+          "Needed-by date and consequence",
+          "Responsible party",
+          "Status and evidence reference",
+          "Exception or referral",
+          "Readiness decision and notice"
+        ],
+        "mistakes": [
+          "Giving destination advice from an outdated source",
+          "Storing full sensitive documents when status is sufficient",
+          "Marking complete because a form link was sent",
+          "Continuing reminders after the itinerary is canceled"
+        ],
+        "metrics": [
+          {
+            "name": "Ready-by-cutoff rate",
+            "formula": "requirements complete by cutoff / requirements due",
+            "decision": "time traveler communications"
+          },
+          {
+            "name": "Exception resolution time",
+            "formula": "closed time - exception identified",
+            "decision": "assign agency coverage"
+          },
+          {
+            "name": "Reminder-to-completion rate",
+            "formula": "requirements completed after reminder / reminders sent",
+            "decision": "improve clarity and cadence"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Supplier emails, itinerary documents, client forms, and task lists",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Travel-advisor CRM tasks or a shared trip-readiness sheet",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "a required item approaches its cutoff",
+          "the authoritative requirement or itinerary changes",
+          "a traveler reports an exception that needs supplier or official guidance"
+        ],
+        "examples": [
+          "A supplier form needs the traveler's exact booking name",
+          "An entry requirement changes after the itinerary was issued",
+          "A passport-status reminder must record completion without retaining the image"
+        ],
+        "rules": [
+          "Every open traveler requirement needs one owner and a next review time",
+          "Completion requires recorded evidence that every traveler-facing booking requirement is acknowledged or completed by its supplier or departure cutoff without copying unnecessary sensitive data",
+          "Automated reminders stop after verified completion or a documented closed reason",
+          "Keep the booking, itinerary, CRM, payment, and supplier record as the system of record; only necessary coordination data belongs here"
+        ]
+      }
+    },
+    {
+      "id": "departure-manifest-readiness",
+      "siteId": "tour-operator-ops",
+      "name": "Departure Manifest Readiness",
+      "product": "A focused tour departure manifest readiness workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "audience": "small day-tour, activity, and multi-day tour operators",
+      "problem": "Bookings, waivers, pickup points, equipment, participant notes, and guide instructions change across channels until departure, creating competing manifest versions.",
+      "valueProposition": "Turns tour departure manifest readiness into a visible operating queue so every departure has one frozen operational manifest with resolved blocking fields and controlled late changes.",
+      "topic": "tour departure manifest readiness",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets tour manifest software, tour departure checklist, activity operator manifest, and tour participant roster searches.",
+      "score": 88,
+      "domain": null,
+      "contentBatch": "batch-003",
+      "probeContext": {
+        "outcome": "every departure has one frozen operational manifest with resolved blocking fields and controlled late changes",
+        "workflow": [
+          "Create the departure roster from confirmed bookings",
+          "Validate participant and operational requirements",
+          "Assign pickup, equipment, and resource details",
+          "Resolve missing data and capacity exceptions",
+          "Freeze, distribute, and control late manifest changes"
+        ],
+        "fields": [
+          "Tour, departure, and capacity",
+          "Participant and booking status",
+          "Pickup or meeting point",
+          "Required waiver or form status",
+          "Equipment or size requirement",
+          "Operational note and access scope",
+          "Guide and vehicle assignment",
+          "Manifest version, freeze time, and late change"
+        ],
+        "mistakes": [
+          "Exporting a manifest before payment and cancellation states settle",
+          "Sharing private participant notes beyond the guide's need",
+          "Editing a printed manifest with no version control",
+          "Treating waitlisted guests as confirmed capacity"
+        ],
+        "metrics": [
+          {
+            "name": "Ready-at-freeze rate",
+            "formula": "departures with no blocking fields at freeze / departures",
+            "decision": "move data collection earlier"
+          },
+          {
+            "name": "Late manifest changes",
+            "formula": "changes after freeze / departures",
+            "decision": "set booking and communication cutoffs"
+          },
+          {
+            "name": "Check-in exception rate",
+            "formula": "participants needing manual correction / participants",
+            "decision": "test manifest quality"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Booking exports, guide chats, printed manifests, and calendars",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Tour-booking software tasks or a shared departure board",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "a departure approaches its freeze time",
+          "capacity, participant status, pickup, or resource assignment changes",
+          "a blocking waiver, field, or payment state remains open"
+        ],
+        "examples": [
+          "A kayak size is missing the night before departure",
+          "A canceled guest still appears on a printed roster",
+          "A pickup location changes after the guide downloads the manifest"
+        ],
+        "rules": [
+          "Every open departure manifest exception needs one owner and a next review time",
+          "Completion requires recorded evidence that every departure has one frozen operational manifest with resolved blocking fields and controlled late changes",
+          "Automated reminders stop after verified completion or a documented closed reason",
+          "Keep the booking, capacity, manifest, guide, and resource platform as the system of record; only necessary coordination data belongs here"
+        ]
+      }
+    },
+    {
+      "id": "guide-cover-board",
+      "siteId": "tour-operator-ops",
+      "name": "Guide Cover Board",
+      "product": "A focused tour guide scheduling and substitution workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "audience": "small day-tour, activity, and multi-day tour operators",
+      "problem": "Guide callouts are solved through group messages without consistently checking qualification, language, availability, transport, pay, and manifest acceptance.",
+      "valueProposition": "Turns tour guide scheduling and substitution into a visible operating queue so every uncovered departure is accepted by a qualified guide or escalated to a documented operating decision before the guest notice cutoff.",
+      "topic": "tour guide scheduling and substitution",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets tour guide scheduling, tour guide substitute, tour operator staff scheduling, and guide coverage app searches.",
+      "score": 84,
+      "domain": null,
+      "contentBatch": "batch-003",
+      "probeContext": {
+        "outcome": "every uncovered departure is accepted by a qualified guide or escalated to a documented operating decision before the guest notice cutoff",
+        "workflow": [
+          "Open the coverage exception against the departure",
+          "Identify qualified and available guides",
+          "Offer and confirm the assignment",
+          "Transfer manifest, access, and resource instructions",
+          "Verify guide acceptance and publish the operating plan"
+        ],
+        "fields": [
+          "Tour, departure, and meeting point",
+          "Original guide and exception",
+          "Required qualification and language",
+          "Available candidate guides",
+          "Confirmed guide and acceptance time",
+          "Pay or schedule adjustment",
+          "Manifest and resource handoff",
+          "Guest notice or cancellation evidence"
+        ],
+        "mistakes": [
+          "Assigning the first respondent without checking qualification",
+          "Updating the public schedule before acceptance",
+          "Forgetting transport or equipment access",
+          "Assuming sent manifest means the substitute reviewed it"
+        ],
+        "metrics": [
+          {
+            "name": "Coverage fill time",
+            "formula": "guide acceptance - exception opened",
+            "decision": "set escalation windows"
+          },
+          {
+            "name": "Qualified coverage rate",
+            "formula": "departures covered by qualified guide / affected departures",
+            "decision": "plan guide capacity"
+          },
+          {
+            "name": "Late operating-change rate",
+            "formula": "changes inside guest notice cutoff / affected departures",
+            "decision": "improve backup scheduling"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Booking exports, guide chats, printed manifests, and calendars",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Tour-booking software tasks or a shared departure board",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "an assigned guide becomes unavailable",
+          "no qualified guide accepts by the escalation time",
+          "the replacement cannot access the current manifest or resources"
+        ],
+        "examples": [
+          "A bilingual guide calls out before a private tour",
+          "A replacement accepts but lacks the vehicle key",
+          "No guide is available before the cancellation notice cutoff"
+        ],
+        "rules": [
+          "Every open guide coverage exception needs one owner and a next review time",
+          "Completion requires recorded evidence that every uncovered departure is accepted by a qualified guide or escalated to a documented operating decision before the guest notice cutoff",
+          "Automated reminders stop after verified completion or a documented closed reason",
+          "Keep the booking, capacity, manifest, guide, and resource platform as the system of record; only necessary coordination data belongs here"
+        ]
+      }
+    },
+    {
+      "id": "rainout-reschedule-coordinator",
+      "siteId": "sports-league-ops",
+      "name": "Rainout Reschedule Coordinator",
+      "product": "A focused sports league rainout rescheduling workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "audience": "community sports leagues and small tournament operators",
+      "problem": "A field closure changes games, teams, officials, facilities, standings, and family communications, but coordinators often update each dependency separately.",
+      "valueProposition": "Turns sports league rainout rescheduling into a visible operating queue so every weather-affected game is canceled, relocated, or rescheduled with all dependent assignments and communications reconciled.",
+      "topic": "sports league rainout rescheduling",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets sports rainout rescheduling, league weather cancellation, makeup game scheduler, and field closure communication searches.",
+      "score": 86,
+      "domain": null,
+      "contentBatch": "batch-003",
+      "probeContext": {
+        "outcome": "every weather-affected game is canceled, relocated, or rescheduled with all dependent assignments and communications reconciled",
+        "workflow": [
+          "Open the weather exception against affected games",
+          "Confirm field decision and cancellation authority",
+          "Find viable date, field, and team availability",
+          "Reassign officials and facility resources",
+          "Publish and verify the replacement schedule"
+        ],
+        "fields": [
+          "League, division, and game",
+          "Field and original time",
+          "Weather decision source and time",
+          "Teams and contacts",
+          "Candidate field and date",
+          "Official and facility assignments",
+          "Published replacement version",
+          "Acknowledgments and unresolved conflicts"
+        ],
+        "mistakes": [
+          "Announcing a cancellation before the authorized field decision",
+          "Moving a game without checking official availability",
+          "Creating a replacement but leaving the original active",
+          "Sending a broad message without identifying affected games"
+        ],
+        "metrics": [
+          {
+            "name": "Reschedule cycle time",
+            "formula": "replacement published - closure confirmed",
+            "decision": "staff weather response"
+          },
+          {
+            "name": "First-publish conflict rate",
+            "formula": "replacement games needing correction / games republished",
+            "decision": "improve dependency checks"
+          },
+          {
+            "name": "Acknowledgment coverage",
+            "formula": "required team and official acknowledgments / acknowledgments due",
+            "decision": "target communication gaps"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Schedule spreadsheets, referee texts, field calls, and email lists",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "League-management software or a shared scheduling board",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "a field or weather authority changes playability",
+          "a candidate replacement conflicts with a team, field, or official",
+          "the published replacement changes again"
+        ],
+        "examples": [
+          "Two diamonds close while one remains playable",
+          "A makeup time works for teams but not the assigned umpire",
+          "The original game still appears in a team calendar after rescheduling"
+        ],
+        "rules": [
+          "Every open weather-affected game needs one owner and a next review time",
+          "Completion requires recorded evidence that every weather-affected game is canceled, relocated, or rescheduled with all dependent assignments and communications reconciled",
+          "Automated reminders stop after verified completion or a documented closed reason",
+          "Keep the league schedule, field, team, official, and communication platform as the system of record; only necessary coordination data belongs here"
+        ]
+      }
+    },
+    {
+      "id": "official-assignment-acceptance",
+      "siteId": "sports-league-ops",
+      "name": "Official Assignment Acceptance",
+      "product": "A focused sports official assignment acceptance tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "audience": "community sports leagues and small tournament operators",
+      "problem": "Referee and umpire assignments may be sent by text or email without a durable acceptance, qualification check, conflict review, or replacement path.",
+      "valueProposition": "Turns sports official assignment acceptance tracking into a visible operating queue so every game has the required qualified officials who explicitly accept and receive the current assignment details.",
+      "topic": "sports official assignment acceptance tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets referee assignment software, sports official scheduling, umpire acceptance tracker, and referee coverage board searches.",
+      "score": 85,
+      "domain": null,
+      "contentBatch": "batch-003",
+      "probeContext": {
+        "outcome": "every game has the required qualified officials who explicitly accept and receive the current assignment details",
+        "workflow": [
+          "Create required official slots from the game schedule",
+          "Match qualification, availability, and conflicts",
+          "Offer the assignment with response deadline",
+          "Confirm acceptance or route replacement",
+          "Deliver final game details and reconcile payment status"
+        ],
+        "fields": [
+          "League, game, field, and time",
+          "Official role and qualification",
+          "Candidate availability and conflict",
+          "Offer sent and response deadline",
+          "Accepted official",
+          "Assignment version",
+          "Game-detail acknowledgment",
+          "Completion and payment status"
+        ],
+        "mistakes": [
+          "Counting message delivery as acceptance",
+          "Assigning an official with a team conflict",
+          "Changing game details without renewing acknowledgment",
+          "Paying from a separate list that still shows the prior official"
+        ],
+        "metrics": [
+          {
+            "name": "Accepted-by-deadline rate",
+            "formula": "slots accepted by response deadline / slots offered",
+            "decision": "adjust assigning lead time"
+          },
+          {
+            "name": "Reassignment rate",
+            "formula": "accepted slots later replaced / accepted slots",
+            "decision": "improve availability capture"
+          },
+          {
+            "name": "Uncovered game exposure",
+            "formula": "games inside escalation window with open slots",
+            "decision": "prioritize assignor work"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Schedule spreadsheets, referee texts, field calls, and email lists",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "League-management software or a shared scheduling board",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "an official slot opens or an offer expires",
+          "an accepted official reports a conflict or callout",
+          "game date, field, time, or role changes"
+        ],
+        "examples": [
+          "A referee sees the text but never accepts",
+          "A rescheduled game conflicts with another assignment",
+          "The assigned official works for one participating club"
+        ],
+        "rules": [
+          "Every open official assignment needs one owner and a next review time",
+          "Completion requires recorded evidence that every game has the required qualified officials who explicitly accept and receive the current assignment details",
+          "Automated reminders stop after verified completion or a documented closed reason",
+          "Keep the league schedule, field, team, official, and communication platform as the system of record; only necessary coordination data belongs here"
+        ]
+      }
+    },
+    {
+      "id": "speaker-asset-chaser",
+      "siteId": "conference-organizer-ops",
+      "name": "Speaker Asset Chaser",
+      "product": "A focused conference speaker asset tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "audience": "independent conference organizers and small trade-show teams",
+      "problem": "Bios, headshots, titles, abstracts, slides, releases, travel details, and AV needs arrive through different speaker email threads and versions.",
+      "valueProposition": "Turns conference speaker asset tracking into a visible operating queue so every confirmed speaker has the approved assets and permissions required for agenda publication, production, and session delivery.",
+      "topic": "conference speaker asset tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets conference speaker management, speaker asset checklist, speaker portal workflow, and conference presentation tracker searches.",
+      "score": 86,
+      "domain": null,
+      "contentBatch": "batch-003",
+      "probeContext": {
+        "outcome": "every confirmed speaker has the approved assets and permissions required for agenda publication, production, and session delivery",
+        "workflow": [
+          "Create the asset packet from the session commitment",
+          "Request only the required speaker items",
+          "Validate format, content, and permissions",
+          "Resolve revisions and freeze approved versions",
+          "Publish to agenda and hand off production assets"
+        ],
+        "fields": [
+          "Event, session, and speaker",
+          "Session title and abstract",
+          "Biography and headshot",
+          "Release or recording permission",
+          "Slide or file requirement",
+          "Travel and AV requirement status",
+          "Owner, due date, and review decision",
+          "Approved version and publication destination"
+        ],
+        "mistakes": [
+          "Publishing a submitted bio before approval",
+          "Using a headshot with unclear rights",
+          "Chasing slides for a session that does not require them",
+          "Letting agenda and production use different title versions"
+        ],
+        "metrics": [
+          {
+            "name": "Ready-by-publication rate",
+            "formula": "speakers ready by cutoff / speakers confirmed",
+            "decision": "time speaker outreach"
+          },
+          {
+            "name": "Asset first-pass acceptance",
+            "formula": "items approved without revision / items reviewed",
+            "decision": "improve instructions"
+          },
+          {
+            "name": "Production hold time",
+            "formula": "time session waits on missing speaker item",
+            "decision": "prioritize blocking assets"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Email threads, asset folders, sponsorship sheets, and agenda documents",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Event-management software or a shared stakeholder-delivery board",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "a speaker is confirmed or session requirements change",
+          "an asset fails format, permission, or content review",
+          "publication or production cutoff approaches with open items"
+        ],
+        "examples": [
+          "A headshot is too small for signage",
+          "A session title differs between slides and agenda",
+          "Recording permission remains undecided before livestream setup"
+        ],
+        "rules": [
+          "Every open speaker asset requirement needs one owner and a next review time",
+          "Completion requires recorded evidence that every confirmed speaker has the approved assets and permissions required for agenda publication, production, and session delivery",
+          "Automated reminders stop after verified completion or a documented closed reason",
+          "Keep the event agenda, speaker, sponsor, registration, and contract platform as the system of record; only necessary coordination data belongs here"
+        ]
+      }
+    },
+    {
+      "id": "sponsor-deliverable-register",
+      "siteId": "conference-organizer-ops",
+      "name": "Sponsor Deliverable Register",
+      "product": "A focused conference sponsor deliverable tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "audience": "independent conference organizers and small trade-show teams",
+      "problem": "Logo placements, booth entitlements, tickets, sessions, lead capture, signage, mentions, and post-event reporting are sold in contracts but fulfilled across separate teams.",
+      "valueProposition": "Turns conference sponsor deliverable tracking into a visible operating queue so every contracted sponsor obligation has an approved input, delivery owner, placement evidence, and accepted outcome.",
+      "topic": "conference sponsor deliverable tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets event sponsor deliverables, sponsorship fulfillment tracker, conference sponsor management, and sponsor asset checklist searches.",
+      "score": 88,
+      "domain": null,
+      "contentBatch": "batch-003",
+      "probeContext": {
+        "outcome": "every contracted sponsor obligation has an approved input, delivery owner, placement evidence, and accepted outcome",
+        "workflow": [
+          "Extract obligations and inputs from the signed package",
+          "Assign sponsor contact and internal delivery owner",
+          "Collect and approve required assets",
+          "Execute and evidence each placement or entitlement",
+          "Reconcile delivery and issue the sponsor report"
+        ],
+        "fields": [
+          "Event, sponsor, and package",
+          "Contract obligation",
+          "Sponsor input and due date",
+          "Internal owner and dependency",
+          "Asset approval status",
+          "Delivery date and placement",
+          "Evidence link",
+          "Sponsor acceptance, exception, or make-good"
+        ],
+        "mistakes": [
+          "Tracking invoice payment but not fulfillment",
+          "Treating a logo upload as placement evidence",
+          "Changing an entitlement without approved make-good",
+          "Building the post-event report from memory"
+        ],
+        "metrics": [
+          {
+            "name": "Obligation completion",
+            "formula": "obligations delivered / obligations contracted",
+            "decision": "manage fulfillment risk"
+          },
+          {
+            "name": "Sponsor input timeliness",
+            "formula": "inputs approved by cutoff / inputs due",
+            "decision": "improve asset chasers"
+          },
+          {
+            "name": "Evidence completeness",
+            "formula": "delivered obligations with proof / obligations marked delivered",
+            "decision": "support renewal conversations"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Email threads, asset folders, sponsorship sheets, and agenda documents",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Event-management software or a shared stakeholder-delivery board",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "a sponsor input approaches its production cutoff",
+          "a placement or entitlement becomes infeasible",
+          "delivery is marked complete without evidence or sponsor acceptance"
+        ],
+        "examples": [
+          "A sponsor logo misses the print deadline",
+          "A contracted session slot changes rooms",
+          "Lead-scan reporting needs evidence from the event platform"
+        ],
+        "rules": [
+          "Every open sponsor obligation needs one owner and a next review time",
+          "Completion requires recorded evidence that every contracted sponsor obligation has an approved input, delivery owner, placement evidence, and accepted outcome",
+          "Automated reminders stop after verified completion or a documented closed reason",
+          "Keep the event agenda, speaker, sponsor, registration, and contract platform as the system of record; only necessary coordination data belongs here"
+        ]
+      }
+    },
+    {
+      "id": "proof-selection-approval",
+      "siteId": "photography-studio-ops",
+      "name": "Proof Selection Approval",
+      "product": "A focused photography client proof selection and approval workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "audience": "independent photography studios and small commercial photo teams",
+      "problem": "Clients favorite images, comment in email, request retouching, and revise selections without one authoritative decision set tied to exact image versions.",
+      "valueProposition": "Turns photography client proof selection and approval into a visible operating queue so every client selection and approval identifies the exact images, revision, intended output, approver, and final decision.",
+      "topic": "photography client proof selection and approval",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets photography proofing workflow, client photo selection, photo approval software, and photography gallery approvals searches.",
+      "score": 86,
+      "domain": null,
+      "contentBatch": "batch-003",
+      "probeContext": {
+        "outcome": "every client selection and approval identifies the exact images, revision, intended output, approver, and final decision",
+        "workflow": [
+          "Publish the controlled proof set",
+          "Collect image-specific selections and comments",
+          "Confirm product, usage, and retouching scope",
+          "Return revisions for approval when required",
+          "Freeze approved finals and release production"
+        ],
+        "fields": [
+          "Client, shoot, and gallery",
+          "Proof-set version",
+          "Image identifier",
+          "Selection status and intended output",
+          "Client comment",
+          "Retouching or crop request",
+          "Authorized approver and decision time",
+          "Final version and production release"
+        ],
+        "mistakes": [
+          "Using filenames that change between proof and final",
+          "Starting retouching from an unsubmitted favorites list",
+          "Combining conflicting feedback from several approvers",
+          "Replacing a proof without preserving the prior decision"
+        ],
+        "metrics": [
+          {
+            "name": "Selection cycle time",
+            "formula": "submitted selection - proof published",
+            "decision": "set review deadlines"
+          },
+          {
+            "name": "Revision approval time",
+            "formula": "final approval - revision delivered",
+            "decision": "manage editing capacity"
+          },
+          {
+            "name": "Post-approval change rate",
+            "formula": "approved selections reopened / approvals",
+            "decision": "improve scope and signoff"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Gallery favorites, client emails, call sheets, and production notes",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Photography CRM tasks or a shared production tracker",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "a proof deadline approaches without submitted selections",
+          "multiple reviewers provide conflicting decisions",
+          "a retouched revision or product choice changes the selected output"
+        ],
+        "examples": [
+          "A commercial client selects image 104 but references an old filename",
+          "Two family members submit different album favorites",
+          "A crop revision needs approval before a print order"
+        ],
+        "rules": [
+          "Every open photo proof decision needs one owner and a next review time",
+          "Completion requires recorded evidence that every client selection and approval identifies the exact images, revision, intended output, approver, and final decision",
+          "Automated reminders stop after verified completion or a documented closed reason",
+          "Keep the studio CRM, contract, gallery, asset, and delivery platform as the system of record; only necessary coordination data belongs here"
+        ]
+      }
+    },
+    {
+      "id": "shoot-readiness-board",
+      "siteId": "photography-studio-ops",
+      "name": "Shoot Readiness Board",
+      "product": "A focused photography shoot readiness tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "audience": "independent photography studios and small commercial photo teams",
+      "problem": "A booked shoot can still lack signed scope, call times, location access, subject list, permits, props, equipment, weather plan, or client confirmation.",
+      "valueProposition": "Turns photography shoot readiness tracking into a visible operating queue so every scheduled shoot reaches a verified go, revised, or postponed decision with people, place, scope, and production resources aligned.",
+      "topic": "photography shoot readiness tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets photography shoot checklist, photo shoot call sheet, studio shoot planning, and photography production readiness searches.",
+      "score": 83,
+      "domain": null,
+      "contentBatch": "batch-003",
+      "probeContext": {
+        "outcome": "every scheduled shoot reaches a verified go, revised, or postponed decision with people, place, scope, and production resources aligned",
+        "workflow": [
+          "Create the readiness packet from the booking",
+          "Confirm scope, subjects, location, and schedule",
+          "Assign crew, equipment, props, and access needs",
+          "Resolve weather, permission, or client exceptions",
+          "Run the final go review and distribute the call sheet"
+        ],
+        "fields": [
+          "Client, shoot, and contract",
+          "Date, call time, and duration",
+          "Location and access contact",
+          "Subject or shot list",
+          "Crew and responsibilities",
+          "Equipment, props, and backup",
+          "Permission, weather, and contingency status",
+          "Client confirmation and go decision"
+        ],
+        "mistakes": [
+          "Treating a calendar booking as client confirmation",
+          "Building the equipment list from an older shot list",
+          "Ignoring location access outside business hours",
+          "Sending a call sheet before the contingency decision"
+        ],
+        "metrics": [
+          {
+            "name": "Ready-by-cutoff rate",
+            "formula": "shoots cleared by final review / shoots scheduled",
+            "decision": "move intake earlier"
+          },
+          {
+            "name": "Day-of exception rate",
+            "formula": "shoots with preventable missing resource / shoots completed",
+            "decision": "improve checklists"
+          },
+          {
+            "name": "Scope revision count",
+            "formula": "material scope changes after readiness review",
+            "decision": "tighten client approval"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Gallery favorites, client emails, call sheets, and production notes",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Photography CRM tasks or a shared production tracker",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "a shoot approaches its final review",
+          "location, subject, weather, scope, or crew changes",
+          "required access, permission, equipment, or client approval remains open"
+        ],
+        "examples": [
+          "A retail shoot lacks loading-dock access",
+          "Rain moves an outdoor portrait session to its backup",
+          "A client adds products after lenses and surfaces are packed"
+        ],
+        "rules": [
+          "Every open shoot readiness item needs one owner and a next review time",
+          "Completion requires recorded evidence that every scheduled shoot reaches a verified go, revised, or postponed decision with people, place, scope, and production resources aligned",
+          "Automated reminders stop after verified completion or a documented closed reason",
+          "Keep the studio CRM, contract, gallery, asset, and delivery platform as the system of record; only necessary coordination data belongs here"
+        ]
+      }
+    },
+    {
+      "id": "proof-approval-queue",
+      "siteId": "sign-print-shop-ops",
+      "name": "Proof Approval Queue",
+      "product": "A focused print and sign proof approval tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "audience": "independent sign shops, commercial printers, and display fabricators",
+      "problem": "Proof PDFs, marked-up screenshots, revised artwork, colors, dimensions, copy, and customer approvals move through email without one production-authorized version.",
+      "valueProposition": "Turns print and sign proof approval tracking into a visible operating queue so every job enters production only from an exact proof version approved by the authorized customer contact.",
+      "topic": "print and sign proof approval tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets print proof approval, sign proofing software, customer artwork approval, and print shop proof tracker searches.",
+      "score": 89,
+      "domain": null,
+      "contentBatch": "batch-003",
+      "probeContext": {
+        "outcome": "every job enters production only from an exact proof version approved by the authorized customer contact",
+        "workflow": [
+          "Generate the proof from the current job specification",
+          "Send it to the named approver with deadline",
+          "Capture image-specific or page-specific corrections",
+          "Issue a new controlled proof version",
+          "Record final approval and release that version to production"
+        ],
+        "fields": [
+          "Customer, job, and line item",
+          "Artwork and proof version",
+          "Dimensions, substrate, color, and finish",
+          "Approver and deadline",
+          "Corrections and annotation",
+          "Revision owner",
+          "Approval evidence and time",
+          "Production-release version"
+        ],
+        "mistakes": [
+          "Accepting looks good without identifying the proof",
+          "Overwriting artwork after approval",
+          "Letting sales release a job from an email attachment",
+          "Starting one line item because another item in the job was approved"
+        ],
+        "metrics": [
+          {
+            "name": "Proof approval cycle",
+            "formula": "final approval - first proof sent",
+            "decision": "set customer and design follow-up"
+          },
+          {
+            "name": "Revision count",
+            "formula": "proof versions per approved line item",
+            "decision": "improve intake quality"
+          },
+          {
+            "name": "Post-approval correction rate",
+            "formula": "jobs changed after approval / jobs released",
+            "decision": "strengthen version control"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Proof emails, job jackets, production boards, and installer texts",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Print MIS tasks or a shared job-production board",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "a proof reaches its response deadline",
+          "customer corrections create a new version",
+          "production receives artwork different from the approved proof"
+        ],
+        "examples": [
+          "A storefront sign dimension changes on proof three",
+          "A brochure approver replies to an older attachment",
+          "One panel is approved while the matching panel still has corrections"
+        ],
+        "rules": [
+          "Every open print proof needs one owner and a next review time",
+          "Completion requires recorded evidence that every job enters production only from an exact proof version approved by the authorized customer contact",
+          "Automated reminders stop after verified completion or a documented closed reason",
+          "Keep the estimate, job, proof, production, inventory, and installation system as the system of record; only necessary coordination data belongs here"
+        ]
+      }
+    },
+    {
+      "id": "install-readiness-board",
+      "siteId": "sign-print-shop-ops",
+      "name": "Install Readiness Board",
+      "product": "A focused sign installation readiness tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "audience": "independent sign shops, commercial printers, and display fabricators",
+      "problem": "Fabrication completion does not guarantee install readiness when permits, site access, survey dimensions, hardware, equipment, crew, weather, and customer windows remain open.",
+      "valueProposition": "Turns sign installation readiness tracking into a visible operating queue so every installation dispatch has verified product, site, permission, equipment, crew, and customer readiness.",
+      "topic": "sign installation readiness tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets sign installation checklist, sign shop install scheduling, sign job readiness, and sign installation workflow searches.",
+      "score": 87,
+      "domain": null,
+      "contentBatch": "batch-003",
+      "probeContext": {
+        "outcome": "every installation dispatch has verified product, site, permission, equipment, crew, and customer readiness",
+        "workflow": [
+          "Open install readiness from the approved job",
+          "Verify fabrication, packaging, and hardware",
+          "Confirm site survey, permit, access, and customer window",
+          "Match qualified crew and equipment",
+          "Run final dispatch review and release the install packet"
+        ],
+        "fields": [
+          "Customer, job, and site",
+          "Approved proof and fabricated items",
+          "Survey dimensions and mounting condition",
+          "Permit or landlord approval",
+          "Access contact and install window",
+          "Crew skills and assignments",
+          "Vehicle, lift, tools, and hardware",
+          "Weather decision and dispatch release"
+        ],
+        "mistakes": [
+          "Scheduling from an expected fabrication date",
+          "Sending crew without the approved site-contact window",
+          "Loading the sign but not mounting hardware",
+          "Assuming a prior survey still reflects site conditions"
+        ],
+        "metrics": [
+          {
+            "name": "Ready-by-dispatch rate",
+            "formula": "installs cleared by dispatch cutoff / installs scheduled",
+            "decision": "improve upstream planning"
+          },
+          {
+            "name": "Abort or return-trip rate",
+            "formula": "installs needing another visit / installs dispatched",
+            "decision": "find readiness gaps"
+          },
+          {
+            "name": "Site-wait time",
+            "formula": "crew access time - crew arrival time",
+            "decision": "improve customer coordination"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Proof emails, job jackets, production boards, and installer texts",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Print MIS tasks or a shared job-production board",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "an installation approaches dispatch cutoff",
+          "fabrication, permit, site, crew, equipment, or weather changes",
+          "final review finds a mismatch with the approved job"
+        ],
+        "examples": [
+          "A lift permit is missing for a channel-letter install",
+          "The landlord changes the allowed work window",
+          "Fabricated panels are ready but the correct anchors are not packed"
+        ],
+        "rules": [
+          "Every open sign installation readiness item needs one owner and a next review time",
+          "Completion requires recorded evidence that every installation dispatch has verified product, site, permission, equipment, crew, and customer readiness",
+          "Automated reminders stop after verified completion or a documented closed reason",
+          "Keep the estimate, job, proof, production, inventory, and installation system as the system of record; only necessary coordination data belongs here"
+        ]
+      }
+    },
+    {
+      "id": "inbound-receiving-exception",
+      "siteId": "third-party-logistics-ops",
+      "name": "Inbound Receiving Exception",
+      "product": "A focused 3PL inbound receiving exception tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "audience": "small third-party logistics warehouses and fulfillment operators",
+      "problem": "Unexpected arrivals, missing ASNs, wrong labels, damaged cartons, quantity differences, and unknown SKUs block dock-to-stock work while clients and warehouses exchange evidence.",
+      "valueProposition": "Turns 3PL inbound receiving exception tracking into a visible operating queue so every inbound discrepancy has scan and photo evidence, client disposition, inventory action, and billable-work outcome.",
+      "topic": "3PL inbound receiving exception tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets 3PL receiving exception, warehouse inbound discrepancy, ASN mismatch workflow, and 3PL dock to stock exception searches.",
+      "score": 89,
+      "domain": null,
+      "contentBatch": "batch-003",
+      "probeContext": {
+        "outcome": "every inbound discrepancy has scan and photo evidence, client disposition, inventory action, and billable-work outcome",
+        "workflow": [
+          "Open the exception from arrival or receiving scans",
+          "Compare physical receipt with ASN and client rules",
+          "Capture discrepancy and containment evidence",
+          "Obtain client or authorized disposition",
+          "Complete inventory, putaway, billing, and client notification"
+        ],
+        "fields": [
+          "Client, warehouse, and inbound ID",
+          "Carrier, appointment, and arrival time",
+          "ASN, PO, and expected carton count",
+          "Scanned SKU, lot, and quantity",
+          "Damage or discrepancy evidence",
+          "Contained location",
+          "Disposition owner and decision",
+          "Inventory, putaway, billing, and notice outcome"
+        ],
+        "mistakes": [
+          "Receiving unknown stock into available inventory",
+          "Reporting short without scan totals",
+          "Moving damaged cartons before photos and location are recorded",
+          "Closing after client reply but before WMS and billing updates"
+        ],
+        "metrics": [
+          {
+            "name": "Exception resolution time",
+            "formula": "closed time - exception opened",
+            "decision": "set client and warehouse response targets"
+          },
+          {
+            "name": "Dock-to-stock exception delay",
+            "formula": "putaway time - arrival time for exception receipts",
+            "decision": "plan receiving capacity"
+          },
+          {
+            "name": "First-disposition completeness",
+            "formula": "client decisions executable without clarification / decisions received",
+            "decision": "improve evidence packets"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Scan notes, dock sheets, supervisor chats, photos, and client emails",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "WMS exception tasks or a shared warehouse-operations queue",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "physical receipt differs from ASN or client rule",
+          "contained inventory approaches dock or SLA threshold",
+          "client disposition conflicts with WMS, inventory, or billing state"
+        ],
+        "examples": [
+          "A pallet arrives with two unrecognized SKUs",
+          "Three cartons are wet on one side at unloading",
+          "The client authorizes relabeling but billable labor is not recorded"
+        ],
+        "rules": [
+          "Every open inbound receiving exception needs one owner and a next review time",
+          "Completion requires recorded evidence that every inbound discrepancy has scan and photo evidence, client disposition, inventory action, and billable-work outcome",
+          "Automated reminders stop after verified completion or a documented closed reason",
+          "Keep the WMS, order, ASN, carrier, inventory, and client-billing platform as the system of record; only necessary coordination data belongs here"
+        ]
+      }
+    },
+    {
+      "id": "pick-pack-exception-desk",
+      "siteId": "third-party-logistics-ops",
+      "name": "Pick-Pack Exception Desk",
+      "product": "A focused 3PL pick and pack exception tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "audience": "small third-party logistics warehouses and fulfillment operators",
+      "problem": "Short picks, barcode failures, damaged stock, missing packaging, client-rule conflicts, and address holds are repaired in supervisor chats without a durable order decision.",
+      "valueProposition": "Turns 3PL pick and pack exception tracking into a visible operating queue so every blocked fulfillment order is released, substituted, split, held, or canceled under client rules with inventory and shipment evidence reconciled.",
+      "topic": "3PL pick and pack exception tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets 3PL fulfillment exception, pick pack exception, warehouse short pick workflow, and order fulfillment issue tracker searches.",
+      "score": 87,
+      "domain": null,
+      "contentBatch": "batch-003",
+      "probeContext": {
+        "outcome": "every blocked fulfillment order is released, substituted, split, held, or canceled under client rules with inventory and shipment evidence reconciled",
+        "workflow": [
+          "Open the exception from the order task",
+          "Verify order, inventory, and client rule context",
+          "Contain affected stock or packing work",
+          "Approve the fulfillment disposition",
+          "Resume or close the order and reconcile downstream records"
+        ],
+        "fields": [
+          "Client, warehouse, and order",
+          "Order line and required quantity",
+          "Pick location and scan event",
+          "Exception reason and evidence",
+          "Affected inventory status",
+          "Client rule and approver",
+          "Disposition and replacement work",
+          "Shipment, inventory, and billing reconciliation"
+        ],
+        "mistakes": [
+          "Changing inventory to make a short pick disappear",
+          "Substituting packaging outside the client rule",
+          "Releasing one carton while the order status says complete",
+          "Closing the exception before carrier and customer-facing status agree"
+        ],
+        "metrics": [
+          {
+            "name": "Exception cycle time",
+            "formula": "order released or closed - exception opened",
+            "decision": "staff supervisor coverage"
+          },
+          {
+            "name": "First-disposition success",
+            "formula": "orders completed without second exception / orders dispositioned",
+            "decision": "improve decision quality"
+          },
+          {
+            "name": "Exception reason rate",
+            "formula": "exceptions by reason / fulfillment orders",
+            "decision": "target slotting, inventory, or rule defects"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Scan notes, dock sheets, supervisor chats, photos, and client emails",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "WMS exception tasks or a shared warehouse-operations queue",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "a pick, pack, label, or address task cannot proceed",
+          "client response or inventory state changes the available disposition",
+          "the released order fails another validation"
+        ],
+        "examples": [
+          "The last unit is damaged at pick",
+          "Branded inserts are unavailable for a subscription order",
+          "An address hold clears after the carrier cutoff"
+        ],
+        "rules": [
+          "Every open fulfillment exception needs one owner and a next review time",
+          "Completion requires recorded evidence that every blocked fulfillment order is released, substituted, split, held, or canceled under client rules with inventory and shipment evidence reconciled",
+          "Automated reminders stop after verified completion or a documented closed reason",
+          "Keep the WMS, order, ASN, carrier, inventory, and client-billing platform as the system of record; only necessary coordination data belongs here"
+        ]
+      }
+    },
+    {
+      "id": "client-inventory-adjustment-gate",
+      "siteId": "third-party-logistics-ops",
+      "name": "Client Inventory Adjustment Gate",
+      "product": "A focused 3PL client inventory adjustment approval workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "audience": "small third-party logistics warehouses and fulfillment operators",
+      "problem": "Cycle counts and investigations identify differences, but quantity changes can be posted without consistent reason, evidence, client authority, or billing and claim consequences.",
+      "valueProposition": "Turns 3PL client inventory adjustment approval into a visible operating queue so every material inventory adjustment is evidenced, approved to client rules, posted once, and communicated with downstream impact.",
+      "topic": "3PL client inventory adjustment approval",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets 3PL inventory adjustment, warehouse variance approval, client inventory discrepancy, and WMS adjustment workflow searches.",
+      "score": 88,
+      "domain": null,
+      "contentBatch": "batch-003",
+      "probeContext": {
+        "outcome": "every material inventory adjustment is evidenced, approved to client rules, posted once, and communicated with downstream impact",
+        "workflow": [
+          "Open the proposed adjustment from a count or investigation",
+          "Recount and reconstruct relevant inventory events",
+          "Classify cause, ownership, and impact",
+          "Obtain warehouse and client approval",
+          "Post, verify, and notify the final adjustment"
+        ],
+        "fields": [
+          "Client, warehouse, SKU, lot, and location",
+          "System quantity and counted quantity",
+          "Count method and counters",
+          "Event history and evidence",
+          "Reason code and suspected cause",
+          "Financial, claim, or order impact",
+          "Warehouse and client approvals",
+          "Posted transaction and verification"
+        ],
+        "mistakes": [
+          "Posting before an independent recount",
+          "Using a generic correction reason",
+          "Creating two adjustments for the same discrepancy",
+          "Not checking open orders or claims after quantity changes"
+        ],
+        "metrics": [
+          {
+            "name": "Adjustment approval time",
+            "formula": "approved time - discrepancy opened",
+            "decision": "set client authority coverage"
+          },
+          {
+            "name": "Repeat variance rate",
+            "formula": "SKUs or locations with repeat difference / adjusted records",
+            "decision": "target root causes"
+          },
+          {
+            "name": "Posting accuracy",
+            "formula": "approved adjustments posted once and verified / adjustments approved",
+            "decision": "audit WMS controls"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Scan notes, dock sheets, supervisor chats, photos, and client emails",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "WMS exception tasks or a shared warehouse-operations queue",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "a cycle count differs beyond the client threshold",
+          "investigation changes the proposed reason or quantity",
+          "an approved adjustment affects an order, claim, or client charge"
+        ],
+        "examples": [
+          "A high-value SKU is short by two after recount",
+          "A receipt scan explains part of a location variance",
+          "An adjustment would make an allocated order unfulfillable"
+        ],
+        "rules": [
+          "Every open inventory adjustment request needs one owner and a next review time",
+          "Completion requires recorded evidence that every material inventory adjustment is evidenced, approved to client rules, posted once, and communicated with downstream impact",
+          "Automated reminders stop after verified completion or a documented closed reason",
+          "Keep the WMS, order, ASN, carrier, inventory, and client-billing platform as the system of record; only necessary coordination data belongs here"
+        ]
+      }
+    },
+    {
+      "id": "carrier-packet-completeness",
+      "siteId": "freight-broker-ops",
+      "name": "Carrier Packet Completeness",
+      "product": "A focused freight carrier packet completeness tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "audience": "small freight brokerages and shipper-carrier coordination teams",
+      "problem": "Carrier onboarding documents, authority checks, insurance evidence, agreements, payment details, and internal approvals arrive through portals and email without one load-ready decision.",
+      "valueProposition": "Turns freight carrier packet completeness tracking into a visible operating queue so every carrier assigned to a load has current required evidence, approved exceptions, and a verified qualification decision.",
+      "topic": "freight carrier packet completeness tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets freight carrier packet, carrier onboarding checklist, freight broker carrier compliance, and carrier qualification tracker searches.",
+      "score": 88,
+      "domain": null,
+      "contentBatch": "batch-003",
+      "probeContext": {
+        "outcome": "every carrier assigned to a load has current required evidence, approved exceptions, and a verified qualification decision",
+        "workflow": [
+          "Create requirements from carrier and load context",
+          "Collect submitted business documents",
+          "Verify authoritative status and document dates",
+          "Route exceptions to authorized review",
+          "Record qualification and release or block assignment"
+        ],
+        "fields": [
+          "Carrier legal name and identifier",
+          "Authority status and checked time",
+          "Insurance type, limit, and expiry",
+          "Agreement and tax-form status",
+          "Payment-profile status",
+          "Load-specific requirement",
+          "Reviewer and exception approval",
+          "Qualified-until date and decision evidence"
+        ],
+        "mistakes": [
+          "Trusting an uploaded certificate without verification",
+          "Keeping sensitive payment details in a broad spreadsheet",
+          "Treating prior use as current qualification",
+          "Allowing a one-load exception to become permanent"
+        ],
+        "metrics": [
+          {
+            "name": "Ready-on-first-review",
+            "formula": "carriers qualified without resubmission / carriers reviewed",
+            "decision": "improve packet instructions"
+          },
+          {
+            "name": "Qualification lead time",
+            "formula": "decision time - packet opened",
+            "decision": "staff carrier setup"
+          },
+          {
+            "name": "Expiring assignment exposure",
+            "formula": "planned loads with requirement expiring before completion",
+            "decision": "prevent last-minute carrier changes"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Carrier emails, rate confirmations, tracking calls, and shared folders",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Freight TMS tasks or a shared brokerage exception board",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "a new carrier is considered for a load",
+          "required authority, insurance, agreement, or verification expires or changes",
+          "a load needs a client-specific qualification exception"
+        ],
+        "examples": [
+          "Insurance expires before the planned delivery date",
+          "A carrier changes its legal entity after onboarding",
+          "A client requires a document not in the standard packet"
+        ],
+        "rules": [
+          "Every open carrier qualification requirement needs one owner and a next review time",
+          "Completion requires recorded evidence that every carrier assigned to a load has current required evidence, approved exceptions, and a verified qualification decision",
+          "Automated reminders stop after verified completion or a documented closed reason",
+          "Keep the TMS, carrier, load, tracking, document, and billing platform as the system of record; only necessary coordination data belongs here"
+        ]
+      }
+    },
+    {
+      "id": "detention-evidence-desk",
+      "siteId": "freight-broker-ops",
+      "name": "Detention Evidence Desk",
+      "product": "A focused freight detention evidence tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "audience": "small freight brokerages and shipper-carrier coordination teams",
+      "problem": "Arrival and departure times, free-time terms, driver messages, location evidence, facility acknowledgments, customer approval, and carrier payment are difficult to reconcile after a load.",
+      "valueProposition": "Turns freight detention evidence tracking into a visible operating queue so every detention request is evaluated from agreed terms and time evidence, then reconciled across customer charge and carrier payment.",
+      "topic": "freight detention evidence tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets freight detention tracker, driver detention evidence, accessorial approval workflow, and freight detention claim searches.",
+      "score": 90,
+      "domain": null,
+      "contentBatch": "batch-003",
+      "probeContext": {
+        "outcome": "every detention request is evaluated from agreed terms and time evidence, then reconciled across customer charge and carrier payment",
+        "workflow": [
+          "Open the request against the load and stop",
+          "Reconstruct appointment, arrival, release, and free time",
+          "Collect facility and driver evidence",
+          "Approve, revise, or deny the accessorial",
+          "Reconcile customer billing, carrier payment, and communication"
+        ],
+        "fields": [
+          "Load, stop, facility, and parties",
+          "Appointment and appointment type",
+          "Arrival, check-in, dock, and release times",
+          "Free-time and rate terms",
+          "Tracking, BOL, or facility evidence",
+          "Delay cause and exception",
+          "Customer decision and amount",
+          "Carrier payment and billing reconciliation"
+        ],
+        "mistakes": [
+          "Using a driver text as the only time source",
+          "Applying the wrong customer's free-time terms",
+          "Approving carrier payment without customer-billing disposition",
+          "Changing timestamps after a decision without history"
+        ],
+        "metrics": [
+          {
+            "name": "Evidence-complete time",
+            "formula": "complete evidence - request opened",
+            "decision": "improve driver and facility capture"
+          },
+          {
+            "name": "Decision cycle time",
+            "formula": "decision issued - evidence complete",
+            "decision": "staff accessorial review"
+          },
+          {
+            "name": "Recovery reconciliation",
+            "formula": "customer-approved amount - carrier-paid amount",
+            "decision": "find leakage and disputes"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Carrier emails, rate confirmations, tracking calls, and shared folders",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Freight TMS tasks or a shared brokerage exception board",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "a driver reports delay beyond free time",
+          "tracking and paperwork show different arrival or release times",
+          "customer decision or new evidence changes the approved amount"
+        ],
+        "examples": [
+          "Geofence arrival precedes facility check-in by twenty minutes",
+          "A BOL has no release time",
+          "The customer approves two hours while the carrier requests three"
+        ],
+        "rules": [
+          "Every open detention request needs one owner and a next review time",
+          "Completion requires recorded evidence that every detention request is evaluated from agreed terms and time evidence, then reconciled across customer charge and carrier payment",
+          "Automated reminders stop after verified completion or a documented closed reason",
+          "Keep the TMS, carrier, load, tracking, document, and billing platform as the system of record; only necessary coordination data belongs here"
+        ]
+      }
+    },
+    {
+      "id": "route-load-reconciliation",
+      "siteId": "vending-route-ops",
+      "name": "Route Load Reconciliation",
+      "product": "A focused vending route load and inventory reconciliation workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "audience": "independent vending machine and micro-market route operators",
+      "problem": "Warehouse picks, truck loads, machine fills, returns, spoilage, and driver cash or cashless totals are tracked in separate records, hiding route variance.",
+      "valueProposition": "Turns vending route load and inventory reconciliation into a visible operating queue so every route reconciles planned product, actual machine fills, returns, waste, and reported sales to explain remaining variance.",
+      "topic": "vending route load and inventory reconciliation",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets vending route reconciliation, vending truck inventory, vending machine route sheet, and vending cash inventory audit searches.",
+      "score": 87,
+      "domain": null,
+      "contentBatch": "batch-003",
+      "probeContext": {
+        "outcome": "every route reconciles planned product, actual machine fills, returns, waste, and reported sales to explain remaining variance",
+        "workflow": [
+          "Build the route pick from machine demand",
+          "Verify warehouse-to-truck loading",
+          "Record machine-level fills, returns, and exceptions",
+          "Check truck return and collected-value evidence",
+          "Reconcile route inventory and assign unexplained variance"
+        ],
+        "fields": [
+          "Route, driver, truck, and date",
+          "Product and unit",
+          "Planned and loaded quantity",
+          "Machine fill quantity",
+          "Machine and truck return quantity",
+          "Waste or damage reason",
+          "Cash, cashless, or telemetry reference",
+          "Reconciled variance and owner"
+        ],
+        "mistakes": [
+          "Loading from a pick list without a verification count",
+          "Treating product moved to the truck as machine sales",
+          "Combining waste and unexplained shortage",
+          "Closing a route before returns reach warehouse inventory"
+        ],
+        "metrics": [
+          {
+            "name": "Route inventory variance",
+            "formula": "loaded - machine fills - truck returns - documented waste",
+            "decision": "investigate shrink or capture gaps"
+          },
+          {
+            "name": "Pick accuracy",
+            "formula": "route lines loaded correctly / route lines planned",
+            "decision": "improve warehouse staging"
+          },
+          {
+            "name": "Reconciliation cycle time",
+            "formula": "route closed - driver return time",
+            "decision": "staff end-of-day review"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Driver sheets, machine notes, truck counts, cash bags, and texts",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Vending-management software or a shared route-operations board",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "a loaded quantity differs from the pick",
+          "machine telemetry, fill, or return records disagree",
+          "the route ends with unexplained product or value variance"
+        ],
+        "examples": [
+          "A snack case is loaded but never assigned to a machine",
+          "Telemetry sales exceed the driver's recorded fill",
+          "Expired sandwiches return without a waste reason"
+        ],
+        "rules": [
+          "Every open route inventory movement needs one owner and a next review time",
+          "Completion requires recorded evidence that every route reconciles planned product, actual machine fills, returns, waste, and reported sales to explain remaining variance",
+          "Automated reminders stop after verified completion or a documented closed reason",
+          "Keep the vending telemetry, inventory, route, cashless, and accounting platform as the system of record; only necessary coordination data belongs here"
+        ]
+      }
+    },
+    {
+      "id": "machine-service-exception",
+      "siteId": "vending-route-ops",
+      "name": "Machine Service Exception",
+      "product": "A focused vending machine service exception tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "audience": "independent vending machine and micro-market route operators",
+      "problem": "Telemetry alerts, customer calls, refunds, technician visits, parts, and restored-sales verification are disconnected, so machines can look serviced while still unavailable.",
+      "valueProposition": "Turns vending machine service exception tracking into a visible operating queue so every machine fault has impact, owner, repair evidence, refund follow-up, and verified return to service.",
+      "topic": "vending machine service exception tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets vending machine service tracker, vending machine repair workflow, vending telemetry alert, and vending refund issue searches.",
+      "score": 85,
+      "domain": null,
+      "contentBatch": "batch-003",
+      "probeContext": {
+        "outcome": "every machine fault has impact, owner, repair evidence, refund follow-up, and verified return to service",
+        "workflow": [
+          "Open the issue from alert or location report",
+          "Triage sales, safety, payment, and product impact",
+          "Assign remote action or field visit",
+          "Repair, test, and document parts or configuration",
+          "Confirm location outcome and return to service"
+        ],
+        "fields": [
+          "Machine, location, and asset ID",
+          "Alert or report source and time",
+          "Fault and customer impact",
+          "Sales or inventory state",
+          "Owner, visit, and access contact",
+          "Action, part, or configuration change",
+          "Refund or location follow-up",
+          "Test evidence and restored time"
+        ],
+        "mistakes": [
+          "Clearing an alert without testing a vend",
+          "Dispatching before confirming location access",
+          "Issuing a refund without linking the machine event",
+          "Marking operational because the technician left"
+        ],
+        "metrics": [
+          {
+            "name": "Restore time",
+            "formula": "verified operational time - issue opened",
+            "decision": "set service priorities"
+          },
+          {
+            "name": "Repeat-fault rate",
+            "formula": "machines reopening same fault / machines repaired",
+            "decision": "target parts or replacement"
+          },
+          {
+            "name": "Remote-resolution rate",
+            "formula": "issues restored without visit / eligible issues",
+            "decision": "improve diagnostics"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Driver sheets, machine notes, truck counts, cash bags, and texts",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Vending-management software or a shared route-operations board",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "telemetry or a location reports a machine fault",
+          "the first action fails or required access changes",
+          "a test vend, payment, temperature, or location confirmation fails"
+        ],
+        "examples": [
+          "A card reader goes offline during office hours",
+          "A spiral motor jams repeatedly after restock",
+          "A remote reset clears the alert but a test vend still fails"
+        ],
+        "rules": [
+          "Every open vending machine service issue needs one owner and a next review time",
+          "Completion requires recorded evidence that every machine fault has impact, owner, repair evidence, refund follow-up, and verified return to service",
+          "Automated reminders stop after verified completion or a documented closed reason",
+          "Keep the vending telemetry, inventory, route, cashless, and accounting platform as the system of record; only necessary coordination data belongs here"
+        ]
+      }
+    },
+    {
+      "id": "linen-delivery-exception",
+      "siteId": "commercial-laundry-ops",
+      "name": "Linen Delivery Exception",
+      "product": "A focused commercial laundry delivery exception tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "audience": "small commercial laundries and linen or uniform rental services",
+      "problem": "Short deliveries, wrong carts, rejected items, access delays, emergency requests, and unsigned tickets move between route driver, plant, customer service, and billing.",
+      "valueProposition": "Turns commercial laundry delivery exception tracking into a visible operating queue so every route delivery exception has verified quantities, customer acknowledgment, recovery plan, and corrected inventory and billing records.",
+      "topic": "commercial laundry delivery exception tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets linen delivery exception, commercial laundry route issue, linen shortage tracker, and laundry delivery credit searches.",
+      "score": 87,
+      "domain": null,
+      "contentBatch": "batch-003",
+      "probeContext": {
+        "outcome": "every route delivery exception has verified quantities, customer acknowledgment, recovery plan, and corrected inventory and billing records",
+        "workflow": [
+          "Open the exception from route activity",
+          "Compare contract, load, delivery, and return quantities",
+          "Capture customer and driver evidence",
+          "Approve redelivery, credit, pickup, or denial",
+          "Complete recovery and reconcile textile inventory and billing"
+        ],
+        "fields": [
+          "Customer, stop, route, and ticket",
+          "Textile item and unit",
+          "Planned, loaded, delivered, and returned quantity",
+          "Exception reason and time",
+          "Driver and customer evidence",
+          "Recovery action and owner",
+          "Redelivery or pickup completion",
+          "Inventory, credit, and billing reconciliation"
+        ],
+        "mistakes": [
+          "Issuing a credit from a phone call without quantity evidence",
+          "Redelivering without adjusting the next route load",
+          "Counting a signed ticket as proof every line was correct",
+          "Closing customer service before textile and invoice records reconcile"
+        ],
+        "metrics": [
+          {
+            "name": "Exception resolution time",
+            "formula": "closed time - exception opened",
+            "decision": "staff route recovery"
+          },
+          {
+            "name": "First-delivery accuracy",
+            "formula": "stops without quantity or item exception / stops",
+            "decision": "improve plant and truck loading"
+          },
+          {
+            "name": "Credit reconciliation rate",
+            "formula": "credits matched to inventory and ticket evidence / credits issued",
+            "decision": "prevent leakage"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Route tickets, cart counts, driver notes, customer calls, and spreadsheets",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Laundry-management software or a shared route exception log",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "driver or customer reports a delivery difference",
+          "recovery timing threatens customer par",
+          "redelivery, return, credit, or billing state changes"
+        ],
+        "examples": [
+          "A hotel receives the wrong towel cart",
+          "A clinic rejects bags at a locked service entrance",
+          "An emergency redelivery is complete but the next standing order remains inflated"
+        ],
+        "rules": [
+          "Every open linen route exception needs one owner and a next review time",
+          "Completion requires recorded evidence that every route delivery exception has verified quantities, customer acknowledgment, recovery plan, and corrected inventory and billing records",
+          "Automated reminders stop after verified completion or a documented closed reason",
+          "Keep the laundry production, textile inventory, route, contract, and billing system as the system of record; only necessary coordination data belongs here"
+        ]
+      }
+    },
+    {
+      "id": "customer-linen-loss-review",
+      "siteId": "commercial-laundry-ops",
+      "name": "Customer Linen Loss Review",
+      "product": "A focused commercial laundry linen loss and replacement tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "audience": "small commercial laundries and linen or uniform rental services",
+      "problem": "Customer shortages, replacement charges, discard records, rag-out, route counts, and circulating inventory are debated without one period-based evidence trail.",
+      "valueProposition": "Turns commercial laundry linen loss and replacement tracking into a visible operating queue so every material textile-loss difference is reconstructed, reviewed with the customer, and resolved to count correction, replacement, charge, or process action.",
+      "topic": "commercial laundry linen loss and replacement tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets linen loss tracking, commercial laundry replacement charges, textile inventory variance, and linen reconciliation searches.",
+      "score": 84,
+      "domain": null,
+      "contentBatch": "batch-003",
+      "probeContext": {
+        "outcome": "every material textile-loss difference is reconstructed, reviewed with the customer, and resolved to count correction, replacement, charge, or process action",
+        "workflow": [
+          "Open the review from a count or replacement threshold",
+          "Reconstruct deliveries, returns, discards, and adjustments",
+          "Validate item identity and unit conventions",
+          "Review responsibility and proposed resolution",
+          "Post the approved outcome and monitor the next cycle"
+        ],
+        "fields": [
+          "Customer, location, and review period",
+          "Textile item and ownership model",
+          "Opening circulating balance",
+          "Delivered and returned quantity",
+          "Documented discard, damage, and adjustment",
+          "Count method and evidence",
+          "Variance, reviewer, and proposed cause",
+          "Approved charge, replacement, correction, or action"
+        ],
+        "mistakes": [
+          "Comparing pieces with bundles or weight",
+          "Calling every variance customer loss",
+          "Charging replacement before reconciling plant discards",
+          "Resetting the balance without preserving the investigation"
+        ],
+        "metrics": [
+          {
+            "name": "Explained variance rate",
+            "formula": "variance assigned to supported cause / total variance",
+            "decision": "improve evidence capture"
+          },
+          {
+            "name": "Loss review cycle",
+            "formula": "decision time - review opened",
+            "decision": "set customer and plant cadence"
+          },
+          {
+            "name": "Repeat variance",
+            "formula": "same item and customer variance next period",
+            "decision": "test corrective action"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Route tickets, cart counts, driver notes, customer calls, and spreadsheets",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Laundry-management software or a shared route exception log",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "circulating balance exceeds the review threshold",
+          "route or plant evidence changes the proposed variance",
+          "customer disputes a charge or the next count repeats the difference"
+        ],
+        "examples": [
+          "Napkin counts use bundles on route and pieces in billing",
+          "Plant rag-out explains part of a restaurant shortage",
+          "A hotel disputes replacement charges after a room-count change"
+        ],
+        "rules": [
+          "Every open textile loss review needs one owner and a next review time",
+          "Completion requires recorded evidence that every material textile-loss difference is reconstructed, reviewed with the customer, and resolved to count correction, replacement, charge, or process action",
+          "Automated reminders stop after verified completion or a documented closed reason",
+          "Keep the laundry production, textile inventory, route, contract, and billing system as the system of record; only necessary coordination data belongs here"
+        ]
+      }
+    },
+    {
+      "id": "transient-arrival-readiness",
+      "siteId": "marina-dock-ops",
+      "name": "Transient Arrival Readiness",
+      "product": "A focused marina transient arrival readiness workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "audience": "independent marinas, yacht clubs, and small dock operations",
+      "problem": "A transient reservation can be confirmed while vessel dimensions, slip assignment, utilities, access instructions, arrival window, balance, and dockhand coverage remain incomplete.",
+      "valueProposition": "Turns marina transient arrival readiness into a visible operating queue so every transient arrival has a compatible assigned slip, current instructions, payment plan, and acknowledged dock handoff.",
+      "topic": "marina transient arrival readiness",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets marina transient reservation, boat slip arrival checklist, marina slip assignment, and transient boater workflow searches.",
+      "score": 86,
+      "domain": null,
+      "contentBatch": "batch-003",
+      "probeContext": {
+        "outcome": "every transient arrival has a compatible assigned slip, current instructions, payment plan, and acknowledged dock handoff",
+        "workflow": [
+          "Create readiness from the confirmed reservation",
+          "Validate vessel, dates, services, and contact details",
+          "Assign a compatible available slip",
+          "Confirm access, utilities, arrival, and payment instructions",
+          "Release the arrival plan to boater and dock team"
+        ],
+        "fields": [
+          "Marina, reservation, and boater",
+          "Vessel length, beam, draft, and power",
+          "Arrival and departure window",
+          "Assigned slip and compatibility checks",
+          "Utility and service requests",
+          "Balance and payment plan",
+          "Access and contact instructions",
+          "Dockhand owner and acknowledgment"
+        ],
+        "mistakes": [
+          "Assigning by length without beam or utility fit",
+          "Sending gate instructions before slip confirmation",
+          "Changing the slip without updating the dock team",
+          "Marking ready while arrival time and contact remain unknown"
+        ],
+        "metrics": [
+          {
+            "name": "Ready-before-arrival rate",
+            "formula": "reservations cleared by cutoff / arrivals due",
+            "decision": "time pre-arrival checks"
+          },
+          {
+            "name": "Slip reassignment rate",
+            "formula": "arrivals moved after initial assignment / arrivals",
+            "decision": "improve compatibility data"
+          },
+          {
+            "name": "Arrival wait time",
+            "formula": "dock handoff time - boater arrival time",
+            "decision": "staff coverage and instructions"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Dock maps, reservation notes, radios, work-order boards, and email",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Marina-management software or a shared dock-operations board",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "a transient reservation is confirmed",
+          "vessel, timing, service, or slip availability changes",
+          "a readiness field remains open near the arrival window"
+        ],
+        "examples": [
+          "A sailboat draft conflicts with the assigned slip",
+          "A late arrival needs after-hours gate instructions",
+          "Shore-power needs change after the dock team receives the plan"
+        ],
+        "rules": [
+          "Every open transient slip arrival needs one owner and a next review time",
+          "Completion requires recorded evidence that every transient arrival has a compatible assigned slip, current instructions, payment plan, and acknowledged dock handoff",
+          "Automated reminders stop after verified completion or a documented closed reason",
+          "Keep the slip, reservation, boater, billing, utility, and maintenance platform as the system of record; only necessary coordination data belongs here"
+        ]
+      }
+    },
+    {
+      "id": "dock-maintenance-handoff",
+      "siteId": "marina-dock-ops",
+      "name": "Dock Maintenance Handoff",
+      "product": "A focused marina dock maintenance handoff workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "audience": "independent marinas, yacht clubs, and small dock operations",
+      "problem": "Dock, pedestal, utility, access, and facility issues are reported by radio or whiteboard while affected slips, boater notices, contractor work, and verification remain separate.",
+      "valueProposition": "Turns marina dock maintenance handoff into a visible operating queue so every marina maintenance issue has contained impact, assigned repair, affected-slip communication, and verified return to service.",
+      "topic": "marina dock maintenance handoff",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets marina maintenance software, dock work order, marina service request, and dock maintenance tracker searches.",
+      "score": 85,
+      "domain": null,
+      "contentBatch": "batch-003",
+      "probeContext": {
+        "outcome": "every marina maintenance issue has contained impact, assigned repair, affected-slip communication, and verified return to service",
+        "workflow": [
+          "Capture the issue and exact dock location",
+          "Assess impact and contain affected access or service",
+          "Assign staff or contractor repair",
+          "Communicate with affected boaters and operations",
+          "Inspect completed work and restore availability"
+        ],
+        "fields": [
+          "Marina, dock, slip, and asset",
+          "Reported time and source",
+          "Issue and impact",
+          "Containment and affected slips",
+          "Owner, contractor, and access plan",
+          "Parts, work, and ETA",
+          "Boater notice and temporary arrangement",
+          "Inspection evidence and restored time"
+        ],
+        "mistakes": [
+          "Writing the issue against a dock with no exact asset",
+          "Letting a contractor close work without marina inspection",
+          "Moving a boat without updating slip and billing records",
+          "Restoring availability before the containment is removed"
+        ],
+        "metrics": [
+          {
+            "name": "Containment time",
+            "formula": "impact contained - issue reported",
+            "decision": "set urgent response coverage"
+          },
+          {
+            "name": "Verified repair time",
+            "formula": "inspection passed - issue reported",
+            "decision": "manage contractor and part delays"
+          },
+          {
+            "name": "Reopen rate",
+            "formula": "issues reopened / issues restored",
+            "decision": "strengthen final checks"
+          }
+        ],
+        "alternatives": [
+          {
+            "name": "Dock maps, reservation notes, radios, work-order boards, and email",
+            "best": "One owner handles low volume and can see every open item",
+            "limit": "Status and follow-up history depend on memory and inbox searches"
+          },
+          {
+            "name": "Marina-management software or a shared dock-operations board",
+            "best": "The team already maintains it and exceptions are simple",
+            "limit": "Purpose-built reminders, evidence, and stop conditions require manual setup"
+          },
+          {
+            "name": "A focused workflow tool",
+            "best": "The same coordination failure repeats across many live records",
+            "limit": "It must integrate with the system of record and justify another workflow"
+          }
+        ],
+        "triggers": [
+          "a dock or boater reports a facility issue",
+          "repair timing or impact changes affected slip availability",
+          "contractor completion fails marina inspection"
+        ],
+        "examples": [
+          "A power pedestal trips for two occupied slips",
+          "A damaged finger pier requires temporary access closure",
+          "A contractor replaces a water valve but the leak persists on inspection"
+        ],
+        "rules": [
+          "Every open dock maintenance issue needs one owner and a next review time",
+          "Completion requires recorded evidence that every marina maintenance issue has contained impact, assigned repair, affected-slip communication, and verified return to service",
+          "Automated reminders stop after verified completion or a documented closed reason",
+          "Keep the slip, reservation, boater, billing, utility, and maintenance platform as the system of record; only necessary coordination data belongs here"
         ]
       }
     }

@@ -1,0 +1,77 @@
+{
+  "id": "third-party-logistics-ops",
+  "name": "Third-Party Logistics Operations",
+  "domain": null,
+  "audience": "small third-party logistics warehouses and fulfillment operators",
+  "topic": "receiving, fulfillment, and inventory exceptions for multi-client 3PLs",
+  "products": [
+    {
+      "id": "inbound-receiving-exception",
+      "name": "Inbound Receiving Exception",
+      "product": "A focused 3PL inbound receiving exception tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "small third-party logistics warehouses and fulfillment operators",
+      "problem": "Unexpected arrivals, missing ASNs, wrong labels, damaged cartons, quantity differences, and unknown SKUs block dock-to-stock work while clients and warehouses exchange evidence.",
+      "valueProposition": "Turns 3PL inbound receiving exception tracking into a visible operating queue so every inbound discrepancy has scan and photo evidence, client disposition, inventory action, and billable-work outcome.",
+      "topic": "3PL inbound receiving exception tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets 3PL receiving exception, warehouse inbound discrepancy, ASN mismatch workflow, and 3PL dock to stock exception searches.",
+      "score": 89
+    },
+    {
+      "id": "pick-pack-exception-desk",
+      "name": "Pick-Pack Exception Desk",
+      "product": "A focused 3PL pick and pack exception tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "small third-party logistics warehouses and fulfillment operators",
+      "problem": "Short picks, barcode failures, damaged stock, missing packaging, client-rule conflicts, and address holds are repaired in supervisor chats without a durable order decision.",
+      "valueProposition": "Turns 3PL pick and pack exception tracking into a visible operating queue so every blocked fulfillment order is released, substituted, split, held, or canceled under client rules with inventory and shipment evidence reconciled.",
+      "topic": "3PL pick and pack exception tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets 3PL fulfillment exception, pick pack exception, warehouse short pick workflow, and order fulfillment issue tracker searches.",
+      "score": 87
+    },
+    {
+      "id": "client-inventory-adjustment-gate",
+      "name": "Client Inventory Adjustment Gate",
+      "product": "A focused 3PL client inventory adjustment approval workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "small third-party logistics warehouses and fulfillment operators",
+      "problem": "Cycle counts and investigations identify differences, but quantity changes can be posted without consistent reason, evidence, client authority, or billing and claim consequences.",
+      "valueProposition": "Turns 3PL client inventory adjustment approval into a visible operating queue so every material inventory adjustment is evidenced, approved to client rules, posted once, and communicated with downstream impact.",
+      "topic": "3PL client inventory adjustment approval",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets 3PL inventory adjustment, warehouse variance approval, client inventory discrepancy, and WMS adjustment workflow searches.",
+      "score": 88
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused 3PL inbound receiving exception tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns 3PL inbound receiving exception tracking into a visible operating queue so every inbound discrepancy has scan and photo evidence, client disposition, inventory action, and billable-work outcome.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith",
+    "picture": "/assets/blog/authors/jj.jpeg"
+  },
+  "images": {
+    "coverImage": "/assets/blog/preview/cover.jpg",
+    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-pages",
+    "project": "third-party-logistics-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

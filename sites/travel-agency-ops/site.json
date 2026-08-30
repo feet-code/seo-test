@@ -1,0 +1,63 @@
+{
+  "id": "travel-agency-ops",
+  "name": "Travel Agency Operations",
+  "domain": null,
+  "audience": "independent travel advisors and boutique travel agencies",
+  "topic": "supplier confirmations and traveler readiness for travel agencies",
+  "products": [
+    {
+      "id": "supplier-confirmation-chaser",
+      "name": "Supplier Confirmation Chaser",
+      "product": "A focused travel supplier confirmation tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent travel advisors and boutique travel agencies",
+      "problem": "A client itinerary can look booked while hotel, transfer, activity, or special-request confirmations remain pending in supplier email threads.",
+      "valueProposition": "Turns travel supplier confirmation tracking into a visible operating queue so every itinerary component has a supplier confirmation, matching terms, and an owner for unresolved differences.",
+      "topic": "travel supplier confirmation tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets travel supplier confirmation, travel booking confirmation tracker, travel agency operations workflow, and itinerary confirmation checklist searches.",
+      "score": 87
+    },
+    {
+      "id": "traveler-requirement-readiness",
+      "name": "Traveler Requirement Readiness",
+      "product": "A focused travel document requirement readiness tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent travel advisors and boutique travel agencies",
+      "problem": "Travelers receive scattered reminders for names, preferences, payments, supplier forms, and destination requirements without one minimum-data readiness view.",
+      "valueProposition": "Turns travel document requirement readiness tracking into a visible operating queue so every traveler-facing booking requirement is acknowledged or completed by its supplier or departure cutoff without copying unnecessary sensitive data.",
+      "topic": "travel document requirement readiness tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets travel document checklist, travel client document reminder, trip readiness tracker, and travel advisor workflow searches.",
+      "score": 82
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused travel supplier confirmation tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns travel supplier confirmation tracking into a visible operating queue so every itinerary component has a supplier confirmation, matching terms, and an owner for unresolved differences.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith",
+    "picture": "/assets/blog/authors/jj.jpeg"
+  },
+  "images": {
+    "coverImage": "/assets/blog/preview/cover.jpg",
+    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-pages",
+    "project": "travel-agency-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

@@ -1,0 +1,55 @@
+---
+title: "Common Photography Client Proof Selection And Approval Mistakes and How to Prevent Them"
+excerpt: "Process mistakes and guardrails for independent photography studios and small commercial photo teams, with concrete fields, decision rules, and implementation steps."
+productId: "proof-selection-approval"
+productName: "Proof Selection Approval"
+generationFingerprint: "f134829b77ef8c17c3a5"
+coverImage: "/assets/blog/preview/cover.jpg"
+date: "2026-08-29T21:34:11Z"
+author:
+  name: "John Smith"
+  picture: "/assets/blog/authors/jj.jpeg"
+ogImage:
+  url: "/assets/blog/dynamic-routing/cover.jpg"
+---
+
+Clients favorite images, comment in email, request retouching, and revise selections without one authoritative decision set tied to exact image versions. The recurring failures are usually process-design problems rather than motivation problems. For independent photography studios and small commercial photo teams, these are the mistakes worth finding before buying or building software.
+
+
+### 1. Using filenames that change between proof and final
+
+This usually survives because the workflow records activity but not the decision that activity was meant to produce. Add **Proof-set version** at the point of work and enforce this guardrail: Completion requires recorded evidence that every client selection and approval identifies the exact images, revision, intended output, approver, and final decision When the exception occurs, keep it visible instead of repairing it privately in email.
+
+### 2. Starting retouching from an unsubmitted favorites list
+
+This usually survives because the workflow records activity but not the decision that activity was meant to produce. Add **Image identifier** at the point of work and enforce this guardrail: Automated reminders stop after verified completion or a documented closed reason When the exception occurs, keep it visible instead of repairing it privately in email.
+
+### 3. Combining conflicting feedback from several approvers
+
+This usually survives because the workflow records activity but not the decision that activity was meant to produce. Add **Selection status and intended output** at the point of work and enforce this guardrail: Keep the studio CRM, contract, gallery, asset, and delivery platform as the system of record; only necessary coordination data belongs here When the exception occurs, keep it visible instead of repairing it privately in email.
+
+### 4. Replacing a proof without preserving the prior decision
+
+This usually survives because the workflow records activity but not the decision that activity was meant to produce. Add **Client comment** at the point of work and enforce this guardrail: Every open photo proof decision needs one owner and a next review time When the exception occurs, keep it visible instead of repairing it privately in email.
+
+## Audit five recent records
+
+Pick five completed or abandoned examples and ask:
+
+- Can we reconstruct client, shoot, and gallery without asking the original owner?
+- Can we reconstruct proof-set version without asking the original owner?
+- Can we reconstruct image identifier without asking the original owner?
+- Can we reconstruct selection status and intended output without asking the original owner?
+- Can we reconstruct client comment without asking the original owner?
+
+If the answer is no, improve the capture point rather than adding a later reporting step. Reports cannot recover decisions that were never recorded.
+
+## Use mistakes as software requirements
+
+Turn every frequent failure into a testable requirement. “Better visibility” is vague; “show every record with no owner or next date” can be tested. “More automation” is vague; “stop reminders after the completion condition is recorded” can be tested.
+
+## Next step
+
+[Explore the Proof Selection Approval workflow concept](/products/proof-selection-approval) and record whether this is painful enough to justify a focused tool.
+
+For the adjacent workflow, see [Shoot Readiness Board](/products/shoot-readiness-board).

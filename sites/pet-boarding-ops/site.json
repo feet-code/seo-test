@@ -1,0 +1,63 @@
+{
+  "id": "pet-boarding-ops",
+  "name": "Pet Boarding and Daycare Operations",
+  "domain": null,
+  "audience": "independent pet boarding facilities and dog daycare operators",
+  "topic": "record readiness and pickup handoffs for pet boarding teams",
+  "products": [
+    {
+      "id": "vaccination-record-chaser",
+      "name": "Vaccination Record Chaser",
+      "product": "A focused pet boarding vaccination record tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent pet boarding facilities and dog daycare operators",
+      "problem": "Bookings reach check-in with missing, unreadable, expired, or unreviewed vaccination documents because upload status and facility approval are treated as the same event.",
+      "valueProposition": "Turns pet boarding vaccination record tracking into a visible operating queue so every scheduled pet has verified facility-required records or a documented booking decision before arrival.",
+      "topic": "pet boarding vaccination record tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets pet boarding vaccination tracker, kennel vaccine records, dog daycare document reminder, and boarding record approval searches.",
+      "score": 86
+    },
+    {
+      "id": "boarding-pickup-handoff",
+      "name": "Boarding Pickup Handoff",
+      "product": "A focused pet boarding pickup readiness workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent pet boarding facilities and dog daycare operators",
+      "problem": "Pickup becomes a front-desk scramble when authorized collector, belongings, add-on services, stay notes, balance, and pet location are split across cards and messages.",
+      "valueProposition": "Turns pet boarding pickup readiness into a visible operating queue so every departing pet is released to an authorized person with belongings, balance, and approved stay handoff reconciled.",
+      "topic": "pet boarding pickup readiness",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets pet boarding pickup checklist, kennel checkout workflow, dog daycare handoff, and boarding belongings tracker searches.",
+      "score": 81
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused pet boarding vaccination record tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns pet boarding vaccination record tracking into a visible operating queue so every scheduled pet has verified facility-required records or a documented booking decision before arrival.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith",
+    "picture": "/assets/blog/authors/jj.jpeg"
+  },
+  "images": {
+    "coverImage": "/assets/blog/preview/cover.jpg",
+    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-pages",
+    "project": "pet-boarding-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

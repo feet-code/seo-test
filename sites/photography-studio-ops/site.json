@@ -1,0 +1,63 @@
+{
+  "id": "photography-studio-ops",
+  "name": "Photography Studio Operations",
+  "domain": null,
+  "audience": "independent photography studios and small commercial photo teams",
+  "topic": "client proofing and shoot readiness for photography studios",
+  "products": [
+    {
+      "id": "proof-selection-approval",
+      "name": "Proof Selection Approval",
+      "product": "A focused photography client proof selection and approval workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent photography studios and small commercial photo teams",
+      "problem": "Clients favorite images, comment in email, request retouching, and revise selections without one authoritative decision set tied to exact image versions.",
+      "valueProposition": "Turns photography client proof selection and approval into a visible operating queue so every client selection and approval identifies the exact images, revision, intended output, approver, and final decision.",
+      "topic": "photography client proof selection and approval",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets photography proofing workflow, client photo selection, photo approval software, and photography gallery approvals searches.",
+      "score": 86
+    },
+    {
+      "id": "shoot-readiness-board",
+      "name": "Shoot Readiness Board",
+      "product": "A focused photography shoot readiness tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent photography studios and small commercial photo teams",
+      "problem": "A booked shoot can still lack signed scope, call times, location access, subject list, permits, props, equipment, weather plan, or client confirmation.",
+      "valueProposition": "Turns photography shoot readiness tracking into a visible operating queue so every scheduled shoot reaches a verified go, revised, or postponed decision with people, place, scope, and production resources aligned.",
+      "topic": "photography shoot readiness tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets photography shoot checklist, photo shoot call sheet, studio shoot planning, and photography production readiness searches.",
+      "score": 83
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused photography client proof selection and approval workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns photography client proof selection and approval into a visible operating queue so every client selection and approval identifies the exact images, revision, intended output, approver, and final decision.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith",
+    "picture": "/assets/blog/authors/jj.jpeg"
+  },
+  "images": {
+    "coverImage": "/assets/blog/preview/cover.jpg",
+    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-pages",
+    "project": "photography-studio-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}
