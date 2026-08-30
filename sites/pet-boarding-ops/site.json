@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets pet boarding vaccination tracker, kennel vaccine records, dog daycare document reminder, and boarding record approval searches.",
-      "score": 86
+      "score": 86,
+      "contentBatch": "batch-003"
     },
     {
       "id": "boarding-pickup-handoff",
@@ -31,7 +32,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets pet boarding pickup checklist, kennel checkout workflow, dog daycare handoff, and boarding belongings tracker searches.",
-      "score": 81
+      "score": 81,
+      "contentBatch": "batch-003"
     }
   ],
   "articlesPerProduct": 10,
@@ -40,12 +42,7 @@
   "valueProposition": "Turns pet boarding vaccination record tracking into a visible operating queue so every scheduled pet has verified facility-required records or a documented booking decision before arrival.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

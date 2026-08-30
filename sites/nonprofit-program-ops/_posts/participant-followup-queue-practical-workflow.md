@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small nonprofit direct-service a
 productId: "participant-followup-queue"
 productName: "Participant Follow-Up Queue"
 generationFingerprint: "d061246b903229f78d6c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Follow-up commitments are distributed across staff notes and spreadsheets, making it hard to see which participant is waiting and what consented action comes next. For small nonprofit direct-service and program teams, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every consented program follow-up reaches a documented next step or closed reason without unnecessary data collection**.

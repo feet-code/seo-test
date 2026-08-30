@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small nonprofit direct-service and
 productId: "participant-followup-queue"
 productName: "Participant Follow-Up Queue"
 generationFingerprint: "d061246b903229f78d6c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Follow-up commitments are distributed across staff notes and spreadsheets, making it hard to see which participant is waiting and what consented action comes next. The recurring failures are usually process-design problems rather than motivation problems. For small nonprofit direct-service and program teams, these are the mistakes worth finding before buying or building software.

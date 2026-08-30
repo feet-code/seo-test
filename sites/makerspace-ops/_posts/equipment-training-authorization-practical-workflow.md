@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for community makerspaces, fabricati
 productId: "equipment-training-authorization"
 productName: "Equipment Training Authorization"
 generationFingerprint: "a12717ecdc524c8530f3"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Membership, waiver, orientation, machine-specific training, supervised practice, expiration, suspension, and access-control state can diverge before a member uses higher-risk equipment. For community makerspaces, fabrication labs, and shared technical workshops, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every equipment access grant is tied to current membership, documented prerequisites, named trainer approval, policy version, and matching access-control state**.

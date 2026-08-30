@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small commercial landscaping and
 productId: "enhancement-approval-desk"
 productName: "Enhancement Approval Desk"
 generationFingerprint: "e7c620226846f251ad79"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Crew observations and customer requests for mulch, pruning, replacements, drainage, irrigation, or seasonal color stall before estimating because evidence and ownership do not travel together. For small commercial landscaping and recurring property-maintenance companies, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every qualified enhancement request reaches a priced customer decision with field context, scope assumptions, and a scheduled or closed next action**.

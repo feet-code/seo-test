@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent household moving compa
 productId: "damage-claim-evidence-desk"
 productName: "Damage Claim Evidence Desk"
 generationFingerprint: "8a8b969b87f75615775a"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Written claims, shipment identity, inventory numbers, photos, valuation terms, estimates, deadlines, and customer updates arrive through separate channels. The recurring failures are usually process-design problems rather than motivation problems. For independent household moving companies and local moving crews, these are the mistakes worth finding before buying or building software.

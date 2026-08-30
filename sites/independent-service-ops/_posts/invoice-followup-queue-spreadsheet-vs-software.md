@@ -4,13 +4,9 @@ excerpt: "A spreadsheet-versus-software decision guide for freelancers and indep
 productId: "invoice-followup-queue"
 productName: "Invoice Follow-Up Queue"
 generationFingerprint: "65fd2a0562f039ff399c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A spreadsheet is often the right first implementation for freelancer invoice follow-up and overdue payment reminders. It is cheap, editable, and forces the team to define the workflow. The question is not whether spreadsheets are good or bad; it is when coordination costs become larger than the flexibility is worth.

@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets auto repair estimate authorization, mechanic estimate approval software, repair order approval tracking, and service advisor follow up searches.",
-      "score": 88
+      "score": 88,
+      "contentBatch": "batch-002"
     },
     {
       "id": "parts-arrival-promise-board",
@@ -31,7 +32,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets auto repair parts tracking, repair shop parts ETA, parts backorder tracker, and service advisor parts status searches.",
-      "score": 82
+      "score": 82,
+      "contentBatch": "batch-002"
     },
     {
       "id": "vehicle-pickup-readiness",
@@ -45,7 +47,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets auto repair pickup checklist, vehicle ready for pickup workflow, repair shop vehicle release, and service advisor pickup process searches.",
-      "score": 80
+      "score": 80,
+      "contentBatch": "batch-002"
     }
   ],
   "articlesPerProduct": 10,
@@ -54,12 +57,7 @@
   "valueProposition": "Turns repair estimate authorization tracking into a visible operating queue so every pending estimate has a documented customer decision, next follow-up, or closed reason.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

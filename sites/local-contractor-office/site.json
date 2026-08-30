@@ -17,7 +17,8 @@
       "monetization": "$19-$79/month based on active records or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets estimate follow-up text, contractor quote reminder, open estimate tracker, and field service sales pipeline searches.",
-      "score": 86
+      "score": 86,
+      "contentBatch": "batch-001"
     },
     {
       "id": "job-photo-handoff",
@@ -31,7 +32,8 @@
       "monetization": "$19-$79/month based on active records or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets jobsite photo checklist, contractor photo documentation app, before-and-after job photos, and technician closeout template searches.",
-      "score": 83
+      "score": 83,
+      "contentBatch": "batch-001"
     }
   ],
   "articlesPerProduct": 10,
@@ -40,12 +42,7 @@
   "valueProposition": "Creates a visible follow-up sequence that stops on a decision and records actionable loss reasons.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

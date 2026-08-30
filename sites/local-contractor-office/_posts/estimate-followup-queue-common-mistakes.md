@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for owner-operated HVAC, plumbing, ele
 productId: "estimate-followup-queue"
 productName: "Estimate Follow-Up Queue"
 generationFingerprint: "4eac085b965fb228f523"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Estimates are sent from one system, then followed up from memory, causing inconsistent timing and little insight into why work is won or lost. The recurring failures are usually process-design problems rather than motivation problems. For owner-operated HVAC, plumbing, electrical, and repair contractors, these are the mistakes worth finding before buying or building software.

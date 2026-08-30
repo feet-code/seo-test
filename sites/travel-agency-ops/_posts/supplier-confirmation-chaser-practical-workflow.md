@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent travel advisors and 
 productId: "supplier-confirmation-chaser"
 productName: "Supplier Confirmation Chaser"
 generationFingerprint: "09752f454ad1a001134f"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A client itinerary can look booked while hotel, transfer, activity, or special-request confirmations remain pending in supplier email threads. For independent travel advisors and boutique travel agencies, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every itinerary component has a supplier confirmation, matching terms, and an owner for unresolved differences**.

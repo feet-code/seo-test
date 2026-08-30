@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent pet boarding facilit
 productId: "boarding-pickup-handoff"
 productName: "Boarding Pickup Handoff"
 generationFingerprint: "ce39d026a5203e987a51"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Pickup becomes a front-desk scramble when authorized collector, belongings, add-on services, stay notes, balance, and pet location are split across cards and messages. For independent pet boarding facilities and dog daycare operators, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every departing pet is released to an authorized person with belongings, balance, and approved stay handoff reconciled**.

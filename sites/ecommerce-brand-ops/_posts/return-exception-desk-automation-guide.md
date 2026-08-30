@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for small direct-to-consumer ecommerce
 productId: "return-exception-desk"
 productName: "Return Exception Desk"
 generationFingerprint: "24ac7b877c2f24ae51c1"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for ecommerce return exception management should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For small direct-to-consumer ecommerce brands and lean operations teams, the target outcome is **every nonstandard return is resolved to an approved refund, replacement, denial, or investigation with inventory and customer records reconciled**.

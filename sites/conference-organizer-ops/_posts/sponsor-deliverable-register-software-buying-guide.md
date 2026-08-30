@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent conference organizers
 productId: "sponsor-deliverable-register"
 productName: "Sponsor Deliverable Register"
 generationFingerprint: "7b88b57ac2ebda718d2b"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for conference sponsor deliverable tracking should be evaluated against the operating problem, not a generic feature checklist. For independent conference organizers and small trade-show teams, a useful trial must demonstrate this outcome: **every contracted sponsor obligation has an approved input, delivery owner, placement evidence, and accepted outcome**.

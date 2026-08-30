@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for owner-operated HVAC, plumbing, el
 productId: "estimate-followup-queue"
 productName: "Estimate Follow-Up Queue"
 generationFingerprint: "4eac085b965fb228f523"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for contractor estimate follow-up and quote tracking should be evaluated against the operating problem, not a generic feature checklist. For owner-operated HVAC, plumbing, electrical, and repair contractors, a useful trial must demonstrate this outcome: **every sent estimate reaches a documented customer decision or a deliberate next review date**.

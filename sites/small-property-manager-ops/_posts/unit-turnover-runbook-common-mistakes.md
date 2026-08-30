@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent residential property m
 productId: "unit-turnover-runbook"
 productName: "Unit Turnover Runbook"
 generationFingerprint: "3e44f0845f3b33b83d1f"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Turnover tasks live in separate vendor texts and checklists, so one missed dependency can delay listing or move-in readiness. The recurring failures are usually process-design problems rather than motivation problems. For independent residential property managers and small property teams, these are the mistakes worth finding before buying or building software.

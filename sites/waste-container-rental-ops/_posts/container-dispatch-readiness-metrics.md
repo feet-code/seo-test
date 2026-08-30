@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for small roll-off dum
 productId: "container-dispatch-readiness"
 productName: "Container Dispatch Readiness"
 generationFingerprint: "048c739fb4484138baa4"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for roll off dumpster delivery swap and pickup readiness should help small roll-off dumpster and commercial waste-container rental companies decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

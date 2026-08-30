@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent arborist, pruning, re
 productId: "tree-job-readiness-gate"
 productName: "Tree Job Readiness Gate"
 generationFingerprint: "2e0f5f8ab16f5ba2e200"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for tree service permit utility and site readiness should be evaluated against the operating problem, not a generic feature checklist. For independent arborist, pruning, removal, and plant-health-care companies, a useful trial must demonstrate this outcome: **every tree job is released only with site-specific scope, permissions, hazards, equipment, and access verified for the assigned crew**.

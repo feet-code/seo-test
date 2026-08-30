@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for independent catere
 productId: "dietary-confirmation-register"
 productName: "Dietary Confirmation Register"
 generationFingerprint: "f301d76191c691b289d9"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for catering dietary and allergen confirmation should help independent caterers and small event-food teams decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

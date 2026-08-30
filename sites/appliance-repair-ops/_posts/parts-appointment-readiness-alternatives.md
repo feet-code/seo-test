@@ -4,13 +4,9 @@ excerpt: "A practical alternatives comparison for independent appliance repair c
 productId: "parts-appointment-readiness"
 productName: "Parts Appointment Readiness"
 generationFingerprint: "897b962e251044b4d2c8"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 There are several valid ways to manage appliance repair parts appointment readiness. The right choice depends on volume, exception rate, ownership, and how much coordination crosses systems. Start with the smallest approach that keeps the work reliable.

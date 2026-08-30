@@ -4,13 +4,9 @@ excerpt: "A practical alternatives comparison for independent restaurants and sm
 productId: "manager-shift-handoff"
 productName: "Manager Shift Handoff"
 generationFingerprint: "08a0cbe60f3c1131ad16"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 There are several valid ways to manage restaurant manager shift handoff tracking. The right choice depends on volume, exception rate, ownership, and how much coordination crosses systems. Start with the smallest approach that keeps the work reliable.

@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent campgrounds, RV park
 productId: "campsite-turn-readiness"
 productName: "Campsite Turn Readiness"
 generationFingerprint: "eaef2147e99bd9795162"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Departed sites remain unavailable or are released too early because checkout, utilities, cleanup, damage, fire-ring or amenity checks, maintenance, and reservation status close separately. For independent campgrounds, RV parks, and small outdoor lodging properties, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every departing site is inspected, serviced, reconciled, and released for the next arrival or held with a visible reason**.

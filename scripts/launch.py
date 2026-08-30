@@ -102,8 +102,23 @@ def load_config(site_dir: Path) -> dict[str, Any]:
 def site_url(config: dict[str, Any]) -> str:
     if config.get("domain"):
         return "https://" + str(config["domain"]).rstrip("/")
-    project = config.get("deploy", {}).get("project", config["id"])
+    deploy = config.get("deploy", {})
+    if deploy.get("url"):
+        return str(deploy["url"]).rstrip("/")
+    project = deploy.get("project", config["id"])
+    provider = deploy.get("resolvedProvider") or deploy.get("provider", "cloudflare-pages")
+    if provider == "cloudflare-workers":
+        raise RuntimeError(
+            f"Worker URL for {project!r} is not resolved. Run with Cloudflare credentials "
+            "or set deploy.url in the site config."
+        )
     return f"https://{project}.pages.dev"
+
+
+def concrete_provider(config: dict[str, Any]) -> str:
+    deploy = config.get("deploy", {})
+    provider = str(deploy.get("resolvedProvider") or deploy.get("provider", "cloudflare-pages"))
+    return "cloudflare-pages" if provider in {"auto", "cloudflare-auto"} else provider
 
 
 def health(url: str) -> dict[str, Any]:
@@ -150,9 +165,35 @@ def _requested_site_ids(args: argparse.Namespace) -> set[str]:
     return requested
 
 
+def _requested_batches(args: argparse.Namespace) -> set[str]:
+    requested = set(args.batch or [])
+    if args.batches:
+        requested.update(value.strip() for value in args.batches.split(",") if value.strip())
+    return requested
+
+
+def _has_explicit_selection(args: argparse.Namespace) -> bool:
+    return bool(
+        args.site
+        or args.sites
+        or args.product
+        or args.batch
+        or args.batches
+        or args.limit
+    )
+
+
 def selected_sites(args: argparse.Namespace) -> list[Path]:
     configured = _configured_sites()
     requested = _requested_site_ids(args)
+    if args.resume and CHECKPOINT.exists() and not _has_explicit_selection(args):
+        checkpoint = json.loads(CHECKPOINT.read_text(encoding="utf-8"))
+        requested.update(str(value) for value in checkpoint.get("siteIds", []))
+        if requested:
+            print(
+                f"Restored {len(requested)} sites from the saved launch checkpoint.",
+                flush=True,
+            )
     missing = requested - configured.keys()
     if missing:
         raise SystemExit(f"Unknown site(s): {', '.join(sorted(missing))}")
@@ -183,6 +224,40 @@ def selected_sites(args: argparse.Namespace) -> list[Path]:
                 + ", ".join(sorted(outside))
             )
         requested = requested or resolved
+
+    requested_batches = _requested_batches(args)
+    available_batches = {
+        str(product.get("contentBatch"))
+        for _, config in configured.values()
+        for product in (config.get("products") or [])
+        if str(product.get("contentBatch", "")).strip()
+    }
+    unknown_batches = requested_batches - available_batches
+    if unknown_batches:
+        available = ", ".join(sorted(available_batches)) or "none"
+        raise SystemExit(
+            f"Unknown content batch(es): {', '.join(sorted(unknown_batches))}. "
+            f"Available batches: {available}"
+        )
+    if requested_batches:
+        batch_sites = {
+            site_id
+            for site_id, (_, config) in configured.items()
+            if any(
+                str(product.get("contentBatch")) in requested_batches
+                for product in (config.get("products") or [])
+            )
+        }
+        if requested:
+            outside = requested - batch_sites
+            if outside:
+                raise SystemExit(
+                    "Selected site/product filters do not belong to the requested batch(es): "
+                    + ", ".join(sorted(outside))
+                )
+            requested &= batch_sites
+        else:
+            requested = batch_sites
 
     active = {
         site_id: value
@@ -274,6 +349,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--site", action="append", help="Site ID; repeat for multiple sites")
     parser.add_argument("--sites", help="Comma-separated site IDs")
     parser.add_argument(
+        "--batch",
+        action="append",
+        help="Deploy sites containing this ideas.json contentBatch; repeat as needed",
+    )
+    parser.add_argument("--batches", help="Comma-separated contentBatch values")
+    parser.add_argument(
         "--product",
         action="append",
         help="Regenerate/deploy the site containing this product ID; repeat as needed",
@@ -284,8 +365,16 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--skip-generation", action="store_true")
     parser.add_argument(
         "--provider",
-        default="cloudflare-pages",
-        choices=["cloudflare-pages", "cloudflare-workers", "vercel", "netlify", "static"],
+        choices=[
+            "auto",
+            "cloudflare-auto",
+            "cloudflare-pages",
+            "cloudflare-workers",
+            "vercel",
+            "netlify",
+            "static",
+        ],
+        help="Override each site's configured provider; auto fills Pages first, then Workers",
     )
     args = parser.parse_args()
     if args.limit < 0:
@@ -357,7 +446,20 @@ def main() -> None:
         )
         try:
             config = load_config(site_dir)
-            config.setdefault("deploy", {})["provider"] = args.provider
+            if args.mock:
+                requested_provider = args.provider or str(
+                    config.get("deploy", {}).get("provider", "cloudflare-pages")
+                )
+                config.setdefault("deploy", {})["resolvedProvider"] = (
+                    "cloudflare-pages"
+                    if requested_provider in {"auto", "cloudflare-auto"}
+                    else requested_provider
+                )
+            else:
+                from monitoring import prepare_hosting
+
+                config = prepare_hosting(config, site_dir, args.provider)
+            provider = concrete_provider(config)
             target = site_url(config)
             if not args.mock:
                 from monitoring import provision
@@ -383,10 +485,10 @@ def main() -> None:
             build_env = build_environment(environment, config, site_dir, target, mock=args.mock)
             save_checkpoint(site_ids, index, step="build")
             run(["npm", "run", "build"], env=build_env, site_id=site_id, step="build")
-            if args.provider != "static":
+            if provider != "static":
                 save_checkpoint(site_ids, index, step="deploy")
                 run(
-                    [sys.executable, "scripts/site.py", "deploy", site_id, args.provider],
+                    [sys.executable, "scripts/site.py", "deploy", site_id, provider],
                     env=build_env,
                     site_id=site_id,
                     step="deploy",

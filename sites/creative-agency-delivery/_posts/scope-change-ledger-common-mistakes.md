@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small creative, design, and digita
 productId: "scope-change-ledger"
 productName: "Scope Change Ledger"
 generationFingerprint: "4970ab7eaf33fe9f1fea"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Extra requests are accepted in calls and chat without a clear record of their effect on deliverables, time, fees, or deadlines. The recurring failures are usually process-design problems rather than motivation problems. For small creative, design, and digital agencies, these are the mistakes worth finding before buying or building software.

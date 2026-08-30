@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for small commercial landscaping and r
 productId: "enhancement-approval-desk"
 productName: "Enhancement Approval Desk"
 generationFingerprint: "e7c620226846f251ad79"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for landscape enhancement proposal approval tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For small commercial landscaping and recurring property-maintenance companies, the target outcome is **every qualified enhancement request reaches a priced customer decision with field context, scope assumptions, and a scheduled or closed next action**.

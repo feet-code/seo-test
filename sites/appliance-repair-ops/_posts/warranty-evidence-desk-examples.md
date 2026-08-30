@@ -4,13 +4,9 @@ excerpt: "Three realistic workflow test cases for independent appliance repair c
 productId: "warranty-evidence-desk"
 productName: "Warranty Evidence Desk"
 generationFingerprint: "64170b502f8cf078413e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Examples make appliance repair warranty claim evidence tracking easier to design because they reveal where a neat diagram meets messy work. The scenarios below are not claims about a particular company; they are test cases independent appliance repair companies and small authorized-service teams can run against a template or software trial.

@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for boutique fitness studios and grou
 productId: "instructor-cover-board"
 productName: "Instructor Cover Board"
 generationFingerprint: "ef7529acd7ea71c612e4"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for fitness instructor substitution tracking should be evaluated against the operating problem, not a generic feature checklist. For boutique fitness studios and group-class operators, a useful trial must demonstrate this outcome: **every instructor absence is covered by an eligible substitute or escalated to a documented class change before members arrive**.

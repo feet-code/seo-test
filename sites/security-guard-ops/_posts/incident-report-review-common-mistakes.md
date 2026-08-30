@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small contract security companies 
 productId: "incident-report-review"
 productName: "Incident Report Review"
 generationFingerprint: "cbd50a0261c9afadb15e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Guard reports can be submitted with missing timeline, people, location, actions, or media, while supervisors need to review and deliver client-ready records quickly. The recurring failures are usually process-design problems rather than motivation problems. For small contract security companies and guard supervisors, these are the mistakes worth finding before buying or building software.

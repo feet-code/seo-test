@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small freight brokerages and shipp
 productId: "carrier-packet-completeness"
 productName: "Carrier Packet Completeness"
 generationFingerprint: "82cc371059776a3c0dba"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Carrier onboarding documents, authority checks, insurance evidence, agreements, payment details, and internal approvals arrive through portals and email without one load-ready decision. The recurring failures are usually process-design problems rather than motivation problems. For small freight brokerages and shipper-carrier coordination teams, these are the mistakes worth finding before buying or building software.

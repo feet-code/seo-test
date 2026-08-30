@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent equipment, tool, and e
 productId: "overdue-rental-followup"
 productName: "Overdue Rental Follow-Up"
 generationFingerprint: "69e2a16f7956184e3ed4"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 When an asset is not returned, contract status, customer contact, extension approval, future reservation impact, and billing changes are coordinated manually. The recurring failures are usually process-design problems rather than motivation problems. For independent equipment, tool, and event-rental businesses, these are the mistakes worth finding before buying or building software.

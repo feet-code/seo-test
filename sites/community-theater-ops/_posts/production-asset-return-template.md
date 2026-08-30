@@ -4,13 +4,9 @@ excerpt: "A practical record template for community theaters and volunteer-led s
 productId: "production-asset-return"
 productName: "Production Asset Return"
 generationFingerprint: "6d72e4b7e0c557eb01bc"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful theater prop and costume return tracking template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small wholesale and direct-store
 productId: "label-change-approval"
 productName: "Label Change Approval"
 generationFingerprint: "5e61ba41bf7549364b00"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Recipe, supplier, allergen, nutrition, claim, package size, customer, and regulatory text changes can produce multiple label files with no reliable effective lot or approval trail. For small wholesale and direct-store-delivery bakeries, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every label change is reviewed by the responsible people, tied to effective product and lot boundaries, and verified at first production use**.

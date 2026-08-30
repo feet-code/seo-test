@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent pet boarding facilitie
 productId: "vaccination-record-chaser"
 productName: "Vaccination Record Chaser"
 generationFingerprint: "c5c221f95bdca6428946"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Bookings reach check-in with missing, unreadable, expired, or unreviewed vaccination documents because upload status and facility approval are treated as the same event. The recurring failures are usually process-design problems rather than motivation problems. For independent pet boarding facilities and dog daycare operators, these are the mistakes worth finding before buying or building software.

@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent caterers and small e
 productId: "dietary-confirmation-register"
 productName: "Dietary Confirmation Register"
 generationFingerprint: "f301d76191c691b289d9"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Dietary requests arrive through proposals, guest lists, planners, and last-minute emails, while kitchens need one approved interpretation tied to menu and service decisions. For independent caterers and small event-food teams, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every declared dietary or allergen requirement is clarified, approved into the event plan, and communicated to production and service owners**.

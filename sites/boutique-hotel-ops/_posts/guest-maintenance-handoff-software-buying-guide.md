@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent boutique hotels and s
 productId: "guest-maintenance-handoff"
 productName: "Guest Maintenance Handoff"
 generationFingerprint: "29012b37403637ad204e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for hotel guest maintenance handoff should be evaluated against the operating problem, not a generic feature checklist. For independent boutique hotels and small hospitality teams, a useful trial must demonstrate this outcome: **every guest-impacting maintenance issue has a coordinated access plan, verified repair, and completed guest follow-up**.

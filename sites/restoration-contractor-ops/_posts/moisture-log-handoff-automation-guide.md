@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for small water, fire, and property-re
 productId: "moisture-log-handoff"
 productName: "Moisture Log Handoff"
 generationFingerprint: "06978ed3ffd0b3324be4"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for water restoration moisture log handoff should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For small water, fire, and property-restoration contractors, the target outcome is **every drying visit produces a time-stamped, location-specific record that supports the next field decision and controlled job documentation**.

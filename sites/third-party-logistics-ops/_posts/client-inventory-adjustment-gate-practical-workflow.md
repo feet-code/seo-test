@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small third-party logistics ware
 productId: "client-inventory-adjustment-gate"
 productName: "Client Inventory Adjustment Gate"
 generationFingerprint: "95e32539c7fb3d380205"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Cycle counts and investigations identify differences, but quantity changes can be posted without consistent reason, evidence, client authority, or billing and claim consequences. For small third-party logistics warehouses and fulfillment operators, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every material inventory adjustment is evidenced, approved to client rules, posted once, and communicated with downstream impact**.

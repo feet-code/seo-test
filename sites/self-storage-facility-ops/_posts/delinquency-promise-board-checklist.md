@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent self-storage faci
 productId: "delinquency-promise-board"
 productName: "Delinquency Promise Board"
 generationFingerprint: "e6792f9ff583a53ae077"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for self-storage delinquency follow-up tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent self-storage facilities and small multi-site operators and centers on one result: **every delinquent account has a policy-based next action, documented tenant response, and verified stop condition**.

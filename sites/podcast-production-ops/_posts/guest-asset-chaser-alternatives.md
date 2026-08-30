@@ -4,13 +4,9 @@ excerpt: "A practical alternatives comparison for independent podcast producers 
 productId: "guest-asset-chaser"
 productName: "Guest Asset Chaser"
 generationFingerprint: "847c9b89f655836e541c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 There are several valid ways to manage podcast guest asset and release tracking. The right choice depends on volume, exception rate, ownership, and how much coordination crosses systems. Start with the smallest approach that keeps the work reliable.

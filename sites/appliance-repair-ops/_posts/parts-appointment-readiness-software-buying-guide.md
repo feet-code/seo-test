@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent appliance repair comp
 productId: "parts-appointment-readiness"
 productName: "Parts Appointment Readiness"
 generationFingerprint: "897b962e251044b4d2c8"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for appliance repair parts appointment readiness should be evaluated against the operating problem, not a generic feature checklist. For independent appliance repair companies and small authorized-service teams, a useful trial must demonstrate this outcome: **every parts-dependent appointment is released only after the exact usable parts, job scope, technician capability, and customer access are confirmed**.

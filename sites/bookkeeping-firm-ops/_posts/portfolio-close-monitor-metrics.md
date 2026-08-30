@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for small bookkeeping 
 productId: "portfolio-close-monitor"
 productName: "Portfolio Close Monitor"
 generationFingerprint: "98f8e4e4a7f8b578968e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for bookkeeping month-end close checklist and portfolio tracking should help small bookkeeping firms and client accounting service teams decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

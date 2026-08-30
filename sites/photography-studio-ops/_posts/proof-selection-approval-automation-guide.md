@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent photography studios an
 productId: "proof-selection-approval"
 productName: "Proof Selection Approval"
 generationFingerprint: "f134829b77ef8c17c3a5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for photography client proof selection and approval should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent photography studios and small commercial photo teams, the target outcome is **every client selection and approval identifies the exact images, revision, intended output, approver, and final decision**.

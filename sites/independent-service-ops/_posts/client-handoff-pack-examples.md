@@ -4,13 +4,9 @@ excerpt: "Three realistic workflow test cases for freelancers and independent pr
 productId: "client-handoff-pack"
 productName: "Client Handoff Pack"
 generationFingerprint: "5aebd58026e80a21e859"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Examples make freelancer client project handoff and offboarding checklists easier to design because they reveal where a neat diagram meets messy work. The scenarios below are not claims about a particular company; they are test cases freelancers and independent professional service businesses can run against a template or software trial.

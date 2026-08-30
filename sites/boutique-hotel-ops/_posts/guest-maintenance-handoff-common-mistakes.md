@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent boutique hotels and sm
 productId: "guest-maintenance-handoff"
 productName: "Guest Maintenance Handoff"
 generationFingerprint: "29012b37403637ad204e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 In-stay maintenance reports pass among front desk, housekeeping, engineering, and vendors while room access, guest promises, compensations, and verification are tracked separately. The recurring failures are usually process-design problems rather than motivation problems. For independent boutique hotels and small hospitality teams, these are the mistakes worth finding before buying or building software.

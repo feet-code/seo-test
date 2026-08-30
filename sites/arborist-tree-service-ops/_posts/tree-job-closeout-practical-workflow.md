@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent arborist, pruning, r
 productId: "tree-job-closeout"
 productName: "Tree Job Closeout"
 generationFingerprint: "63fbceaed6f7d6db1cac"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A removal or pruning crew can leave while debris, stump work, wood disposition, property damage, permit conditions, customer walkthrough, or invoice evidence remains unresolved. For independent arborist, pruning, removal, and plant-health-care companies, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every tree job closes with contracted scope, site cleanup, retained materials, follow-on work, and customer-facing evidence reconciled**.

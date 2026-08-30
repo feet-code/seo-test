@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent pet boarding facilitie
 productId: "boarding-pickup-handoff"
 productName: "Boarding Pickup Handoff"
 generationFingerprint: "ce39d026a5203e987a51"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for pet boarding pickup readiness should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent pet boarding facilities and dog daycare operators, the target outcome is **every departing pet is released to an authorized person with belongings, balance, and approved stay handoff reconciled**.

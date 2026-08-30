@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent pool maintenance and
 productId: "pool-repair-approval-queue"
 productName: "Pool Repair Approval Queue"
 generationFingerprint: "df1d0b92ec31df5b8ef9"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:22Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Technician findings, photos, equipment identity, repair options, customer questions, parts availability, and approval expire across field notes and email while the pool remains impaired. For independent pool maintenance and repair companies running recurring routes, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every repair finding becomes a complete customer decision with current scope, price, parts expectation, and an owned next action**.

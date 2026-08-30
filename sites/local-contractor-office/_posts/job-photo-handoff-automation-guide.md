@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for owner-operated HVAC, plumbing, ele
 productId: "job-photo-handoff"
 productName: "Job Photo Handoff"
 generationFingerprint: "bd22fa439fee0cbce6b8"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for contractor job photo documentation and field office handoff should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For owner-operated HVAC, plumbing, electrical, and repair contractors, the target outcome is **the office receives a job-linked, labeled photo record that is sufficient for the next billing, customer, or service decision**.

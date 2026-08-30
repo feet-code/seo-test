@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent boutique hotels and 
 productId: "guest-maintenance-handoff"
 productName: "Guest Maintenance Handoff"
 generationFingerprint: "29012b37403637ad204e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 In-stay maintenance reports pass among front desk, housekeeping, engineering, and vendors while room access, guest promises, compensations, and verification are tracked separately. For independent boutique hotels and small hospitality teams, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every guest-impacting maintenance issue has a coordinated access plan, verified repair, and completed guest follow-up**.

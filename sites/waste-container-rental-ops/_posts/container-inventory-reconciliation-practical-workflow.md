@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small roll-off dumpster and comm
 productId: "container-inventory-reconciliation"
 productName: "Container Inventory Reconciliation"
 generationFingerprint: "22ba130e6b546eced140"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Yard counts, dispatched movements, customer sites, repair holds, lost units, and billing records diverge, making available inventory unreliable precisely when dispatch needs it. For small roll-off dumpster and commercial waste-container rental companies, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every container has one verified physical location, service state, billing relationship, and next movement or review time**.

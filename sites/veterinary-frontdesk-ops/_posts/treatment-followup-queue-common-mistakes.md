@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent veterinary clinics and
 productId: "treatment-followup-queue"
 productName: "Treatment Follow-Up Queue"
 generationFingerprint: "09608c54caa55cf366b7"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Routine post-visit check-ins are easy to miss when clinical instructions are in the patient record but callback promises sit in personal task lists. The recurring failures are usually process-design problems rather than motivation problems. For independent veterinary clinics and small client-service teams, these are the mistakes worth finding before buying or building software.

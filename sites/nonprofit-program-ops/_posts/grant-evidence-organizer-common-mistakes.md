@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small nonprofit direct-service and
 productId: "grant-evidence-organizer"
 productName: "Grant Evidence Organizer"
 generationFingerprint: "9ec3bc43665b6698ccc5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Teams reconstruct grant reports from folders and spreadsheets because evidence is not linked to the reporting question, period, program, source, and reviewer. The recurring failures are usually process-design problems rather than motivation problems. For small nonprofit direct-service and program teams, these are the mistakes worth finding before buying or building software.

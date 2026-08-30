@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small wholesale and direct-store
 productId: "route-shortage-recovery"
 productName: "Route Shortage Recovery"
 generationFingerprint: "44ab9b35c23816f39c60"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Production shortfalls, quality holds, picking mistakes, vehicle capacity, late account changes, and stale-product decisions force route substitutions or shorts without one approved customer outcome. For small wholesale and direct-store-delivery bakeries, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every delivery shortage has a quantified gap, product disposition, account-specific decision, route communication, and billing reconciliation**.

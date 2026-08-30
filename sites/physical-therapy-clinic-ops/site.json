@@ -1,0 +1,60 @@
+{
+  "id": "physical-therapy-clinic-ops",
+  "name": "Physical Therapy Clinic Operations",
+  "domain": null,
+  "audience": "independent physical therapy clinics and small rehabilitation practices",
+  "topic": "referral paperwork and visit-plan administration for physical therapy clinics",
+  "products": [
+    {
+      "id": "pt-referral-paperwork-queue",
+      "name": "PT Referral Paperwork Queue",
+      "product": "A focused physical therapy referral and authorization paperwork workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent physical therapy clinics and small rehabilitation practices",
+      "problem": "Referral orders, payer steps, demographics, prior records, scheduling, and patient outreach mature separately before the first visit.",
+      "valueProposition": "Turns physical therapy referral and authorization paperwork into a visible operating queue so every scheduled evaluation has its clinic-defined administrative prerequisites complete or an owned exception.",
+      "topic": "physical therapy referral and authorization paperwork",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets physical therapy referral and authorization paperwork software, physical therapy referral and authorization paperwork tracker, physical therapy referral and authorization paperwork template, and physical therapy referral and authorization paperwork checklist searches.",
+      "score": 82,
+      "contentBatch": "batch-005"
+    },
+    {
+      "id": "pt-visit-plan-admin",
+      "name": "PT Visit Plan Admin",
+      "product": "A focused physical therapy visit plan administration workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent physical therapy clinics and small rehabilitation practices",
+      "problem": "Approved visit counts, appointment use, cancellations, plan dates, progress-report due points, and scheduling decisions drift across systems.",
+      "valueProposition": "Turns physical therapy visit plan administration into a visible operating queue so every administrative visit-plan exception has a current count, owner, and documented scheduling or payer next step.",
+      "topic": "physical therapy visit plan administration",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets physical therapy visit plan administration software, physical therapy visit plan administration tracker, physical therapy visit plan administration template, and physical therapy visit plan administration checklist searches.",
+      "score": 83,
+      "contentBatch": "batch-005"
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused physical therapy referral and authorization paperwork workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns physical therapy referral and authorization paperwork into a visible operating queue so every scheduled evaluation has its clinic-defined administrative prerequisites complete or an owned exception.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "physical-therapy-clinic-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

@@ -4,13 +4,9 @@ excerpt: "Three realistic workflow test cases for independent express, tunnel, a
 productId: "membership-billing-exception"
 productName: "Membership Billing Exception"
 generationFingerprint: "d464de272caa742d908b"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Examples make car wash membership billing exception tracking easier to design because they reveal where a neat diagram meets messy work. The scenarios below are not claims about a particular company; they are test cases independent express, tunnel, and multi-bay car wash operators can run against a template or software trial.

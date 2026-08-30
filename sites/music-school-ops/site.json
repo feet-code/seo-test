@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets music lesson makeup tracker, music school lesson credits, makeup lesson policy, and music studio scheduling exceptions searches.",
-      "score": 84
+      "score": 84,
+      "contentBatch": "batch-002"
     }
   ],
   "articlesPerProduct": 10,
@@ -26,12 +27,7 @@
   "valueProposition": "Turns music school makeup lesson credit tracking into a visible operating queue so every eligible missed lesson becomes one scheduled makeup, valid credit, policy closure, or billing adjustment with a clear expiration.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

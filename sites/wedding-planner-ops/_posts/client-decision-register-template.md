@@ -4,13 +4,9 @@ excerpt: "A practical record template for independent wedding planners and bouti
 productId: "client-decision-register"
 productName: "Client Decision Register"
 generationFingerprint: "5a3e4660c86159bff7c5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful wedding client decision tracking template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

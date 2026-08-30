@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small freight brokerages and ship
 productId: "detention-evidence-desk"
 productName: "Detention Evidence Desk"
 generationFingerprint: "14e2144847e351cd03f6"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for freight detention evidence tracking should be evaluated against the operating problem, not a generic feature checklist. For small freight brokerages and shipper-carrier coordination teams, a useful trial must demonstrate this outcome: **every detention request is evaluated from agreed terms and time evidence, then reconciled across customer charge and carrier payment**.

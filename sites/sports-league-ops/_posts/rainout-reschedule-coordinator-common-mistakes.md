@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for community sports leagues and small
 productId: "rainout-reschedule-coordinator"
 productName: "Rainout Reschedule Coordinator"
 generationFingerprint: "9c568af6a0595f6334c2"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A field closure changes games, teams, officials, facilities, standings, and family communications, but coordinators often update each dependency separately. The recurring failures are usually process-design problems rather than motivation problems. For community sports leagues and small tournament operators, these are the mistakes worth finding before buying or building software.

@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for small commercial laundries an
 productId: "linen-delivery-exception"
 productName: "Linen Delivery Exception"
 generationFingerprint: "2d7891eb4073a55e8de0"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for commercial laundry delivery exception tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for small commercial laundries and linen or uniform rental services and centers on one result: **every route delivery exception has verified quantities, customer acknowledgment, recovery plan, and corrected inventory and billing records**.

@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent funeral homes and sm
 productId: "arrangement-readiness-board"
 productName: "Arrangement Readiness Board"
 generationFingerprint: "f8cdeb14710adbfcca14"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Family decisions, vital information, authorizations, permits, contracts, obituary assets, merchandise selections, payment, and third-party confirmations mature at different times before services. For independent funeral homes and small death-care service teams, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every case has human-reviewed required decisions, documents, authorizations, and exceptions visible against the actual service timeline**.

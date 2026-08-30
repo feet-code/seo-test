@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent pest control companie
 productId: "customer-prep-confirmation"
 productName: "Customer Prep Confirmation"
 generationFingerprint: "3f515c2fd62418cfa183"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:22Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for pest control service preparation confirmation should be evaluated against the operating problem, not a generic feature checklist. For independent pest control companies and small recurring-service teams, a useful trial must demonstrate this outcome: **every treatment starts with the required customer preparation confirmed or a documented service decision before technician arrival**.

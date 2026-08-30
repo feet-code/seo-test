@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent craft breweries o
 productId: "taproom-event-shift-handoff"
 productName: "Taproom Event Shift Handoff"
 generationFingerprint: "94a47a271e27fe4d5f1f"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for brewery taproom event shift handoff tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent craft breweries operating one or more taprooms and centers on one result: **every taproom event transfers into the operating shift with current commitments, assigned setup, commercial terms, contacts, and explicit manager acceptance**.

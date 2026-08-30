@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent bicycle repair sh
 productId: "bike-pickup-readiness"
 productName: "Bike Pickup Readiness"
 generationFingerprint: "123b82c86097e17bc4c5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for bike repair pickup readiness should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent bicycle repair shops and service departments and centers on one result: **every completed bicycle is quality-checked, fully assembled with customer property, reconciled financially, and staged before pickup notification**.

@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent restaurants and small 
 productId: "prep-shortage-recovery"
 productName: "Prep Shortage Recovery"
 generationFingerprint: "677d447bf38ddb9c54dc"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for restaurant prep shortage tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent restaurants and small multi-location restaurant groups, the target outcome is **every service-impacting prep shortage has a quantified gap, approved response, owner, and communicated menu consequence**.

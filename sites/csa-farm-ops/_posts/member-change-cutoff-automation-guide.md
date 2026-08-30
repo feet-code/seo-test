@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for small community-supported agricult
 productId: "member-change-cutoff"
 productName: "Member Change Cutoff"
 generationFingerprint: "f44afdbf2a92d0b6b942"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for CSA skip swap and pickup change tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For small community-supported agriculture farms and farm-box programs, the target outcome is **every eligible member change is applied before the correct packing and route cutoff or closed with a clear alternative**.

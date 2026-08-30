@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for boutique translation agencies and
 productId: "reviewer-handoff-tracker"
 productName: "Reviewer Handoff Tracker"
 generationFingerprint: "25f5d2324479f33454ce"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for translation reviewer handoff tracking should be evaluated against the operating problem, not a generic feature checklist. For boutique translation agencies and localization project teams, a useful trial must demonstrate this outcome: **every review handoff transfers the correct version, scope, references, deadline, and explicit acceptance to the next reviewer**.

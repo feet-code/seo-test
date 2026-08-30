@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small roll-off dumpster and commer
 productId: "container-dispatch-readiness"
 productName: "Container Dispatch Readiness"
 generationFingerprint: "048c739fb4484138baa4"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Delivery, swap, pickup, and live-load orders fail when container size, availability, site placement, truck access, material restrictions, disposal facility, or customer timing is unresolved. The recurring failures are usually process-design problems rather than motivation problems. For small roll-off dumpster and commercial waste-container rental companies, these are the mistakes worth finding before buying or building software.

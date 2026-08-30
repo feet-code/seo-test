@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for small creative, design, and d
 productId: "scope-change-ledger"
 productName: "Scope Change Ledger"
 generationFingerprint: "4970ab7eaf33fe9f1fea"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for agency scope change and change request tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for small creative, design, and digital agencies and centers on one result: **every meaningful scope change is accepted, traded, deferred, or declined with its delivery impact visible**.

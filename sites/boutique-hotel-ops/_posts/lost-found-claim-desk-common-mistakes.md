@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent boutique hotels and sm
 productId: "lost-found-claim-desk"
 productName: "Lost and Found Claim Desk"
 generationFingerprint: "0a5d4ce4446069fc7d6a"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Found-item logs, guest descriptions, storage locations, identity checks, shipping choices, and release evidence are difficult to reconcile across shifts. The recurring failures are usually process-design problems rather than motivation problems. For independent boutique hotels and small hospitality teams, these are the mistakes worth finding before buying or building software.

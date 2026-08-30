@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent dental laboratories se
 productId: "esthetic-approval-queue"
 productName: "Esthetic Approval Queue"
 generationFingerprint: "f21e1038d6dbdb67e762"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for dental lab shade and design approval tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent dental laboratories serving local dental practices, the target outcome is **every requested esthetic or design decision is tied to a specific review artifact, authorized practice response, effective version, and production release**.

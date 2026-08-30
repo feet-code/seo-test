@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small water, fire, and property-
 productId: "moisture-log-handoff"
 productName: "Moisture Log Handoff"
 generationFingerprint: "06978ed3ffd0b3324be4"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Field readings, photos, equipment placement, affected materials, and daily decisions can remain on technician devices or in unstructured notes while office and next-shift staff need a defensible job history. For small water, fire, and property-restoration contractors, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every drying visit produces a time-stamped, location-specific record that supports the next field decision and controlled job documentation**.

@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for small managed service providers an
 productId: "client-access-request-gate"
 productName: "Client Access Request Gate"
 generationFingerprint: "a423039ededf9b3c3463"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for MSP client access request approval should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For small managed service providers and multi-client IT support teams, the target outcome is **every client access change is authorized by the right person, implemented to the approved scope, and evidenced in the client record**.

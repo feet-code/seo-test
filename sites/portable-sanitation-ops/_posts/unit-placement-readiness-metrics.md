@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for portable restroom 
 productId: "unit-placement-readiness"
 productName: "Unit Placement Readiness"
 generationFingerprint: "b8ccd4dd7c4523946a7e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for portable restroom delivery placement readiness should help portable restroom rental and recurring sanitation service operators decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

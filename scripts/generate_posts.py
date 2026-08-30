@@ -102,8 +102,6 @@ def example_format() -> str:
 
 
 def prompt_for(site: dict[str, Any], product: dict[str, Any], count: int) -> str:
-    author = site.get("author", {})
-    images = site.get("images", {})
     peers = [
         {"name": item.get("name"), "url": f"/products/{item.get('id')}"}
         for item in site_products(site)
@@ -129,13 +127,10 @@ problem diagnosis, comparisons/alternatives, workflow instructions, and purchase
 post must be genuinely useful and specific enough to rank independently. Where contextually helpful, include
 one natural Markdown link to a complementary product page. Do not force cross-links. Do not invent statistics,
 customers, quotes, laws, product capabilities, or keyword-volume numbers. Do not keyword-stuff or write generic
-filler. Return ONLY a JSON array with slug, title, excerpt, and content (Markdown); no YAML frontmatter.
+filler. Do not include photos, image Markdown, HTML image tags, or image placeholders. Return ONLY a JSON array
+with slug, title, excerpt, and content (Markdown); no YAML frontmatter.
 
-Match this structural example: {example_format()}
-Use author {author.get('name', 'John Smith')}, author picture
-{author.get('picture', '/assets/blog/authors/jj.jpeg')}, cover image
-{images.get('coverImage', '/assets/blog/preview/cover.jpg')}, and OG image
-{images.get('ogImage', '/assets/blog/dynamic-routing/cover.jpg')}."""
+Match this structural example: {example_format()}"""
 
 
 def mock_articles(product: dict[str, Any], count: int) -> list[dict[str, str]]:
@@ -263,6 +258,16 @@ def safe_slug(value: str) -> str:
     return result
 
 
+_MARKDOWN_IMAGE = re.compile(r"!\[([^\]]*)\]\([^\n)]*\)")
+_HTML_IMAGE = re.compile(r"<img\b[^>]*>", re.IGNORECASE)
+
+
+def strip_images(content: str) -> str:
+    """Remove model-produced image markup while preserving useful alt text."""
+    content = _MARKDOWN_IMAGE.sub(lambda match: match.group(1).strip(), content)
+    return _HTML_IMAGE.sub("", content).strip()
+
+
 def existing_product_posts(directory: Path, product_id: str) -> list[Path]:
     result = []
     marker = f"productId: {json.dumps(product_id, ensure_ascii=False)}"
@@ -304,12 +309,11 @@ def write_product_posts(
     now = datetime.now(timezone.utc).replace(microsecond=0)
     seen: set[str] = set()
     author = site.get("author", {})
-    images = site.get("images", {})
     written: list[Path] = []
     for index, article in enumerate(articles):
         title = str(article.get("title", "")).strip()
         excerpt = str(article.get("excerpt", "")).strip()
-        content = str(article.get("content", "")).strip()
+        content = strip_images(str(article.get("content", "")).strip())
         article_slug = safe_slug(str(article.get("slug", title)))
         product_prefix = product_id[:48].rstrip("-")
         article_limit = max(24, 116 - len(product_prefix))
@@ -327,13 +331,9 @@ def write_product_posts(
                 f"productId: {json.dumps(product_id, ensure_ascii=False)}",
                 f"productName: {json.dumps(product.get('name') or product_id, ensure_ascii=False)}",
                 f"generationFingerprint: {json.dumps(fingerprint)}",
-                f"coverImage: {json.dumps(images.get('coverImage', '/assets/blog/preview/cover.jpg'))}",
                 f"date: {json.dumps(now.isoformat().replace('+00:00', 'Z'))}",
                 "author:",
                 f"  name: {json.dumps(author.get('name', 'John Smith'))}",
-                f"  picture: {json.dumps(author.get('picture', '/assets/blog/authors/jj.jpeg'))}",
-                "ogImage:",
-                f"  url: {json.dumps(images.get('ogImage', '/assets/blog/dynamic-routing/cover.jpg'))}",
                 "---",
                 "",
                 content,

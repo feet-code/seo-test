@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent sign shops, commercial
 productId: "install-readiness-board"
 productName: "Install Readiness Board"
 generationFingerprint: "2327a8a9aba184fc0b0d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Fabrication completion does not guarantee install readiness when permits, site access, survey dimensions, hardware, equipment, crew, weather, and customer windows remain open. The recurring failures are usually process-design problems rather than motivation problems. For independent sign shops, commercial printers, and display fabricators, these are the mistakes worth finding before buying or building software.

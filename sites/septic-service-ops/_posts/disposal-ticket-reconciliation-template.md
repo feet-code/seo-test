@@ -4,13 +4,9 @@ excerpt: "A practical record template for small septic pumping, inspection, and 
 productId: "disposal-ticket-reconciliation"
 productName: "Disposal Ticket Reconciliation"
 generationFingerprint: "319f2a94a04dacc4627c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful septic disposal ticket and pump record reconciliation template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

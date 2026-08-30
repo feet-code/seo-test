@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for small nonprofit direct-servic
 productId: "grant-evidence-organizer"
 productName: "Grant Evidence Organizer"
 generationFingerprint: "9ec3bc43665b6698ccc5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for nonprofit grant reporting evidence and outcome documentation should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for small nonprofit direct-service and program teams and centers on one result: **each reporting statement can be traced to reviewed, appropriately handled evidence for the correct period and program**.

@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for small wholesale an
 productId: "label-change-approval"
 productName: "Label Change Approval"
 generationFingerprint: "5e61ba41bf7549364b00"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for wholesale bakery allergen and label change approval should help small wholesale and direct-store-delivery bakeries decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

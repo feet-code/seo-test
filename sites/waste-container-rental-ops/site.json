@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets dumpster dispatch software, roll off container tracking, dumpster swap scheduling, and container delivery checklist searches.",
-      "score": 90
+      "score": 90,
+      "contentBatch": "batch-004"
     },
     {
       "id": "overage-evidence-desk",
@@ -31,7 +32,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets dumpster overage charges, dumpster contamination photos, roll off dry run fee, and waste exception billing searches.",
-      "score": 91
+      "score": 91,
+      "contentBatch": "batch-004"
     },
     {
       "id": "container-inventory-reconciliation",
@@ -45,7 +47,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets roll off container inventory, dumpster fleet tracking, container reconciliation, and dumpster asset location searches.",
-      "score": 88
+      "score": 88,
+      "contentBatch": "batch-004"
     }
   ],
   "articlesPerProduct": 10,
@@ -54,12 +57,7 @@
   "valueProposition": "Turns roll off dumpster delivery swap and pickup readiness into a visible operating queue so every container movement is released with an available asset, compatible truck, approved site action, material path, and current customer promise.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

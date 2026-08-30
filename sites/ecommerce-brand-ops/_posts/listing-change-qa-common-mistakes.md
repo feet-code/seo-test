@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small direct-to-consumer ecommerce
 productId: "listing-change-qa"
 productName: "Listing Change QA"
 generationFingerprint: "2d5f627347ff054bfca7"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Price, copy, media, variant, and policy edits are published across storefronts without a consistent request, approval, or post-publish check. The recurring failures are usually process-design problems rather than motivation problems. For small direct-to-consumer ecommerce brands and lean operations teams, these are the mistakes worth finding before buying or building software.

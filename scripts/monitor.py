@@ -15,7 +15,10 @@ STATE = ROOT / ".deploy" / "monitor"
 def url(config: dict) -> str:
     if config.get("domain"):
         return "https://" + config["domain"].rstrip("/")
-    return f"https://{config.get('deploy', {}).get('project', config['id'])}.pages.dev"
+    deploy = config.get("deploy", {})
+    if deploy.get("url"):
+        return str(deploy["url"]).rstrip("/")
+    return f"https://{deploy.get('project', config['id'])}.pages.dev"
 
 
 def check(target: str) -> dict:

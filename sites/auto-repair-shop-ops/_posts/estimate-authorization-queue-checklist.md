@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent auto repair shops
 productId: "estimate-authorization-queue"
 productName: "Estimate Authorization Queue"
 generationFingerprint: "4e1afb63fb72eaebd7a9"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for repair estimate authorization tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent auto repair shops and service-advisor teams and centers on one result: **every pending estimate has a documented customer decision, next follow-up, or closed reason**.

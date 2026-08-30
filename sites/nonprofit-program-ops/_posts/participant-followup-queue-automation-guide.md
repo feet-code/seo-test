@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for small nonprofit direct-service and
 productId: "participant-followup-queue"
 productName: "Participant Follow-Up Queue"
 generationFingerprint: "d061246b903229f78d6c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for nonprofit participant follow-up and referral tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For small nonprofit direct-service and program teams, the target outcome is **every consented program follow-up reaches a documented next step or closed reason without unnecessary data collection**.

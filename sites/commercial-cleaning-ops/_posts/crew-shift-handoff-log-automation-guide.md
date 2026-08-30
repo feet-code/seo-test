@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for owner-operated commercial cleaning
 productId: "crew-shift-handoff-log"
 productName: "Crew Shift Handoff Log"
 generationFingerprint: "3a60241865284dc0635d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for commercial cleaning shift handoff and crew communication logs should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For owner-operated commercial cleaning and janitorial companies, the target outcome is **the next responsible person starts with a clear list of unresolved location-specific exceptions**.

@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent conference organizer
 productId: "speaker-asset-chaser"
 productName: "Speaker Asset Chaser"
 generationFingerprint: "b1a600f7c9fdae95e9c8"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Bios, headshots, titles, abstracts, slides, releases, travel details, and AV needs arrive through different speaker email threads and versions. For independent conference organizers and small trade-show teams, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every confirmed speaker has the approved assets and permissions required for agenda publication, production, and session delivery**.

@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for owner-operated HVAC, plumbing, ele
 productId: "estimate-followup-queue"
 productName: "Estimate Follow-Up Queue"
 generationFingerprint: "4eac085b965fb228f523"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for contractor estimate follow-up and quote tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For owner-operated HVAC, plumbing, electrical, and repair contractors, the target outcome is **every sent estimate reaches a documented customer decision or a deliberate next review date**.

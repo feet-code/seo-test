@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent auto repair shops an
 productId: "estimate-authorization-queue"
 productName: "Estimate Authorization Queue"
 generationFingerprint: "4e1afb63fb72eaebd7a9"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Estimates waiting for customer approval are split across repair-order notes, calls, and texts, leaving bays idle and service promises uncertain. For independent auto repair shops and service-advisor teams, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every pending estimate has a documented customer decision, next follow-up, or closed reason**.

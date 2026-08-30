@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent pest control companies
 productId: "technician-stock-readiness"
 productName: "Technician Stock Readiness"
 generationFingerprint: "bf59102a8a4ce031ebff"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:22Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Technicians discover missing product, traps, PPE, forms, or replacement equipment after routes begin because truck stock and planned service demand are reconciled separately. The recurring failures are usually process-design problems rather than motivation problems. For independent pest control companies and small recurring-service teams, these are the mistakes worth finding before buying or building software.

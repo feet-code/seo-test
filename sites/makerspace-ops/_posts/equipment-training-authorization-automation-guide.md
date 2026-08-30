@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for community makerspaces, fabrication
 productId: "equipment-training-authorization"
 productName: "Equipment Training Authorization"
 generationFingerprint: "a12717ecdc524c8530f3"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for makerspace equipment training authorization tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For community makerspaces, fabrication labs, and shared technical workshops, the target outcome is **every equipment access grant is tied to current membership, documented prerequisites, named trainer approval, policy version, and matching access-control state**.

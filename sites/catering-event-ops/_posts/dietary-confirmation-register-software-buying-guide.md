@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent caterers and small ev
 productId: "dietary-confirmation-register"
 productName: "Dietary Confirmation Register"
 generationFingerprint: "f301d76191c691b289d9"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for catering dietary and allergen confirmation should be evaluated against the operating problem, not a generic feature checklist. For independent caterers and small event-food teams, a useful trial must demonstrate this outcome: **every declared dietary or allergen requirement is clarified, approved into the event plan, and communicated to production and service owners**.

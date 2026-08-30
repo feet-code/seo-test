@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small wineries running direct-to
 productId: "club-pickup-reconciliation"
 productName: "Club Pickup Reconciliation"
 generationFingerprint: "ffe2a2bb9cb2473b88e9"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Pickup orders remain in storage for months while reminders, partial pickups, authorized collectors, converted shipping, inventory custody, payment, and cancellation rules are handled inconsistently. For small wineries running direct-to-consumer wine clubs and pickup programs, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every club pickup order is staged and released accurately, converted or canceled by an approved rule, and reconciled to member and inventory records**.

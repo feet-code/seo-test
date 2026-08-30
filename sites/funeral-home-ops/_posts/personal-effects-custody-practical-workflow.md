@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent funeral homes and sm
 productId: "personal-effects-custody"
 productName: "Personal Effects Custody"
 generationFingerprint: "c4c84e92bb981056b5ea"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Jewelry, clothing, documents, devices, containers, keepsakes, and other personal effects can pass through removal, preparation, arrangement, service, and release without consistent item-level acknowledgment. For independent funeral homes and small death-care service teams, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every personal effect is inventoried with appropriate privacy, transferred through named custody events, and released or disposed only with authorized acknowledgment**.

@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent auto repair shops and 
 productId: "parts-arrival-promise-board"
 productName: "Parts Arrival Promise Board"
 generationFingerprint: "b13c2590920faa24619d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for auto repair parts arrival and customer promise tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent auto repair shops and service-advisor teams, the target outcome is **every ordered part has a verified ETA, affected repair order, customer promise, and exception owner**.

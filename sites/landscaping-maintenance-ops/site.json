@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets landscape service exception, lawn route completion tracker, landscaping missed service, and property maintenance visit log searches.",
-      "score": 86
+      "score": 86,
+      "contentBatch": "batch-004"
     },
     {
       "id": "enhancement-approval-desk",
@@ -31,7 +32,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets landscape enhancement proposal, landscaping upsell tracker, property improvement estimate, and landscape proposal follow up searches.",
-      "score": 88
+      "score": 88,
+      "contentBatch": "batch-004"
     },
     {
       "id": "seasonal-service-change-register",
@@ -45,7 +47,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets seasonal landscaping schedule, landscape contract change, lawn service frequency tracker, and property maintenance service plan searches.",
-      "score": 83
+      "score": 83,
+      "contentBatch": "batch-004"
     }
   ],
   "articlesPerProduct": 10,
@@ -54,12 +57,7 @@
   "valueProposition": "Turns landscape maintenance visit exception tracking into a visible operating queue so every incomplete landscape visit has quantified skipped work, evidence, contract treatment, customer communication, and a recovery decision.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

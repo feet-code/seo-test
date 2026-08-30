@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for small architecture firms and desig
 productId: "rfi-decision-register"
 productName: "RFI Decision Register"
 generationFingerprint: "47b7db28daa17a0bd8ea"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for architectural RFI decision tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For small architecture firms and design-project administrators, the target outcome is **every RFI response identifies the authoritative decision, impact, and required document updates before operational closure**.

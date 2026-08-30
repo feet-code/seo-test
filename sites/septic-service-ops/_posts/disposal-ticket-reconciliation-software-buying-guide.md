@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small septic pumping, inspection,
 productId: "disposal-ticket-reconciliation"
 productName: "Disposal Ticket Reconciliation"
 generationFingerprint: "319f2a94a04dacc4627c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for septic disposal ticket and pump record reconciliation should be evaluated against the operating problem, not a generic feature checklist. For small septic pumping, inspection, and liquid-waste service companies, a useful trial must demonstrate this outcome: **every pumped load reconciles to source jobs, truck custody, accepted disposal evidence, fees, and billable service records**.

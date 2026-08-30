@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for small direct-to-consumer ecommerce
 productId: "listing-change-qa"
 productName: "Listing Change QA"
 generationFingerprint: "2d5f627347ff054bfca7"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for ecommerce product listing change quality assurance should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For small direct-to-consumer ecommerce brands and lean operations teams, the target outcome is **every listing change is approved against a defined source and verified on every intended sales channel**.

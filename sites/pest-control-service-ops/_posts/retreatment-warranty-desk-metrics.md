@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for independent pest c
 productId: "retreatment-warranty-desk"
 productName: "Retreatment Warranty Desk"
 generationFingerprint: "3c4d36c875a6184352c0"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:22Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for pest control callback and retreatment tracking should help independent pest control companies and small recurring-service teams decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

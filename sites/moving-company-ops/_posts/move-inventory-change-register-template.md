@@ -4,13 +4,9 @@ excerpt: "A practical record template for independent household moving companies
 productId: "move-inventory-change-register"
 productName: "Move Inventory Change Register"
 generationFingerprint: "8d6790b87cc8fb8ffe73"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful moving inventory change authorization template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

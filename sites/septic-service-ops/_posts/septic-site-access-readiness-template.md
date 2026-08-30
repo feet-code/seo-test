@@ -4,13 +4,9 @@ excerpt: "A practical record template for small septic pumping, inspection, and 
 productId: "septic-site-access-readiness"
 productName: "Septic Site Access Readiness"
 generationFingerprint: "d24b47a41f3bac36462d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful septic pumping property access readiness template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

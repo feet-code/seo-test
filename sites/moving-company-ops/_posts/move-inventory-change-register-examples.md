@@ -4,13 +4,9 @@ excerpt: "Three realistic workflow test cases for independent household moving c
 productId: "move-inventory-change-register"
 productName: "Move Inventory Change Register"
 generationFingerprint: "8d6790b87cc8fb8ffe73"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Examples make moving inventory change authorization easier to design because they reveal where a neat diagram meets messy work. The scenarios below are not claims about a particular company; they are test cases independent household moving companies and local moving crews can run against a template or software trial.

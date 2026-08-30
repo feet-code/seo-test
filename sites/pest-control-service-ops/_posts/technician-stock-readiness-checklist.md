@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent pest control comp
 productId: "technician-stock-readiness"
 productName: "Technician Stock Readiness"
 generationFingerprint: "bf59102a8a4ce031ebff"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:22Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for pest control technician chemical and material stock readiness should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent pest control companies and small recurring-service teams and centers on one result: **every released route has the required approved materials, quantities, and equipment assigned or an explicit service-plan adjustment**.

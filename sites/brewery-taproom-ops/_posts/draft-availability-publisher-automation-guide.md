@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent craft breweries operat
 productId: "draft-availability-publisher"
 productName: "Draft Availability Publisher"
 generationFingerprint: "01e68dbb40ae388a4d92"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for brewery tap list availability tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent craft breweries operating one or more taprooms, the target outcome is **every draft availability change is approved, published across intended channels, verified live, and reactivated only from confirmed product and line readiness**.

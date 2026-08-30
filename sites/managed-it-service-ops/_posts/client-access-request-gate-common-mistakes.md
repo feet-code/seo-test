@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small managed service providers an
 productId: "client-access-request-gate"
 productName: "Client Access Request Gate"
 generationFingerprint: "a423039ededf9b3c3463"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Access changes arrive through tickets, email, and chat without consistent requester validation, client approval, scope, or proof that the change was completed and reviewed. The recurring failures are usually process-design problems rather than motivation problems. For small managed service providers and multi-client IT support teams, these are the mistakes worth finding before buying or building software.

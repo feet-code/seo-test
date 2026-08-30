@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent craft breweries operat
 productId: "draft-availability-publisher"
 productName: "Draft Availability Publisher"
 generationFingerprint: "01e68dbb40ae388a4d92"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A keg kicks, line is taken down, release changes, or product goes on hold, but POS, menu board, website, server knowledge, and later reactivation can show different states. The recurring failures are usually process-design problems rather than motivation problems. For independent craft breweries operating one or more taprooms, these are the mistakes worth finding before buying or building software.

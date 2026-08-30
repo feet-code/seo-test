@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent dance studios producin
 productId: "recital-readiness-board"
 productName: "Recital Readiness Board"
 generationFingerprint: "756275355c913ad83b46"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for dance studio recital readiness tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent dance studios producing multi-class recitals, the target outcome is **every recital number and performer reaches show day with approved music, participation, costume, call time, quick-change, volunteer, and backstage dependencies verified**.

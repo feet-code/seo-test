@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small land-surveying firms coordin
 productId: "survey-field-readiness"
 productName: "Survey Field Readiness"
 generationFingerprint: "0572d300279cdd61f594"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A crew leaves without the current scope, parcel research, deeds, control, access permission, utility or hazard notes, equipment, coordinate files, monument history, or client timing constraints. The recurring failures are usually process-design problems rather than motivation problems. For small land-surveying firms coordinating field crews and office deliverables, these are the mistakes worth finding before buying or building software.

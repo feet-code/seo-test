@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for independent confer
 productId: "sponsor-deliverable-register"
 productName: "Sponsor Deliverable Register"
 generationFingerprint: "7b88b57ac2ebda718d2b"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for conference sponsor deliverable tracking should help independent conference organizers and small trade-show teams decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

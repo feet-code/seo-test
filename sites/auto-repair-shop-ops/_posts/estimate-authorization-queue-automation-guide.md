@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent auto repair shops and 
 productId: "estimate-authorization-queue"
 productName: "Estimate Authorization Queue"
 generationFingerprint: "4e1afb63fb72eaebd7a9"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for repair estimate authorization tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent auto repair shops and service-advisor teams, the target outcome is **every pending estimate has a documented customer decision, next follow-up, or closed reason**.

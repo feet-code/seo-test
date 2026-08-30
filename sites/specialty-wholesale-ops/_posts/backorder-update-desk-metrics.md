@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for small specialty wh
 productId: "backorder-update-desk"
 productName: "Backorder Update Desk"
 generationFingerprint: "63247f236e78f65404cf"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for wholesale backorder customer update tracking should help small specialty wholesalers and B2B distributors decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

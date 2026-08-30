@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent bicycle repair shops 
 productId: "bike-pickup-readiness"
 productName: "Bike Pickup Readiness"
 generationFingerprint: "123b82c86097e17bc4c5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for bike repair pickup readiness should be evaluated against the operating problem, not a generic feature checklist. For independent bicycle repair shops and service departments, a useful trial must demonstrate this outcome: **every completed bicycle is quality-checked, fully assembled with customer property, reconciled financially, and staged before pickup notification**.

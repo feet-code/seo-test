@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for owner-operated commercial cleani
 productId: "location-supply-par-tracker"
 productName: "Location Supply Par Tracker"
 generationFingerprint: "dffeb8e01f6c103f3284"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Supplies are reordered after crews report a shortage, while counts, storage locations, usage spikes, and delivery ownership remain inconsistent. For owner-operated commercial cleaning and janitorial companies, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **each location has enough approved supplies for the next service window without uncontrolled overstock**.

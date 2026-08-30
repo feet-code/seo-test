@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent dental laboratories se
 productId: "remake-cause-register"
 productName: "Remake Cause Register"
 generationFingerprint: "5cd7ad53a59d21d6612f"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Remakes are opened as replacement cases while fit issue, intake quality, prescription change, material, design, production step, shipping damage, practice handling, and disposition remain unstructured. The recurring failures are usually process-design problems rather than motivation problems. For independent dental laboratories serving local dental practices, these are the mistakes worth finding before buying or building software.

@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small land-surveying firms coordi
 productId: "survey-field-readiness"
 productName: "Survey Field Readiness"
 generationFingerprint: "0572d300279cdd61f594"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for land survey field crew readiness should be evaluated against the operating problem, not a generic feature checklist. For small land-surveying firms coordinating field crews and office deliverables, a useful trial must demonstrate this outcome: **every survey field assignment has current office research, site permissions, technical files, equipment, crew capability, and explicit release**.

@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent pest control companies
 productId: "customer-prep-confirmation"
 productName: "Customer Prep Confirmation"
 generationFingerprint: "3f515c2fd62418cfa183"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:22Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Treatments arrive with rooms occupied, food exposed, pets unsecured, access unavailable, or preparation instructions misunderstood, forcing technicians to shorten or reschedule work. The recurring failures are usually process-design problems rather than motivation problems. For independent pest control companies and small recurring-service teams, these are the mistakes worth finding before buying or building software.

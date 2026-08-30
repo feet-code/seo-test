@@ -4,13 +4,9 @@ excerpt: "A spreadsheet-versus-software decision guide for owner-operated commer
 productId: "site-inspection-followup"
 productName: "Site Inspection Follow-Up"
 generationFingerprint: "c638d2a6d6abae7a6499"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A spreadsheet is often the right first implementation for commercial cleaning inspection corrective action tracking. It is cheap, editable, and forces the team to define the workflow. The question is not whether spreadsheets are good or bad; it is when coordination costs become larger than the flexibility is worth.

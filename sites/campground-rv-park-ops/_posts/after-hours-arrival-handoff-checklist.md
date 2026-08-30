@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent campgrounds, RV p
 productId: "after-hours-arrival-handoff"
 productName: "After-Hours Arrival Handoff"
 generationFingerprint: "20d243239613f29a53c7"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for campground late arrival check in coordination should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent campgrounds, RV parks, and small outdoor lodging properties and centers on one result: **every confirmed after-hours guest receives a current, secure arrival path tied to a ready site and a next-morning verification**.

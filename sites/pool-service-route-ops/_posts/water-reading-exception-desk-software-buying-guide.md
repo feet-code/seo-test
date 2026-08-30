@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent pool maintenance and 
 productId: "water-reading-exception-desk"
 productName: "Water Reading Exception Desk"
 generationFingerprint: "04eef3247c127a71febf"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:22Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for pool service water chemistry exception tracking should be evaluated against the operating problem, not a generic feature checklist. For independent pool maintenance and repair companies running recurring routes, a useful trial must demonstrate this outcome: **every material pool-reading exception has verified input, approved response, owner, customer notice, and a scheduled recheck**.

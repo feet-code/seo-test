@@ -4,13 +4,9 @@ excerpt: "A spreadsheet-versus-software decision guide for small creative, desig
 productId: "client-asset-chaser"
 productName: "Client Asset Chaser"
 generationFingerprint: "6769802ceb38c88597d6"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A spreadsheet is often the right first implementation for client asset collection and missing content tracking for agencies. It is cheap, editable, and forces the team to define the workflow. The question is not whether spreadsheets are good or bad; it is when coordination costs become larger than the flexibility is worth.

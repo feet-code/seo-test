@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent bicycle repair shops
 productId: "bike-repair-authorization"
 productName: "Bike Repair Authorization"
 generationFingerprint: "92b21b8dbce0682aeec8"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A bicycle diagnosis uncovers extra labor or parts after intake, but revised scope, safety-critical work, price ceiling, parts choice, customer decision, and mechanic release are scattered across calls and paper tags. For independent bicycle repair shops and service departments, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every material repair change has an itemized current estimate, recorded customer decision, parts implication, and explicit mechanic release**.

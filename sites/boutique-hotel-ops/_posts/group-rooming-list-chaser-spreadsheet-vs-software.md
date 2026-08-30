@@ -4,13 +4,9 @@ excerpt: "A spreadsheet-versus-software decision guide for independent boutique 
 productId: "group-rooming-list-chaser"
 productName: "Group Rooming List Chaser"
 generationFingerprint: "92a5c4ce77cf52b8410e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A spreadsheet is often the right first implementation for hotel group rooming list tracking. It is cheap, editable, and forces the team to define the workflow. The question is not whether spreadsheets are good or bad; it is when coordination costs become larger than the flexibility is worth.

@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent funeral homes and sma
 productId: "arrangement-readiness-board"
 productName: "Arrangement Readiness Board"
 generationFingerprint: "f8cdeb14710adbfcca14"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for funeral arrangement document readiness tracking should be evaluated against the operating problem, not a generic feature checklist. For independent funeral homes and small death-care service teams, a useful trial must demonstrate this outcome: **every case has human-reviewed required decisions, documents, authorizations, and exceptions visible against the actual service timeline**.

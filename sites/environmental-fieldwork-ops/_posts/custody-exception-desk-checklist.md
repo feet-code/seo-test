@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for small environmental consultin
 productId: "custody-exception-desk"
 productName: "Custody Exception Desk"
 generationFingerprint: "0c01731d2898bf890584"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for environmental chain of custody exception tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for small environmental consulting and field-sampling teams and centers on one result: **every custody discrepancy is contained, reviewed by qualified personnel, linked to affected samples, and resolved without rewriting original evidence**.

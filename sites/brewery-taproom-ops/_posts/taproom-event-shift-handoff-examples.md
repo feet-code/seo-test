@@ -4,13 +4,9 @@ excerpt: "Three realistic workflow test cases for independent craft breweries op
 productId: "taproom-event-shift-handoff"
 productName: "Taproom Event Shift Handoff"
 generationFingerprint: "94a47a271e27fe4d5f1f"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Examples make brewery taproom event shift handoff tracking easier to design because they reveal where a neat diagram meets messy work. The scenarios below are not claims about a particular company; they are test cases independent craft breweries operating one or more taprooms can run against a template or software trial.

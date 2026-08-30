@@ -4,13 +4,9 @@ excerpt: "Three realistic workflow test cases for independent cohort-course crea
 productId: "learner-intervention-queue"
 productName: "Learner Intervention Queue"
 generationFingerprint: "a42ae3cb43c757eb4877"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Examples make cohort course learner engagement and intervention tracking easier to design because they reveal where a neat diagram meets messy work. The scenarios below are not claims about a particular company; they are test cases independent cohort-course creators and small training businesses can run against a template or software trial.

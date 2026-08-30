@@ -4,13 +4,9 @@ excerpt: "A practical alternatives comparison for small manufacturers and lean q
 productId: "work-instruction-acknowledgment"
 productName: "Work Instruction Acknowledgment"
 generationFingerprint: "b84683951f628342182b"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 There are several valid ways to manage controlled work instruction acknowledgment. The right choice depends on volume, exception rate, ownership, and how much coordination crosses systems. Start with the smallest approach that keeps the work reliable.

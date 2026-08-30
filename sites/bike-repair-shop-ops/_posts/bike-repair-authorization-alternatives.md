@@ -4,13 +4,9 @@ excerpt: "A practical alternatives comparison for independent bicycle repair sho
 productId: "bike-repair-authorization"
 productName: "Bike Repair Authorization"
 generationFingerprint: "92b21b8dbce0682aeec8"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 There are several valid ways to manage bike repair estimate approval tracking. The right choice depends on volume, exception rate, ownership, and how much coordination crosses systems. Start with the smallest approach that keeps the work reliable.

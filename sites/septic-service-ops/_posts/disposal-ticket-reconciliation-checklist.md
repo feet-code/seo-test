@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for small septic pumping, inspect
 productId: "disposal-ticket-reconciliation"
 productName: "Disposal Ticket Reconciliation"
 generationFingerprint: "319f2a94a04dacc4627c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for septic disposal ticket and pump record reconciliation should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for small septic pumping, inspection, and liquid-waste service companies and centers on one result: **every pumped load reconciles to source jobs, truck custody, accepted disposal evidence, fees, and billable service records**.

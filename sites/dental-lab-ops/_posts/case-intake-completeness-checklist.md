@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent dental laboratori
 productId: "case-intake-completeness"
 productName: "Case Intake Completeness"
 generationFingerprint: "ac444cb09821283ff79c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for dental lab case intake validation should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent dental laboratories serving local dental practices and centers on one result: **every lab case is accepted only after a trained reviewer confirms the required prescription, files, materials, dates, and practice clarifications**.

@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent recruiters and boutiq
 productId: "interview-debrief-collector"
 productName: "Interview Debrief Collector"
 generationFingerprint: "c923ed22607d97ec3f20"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for interview feedback collection and hiring debrief workflows should be evaluated against the operating problem, not a generic feature checklist. For independent recruiters and boutique recruiting firms, a useful trial must demonstrate this outcome: **the client reaches an evidence-based candidate decision while the interview is still fresh**.

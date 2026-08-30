@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small specialty wholesalers and B2
 productId: "backorder-update-desk"
 productName: "Backorder Update Desk"
 generationFingerprint: "63247f236e78f65404cf"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Operations updates ETAs in one system while account reps manually reconstruct which customers need an update and what alternatives can be offered. The recurring failures are usually process-design problems rather than motivation problems. For small specialty wholesalers and B2B distributors, these are the mistakes worth finding before buying or building software.

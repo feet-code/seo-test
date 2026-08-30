@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent pet boarding facilit
 productId: "vaccination-record-chaser"
 productName: "Vaccination Record Chaser"
 generationFingerprint: "c5c221f95bdca6428946"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Bookings reach check-in with missing, unreadable, expired, or unreviewed vaccination documents because upload status and facility approval are treated as the same event. For independent pet boarding facilities and dog daycare operators, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every scheduled pet has verified facility-required records or a documented booking decision before arrival**.

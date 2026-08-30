@@ -1,0 +1,75 @@
+{
+  "id": "calibration-service-ops",
+  "name": "Calibration Service Operations",
+  "domain": null,
+  "audience": "independent calibration laboratories and mobile metrology service teams",
+  "topic": "asset due dates, as-found exceptions, and certificate release",
+  "products": [
+    {
+      "id": "calibration-due-readiness",
+      "name": "Calibration Due Readiness",
+      "product": "A focused calibration asset due and access tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent calibration laboratories and mobile metrology service teams",
+      "problem": "Asset identity, location, due date, service scope, standards, access, downtime window, pickup, and customer contact are reconciled just before service.",
+      "valueProposition": "Turns calibration asset due and access tracking into a visible operating queue so every due asset has verified identity, location, scope, access, timing, and service disposition.",
+      "topic": "calibration asset due and access tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets calibration asset due and access tracking software, calibration asset due and access tracking tracker, calibration asset due and access tracking template, and calibration asset due and access tracking checklist searches.",
+      "score": 83,
+      "contentBatch": "batch-005"
+    },
+    {
+      "id": "as-found-exception-desk",
+      "name": "As-Found Exception Desk",
+      "product": "A focused calibration as-found exception tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent calibration laboratories and mobile metrology service teams",
+      "problem": "Out-of-tolerance or damaged conditions require technical review, customer notice, impact handling, adjustment authority, and follow-up that extend beyond the certificate workflow.",
+      "valueProposition": "Turns calibration as-found exception tracking into a visible operating queue so every material as-found exception has a controlled review, customer decision, disposition, and traceable follow-up.",
+      "topic": "calibration as-found exception tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets calibration as-found exception tracking software, calibration as-found exception tracking tracker, calibration as-found exception tracking template, and calibration as-found exception tracking checklist searches.",
+      "score": 84,
+      "contentBatch": "batch-005"
+    },
+    {
+      "id": "calibration-certificate-release",
+      "name": "Calibration Certificate Release",
+      "product": "A focused calibration certificate review and release workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent calibration laboratories and mobile metrology service teams",
+      "problem": "Data import, asset identifiers, methods, standards, environmental records, results, uncertainty statements, approvals, corrections, and delivery need exact review.",
+      "valueProposition": "Turns calibration certificate review and release into a visible operating queue so every certificate is released from the reviewed service record with correct identity, traceability, approval, and delivery evidence.",
+      "topic": "calibration certificate review and release",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets calibration certificate review and release software, calibration certificate review and release tracker, calibration certificate review and release template, and calibration certificate review and release checklist searches.",
+      "score": 85,
+      "contentBatch": "batch-005"
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused calibration asset due and access tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns calibration asset due and access tracking into a visible operating queue so every due asset has verified identity, location, scope, access, timing, and service disposition.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "calibration-service-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

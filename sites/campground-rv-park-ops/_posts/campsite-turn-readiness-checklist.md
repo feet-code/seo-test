@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent campgrounds, RV p
 productId: "campsite-turn-readiness"
 productName: "Campsite Turn Readiness"
 generationFingerprint: "eaef2147e99bd9795162"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for campground campsite turnover readiness should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent campgrounds, RV parks, and small outdoor lodging properties and centers on one result: **every departing site is inspected, serviced, reconciled, and released for the next arrival or held with a visible reason**.

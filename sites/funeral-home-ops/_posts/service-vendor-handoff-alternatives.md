@@ -4,13 +4,9 @@ excerpt: "A practical alternatives comparison for independent funeral homes and 
 productId: "service-vendor-handoff"
 productName: "Service Vendor Handoff"
 generationFingerprint: "b296f4c835478543abb7"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 There are several valid ways to manage funeral service vendor and facility handoff tracking. The right choice depends on volume, exception rate, ownership, and how much coordination crosses systems. Start with the smallest approach that keeps the work reliable.

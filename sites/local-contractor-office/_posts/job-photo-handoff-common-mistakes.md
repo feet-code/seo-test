@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for owner-operated HVAC, plumbing, ele
 productId: "job-photo-handoff"
 productName: "Job Photo Handoff"
 generationFingerprint: "bd22fa439fee0cbce6b8"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Job photos remain on technicians' phones or in group chat without labels, making office review, invoicing, warranty response, and customer updates harder. The recurring failures are usually process-design problems rather than motivation problems. For owner-operated HVAC, plumbing, electrical, and repair contractors, these are the mistakes worth finding before buying or building software.

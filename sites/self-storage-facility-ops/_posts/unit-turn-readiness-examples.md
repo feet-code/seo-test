@@ -4,13 +4,9 @@ excerpt: "Three realistic workflow test cases for independent self-storage facil
 productId: "unit-turn-readiness"
 productName: "Unit Turn Readiness"
 generationFingerprint: "89066ee4c605764d0286"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Examples make self-storage move-out inspection and unit turn tracking easier to design because they reveal where a neat diagram meets messy work. The scenarios below are not claims about a particular company; they are test cases independent self-storage facilities and small multi-site operators can run against a template or software trial.

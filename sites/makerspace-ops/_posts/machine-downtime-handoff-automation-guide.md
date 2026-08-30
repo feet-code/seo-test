@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for community makerspaces, fabrication
 productId: "machine-downtime-handoff"
 productName: "Machine Downtime Handoff"
 generationFingerprint: "11b8f5dadce52d584268"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for makerspace machine downtime and maintenance tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For community makerspaces, fabrication labs, and shared technical workshops, the target outcome is **every equipment incident immediately blocks affected access and bookings, transfers with named repair ownership, and restores only after the required review and test**.

@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent vending machine and m
 productId: "machine-service-exception"
 productName: "Machine Service Exception"
 generationFingerprint: "77a7ab7783acbebe726a"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for vending machine service exception tracking should be evaluated against the operating problem, not a generic feature checklist. For independent vending machine and micro-market route operators, a useful trial must demonstrate this outcome: **every machine fault has impact, owner, repair evidence, refund follow-up, and verified return to service**.

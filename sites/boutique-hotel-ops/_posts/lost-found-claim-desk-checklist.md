@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent boutique hotels a
 productId: "lost-found-claim-desk"
 productName: "Lost and Found Claim Desk"
 generationFingerprint: "0a5d4ce4446069fc7d6a"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for hotel lost and found claim tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent boutique hotels and small hospitality teams and centers on one result: **every found item and guest claim is matched, released, retained, or disposed under policy with a complete custody trail**.

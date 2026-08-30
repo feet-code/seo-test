@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent dental laboratories se
 productId: "esthetic-approval-queue"
 productName: "Esthetic Approval Queue"
 generationFingerprint: "f21e1038d6dbdb67e762"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Shade photos, design previews, try-in feedback, practice questions, patient scheduling, revised files, and final release can create ambiguous approval versions during esthetic cases. The recurring failures are usually process-design problems rather than motivation problems. For independent dental laboratories serving local dental practices, these are the mistakes worth finding before buying or building software.

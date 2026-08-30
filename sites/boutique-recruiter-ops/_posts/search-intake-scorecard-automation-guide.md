@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent recruiters and boutiqu
 productId: "search-intake-scorecard"
 productName: "Search Intake Scorecard"
 generationFingerprint: "7cb5ad03fde7b2e6e454"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for recruiting search intake and candidate calibration scorecards should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent recruiters and boutique recruiting firms, the target outcome is **the recruiter and client can evaluate the same candidate evidence against the same explicit tradeoffs**.

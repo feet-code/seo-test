@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent express, tunnel, and m
 productId: "wash-equipment-downtime-handoff"
 productName: "Wash Equipment Downtime Handoff"
 generationFingerprint: "21c57d543214b71eadb3"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for car wash equipment downtime tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent express, tunnel, and multi-bay car wash operators, the target outcome is **every equipment incident has contained customer impact, named repair ownership, shift-to-shift status, and verified return to service**.

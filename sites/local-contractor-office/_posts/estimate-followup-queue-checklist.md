@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for owner-operated HVAC, plumbing
 productId: "estimate-followup-queue"
 productName: "Estimate Follow-Up Queue"
 generationFingerprint: "4eac085b965fb228f523"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for contractor estimate follow-up and quote tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for owner-operated HVAC, plumbing, electrical, and repair contractors and centers on one result: **every sent estimate reaches a documented customer decision or a deliberate next review date**.

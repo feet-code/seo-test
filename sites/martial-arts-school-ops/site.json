@@ -1,0 +1,60 @@
+{
+  "id": "martial-arts-school-ops",
+  "name": "Martial Arts School Operations",
+  "domain": null,
+  "audience": "independent martial arts academies and multi-program dojos",
+  "topic": "student progression and trial follow-up for martial arts schools",
+  "products": [
+    {
+      "id": "belt-eligibility-board",
+      "name": "Belt Eligibility Board",
+      "product": "A focused martial arts belt testing eligibility workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent martial arts academies and multi-program dojos",
+      "problem": "Attendance, curriculum signoffs, instructor judgment, fees, equipment, and testing invitations are reconciled shortly before promotion events.",
+      "valueProposition": "Turns martial arts belt testing eligibility into a visible operating queue so every testing invitation reflects the school's recorded progression criteria and an explicit instructor decision.",
+      "topic": "martial arts belt testing eligibility",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets martial arts belt testing eligibility software, martial arts belt testing eligibility tracker, martial arts belt testing eligibility template, and martial arts belt testing eligibility checklist searches.",
+      "score": 86,
+      "contentBatch": "batch-005"
+    },
+    {
+      "id": "trial-student-followup",
+      "name": "Trial Student Follow-Up",
+      "product": "A focused martial arts trial student follow-up workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent martial arts academies and multi-program dojos",
+      "problem": "Trial bookings, attendance, student goals, parent questions, fit decisions, and promised callbacks scatter across calendars and inboxes.",
+      "valueProposition": "Turns martial arts trial student follow-up into a visible operating queue so every trial receives the promised, context-aware next step or a documented closed reason.",
+      "topic": "martial arts trial student follow-up",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets martial arts trial student follow-up software, martial arts trial student follow-up tracker, martial arts trial student follow-up template, and martial arts trial student follow-up checklist searches.",
+      "score": 87,
+      "contentBatch": "batch-005"
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused martial arts belt testing eligibility workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns martial arts belt testing eligibility into a visible operating queue so every testing invitation reflects the school's recorded progression criteria and an explicit instructor decision.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "martial-arts-school-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

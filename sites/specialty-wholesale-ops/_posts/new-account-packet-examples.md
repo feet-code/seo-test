@@ -4,13 +4,9 @@ excerpt: "Three realistic workflow test cases for small specialty wholesalers an
 productId: "new-account-packet"
 productName: "New Account Packet"
 generationFingerprint: "d8896f52e8a0ff0b2923"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Examples make wholesale customer onboarding and new account setup checklists easier to design because they reveal where a neat diagram meets messy work. The scenarios below are not claims about a particular company; they are test cases small specialty wholesalers and B2B distributors can run against a template or software trial.

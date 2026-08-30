@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent sign shops, commercia
 productId: "proof-approval-queue"
 productName: "Proof Approval Queue"
 generationFingerprint: "d891422e2919df4cfa96"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for print and sign proof approval tracking should be evaluated against the operating problem, not a generic feature checklist. For independent sign shops, commercial printers, and display fabricators, a useful trial must demonstrate this outcome: **every job enters production only from an exact proof version approved by the authorized customer contact**.

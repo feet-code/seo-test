@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for freelancers and independent prof
 productId: "client-handoff-pack"
 productName: "Client Handoff Pack"
 generationFingerprint: "5aebd58026e80a21e859"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Projects are called finished while files, credentials, ownership, maintenance instructions, and unresolved decisions remain across tools and conversations. For freelancers and independent professional service businesses, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **the client can operate the delivered work and locate every agreed artifact without depending on the freelancer's memory**.

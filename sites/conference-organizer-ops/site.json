@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets conference speaker management, speaker asset checklist, speaker portal workflow, and conference presentation tracker searches.",
-      "score": 86
+      "score": 86,
+      "contentBatch": "batch-003"
     },
     {
       "id": "sponsor-deliverable-register",
@@ -31,7 +32,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets event sponsor deliverables, sponsorship fulfillment tracker, conference sponsor management, and sponsor asset checklist searches.",
-      "score": 88
+      "score": 88,
+      "contentBatch": "batch-003"
     }
   ],
   "articlesPerProduct": 10,
@@ -40,12 +42,7 @@
   "valueProposition": "Turns conference speaker asset tracking into a visible operating queue so every confirmed speaker has the approved assets and permissions required for agenda publication, production, and session delivery.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

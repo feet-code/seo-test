@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent veterinary clinic
 productId: "treatment-followup-queue"
 productName: "Treatment Follow-Up Queue"
 generationFingerprint: "09608c54caa55cf366b7"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for veterinary client treatment follow-up tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent veterinary clinics and small client-service teams and centers on one result: **every clinician-requested follow-up reaches the client, records the response, and routes concerns back to the care team**.

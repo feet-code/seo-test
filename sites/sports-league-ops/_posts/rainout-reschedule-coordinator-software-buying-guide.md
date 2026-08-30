@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for community sports leagues and smal
 productId: "rainout-reschedule-coordinator"
 productName: "Rainout Reschedule Coordinator"
 generationFingerprint: "9c568af6a0595f6334c2"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for sports league rainout rescheduling should be evaluated against the operating problem, not a generic feature checklist. For community sports leagues and small tournament operators, a useful trial must demonstrate this outcome: **every weather-affected game is canceled, relocated, or rescheduled with all dependent assignments and communications reconciled**.

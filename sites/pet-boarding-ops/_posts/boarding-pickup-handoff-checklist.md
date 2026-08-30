@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent pet boarding faci
 productId: "boarding-pickup-handoff"
 productName: "Boarding Pickup Handoff"
 generationFingerprint: "ce39d026a5203e987a51"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for pet boarding pickup readiness should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent pet boarding facilities and dog daycare operators and centers on one result: **every departing pet is released to an authorized person with belongings, balance, and approved stay handoff reconciled**.

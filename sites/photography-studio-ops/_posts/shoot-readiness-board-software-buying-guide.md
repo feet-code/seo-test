@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent photography studios a
 productId: "shoot-readiness-board"
 productName: "Shoot Readiness Board"
 generationFingerprint: "672e3ea5ea70747da3ba"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for photography shoot readiness tracking should be evaluated against the operating problem, not a generic feature checklist. For independent photography studios and small commercial photo teams, a useful trial must demonstrate this outcome: **every scheduled shoot reaches a verified go, revised, or postponed decision with people, place, scope, and production resources aligned**.

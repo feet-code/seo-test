@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for owner-operated commercial cle
 productId: "crew-shift-handoff-log"
 productName: "Crew Shift Handoff Log"
 generationFingerprint: "3a60241865284dc0635d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for commercial cleaning shift handoff and crew communication logs should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for owner-operated commercial cleaning and janitorial companies and centers on one result: **the next responsible person starts with a clear list of unresolved location-specific exceptions**.

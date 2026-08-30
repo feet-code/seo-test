@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for small commercial laundries and lin
 productId: "linen-delivery-exception"
 productName: "Linen Delivery Exception"
 generationFingerprint: "2d7891eb4073a55e8de0"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for commercial laundry delivery exception tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For small commercial laundries and linen or uniform rental services, the target outcome is **every route delivery exception has verified quantities, customer acknowledgment, recovery plan, and corrected inventory and billing records**.

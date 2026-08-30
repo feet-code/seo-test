@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent appliance repair compa
 productId: "warranty-evidence-desk"
 productName: "Warranty Evidence Desk"
 generationFingerprint: "64170b502f8cf078413e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for appliance repair warranty claim evidence tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent appliance repair companies and small authorized-service teams, the target outcome is **every warranty job reaches submission with complete authorized evidence and remains visible until reimbursement, correction, or documented denial**.

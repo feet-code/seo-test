@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for independent home i
 productId: "report-release-qa"
 productName: "Report Release QA"
 generationFingerprint: "dffb99cec42895fc0284"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for home inspection report quality review should help independent home inspection companies and small multi-inspector teams decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

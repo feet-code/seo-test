@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small wineries running direct-to-
 productId: "club-shipment-exception"
 productName: "Club Shipment Exception"
 generationFingerprint: "e1ae5c2d665711e4249f"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for wine club shipment exception tracking should be evaluated against the operating problem, not a generic feature checklist. For small wineries running direct-to-consumer wine clubs and pickup programs, a useful trial must demonstrate this outcome: **every club shipment exception reaches a member-approved or policy-based fulfillment decision with payment, inventory, carrier, and communication reconciled**.

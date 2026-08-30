@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets coworking member support, coworking issue tracker, flex space operations, and coworking service desk searches.",
-      "score": 84
+      "score": 84,
+      "contentBatch": "batch-002"
     },
     {
       "id": "booking-credit-exception-queue",
@@ -31,7 +32,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets coworking booking credits, meeting room credit dispute, coworking billing exception, and workspace booking refund searches.",
-      "score": 79
+      "score": 79,
+      "contentBatch": "batch-002"
     }
   ],
   "articlesPerProduct": 10,
@@ -40,12 +42,7 @@
   "valueProposition": "Turns coworking member issue handoff tracking into a visible operating queue so every member issue has a current owner, response promise, resolution evidence, and member acknowledgment.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

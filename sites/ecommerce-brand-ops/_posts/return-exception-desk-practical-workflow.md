@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small direct-to-consumer ecommer
 productId: "return-exception-desk"
 productName: "Return Exception Desk"
 generationFingerprint: "24ac7b877c2f24ae51c1"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Returns that fall outside the happy path—missing scans, partial kits, damaged items, late arrivals, or disputed refunds—move between support, warehouse, and finance without one decision record. For small direct-to-consumer ecommerce brands and lean operations teams, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every nonstandard return is resolved to an approved refund, replacement, denial, or investigation with inventory and customer records reconciled**.

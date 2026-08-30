@@ -5,6 +5,7 @@ import sys
 import unittest
 import urllib.error
 from pathlib import Path
+from tempfile import TemporaryDirectory
 from unittest.mock import patch
 
 
@@ -271,6 +272,110 @@ class MonitoringTeardownTests(unittest.TestCase):
             monitoring.teardown(config)
 
         self.assertEqual(order, ["gsc", "hosting", "ownership"])
+
+    def test_worker_teardown_deletes_the_worker_script(self) -> None:
+        monitoring = load_monitoring()
+        order = []
+        config = {
+            "id": "worker-site",
+            "deploy": {
+                "provider": "cloudflare-auto",
+                "resolvedProvider": "cloudflare-workers",
+                "project": "worker-site",
+            },
+        }
+        with (
+            patch.object(
+                monitoring,
+                "remove_google_property",
+                side_effect=lambda value: order.append("gsc"),
+            ),
+            patch.object(
+                monitoring,
+                "remove_worker_script",
+                side_effect=lambda value: order.append("hosting"),
+            ),
+            patch.object(
+                monitoring,
+                "remove_google_ownership",
+                side_effect=lambda value: order.append("ownership"),
+            ),
+        ):
+            monitoring.teardown(config)
+
+        self.assertEqual(order, ["gsc", "hosting", "ownership"])
+
+
+class CloudflareHostingTests(unittest.TestCase):
+    def config(self) -> dict:
+        return {
+            "id": "audience-tools",
+            "domain": None,
+            "deploy": {
+                "provider": "cloudflare-auto",
+                "project": "audience-tools",
+            },
+        }
+
+    def test_auto_uses_workers_at_the_real_pages_project_limit(self) -> None:
+        monitoring = load_monitoring()
+        with (
+            patch.object(monitoring, "_page_project_exists", return_value=False),
+            patch.object(monitoring, "worker_names", return_value=set()),
+            patch.object(monitoring, "pages_project_count", return_value=100),
+            patch.object(monitoring, "_pages_limit", return_value=100),
+        ):
+            provider = monitoring.resolve_cloudflare_auto(self.config())
+
+        self.assertEqual(provider, "cloudflare-workers")
+
+    def test_auto_reuses_existing_pages_project_even_at_capacity(self) -> None:
+        monitoring = load_monitoring()
+        with (
+            patch.object(monitoring, "_page_project_exists", return_value=True),
+            patch.object(monitoring, "pages_project_count") as project_count,
+        ):
+            provider = monitoring.resolve_cloudflare_auto(self.config())
+
+        self.assertEqual(provider, "cloudflare-pages")
+        project_count.assert_not_called()
+
+    def test_pages_capacity_response_falls_back_and_persists_worker_url(self) -> None:
+        monitoring = load_monitoring()
+        error = urllib.error.HTTPError(
+            "https://api.cloudflare.com/client/v4/accounts/test/pages/projects",
+            400,
+            "Bad Request",
+            {},
+            None,
+        )
+        error.response_detail = '{"errors":[{"message":"Pages project limit exceeded"}]}'
+        with TemporaryDirectory() as directory:
+            site_dir = Path(directory)
+            with (
+                patch.object(
+                    monitoring,
+                    "resolve_cloudflare_auto",
+                    return_value="cloudflare-pages",
+                ),
+                patch.object(monitoring, "provision_pages", side_effect=error),
+                patch.object(
+                    monitoring,
+                    "worker_url",
+                    return_value="https://audience-tools.account.workers.dev",
+                ),
+            ):
+                config = monitoring.prepare_hosting(self.config(), site_dir)
+
+            self.assertEqual(
+                config["deploy"]["resolvedProvider"],
+                "cloudflare-workers",
+            )
+            self.assertEqual(
+                config["deploy"]["url"],
+                "https://audience-tools.account.workers.dev",
+            )
+            self.assertTrue((site_dir / "site.json").exists())
 
 
 if __name__ == "__main__":

@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for owner-operated commercial cleaning
 productId: "site-inspection-followup"
 productName: "Site Inspection Follow-Up"
 generationFingerprint: "c638d2a6d6abae7a6499"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for commercial cleaning inspection corrective action tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For owner-operated commercial cleaning and janitorial companies, the target outcome is **every material inspection finding is corrected, verified, and communicated before it becomes a repeat complaint**.

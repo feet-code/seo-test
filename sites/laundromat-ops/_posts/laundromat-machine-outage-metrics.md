@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for independent laundr
 productId: "laundromat-machine-outage"
 productName: "Laundromat Machine Outage"
 generationFingerprint: "924a9a02dacace0ec345"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for laundromat washer and dryer outage tracking should help independent laundromats offering self-service and wash-dry-fold decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

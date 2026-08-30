@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for boutique fitness studios and group
 productId: "instructor-cover-board"
 productName: "Instructor Cover Board"
 generationFingerprint: "ef7529acd7ea71c612e4"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Instructor absences are solved in group chats, so managers may not know whether a qualified substitute, access instructions, payroll changes, and member notices are all complete. The recurring failures are usually process-design problems rather than motivation problems. For boutique fitness studios and group-class operators, these are the mistakes worth finding before buying or building software.

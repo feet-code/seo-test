@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent coworking spaces 
 productId: "booking-credit-exception-queue"
 productName: "Booking Credit Exception Queue"
 generationFingerprint: "b86639e883f0e7cbcb4b"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for coworking booking credit exception handling should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent coworking spaces and small flexible-office operators and centers on one result: **every disputed or failed booking credit is reconciled to policy, service evidence, and the member balance**.

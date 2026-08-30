@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent dental laboratories 
 productId: "case-intake-completeness"
 productName: "Case Intake Completeness"
 generationFingerprint: "ac444cb09821283ff79c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A case enters production with a missing or conflicting prescription, scan, impression, photos, material, shade, due date, shipping detail, or practice instruction, causing later stops and remakes. For independent dental laboratories serving local dental practices, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every lab case is accepted only after a trained reviewer confirms the required prescription, files, materials, dates, and practice clarifications**.

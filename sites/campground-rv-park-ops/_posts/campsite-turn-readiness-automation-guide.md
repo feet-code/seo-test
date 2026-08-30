@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent campgrounds, RV parks,
 productId: "campsite-turn-readiness"
 productName: "Campsite Turn Readiness"
 generationFingerprint: "eaef2147e99bd9795162"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for campground campsite turnover readiness should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent campgrounds, RV parks, and small outdoor lodging properties, the target outcome is **every departing site is inspected, serviced, reconciled, and released for the next arrival or held with a visible reason**.

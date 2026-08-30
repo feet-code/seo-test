@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent sign shops, commercial
 productId: "install-readiness-board"
 productName: "Install Readiness Board"
 generationFingerprint: "2327a8a9aba184fc0b0d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for sign installation readiness tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent sign shops, commercial printers, and display fabricators, the target outcome is **every installation dispatch has verified product, site, permission, equipment, crew, and customer readiness**.

@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for small roll-off dum
 productId: "overage-evidence-desk"
 productName: "Overage Evidence Desk"
 generationFingerprint: "7c8f858b3aab30c3176d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for dumpster contamination and overage evidence tracking should help small roll-off dumpster and commercial waste-container rental companies decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

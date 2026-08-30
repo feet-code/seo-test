@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent pool maintenance and r
 productId: "pool-repair-approval-queue"
 productName: "Pool Repair Approval Queue"
 generationFingerprint: "df1d0b92ec31df5b8ef9"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:22Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Technician findings, photos, equipment identity, repair options, customer questions, parts availability, and approval expire across field notes and email while the pool remains impaired. The recurring failures are usually process-design problems rather than motivation problems. For independent pool maintenance and repair companies running recurring routes, these are the mistakes worth finding before buying or building software.

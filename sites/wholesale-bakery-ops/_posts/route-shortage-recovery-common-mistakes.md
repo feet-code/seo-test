@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small wholesale and direct-store-d
 productId: "route-shortage-recovery"
 productName: "Route Shortage Recovery"
 generationFingerprint: "44ab9b35c23816f39c60"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Production shortfalls, quality holds, picking mistakes, vehicle capacity, late account changes, and stale-product decisions force route substitutions or shorts without one approved customer outcome. The recurring failures are usually process-design problems rather than motivation problems. For small wholesale and direct-store-delivery bakeries, these are the mistakes worth finding before buying or building software.

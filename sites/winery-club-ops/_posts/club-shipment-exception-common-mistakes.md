@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small wineries running direct-to-c
 productId: "club-shipment-exception"
 productName: "Club Shipment Exception"
 generationFingerprint: "e1ae5c2d665711e4249f"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Failed cards, address holds, weather holds, age or carrier restrictions, allocation substitutions, member skips, and fulfillment status create exceptions across DTC and warehouse systems. The recurring failures are usually process-design problems rather than motivation problems. For small wineries running direct-to-consumer wine clubs and pickup programs, these are the mistakes worth finding before buying or building software.

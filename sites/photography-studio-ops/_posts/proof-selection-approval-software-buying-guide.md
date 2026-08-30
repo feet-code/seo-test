@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent photography studios a
 productId: "proof-selection-approval"
 productName: "Proof Selection Approval"
 generationFingerprint: "f134829b77ef8c17c3a5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for photography client proof selection and approval should be evaluated against the operating problem, not a generic feature checklist. For independent photography studios and small commercial photo teams, a useful trial must demonstrate this outcome: **every client selection and approval identifies the exact images, revision, intended output, approver, and final decision**.

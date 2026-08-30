@@ -4,13 +4,9 @@ excerpt: "Three realistic workflow test cases for small bookkeeping firms and cl
 productId: "client-document-chaser"
 productName: "Client Document Chaser"
 generationFingerprint: "97a6b66f05fef5e0096c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Examples make bookkeeping client document collection and reminder tracking easier to design because they reveal where a neat diagram meets messy work. The scenarios below are not claims about a particular company; they are test cases small bookkeeping firms and client accounting service teams can run against a template or software trial.

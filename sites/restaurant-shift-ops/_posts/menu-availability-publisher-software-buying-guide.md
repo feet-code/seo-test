@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent restaurants and small
 productId: "menu-availability-publisher"
 productName: "Menu Availability Publisher"
 generationFingerprint: "cef19eb8d1d46b337eed"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for restaurant 86 list and menu availability tracking should be evaluated against the operating problem, not a generic feature checklist. For independent restaurants and small multi-location restaurant groups, a useful trial must demonstrate this outcome: **every availability change is approved, published to all intended channels, acknowledged by service staff, and reversed only after supply is verified**.

@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small manufacturers and lean quali
 productId: "supplier-corrective-action-desk"
 productName: "Supplier Corrective Action Desk"
 generationFingerprint: "3ba2631b3fd7c5b489ad"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Supplier defects generate emails and replacement shipments, but containment, root cause, corrective action, and effectiveness responses are rarely managed as one accountable request. The recurring failures are usually process-design problems rather than motivation problems. For small manufacturers and lean quality teams, these are the mistakes worth finding before buying or building software.

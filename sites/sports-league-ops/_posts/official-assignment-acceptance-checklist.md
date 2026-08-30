@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for community sports leagues and 
 productId: "official-assignment-acceptance"
 productName: "Official Assignment Acceptance"
 generationFingerprint: "91291a199af64b7b7906"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for sports official assignment acceptance tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for community sports leagues and small tournament operators and centers on one result: **every game has the required qualified officials who explicitly accept and receive the current assignment details**.

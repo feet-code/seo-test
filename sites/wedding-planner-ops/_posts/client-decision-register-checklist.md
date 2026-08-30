@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent wedding planners 
 productId: "client-decision-register"
 productName: "Client Decision Register"
 generationFingerprint: "5a3e4660c86159bff7c5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for wedding client decision tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent wedding planners and boutique planning teams and centers on one result: **every decision that blocks budget, design, or vendor work has one approved answer, effective version, and downstream owner**.

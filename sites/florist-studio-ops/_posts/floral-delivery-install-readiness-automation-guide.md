@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent retail, delivery, and 
 productId: "floral-delivery-install-readiness"
 productName: "Floral Delivery and Install Readiness"
 generationFingerprint: "051a70dad523e86765f0"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for florist delivery and event installation readiness should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent retail, delivery, and event floral studios, the target outcome is **every delivery or installation departs with complete counted product, compatible transport, confirmed access, assigned crew, and proof requirements**.

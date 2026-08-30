@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent restaurants and smal
 productId: "manager-shift-handoff"
 productName: "Manager Shift Handoff"
 generationFingerprint: "08a0cbe60f3c1131ad16"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Guest promises, equipment issues, staffing gaps, vendor arrivals, product holds, and incomplete tasks disappear in narrative log entries between managers. For independent restaurants and small multi-location restaurant groups, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every unresolved shift issue transfers with impact, owner, next action, due time, and explicit acceptance by the next manager**.

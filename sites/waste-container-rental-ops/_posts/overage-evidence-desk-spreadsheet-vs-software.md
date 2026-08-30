@@ -4,13 +4,9 @@ excerpt: "A spreadsheet-versus-software decision guide for small roll-off dumpst
 productId: "overage-evidence-desk"
 productName: "Overage Evidence Desk"
 generationFingerprint: "7c8f858b3aab30c3176d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A spreadsheet is often the right first implementation for dumpster contamination and overage evidence tracking. It is cheap, editable, and forces the team to define the workflow. The question is not whether spreadsheets are good or bad; it is when coordination costs become larger than the flexibility is worth.

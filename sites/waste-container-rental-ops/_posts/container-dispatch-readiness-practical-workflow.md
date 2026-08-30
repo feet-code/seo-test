@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small roll-off dumpster and comm
 productId: "container-dispatch-readiness"
 productName: "Container Dispatch Readiness"
 generationFingerprint: "048c739fb4484138baa4"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Delivery, swap, pickup, and live-load orders fail when container size, availability, site placement, truck access, material restrictions, disposal facility, or customer timing is unresolved. For small roll-off dumpster and commercial waste-container rental companies, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every container movement is released with an available asset, compatible truck, approved site action, material path, and current customer promise**.

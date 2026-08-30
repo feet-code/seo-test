@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent home inspection c
 productId: "inspection-access-readiness"
 productName: "Inspection Access Readiness"
 generationFingerprint: "10ccec90e4ab576f5c4d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for home inspection property access readiness should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent home inspection companies and small multi-inspector teams and centers on one result: **every inspection starts with property-specific access, utilities, scope, agreement, payment, and contacts confirmed or a documented limitation plan**.

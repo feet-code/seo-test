@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent tailoring, alteration
 productId: "fitting-decision-register"
 productName: "Fitting Decision Register"
 generationFingerprint: "ef160cc1f1d9a8aef4c5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for tailoring fitting change approval tracking should be evaluated against the operating problem, not a generic feature checklist. For independent tailoring, alteration, and garment-repair shops, a useful trial must demonstrate this outcome: **every fitting produces an agreed current alteration plan, price or date consequence, garment marking reference, and next checkpoint**.

@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent veterinary clinic
 productId: "lab-callback-board"
 productName: "Lab Callback Board"
 generationFingerprint: "62c551b50d74d3638e9b"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for veterinary lab result callback tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent veterinary clinics and small client-service teams and centers on one result: **every expected result is reviewed by the assigned clinician and communicated to the client with a documented next step**.

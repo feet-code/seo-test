@@ -4,13 +4,9 @@ excerpt: "A practical record template for small water, fire, and property-restor
 productId: "carrier-document-chaser"
 productName: "Carrier Document Chaser"
 generationFingerprint: "3755d85ce6576efa4f10"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful restoration insurance document tracking template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

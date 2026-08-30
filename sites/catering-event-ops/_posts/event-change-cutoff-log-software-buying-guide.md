@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent caterers and small ev
 productId: "event-change-cutoff-log"
 productName: "Event Change Cutoff Log"
 generationFingerprint: "c1bfee0a3ba17324e05f"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for catering event change control should be evaluated against the operating problem, not a generic feature checklist. For independent caterers and small event-food teams, a useful trial must demonstrate this outcome: **every accepted event change has authority, cost and production impact, an effective version, and acknowledgment from affected owners**.

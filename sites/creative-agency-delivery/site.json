@@ -17,7 +17,8 @@
       "monetization": "$19-$79/month based on active records or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets scope creep tracker, agency change request template, out-of-scope email, and project change log searches.",
-      "score": 88
+      "score": 88,
+      "contentBatch": "batch-001"
     },
     {
       "id": "client-asset-chaser",
@@ -31,7 +32,8 @@
       "monetization": "$19-$79/month based on active records or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets client asset request template, website content collection checklist, client onboarding documents, and missing assets reminder searches.",
-      "score": 86
+      "score": 86,
+      "contentBatch": "batch-001"
     }
   ],
   "articlesPerProduct": 10,
@@ -40,12 +42,7 @@
   "valueProposition": "Creates a lightweight path from request to impact estimate, client decision, updated plan, and invoice evidence.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

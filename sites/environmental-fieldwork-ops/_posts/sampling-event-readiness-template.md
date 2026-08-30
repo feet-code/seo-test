@@ -4,13 +4,9 @@ excerpt: "A practical record template for small environmental consulting and fie
 productId: "sampling-event-readiness"
 productName: "Sampling Event Readiness"
 generationFingerprint: "4a05807fcb6753f210e2"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful environmental sampling event readiness template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

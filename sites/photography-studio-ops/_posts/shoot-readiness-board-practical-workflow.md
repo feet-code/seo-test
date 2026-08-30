@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent photography studios 
 productId: "shoot-readiness-board"
 productName: "Shoot Readiness Board"
 generationFingerprint: "672e3ea5ea70747da3ba"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A booked shoot can still lack signed scope, call times, location access, subject list, permits, props, equipment, weather plan, or client confirmation. For independent photography studios and small commercial photo teams, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every scheduled shoot reaches a verified go, revised, or postponed decision with people, place, scope, and production resources aligned**.

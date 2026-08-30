@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent arborist, pruning
 productId: "tree-job-readiness-gate"
 productName: "Tree Job Readiness Gate"
 generationFingerprint: "2e0f5f8ab16f5ba2e200"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for tree service permit utility and site readiness should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent arborist, pruning, removal, and plant-health-care companies and centers on one result: **every tree job is released only with site-specific scope, permissions, hazards, equipment, and access verified for the assigned crew**.

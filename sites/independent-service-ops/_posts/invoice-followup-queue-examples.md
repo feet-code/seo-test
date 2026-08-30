@@ -4,13 +4,9 @@ excerpt: "Three realistic workflow test cases for freelancers and independent pr
 productId: "invoice-followup-queue"
 productName: "Invoice Follow-Up Queue"
 generationFingerprint: "65fd2a0562f039ff399c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Examples make freelancer invoice follow-up and overdue payment reminders easier to design because they reveal where a neat diagram meets messy work. The scenarios below are not claims about a particular company; they are test cases freelancers and independent professional service businesses can run against a template or software trial.

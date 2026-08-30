@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for small roll-off dumpster and commer
 productId: "overage-evidence-desk"
 productName: "Overage Evidence Desk"
 generationFingerprint: "7c8f858b3aab30c3176d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for dumpster contamination and overage evidence tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For small roll-off dumpster and commercial waste-container rental companies, the target outcome is **every exception charge is linked to the contract rule, timestamped field or scale evidence, reviewer decision, and customer notice before invoicing**.

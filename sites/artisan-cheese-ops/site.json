@@ -1,0 +1,60 @@
+{
+  "id": "artisan-cheese-ops",
+  "name": "Artisan Cheese Operations",
+  "domain": null,
+  "audience": "small artisan cheesemakers and farmstead dairy processors",
+  "topic": "affinage care and wholesale allocation for artisan cheese producers",
+  "products": [
+    {
+      "id": "affinage-care-board",
+      "name": "Affinage Care Board",
+      "product": "A focused artisan cheese affinage care tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "small artisan cheesemakers and farmstead dairy processors",
+      "problem": "Make batch, room, shelf, turn or wash schedule, observations, hold decisions, sampling, and release timing are coordinated on paper.",
+      "valueProposition": "Turns artisan cheese affinage care tracking into a visible operating queue so every aging batch receives its scheduled care, observation, exception decision, and next action.",
+      "topic": "artisan cheese affinage care tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets artisan cheese affinage care tracking software, artisan cheese affinage care tracking tracker, artisan cheese affinage care tracking template, and artisan cheese affinage care tracking checklist searches.",
+      "score": 88,
+      "contentBatch": "batch-005"
+    },
+    {
+      "id": "cheese-allocation-desk",
+      "name": "Cheese Allocation Desk",
+      "product": "A focused artisan cheese wholesale allocation tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "small artisan cheesemakers and farmstead dairy processors",
+      "problem": "Projected yields, aging losses, quality release, wholesale commitments, market stock, packaging, and ship dates are reconciled late.",
+      "valueProposition": "Turns artisan cheese wholesale allocation tracking into a visible operating queue so every customer commitment maps to released available product or a communicated substitution and date decision.",
+      "topic": "artisan cheese wholesale allocation tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets artisan cheese wholesale allocation tracking software, artisan cheese wholesale allocation tracking tracker, artisan cheese wholesale allocation tracking template, and artisan cheese wholesale allocation tracking checklist searches.",
+      "score": 89,
+      "contentBatch": "batch-005"
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused artisan cheese affinage care tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns artisan cheese affinage care tracking into a visible operating queue so every aging batch receives its scheduled care, observation, exception decision, and next action.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "artisan-cheese-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

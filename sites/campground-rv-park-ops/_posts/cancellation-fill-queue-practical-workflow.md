@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent campgrounds, RV park
 productId: "cancellation-fill-queue"
 productName: "Cancellation Fill Queue"
 generationFingerprint: "85eed128d55b80f1b362"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A desirable site reopens after cancellation, but waitlist preferences, rig fit, date flexibility, contact attempts, response deadlines, and released inventory are managed manually. For independent campgrounds, RV parks, and small outdoor lodging properties, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every cancellation opportunity is offered to eligible waitlist guests in a fair visible sequence and returns to public inventory at a defined cutoff**.

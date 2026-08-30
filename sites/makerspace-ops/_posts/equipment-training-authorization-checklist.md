@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for community makerspaces, fabric
 productId: "equipment-training-authorization"
 productName: "Equipment Training Authorization"
 generationFingerprint: "a12717ecdc524c8530f3"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for makerspace equipment training authorization tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for community makerspaces, fabrication labs, and shared technical workshops and centers on one result: **every equipment access grant is tied to current membership, documented prerequisites, named trainer approval, policy version, and matching access-control state**.

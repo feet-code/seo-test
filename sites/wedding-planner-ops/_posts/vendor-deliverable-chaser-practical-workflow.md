@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent wedding planners and
 productId: "vendor-deliverable-chaser"
 productName: "Vendor Deliverable Chaser"
 generationFingerprint: "5ecb5b5b09f9d15a6861"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Contracts name dozens of vendor deadlines, but questionnaires, certificates, floor plans, menus, and final counts are chased through unrelated email threads. For independent wedding planners and boutique planning teams, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every contracted vendor deliverable is received, reviewed, and reflected in the current wedding plan before its dependency date**.

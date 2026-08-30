@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent boutique hotels and 
 productId: "group-rooming-list-chaser"
 productName: "Group Rooming List Chaser"
 generationFingerprint: "92a5c4ce77cf52b8410e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Names, room types, arrival details, accessibility notes, billing instructions, and changes arrive from group contacts in repeated spreadsheet versions near cutoff. For independent boutique hotels and small hospitality teams, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every contracted group block reaches a validated rooming list and reconciled reservation set by the operational cutoff**.

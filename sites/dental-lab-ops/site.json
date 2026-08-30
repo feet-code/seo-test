@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets dental lab case intake, dental lab prescription tracking, dental case validation, and dental laboratory workflow searches.",
-      "score": 91
+      "score": 91,
+      "contentBatch": "batch-004"
     },
     {
       "id": "esthetic-approval-queue",
@@ -31,7 +32,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets dental lab shade approval, dental design approval, dental lab doctor portal, and esthetic case workflow searches.",
-      "score": 89
+      "score": 89,
+      "contentBatch": "batch-004"
     },
     {
       "id": "remake-cause-register",
@@ -45,7 +47,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets dental lab remake tracking, dental laboratory quality software, dental case remake form, and dental lab remake rate searches.",
-      "score": 90
+      "score": 90,
+      "contentBatch": "batch-004"
     }
   ],
   "articlesPerProduct": 10,
@@ -54,12 +57,7 @@
   "valueProposition": "Turns dental lab case intake validation into a visible operating queue so every lab case is accepted only after a trained reviewer confirms the required prescription, files, materials, dates, and practice clarifications.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

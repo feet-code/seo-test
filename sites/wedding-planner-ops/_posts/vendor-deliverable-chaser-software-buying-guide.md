@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent wedding planners and 
 productId: "vendor-deliverable-chaser"
 productName: "Vendor Deliverable Chaser"
 generationFingerprint: "5ecb5b5b09f9d15a6861"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for wedding vendor deliverable tracking should be evaluated against the operating problem, not a generic feature checklist. For independent wedding planners and boutique planning teams, a useful trial must demonstrate this outcome: **every contracted vendor deliverable is received, reviewed, and reflected in the current wedding plan before its dependency date**.

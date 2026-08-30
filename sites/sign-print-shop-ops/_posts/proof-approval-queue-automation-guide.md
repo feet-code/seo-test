@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent sign shops, commercial
 productId: "proof-approval-queue"
 productName: "Proof Approval Queue"
 generationFingerprint: "d891422e2919df4cfa96"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for print and sign proof approval tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent sign shops, commercial printers, and display fabricators, the target outcome is **every job enters production only from an exact proof version approved by the authorized customer contact**.

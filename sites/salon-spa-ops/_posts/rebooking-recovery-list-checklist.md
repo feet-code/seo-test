@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent salons, spas, and
 productId: "rebooking-recovery-list"
 productName: "Rebooking Recovery List"
 generationFingerprint: "ab96ed6ebb0acff2ea3b"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for salon and spa rebooking follow-up should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent salons, spas, and small wellness studios and centers on one result: **every eligible client receives a timely, contextual rebooking option or a documented no-contact reason**.

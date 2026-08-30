@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small direct-to-consumer ecommer
 productId: "listing-change-qa"
 productName: "Listing Change QA"
 generationFingerprint: "2d5f627347ff054bfca7"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Price, copy, media, variant, and policy edits are published across storefronts without a consistent request, approval, or post-publish check. For small direct-to-consumer ecommerce brands and lean operations teams, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every listing change is approved against a defined source and verified on every intended sales channel**.

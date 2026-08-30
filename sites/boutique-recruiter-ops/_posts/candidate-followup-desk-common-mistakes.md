@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent recruiters and boutiqu
 productId: "candidate-followup-desk"
 productName: "Candidate Follow-Up Desk"
 generationFingerprint: "01cf122a04a7f42de54c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Candidate communication is spread across email, LinkedIn, calendars, and ATS notes, so promised updates are easy to miss. The recurring failures are usually process-design problems rather than motivation problems. For independent recruiters and boutique recruiting firms, these are the mistakes worth finding before buying or building software.

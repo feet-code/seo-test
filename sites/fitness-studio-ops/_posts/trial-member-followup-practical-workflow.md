@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for boutique fitness studios and gro
 productId: "trial-member-followup"
 productName: "Trial Member Follow-Up"
 generationFingerprint: "a661f5227017d68c7e41"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Trial visitors enter through forms, class bookings, guest passes, and walk-ins, but staff cannot see who attended, what they wanted, or whether someone followed up. For boutique fitness studios and group-class operators, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every attended trial receives one relevant membership next step or a documented no-contact outcome**.

@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets gym trial follow up, fitness studio lead tracker, trial class conversion, and boutique fitness sales workflow searches.",
-      "score": 85
+      "score": 85,
+      "contentBatch": "batch-002"
     },
     {
       "id": "instructor-cover-board",
@@ -31,7 +32,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets fitness instructor substitute, gym class coverage app, instructor sub request, and fitness class cancellation workflow searches.",
-      "score": 83
+      "score": 83,
+      "contentBatch": "batch-002"
     }
   ],
   "articlesPerProduct": 10,
@@ -40,12 +42,7 @@
   "valueProposition": "Turns fitness studio trial follow-up into a visible operating queue so every attended trial receives one relevant membership next step or a documented no-contact outcome.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

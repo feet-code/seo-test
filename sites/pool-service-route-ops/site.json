@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets pool chemical reading tracker, pool water test software, pool chemistry service report, and pool route exception searches.",
-      "score": 88
+      "score": 88,
+      "contentBatch": "batch-004"
     },
     {
       "id": "pool-repair-approval-queue",
@@ -31,7 +32,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets pool repair estimate software, pool service proposal approval, pool equipment repair quote, and pool repair authorization searches.",
-      "score": 89
+      "score": 89,
+      "contentBatch": "batch-004"
     },
     {
       "id": "property-access-recovery",
@@ -45,7 +47,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets pool service gate code tracker, pool route access notes, pool service missed stop, and property access workflow searches.",
-      "score": 84
+      "score": 84,
+      "contentBatch": "batch-004"
     }
   ],
   "articlesPerProduct": 10,
@@ -54,12 +57,7 @@
   "valueProposition": "Turns pool service water chemistry exception tracking into a visible operating queue so every material pool-reading exception has verified input, approved response, owner, customer notice, and a scheduled recheck.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

@@ -1,13 +1,9 @@
 ---
 title: "How to Solve Common Process Problems"
 excerpt: "A practical framework for finding bottlenecks and improving a process without adding unnecessary complexity."
-coverImage: "/assets/blog/hello-world/cover.jpg"
 date: "2026-08-23T00:00:00.000Z"
 author:
   name: John Smith
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Many process problems come from unclear ownership, repetitive manual work, or missing information.

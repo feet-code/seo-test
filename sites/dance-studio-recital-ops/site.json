@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets dance recital planning software, recital costume tracker, dance backstage checklist, and dance studio recital management searches.",
-      "score": 89
+      "score": 89,
+      "contentBatch": "batch-004"
     }
   ],
   "articlesPerProduct": 10,
@@ -26,12 +27,7 @@
   "valueProposition": "Turns dance studio recital readiness tracking into a visible operating queue so every recital number and performer reaches show day with approved music, participation, costume, call time, quick-change, volunteer, and backstage dependencies verified.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

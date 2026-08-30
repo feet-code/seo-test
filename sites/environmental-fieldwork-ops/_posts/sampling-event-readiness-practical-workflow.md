@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small environmental consulting a
 productId: "sampling-event-readiness"
 productName: "Sampling Event Readiness"
 generationFingerprint: "4a05807fcb6753f210e2"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A field team mobilizes with an outdated plan, wrong containers or preservatives, missing labels, expired calibration, incomplete access or utility clearances, unsuitable shipping, or an unconfirmed laboratory window. For small environmental consulting and field-sampling teams, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every sampling event is released by a qualified reviewer with current plan, locations, equipment, containers, laboratory coordination, access, and safety prerequisites**.

@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent campgrounds, RV park
 productId: "after-hours-arrival-handoff"
 productName: "After-Hours Arrival Handoff"
 generationFingerprint: "20d243239613f29a53c7"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Guests arriving after the office closes may lack an updated site assignment, entry method, payment or agreement status, rig-specific directions, quiet-hours guidance, or a reachable escalation contact. For independent campgrounds, RV parks, and small outdoor lodging properties, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every confirmed after-hours guest receives a current, secure arrival path tied to a ready site and a next-morning verification**.

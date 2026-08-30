@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for community theaters and volunt
 productId: "rehearsal-conflict-resolution"
 productName: "Rehearsal Conflict Resolution"
 generationFingerprint: "a66c5290c49a9ef998c7"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for community theater rehearsal conflict tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for community theaters and volunteer-led stage-production teams and centers on one result: **every material rehearsal conflict is resolved against scene and role dependencies, published as one current schedule, and acknowledged by affected participants**.

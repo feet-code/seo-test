@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small manufacturers and lean qual
 productId: "supplier-corrective-action-desk"
 productName: "Supplier Corrective Action Desk"
 generationFingerprint: "3ba2631b3fd7c5b489ad"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for supplier corrective action request tracking should be evaluated against the operating problem, not a generic feature checklist. For small manufacturers and lean quality teams, a useful trial must demonstrate this outcome: **every material supplier issue requiring corrective action receives accepted containment, cause, action, and effectiveness evidence by agreed deadlines**.

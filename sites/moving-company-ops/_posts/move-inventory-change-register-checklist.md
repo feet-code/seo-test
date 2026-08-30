@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent household moving 
 productId: "move-inventory-change-register"
 productName: "Move Inventory Change Register"
 generationFingerprint: "8d6790b87cc8fb8ffe73"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for moving inventory change authorization should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent household moving companies and local moving crews and centers on one result: **every material move change is priced, authorized, and published to dispatch and crew before the affected work proceeds**.

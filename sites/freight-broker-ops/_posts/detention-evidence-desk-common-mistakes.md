@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small freight brokerages and shipp
 productId: "detention-evidence-desk"
 productName: "Detention Evidence Desk"
 generationFingerprint: "14e2144847e351cd03f6"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Arrival and departure times, free-time terms, driver messages, location evidence, facility acknowledgments, customer approval, and carrier payment are difficult to reconcile after a load. The recurring failures are usually process-design problems rather than motivation problems. For small freight brokerages and shipper-carrier coordination teams, these are the mistakes worth finding before buying or building software.

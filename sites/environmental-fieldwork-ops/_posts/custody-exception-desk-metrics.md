@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for small environmenta
 productId: "custody-exception-desk"
 productName: "Custody Exception Desk"
 generationFingerprint: "0c01731d2898bf890584"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for environmental chain of custody exception tracking should help small environmental consulting and field-sampling teams decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

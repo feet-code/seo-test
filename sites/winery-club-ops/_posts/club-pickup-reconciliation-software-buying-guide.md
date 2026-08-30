@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small wineries running direct-to-
 productId: "club-pickup-reconciliation"
 productName: "Club Pickup Reconciliation"
 generationFingerprint: "ffe2a2bb9cb2473b88e9"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for wine club pickup order tracking should be evaluated against the operating problem, not a generic feature checklist. For small wineries running direct-to-consumer wine clubs and pickup programs, a useful trial must demonstrate this outcome: **every club pickup order is staged and released accurately, converted or canceled by an approved rule, and reconciled to member and inventory records**.

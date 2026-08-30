@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent funeral homes and
 productId: "service-vendor-handoff"
 productName: "Service Vendor Handoff"
 generationFingerprint: "b296f4c835478543abb7"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for funeral service vendor and facility handoff tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent funeral homes and small death-care service teams and centers on one result: **every external service commitment has current instructions, accountable contacts, accepted timing, change history, and verified completion**.

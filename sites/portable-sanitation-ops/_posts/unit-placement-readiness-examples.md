@@ -4,13 +4,9 @@ excerpt: "Three realistic workflow test cases for portable restroom rental and r
 productId: "unit-placement-readiness"
 productName: "Unit Placement Readiness"
 generationFingerprint: "b8ccd4dd7c4523946a7e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Examples make portable restroom delivery placement readiness easier to design because they reveal where a neat diagram meets messy work. The scenarios below are not claims about a particular company; they are test cases portable restroom rental and recurring sanitation service operators can run against a template or software trial.

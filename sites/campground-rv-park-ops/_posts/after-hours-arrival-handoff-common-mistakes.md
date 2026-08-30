@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent campgrounds, RV parks,
 productId: "after-hours-arrival-handoff"
 productName: "After-Hours Arrival Handoff"
 generationFingerprint: "20d243239613f29a53c7"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Guests arriving after the office closes may lack an updated site assignment, entry method, payment or agreement status, rig-specific directions, quiet-hours guidance, or a reachable escalation contact. The recurring failures are usually process-design problems rather than motivation problems. For independent campgrounds, RV parks, and small outdoor lodging properties, these are the mistakes worth finding before buying or building software.

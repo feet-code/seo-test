@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent cohort-course creato
 productId: "learner-intervention-queue"
 productName: "Learner Intervention Queue"
 generationFingerprint: "a42ae3cb43c757eb4877"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Attendance, assignment, and community signals live in separate tools, so struggling learners are noticed late or receive generic reminders. For independent cohort-course creators and small training businesses, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **learners who may need support receive timely, respectful outreach tied to a concrete next step**.

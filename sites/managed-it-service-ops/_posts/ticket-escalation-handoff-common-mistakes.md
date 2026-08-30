@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small managed service providers an
 productId: "ticket-escalation-handoff"
 productName: "Ticket Escalation Handoff"
 generationFingerprint: "fc03dcc64bf911cfbfa5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Escalated tickets lose diagnostic context and client promises when the next technician must reconstruct work from long comments, private chat, and monitoring alerts. The recurring failures are usually process-design problems rather than motivation problems. For small managed service providers and multi-client IT support teams, these are the mistakes worth finding before buying or building software.

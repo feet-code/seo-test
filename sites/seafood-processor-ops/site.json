@@ -1,0 +1,75 @@
+{
+  "id": "seafood-processor-ops",
+  "name": "Small Seafood Processor Operations",
+  "domain": null,
+  "audience": "small seafood processors, wholesalers, and dock-to-market teams",
+  "topic": "receiving evidence, customer specifications, and cold-storage picks",
+  "products": [
+    {
+      "id": "seafood-receiving-evidence",
+      "name": "Seafood Receiving Evidence Desk",
+      "product": "A focused seafood receiving and lot evidence workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "small seafood processors, wholesalers, and dock-to-market teams",
+      "problem": "Supplier, harvest or source records, arrival condition, temperature evidence, quantity, lot identity, acceptance, and storage placement can be split across paper and ERP entries.",
+      "valueProposition": "Turns seafood receiving and lot evidence into a visible operating queue so every received lot has the processor-required source, condition, identity, quantity, disposition, and storage evidence.",
+      "topic": "seafood receiving and lot evidence",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets seafood receiving and lot evidence software, seafood receiving and lot evidence tracker, seafood receiving and lot evidence template, and seafood receiving and lot evidence checklist searches.",
+      "score": 82,
+      "contentBatch": "batch-005"
+    },
+    {
+      "id": "customer-spec-release",
+      "name": "Customer Specification Release",
+      "product": "A focused seafood customer specification and order release workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "small seafood processors, wholesalers, and dock-to-market teams",
+      "problem": "Species, cut, size, pack, label, source claim, substitution, price, and ship timing vary by account and order.",
+      "valueProposition": "Turns seafood customer specification and order release into a visible operating queue so every production order is released against the current approved customer specification and substitution decision.",
+      "topic": "seafood customer specification and order release",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets seafood customer specification and order release software, seafood customer specification and order release tracker, seafood customer specification and order release template, and seafood customer specification and order release checklist searches.",
+      "score": 83,
+      "contentBatch": "batch-005"
+    },
+    {
+      "id": "cold-storage-pick-check",
+      "name": "Cold Storage Pick Check",
+      "product": "A focused seafood cold storage order picking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "small seafood processors, wholesalers, and dock-to-market teams",
+      "problem": "Lot rotation, holds, customer allocation, case counts, partials, location moves, and shipment staging create high-cost picking exceptions.",
+      "valueProposition": "Turns seafood cold storage order picking into a visible operating queue so every staged seafood order has the correct released lot, quantity, location, and customer allocation independently checked.",
+      "topic": "seafood cold storage order picking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets seafood cold storage order picking software, seafood cold storage order picking tracker, seafood cold storage order picking template, and seafood cold storage order picking checklist searches.",
+      "score": 84,
+      "contentBatch": "batch-005"
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused seafood receiving and lot evidence workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns seafood receiving and lot evidence into a visible operating queue so every received lot has the processor-required source, condition, identity, quantity, disposition, and storage evidence.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "seafood-processor-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

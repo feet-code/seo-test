@@ -4,13 +4,9 @@ excerpt: "Three realistic workflow test cases for independent funeral homes and 
 productId: "arrangement-readiness-board"
 productName: "Arrangement Readiness Board"
 generationFingerprint: "f8cdeb14710adbfcca14"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Examples make funeral arrangement document readiness tracking easier to design because they reveal where a neat diagram meets messy work. The scenarios below are not claims about a particular company; they are test cases independent funeral homes and small death-care service teams can run against a template or software trial.

@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent dental laboratories s
 productId: "case-intake-completeness"
 productName: "Case Intake Completeness"
 generationFingerprint: "ac444cb09821283ff79c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for dental lab case intake validation should be evaluated against the operating problem, not a generic feature checklist. For independent dental laboratories serving local dental practices, a useful trial must demonstrate this outcome: **every lab case is accepted only after a trained reviewer confirms the required prescription, files, materials, dates, and practice clarifications**.

@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent funeral homes and smal
 productId: "service-vendor-handoff"
 productName: "Service Vendor Handoff"
 generationFingerprint: "b296f4c835478543abb7"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Clergy, celebrants, cemeteries, crematories, florists, musicians, newspapers, venues, escorts, and transport providers receive changes through separate calls without one accepted operating plan. The recurring failures are usually process-design problems rather than motivation problems. For independent funeral homes and small death-care service teams, these are the mistakes worth finding before buying or building software.

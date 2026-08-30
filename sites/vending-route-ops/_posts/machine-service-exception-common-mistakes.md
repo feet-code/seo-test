@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent vending machine and mi
 productId: "machine-service-exception"
 productName: "Machine Service Exception"
 generationFingerprint: "77a7ab7783acbebe726a"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Telemetry alerts, customer calls, refunds, technician visits, parts, and restored-sales verification are disconnected, so machines can look serviced while still unavailable. The recurring failures are usually process-design problems rather than motivation problems. For independent vending machine and micro-market route operators, these are the mistakes worth finding before buying or building software.

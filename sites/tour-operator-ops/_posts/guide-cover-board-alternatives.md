@@ -4,13 +4,9 @@ excerpt: "A practical alternatives comparison for small day-tour, activity, and 
 productId: "guide-cover-board"
 productName: "Guide Cover Board"
 generationFingerprint: "0fa8921991b544dcfe7d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 There are several valid ways to manage tour guide scheduling and substitution. The right choice depends on volume, exception rate, ownership, and how much coordination crosses systems. Start with the smallest approach that keeps the work reliable.

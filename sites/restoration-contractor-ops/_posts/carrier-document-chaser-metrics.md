@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for small water, fire,
 productId: "carrier-document-chaser"
 productName: "Carrier Document Chaser"
 generationFingerprint: "3755d85ce6576efa4f10"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for restoration insurance document tracking should help small water, fire, and property-restoration contractors decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

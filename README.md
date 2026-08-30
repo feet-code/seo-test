@@ -29,17 +29,17 @@ Before deploying, inspect and freely edit the file. Every idea has one authorita
 
 ### Included editorial batches
 
-This branch already includes a reviewed `ideas/ideas.json` and 1,530 committed probes for 153 products across 70 audience websites. Batch 001 contributed 10 sites, 22 products, and 220 probes; batch 002 added 20 sites, 42 products, and 420 probes; batch 003 added 15 sites, 33 products, and 330 probes; batch 004 adds 25 sites, 56 products, and 560 probes. Group sizes range from one to three products according to audience fit. The old `example` verification fixture is retired, so it is excluded from bulk launches.
+This branch includes a reviewed `ideas/ideas.json` and 2,720 committed probes for 272 products across 120 audience websites. Batch 001 contributed 10 sites, 22 products, and 220 probes; batch 002 added 20 sites, 42 products, and 420 probes; batch 003 added 15 sites, 33 products, and 330 probes; batch 004 added 25 sites, 56 products, and 560 probes; batch 005 adds 50 sites, 119 products, and 1,190 probes. Group sizes range from one to three products according to audience fit. The old `example` verification fixture is retired, so it is excluded from bulk launches.
 
 Deploy the included batch directly:
 
 ```bash
 python scripts/ideas.py --plan
-python scripts/launch.py --limit 1
-python scripts/launch.py
+python scripts/launch.py --batch batch-005 --limit 1
+python scripts/launch.py --batch batch-005
 ```
 
-The normal launcher recognizes the committed post fingerprints and does not call Gemini for complete products. Future reviewed batches can be reproduced from each idea's `probeContext` with `python scripts/editorial_probes.py`; use `--site SITE_ID` for one website and `--force` only when intentionally replacing that site's existing probes.
+The normal launcher recognizes the committed post fingerprints and does not call Gemini for complete products. Future reviewed batches can be reproduced from each idea's `probeContext` with `python scripts/editorial_probes.py --batch BATCH_ID`; use `--site SITE_ID` for one website and `--force` only when intentionally replacing existing probes.
 
 Idea generation checkpoints after every audience group in `.deploy/state/ideas-generation.json`. Rerun the same `--generate` command to resume. Use `--regenerate` only when you intentionally want a completely new portfolio:
 
@@ -83,7 +83,9 @@ The sync step validates unique IDs, idea `siteId` references, variable-size grou
 Repeated imports update portfolio-managed content while preserving site-local operations:
 
 - updated from `ideas.json`: site name, audience, topic, product membership, and product research/copy;
-- preserved from `sites/<site-id>/site.json`: domain, hosting project/provider, signup, GSC/PostHog state, author/images, lifecycle status, and article count.
+- preserved from `sites/<site-id>/site.json`: domain, hosting project/provider, signup, GSC/PostHog state, author name, lifecycle status, and article count.
+
+Blog photos are intentionally disabled. Existing Markdown has no cover, author-picture, Open Graph image, Markdown-image, or HTML-image data; both generators enforce the same rule for future posts. Run `python scripts/remove_blog_images.py` after importing older content to make it image-free.
 
 Sites missing from a newer export are reported as `STALE (kept)`. They are never silently deleted. Review them and explicitly retire or tear them down.
 
@@ -92,6 +94,9 @@ Sites missing from a newer export are reported as `STALE (kept)`. They are never
 ```bash
 python scripts/launch.py --site site-a
 python scripts/launch.py --sites site-a,site-b
+python scripts/launch.py --batch batch-005
+python scripts/launch.py --batches batch-004,batch-005
+python scripts/launch.py --batch batch-005 --limit 1
 python scripts/launch.py --limit 1
 python scripts/launch.py --frontend-only --site site-a
 python scripts/launch.py --product product-id
@@ -104,6 +109,8 @@ A normal launch always invokes the restart-safe product generator. Products whos
 `--product product-id` finds the containing site, force-regenerates that product, then builds, deploys, registers, and checks that site.
 
 `--limit 1` selects one site but still runs its complete pipeline, including Gemini for missing or changed products. Use `--frontend-only --limit 1` when only shared frontend/configuration changed.
+
+`--batch` selects every website containing at least one product with that `contentBatch`. `--batches` unions several batches, and each affected website deploys only once even if it contains products from more than one selected batch. `--limit` is applied after batch selection, which makes `--batch batch-005 --limit 1` the smoke test for exactly that batch. A plain `--resume` restores the exact site subset saved by the failed run; repeating the batch flags is also valid.
 
 `--blogs-only` force-regenerates all selected product posts. `--skip-generation` and `--frontend-only` publish existing Markdown.
 
@@ -118,7 +125,7 @@ For every product, the build creates:
 - PostHog events `product_probe_viewed` and `product_interest_submitted`;
 - cross-discovery links to complementary products on the same audience site.
 
-Generated post frontmatter includes `productId`, `productName`, and a generation fingerprint.
+Generated post frontmatter includes `productId`, `productName`, and a generation fingerprint. It deliberately contains no image metadata.
 
 ## Google Search Console
 
@@ -145,6 +152,7 @@ A service account remains supported with `GOOGLE_APPLICATION_CREDENTIALS`, but i
 The build produces a static `out/` artifact:
 
 ```bash
+python scripts/launch.py --provider auto
 python scripts/launch.py --provider cloudflare-pages
 python scripts/launch.py --provider cloudflare-workers
 python scripts/launch.py --provider vercel
@@ -152,7 +160,9 @@ python scripts/launch.py --provider netlify
 python scripts/launch.py --provider static
 ```
 
-Cloudflare Pages projects are created or reused automatically. Custom domains must already be owned and controlled by you.
+New portfolio sites default to `cloudflare-auto`. The launcher first reuses a persisted provider or an existing Pages project. For a genuinely new site it reads the account's real Pages project count: below the configured limit it creates Pages, at the limit it deploys the static export as an individual Worker on `*.workers.dev`. If Cloudflare rejects a Pages create with a capacity response, the same run falls back to Workers. The resolved provider and exact URL are written to `site.json`, so redeploy, GSC verification, health checks, resume, and teardown all use the same host.
+
+Cloudflare documents a 100-project Pages account limit and separate Worker limits. `CLOUDFLARE_PAGES_PROJECT_LIMIT=100` is the default and can be lowered for a controlled migration test. Workers deployment requires a token with Workers Scripts write access. The launcher discovers the account's existing workers.dev subdomain; set `CLOUDFLARE_WORKERS_SUBDOMAIN=name` only if you want to override discovery. Custom domains must already be owned and controlled by you.
 
 ## Credentials
 
@@ -163,6 +173,8 @@ GEMINI_API_KEY=...
 GEMINI_MODELS=gemini-3.5-flash-lite,gemini-3.1-flash-lite,gemini-2.5-flash-lite,gemini-2.5-flash
 CLOUDFLARE_API_TOKEN=...
 CLOUDFLARE_ACCOUNT_ID=...
+CLOUDFLARE_WORKERS_SUBDOMAIN=...  # optional override
+CLOUDFLARE_PAGES_PROJECT_LIMIT=100  # optional test/guardrail override
 POSTHOG_PROJECT_ID=...
 POSTHOG_PROJECT_API_KEY=...
 GOOGLE_OAUTH_CLIENT_SECRETS=/path/to/desktop-oauth-client.json

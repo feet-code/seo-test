@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent recruiters and boutiqu
 productId: "interview-debrief-collector"
 productName: "Interview Debrief Collector"
 generationFingerprint: "c923ed22607d97ec3f20"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Interview feedback arrives late, lacks evidence, or is shaped by the loudest interviewer, delaying client decisions and weakening candidate communication. The recurring failures are usually process-design problems rather than motivation problems. For independent recruiters and boutique recruiting firms, these are the mistakes worth finding before buying or building software.

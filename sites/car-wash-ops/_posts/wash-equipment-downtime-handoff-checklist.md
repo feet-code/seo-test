@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent express, tunnel, 
 productId: "wash-equipment-downtime-handoff"
 productName: "Wash Equipment Downtime Handoff"
 generationFingerprint: "21c57d543214b71eadb3"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for car wash equipment downtime tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent express, tunnel, and multi-bay car wash operators and centers on one result: **every equipment incident has contained customer impact, named repair ownership, shift-to-shift status, and verified return to service**.

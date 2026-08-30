@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent retail, delivery,
 productId: "floral-substitution-approval"
 productName: "Floral Substitution Approval"
 generationFingerprint: "9eee4f9dbefc835e3c2c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for florist substitution approval tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent retail, delivery, and event floral studios and centers on one result: **every material substitution preserves design intent and margin with documented internal or client approval before production**.

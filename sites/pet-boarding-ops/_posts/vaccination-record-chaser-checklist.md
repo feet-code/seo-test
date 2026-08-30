@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent pet boarding faci
 productId: "vaccination-record-chaser"
 productName: "Vaccination Record Chaser"
 generationFingerprint: "c5c221f95bdca6428946"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for pet boarding vaccination record tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent pet boarding facilities and dog daycare operators and centers on one result: **every scheduled pet has verified facility-required records or a documented booking decision before arrival**.

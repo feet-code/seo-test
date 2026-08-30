@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent residential property m
 productId: "maintenance-triage-board"
 productName: "Maintenance Triage Board"
 generationFingerprint: "cda6aa08f72fc2c28b01"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for rental property maintenance request triage should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent residential property managers and small property teams, the target outcome is **every request has enough evidence for a clear priority, owner, tenant update, and verified resolution**.

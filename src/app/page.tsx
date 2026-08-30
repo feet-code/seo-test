@@ -24,9 +24,7 @@ export default function Index() {
             <h2 className="mb-8 text-4xl font-bold tracking-tight md:text-6xl">Latest guides</h2>
             <HeroPost
               title={heroPost.title}
-              coverImage={heroPost.coverImage}
               date={heroPost.date}
-              author={heroPost.author}
               slug={heroPost.slug}
               excerpt={heroPost.excerpt}
             />

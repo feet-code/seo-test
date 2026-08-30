@@ -4,13 +4,9 @@ excerpt: "A practical record template for small contract security companies and 
 productId: "incident-report-review"
 productName: "Incident Report Review"
 generationFingerprint: "cbd50a0261c9afadb15e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful security incident report review workflow template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

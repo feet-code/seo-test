@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent household moving com
 productId: "crew-arrival-readiness"
 productName: "Crew Arrival Readiness"
 generationFingerprint: "d6f119d07aa79748a594"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Crews lose time when addresses, access windows, contacts, parking, inventory, equipment, paperwork, or customer confirmations are incomplete at dispatch. For independent household moving companies and local moving crews, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every dispatched crew leaves with a confirmed job scope, access plan, equipment load, and customer arrival promise**.

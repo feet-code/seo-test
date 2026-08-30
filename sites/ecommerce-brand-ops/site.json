@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets ecommerce return exception, returns management workflow, refund reconciliation, and return inspection software searches.",
-      "score": 88
+      "score": 88,
+      "contentBatch": "batch-002"
     },
     {
       "id": "creator-sample-tracker",
@@ -31,7 +32,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets influencer gifting tracker, creator sample management, PR package tracking, and influencer product seeding searches.",
-      "score": 84
+      "score": 84,
+      "contentBatch": "batch-002"
     },
     {
       "id": "listing-change-qa",
@@ -45,7 +47,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets ecommerce listing QA, product page change checklist, SKU content approval, and marketplace listing audit searches.",
-      "score": 82
+      "score": 82,
+      "contentBatch": "batch-002"
     }
   ],
   "articlesPerProduct": 10,
@@ -54,12 +57,7 @@
   "valueProposition": "Turns ecommerce return exception management into a visible operating queue so every nonstandard return is resolved to an approved refund, replacement, denial, or investigation with inventory and customer records reconciled.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

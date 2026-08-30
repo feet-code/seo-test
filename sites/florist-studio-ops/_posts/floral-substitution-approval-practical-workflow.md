@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent retail, delivery, an
 productId: "floral-substitution-approval"
 productName: "Floral Substitution Approval"
 generationFingerprint: "9eee4f9dbefc835e3c2c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Unavailable stems, color variation, quality rejection, seasonality, and wholesaler shortages force substitutions, but design intent, price, client approval, and recipe updates may not stay aligned. For independent retail, delivery, and event floral studios, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every material substitution preserves design intent and margin with documented internal or client approval before production**.

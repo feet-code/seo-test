@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for independent veteri
 productId: "lab-callback-board"
 productName: "Lab Callback Board"
 generationFingerprint: "62c551b50d74d3638e9b"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for veterinary lab result callback tracking should help independent veterinary clinics and small client-service teams decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small third-party logistics wareh
 productId: "pick-pack-exception-desk"
 productName: "Pick-Pack Exception Desk"
 generationFingerprint: "8c14d396ec4968c7b38c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for 3PL pick and pack exception tracking should be evaluated against the operating problem, not a generic feature checklist. For small third-party logistics warehouses and fulfillment operators, a useful trial must demonstrate this outcome: **every blocked fulfillment order is released, substituted, split, held, or canceled under client rules with inventory and shipment evidence reconciled**.

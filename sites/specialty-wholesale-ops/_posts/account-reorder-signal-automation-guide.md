@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for small specialty wholesalers and B2
 productId: "account-reorder-signal"
 productName: "Account Reorder Signal"
 generationFingerprint: "35f5833aa06254a2b04e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for wholesale customer reorder reminders and account follow-up should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For small specialty wholesalers and B2B distributors, the target outcome is **the rep reviews each plausible reorder opportunity at the right time without sending irrelevant automated messages**.

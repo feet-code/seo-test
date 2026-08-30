@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small manufacturers and lean qua
 productId: "work-instruction-acknowledgment"
 productName: "Work Instruction Acknowledgment"
 generationFingerprint: "b84683951f628342182b"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Revised work instructions reach shared folders or binders without proof that affected operators received the right revision and completed any required qualification. For small manufacturers and lean quality teams, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every effective instruction revision is distributed to the affected roles and acknowledged with required training before use**.

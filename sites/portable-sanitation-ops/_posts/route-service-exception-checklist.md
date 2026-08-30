@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for portable restroom rental and 
 productId: "route-service-exception"
 productName: "Route Service Exception"
 generationFingerprint: "f52a86874e8d15e80640"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for portable restroom route service exception tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for portable restroom rental and recurring sanitation service operators and centers on one result: **every incomplete or abnormal unit service has unit-level evidence, customer impact, owner, billing treatment, and a verified recovery outcome**.

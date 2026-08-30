@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent equipment, tool, 
 productId: "overdue-rental-followup"
 productName: "Overdue Rental Follow-Up"
 generationFingerprint: "69e2a16f7956184e3ed4"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for overdue equipment rental follow-up should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent equipment, tool, and event-rental businesses and centers on one result: **every overdue contract has confirmed asset status, an authorized return or extension plan, and protected downstream reservations**.

@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small manufacturers and lean qual
 productId: "work-instruction-acknowledgment"
 productName: "Work Instruction Acknowledgment"
 generationFingerprint: "b84683951f628342182b"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for controlled work instruction acknowledgment should be evaluated against the operating problem, not a generic feature checklist. For small manufacturers and lean quality teams, a useful trial must demonstrate this outcome: **every effective instruction revision is distributed to the affected roles and acknowledged with required training before use**.

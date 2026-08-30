@@ -4,13 +4,9 @@ excerpt: "A practical record template for independent conference organizers and 
 productId: "speaker-asset-chaser"
 productName: "Speaker Asset Chaser"
 generationFingerprint: "b1a600f7c9fdae95e9c8"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful conference speaker asset tracking template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

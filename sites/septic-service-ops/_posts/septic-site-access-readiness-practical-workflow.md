@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small septic pumping, inspection
 productId: "septic-site-access-readiness"
 productName: "Septic Site Access Readiness"
 generationFingerprint: "d24b47a41f3bac36462d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Pump trucks arrive without verified tank location, lids exposed, gate access, hose distance, parking plan, occupant contact, or known site constraints. For small septic pumping, inspection, and liquid-waste service companies, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every dispatched septic job has a usable tank location, access plan, service scope, and customer responsibility confirmed before truck commitment**.

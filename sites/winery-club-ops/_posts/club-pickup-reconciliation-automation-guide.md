@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for small wineries running direct-to-c
 productId: "club-pickup-reconciliation"
 productName: "Club Pickup Reconciliation"
 generationFingerprint: "ffe2a2bb9cb2473b88e9"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for wine club pickup order tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For small wineries running direct-to-consumer wine clubs and pickup programs, the target outcome is **every club pickup order is staged and released accurately, converted or canceled by an approved rule, and reconciled to member and inventory records**.

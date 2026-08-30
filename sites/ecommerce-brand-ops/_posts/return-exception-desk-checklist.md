@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for small direct-to-consumer ecom
 productId: "return-exception-desk"
 productName: "Return Exception Desk"
 generationFingerprint: "24ac7b877c2f24ae51c1"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for ecommerce return exception management should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for small direct-to-consumer ecommerce brands and lean operations teams and centers on one result: **every nonstandard return is resolved to an approved refund, replacement, denial, or investigation with inventory and customer records reconciled**.

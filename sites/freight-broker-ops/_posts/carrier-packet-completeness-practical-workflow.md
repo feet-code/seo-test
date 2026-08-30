@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small freight brokerages and shi
 productId: "carrier-packet-completeness"
 productName: "Carrier Packet Completeness"
 generationFingerprint: "82cc371059776a3c0dba"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Carrier onboarding documents, authority checks, insurance evidence, agreements, payment details, and internal approvals arrive through portals and email without one load-ready decision. For small freight brokerages and shipper-carrier coordination teams, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every carrier assigned to a load has current required evidence, approved exceptions, and a verified qualification decision**.

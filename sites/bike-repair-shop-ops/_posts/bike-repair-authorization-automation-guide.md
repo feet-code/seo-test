@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent bicycle repair shops a
 productId: "bike-repair-authorization"
 productName: "Bike Repair Authorization"
 generationFingerprint: "92b21b8dbce0682aeec8"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for bike repair estimate approval tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent bicycle repair shops and service departments, the target outcome is **every material repair change has an itemized current estimate, recorded customer decision, parts implication, and explicit mechanic release**.

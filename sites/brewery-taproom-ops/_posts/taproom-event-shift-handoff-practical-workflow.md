@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent craft breweries oper
 productId: "taproom-event-shift-handoff"
 productName: "Taproom Event Shift Handoff"
 generationFingerprint: "94a47a271e27fe4d5f1f"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Private bookings, live music, food vendors, reserved areas, minimum spend, tabs, special releases, staffing, setup, cleanup, and neighbor constraints can be split between event sales and shift operations. For independent craft breweries operating one or more taprooms, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every taproom event transfers into the operating shift with current commitments, assigned setup, commercial terms, contacts, and explicit manager acceptance**.

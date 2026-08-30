@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for small commercial laundries an
 productId: "customer-linen-loss-review"
 productName: "Customer Linen Loss Review"
 generationFingerprint: "e4518ada35eca977510d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for commercial laundry linen loss and replacement tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for small commercial laundries and linen or uniform rental services and centers on one result: **every material textile-loss difference is reconstructed, reviewed with the customer, and resolved to count correction, replacement, charge, or process action**.

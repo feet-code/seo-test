@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for portable restroom rental and recur
 productId: "route-service-exception"
 productName: "Route Service Exception"
 generationFingerprint: "f52a86874e8d15e80640"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A driver can mark a stop attempted while locked gates, moved units, blocked access, damage, overuse, or missing supplies require office, customer, or follow-up action. The recurring failures are usually process-design problems rather than motivation problems. For portable restroom rental and recurring sanitation service operators, these are the mistakes worth finding before buying or building software.

@@ -1,0 +1,60 @@
+{
+  "id": "chimney-service-ops",
+  "name": "Chimney Service Operations",
+  "domain": null,
+  "audience": "independent chimney sweep, inspection, and fireplace-service companies",
+  "topic": "inspection follow-up and seasonal scheduling for chimney service",
+  "products": [
+    {
+      "id": "chimney-finding-followup",
+      "name": "Chimney Finding Follow-Up",
+      "product": "A focused chimney inspection finding follow-up workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent chimney sweep, inspection, and fireplace-service companies",
+      "problem": "Inspection findings, customer explanations, repair options, and seasonal timing split across reports and inboxes, leaving important decisions unresolved.",
+      "valueProposition": "Turns chimney inspection finding follow-up into a visible operating queue so every material finding reaches a documented customer decision and an owned next action.",
+      "topic": "chimney inspection finding follow-up",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets chimney inspection finding follow-up software, chimney inspection finding follow-up tracker, chimney inspection finding follow-up template, and chimney inspection finding follow-up checklist searches.",
+      "score": 84,
+      "contentBatch": "batch-005"
+    },
+    {
+      "id": "chimney-weather-reschedule",
+      "name": "Chimney Weather Reschedule Board",
+      "product": "A focused chimney service weather rescheduling workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent chimney sweep, inspection, and fireplace-service companies",
+      "problem": "Roof access and exterior work are displaced by weather, but priority, customer notice, crew capability, and recovery capacity are reconciled manually.",
+      "valueProposition": "Turns chimney service weather rescheduling into a visible operating queue so every weather-displaced visit is safely reclassified, communicated, and recovered or closed.",
+      "topic": "chimney service weather rescheduling",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets chimney service weather rescheduling software, chimney service weather rescheduling tracker, chimney service weather rescheduling template, and chimney service weather rescheduling checklist searches.",
+      "score": 85,
+      "contentBatch": "batch-005"
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused chimney inspection finding follow-up workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns chimney inspection finding follow-up into a visible operating queue so every material finding reaches a documented customer decision and an owned next action.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "chimney-service-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

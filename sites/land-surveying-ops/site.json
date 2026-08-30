@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets land survey crew scheduling, survey field packet, land surveying project software, and survey job checklist searches.",
-      "score": 90
+      "score": 90,
+      "contentBatch": "batch-004"
     },
     {
       "id": "survey-deliverable-release",
@@ -31,7 +32,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets land survey quality control, survey deliverable checklist, survey project tracking, and survey review workflow searches.",
-      "score": 91
+      "score": 91,
+      "contentBatch": "batch-004"
     }
   ],
   "articlesPerProduct": 10,
@@ -40,12 +42,7 @@
   "valueProposition": "Turns land survey field crew readiness into a visible operating queue so every survey field assignment has current office research, site permissions, technical files, equipment, crew capability, and explicit release.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for boutique translation agencies
 productId: "terminology-approval-queue"
 productName: "Terminology Approval Queue"
 generationFingerprint: "f9edb42facc71cd2e0ee"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for translation terminology approval workflow should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for boutique translation agencies and localization project teams and centers on one result: **every terminology question receives an authoritative decision that is applied to the glossary and affected translation work**.

@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for small land-surveying firms coordin
 productId: "survey-deliverable-release"
 productName: "Survey Deliverable Release"
 generationFingerprint: "22244996dc4424f8c44c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for land survey deliverable quality review should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For small land-surveying firms coordinating field crews and office deliverables, the target outcome is **every survey deliverable is traceable to current field and office inputs, passes the firm's required professional review, and is delivered as a controlled version**.

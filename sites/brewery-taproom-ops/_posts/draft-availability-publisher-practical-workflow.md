@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent craft breweries oper
 productId: "draft-availability-publisher"
 productName: "Draft Availability Publisher"
 generationFingerprint: "01e68dbb40ae388a4d92"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A keg kicks, line is taken down, release changes, or product goes on hold, but POS, menu board, website, server knowledge, and later reactivation can show different states. For independent craft breweries operating one or more taprooms, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every draft availability change is approved, published across intended channels, verified live, and reactivated only from confirmed product and line readiness**.

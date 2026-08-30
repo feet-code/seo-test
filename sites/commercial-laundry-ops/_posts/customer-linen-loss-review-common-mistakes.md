@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small commercial laundries and lin
 productId: "customer-linen-loss-review"
 productName: "Customer Linen Loss Review"
 generationFingerprint: "e4518ada35eca977510d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Customer shortages, replacement charges, discard records, rag-out, route counts, and circulating inventory are debated without one period-based evidence trail. The recurring failures are usually process-design problems rather than motivation problems. For small commercial laundries and linen or uniform rental services, these are the mistakes worth finding before buying or building software.

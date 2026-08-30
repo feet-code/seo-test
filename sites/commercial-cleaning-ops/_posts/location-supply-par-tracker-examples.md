@@ -4,13 +4,9 @@ excerpt: "Three realistic workflow test cases for owner-operated commercial clea
 productId: "location-supply-par-tracker"
 productName: "Location Supply Par Tracker"
 generationFingerprint: "dffeb8e01f6c103f3284"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Examples make janitorial supply inventory and location replenishment tracking easier to design because they reveal where a neat diagram meets messy work. The scenarios below are not claims about a particular company; they are test cases owner-operated commercial cleaning and janitorial companies can run against a template or software trial.

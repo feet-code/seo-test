@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for community theaters and volunteer
 productId: "production-asset-return"
 productName: "Production Asset Return"
 generationFingerprint: "6d72e4b7e0c557eb01bc"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Props, costumes, wigs, scripts, keys, microphones, tools, and borrowed items leave storage with cast or departments, then strike and return status disappear across paper sign-outs. For community theaters and volunteer-led stage-production teams, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every production asset has assigned custody, condition evidence, return deadline, storage destination, and an explicit lost damage repair or closed outcome**.

@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for community theaters and volunteer-l
 productId: "rehearsal-conflict-resolution"
 productName: "Rehearsal Conflict Resolution"
 generationFingerprint: "a66c5290c49a9ef998c7"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for community theater rehearsal conflict tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For community theaters and volunteer-led stage-production teams, the target outcome is **every material rehearsal conflict is resolved against scene and role dependencies, published as one current schedule, and acknowledged by affected participants**.

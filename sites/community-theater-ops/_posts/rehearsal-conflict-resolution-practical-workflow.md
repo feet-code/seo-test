@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for community theaters and volunteer
 productId: "rehearsal-conflict-resolution"
 productName: "Rehearsal Conflict Resolution"
 generationFingerprint: "a66c5290c49a9ef998c7"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Cast and crew availability, scene requirements, music or fight calls, room access, volunteer schedules, and newly added conflicts cause calendar changes that do not reach everyone affected. For community theaters and volunteer-led stage-production teams, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every material rehearsal conflict is resolved against scene and role dependencies, published as one current schedule, and acknowledged by affected participants**.

@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for independent equipm
 productId: "overdue-rental-followup"
 productName: "Overdue Rental Follow-Up"
 generationFingerprint: "69e2a16f7956184e3ed4"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for overdue equipment rental follow-up should help independent equipment, tool, and event-rental businesses decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

@@ -4,13 +4,9 @@ excerpt: "Three realistic workflow test cases for small environmental consulting
 productId: "sampling-event-readiness"
 productName: "Sampling Event Readiness"
 generationFingerprint: "4a05807fcb6753f210e2"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Examples make environmental sampling event readiness easier to design because they reveal where a neat diagram meets messy work. The scenarios below are not claims about a particular company; they are test cases small environmental consulting and field-sampling teams can run against a template or software trial.

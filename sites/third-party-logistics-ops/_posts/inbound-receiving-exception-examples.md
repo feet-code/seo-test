@@ -4,13 +4,9 @@ excerpt: "Three realistic workflow test cases for small third-party logistics wa
 productId: "inbound-receiving-exception"
 productName: "Inbound Receiving Exception"
 generationFingerprint: "b31d31abcf80b6fd60e5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Examples make 3PL inbound receiving exception tracking easier to design because they reveal where a neat diagram meets messy work. The scenarios below are not claims about a particular company; they are test cases small third-party logistics warehouses and fulfillment operators can run against a template or software trial.

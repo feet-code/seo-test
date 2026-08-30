@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets podcast guest checklist, podcast guest release tracker, podcast guest intake, and podcast asset management searches.",
-      "score": 82
+      "score": 82,
+      "contentBatch": "batch-002"
     }
   ],
   "articlesPerProduct": 10,
@@ -26,12 +27,7 @@
   "valueProposition": "Turns podcast guest asset and release tracking into a visible operating queue so every scheduled guest has the minimum approved assets and permissions needed for recording, publishing, and promotion.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

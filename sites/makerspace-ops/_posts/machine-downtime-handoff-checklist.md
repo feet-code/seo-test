@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for community makerspaces, fabric
 productId: "machine-downtime-handoff"
 productName: "Machine Downtime Handoff"
 generationFingerprint: "11b8f5dadce52d584268"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for makerspace machine downtime and maintenance tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for community makerspaces, fabrication labs, and shared technical workshops and centers on one result: **every equipment incident immediately blocks affected access and bookings, transfers with named repair ownership, and restores only after the required review and test**.

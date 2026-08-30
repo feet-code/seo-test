@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent conference organizers 
 productId: "sponsor-deliverable-register"
 productName: "Sponsor Deliverable Register"
 generationFingerprint: "7b88b57ac2ebda718d2b"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Logo placements, booth entitlements, tickets, sessions, lead capture, signage, mentions, and post-event reporting are sold in contracts but fulfilled across separate teams. The recurring failures are usually process-design problems rather than motivation problems. For independent conference organizers and small trade-show teams, these are the mistakes worth finding before buying or building software.

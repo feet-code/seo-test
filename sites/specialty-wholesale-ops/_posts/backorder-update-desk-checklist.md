@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for small specialty wholesalers a
 productId: "backorder-update-desk"
 productName: "Backorder Update Desk"
 generationFingerprint: "63247f236e78f65404cf"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for wholesale backorder customer update tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for small specialty wholesalers and B2B distributors and centers on one result: **every affected customer receives an accurate update and explicit option before a missed promise becomes a surprise**.

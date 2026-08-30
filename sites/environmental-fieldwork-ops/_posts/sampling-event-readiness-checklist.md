@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for small environmental consultin
 productId: "sampling-event-readiness"
 productName: "Sampling Event Readiness"
 generationFingerprint: "4a05807fcb6753f210e2"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for environmental sampling event readiness should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for small environmental consulting and field-sampling teams and centers on one result: **every sampling event is released by a qualified reviewer with current plan, locations, equipment, containers, laboratory coordination, access, and safety prerequisites**.

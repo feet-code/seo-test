@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets bakery allergen label software, food label change control, bakery label approval, and wholesale bakery compliance searches.",
-      "score": 91
+      "score": 91,
+      "contentBatch": "batch-004"
     },
     {
       "id": "route-shortage-recovery",
@@ -31,7 +32,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets bakery delivery shortage, wholesale bakery order fulfillment, bakery route software, and bakery substitution approval searches.",
-      "score": 88
+      "score": 88,
+      "contentBatch": "batch-004"
     }
   ],
   "articlesPerProduct": 10,
@@ -40,12 +42,7 @@
   "valueProposition": "Turns wholesale bakery allergen and label change approval into a visible operating queue so every label change is reviewed by the responsible people, tied to effective product and lot boundaries, and verified at first production use.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

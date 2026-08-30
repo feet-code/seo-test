@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent pool maintenance 
 productId: "property-access-recovery"
 productName: "Property Access Recovery"
 generationFingerprint: "39d8217fde6f2773dc15"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:22Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for pool service gate and property access tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent pool maintenance and repair companies running recurring routes and centers on one result: **every access failure is resolved into verified future instructions, an accountable contact, and an explicit billing or reschedule outcome**.

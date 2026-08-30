@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent dance studios producin
 productId: "recital-readiness-board"
 productName: "Recital Readiness Board"
 generationFingerprint: "756275355c913ad83b46"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Routines, music edits, dancer participation, costumes, shoes, quick changes, rehearsal calls, volunteers, tickets, program details, venue access, and backstage plans mature across many class and parent records. The recurring failures are usually process-design problems rather than motivation problems. For independent dance studios producing multi-class recitals, these are the mistakes worth finding before buying or building software.

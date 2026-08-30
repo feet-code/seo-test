@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent pet boarding faciliti
 productId: "vaccination-record-chaser"
 productName: "Vaccination Record Chaser"
 generationFingerprint: "c5c221f95bdca6428946"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for pet boarding vaccination record tracking should be evaluated against the operating problem, not a generic feature checklist. For independent pet boarding facilities and dog daycare operators, a useful trial must demonstrate this outcome: **every scheduled pet has verified facility-required records or a documented booking decision before arrival**.

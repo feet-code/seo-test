@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent express, tunnel, and m
 productId: "membership-billing-exception"
 productName: "Membership Billing Exception"
 generationFingerprint: "d464de272caa742d908b"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Failed renewals, duplicate plans, plate changes, cancellation requests, refunds, disputed charges, and access status can diverge between POS, processor, and customer support. The recurring failures are usually process-design problems rather than motivation problems. For independent express, tunnel, and multi-bay car wash operators, these are the mistakes worth finding before buying or building software.

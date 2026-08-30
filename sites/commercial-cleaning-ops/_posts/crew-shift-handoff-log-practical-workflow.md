@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for owner-operated commercial cleani
 productId: "crew-shift-handoff-log"
 productName: "Crew Shift Handoff Log"
 generationFingerprint: "3a60241865284dc0635d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Critical details are passed verbally or in group chat, so the next crew cannot distinguish a resolved issue from work that still needs attention. For owner-operated commercial cleaning and janitorial companies, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **the next responsible person starts with a clear list of unresolved location-specific exceptions**.

@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for small bookkeeping firms and c
 productId: "portfolio-close-monitor"
 productName: "Portfolio Close Monitor"
 generationFingerprint: "98f8e4e4a7f8b578968e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for bookkeeping month-end close checklist and portfolio tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for small bookkeeping firms and client accounting service teams and centers on one result: **the firm can identify the next action and delivery risk for every client close without reconstructing status manually**.

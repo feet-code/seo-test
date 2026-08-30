@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent retail, delivery, and 
 productId: "floral-delivery-install-readiness"
 productName: "Floral Delivery and Install Readiness"
 generationFingerprint: "051a70dad523e86765f0"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Orders leave with incomplete arrangements, missing rentals, wrong vehicle conditions, uncertain venue access, no onsite contact, or an installation sequence that conflicts with event timing. The recurring failures are usually process-design problems rather than motivation problems. For independent retail, delivery, and event floral studios, these are the mistakes worth finding before buying or building software.

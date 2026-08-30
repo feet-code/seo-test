@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small managed service providers 
 productId: "client-access-request-gate"
 productName: "Client Access Request Gate"
 generationFingerprint: "a423039ededf9b3c3463"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Access changes arrive through tickets, email, and chat without consistent requester validation, client approval, scope, or proof that the change was completed and reviewed. For small managed service providers and multi-client IT support teams, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every client access change is authorized by the right person, implemented to the approved scope, and evidenced in the client record**.

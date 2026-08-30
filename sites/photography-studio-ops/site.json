@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets photography proofing workflow, client photo selection, photo approval software, and photography gallery approvals searches.",
-      "score": 86
+      "score": 86,
+      "contentBatch": "batch-003"
     },
     {
       "id": "shoot-readiness-board",
@@ -31,7 +32,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets photography shoot checklist, photo shoot call sheet, studio shoot planning, and photography production readiness searches.",
-      "score": 83
+      "score": 83,
+      "contentBatch": "batch-003"
     }
   ],
   "articlesPerProduct": 10,
@@ -40,12 +42,7 @@
   "valueProposition": "Turns photography client proof selection and approval into a visible operating queue so every client selection and approval identifies the exact images, revision, intended output, approver, and final decision.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

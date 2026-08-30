@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent vending machine and mi
 productId: "route-load-reconciliation"
 productName: "Route Load Reconciliation"
 generationFingerprint: "4e77f1ee7a99983085fc"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for vending route load and inventory reconciliation should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent vending machine and micro-market route operators, the target outcome is **every route reconciles planned product, actual machine fills, returns, waste, and reported sales to explain remaining variance**.

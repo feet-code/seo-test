@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small contract security companies
 productId: "incident-report-review"
 productName: "Incident Report Review"
 generationFingerprint: "cbd50a0261c9afadb15e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for security incident report review workflow should be evaluated against the operating problem, not a generic feature checklist. For small contract security companies and guard supervisors, a useful trial must demonstrate this outcome: **every submitted incident report is checked for completeness, corrected with an audit trail, and delivered to authorized recipients**.

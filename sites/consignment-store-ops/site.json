@@ -1,0 +1,60 @@
+{
+  "id": "consignment-store-ops",
+  "name": "Consignment Store Operations",
+  "domain": null,
+  "audience": "independent apparel, furniture, and specialty consignment stores",
+  "topic": "item aging and consignor payout exceptions for consignment stores",
+  "products": [
+    {
+      "id": "consignor-payout-exception",
+      "name": "Consignor Payout Exception Desk",
+      "product": "A focused consignment store payout reconciliation workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent apparel, furniture, and specialty consignment stores",
+      "problem": "Sale returns, discounts, fees, account details, holds, payout method, and unclaimed balances create recurring consignor questions.",
+      "valueProposition": "Turns consignment store payout reconciliation into a visible operating queue so every payout exception is reconciled to item events and ends in an approved payment or documented hold.",
+      "topic": "consignment store payout reconciliation",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets consignment store payout reconciliation software, consignment store payout reconciliation tracker, consignment store payout reconciliation template, and consignment store payout reconciliation checklist searches.",
+      "score": 84,
+      "contentBatch": "batch-005"
+    },
+    {
+      "id": "consignment-aging-board",
+      "name": "Consignment Aging Board",
+      "product": "A focused consignment inventory aging and markdown tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent apparel, furniture, and specialty consignment stores",
+      "problem": "Item expiry, markdown dates, owner preferences, floor location, extension, donation, and return choices are tracked in batches and messages.",
+      "valueProposition": "Turns consignment inventory aging and markdown tracking into a visible operating queue so every aging item receives the agreed markdown, extension, return, donation, or disposal outcome on time.",
+      "topic": "consignment inventory aging and markdown tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets consignment inventory aging and markdown tracking software, consignment inventory aging and markdown tracking tracker, consignment inventory aging and markdown tracking template, and consignment inventory aging and markdown tracking checklist searches.",
+      "score": 85,
+      "contentBatch": "batch-005"
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused consignment store payout reconciliation workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns consignment store payout reconciliation into a visible operating queue so every payout exception is reconciled to item events and ends in an approved payment or documented hold.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "consignment-store-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

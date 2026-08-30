@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets brewery tap list software, beer availability tracker, taproom POS sold out, and digital tap list management searches.",
-      "score": 87
+      "score": 87,
+      "contentBatch": "batch-004"
     },
     {
       "id": "taproom-event-shift-handoff",
@@ -31,7 +32,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets brewery event management, taproom private event checklist, taproom shift handoff, and brewery event operations searches.",
-      "score": 85
+      "score": 85,
+      "contentBatch": "batch-004"
     }
   ],
   "articlesPerProduct": 10,
@@ -40,12 +42,7 @@
   "valueProposition": "Turns brewery tap list availability tracking into a visible operating queue so every draft availability change is approved, published across intended channels, verified live, and reactivated only from confirmed product and line readiness.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

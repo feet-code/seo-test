@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for independent recrui
 productId: "interview-debrief-collector"
 productName: "Interview Debrief Collector"
 generationFingerprint: "c923ed22607d97ec3f20"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for interview feedback collection and hiring debrief workflows should help independent recruiters and boutique recruiting firms decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

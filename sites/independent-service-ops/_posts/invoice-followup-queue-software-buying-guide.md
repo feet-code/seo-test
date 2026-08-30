@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for freelancers and independent profe
 productId: "invoice-followup-queue"
 productName: "Invoice Follow-Up Queue"
 generationFingerprint: "65fd2a0562f039ff399c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for freelancer invoice follow-up and overdue payment reminders should be evaluated against the operating problem, not a generic feature checklist. For freelancers and independent professional service businesses, a useful trial must demonstrate this outcome: **every unpaid invoice has a professional next action, documented client context, and clear resolution**.

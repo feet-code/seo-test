@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small day-tour, activity, and mu
 productId: "guide-cover-board"
 productName: "Guide Cover Board"
 generationFingerprint: "0fa8921991b544dcfe7d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Guide callouts are solved through group messages without consistently checking qualification, language, availability, transport, pay, and manifest acceptance. For small day-tour, activity, and multi-day tour operators, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every uncovered departure is accepted by a qualified guide or escalated to a documented operating decision before the guest notice cutoff**.

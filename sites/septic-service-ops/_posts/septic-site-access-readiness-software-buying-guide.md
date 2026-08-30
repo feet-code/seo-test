@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small septic pumping, inspection,
 productId: "septic-site-access-readiness"
 productName: "Septic Site Access Readiness"
 generationFingerprint: "d24b47a41f3bac36462d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for septic pumping property access readiness should be evaluated against the operating problem, not a generic feature checklist. For small septic pumping, inspection, and liquid-waste service companies, a useful trial must demonstrate this outcome: **every dispatched septic job has a usable tank location, access plan, service scope, and customer responsibility confirmed before truck commitment**.

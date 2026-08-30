@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small managed service providers an
 productId: "maintenance-evidence-runbook"
 productName: "Maintenance Evidence Runbook"
 generationFingerprint: "69baced0d668f8e7194e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Recurring maintenance can show as completed in a task list even when scripts partially fail, devices are excluded, or client-facing evidence is never attached. The recurring failures are usually process-design problems rather than motivation problems. For small managed service providers and multi-client IT support teams, these are the mistakes worth finding before buying or building software.

@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets moving inventory change order, moving estimate revision, mover scope change, and moving company change authorization searches.",
-      "score": 88
+      "score": 88,
+      "contentBatch": "batch-003"
     },
     {
       "id": "crew-arrival-readiness",
@@ -31,7 +32,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets moving crew checklist, moving day dispatch, mover job readiness, and moving company pre move confirmation searches.",
-      "score": 84
+      "score": 84,
+      "contentBatch": "batch-003"
     },
     {
       "id": "damage-claim-evidence-desk",
@@ -45,7 +47,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets moving damage claim tracker, mover claims software, moving loss damage documentation, and moving claim evidence searches.",
-      "score": 89
+      "score": 89,
+      "contentBatch": "batch-003"
     }
   ],
   "articlesPerProduct": 10,
@@ -54,12 +57,7 @@
   "valueProposition": "Turns moving inventory change authorization into a visible operating queue so every material move change is priced, authorized, and published to dispatch and crew before the affected work proceeds.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

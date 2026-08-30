@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small architecture firms and des
 productId: "consultant-deliverable-board"
 productName: "Consultant Deliverable Board"
 generationFingerprint: "42ab794d9922f5e43c20"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Structural, MEP, civil, landscape, and specialist deliverables arrive through separate transmittals, making current version, review status, and drawing dependencies difficult to see. For small architecture firms and design-project administrators, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every consultant deliverable is received to the agreed milestone, reviewed against dependencies, and incorporated into the controlled project set**.

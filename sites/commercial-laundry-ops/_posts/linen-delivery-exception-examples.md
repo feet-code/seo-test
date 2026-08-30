@@ -4,13 +4,9 @@ excerpt: "Three realistic workflow test cases for small commercial laundries and
 productId: "linen-delivery-exception"
 productName: "Linen Delivery Exception"
 generationFingerprint: "2d7891eb4073a55e8de0"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Examples make commercial laundry delivery exception tracking easier to design because they reveal where a neat diagram meets messy work. The scenarios below are not claims about a particular company; they are test cases small commercial laundries and linen or uniform rental services can run against a template or software trial.

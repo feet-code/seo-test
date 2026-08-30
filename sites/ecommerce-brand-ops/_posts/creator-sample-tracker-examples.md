@@ -4,13 +4,9 @@ excerpt: "Three realistic workflow test cases for small direct-to-consumer ecomm
 productId: "creator-sample-tracker"
 productName: "Creator Sample Tracker"
 generationFingerprint: "23d75d903ffe1c2d5d59"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Examples make influencer product sample tracking easier to design because they reveal where a neat diagram meets messy work. The scenarios below are not claims about a particular company; they are test cases small direct-to-consumer ecommerce brands and lean operations teams can run against a template or software trial.

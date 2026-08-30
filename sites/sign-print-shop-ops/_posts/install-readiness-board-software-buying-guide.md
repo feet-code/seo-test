@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent sign shops, commercia
 productId: "install-readiness-board"
 productName: "Install Readiness Board"
 generationFingerprint: "2327a8a9aba184fc0b0d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for sign installation readiness tracking should be evaluated against the operating problem, not a generic feature checklist. For independent sign shops, commercial printers, and display fabricators, a useful trial must demonstrate this outcome: **every installation dispatch has verified product, site, permission, equipment, crew, and customer readiness**.

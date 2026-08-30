@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent laundromats offering s
 productId: "laundromat-machine-outage"
 productName: "Laundromat Machine Outage"
 generationFingerprint: "924a9a02dacace0ec345"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Out-of-order signs reveal little about payment impact, customer claim, diagnosis, part or vendor status, repeated faults, and whether a washer or dryer was truly tested before reopening. The recurring failures are usually process-design problems rather than motivation problems. For independent laundromats offering self-service and wash-dry-fold, these are the mistakes worth finding before buying or building software.

@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small third-party logistics wareh
 productId: "inbound-receiving-exception"
 productName: "Inbound Receiving Exception"
 generationFingerprint: "b31d31abcf80b6fd60e5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for 3PL inbound receiving exception tracking should be evaluated against the operating problem, not a generic feature checklist. For small third-party logistics warehouses and fulfillment operators, a useful trial must demonstrate this outcome: **every inbound discrepancy has scan and photo evidence, client disposition, inventory action, and billable-work outcome**.

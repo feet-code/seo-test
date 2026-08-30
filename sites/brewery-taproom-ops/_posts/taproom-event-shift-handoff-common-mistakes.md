@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent craft breweries operat
 productId: "taproom-event-shift-handoff"
 productName: "Taproom Event Shift Handoff"
 generationFingerprint: "94a47a271e27fe4d5f1f"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Private bookings, live music, food vendors, reserved areas, minimum spend, tabs, special releases, staffing, setup, cleanup, and neighbor constraints can be split between event sales and shift operations. The recurring failures are usually process-design problems rather than motivation problems. For independent craft breweries operating one or more taprooms, these are the mistakes worth finding before buying or building software.

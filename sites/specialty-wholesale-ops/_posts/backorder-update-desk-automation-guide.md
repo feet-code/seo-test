@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for small specialty wholesalers and B2
 productId: "backorder-update-desk"
 productName: "Backorder Update Desk"
 generationFingerprint: "63247f236e78f65404cf"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for wholesale backorder customer update tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For small specialty wholesalers and B2B distributors, the target outcome is **every affected customer receives an accurate update and explicit option before a missed promise becomes a surprise**.

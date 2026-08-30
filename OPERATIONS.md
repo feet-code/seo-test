@@ -9,14 +9,16 @@ Run commands from the repository root. Start with `python scripts/portfolio.py s
 | Generate/resume 100 products | `python scripts/ideas.py --generate --count 100` | `ideas/ideas.json`, generation checkpoint, managed site/product fields |
 | Intentionally start over | `python scripts/ideas.py --regenerate --count 100` | Replaces the generation checkpoint and, after success, `ideas/ideas.json` |
 | Validate/preview manual edits | `python scripts/ideas.py --plan` | Nothing |
-| Rebuild reviewed probes from `probeContext` | `python scripts/editorial_probes.py --site SITE_ID` | Missing posts for that site's products |
+| Rebuild reviewed probes from `probeContext` | `python scripts/editorial_probes.py --batch BATCH_ID` | Missing posts only for that editorial batch |
 | Preview a NicheScout handoff | `python scripts/ideas.py --portfolio ../NicheScout/exports/ideas.json --plan` | Nothing |
 | Apply a handoff | `python scripts/ideas.py --portfolio ../NicheScout/exports/ideas.json` | Portfolio file and managed site/product fields |
 | Smoke-test one generated site | `python scripts/launch.py --limit 1` | Complete pipeline for the first active site |
 | Deploy every active site | `python scripts/launch.py` | Complete pipeline, skipping unchanged product generation |
 | Deploy one site | `python scripts/launch.py --site SITE_ID` | Changed/missing product content, frontend, hosting, GSC |
-| Deploy a batch | `python scripts/launch.py --limit 10` | Full pipeline for the first ten active sites |
-| Resume a stopped batch | `python scripts/launch.py --resume` | Continues from saved site/product checkpoints |
+| Smoke-test a batch | `python scripts/launch.py --batch BATCH_ID --limit 1` | Complete pipeline for the first site in that batch |
+| Deploy one batch | `python scripts/launch.py --batch BATCH_ID` | Only websites containing that `contentBatch` |
+| Deploy several batches | `python scripts/launch.py --batches batch-004,batch-005` | Union of affected websites, each deployed once |
+| Resume a stopped batch | `python scripts/launch.py --resume` | Restores and continues the exact saved subset |
 | Publish a shared UI change | `python scripts/launch.py --frontend-only` | Every active site, no Gemini |
 | Rebuild one UI/config change | `python scripts/launch.py --frontend-only --site SITE_ID` | One site, no Gemini |
 | Regenerate one product | `python scripts/launch.py --product PRODUCT_ID` | That product's posts and containing site |
@@ -52,6 +54,15 @@ Deploy one site end to end before starting the batch:
 python scripts/launch.py --limit 1
 python scripts/launch.py
 ```
+
+For a newly added editorial batch, scope both commands so older websites are not redeployed:
+
+```bash
+python scripts/launch.py --batch batch-005 --limit 1
+python scripts/launch.py --batch batch-005
+```
+
+Batch membership comes from each idea's `contentBatch`. A site shared by two selected batches is built and deployed once. `--limit` applies after batch selection. If a run stops, plain `--resume` restores the checkpoint's site list; you may also repeat the original batch flags.
 
 The first real run opens Google OAuth once. It includes post generation, so it is a real production smoke test rather than a frontend-only preview. If that smoke test fails, fix it and run `python scripts/launch.py --limit 1 --resume`. During the full rollout, resume with `python scripts/launch.py --resume`.
 
@@ -91,6 +102,8 @@ python scripts/launch.py --frontend-only --site SITE_ID
 python scripts/launch.py --frontend-only
 ```
 
+To roll a shared change to only one editorial cohort, add `--batch BATCH_ID` to the last two commands.
+
 `--frontend-only` never calls Gemini. It still deploys, completes GSC registration/sitemap submission, and health-checks each site.
 
 After each deploy, the launcher waits for the exact Google META token at the public production URL and retries Google's token-not-found response within a five-minute deadline. This absorbs normal Pages/Google propagation delays without stopping the batch. For unusually slow custom-domain propagation, increase the deadline before launching:
@@ -113,9 +126,25 @@ Edit `sites/SITE_ID/site.json`. These site-local fields survive portfolio import
   "domain": "tools.example.com",
   "articlesPerProduct": 6,
   "signup": {"endpoint": "https://example.com/subscribe"},
-  "deploy": {"provider": "cloudflare-pages", "project": "stable-project"}
+  "deploy": {"provider": "cloudflare-auto", "project": "stable-project"}
 }
 ```
+
+`cloudflare-auto` is the default for new sites. It preserves an already resolved host; otherwise it reuses an existing Pages project, creates Pages while the account is below its actual project cap, and assigns overflow to Workers Static Assets on `*.workers.dev`. A capacity response while creating Pages also triggers the Workers fallback. The resulting `resolvedProvider` and `url` are saved in the config.
+
+You can pin a site with `cloudflare-pages` or `cloudflare-workers`, or override a run with `--provider`. A Workers-capable API token needs Workers Scripts write access. If account-subdomain discovery is unavailable, set `CLOUDFLARE_WORKERS_SUBDOMAIN` to the part before `.workers.dev` and resume.
+
+## Keep blogs image-free
+
+Both content generators omit image frontmatter and remove model-produced Markdown or HTML image tags. The Next.js frontend has no cover-image, avatar-image, or Open Graph image dependency.
+
+After importing older Markdown or site configs, run:
+
+```bash
+python scripts/remove_blog_images.py
+```
+
+The command is idempotent and strips image fields from all root and site-local posts/configs.
 
 For domain/signup/presentation changes, use `python scripts/launch.py --frontend-only --site SITE_ID`.
 
@@ -149,7 +178,7 @@ Preview first:
 python scripts/portfolio.py teardown SITE_ID
 ```
 
-The preview prints the exact confirmation command. Executing it removes the URL-prefix property from GSC, the matching Google Site Verification ownership record, and the Cloudflare Pages project/domain attachment.
+The preview prints the exact confirmation command. Executing it removes the URL-prefix property from GSC, the matching Google Site Verification ownership record, and the resolved Cloudflare Pages project or Worker script.
 
 It does not delete the registered domain/DNS zone, shared PostHog project, source, local posts, or site config. The config is marked `destroyed` only after external deletion succeeds.
 

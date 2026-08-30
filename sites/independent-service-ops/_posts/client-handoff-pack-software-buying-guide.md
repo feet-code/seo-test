@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for freelancers and independent profe
 productId: "client-handoff-pack"
 productName: "Client Handoff Pack"
 generationFingerprint: "5aebd58026e80a21e859"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for freelancer client project handoff and offboarding checklists should be evaluated against the operating problem, not a generic feature checklist. For freelancers and independent professional service businesses, a useful trial must demonstrate this outcome: **the client can operate the delivered work and locate every agreed artifact without depending on the freelancer's memory**.

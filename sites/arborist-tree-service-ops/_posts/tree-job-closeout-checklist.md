@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent arborist, pruning
 productId: "tree-job-closeout"
 productName: "Tree Job Closeout"
 generationFingerprint: "63fbceaed6f7d6db1cac"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for tree service cleanup and stump closeout tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent arborist, pruning, removal, and plant-health-care companies and centers on one result: **every tree job closes with contracted scope, site cleanup, retained materials, follow-on work, and customer-facing evidence reconciled**.

@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small community-supported agricu
 productId: "member-change-cutoff"
 productName: "Member Change Cutoff"
 generationFingerprint: "f44afdbf2a92d0b6b942"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Skips, pickup moves, box swaps, donations, vacation holds, and address changes arrive around harvest and packing cutoffs through several member channels. For small community-supported agriculture farms and farm-box programs, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every eligible member change is applied before the correct packing and route cutoff or closed with a clear alternative**.

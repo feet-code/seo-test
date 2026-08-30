@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent boutique hotels and 
 productId: "lost-found-claim-desk"
 productName: "Lost and Found Claim Desk"
 generationFingerprint: "0a5d4ce4446069fc7d6a"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Found-item logs, guest descriptions, storage locations, identity checks, shipping choices, and release evidence are difficult to reconcile across shifts. For independent boutique hotels and small hospitality teams, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every found item and guest claim is matched, released, retained, or disposed under policy with a complete custody trail**.

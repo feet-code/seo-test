@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent arborist, pruning, r
 productId: "tree-job-readiness-gate"
 productName: "Tree Job Readiness Gate"
 generationFingerprint: "2e0f5f8ab16f5ba2e200"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Approved tree work reaches the crew without confirmed permits, utility coordination, access, equipment, traffic control, neighbor constraints, or current tree scope. For independent arborist, pruning, removal, and plant-health-care companies, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every tree job is released only with site-specific scope, permissions, hazards, equipment, and access verified for the assigned crew**.

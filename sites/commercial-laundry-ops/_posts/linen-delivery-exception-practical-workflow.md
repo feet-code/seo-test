@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small commercial laundries and l
 productId: "linen-delivery-exception"
 productName: "Linen Delivery Exception"
 generationFingerprint: "2d7891eb4073a55e8de0"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Short deliveries, wrong carts, rejected items, access delays, emergency requests, and unsigned tickets move between route driver, plant, customer service, and billing. For small commercial laundries and linen or uniform rental services, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every route delivery exception has verified quantities, customer acknowledgment, recovery plan, and corrected inventory and billing records**.

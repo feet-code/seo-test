@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for owner-operated HVAC, plumbing
 productId: "job-photo-handoff"
 productName: "Job Photo Handoff"
 generationFingerprint: "bd22fa439fee0cbce6b8"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for contractor job photo documentation and field office handoff should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for owner-operated HVAC, plumbing, electrical, and repair contractors and centers on one result: **the office receives a job-linked, labeled photo record that is sufficient for the next billing, customer, or service decision**.

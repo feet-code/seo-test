@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small contract security companies
 productId: "post-order-acknowledgment"
 productName: "Post Order Acknowledgment"
 generationFingerprint: "f7163fd1339cb8493076"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for security guard post order acknowledgment should be evaluated against the operating problem, not a generic feature checklist. For small contract security companies and guard supervisors, a useful trial must demonstrate this outcome: **every guard assigned to a post acknowledges the effective order and required briefing before working under it**.

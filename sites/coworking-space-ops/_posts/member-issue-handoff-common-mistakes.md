@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent coworking spaces and s
 productId: "member-issue-handoff"
 productName: "Member Issue Handoff"
 generationFingerprint: "0f6ee4e9e913480a7c5a"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Access, noise, internet, billing, mail, and facility issues move between front desk, community, and vendors without one visible owner or member promise. The recurring failures are usually process-design problems rather than motivation problems. For independent coworking spaces and small flexible-office operators, these are the mistakes worth finding before buying or building software.

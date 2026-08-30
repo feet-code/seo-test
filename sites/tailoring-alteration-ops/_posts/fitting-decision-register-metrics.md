@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for independent tailor
 productId: "fitting-decision-register"
 productName: "Fitting Decision Register"
 generationFingerprint: "ef160cc1f1d9a8aef4c5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for tailoring fitting change approval tracking should help independent tailoring, alteration, and garment-repair shops decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

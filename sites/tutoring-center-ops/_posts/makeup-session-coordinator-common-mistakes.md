@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent tutoring centers and m
 productId: "makeup-session-coordinator"
 productName: "Makeup Session Coordinator"
 generationFingerprint: "b583c6deaa720572443e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Canceled sessions create credits and promises that are hard to reconcile across tutor calendars, parent messages, attendance records, and billing rules. The recurring failures are usually process-design problems rather than motivation problems. For independent tutoring centers and multi-tutor education businesses, these are the mistakes worth finding before buying or building software.

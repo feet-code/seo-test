@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent funeral homes and smal
 productId: "arrangement-readiness-board"
 productName: "Arrangement Readiness Board"
 generationFingerprint: "f8cdeb14710adbfcca14"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Family decisions, vital information, authorizations, permits, contracts, obituary assets, merchandise selections, payment, and third-party confirmations mature at different times before services. The recurring failures are usually process-design problems rather than motivation problems. For independent funeral homes and small death-care service teams, these are the mistakes worth finding before buying or building software.

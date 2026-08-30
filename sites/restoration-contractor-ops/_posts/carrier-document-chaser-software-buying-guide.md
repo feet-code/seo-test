@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small water, fire, and property-r
 productId: "carrier-document-chaser"
 productName: "Carrier Document Chaser"
 generationFingerprint: "3755d85ce6576efa4f10"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for restoration insurance document tracking should be evaluated against the operating problem, not a generic feature checklist. For small water, fire, and property-restoration contractors, a useful trial must demonstrate this outcome: **every carrier document request has a defined artifact, owner, submitted version, acknowledgment, and resolved response**.

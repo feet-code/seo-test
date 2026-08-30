@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for portable restroom rental and rec
 productId: "unit-placement-readiness"
 productName: "Unit Placement Readiness"
 generationFingerprint: "b8ccd4dd7c4523946a7e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Drivers reach construction or event sites without an approved placement point, surface check, access route, onsite contact, service clearance, or pickup condition. For portable restroom rental and recurring sanitation service operators, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every delivery is released with the correct units, approved placement evidence, safe access, onsite contact, and recurring-service clearance**.

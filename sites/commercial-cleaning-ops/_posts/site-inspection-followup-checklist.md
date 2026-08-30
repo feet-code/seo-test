@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for owner-operated commercial cle
 productId: "site-inspection-followup"
 productName: "Site Inspection Follow-Up"
 generationFingerprint: "c638d2a6d6abae7a6499"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for commercial cleaning inspection corrective action tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for owner-operated commercial cleaning and janitorial companies and centers on one result: **every material inspection finding is corrected, verified, and communicated before it becomes a repeat complaint**.

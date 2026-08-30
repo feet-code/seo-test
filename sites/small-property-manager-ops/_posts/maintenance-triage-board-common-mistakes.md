@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent residential property m
 productId: "maintenance-triage-board"
 productName: "Maintenance Triage Board"
 generationFingerprint: "cda6aa08f72fc2c28b01"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Maintenance requests arrive through calls, texts, email, and tenant portals with inconsistent details, making urgency and ownership hard to assess. The recurring failures are usually process-design problems rather than motivation problems. For independent residential property managers and small property teams, these are the mistakes worth finding before buying or building software.

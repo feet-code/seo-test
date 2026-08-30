@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small creative, design, and digita
 productId: "client-asset-chaser"
 productName: "Client Asset Chaser"
 generationFingerprint: "6769802ceb38c88597d6"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Teams repeatedly ask for missing client inputs without a shared definition of what is complete, which blocks delivery while making the agency look late. The recurring failures are usually process-design problems rather than motivation problems. For small creative, design, and digital agencies, these are the mistakes worth finding before buying or building software.

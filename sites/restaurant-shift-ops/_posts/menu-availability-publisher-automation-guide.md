@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent restaurants and small 
 productId: "menu-availability-publisher"
 productName: "Menu Availability Publisher"
 generationFingerprint: "cef19eb8d1d46b337eed"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for restaurant 86 list and menu availability tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent restaurants and small multi-location restaurant groups, the target outcome is **every availability change is approved, published to all intended channels, acknowledged by service staff, and reversed only after supply is verified**.

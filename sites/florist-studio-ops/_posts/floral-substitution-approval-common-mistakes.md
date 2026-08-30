@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent retail, delivery, and 
 productId: "floral-substitution-approval"
 productName: "Floral Substitution Approval"
 generationFingerprint: "9eee4f9dbefc835e3c2c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Unavailable stems, color variation, quality rejection, seasonality, and wholesaler shortages force substitutions, but design intent, price, client approval, and recipe updates may not stay aligned. The recurring failures are usually process-design problems rather than motivation problems. For independent retail, delivery, and event floral studios, these are the mistakes worth finding before buying or building software.

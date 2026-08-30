@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets bike repair estimate, bicycle repair authorization, bike shop work order, and bike repair approval software searches.",
-      "score": 89
+      "score": 89,
+      "contentBatch": "batch-004"
     },
     {
       "id": "bike-pickup-readiness",
@@ -31,7 +32,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets bike repair pickup, bicycle service completion checklist, bike shop ready notification, and bike repair quality control searches.",
-      "score": 85
+      "score": 85,
+      "contentBatch": "batch-004"
     }
   ],
   "articlesPerProduct": 10,
@@ -40,12 +42,7 @@
   "valueProposition": "Turns bike repair estimate approval tracking into a visible operating queue so every material repair change has an itemized current estimate, recorded customer decision, parts implication, and explicit mechanic release.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

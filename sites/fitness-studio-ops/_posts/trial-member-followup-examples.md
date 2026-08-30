@@ -4,13 +4,9 @@ excerpt: "Three realistic workflow test cases for boutique fitness studios and g
 productId: "trial-member-followup"
 productName: "Trial Member Follow-Up"
 generationFingerprint: "a661f5227017d68c7e41"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Examples make fitness studio trial follow-up easier to design because they reveal where a neat diagram meets messy work. The scenarios below are not claims about a particular company; they are test cases boutique fitness studios and group-class operators can run against a template or software trial.

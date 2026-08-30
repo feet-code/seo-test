@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for small roll-off dumpster and commer
 productId: "container-dispatch-readiness"
 productName: "Container Dispatch Readiness"
 generationFingerprint: "048c739fb4484138baa4"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for roll off dumpster delivery swap and pickup readiness should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For small roll-off dumpster and commercial waste-container rental companies, the target outcome is **every container movement is released with an available asset, compatible truck, approved site action, material path, and current customer promise**.

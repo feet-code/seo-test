@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for freelancers and independent profes
 productId: "client-handoff-pack"
 productName: "Client Handoff Pack"
 generationFingerprint: "5aebd58026e80a21e859"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Projects are called finished while files, credentials, ownership, maintenance instructions, and unresolved decisions remain across tools and conversations. The recurring failures are usually process-design problems rather than motivation problems. For freelancers and independent professional service businesses, these are the mistakes worth finding before buying or building software.

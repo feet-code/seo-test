@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for community theaters and volunteer-l
 productId: "production-asset-return"
 productName: "Production Asset Return"
 generationFingerprint: "6d72e4b7e0c557eb01bc"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Props, costumes, wigs, scripts, keys, microphones, tools, and borrowed items leave storage with cast or departments, then strike and return status disappear across paper sign-outs. The recurring failures are usually process-design problems rather than motivation problems. For community theaters and volunteer-led stage-production teams, these are the mistakes worth finding before buying or building software.

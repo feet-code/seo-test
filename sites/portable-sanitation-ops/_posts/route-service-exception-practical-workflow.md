@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for portable restroom rental and rec
 productId: "route-service-exception"
 productName: "Route Service Exception"
 generationFingerprint: "f52a86874e8d15e80640"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A driver can mark a stop attempted while locked gates, moved units, blocked access, damage, overuse, or missing supplies require office, customer, or follow-up action. For portable restroom rental and recurring sanitation service operators, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every incomplete or abnormal unit service has unit-level evidence, customer impact, owner, billing treatment, and a verified recovery outcome**.

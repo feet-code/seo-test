@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for community theaters and volunteer-
 productId: "production-asset-return"
 productName: "Production Asset Return"
 generationFingerprint: "6d72e4b7e0c557eb01bc"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for theater prop and costume return tracking should be evaluated against the operating problem, not a generic feature checklist. For community theaters and volunteer-led stage-production teams, a useful trial must demonstrate this outcome: **every production asset has assigned custody, condition evidence, return deadline, storage destination, and an explicit lost damage repair or closed outcome**.

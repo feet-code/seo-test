@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small commercial laundries and l
 productId: "customer-linen-loss-review"
 productName: "Customer Linen Loss Review"
 generationFingerprint: "e4518ada35eca977510d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Customer shortages, replacement charges, discard records, rag-out, route counts, and circulating inventory are debated without one period-based evidence trail. For small commercial laundries and linen or uniform rental services, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every material textile-loss difference is reconstructed, reviewed with the customer, and resolved to count correction, replacement, charge, or process action**.

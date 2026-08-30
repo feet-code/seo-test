@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small community-supported agricul
 productId: "member-change-cutoff"
 productName: "Member Change Cutoff"
 generationFingerprint: "f44afdbf2a92d0b6b942"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for CSA skip swap and pickup change tracking should be evaluated against the operating problem, not a generic feature checklist. For small community-supported agriculture farms and farm-box programs, a useful trial must demonstrate this outcome: **every eligible member change is applied before the correct packing and route cutoff or closed with a clear alternative**.

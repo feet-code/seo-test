@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small managed service providers a
 productId: "client-access-request-gate"
 productName: "Client Access Request Gate"
 generationFingerprint: "a423039ededf9b3c3463"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for MSP client access request approval should be evaluated against the operating problem, not a generic feature checklist. For small managed service providers and multi-client IT support teams, a useful trial must demonstrate this outcome: **every client access change is authorized by the right person, implemented to the approved scope, and evidenced in the client record**.

@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small bookkeeping firms and client
 productId: "client-document-chaser"
 productName: "Client Document Chaser"
 generationFingerprint: "97a6b66f05fef5e0096c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Client requests are repeated across email threads without a clear item-level status, acceptance check, or effect on the close schedule. The recurring failures are usually process-design problems rather than motivation problems. For small bookkeeping firms and client accounting service teams, these are the mistakes worth finding before buying or building software.

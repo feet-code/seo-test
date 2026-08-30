@@ -4,13 +4,9 @@ excerpt: "A practical record template for small architecture firms and design-pr
 productId: "consultant-deliverable-board"
 productName: "Consultant Deliverable Board"
 generationFingerprint: "42ab794d9922f5e43c20"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful architecture consultant deliverable tracking template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small specialty wholesalers and 
 productId: "backorder-update-desk"
 productName: "Backorder Update Desk"
 generationFingerprint: "63247f236e78f65404cf"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Operations updates ETAs in one system while account reps manually reconstruct which customers need an update and what alternatives can be offered. For small specialty wholesalers and B2B distributors, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every affected customer receives an accurate update and explicit option before a missed promise becomes a surprise**.

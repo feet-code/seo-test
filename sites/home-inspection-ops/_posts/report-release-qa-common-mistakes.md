@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent home inspection compan
 productId: "report-release-qa"
 productName: "Report Release QA"
 generationFingerprint: "dffb99cec42895fc0284"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A report can be sent with placeholder text, contradictory selections, missing media, wrong property details, unsupported language, broken links, or unreviewed automated draft content. The recurring failures are usually process-design problems rather than motivation problems. For independent home inspection companies and small multi-inspector teams, these are the mistakes worth finding before buying or building software.

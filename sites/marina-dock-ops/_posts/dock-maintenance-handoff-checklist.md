@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent marinas, yacht cl
 productId: "dock-maintenance-handoff"
 productName: "Dock Maintenance Handoff"
 generationFingerprint: "097bcd7ad5519c7367a0"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for marina dock maintenance handoff should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent marinas, yacht clubs, and small dock operations and centers on one result: **every marina maintenance issue has contained impact, assigned repair, affected-slip communication, and verified return to service**.

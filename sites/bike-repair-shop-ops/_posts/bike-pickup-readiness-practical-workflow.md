@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent bicycle repair shops
 productId: "bike-pickup-readiness"
 productName: "Bike Pickup Readiness"
 generationFingerprint: "123b82c86097e17bc4c5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Customers are notified before the bicycle has passed final safety check, accessories and removed parts are gathered, balance is correct, declined work is explained, and the bike is staged for release. For independent bicycle repair shops and service departments, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every completed bicycle is quality-checked, fully assembled with customer property, reconciled financially, and staged before pickup notification**.

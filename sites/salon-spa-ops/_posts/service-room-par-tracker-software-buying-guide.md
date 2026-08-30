@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent salons, spas, and sma
 productId: "service-room-par-tracker"
 productName: "Service Room Par Tracker"
 generationFingerprint: "485ef056754c91568324"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for salon and spa room inventory par tracking should be evaluated against the operating problem, not a generic feature checklist. For independent salons, spas, and small wellness studios, a useful trial must demonstrate this outcome: **each service room is replenished to an agreed par before its next booked service without hiding inventory variance**.

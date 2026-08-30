@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent marinas, yacht clubs,
 productId: "transient-arrival-readiness"
 productName: "Transient Arrival Readiness"
 generationFingerprint: "68a6a5083bc5a3ee0c77"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for marina transient arrival readiness should be evaluated against the operating problem, not a generic feature checklist. For independent marinas, yacht clubs, and small dock operations, a useful trial must demonstrate this outcome: **every transient arrival has a compatible assigned slip, current instructions, payment plan, and acknowledged dock handoff**.

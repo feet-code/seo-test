@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent photography studios an
 productId: "shoot-readiness-board"
 productName: "Shoot Readiness Board"
 generationFingerprint: "672e3ea5ea70747da3ba"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A booked shoot can still lack signed scope, call times, location access, subject list, permits, props, equipment, weather plan, or client confirmation. The recurring failures are usually process-design problems rather than motivation problems. For independent photography studios and small commercial photo teams, these are the mistakes worth finding before buying or building software.

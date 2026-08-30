@@ -4,13 +4,9 @@ excerpt: "A practical record template for independent tutoring centers and multi
 productId: "parent-progress-publisher"
 productName: "Parent Progress Publisher"
 generationFingerprint: "707db6510901eca2fa07"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful tutoring parent progress reporting workflow template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

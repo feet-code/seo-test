@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for boutique fitness studios and 
 productId: "trial-member-followup"
 productName: "Trial Member Follow-Up"
 generationFingerprint: "a661f5227017d68c7e41"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for fitness studio trial follow-up should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for boutique fitness studios and group-class operators and centers on one result: **every attended trial receives one relevant membership next step or a documented no-contact outcome**.

@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent veterinary clinics a
 productId: "lab-callback-board"
 productName: "Lab Callback Board"
 generationFingerprint: "62c551b50d74d3638e9b"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Result availability, clinician review, and client communication are separate events, so staff can see a result without knowing whether the owner was actually informed. For independent veterinary clinics and small client-service teams, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every expected result is reviewed by the assigned clinician and communicated to the client with a documented next step**.

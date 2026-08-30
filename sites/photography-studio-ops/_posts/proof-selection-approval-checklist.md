@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent photography studi
 productId: "proof-selection-approval"
 productName: "Proof Selection Approval"
 generationFingerprint: "f134829b77ef8c17c3a5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for photography client proof selection and approval should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent photography studios and small commercial photo teams and centers on one result: **every client selection and approval identifies the exact images, revision, intended output, approver, and final decision**.

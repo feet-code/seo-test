@@ -4,13 +4,9 @@ excerpt: "A spreadsheet-versus-software decision guide for independent household
 productId: "damage-claim-evidence-desk"
 productName: "Damage Claim Evidence Desk"
 generationFingerprint: "8a8b969b87f75615775a"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A spreadsheet is often the right first implementation for moving company damage claim evidence tracking. It is cheap, editable, and forces the team to define the workflow. The question is not whether spreadsheets are good or bad; it is when coordination costs become larger than the flexibility is worth.

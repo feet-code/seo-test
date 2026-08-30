@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent recruiters and boutiqu
 productId: "interview-debrief-collector"
 productName: "Interview Debrief Collector"
 generationFingerprint: "c923ed22607d97ec3f20"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for interview feedback collection and hiring debrief workflows should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent recruiters and boutique recruiting firms, the target outcome is **the client reaches an evidence-based candidate decision while the interview is still fresh**.

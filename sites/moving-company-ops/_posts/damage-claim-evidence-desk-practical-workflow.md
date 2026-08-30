@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent household moving com
 productId: "damage-claim-evidence-desk"
 productName: "Damage Claim Evidence Desk"
 generationFingerprint: "8a8b969b87f75615775a"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Written claims, shipment identity, inventory numbers, photos, valuation terms, estimates, deadlines, and customer updates arrive through separate channels. For independent household moving companies and local moving crews, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every damage or loss claim is acknowledged, completed with required evidence, reviewed, and resolved with a documented decision**.

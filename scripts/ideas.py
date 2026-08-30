@@ -818,6 +818,7 @@ def _product_config(idea: dict[str, Any]) -> dict[str, Any]:
         "startupCost": idea.get("startupCost", ""),
         "seoAngle": idea.get("seoAngle", ""),
         "score": idea.get("score"),
+        "contentBatch": idea.get("contentBatch", ""),
     }
 
 
@@ -850,18 +851,14 @@ def _desired_config(
         "productUrl": primary.get("productUrl", ""),
         "valueProposition": primary["valueProposition"],
         "articleCount": articles,
-        "author": {"name": "John Smith", "picture": "/assets/blog/authors/jj.jpeg"},
-        "images": {
-            "coverImage": "/assets/blog/preview/cover.jpg",
-            "ogImage": "/assets/blog/dynamic-routing/cover.jpg",
-        },
+        "author": {"name": "John Smith"},
         "signup": {
             "enabled": True,
             "headline": "Interested? Get notified when this is available.",
             "endpoint": "",
             "email": "",
         },
-        "deploy": {"provider": "cloudflare-pages", "project": site_id},
+        "deploy": {"provider": "cloudflare-auto", "project": site_id},
         "status": "active",
         "portfolioManaged": True,
         "portfolioVersion": version,
@@ -918,7 +915,11 @@ def _merge_config(
     )
     merged["articleCount"] = merged["articlesPerProduct"]
     merged["status"] = existing.get("status", "active")
-    for name in ("author", "images", "signup", "deploy"):
+    author = dict(existing.get("author") or desired["author"])
+    author.pop("picture", None)
+    merged["author"] = author
+    merged.pop("images", None)
+    for name in ("signup", "deploy"):
         if name not in merged:
             merged[name] = desired[name]
     return merged

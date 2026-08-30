@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent tailoring, alteratio
 productId: "fitting-decision-register"
 productName: "Fitting Decision Register"
 generationFingerprint: "ef160cc1f1d9a8aef4c5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Pin changes, customer fit comments, garment posture, measurements, promised date, added work, and price decisions from successive fittings can overwrite or contradict one another. For independent tailoring, alteration, and garment-repair shops, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every fitting produces an agreed current alteration plan, price or date consequence, garment marking reference, and next checkpoint**.

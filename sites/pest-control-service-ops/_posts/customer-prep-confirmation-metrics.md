@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for independent pest c
 productId: "customer-prep-confirmation"
 productName: "Customer Prep Confirmation"
 generationFingerprint: "3f515c2fd62418cfa183"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:22Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for pest control service preparation confirmation should help independent pest control companies and small recurring-service teams decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

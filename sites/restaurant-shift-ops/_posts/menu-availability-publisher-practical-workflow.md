@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent restaurants and smal
 productId: "menu-availability-publisher"
 productName: "Menu Availability Publisher"
 generationFingerprint: "cef19eb8d1d46b337eed"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 When an item or modifier sells out, staff may update one POS screen but miss online ordering, third-party channels, service teams, or the later un-86 decision. For independent restaurants and small multi-location restaurant groups, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every availability change is approved, published to all intended channels, acknowledged by service staff, and reversed only after supply is verified**.

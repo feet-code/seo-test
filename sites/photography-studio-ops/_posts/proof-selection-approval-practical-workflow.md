@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent photography studios 
 productId: "proof-selection-approval"
 productName: "Proof Selection Approval"
 generationFingerprint: "f134829b77ef8c17c3a5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Clients favorite images, comment in email, request retouching, and revise selections without one authoritative decision set tied to exact image versions. For independent photography studios and small commercial photo teams, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every client selection and approval identifies the exact images, revision, intended output, approver, and final decision**.

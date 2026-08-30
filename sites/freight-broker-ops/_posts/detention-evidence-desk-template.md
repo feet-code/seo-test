@@ -4,13 +4,9 @@ excerpt: "A practical record template for small freight brokerages and shipper-c
 productId: "detention-evidence-desk"
 productName: "Detention Evidence Desk"
 generationFingerprint: "14e2144847e351cd03f6"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful freight detention evidence tracking template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

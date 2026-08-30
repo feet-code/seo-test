@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for small freight brokerages and 
 productId: "carrier-packet-completeness"
 productName: "Carrier Packet Completeness"
 generationFingerprint: "82cc371059776a3c0dba"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for freight carrier packet completeness tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for small freight brokerages and shipper-carrier coordination teams and centers on one result: **every carrier assigned to a load has current required evidence, approved exceptions, and a verified qualification decision**.

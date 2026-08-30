@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small environmental consulting a
 productId: "custody-exception-desk"
 productName: "Custody Exception Desk"
 generationFingerprint: "0c01731d2898bf890584"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Sample label, form, seal, temperature, preservation, transfer signature, received time, container count, or laboratory login can disagree, and the resolution trail may be rebuilt later. For small environmental consulting and field-sampling teams, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every custody discrepancy is contained, reviewed by qualified personnel, linked to affected samples, and resolved without rewriting original evidence**.

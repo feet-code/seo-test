@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent pool maintenance and 
 productId: "pool-repair-approval-queue"
 productName: "Pool Repair Approval Queue"
 generationFingerprint: "df1d0b92ec31df5b8ef9"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:22Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for pool service repair estimate approval tracking should be evaluated against the operating problem, not a generic feature checklist. For independent pool maintenance and repair companies running recurring routes, a useful trial must demonstrate this outcome: **every repair finding becomes a complete customer decision with current scope, price, parts expectation, and an owned next action**.

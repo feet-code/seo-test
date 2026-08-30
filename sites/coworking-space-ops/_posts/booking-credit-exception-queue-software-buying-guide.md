@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent coworking spaces and 
 productId: "booking-credit-exception-queue"
 productName: "Booking Credit Exception Queue"
 generationFingerprint: "b86639e883f0e7cbcb4b"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for coworking booking credit exception handling should be evaluated against the operating problem, not a generic feature checklist. For independent coworking spaces and small flexible-office operators, a useful trial must demonstrate this outcome: **every disputed or failed booking credit is reconciled to policy, service evidence, and the member balance**.

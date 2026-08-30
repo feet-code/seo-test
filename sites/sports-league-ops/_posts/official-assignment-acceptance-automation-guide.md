@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for community sports leagues and small
 productId: "official-assignment-acceptance"
 productName: "Official Assignment Acceptance"
 generationFingerprint: "91291a199af64b7b7906"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for sports official assignment acceptance tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For community sports leagues and small tournament operators, the target outcome is **every game has the required qualified officials who explicitly accept and receive the current assignment details**.

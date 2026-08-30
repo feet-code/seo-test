@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent restaurants and small 
 productId: "menu-availability-publisher"
 productName: "Menu Availability Publisher"
 generationFingerprint: "cef19eb8d1d46b337eed"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 When an item or modifier sells out, staff may update one POS screen but miss online ordering, third-party channels, service teams, or the later un-86 decision. The recurring failures are usually process-design problems rather than motivation problems. For independent restaurants and small multi-location restaurant groups, these are the mistakes worth finding before buying or building software.

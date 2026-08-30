@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets pest control prep checklist, exterminator appointment preparation, pest treatment confirmation, and pest service readiness searches.",
-      "score": 87
+      "score": 87,
+      "contentBatch": "batch-004"
     },
     {
       "id": "retreatment-warranty-desk",
@@ -31,7 +32,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets pest control callback software, pest retreatment tracker, exterminator warranty callback, and pest service complaint workflow searches.",
-      "score": 88
+      "score": 88,
+      "contentBatch": "batch-004"
     },
     {
       "id": "technician-stock-readiness",
@@ -45,7 +47,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets pest control inventory tracker, exterminator truck stock, pest chemical inventory, and pest route supply checklist searches.",
-      "score": 82
+      "score": 82,
+      "contentBatch": "batch-004"
     }
   ],
   "articlesPerProduct": 10,
@@ -54,12 +57,7 @@
   "valueProposition": "Turns pest control service preparation confirmation into a visible operating queue so every treatment starts with the required customer preparation confirmed or a documented service decision before technician arrival.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

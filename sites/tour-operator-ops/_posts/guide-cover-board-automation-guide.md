@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for small day-tour, activity, and mult
 productId: "guide-cover-board"
 productName: "Guide Cover Board"
 generationFingerprint: "0fa8921991b544dcfe7d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for tour guide scheduling and substitution should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For small day-tour, activity, and multi-day tour operators, the target outcome is **every uncovered departure is accepted by a qualified guide or escalated to a documented operating decision before the guest notice cutoff**.

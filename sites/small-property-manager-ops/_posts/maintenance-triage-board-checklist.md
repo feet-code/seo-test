@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent residential prope
 productId: "maintenance-triage-board"
 productName: "Maintenance Triage Board"
 generationFingerprint: "cda6aa08f72fc2c28b01"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for rental property maintenance request triage should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent residential property managers and small property teams and centers on one result: **every request has enough evidence for a clear priority, owner, tenant update, and verified resolution**.

@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for owner-operated commercial cleani
 productId: "site-inspection-followup"
 productName: "Site Inspection Follow-Up"
 generationFingerprint: "c638d2a6d6abae7a6499"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Inspection scores and photos are collected, but individual findings are not consistently assigned and verified before the next service cycle. For owner-operated commercial cleaning and janitorial companies, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every material inspection finding is corrected, verified, and communicated before it becomes a repeat complaint**.

@@ -4,13 +4,9 @@ excerpt: "A practical record template for independent express, tunnel, and multi
 productId: "wash-equipment-downtime-handoff"
 productName: "Wash Equipment Downtime Handoff"
 generationFingerprint: "21c57d543214b71eadb3"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful car wash equipment downtime tracking template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

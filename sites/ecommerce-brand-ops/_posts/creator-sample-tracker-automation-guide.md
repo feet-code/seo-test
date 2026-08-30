@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for small direct-to-consumer ecommerce
 productId: "creator-sample-tracker"
 productName: "Creator Sample Tracker"
 generationFingerprint: "23d75d903ffe1c2d5d59"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for influencer product sample tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For small direct-to-consumer ecommerce brands and lean operations teams, the target outcome is **every creator sample has documented consent and terms, confirmed delivery, and a closed deliverable or no-obligation outcome**.

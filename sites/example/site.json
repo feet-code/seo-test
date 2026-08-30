@@ -10,12 +10,7 @@
   "valueProposition": "The main problem your product solves",
   "articleCount": 5,
   "author": {
-    "name": "JJ Kasper",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "JJ Kasper"
   },
   "deploy": {
     "project": "example-seo-site",

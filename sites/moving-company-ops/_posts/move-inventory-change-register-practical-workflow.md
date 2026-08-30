@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent household moving com
 productId: "move-inventory-change-register"
 productName: "Move Inventory Change Register"
 generationFingerprint: "8d6790b87cc8fb8ffe73"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Added items, access conditions, packing work, dates, and address changes can alter labor and price after the estimate, but field and office teams may work from different scope versions. For independent household moving companies and local moving crews, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every material move change is priced, authorized, and published to dispatch and crew before the affected work proceeds**.

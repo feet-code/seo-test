@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for boutique translation agencies and
 productId: "terminology-approval-queue"
 productName: "Terminology Approval Queue"
 generationFingerprint: "f9edb42facc71cd2e0ee"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for translation terminology approval workflow should be evaluated against the operating problem, not a generic feature checklist. For boutique translation agencies and localization project teams, a useful trial must demonstrate this outcome: **every terminology question receives an authoritative decision that is applied to the glossary and affected translation work**.

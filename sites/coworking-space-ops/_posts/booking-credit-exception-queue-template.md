@@ -4,13 +4,9 @@ excerpt: "A practical record template for independent coworking spaces and small
 productId: "booking-credit-exception-queue"
 productName: "Booking Credit Exception Queue"
 generationFingerprint: "b86639e883f0e7cbcb4b"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful coworking booking credit exception handling template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

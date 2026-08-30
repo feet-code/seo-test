@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small day-tour, activity, and mult
 productId: "guide-cover-board"
 productName: "Guide Cover Board"
 generationFingerprint: "0fa8921991b544dcfe7d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Guide callouts are solved through group messages without consistently checking qualification, language, availability, transport, pay, and manifest acceptance. The recurring failures are usually process-design problems rather than motivation problems. For small day-tour, activity, and multi-day tour operators, these are the mistakes worth finding before buying or building software.

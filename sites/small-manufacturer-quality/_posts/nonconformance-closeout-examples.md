@@ -4,13 +4,9 @@ excerpt: "Three realistic workflow test cases for small manufacturers and lean q
 productId: "nonconformance-closeout"
 productName: "Nonconformance Closeout"
 generationFingerprint: "1fc51d63706c2d44a850"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Examples make manufacturing nonconformance closeout easier to design because they reveal where a neat diagram meets messy work. The scenarios below are not claims about a particular company; they are test cases small manufacturers and lean quality teams can run against a template or software trial.

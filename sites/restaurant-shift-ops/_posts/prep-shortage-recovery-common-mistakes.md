@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent restaurants and small 
 productId: "prep-shortage-recovery"
 productName: "Prep Shortage Recovery"
 generationFingerprint: "677d447bf38ddb9c54dc"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A missed prep item is often announced verbally, but quantity, affected menu items, substitute decision, owner, and recovery time are not visible across kitchen and management. The recurring failures are usually process-design problems rather than motivation problems. For independent restaurants and small multi-location restaurant groups, these are the mistakes worth finding before buying or building software.

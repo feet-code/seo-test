@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent household moving compa
 productId: "move-inventory-change-register"
 productName: "Move Inventory Change Register"
 generationFingerprint: "8d6790b87cc8fb8ffe73"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for moving inventory change authorization should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent household moving companies and local moving crews, the target outcome is **every material move change is priced, authorized, and published to dispatch and crew before the affected work proceeds**.

@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small commercial landscaping and r
 productId: "seasonal-service-change-register"
 productName: "Seasonal Service Change Register"
 generationFingerprint: "4faa0d5fd1ce16210bfc"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Frequency, task mix, irrigation checks, cleanup, snow or storm coverage, and property priorities change by season, yet crews may keep using an outdated recurring-service plan. The recurring failures are usually process-design problems rather than motivation problems. For small commercial landscaping and recurring property-maintenance companies, these are the mistakes worth finding before buying or building software.

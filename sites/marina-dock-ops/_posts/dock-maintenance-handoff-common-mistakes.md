@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent marinas, yacht clubs, 
 productId: "dock-maintenance-handoff"
 productName: "Dock Maintenance Handoff"
 generationFingerprint: "097bcd7ad5519c7367a0"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Dock, pedestal, utility, access, and facility issues are reported by radio or whiteboard while affected slips, boater notices, contractor work, and verification remain separate. The recurring failures are usually process-design problems rather than motivation problems. For independent marinas, yacht clubs, and small dock operations, these are the mistakes worth finding before buying or building software.

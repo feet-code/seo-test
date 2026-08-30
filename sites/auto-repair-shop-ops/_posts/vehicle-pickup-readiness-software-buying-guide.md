@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent auto repair shops and
 productId: "vehicle-pickup-readiness"
 productName: "Vehicle Pickup Readiness"
 generationFingerprint: "8ceb8a1f8fc94410dccd"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for auto repair vehicle pickup readiness should be evaluated against the operating problem, not a generic feature checklist. For independent auto repair shops and service-advisor teams, a useful trial must demonstrate this outcome: **every completed vehicle is released only after the handoff checks and customer pickup plan are confirmed**.

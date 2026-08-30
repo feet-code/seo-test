@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small freight brokerages and ship
 productId: "carrier-packet-completeness"
 productName: "Carrier Packet Completeness"
 generationFingerprint: "82cc371059776a3c0dba"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for freight carrier packet completeness tracking should be evaluated against the operating problem, not a generic feature checklist. For small freight brokerages and shipper-carrier coordination teams, a useful trial must demonstrate this outcome: **every carrier assigned to a load has current required evidence, approved exceptions, and a verified qualification decision**.

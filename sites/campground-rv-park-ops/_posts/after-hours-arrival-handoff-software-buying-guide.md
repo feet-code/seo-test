@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent campgrounds, RV parks
 productId: "after-hours-arrival-handoff"
 productName: "After-Hours Arrival Handoff"
 generationFingerprint: "20d243239613f29a53c7"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for campground late arrival check in coordination should be evaluated against the operating problem, not a generic feature checklist. For independent campgrounds, RV parks, and small outdoor lodging properties, a useful trial must demonstrate this outcome: **every confirmed after-hours guest receives a current, secure arrival path tied to a ready site and a next-morning verification**.

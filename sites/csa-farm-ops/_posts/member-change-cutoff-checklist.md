@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for small community-supported agr
 productId: "member-change-cutoff"
 productName: "Member Change Cutoff"
 generationFingerprint: "f44afdbf2a92d0b6b942"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for CSA skip swap and pickup change tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for small community-supported agriculture farms and farm-box programs and centers on one result: **every eligible member change is applied before the correct packing and route cutoff or closed with a clear alternative**.

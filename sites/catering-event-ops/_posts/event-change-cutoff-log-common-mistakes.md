@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent caterers and small eve
 productId: "event-change-cutoff-log"
 productName: "Event Change Cutoff Log"
 generationFingerprint: "c1bfee0a3ba17324e05f"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Guest count, menu, timing, rentals, venue instructions, and staffing changes continue after proposals are signed, but affected teams may work from different versions. The recurring failures are usually process-design problems rather than motivation problems. For independent caterers and small event-food teams, these are the mistakes worth finding before buying or building software.

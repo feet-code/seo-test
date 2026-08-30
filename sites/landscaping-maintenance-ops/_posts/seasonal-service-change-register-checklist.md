@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for small commercial landscaping 
 productId: "seasonal-service-change-register"
 productName: "Seasonal Service Change Register"
 generationFingerprint: "4faa0d5fd1ce16210bfc"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for seasonal landscape service change tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for small commercial landscaping and recurring property-maintenance companies and centers on one result: **every seasonal contract change has an effective date, customer approval, route impact, crew acknowledgment, and verified first execution**.

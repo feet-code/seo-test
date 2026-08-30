@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for independent househ
 productId: "crew-arrival-readiness"
 productName: "Crew Arrival Readiness"
 generationFingerprint: "d6f119d07aa79748a594"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for moving crew arrival readiness should help independent household moving companies and local moving crews decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

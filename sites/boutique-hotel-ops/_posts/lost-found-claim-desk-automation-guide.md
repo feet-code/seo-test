@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent boutique hotels and sm
 productId: "lost-found-claim-desk"
 productName: "Lost and Found Claim Desk"
 generationFingerprint: "0a5d4ce4446069fc7d6a"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for hotel lost and found claim tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent boutique hotels and small hospitality teams, the target outcome is **every found item and guest claim is matched, released, retained, or disposed under policy with a complete custody trail**.

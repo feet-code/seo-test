@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for boutique translation agencies and 
 productId: "reviewer-handoff-tracker"
 productName: "Reviewer Handoff Tracker"
 generationFingerprint: "25f5d2324479f33454ce"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for translation reviewer handoff tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For boutique translation agencies and localization project teams, the target outcome is **every review handoff transfers the correct version, scope, references, deadline, and explicit acceptance to the next reviewer**.

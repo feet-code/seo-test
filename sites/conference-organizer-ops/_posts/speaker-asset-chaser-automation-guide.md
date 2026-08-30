@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent conference organizers 
 productId: "speaker-asset-chaser"
 productName: "Speaker Asset Chaser"
 generationFingerprint: "b1a600f7c9fdae95e9c8"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for conference speaker asset tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent conference organizers and small trade-show teams, the target outcome is **every confirmed speaker has the approved assets and permissions required for agenda publication, production, and session delivery**.

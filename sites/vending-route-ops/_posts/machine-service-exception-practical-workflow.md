@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent vending machine and 
 productId: "machine-service-exception"
 productName: "Machine Service Exception"
 generationFingerprint: "77a7ab7783acbebe726a"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Telemetry alerts, customer calls, refunds, technician visits, parts, and restored-sales verification are disconnected, so machines can look serviced while still unavailable. For independent vending machine and micro-market route operators, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every machine fault has impact, owner, repair evidence, refund follow-up, and verified return to service**.

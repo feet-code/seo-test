@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for boutique fitness studios and 
 productId: "instructor-cover-board"
 productName: "Instructor Cover Board"
 generationFingerprint: "ef7529acd7ea71c612e4"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for fitness instructor substitution tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for boutique fitness studios and group-class operators and centers on one result: **every instructor absence is covered by an eligible substitute or escalated to a documented class change before members arrive**.

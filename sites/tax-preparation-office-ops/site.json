@@ -1,0 +1,75 @@
+{
+  "id": "tax-preparation-office-ops",
+  "name": "Tax Preparation Office Operations",
+  "domain": null,
+  "audience": "independent tax preparers and small seasonal tax offices",
+  "topic": "missing-document, review, signature, and filing-readiness queues",
+  "products": [
+    {
+      "id": "tax-document-chase",
+      "name": "Tax Document Chase",
+      "product": "A focused tax preparation missing document tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent tax preparers and small seasonal tax offices",
+      "problem": "Organizer answers, source documents, explanations, follow-up questions, uploads, and stop conditions are tracked across portal tasks and email.",
+      "valueProposition": "Turns tax preparation missing document tracking into a visible operating queue so every open client-document request has a specific item, reason, owner, due context, and resolved or closed outcome.",
+      "topic": "tax preparation missing document tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets tax preparation missing document tracking software, tax preparation missing document tracking tracker, tax preparation missing document tracking template, and tax preparation missing document tracking checklist searches.",
+      "score": 82,
+      "contentBatch": "batch-005"
+    },
+    {
+      "id": "return-review-signature-gate",
+      "name": "Return Review and Signature Gate",
+      "product": "A focused tax return review and signature readiness workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent tax preparers and small seasonal tax offices",
+      "problem": "Preparation status, internal review, client questions, delivery, signatures, payment, filing authorization, and deadline context can appear complete in different systems.",
+      "valueProposition": "Turns tax return review and signature readiness into a visible operating queue so every return proceeds to filing only after the office's review, client-delivery, signature, authorization, and payment decisions are documented.",
+      "topic": "tax return review and signature readiness",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets tax return review and signature readiness software, tax return review and signature readiness tracker, tax return review and signature readiness template, and tax return review and signature readiness checklist searches.",
+      "score": 83,
+      "contentBatch": "batch-005"
+    },
+    {
+      "id": "tax-extension-queue",
+      "name": "Tax Extension Queue",
+      "product": "A focused tax preparation extension readiness tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent tax preparers and small seasonal tax offices",
+      "problem": "Missing inputs, payment estimates, client decisions, authorization, submission evidence, and post-extension work plans are coordinated near deadlines.",
+      "valueProposition": "Turns tax preparation extension readiness tracking into a visible operating queue so every extension case has an explicit client decision, office action, submission result, and next document-review date.",
+      "topic": "tax preparation extension readiness tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets tax preparation extension readiness tracking software, tax preparation extension readiness tracking tracker, tax preparation extension readiness tracking template, and tax preparation extension readiness tracking checklist searches.",
+      "score": 84,
+      "contentBatch": "batch-005"
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused tax preparation missing document tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns tax preparation missing document tracking into a visible operating queue so every open client-document request has a specific item, reason, owner, due context, and resolved or closed outcome.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "tax-preparation-office-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

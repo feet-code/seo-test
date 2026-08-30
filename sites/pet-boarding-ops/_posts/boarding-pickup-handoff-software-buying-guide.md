@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent pet boarding faciliti
 productId: "boarding-pickup-handoff"
 productName: "Boarding Pickup Handoff"
 generationFingerprint: "ce39d026a5203e987a51"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for pet boarding pickup readiness should be evaluated against the operating problem, not a generic feature checklist. For independent pet boarding facilities and dog daycare operators, a useful trial must demonstrate this outcome: **every departing pet is released to an authorized person with belongings, balance, and approved stay handoff reconciled**.

@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for community makerspaces, fabricatio
 productId: "equipment-training-authorization"
 productName: "Equipment Training Authorization"
 generationFingerprint: "a12717ecdc524c8530f3"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for makerspace equipment training authorization tracking should be evaluated against the operating problem, not a generic feature checklist. For community makerspaces, fabrication labs, and shared technical workshops, a useful trial must demonstrate this outcome: **every equipment access grant is tied to current membership, documented prerequisites, named trainer approval, policy version, and matching access-control state**.

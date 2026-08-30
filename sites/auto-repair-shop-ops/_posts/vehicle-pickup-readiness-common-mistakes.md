@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent auto repair shops and 
 productId: "vehicle-pickup-readiness"
 productName: "Vehicle Pickup Readiness"
 generationFingerprint: "8ceb8a1f8fc94410dccd"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A vehicle can be mechanically complete but not ready for pickup because quality checks, invoices, keys, customer notice, or after-hours instructions are still open. The recurring failures are usually process-design problems rather than motivation problems. For independent auto repair shops and service-advisor teams, these are the mistakes worth finding before buying or building software.

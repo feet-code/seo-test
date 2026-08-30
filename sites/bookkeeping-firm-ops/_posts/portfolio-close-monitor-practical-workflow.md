@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small bookkeeping firms and clie
 productId: "portfolio-close-monitor"
 productName: "Portfolio Close Monitor"
 generationFingerprint: "98f8e4e4a7f8b578968e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Firm owners cannot see which client closes are truly at risk without opening multiple checklists, inboxes, and accounting files. For small bookkeeping firms and client accounting service teams, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **the firm can identify the next action and delivery risk for every client close without reconstructing status manually**.

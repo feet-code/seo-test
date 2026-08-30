@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for small creative, design, and digita
 productId: "scope-change-ledger"
 productName: "Scope Change Ledger"
 generationFingerprint: "4970ab7eaf33fe9f1fea"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for agency scope change and change request tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For small creative, design, and digital agencies, the target outcome is **every meaningful scope change is accepted, traded, deferred, or declined with its delivery impact visible**.

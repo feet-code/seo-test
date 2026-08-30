@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small commercial laundries and li
 productId: "linen-delivery-exception"
 productName: "Linen Delivery Exception"
 generationFingerprint: "2d7891eb4073a55e8de0"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for commercial laundry delivery exception tracking should be evaluated against the operating problem, not a generic feature checklist. For small commercial laundries and linen or uniform rental services, a useful trial must demonstrate this outcome: **every route delivery exception has verified quantities, customer acknowledgment, recovery plan, and corrected inventory and billing records**.

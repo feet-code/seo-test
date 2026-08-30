@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent home inspection compan
 productId: "inspection-access-readiness"
 productName: "Inspection Access Readiness"
 generationFingerprint: "10ccec90e4ab576f5c4d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Inspectors arrive without confirmed utilities, occupied-area access, crawlspace or attic entry, outbuilding keys, seller instructions, agreements, payment, or agent contacts. The recurring failures are usually process-design problems rather than motivation problems. For independent home inspection companies and small multi-inspector teams, these are the mistakes worth finding before buying or building software.

@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent arborist, pruning, re
 productId: "tree-job-closeout"
 productName: "Tree Job Closeout"
 generationFingerprint: "63fbceaed6f7d6db1cac"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for tree service cleanup and stump closeout tracking should be evaluated against the operating problem, not a generic feature checklist. For independent arborist, pruning, removal, and plant-health-care companies, a useful trial must demonstrate this outcome: **every tree job closes with contracted scope, site cleanup, retained materials, follow-on work, and customer-facing evidence reconciled**.

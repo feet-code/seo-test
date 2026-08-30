@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small manufacturers and lean quali
 productId: "work-instruction-acknowledgment"
 productName: "Work Instruction Acknowledgment"
 generationFingerprint: "b84683951f628342182b"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Revised work instructions reach shared folders or binders without proof that affected operators received the right revision and completed any required qualification. The recurring failures are usually process-design problems rather than motivation problems. For small manufacturers and lean quality teams, these are the mistakes worth finding before buying or building software.

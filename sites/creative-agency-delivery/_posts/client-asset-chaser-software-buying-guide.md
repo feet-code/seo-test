@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small creative, design, and digit
 productId: "client-asset-chaser"
 productName: "Client Asset Chaser"
 generationFingerprint: "6769802ceb38c88597d6"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for client asset collection and missing content tracking for agencies should be evaluated against the operating problem, not a generic feature checklist. For small creative, design, and digital agencies, a useful trial must demonstrate this outcome: **the agency receives usable client inputs by the date required for the dependent deliverable**.

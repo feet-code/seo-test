@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent equipment, tool, and e
 productId: "overdue-rental-followup"
 productName: "Overdue Rental Follow-Up"
 generationFingerprint: "69e2a16f7956184e3ed4"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for overdue equipment rental follow-up should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent equipment, tool, and event-rental businesses, the target outcome is **every overdue contract has confirmed asset status, an authorized return or extension plan, and protected downstream reservations**.

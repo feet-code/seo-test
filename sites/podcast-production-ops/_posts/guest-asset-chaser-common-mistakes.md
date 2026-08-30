@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent podcast producers and 
 productId: "guest-asset-chaser"
 productName: "Guest Asset Chaser"
 generationFingerprint: "847c9b89f655836e541c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A recording can be booked while biography, headshot, pronunciation, release, talking points, links, and promotion approvals remain scattered across guest emails. The recurring failures are usually process-design problems rather than motivation problems. For independent podcast producers and small branded-podcast teams, these are the mistakes worth finding before buying or building software.

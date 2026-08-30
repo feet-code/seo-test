@@ -4,13 +4,9 @@ excerpt: "A practical alternatives comparison for independent residential proper
 productId: "maintenance-triage-board"
 productName: "Maintenance Triage Board"
 generationFingerprint: "cda6aa08f72fc2c28b01"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 There are several valid ways to manage rental property maintenance request triage. The right choice depends on volume, exception rate, ownership, and how much coordination crosses systems. Start with the smallest approach that keeps the work reliable.

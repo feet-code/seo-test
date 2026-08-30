@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for owner-operated HVAC, plumbing, e
 productId: "estimate-followup-queue"
 productName: "Estimate Follow-Up Queue"
 generationFingerprint: "4eac085b965fb228f523"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Estimates are sent from one system, then followed up from memory, causing inconsistent timing and little insight into why work is won or lost. For owner-operated HVAC, plumbing, electrical, and repair contractors, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every sent estimate reaches a documented customer decision or a deliberate next review date**.
