@@ -106,7 +106,11 @@ def pages_project_count() -> int:
     page = 1
     count = 0
     while True:
-        response = cloudflare("GET", f"/pages/projects?page={page}&per_page=100")
+        # The Pages endpoint rejects large per_page values even though many
+        # Cloudflare list endpoints allow 100. Let Pages choose its supported
+        # page size and use its result_info metadata to count/paginate.
+        path = "/pages/projects" if page == 1 else f"/pages/projects?page={page}"
+        response = cloudflare("GET", path)
         result = response.get("result") or []
         info = response.get("result_info") or {}
         total = info.get("total_count")
@@ -114,7 +118,12 @@ def pages_project_count() -> int:
             _pages_project_count_cache = int(total)
             return _pages_project_count_cache
         count += len(result)
-        if len(result) < 100:
+        total_pages = info.get("total_pages")
+        if total_pages is not None and page >= int(total_pages):
+            _pages_project_count_cache = count
+            return count
+        page_size = info.get("per_page")
+        if not result or page_size is None or len(result) < int(page_size):
             _pages_project_count_cache = count
             return count
         page += 1
