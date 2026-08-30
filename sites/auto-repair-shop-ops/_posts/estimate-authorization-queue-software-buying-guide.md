@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent auto repair shops and
 productId: "estimate-authorization-queue"
 productName: "Estimate Authorization Queue"
 generationFingerprint: "4e1afb63fb72eaebd7a9"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for repair estimate authorization tracking should be evaluated against the operating problem, not a generic feature checklist. For independent auto repair shops and service-advisor teams, a useful trial must demonstrate this outcome: **every pending estimate has a documented customer decision, next follow-up, or closed reason**.

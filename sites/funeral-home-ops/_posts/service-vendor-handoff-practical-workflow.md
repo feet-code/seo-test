@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent funeral homes and sm
 productId: "service-vendor-handoff"
 productName: "Service Vendor Handoff"
 generationFingerprint: "b296f4c835478543abb7"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Clergy, celebrants, cemeteries, crematories, florists, musicians, newspapers, venues, escorts, and transport providers receive changes through separate calls without one accepted operating plan. For independent funeral homes and small death-care service teams, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every external service commitment has current instructions, accountable contacts, accepted timing, change history, and verified completion**.

@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent salons, spas, and sm
 productId: "service-room-par-tracker"
 productName: "Service Room Par Tracker"
 generationFingerprint: "485ef056754c91568324"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Back-bar and treatment-room supplies run out between formal inventory counts because usage, room transfers, and replenishment ownership are not visible at the service level. For independent salons, spas, and small wellness studios, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **each service room is replenished to an agreed par before its next booked service without hiding inventory variance**.

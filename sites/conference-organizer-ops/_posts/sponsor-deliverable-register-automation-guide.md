@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent conference organizers 
 productId: "sponsor-deliverable-register"
 productName: "Sponsor Deliverable Register"
 generationFingerprint: "7b88b57ac2ebda718d2b"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for conference sponsor deliverable tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent conference organizers and small trade-show teams, the target outcome is **every contracted sponsor obligation has an approved input, delivery owner, placement evidence, and accepted outcome**.

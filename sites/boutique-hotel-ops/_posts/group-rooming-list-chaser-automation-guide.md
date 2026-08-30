@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent boutique hotels and sm
 productId: "group-rooming-list-chaser"
 productName: "Group Rooming List Chaser"
 generationFingerprint: "92a5c4ce77cf52b8410e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for hotel group rooming list tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent boutique hotels and small hospitality teams, the target outcome is **every contracted group block reaches a validated rooming list and reconciled reservation set by the operational cutoff**.

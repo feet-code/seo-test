@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent funeral homes and smal
 productId: "service-vendor-handoff"
 productName: "Service Vendor Handoff"
 generationFingerprint: "b296f4c835478543abb7"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for funeral service vendor and facility handoff tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent funeral homes and small death-care service teams, the target outcome is **every external service commitment has current instructions, accountable contacts, accepted timing, change history, and verified completion**.

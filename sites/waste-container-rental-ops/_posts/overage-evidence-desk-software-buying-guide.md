@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small roll-off dumpster and comme
 productId: "overage-evidence-desk"
 productName: "Overage Evidence Desk"
 generationFingerprint: "7c8f858b3aab30c3176d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for dumpster contamination and overage evidence tracking should be evaluated against the operating problem, not a generic feature checklist. For small roll-off dumpster and commercial waste-container rental companies, a useful trial must demonstrate this outcome: **every exception charge is linked to the contract rule, timestamped field or scale evidence, reviewer decision, and customer notice before invoicing**.

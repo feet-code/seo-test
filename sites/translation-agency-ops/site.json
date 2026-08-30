@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets translation terminology management, glossary approval workflow, localization term query, and translation termbase review searches.",
-      "score": 86
+      "score": 86,
+      "contentBatch": "batch-002"
     },
     {
       "id": "reviewer-handoff-tracker",
@@ -31,7 +32,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets translation review workflow, localization reviewer handoff, translation file tracking, and linguistic review management searches.",
-      "score": 83
+      "score": 83,
+      "contentBatch": "batch-002"
     }
   ],
   "articlesPerProduct": 10,
@@ -40,12 +42,7 @@
   "valueProposition": "Turns translation terminology approval workflow into a visible operating queue so every terminology question receives an authoritative decision that is applied to the glossary and affected translation work.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

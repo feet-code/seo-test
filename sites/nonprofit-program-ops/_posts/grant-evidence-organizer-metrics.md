@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for small nonprofit di
 productId: "grant-evidence-organizer"
 productName: "Grant Evidence Organizer"
 generationFingerprint: "9ec3bc43665b6698ccc5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for nonprofit grant reporting evidence and outcome documentation should help small nonprofit direct-service and program teams decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

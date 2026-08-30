@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets home inspection checklist before appointment, home inspector access confirmation, inspection scheduling software, and property inspection readiness searches.",
-      "score": 88
+      "score": 88,
+      "contentBatch": "batch-004"
     },
     {
       "id": "report-release-qa",
@@ -31,7 +32,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets home inspection report QA, inspection report checklist, home inspector report software, and property inspection quality control searches.",
-      "score": 90
+      "score": 90,
+      "contentBatch": "batch-004"
     }
   ],
   "articlesPerProduct": 10,
@@ -40,12 +42,7 @@
   "valueProposition": "Turns home inspection property access readiness into a visible operating queue so every inspection starts with property-specific access, utilities, scope, agreement, payment, and contacts confirmed or a documented limitation plan.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent laundromats offering s
 productId: "wash-fold-handoff"
 productName: "Wash-Fold Handoff"
 generationFingerprint: "f4f223f52d162f2598e3"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Drop-off orders can be mixed, delayed, underweighed, split across machines, missing a preference, assembled incorrectly, or released before payment because each production stage has a separate handoff. The recurring failures are usually process-design problems rather than motivation problems. For independent laundromats offering self-service and wash-dry-fold, these are the mistakes worth finding before buying or building software.

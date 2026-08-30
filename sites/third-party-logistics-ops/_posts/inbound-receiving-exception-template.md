@@ -4,13 +4,9 @@ excerpt: "A practical record template for small third-party logistics warehouses
 productId: "inbound-receiving-exception"
 productName: "Inbound Receiving Exception"
 generationFingerprint: "b31d31abcf80b6fd60e5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful 3PL inbound receiving exception tracking template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

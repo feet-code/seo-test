@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent craft breweries operat
 productId: "taproom-event-shift-handoff"
 productName: "Taproom Event Shift Handoff"
 generationFingerprint: "94a47a271e27fe4d5f1f"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for brewery taproom event shift handoff tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent craft breweries operating one or more taprooms, the target outcome is **every taproom event transfers into the operating shift with current commitments, assigned setup, commercial terms, contacts, and explicit manager acceptance**.

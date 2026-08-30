@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small land-surveying firms coordi
 productId: "survey-deliverable-release"
 productName: "Survey Deliverable Release"
 generationFingerprint: "22244996dc4424f8c44c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for land survey deliverable quality review should be evaluated against the operating problem, not a generic feature checklist. For small land-surveying firms coordinating field crews and office deliverables, a useful trial must demonstrate this outcome: **every survey deliverable is traceable to current field and office inputs, passes the firm's required professional review, and is delivered as a controlled version**.

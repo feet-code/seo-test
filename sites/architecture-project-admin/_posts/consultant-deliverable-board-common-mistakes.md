@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small architecture firms and desig
 productId: "consultant-deliverable-board"
 productName: "Consultant Deliverable Board"
 generationFingerprint: "42ab794d9922f5e43c20"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Structural, MEP, civil, landscape, and specialist deliverables arrive through separate transmittals, making current version, review status, and drawing dependencies difficult to see. The recurring failures are usually process-design problems rather than motivation problems. For small architecture firms and design-project administrators, these are the mistakes worth finding before buying or building software.

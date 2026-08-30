@@ -4,13 +4,9 @@ excerpt: "A practical alternatives comparison for community theaters and volunte
 productId: "production-asset-return"
 productName: "Production Asset Return"
 generationFingerprint: "6d72e4b7e0c557eb01bc"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 There are several valid ways to manage theater prop and costume return tracking. The right choice depends on volume, exception rate, ownership, and how much coordination crosses systems. Start with the smallest approach that keeps the work reliable.

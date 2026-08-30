@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent vending machine a
 productId: "machine-service-exception"
 productName: "Machine Service Exception"
 generationFingerprint: "77a7ab7783acbebe726a"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for vending machine service exception tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent vending machine and micro-market route operators and centers on one result: **every machine fault has impact, owner, repair evidence, refund follow-up, and verified return to service**.

@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent campgrounds, RV parks
 productId: "campsite-turn-readiness"
 productName: "Campsite Turn Readiness"
 generationFingerprint: "eaef2147e99bd9795162"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for campground campsite turnover readiness should be evaluated against the operating problem, not a generic feature checklist. For independent campgrounds, RV parks, and small outdoor lodging properties, a useful trial must demonstrate this outcome: **every departing site is inspected, serviced, reconciled, and released for the next arrival or held with a visible reason**.

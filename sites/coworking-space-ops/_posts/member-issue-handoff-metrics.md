@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for independent cowork
 productId: "member-issue-handoff"
 productName: "Member Issue Handoff"
 generationFingerprint: "0f6ee4e9e913480a7c5a"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for coworking member issue handoff tracking should help independent coworking spaces and small flexible-office operators decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

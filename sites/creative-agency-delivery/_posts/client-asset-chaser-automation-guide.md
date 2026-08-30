@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for small creative, design, and digita
 productId: "client-asset-chaser"
 productName: "Client Asset Chaser"
 generationFingerprint: "6769802ceb38c88597d6"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for client asset collection and missing content tracking for agencies should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For small creative, design, and digital agencies, the target outcome is **the agency receives usable client inputs by the date required for the dependent deliverable**.

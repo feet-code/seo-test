@@ -4,13 +4,9 @@ excerpt: "Three realistic workflow test cases for independent recruiters and bou
 productId: "search-intake-scorecard"
 productName: "Search Intake Scorecard"
 generationFingerprint: "7cb5ad03fde7b2e6e454"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Examples make recruiting search intake and candidate calibration scorecards easier to design because they reveal where a neat diagram meets messy work. The scenarios below are not claims about a particular company; they are test cases independent recruiters and boutique recruiting firms can run against a template or software trial.

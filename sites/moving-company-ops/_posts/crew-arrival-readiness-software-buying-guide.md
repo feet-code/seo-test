@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent household moving comp
 productId: "crew-arrival-readiness"
 productName: "Crew Arrival Readiness"
 generationFingerprint: "d6f119d07aa79748a594"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for moving crew arrival readiness should be evaluated against the operating problem, not a generic feature checklist. For independent household moving companies and local moving crews, a useful trial must demonstrate this outcome: **every dispatched crew leaves with a confirmed job scope, access plan, equipment load, and customer arrival promise**.

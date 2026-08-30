@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small specialty wholesalers and B
 productId: "account-reorder-signal"
 productName: "Account Reorder Signal"
 generationFingerprint: "35f5833aa06254a2b04e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for wholesale customer reorder reminders and account follow-up should be evaluated against the operating problem, not a generic feature checklist. For small specialty wholesalers and B2B distributors, a useful trial must demonstrate this outcome: **the rep reviews each plausible reorder opportunity at the right time without sending irrelevant automated messages**.

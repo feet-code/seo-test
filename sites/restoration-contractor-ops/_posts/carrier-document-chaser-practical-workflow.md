@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small water, fire, and property-
 productId: "carrier-document-chaser"
 productName: "Carrier Document Chaser"
 generationFingerprint: "3755d85ce6576efa4f10"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Adjuster requests, estimates, authorizations, photos, invoices, readings, and supplements are exchanged through long email threads without one list of what is owed and what was accepted. For small water, fire, and property-restoration contractors, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every carrier document request has a defined artifact, owner, submitted version, acknowledgment, and resolved response**.

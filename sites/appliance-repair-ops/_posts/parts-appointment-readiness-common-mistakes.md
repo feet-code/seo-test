@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent appliance repair compa
 productId: "parts-appointment-readiness"
 productName: "Parts Appointment Readiness"
 generationFingerprint: "897b962e251044b4d2c8"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A return visit is scheduled from an expected delivery while the correct part, model match, received condition, technician requirements, customer access, and remaining authorization are not verified. The recurring failures are usually process-design problems rather than motivation problems. For independent appliance repair companies and small authorized-service teams, these are the mistakes worth finding before buying or building software.

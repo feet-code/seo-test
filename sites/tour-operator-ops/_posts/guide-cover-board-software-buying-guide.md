@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small day-tour, activity, and mul
 productId: "guide-cover-board"
 productName: "Guide Cover Board"
 generationFingerprint: "0fa8921991b544dcfe7d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for tour guide scheduling and substitution should be evaluated against the operating problem, not a generic feature checklist. For small day-tour, activity, and multi-day tour operators, a useful trial must demonstrate this outcome: **every uncovered departure is accepted by a qualified guide or escalated to a documented operating decision before the guest notice cutoff**.

@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for small septic pumping, inspection, 
 productId: "septic-site-access-readiness"
 productName: "Septic Site Access Readiness"
 generationFingerprint: "d24b47a41f3bac36462d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for septic pumping property access readiness should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For small septic pumping, inspection, and liquid-waste service companies, the target outcome is **every dispatched septic job has a usable tank location, access plan, service scope, and customer responsibility confirmed before truck commitment**.

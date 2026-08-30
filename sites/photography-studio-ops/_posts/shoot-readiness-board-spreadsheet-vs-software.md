@@ -4,13 +4,9 @@ excerpt: "A spreadsheet-versus-software decision guide for independent photograp
 productId: "shoot-readiness-board"
 productName: "Shoot Readiness Board"
 generationFingerprint: "672e3ea5ea70747da3ba"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A spreadsheet is often the right first implementation for photography shoot readiness tracking. It is cheap, editable, and forces the team to define the workflow. The question is not whether spreadsheets are good or bad; it is when coordination costs become larger than the flexibility is worth.

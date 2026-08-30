@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for owner-operated commercial cleaning
 productId: "location-supply-par-tracker"
 productName: "Location Supply Par Tracker"
 generationFingerprint: "dffeb8e01f6c103f3284"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for janitorial supply inventory and location replenishment tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For owner-operated commercial cleaning and janitorial companies, the target outcome is **each location has enough approved supplies for the next service window without uncontrolled overstock**.

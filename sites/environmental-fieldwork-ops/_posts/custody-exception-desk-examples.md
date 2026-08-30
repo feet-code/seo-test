@@ -4,13 +4,9 @@ excerpt: "Three realistic workflow test cases for small environmental consulting
 productId: "custody-exception-desk"
 productName: "Custody Exception Desk"
 generationFingerprint: "0c01731d2898bf890584"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Examples make environmental chain of custody exception tracking easier to design because they reveal where a neat diagram meets messy work. The scenarios below are not claims about a particular company; they are test cases small environmental consulting and field-sampling teams can run against a template or software trial.

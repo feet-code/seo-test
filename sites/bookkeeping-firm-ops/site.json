@@ -17,7 +17,8 @@
       "monetization": "$19-$79/month based on active records or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets bookkeeping document request list, client reminder email, month-end document checklist, and accounting client portal searches.",
-      "score": 87
+      "score": 87,
+      "contentBatch": "batch-001"
     },
     {
       "id": "portfolio-close-monitor",
@@ -31,7 +32,8 @@
       "monetization": "$19-$79/month based on active records or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets bookkeeping month-end checklist, accounting close tracker, client close dashboard, and recurring workflow software searches.",
-      "score": 85
+      "score": 85,
+      "contentBatch": "batch-001"
     }
   ],
   "articlesPerProduct": 10,
@@ -40,12 +42,7 @@
   "valueProposition": "Makes every requested input specific, secure, owned, validated, and connected to the blocked bookkeeping task.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

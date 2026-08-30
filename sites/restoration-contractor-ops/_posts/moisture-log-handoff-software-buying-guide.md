@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small water, fire, and property-r
 productId: "moisture-log-handoff"
 productName: "Moisture Log Handoff"
 generationFingerprint: "06978ed3ffd0b3324be4"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for water restoration moisture log handoff should be evaluated against the operating problem, not a generic feature checklist. For small water, fire, and property-restoration contractors, a useful trial must demonstrate this outcome: **every drying visit produces a time-stamped, location-specific record that supports the next field decision and controlled job documentation**.

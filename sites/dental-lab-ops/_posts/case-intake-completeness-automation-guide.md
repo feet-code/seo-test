@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent dental laboratories se
 productId: "case-intake-completeness"
 productName: "Case Intake Completeness"
 generationFingerprint: "ac444cb09821283ff79c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for dental lab case intake validation should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent dental laboratories serving local dental practices, the target outcome is **every lab case is accepted only after a trained reviewer confirms the required prescription, files, materials, dates, and practice clarifications**.

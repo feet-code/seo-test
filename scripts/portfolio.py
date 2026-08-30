@@ -41,8 +41,18 @@ def save(path: Path, config: dict[str, Any]) -> None:
 def target_url(config: dict[str, Any]) -> str:
     if config.get("domain"):
         return "https://" + str(config["domain"]).rstrip("/")
-    project = config.get("deploy", {}).get("project", config.get("id"))
+    deploy = config.get("deploy", {})
+    if deploy.get("url"):
+        return str(deploy["url"])
+    project = deploy.get("project", config.get("id"))
     return f"https://{project}.pages.dev"
+
+
+def hosting_provider(config: dict[str, Any]) -> str:
+    deploy = config.get("deploy", {})
+    configured = str(deploy.get("provider", "cloudflare-pages"))
+    resolved = deploy.get("resolvedProvider")
+    return f"{configured} -> {resolved}" if resolved and resolved != configured else configured
 
 
 def status_rows() -> list[dict[str, Any]]:
@@ -53,7 +63,7 @@ def status_rows() -> list[dict[str, Any]]:
                 "site": site_id,
                 "status": config.get("status", "active"),
                 "products": len(config.get("products") or [config.get("product")]),
-                "provider": config.get("deploy", {}).get("provider", "cloudflare-pages"),
+                "provider": hosting_provider(config),
                 "url": target_url(config),
                 "posts": len(list((path.parent / "_posts").glob("*.md"))),
             }
@@ -122,9 +132,10 @@ def teardown(site_id: str | None, all_sites: bool, confirmation: str | None) -> 
     print("TEARDOWN PLAN (local configs and source content are preserved)")
     for name, _, config in selected:
         project = config.get("deploy", {}).get("project", name)
+        provider = hosting_provider(config)
         google = config.get("monitoring", {}).get("googleProperty", "<not configured>")
         print(
-            f"- {name}: delete Cloudflare Pages project {project!r}; "
+            f"- {name}: delete Cloudflare hosting {project!r} ({provider}); "
             f"remove GSC/Site Verification property {google!r}"
         )
 

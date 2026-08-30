@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent auto repair shops and 
 productId: "parts-arrival-promise-board"
 productName: "Parts Arrival Promise Board"
 generationFingerprint: "b13c2590920faa24619d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Ordered parts, supplier ETAs, vehicle status, and customer promises drift apart when updates live in vendor portals and individual service-advisor notes. The recurring failures are usually process-design problems rather than motivation problems. For independent auto repair shops and service-advisor teams, these are the mistakes worth finding before buying or building software.

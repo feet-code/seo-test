@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for small roll-off dumpster and commer
 productId: "container-inventory-reconciliation"
 productName: "Container Inventory Reconciliation"
 generationFingerprint: "22ba130e6b546eced140"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for roll off container inventory reconciliation should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For small roll-off dumpster and commercial waste-container rental companies, the target outcome is **every container has one verified physical location, service state, billing relationship, and next movement or review time**.

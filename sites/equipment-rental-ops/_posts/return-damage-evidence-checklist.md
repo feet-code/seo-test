@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent equipment, tool, 
 productId: "return-damage-evidence"
 productName: "Return Damage Evidence"
 generationFingerprint: "4d1fad183504ccf15a47"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for equipment rental return damage documentation should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent equipment, tool, and event-rental businesses and centers on one result: **every returned asset is inspected against checkout evidence and any damage decision is documented before billing or release**.

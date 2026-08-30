@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent appliance repair 
 productId: "warranty-evidence-desk"
 productName: "Warranty Evidence Desk"
 generationFingerprint: "64170b502f8cf078413e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for appliance repair warranty claim evidence tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent appliance repair companies and small authorized-service teams and centers on one result: **every warranty job reaches submission with complete authorized evidence and remains visible until reimbursement, correction, or documented denial**.

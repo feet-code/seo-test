@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for independent restau
 productId: "prep-shortage-recovery"
 productName: "Prep Shortage Recovery"
 generationFingerprint: "677d447bf38ddb9c54dc"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for restaurant prep shortage tracking should help independent restaurants and small multi-location restaurant groups decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

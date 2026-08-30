@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for small contract security companies 
 productId: "incident-report-review"
 productName: "Incident Report Review"
 generationFingerprint: "cbd50a0261c9afadb15e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for security incident report review workflow should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For small contract security companies and guard supervisors, the target outcome is **every submitted incident report is checked for completeness, corrected with an audit trail, and delivered to authorized recipients**.

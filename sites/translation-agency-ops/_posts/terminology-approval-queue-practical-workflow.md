@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for boutique translation agencies an
 productId: "terminology-approval-queue"
 productName: "Terminology Approval Queue"
 generationFingerprint: "f9edb42facc71cd2e0ee"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Translators raise terminology questions in comments and messages, but client answers are not always normalized, approved, and propagated into the glossary before more work continues. For boutique translation agencies and localization project teams, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every terminology question receives an authoritative decision that is applied to the glossary and affected translation work**.

@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent salons, spas, and smal
 productId: "service-room-par-tracker"
 productName: "Service Room Par Tracker"
 generationFingerprint: "485ef056754c91568324"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Back-bar and treatment-room supplies run out between formal inventory counts because usage, room transfers, and replenishment ownership are not visible at the service level. The recurring failures are usually process-design problems rather than motivation problems. For independent salons, spas, and small wellness studios, these are the mistakes worth finding before buying or building software.

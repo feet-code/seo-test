@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets tour manifest software, tour departure checklist, activity operator manifest, and tour participant roster searches.",
-      "score": 88
+      "score": 88,
+      "contentBatch": "batch-003"
     },
     {
       "id": "guide-cover-board",
@@ -31,7 +32,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets tour guide scheduling, tour guide substitute, tour operator staff scheduling, and guide coverage app searches.",
-      "score": 84
+      "score": 84,
+      "contentBatch": "batch-003"
     }
   ],
   "articlesPerProduct": 10,
@@ -40,12 +42,7 @@
   "valueProposition": "Turns tour departure manifest readiness into a visible operating queue so every departure has one frozen operational manifest with resolved blocking fields and controlled late changes.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

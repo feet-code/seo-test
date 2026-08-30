@@ -4,13 +4,9 @@ excerpt: "A spreadsheet-versus-software decision guide for small specialty whole
 productId: "new-account-packet"
 productName: "New Account Packet"
 generationFingerprint: "d8896f52e8a0ff0b2923"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A spreadsheet is often the right first implementation for wholesale customer onboarding and new account setup checklists. It is cheap, editable, and forces the team to define the workflow. The question is not whether spreadsheets are good or bad; it is when coordination costs become larger than the flexibility is worth.

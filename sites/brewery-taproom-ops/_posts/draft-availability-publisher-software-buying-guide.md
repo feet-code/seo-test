@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent craft breweries opera
 productId: "draft-availability-publisher"
 productName: "Draft Availability Publisher"
 generationFingerprint: "01e68dbb40ae388a4d92"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for brewery tap list availability tracking should be evaluated against the operating problem, not a generic feature checklist. For independent craft breweries operating one or more taprooms, a useful trial must demonstrate this outcome: **every draft availability change is approved, published across intended channels, verified live, and reactivated only from confirmed product and line readiness**.

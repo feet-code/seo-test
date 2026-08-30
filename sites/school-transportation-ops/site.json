@@ -1,0 +1,75 @@
+{
+  "id": "school-transportation-ops",
+  "name": "School Transportation Operations",
+  "domain": null,
+  "audience": "small school-bus contractors and private student-transportation operators",
+  "topic": "route changes, substitute packets, and vehicle-defect handoffs",
+  "products": [
+    {
+      "id": "route-change-acknowledgment",
+      "name": "Route Change Acknowledgment",
+      "product": "A focused school bus route change communication workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "small school-bus contractors and private student-transportation operators",
+      "problem": "Stop, time, student, school, access, vehicle, and family-notice changes may not reach every driver and dispatcher before service.",
+      "valueProposition": "Turns school bus route change communication into a visible operating queue so every effective route change has a current version, affected-party acknowledgment, and first-run verification.",
+      "topic": "school bus route change communication",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets school bus route change communication software, school bus route change communication tracker, school bus route change communication template, and school bus route change communication checklist searches.",
+      "score": 88,
+      "contentBatch": "batch-005"
+    },
+    {
+      "id": "substitute-driver-packet",
+      "name": "Substitute Driver Packet",
+      "product": "A focused school transportation substitute driver readiness workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "small school-bus contractors and private student-transportation operators",
+      "problem": "Route directions, vehicle, student notes, contacts, schedule variations, keys, and check-in expectations are assembled at the last minute.",
+      "valueProposition": "Turns school transportation substitute driver readiness into a visible operating queue so every substitute assignment is released with the current route packet, vehicle access, and dispatcher acknowledgment.",
+      "topic": "school transportation substitute driver readiness",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets school transportation substitute driver readiness software, school transportation substitute driver readiness tracker, school transportation substitute driver readiness template, and school transportation substitute driver readiness checklist searches.",
+      "score": 89,
+      "contentBatch": "batch-005"
+    },
+    {
+      "id": "vehicle-defect-handoff",
+      "name": "Vehicle Defect Handoff",
+      "product": "A focused school bus vehicle defect tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "small school-bus contractors and private student-transportation operators",
+      "problem": "Driver reports, maintenance assessment, operating restrictions, substitute vehicles, repair status, and return-to-service decisions cross several shifts.",
+      "valueProposition": "Turns school bus vehicle defect tracking into a visible operating queue so every reported defect has a visible disposition, vehicle plan, repair owner, and authorized return-to-service record.",
+      "topic": "school bus vehicle defect tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets school bus vehicle defect tracking software, school bus vehicle defect tracking tracker, school bus vehicle defect tracking template, and school bus vehicle defect tracking checklist searches.",
+      "score": 82,
+      "contentBatch": "batch-005"
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused school bus route change communication workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns school bus route change communication into a visible operating queue so every effective route change has a current version, affected-party acknowledgment, and first-run verification.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "school-transportation-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

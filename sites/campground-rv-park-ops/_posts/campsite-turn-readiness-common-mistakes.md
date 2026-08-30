@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent campgrounds, RV parks,
 productId: "campsite-turn-readiness"
 productName: "Campsite Turn Readiness"
 generationFingerprint: "eaef2147e99bd9795162"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Departed sites remain unavailable or are released too early because checkout, utilities, cleanup, damage, fire-ring or amenity checks, maintenance, and reservation status close separately. The recurring failures are usually process-design problems rather than motivation problems. For independent campgrounds, RV parks, and small outdoor lodging properties, these are the mistakes worth finding before buying or building software.

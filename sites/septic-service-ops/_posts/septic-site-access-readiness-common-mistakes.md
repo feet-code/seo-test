@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small septic pumping, inspection, 
 productId: "septic-site-access-readiness"
 productName: "Septic Site Access Readiness"
 generationFingerprint: "d24b47a41f3bac36462d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Pump trucks arrive without verified tank location, lids exposed, gate access, hose distance, parking plan, occupant contact, or known site constraints. The recurring failures are usually process-design problems rather than motivation problems. For small septic pumping, inspection, and liquid-waste service companies, these are the mistakes worth finding before buying or building software.

@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small roll-off dumpster and comme
 productId: "container-inventory-reconciliation"
 productName: "Container Inventory Reconciliation"
 generationFingerprint: "22ba130e6b546eced140"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for roll off container inventory reconciliation should be evaluated against the operating problem, not a generic feature checklist. For small roll-off dumpster and commercial waste-container rental companies, a useful trial must demonstrate this outcome: **every container has one verified physical location, service state, billing relationship, and next movement or review time**.

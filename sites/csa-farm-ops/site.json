@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets CSA member management, CSA vacation hold, farm box skip tracking, and CSA packing list changes searches.",
-      "score": 85
+      "score": 85,
+      "contentBatch": "batch-002"
     }
   ],
   "articlesPerProduct": 10,
@@ -26,12 +27,7 @@
   "valueProposition": "Turns CSA skip swap and pickup change tracking into a visible operating queue so every eligible member change is applied before the correct packing and route cutoff or closed with a clear alternative.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

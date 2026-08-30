@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for boutique translation agencies and 
 productId: "terminology-approval-queue"
 productName: "Terminology Approval Queue"
 generationFingerprint: "f9edb42facc71cd2e0ee"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Translators raise terminology questions in comments and messages, but client answers are not always normalized, approved, and propagated into the glossary before more work continues. The recurring failures are usually process-design problems rather than motivation problems. For boutique translation agencies and localization project teams, these are the mistakes worth finding before buying or building software.

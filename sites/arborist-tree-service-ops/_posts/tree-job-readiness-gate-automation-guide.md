@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent arborist, pruning, rem
 productId: "tree-job-readiness-gate"
 productName: "Tree Job Readiness Gate"
 generationFingerprint: "2e0f5f8ab16f5ba2e200"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for tree service permit utility and site readiness should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent arborist, pruning, removal, and plant-health-care companies, the target outcome is **every tree job is released only with site-specific scope, permissions, hazards, equipment, and access verified for the assigned crew**.

@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for independent salons
 productId: "service-room-par-tracker"
 productName: "Service Room Par Tracker"
 generationFingerprint: "485ef056754c91568324"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for salon and spa room inventory par tracking should help independent salons, spas, and small wellness studios decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for owner-operated commercial cleanin
 productId: "location-supply-par-tracker"
 productName: "Location Supply Par Tracker"
 generationFingerprint: "dffeb8e01f6c103f3284"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for janitorial supply inventory and location replenishment tracking should be evaluated against the operating problem, not a generic feature checklist. For owner-operated commercial cleaning and janitorial companies, a useful trial must demonstrate this outcome: **each location has enough approved supplies for the next service window without uncontrolled overstock**.

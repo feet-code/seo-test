@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent home inspection compa
 productId: "inspection-access-readiness"
 productName: "Inspection Access Readiness"
 generationFingerprint: "10ccec90e4ab576f5c4d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for home inspection property access readiness should be evaluated against the operating problem, not a generic feature checklist. For independent home inspection companies and small multi-inspector teams, a useful trial must demonstrate this outcome: **every inspection starts with property-specific access, utilities, scope, agreement, payment, and contacts confirmed or a documented limitation plan**.

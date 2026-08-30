@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent boutique hotels and s
 productId: "lost-found-claim-desk"
 productName: "Lost and Found Claim Desk"
 generationFingerprint: "0a5d4ce4446069fc7d6a"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for hotel lost and found claim tracking should be evaluated against the operating problem, not a generic feature checklist. For independent boutique hotels and small hospitality teams, a useful trial must demonstrate this outcome: **every found item and guest claim is matched, released, retained, or disposed under policy with a complete custody trail**.

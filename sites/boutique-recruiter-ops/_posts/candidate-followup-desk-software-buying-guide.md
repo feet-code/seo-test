@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent recruiters and boutiq
 productId: "candidate-followup-desk"
 productName: "Candidate Follow-Up Desk"
 generationFingerprint: "01cf122a04a7f42de54c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for candidate follow-up tracking for recruiting agencies should be evaluated against the operating problem, not a generic feature checklist. For independent recruiters and boutique recruiting firms, a useful trial must demonstrate this outcome: **every active candidate receives the promised next update or a documented closed reason**.

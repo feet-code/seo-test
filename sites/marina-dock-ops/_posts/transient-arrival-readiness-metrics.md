@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for independent marina
 productId: "transient-arrival-readiness"
 productName: "Transient Arrival Readiness"
 generationFingerprint: "68a6a5083bc5a3ee0c77"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for marina transient arrival readiness should help independent marinas, yacht clubs, and small dock operations decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

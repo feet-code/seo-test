@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent bicycle repair shops a
 productId: "bike-repair-authorization"
 productName: "Bike Repair Authorization"
 generationFingerprint: "92b21b8dbce0682aeec8"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A bicycle diagnosis uncovers extra labor or parts after intake, but revised scope, safety-critical work, price ceiling, parts choice, customer decision, and mechanic release are scattered across calls and paper tags. The recurring failures are usually process-design problems rather than motivation problems. For independent bicycle repair shops and service departments, these are the mistakes worth finding before buying or building software.

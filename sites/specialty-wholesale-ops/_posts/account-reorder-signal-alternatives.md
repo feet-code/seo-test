@@ -4,13 +4,9 @@ excerpt: "A practical alternatives comparison for small specialty wholesalers an
 productId: "account-reorder-signal"
 productName: "Account Reorder Signal"
 generationFingerprint: "35f5833aa06254a2b04e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 There are several valid ways to manage wholesale customer reorder reminders and account follow-up. The right choice depends on volume, exception rate, ownership, and how much coordination crosses systems. Start with the smallest approach that keeps the work reliable.

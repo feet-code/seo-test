@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small managed service providers 
 productId: "ticket-escalation-handoff"
 productName: "Ticket Escalation Handoff"
 generationFingerprint: "fc03dcc64bf911cfbfa5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Escalated tickets lose diagnostic context and client promises when the next technician must reconstruct work from long comments, private chat, and monitoring alerts. For small managed service providers and multi-client IT support teams, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every escalation transfers a reproducible problem statement, completed diagnostics, client promise, and explicit acceptance by the next owner**.

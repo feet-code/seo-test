@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent dental laboratories 
 productId: "esthetic-approval-queue"
 productName: "Esthetic Approval Queue"
 generationFingerprint: "f21e1038d6dbdb67e762"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Shade photos, design previews, try-in feedback, practice questions, patient scheduling, revised files, and final release can create ambiguous approval versions during esthetic cases. For independent dental laboratories serving local dental practices, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every requested esthetic or design decision is tied to a specific review artifact, authorized practice response, effective version, and production release**.

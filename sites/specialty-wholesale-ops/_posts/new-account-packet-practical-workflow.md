@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small specialty wholesalers and 
 productId: "new-account-packet"
 productName: "New Account Packet"
 generationFingerprint: "d8896f52e8a0ff0b2923"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 New accounts bounce between sales, operations, and accounting because required information and approvals are collected in separate emails. For small specialty wholesalers and B2B distributors, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **a new account reaches ready-to-order status with every required operational field and approval complete**.

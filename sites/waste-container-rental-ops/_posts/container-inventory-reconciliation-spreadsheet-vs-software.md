@@ -4,13 +4,9 @@ excerpt: "A spreadsheet-versus-software decision guide for small roll-off dumpst
 productId: "container-inventory-reconciliation"
 productName: "Container Inventory Reconciliation"
 generationFingerprint: "22ba130e6b546eced140"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A spreadsheet is often the right first implementation for roll off container inventory reconciliation. It is cheap, editable, and forces the team to define the workflow. The question is not whether spreadsheets are good or bad; it is when coordination costs become larger than the flexibility is worth.

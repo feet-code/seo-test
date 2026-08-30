@@ -4,13 +4,9 @@ excerpt: "A practical record template for portable restroom rental and recurring
 productId: "route-service-exception"
 productName: "Route Service Exception"
 generationFingerprint: "f52a86874e8d15e80640"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful portable restroom route service exception tracking template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

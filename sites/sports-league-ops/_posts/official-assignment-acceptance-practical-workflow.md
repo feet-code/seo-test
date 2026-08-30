@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for community sports leagues and sma
 productId: "official-assignment-acceptance"
 productName: "Official Assignment Acceptance"
 generationFingerprint: "91291a199af64b7b7906"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Referee and umpire assignments may be sent by text or email without a durable acceptance, qualification check, conflict review, or replacement path. For community sports leagues and small tournament operators, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every game has the required qualified officials who explicitly accept and receive the current assignment details**.

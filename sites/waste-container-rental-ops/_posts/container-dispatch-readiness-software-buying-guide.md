@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small roll-off dumpster and comme
 productId: "container-dispatch-readiness"
 productName: "Container Dispatch Readiness"
 generationFingerprint: "048c739fb4484138baa4"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for roll off dumpster delivery swap and pickup readiness should be evaluated against the operating problem, not a generic feature checklist. For small roll-off dumpster and commercial waste-container rental companies, a useful trial must demonstrate this outcome: **every container movement is released with an available asset, compatible truck, approved site action, material path, and current customer promise**.

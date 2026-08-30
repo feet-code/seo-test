@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent funeral homes and smal
 productId: "personal-effects-custody"
 productName: "Personal Effects Custody"
 generationFingerprint: "c4c84e92bb981056b5ea"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for funeral home personal effects chain of custody should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent funeral homes and small death-care service teams, the target outcome is **every personal effect is inventoried with appropriate privacy, transferred through named custody events, and released or disposed only with authorized acknowledgment**.

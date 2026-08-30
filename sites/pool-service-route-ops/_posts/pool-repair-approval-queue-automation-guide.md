@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent pool maintenance and r
 productId: "pool-repair-approval-queue"
 productName: "Pool Repair Approval Queue"
 generationFingerprint: "df1d0b92ec31df5b8ef9"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:22Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for pool service repair estimate approval tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent pool maintenance and repair companies running recurring routes, the target outcome is **every repair finding becomes a complete customer decision with current scope, price, parts expectation, and an owned next action**.

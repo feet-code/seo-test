@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent dance studios produc
 productId: "recital-readiness-board"
 productName: "Recital Readiness Board"
 generationFingerprint: "756275355c913ad83b46"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Routines, music edits, dancer participation, costumes, shoes, quick changes, rehearsal calls, volunteers, tickets, program details, venue access, and backstage plans mature across many class and parent records. For independent dance studios producing multi-class recitals, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every recital number and performer reaches show day with approved music, participation, costume, call time, quick-change, volunteer, and backstage dependencies verified**.

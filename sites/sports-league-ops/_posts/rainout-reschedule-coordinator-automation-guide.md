@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for community sports leagues and small
 productId: "rainout-reschedule-coordinator"
 productName: "Rainout Reschedule Coordinator"
 generationFingerprint: "9c568af6a0595f6334c2"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for sports league rainout rescheduling should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For community sports leagues and small tournament operators, the target outcome is **every weather-affected game is canceled, relocated, or rescheduled with all dependent assignments and communications reconciled**.

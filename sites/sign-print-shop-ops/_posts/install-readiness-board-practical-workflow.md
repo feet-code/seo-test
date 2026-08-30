@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent sign shops, commerci
 productId: "install-readiness-board"
 productName: "Install Readiness Board"
 generationFingerprint: "2327a8a9aba184fc0b0d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Fabrication completion does not guarantee install readiness when permits, site access, survey dimensions, hardware, equipment, crew, weather, and customer windows remain open. For independent sign shops, commercial printers, and display fabricators, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every installation dispatch has verified product, site, permission, equipment, crew, and customer readiness**.

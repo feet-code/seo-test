@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent travel advisors and bo
 productId: "traveler-requirement-readiness"
 productName: "Traveler Requirement Readiness"
 generationFingerprint: "666e4312b385e3da265b"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Travelers receive scattered reminders for names, preferences, payments, supplier forms, and destination requirements without one minimum-data readiness view. The recurring failures are usually process-design problems rather than motivation problems. For independent travel advisors and boutique travel agencies, these are the mistakes worth finding before buying or building software.

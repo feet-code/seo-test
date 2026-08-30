@@ -4,13 +4,9 @@ excerpt: "A practical alternatives comparison for small water, fire, and propert
 productId: "moisture-log-handoff"
 productName: "Moisture Log Handoff"
 generationFingerprint: "06978ed3ffd0b3324be4"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 There are several valid ways to manage water restoration moisture log handoff. The right choice depends on volume, exception rate, ownership, and how much coordination crosses systems. Start with the smallest approach that keeps the work reliable.

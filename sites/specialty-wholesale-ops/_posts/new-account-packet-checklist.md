@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for small specialty wholesalers a
 productId: "new-account-packet"
 productName: "New Account Packet"
 generationFingerprint: "d8896f52e8a0ff0b2923"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for wholesale customer onboarding and new account setup checklists should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for small specialty wholesalers and B2B distributors and centers on one result: **a new account reaches ready-to-order status with every required operational field and approval complete**.

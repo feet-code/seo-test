@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent coworking spaces 
 productId: "member-issue-handoff"
 productName: "Member Issue Handoff"
 generationFingerprint: "0f6ee4e9e913480a7c5a"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for coworking member issue handoff tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent coworking spaces and small flexible-office operators and centers on one result: **every member issue has a current owner, response promise, resolution evidence, and member acknowledgment**.

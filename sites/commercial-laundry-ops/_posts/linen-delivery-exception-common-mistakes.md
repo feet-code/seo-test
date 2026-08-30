@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small commercial laundries and lin
 productId: "linen-delivery-exception"
 productName: "Linen Delivery Exception"
 generationFingerprint: "2d7891eb4073a55e8de0"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Short deliveries, wrong carts, rejected items, access delays, emergency requests, and unsigned tickets move between route driver, plant, customer service, and billing. The recurring failures are usually process-design problems rather than motivation problems. For small commercial laundries and linen or uniform rental services, these are the mistakes worth finding before buying or building software.

@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent music schools and mult
 productId: "makeup-lesson-credit-board"
 productName: "Makeup Lesson Credit Board"
 generationFingerprint: "69d9f98a1de76522e6bd"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Teacher absences, student cancellations, studio policies, group makeups, and credits are reconciled through messages and calendars, creating forgotten or duplicated obligations. The recurring failures are usually process-design problems rather than motivation problems. For independent music schools and multi-teacher lesson studios, these are the mistakes worth finding before buying or building software.

@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for small manufacturers and lean quali
 productId: "nonconformance-closeout"
 productName: "Nonconformance Closeout"
 generationFingerprint: "1fc51d63706c2d44a850"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for manufacturing nonconformance closeout should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For small manufacturers and lean quality teams, the target outcome is **every nonconformance is contained, dispositioned by authority, corrected, and closed only after required effectiveness evidence**.

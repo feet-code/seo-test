@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for small commercial landscaping and r
 productId: "property-visit-exception"
 productName: "Property Visit Exception"
 generationFingerprint: "74b5353a963af3660cfa"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for landscape maintenance visit exception tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For small commercial landscaping and recurring property-maintenance companies, the target outcome is **every incomplete landscape visit has quantified skipped work, evidence, contract treatment, customer communication, and a recovery decision**.

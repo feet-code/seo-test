@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent laundromats offer
 productId: "laundromat-machine-outage"
 productName: "Laundromat Machine Outage"
 generationFingerprint: "924a9a02dacace0ec345"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for laundromat washer and dryer outage tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent laundromats offering self-service and wash-dry-fold and centers on one result: **every machine outage has immediate customer containment, repair ownership, status visibility, and a documented loaded-cycle return test**.

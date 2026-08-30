@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent funeral homes and sma
 productId: "personal-effects-custody"
 productName: "Personal Effects Custody"
 generationFingerprint: "c4c84e92bb981056b5ea"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for funeral home personal effects chain of custody should be evaluated against the operating problem, not a generic feature checklist. For independent funeral homes and small death-care service teams, a useful trial must demonstrate this outcome: **every personal effect is inventoried with appropriate privacy, transferred through named custody events, and released or disposed only with authorized acknowledgment**.

@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent auto repair shops and 
 productId: "vehicle-pickup-readiness"
 productName: "Vehicle Pickup Readiness"
 generationFingerprint: "8ceb8a1f8fc94410dccd"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for auto repair vehicle pickup readiness should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent auto repair shops and service-advisor teams, the target outcome is **every completed vehicle is released only after the handoff checks and customer pickup plan are confirmed**.

@@ -4,13 +4,9 @@ excerpt: "A practical record template for independent appliance repair companies
 productId: "parts-appointment-readiness"
 productName: "Parts Appointment Readiness"
 generationFingerprint: "897b962e251044b4d2c8"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful appliance repair parts appointment readiness template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

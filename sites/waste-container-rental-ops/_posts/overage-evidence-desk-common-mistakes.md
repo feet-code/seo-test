@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small roll-off dumpster and commer
 productId: "overage-evidence-desk"
 productName: "Overage Evidence Desk"
 generationFingerprint: "7c8f858b3aab30c3176d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Overweight loads, prohibited material, blocked service, dry runs, extra days, and cleanup fees become billing disputes when the charge rule and field evidence are assembled after the fact. The recurring failures are usually process-design problems rather than motivation problems. For small roll-off dumpster and commercial waste-container rental companies, these are the mistakes worth finding before buying or building software.

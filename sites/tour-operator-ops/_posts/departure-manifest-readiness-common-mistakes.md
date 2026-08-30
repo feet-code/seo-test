@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small day-tour, activity, and mult
 productId: "departure-manifest-readiness"
 productName: "Departure Manifest Readiness"
 generationFingerprint: "4a28ef7a420668ca3deb"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Bookings, waivers, pickup points, equipment, participant notes, and guide instructions change across channels until departure, creating competing manifest versions. The recurring failures are usually process-design problems rather than motivation problems. For small day-tour, activity, and multi-day tour operators, these are the mistakes worth finding before buying or building software.

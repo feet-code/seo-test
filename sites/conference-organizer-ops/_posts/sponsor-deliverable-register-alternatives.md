@@ -4,13 +4,9 @@ excerpt: "A practical alternatives comparison for independent conference organiz
 productId: "sponsor-deliverable-register"
 productName: "Sponsor Deliverable Register"
 generationFingerprint: "7b88b57ac2ebda718d2b"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 There are several valid ways to manage conference sponsor deliverable tracking. The right choice depends on volume, exception rate, ownership, and how much coordination crosses systems. Start with the smallest approach that keeps the work reliable.

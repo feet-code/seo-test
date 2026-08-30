@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small wineries running direct-to
 productId: "club-shipment-exception"
 productName: "Club Shipment Exception"
 generationFingerprint: "e1ae5c2d665711e4249f"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Failed cards, address holds, weather holds, age or carrier restrictions, allocation substitutions, member skips, and fulfillment status create exceptions across DTC and warehouse systems. For small wineries running direct-to-consumer wine clubs and pickup programs, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every club shipment exception reaches a member-approved or policy-based fulfillment decision with payment, inventory, carrier, and communication reconciled**.

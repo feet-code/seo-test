@@ -4,13 +4,9 @@ excerpt: "A practical alternatives comparison for independent auto repair shops 
 productId: "parts-arrival-promise-board"
 productName: "Parts Arrival Promise Board"
 generationFingerprint: "b13c2590920faa24619d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 There are several valid ways to manage auto repair parts arrival and customer promise tracking. The right choice depends on volume, exception rate, ownership, and how much coordination crosses systems. Start with the smallest approach that keeps the work reliable.

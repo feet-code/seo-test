@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent tutoring centers and m
 productId: "makeup-session-coordinator"
 productName: "Makeup Session Coordinator"
 generationFingerprint: "b583c6deaa720572443e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for tutoring makeup session scheduling should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent tutoring centers and multi-tutor education businesses, the target outcome is **every eligible canceled session is rescheduled, credited, expired by policy, or closed with parent acknowledgment**.

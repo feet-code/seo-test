@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent auto repair shops an
 productId: "vehicle-pickup-readiness"
 productName: "Vehicle Pickup Readiness"
 generationFingerprint: "8ceb8a1f8fc94410dccd"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A vehicle can be mechanically complete but not ready for pickup because quality checks, invoices, keys, customer notice, or after-hours instructions are still open. For independent auto repair shops and service-advisor teams, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every completed vehicle is released only after the handoff checks and customer pickup plan are confirmed**.

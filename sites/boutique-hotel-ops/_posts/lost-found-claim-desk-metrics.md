@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for independent boutiq
 productId: "lost-found-claim-desk"
 productName: "Lost and Found Claim Desk"
 generationFingerprint: "0a5d4ce4446069fc7d6a"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for hotel lost and found claim tracking should help independent boutique hotels and small hospitality teams decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for small water, fire, and proper
 productId: "moisture-log-handoff"
 productName: "Moisture Log Handoff"
 generationFingerprint: "06978ed3ffd0b3324be4"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for water restoration moisture log handoff should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for small water, fire, and property-restoration contractors and centers on one result: **every drying visit produces a time-stamped, location-specific record that supports the next field decision and controlled job documentation**.

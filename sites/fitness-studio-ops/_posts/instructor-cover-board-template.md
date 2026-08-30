@@ -4,13 +4,9 @@ excerpt: "A practical record template for boutique fitness studios and group-cla
 productId: "instructor-cover-board"
 productName: "Instructor Cover Board"
 generationFingerprint: "ef7529acd7ea71c612e4"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful fitness instructor substitution tracking template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

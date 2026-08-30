@@ -21,6 +21,9 @@ GOOGLE_SCOPES = [
 DEFAULT_GOOGLE_VERIFICATION_TIMEOUT_SECONDS = 300.0
 DEFAULT_GOOGLE_VERIFICATION_POLL_SECONDS = 5.0
 MAX_GOOGLE_VERIFICATION_POLL_SECONDS = 20.0
+DEFAULT_CLOUDFLARE_PAGES_PROJECT_LIMIT = 100
+_pages_project_count_cache: int | None = None
+_worker_names_cache: set[str] | None = None
 
 
 def _safe_headers(headers: dict | None) -> dict:
@@ -60,15 +63,17 @@ def cloudflare(method: str, path: str, body=None):
     })
 
 
-def provision_pages(config: dict) -> None:
+def provision_pages(config: dict) -> bool:
     project = config["deploy"]["project"]
     encoded_project = urllib.parse.quote(project, safe="")
+    created = False
     try:
         cloudflare("GET", f"/pages/projects/{encoded_project}")
     except urllib.error.HTTPError as exc:
         if exc.code != 404:
             raise
         cloudflare("POST", "/pages/projects", {"name": project, "production_branch": "main"})
+        created = True
     domain = config.get("domain")
     if domain:
         encoded_domain = urllib.parse.quote(domain, safe="")
@@ -78,6 +83,162 @@ def provision_pages(config: dict) -> None:
             if exc.code != 404:
                 raise
             cloudflare("POST", f"/pages/projects/{encoded_project}/domains", {"name": domain})
+    return created
+
+
+def _page_project_exists(project: str) -> bool:
+    encoded = urllib.parse.quote(project, safe="")
+    try:
+        cloudflare("GET", f"/pages/projects/{encoded}")
+        return True
+    except urllib.error.HTTPError as exc:
+        if exc.code == 404:
+            return False
+        raise
+
+
+def pages_project_count() -> int:
+    """Count real Pages projects, not ideas or local configs."""
+    global _pages_project_count_cache
+    if _pages_project_count_cache is not None:
+        return _pages_project_count_cache
+
+    page = 1
+    count = 0
+    while True:
+        response = cloudflare("GET", f"/pages/projects?page={page}&per_page=100")
+        result = response.get("result") or []
+        info = response.get("result_info") or {}
+        total = info.get("total_count")
+        if total is not None:
+            _pages_project_count_cache = int(total)
+            return _pages_project_count_cache
+        count += len(result)
+        if len(result) < 100:
+            _pages_project_count_cache = count
+            return count
+        page += 1
+
+
+def worker_names() -> set[str]:
+    global _worker_names_cache
+    if _worker_names_cache is None:
+        response = cloudflare("GET", "/workers/scripts")
+        _worker_names_cache = {
+            str(item.get("id"))
+            for item in (response.get("result") or [])
+            if item.get("id")
+        }
+    return _worker_names_cache
+
+
+def workers_subdomain() -> str:
+    override = os.environ.get("CLOUDFLARE_WORKERS_SUBDOMAIN", "").strip()
+    if override:
+        return override.removesuffix(".workers.dev").strip(".")
+    response = cloudflare("GET", "/workers/subdomain")
+    subdomain = str((response.get("result") or {}).get("subdomain", "")).strip()
+    if not subdomain:
+        raise RuntimeError(
+            "The Cloudflare account has no workers.dev subdomain. Create one once in "
+            "Cloudflare or set CLOUDFLARE_WORKERS_SUBDOMAIN, then resume."
+        )
+    return subdomain
+
+
+def worker_url(project: str) -> str:
+    return f"https://{project}.{workers_subdomain()}.workers.dev"
+
+
+def _pages_limit() -> int:
+    raw = os.environ.get(
+        "CLOUDFLARE_PAGES_PROJECT_LIMIT",
+        str(DEFAULT_CLOUDFLARE_PAGES_PROJECT_LIMIT),
+    )
+    try:
+        value = int(raw)
+    except ValueError as exc:
+        raise RuntimeError("CLOUDFLARE_PAGES_PROJECT_LIMIT must be an integer") from exc
+    if value < 1:
+        raise RuntimeError("CLOUDFLARE_PAGES_PROJECT_LIMIT must be positive")
+    return value
+
+
+def _pages_capacity_error(exc: urllib.error.HTTPError) -> bool:
+    detail = (str(getattr(exc, "response_detail", "")) + " " + str(exc)).lower()
+    capacity_words = ("limit", "quota", "maximum", "too many", "capacity")
+    return exc.code in {400, 403, 409} and any(word in detail for word in capacity_words)
+
+
+def resolve_cloudflare_auto(config: dict) -> str:
+    project = str(config.get("deploy", {}).get("project") or config.get("id"))
+    if _page_project_exists(project):
+        print(f"Cloudflare auto: reusing existing Pages project {project}.")
+        return "cloudflare-pages"
+    count = pages_project_count()
+    if count >= _pages_limit():
+        action = "reusing existing Worker" if project in worker_names() else "using Workers Static Assets for"
+        print(f"Cloudflare auto: Pages has {count} projects; {action} {project}.")
+        return "cloudflare-workers"
+    print(f"Cloudflare auto: Pages has {count} projects; assigning {project} to Pages.")
+    return "cloudflare-pages"
+
+
+def prepare_hosting(
+    config: dict,
+    site_dir: Path,
+    requested_provider: str | None = None,
+) -> dict:
+    """Resolve and provision one stable hosting provider before the tokenized build."""
+    global _pages_project_count_cache, _worker_names_cache
+    deploy = config.setdefault("deploy", {})
+    deploy.setdefault("project", config.get("id", site_dir.name))
+    configured = str(requested_provider or deploy.get("provider") or "cloudflare-auto")
+    automatic = configured in {"auto", "cloudflare-auto"}
+    if requested_provider:
+        deploy["provider"] = "cloudflare-auto" if automatic else configured
+
+    persisted = str(deploy.get("resolvedProvider", ""))
+    provider = (
+        persisted
+        if automatic and persisted in {"cloudflare-pages", "cloudflare-workers"}
+        else resolve_cloudflare_auto(config)
+        if automatic
+        else configured
+    )
+    if provider == "cloudflare-pages":
+        try:
+            created = provision_pages(config)
+            if created and _pages_project_count_cache is not None:
+                _pages_project_count_cache += 1
+        except urllib.error.HTTPError as exc:
+            if not automatic or not _pages_capacity_error(exc):
+                raise
+            provider = "cloudflare-workers"
+            print(
+                "Cloudflare rejected the new Pages project at its account capacity; "
+                "falling back to Workers Static Assets."
+            )
+
+    project = str(deploy["project"])
+    if provider == "cloudflare-pages":
+        deploy["url"] = (
+            "https://" + str(config["domain"]).rstrip("/")
+            if config.get("domain")
+            else f"https://{project}.pages.dev"
+        )
+    elif provider == "cloudflare-workers":
+        deploy["url"] = (
+            "https://" + str(config["domain"]).rstrip("/")
+            if config.get("domain")
+            else worker_url(project)
+        )
+        if _worker_names_cache is not None:
+            _worker_names_cache.add(project)
+
+    deploy["resolvedProvider"] = provider
+    save(config, site_dir / "site.json")
+    return config
 
 
 def provision_shared_posthog() -> dict:
@@ -454,11 +615,6 @@ def remove_google_ownership(config: dict) -> None:
 
 
 def remove_pages_project(config: dict) -> None:
-    provider = config.get("deploy", {}).get("provider", "cloudflare-pages")
-    if provider != "cloudflare-pages":
-        raise RuntimeError(
-            f"Automated teardown currently supports cloudflare-pages, not {provider!r}"
-        )
     project = config.get("deploy", {}).get("project", config.get("id"))
     if not project:
         raise RuntimeError("Site config has no Cloudflare Pages project name")
@@ -467,19 +623,34 @@ def remove_pages_project(config: dict) -> None:
     print("Cloudflare Pages project removed:", project)
 
 
+def remove_worker_script(config: dict) -> None:
+    project = config.get("deploy", {}).get("project", config.get("id"))
+    if not project:
+        raise RuntimeError("Site config has no Cloudflare Worker name")
+    encoded = urllib.parse.quote(str(project), safe="")
+    _ignore_not_found(cloudflare, "DELETE", f"/workers/scripts/{encoded}")
+    print("Cloudflare Worker removed:", project)
+
+
 def teardown(config: dict) -> None:
     """Remove external discovery/hosting resources; keep the local config as an audit record."""
-    provider = config.get("deploy", {}).get("provider", "cloudflare-pages")
-    if provider != "cloudflare-pages":
+    deploy = config.get("deploy", {})
+    provider = deploy.get("resolvedProvider") or deploy.get("provider", "cloudflare-pages")
+    if provider in {"auto", "cloudflare-auto"}:
+        raise RuntimeError("Automatic hosting has not recorded a resolvedProvider for teardown")
+    if provider not in {"cloudflare-pages", "cloudflare-workers"}:
         raise RuntimeError(
-            f"Automated teardown currently supports cloudflare-pages, not {provider!r}"
+            f"Automated teardown supports Cloudflare Pages or Workers, not {provider!r}"
         )
     if config.get("monitoring", {}).get("googleProperty") and not google_configured():
         raise RuntimeError(
             "Google credentials are required to remove GSC and ownership before teardown"
         )
     remove_google_property(config)
-    remove_pages_project(config)
+    if provider == "cloudflare-pages":
+        remove_pages_project(config)
+    else:
+        remove_worker_script(config)
     # Google rejects webResource.delete while its META token is still reachable.
     # Deleting the Pages project first removes that token; a retry is safe if propagation lags.
     remove_google_ownership(config)
@@ -490,8 +661,6 @@ def save(config: dict, path: Path) -> None:
 
 
 def provision(config: dict, site_dir: Path, site_url: str, shared_posthog: dict | None = None) -> dict:
-    if config.get("deploy", {}).get("provider") == "cloudflare-pages" and os.environ.get("CLOUDFLARE_API_TOKEN"):
-        provision_pages(config)
     apply_shared_posthog(config, shared_posthog or {})
     verify_and_register(config, site_url)
     save(config, site_dir / "site.json")

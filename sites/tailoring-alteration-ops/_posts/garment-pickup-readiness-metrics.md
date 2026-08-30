@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for independent tailor
 productId: "garment-pickup-readiness"
 productName: "Garment Pickup Readiness"
 generationFingerprint: "a47367ed1f2eaf9ad4e7"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for alteration garment pickup readiness should help independent tailoring, alteration, and garment-repair shops decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

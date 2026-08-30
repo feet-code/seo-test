@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent coworking spaces and s
 productId: "member-issue-handoff"
 productName: "Member Issue Handoff"
 generationFingerprint: "0f6ee4e9e913480a7c5a"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for coworking member issue handoff tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent coworking spaces and small flexible-office operators, the target outcome is **every member issue has a current owner, response promise, resolution evidence, and member acknowledgment**.

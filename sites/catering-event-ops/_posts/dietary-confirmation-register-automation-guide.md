@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent caterers and small eve
 productId: "dietary-confirmation-register"
 productName: "Dietary Confirmation Register"
 generationFingerprint: "f301d76191c691b289d9"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for catering dietary and allergen confirmation should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent caterers and small event-food teams, the target outcome is **every declared dietary or allergen requirement is clarified, approved into the event plan, and communicated to production and service owners**.

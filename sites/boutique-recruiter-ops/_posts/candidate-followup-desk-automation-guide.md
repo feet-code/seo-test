@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent recruiters and boutiqu
 productId: "candidate-followup-desk"
 productName: "Candidate Follow-Up Desk"
 generationFingerprint: "01cf122a04a7f42de54c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for candidate follow-up tracking for recruiting agencies should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent recruiters and boutique recruiting firms, the target outcome is **every active candidate receives the promised next update or a documented closed reason**.

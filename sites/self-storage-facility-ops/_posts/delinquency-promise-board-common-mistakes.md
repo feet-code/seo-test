@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent self-storage facilitie
 productId: "delinquency-promise-board"
 productName: "Delinquency Promise Board"
 generationFingerprint: "e6792f9ff583a53ae077"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Payment reminders, tenant promises, access changes, policy milestones, and manager exceptions are recorded in different places, making the next compliant action hard to see. The recurring failures are usually process-design problems rather than motivation problems. For independent self-storage facilities and small multi-site operators, these are the mistakes worth finding before buying or building software.

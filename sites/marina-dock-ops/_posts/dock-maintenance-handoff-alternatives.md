@@ -4,13 +4,9 @@ excerpt: "A practical alternatives comparison for independent marinas, yacht clu
 productId: "dock-maintenance-handoff"
 productName: "Dock Maintenance Handoff"
 generationFingerprint: "097bcd7ad5519c7367a0"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 There are several valid ways to manage marina dock maintenance handoff. The right choice depends on volume, exception rate, ownership, and how much coordination crosses systems. Start with the smallest approach that keeps the work reliable.

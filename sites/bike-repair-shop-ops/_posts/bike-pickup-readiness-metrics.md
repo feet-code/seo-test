@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for independent bicycl
 productId: "bike-pickup-readiness"
 productName: "Bike Pickup Readiness"
 generationFingerprint: "123b82c86097e17bc4c5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for bike repair pickup readiness should help independent bicycle repair shops and service departments decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

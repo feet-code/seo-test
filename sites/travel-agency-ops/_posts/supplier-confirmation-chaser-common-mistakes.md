@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent travel advisors and bo
 productId: "supplier-confirmation-chaser"
 productName: "Supplier Confirmation Chaser"
 generationFingerprint: "09752f454ad1a001134f"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A client itinerary can look booked while hotel, transfer, activity, or special-request confirmations remain pending in supplier email threads. The recurring failures are usually process-design problems rather than motivation problems. For independent travel advisors and boutique travel agencies, these are the mistakes worth finding before buying or building software.

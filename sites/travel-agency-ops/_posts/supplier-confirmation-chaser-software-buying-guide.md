@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent travel advisors and b
 productId: "supplier-confirmation-chaser"
 productName: "Supplier Confirmation Chaser"
 generationFingerprint: "09752f454ad1a001134f"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for travel supplier confirmation tracking should be evaluated against the operating problem, not a generic feature checklist. For independent travel advisors and boutique travel agencies, a useful trial must demonstrate this outcome: **every itinerary component has a supplier confirmation, matching terms, and an owner for unresolved differences**.

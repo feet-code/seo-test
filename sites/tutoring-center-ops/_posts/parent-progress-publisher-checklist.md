@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent tutoring centers 
 productId: "parent-progress-publisher"
 productName: "Parent Progress Publisher"
 generationFingerprint: "707db6510901eca2fa07"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for tutoring parent progress reporting workflow should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent tutoring centers and multi-tutor education businesses and centers on one result: **each reporting period produces an approved, evidence-based parent update with clear progress and next focus**.

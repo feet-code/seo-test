@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small managed service providers a
 productId: "ticket-escalation-handoff"
 productName: "Ticket Escalation Handoff"
 generationFingerprint: "fc03dcc64bf911cfbfa5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for MSP ticket escalation handoff should be evaluated against the operating problem, not a generic feature checklist. For small managed service providers and multi-client IT support teams, a useful trial must demonstrate this outcome: **every escalation transfers a reproducible problem statement, completed diagnostics, client promise, and explicit acceptance by the next owner**.

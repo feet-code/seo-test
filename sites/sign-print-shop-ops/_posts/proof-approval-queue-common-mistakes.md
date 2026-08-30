@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent sign shops, commercial
 productId: "proof-approval-queue"
 productName: "Proof Approval Queue"
 generationFingerprint: "d891422e2919df4cfa96"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Proof PDFs, marked-up screenshots, revised artwork, colors, dimensions, copy, and customer approvals move through email without one production-authorized version. The recurring failures are usually process-design problems rather than motivation problems. For independent sign shops, commercial printers, and display fabricators, these are the mistakes worth finding before buying or building software.

@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small direct-to-consumer ecommerce
 productId: "creator-sample-tracker"
 productName: "Creator Sample Tracker"
 generationFingerprint: "23d75d903ffe1c2d5d59"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Product gifts are discussed in DMs and spreadsheets, so brands lose track of addresses, shipment status, agreed deliverables, usage rights, and whether follow-up should stop. The recurring failures are usually process-design problems rather than motivation problems. For small direct-to-consumer ecommerce brands and lean operations teams, these are the mistakes worth finding before buying or building software.

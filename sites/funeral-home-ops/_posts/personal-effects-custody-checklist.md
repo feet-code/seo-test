@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent funeral homes and
 productId: "personal-effects-custody"
 productName: "Personal Effects Custody"
 generationFingerprint: "c4c84e92bb981056b5ea"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for funeral home personal effects chain of custody should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent funeral homes and small death-care service teams and centers on one result: **every personal effect is inventoried with appropriate privacy, transferred through named custody events, and released or disposed only with authorized acknowledgment**.

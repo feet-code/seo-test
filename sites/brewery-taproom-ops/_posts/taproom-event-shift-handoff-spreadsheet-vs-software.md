@@ -4,13 +4,9 @@ excerpt: "A spreadsheet-versus-software decision guide for independent craft bre
 productId: "taproom-event-shift-handoff"
 productName: "Taproom Event Shift Handoff"
 generationFingerprint: "94a47a271e27fe4d5f1f"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A spreadsheet is often the right first implementation for brewery taproom event shift handoff tracking. It is cheap, editable, and forces the team to define the workflow. The question is not whether spreadsheets are good or bad; it is when coordination costs become larger than the flexibility is worth.

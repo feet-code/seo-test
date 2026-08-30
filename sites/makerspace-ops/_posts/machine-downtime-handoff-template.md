@@ -4,13 +4,9 @@ excerpt: "A practical record template for community makerspaces, fabrication lab
 productId: "machine-downtime-handoff"
 productName: "Machine Downtime Handoff"
 generationFingerprint: "11b8f5dadce52d584268"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful makerspace machine downtime and maintenance tracking template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small commercial landscaping and 
 productId: "enhancement-approval-desk"
 productName: "Enhancement Approval Desk"
 generationFingerprint: "e7c620226846f251ad79"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for landscape enhancement proposal approval tracking should be evaluated against the operating problem, not a generic feature checklist. For small commercial landscaping and recurring property-maintenance companies, a useful trial must demonstrate this outcome: **every qualified enhancement request reaches a priced customer decision with field context, scope assumptions, and a scheduled or closed next action**.

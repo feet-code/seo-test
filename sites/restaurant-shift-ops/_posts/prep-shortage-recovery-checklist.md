@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent restaurants and s
 productId: "prep-shortage-recovery"
 productName: "Prep Shortage Recovery"
 generationFingerprint: "677d447bf38ddb9c54dc"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for restaurant prep shortage tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent restaurants and small multi-location restaurant groups and centers on one result: **every service-impacting prep shortage has a quantified gap, approved response, owner, and communicated menu consequence**.

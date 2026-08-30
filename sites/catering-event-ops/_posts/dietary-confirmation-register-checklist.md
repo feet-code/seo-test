@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent caterers and smal
 productId: "dietary-confirmation-register"
 productName: "Dietary Confirmation Register"
 generationFingerprint: "f301d76191c691b289d9"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for catering dietary and allergen confirmation should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent caterers and small event-food teams and centers on one result: **every declared dietary or allergen requirement is clarified, approved into the event plan, and communicated to production and service owners**.

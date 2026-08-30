@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for small commercial landscaping 
 productId: "property-visit-exception"
 productName: "Property Visit Exception"
 generationFingerprint: "74b5353a963af3660cfa"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for landscape maintenance visit exception tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for small commercial landscaping and recurring property-maintenance companies and centers on one result: **every incomplete landscape visit has quantified skipped work, evidence, contract treatment, customer communication, and a recovery decision**.

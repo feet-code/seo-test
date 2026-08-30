@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent appliance repair com
 productId: "parts-appointment-readiness"
 productName: "Parts Appointment Readiness"
 generationFingerprint: "897b962e251044b4d2c8"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A return visit is scheduled from an expected delivery while the correct part, model match, received condition, technician requirements, customer access, and remaining authorization are not verified. For independent appliance repair companies and small authorized-service teams, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every parts-dependent appointment is released only after the exact usable parts, job scope, technician capability, and customer access are confirmed**.

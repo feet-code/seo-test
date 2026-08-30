@@ -549,6 +549,8 @@ def main() -> None:
         description="Generate reviewed editorial probes from ideas.json probeContext"
     )
     parser.add_argument("--site", action="append", help="Site ID; repeat as needed")
+    parser.add_argument("--batch", action="append", help="contentBatch; repeat as needed")
+    parser.add_argument("--batches", help="Comma-separated contentBatch values")
     parser.add_argument("--limit", type=int, default=0)
     parser.add_argument("--force", action="store_true")
     args = parser.parse_args()
@@ -556,15 +558,44 @@ def main() -> None:
         parser.error("--limit must be zero or positive")
 
     contexts = load_contexts()
-    configured = sorted(
-        path.parent.name
+    configs = {
+        path.parent.name: json.loads(path.read_text(encoding="utf-8"))
         for path in (ROOT / "sites").glob("*/site.json")
         if json.loads(path.read_text(encoding="utf-8")).get("portfolioManaged")
-    )
+    }
+    configured = sorted(configs)
     selected = args.site or configured
     unknown = set(selected) - set(configured)
     if unknown:
         parser.error("unknown portfolio site(s): " + ", ".join(sorted(unknown)))
+    batches = set(args.batch or [])
+    if args.batches:
+        batches.update(value.strip() for value in args.batches.split(",") if value.strip())
+    if batches:
+        available = {
+            str(product.get("contentBatch"))
+            for config in configs.values()
+            for product in (config.get("products") or [])
+            if str(product.get("contentBatch", "")).strip()
+        }
+        unknown_batches = batches - available
+        if unknown_batches:
+            parser.error("unknown content batch(es): " + ", ".join(sorted(unknown_batches)))
+        batch_sites = {
+            site_id
+            for site_id, config in configs.items()
+            if any(
+                str(product.get("contentBatch")) in batches
+                for product in (config.get("products") or [])
+            )
+        }
+        outside = set(selected) - batch_sites if args.site else set()
+        if outside:
+            parser.error(
+                "selected site(s) do not belong to the requested batch(es): "
+                + ", ".join(sorted(outside))
+            )
+        selected = [site_id for site_id in selected if site_id in batch_sites]
     if args.limit:
         selected = selected[: args.limit]
     total = sum(generate_site(site_id, contexts, force=args.force) for site_id in selected)

@@ -4,13 +4,9 @@ excerpt: "A practical alternatives comparison for small direct-to-consumer ecomm
 productId: "creator-sample-tracker"
 productName: "Creator Sample Tracker"
 generationFingerprint: "23d75d903ffe1c2d5d59"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 There are several valid ways to manage influencer product sample tracking. The right choice depends on volume, exception rate, ownership, and how much coordination crosses systems. Start with the smallest approach that keeps the work reliable.

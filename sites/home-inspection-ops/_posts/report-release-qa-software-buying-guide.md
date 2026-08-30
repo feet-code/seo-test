@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent home inspection compa
 productId: "report-release-qa"
 productName: "Report Release QA"
 generationFingerprint: "dffb99cec42895fc0284"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for home inspection report quality review should be evaluated against the operating problem, not a generic feature checklist. For independent home inspection companies and small multi-inspector teams, a useful trial must demonstrate this outcome: **every inspection report is released only after an accountable inspector reviews identity, completeness, consistency, media, recommendations, and client delivery**.

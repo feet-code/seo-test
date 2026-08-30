@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for small bookkeeping firms and client
 productId: "portfolio-close-monitor"
 productName: "Portfolio Close Monitor"
 generationFingerprint: "98f8e4e4a7f8b578968e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for bookkeeping month-end close checklist and portfolio tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For small bookkeeping firms and client accounting service teams, the target outcome is **the firm can identify the next action and delivery risk for every client close without reconstructing status manually**.

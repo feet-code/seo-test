@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small direct-to-consumer ecommerc
 productId: "creator-sample-tracker"
 productName: "Creator Sample Tracker"
 generationFingerprint: "23d75d903ffe1c2d5d59"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for influencer product sample tracking should be evaluated against the operating problem, not a generic feature checklist. For small direct-to-consumer ecommerce brands and lean operations teams, a useful trial must demonstrate this outcome: **every creator sample has documented consent and terms, confirmed delivery, and a closed deliverable or no-obligation outcome**.

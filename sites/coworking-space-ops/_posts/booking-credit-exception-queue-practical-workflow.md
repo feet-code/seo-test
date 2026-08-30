@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent coworking spaces and
 productId: "booking-credit-exception-queue"
 productName: "Booking Credit Exception Queue"
 generationFingerprint: "b86639e883f0e7cbcb4b"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Room credits, cancellations, no-shows, outages, and manual reservations produce billing exceptions that are difficult to explain from the booking ledger alone. For independent coworking spaces and small flexible-office operators, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every disputed or failed booking credit is reconciled to policy, service evidence, and the member balance**.

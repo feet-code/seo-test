@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent household moving comp
 productId: "move-inventory-change-register"
 productName: "Move Inventory Change Register"
 generationFingerprint: "8d6790b87cc8fb8ffe73"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for moving inventory change authorization should be evaluated against the operating problem, not a generic feature checklist. For independent household moving companies and local moving crews, a useful trial must demonstrate this outcome: **every material move change is priced, authorized, and published to dispatch and crew before the affected work proceeds**.

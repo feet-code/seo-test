@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small architecture firms and des
 productId: "rfi-decision-register"
 productName: "RFI Decision Register"
 generationFingerprint: "47b7db28daa17a0bd8ea"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 RFI questions, responses, sketches, cost impacts, and drawing updates are linked imperfectly, so a answered item can still leave unresolved design work. For small architecture firms and design-project administrators, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every RFI response identifies the authoritative decision, impact, and required document updates before operational closure**.

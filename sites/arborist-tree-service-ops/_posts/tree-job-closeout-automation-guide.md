@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent arborist, pruning, rem
 productId: "tree-job-closeout"
 productName: "Tree Job Closeout"
 generationFingerprint: "63fbceaed6f7d6db1cac"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for tree service cleanup and stump closeout tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent arborist, pruning, removal, and plant-health-care companies, the target outcome is **every tree job closes with contracted scope, site cleanup, retained materials, follow-on work, and customer-facing evidence reconciled**.

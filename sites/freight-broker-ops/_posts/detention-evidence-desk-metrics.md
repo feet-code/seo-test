@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for small freight brok
 productId: "detention-evidence-desk"
 productName: "Detention Evidence Desk"
 generationFingerprint: "14e2144847e351cd03f6"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for freight detention evidence tracking should help small freight brokerages and shipper-carrier coordination teams decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

@@ -4,13 +4,9 @@ excerpt: "A practical record template for independent caterers and small event-f
 productId: "event-change-cutoff-log"
 productName: "Event Change Cutoff Log"
 generationFingerprint: "c1bfee0a3ba17324e05f"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful catering event change control template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

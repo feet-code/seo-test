@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent auto repair shops
 productId: "parts-arrival-promise-board"
 productName: "Parts Arrival Promise Board"
 generationFingerprint: "b13c2590920faa24619d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for auto repair parts arrival and customer promise tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent auto repair shops and service-advisor teams and centers on one result: **every ordered part has a verified ETA, affected repair order, customer promise, and exception owner**.

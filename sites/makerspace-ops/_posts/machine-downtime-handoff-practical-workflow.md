@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for community makerspaces, fabricati
 productId: "machine-downtime-handoff"
 productName: "Machine Downtime Handoff"
 generationFingerprint: "11b8f5dadce52d584268"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A CNC, laser cutter, printer, saw, kiln, or shop tool is tagged out, but bookings, member notices, diagnosis, parts, volunteer ownership, safety review, and return testing are not synchronized. For community makerspaces, fabrication labs, and shared technical workshops, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every equipment incident immediately blocks affected access and bookings, transfers with named repair ownership, and restores only after the required review and test**.

@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small commercial landscaping and r
 productId: "property-visit-exception"
 productName: "Property Visit Exception"
 generationFingerprint: "74b5353a963af3660cfa"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Rain, locked areas, parked vehicles, irrigation leaks, debris, special events, and crew shortages alter recurring visits, but the contract consequence and recovery work can disappear in route notes. The recurring failures are usually process-design problems rather than motivation problems. For small commercial landscaping and recurring property-maintenance companies, these are the mistakes worth finding before buying or building software.

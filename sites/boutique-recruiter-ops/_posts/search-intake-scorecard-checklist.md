@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent recruiters and bo
 productId: "search-intake-scorecard"
 productName: "Search Intake Scorecard"
 generationFingerprint: "7cb5ad03fde7b2e6e454"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for recruiting search intake and candidate calibration scorecards should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent recruiters and boutique recruiting firms and centers on one result: **the recruiter and client can evaluate the same candidate evidence against the same explicit tradeoffs**.

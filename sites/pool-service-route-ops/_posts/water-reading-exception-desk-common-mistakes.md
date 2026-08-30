@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent pool maintenance and r
 productId: "water-reading-exception-desk"
 productName: "Water Reading Exception Desk"
 generationFingerprint: "04eef3247c127a71febf"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:22Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Out-of-range readings, unusual chemical demand, equipment observations, and unsafe service conditions are logged at the stop but follow-up ownership and customer communication can remain unclear. The recurring failures are usually process-design problems rather than motivation problems. For independent pool maintenance and repair companies running recurring routes, these are the mistakes worth finding before buying or building software.

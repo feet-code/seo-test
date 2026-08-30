@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for small environmental consulting and
 productId: "sampling-event-readiness"
 productName: "Sampling Event Readiness"
 generationFingerprint: "4a05807fcb6753f210e2"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for environmental sampling event readiness should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For small environmental consulting and field-sampling teams, the target outcome is **every sampling event is released by a qualified reviewer with current plan, locations, equipment, containers, laboratory coordination, access, and safety prerequisites**.

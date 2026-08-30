@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for small roll-off dumpster and c
 productId: "container-dispatch-readiness"
 productName: "Container Dispatch Readiness"
 generationFingerprint: "048c739fb4484138baa4"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for roll off dumpster delivery swap and pickup readiness should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for small roll-off dumpster and commercial waste-container rental companies and centers on one result: **every container movement is released with an available asset, compatible truck, approved site action, material path, and current customer promise**.

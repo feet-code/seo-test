@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small direct-to-consumer ecommerc
 productId: "return-exception-desk"
 productName: "Return Exception Desk"
 generationFingerprint: "24ac7b877c2f24ae51c1"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for ecommerce return exception management should be evaluated against the operating problem, not a generic feature checklist. For small direct-to-consumer ecommerce brands and lean operations teams, a useful trial must demonstrate this outcome: **every nonstandard return is resolved to an approved refund, replacement, denial, or investigation with inventory and customer records reconciled**.

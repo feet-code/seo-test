@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small third-party logistics ware
 productId: "pick-pack-exception-desk"
 productName: "Pick-Pack Exception Desk"
 generationFingerprint: "8c14d396ec4968c7b38c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Short picks, barcode failures, damaged stock, missing packaging, client-rule conflicts, and address holds are repaired in supervisor chats without a durable order decision. For small third-party logistics warehouses and fulfillment operators, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every blocked fulfillment order is released, substituted, split, held, or canceled under client rules with inventory and shipment evidence reconciled**.

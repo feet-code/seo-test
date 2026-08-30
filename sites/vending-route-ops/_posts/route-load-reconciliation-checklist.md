@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent vending machine a
 productId: "route-load-reconciliation"
 productName: "Route Load Reconciliation"
 generationFingerprint: "4e77f1ee7a99983085fc"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for vending route load and inventory reconciliation should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent vending machine and micro-market route operators and centers on one result: **every route reconciles planned product, actual machine fills, returns, waste, and reported sales to explain remaining variance**.

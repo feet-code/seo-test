@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for small community-su
 productId: "member-change-cutoff"
 productName: "Member Change Cutoff"
 generationFingerprint: "f44afdbf2a92d0b6b942"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for CSA skip swap and pickup change tracking should help small community-supported agriculture farms and farm-box programs decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for small freight brokerages and 
 productId: "detention-evidence-desk"
 productName: "Detention Evidence Desk"
 generationFingerprint: "14e2144847e351cd03f6"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for freight detention evidence tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for small freight brokerages and shipper-carrier coordination teams and centers on one result: **every detention request is evaluated from agreed terms and time evidence, then reconciled across customer charge and carrier payment**.

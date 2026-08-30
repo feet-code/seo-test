@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small water, fire, and property-re
 productId: "moisture-log-handoff"
 productName: "Moisture Log Handoff"
 generationFingerprint: "06978ed3ffd0b3324be4"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Field readings, photos, equipment placement, affected materials, and daily decisions can remain on technician devices or in unstructured notes while office and next-shift staff need a defensible job history. The recurring failures are usually process-design problems rather than motivation problems. For small water, fire, and property-restoration contractors, these are the mistakes worth finding before buying or building software.

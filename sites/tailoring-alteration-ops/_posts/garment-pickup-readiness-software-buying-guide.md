@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent tailoring, alteration
 productId: "garment-pickup-readiness"
 productName: "Garment Pickup Readiness"
 generationFingerprint: "a47367ed1f2eaf9ad4e7"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for alteration garment pickup readiness should be evaluated against the operating problem, not a generic feature checklist. For independent tailoring, alteration, and garment-repair shops, a useful trial must demonstrate this outcome: **every finished garment is checked against approved work, packaged with customer property, financially reconciled, and staged before notification**.

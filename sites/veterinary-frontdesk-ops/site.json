@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets veterinary follow up calls, vet client callback tracker, post visit veterinary follow up, and veterinary communication workflow searches.",
-      "score": 84
+      "score": 84,
+      "contentBatch": "batch-002"
     },
     {
       "id": "lab-callback-board",
@@ -31,7 +32,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets veterinary lab callback, vet result tracking, lab result client notification, and veterinary callback workflow searches.",
-      "score": 86
+      "score": 86,
+      "contentBatch": "batch-002"
     }
   ],
   "articlesPerProduct": 10,
@@ -40,12 +42,7 @@
   "valueProposition": "Turns veterinary client treatment follow-up tracking into a visible operating queue so every clinician-requested follow-up reaches the client, records the response, and routes concerns back to the care team.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

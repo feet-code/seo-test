@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent appliance repair com
 productId: "warranty-evidence-desk"
 productName: "Warranty Evidence Desk"
 generationFingerprint: "64170b502f8cf078413e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Manufacturer claim number, authorization, diagnostic codes, model and serial, parts, labor allowances, photos, signatures, invoice, and reimbursement status are re-entered across portals. For independent appliance repair companies and small authorized-service teams, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every warranty job reaches submission with complete authorized evidence and remains visible until reimbursement, correction, or documented denial**.

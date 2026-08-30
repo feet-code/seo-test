@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small day-tour, activity, and mu
 productId: "departure-manifest-readiness"
 productName: "Departure Manifest Readiness"
 generationFingerprint: "4a28ef7a420668ca3deb"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Bookings, waivers, pickup points, equipment, participant notes, and guide instructions change across channels until departure, creating competing manifest versions. For small day-tour, activity, and multi-day tour operators, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every departure has one frozen operational manifest with resolved blocking fields and controlled late changes**.

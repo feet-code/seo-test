@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small septic pumping, inspection, 
 productId: "disposal-ticket-reconciliation"
 productName: "Disposal Ticket Reconciliation"
 generationFingerprint: "319f2a94a04dacc4627c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Pump volume, source jobs, truck loads, disposal facility tickets, fees, and customer billing can be recorded independently, leaving unmatched or duplicated disposal activity. The recurring failures are usually process-design problems rather than motivation problems. For small septic pumping, inspection, and liquid-waste service companies, these are the mistakes worth finding before buying or building software.

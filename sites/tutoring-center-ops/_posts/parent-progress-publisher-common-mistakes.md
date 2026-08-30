@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent tutoring centers and m
 productId: "parent-progress-publisher"
 productName: "Parent Progress Publisher"
 generationFingerprint: "707db6510901eca2fa07"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Tutor notes are inconsistent and arrive too late for center staff to send useful parent updates without chasing context after every session. The recurring failures are usually process-design problems rather than motivation problems. For independent tutoring centers and multi-tutor education businesses, these are the mistakes worth finding before buying or building software.

@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent restaurants and small
 productId: "manager-shift-handoff"
 productName: "Manager Shift Handoff"
 generationFingerprint: "08a0cbe60f3c1131ad16"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for restaurant manager shift handoff tracking should be evaluated against the operating problem, not a generic feature checklist. For independent restaurants and small multi-location restaurant groups, a useful trial must demonstrate this outcome: **every unresolved shift issue transfers with impact, owner, next action, due time, and explicit acceptance by the next manager**.

@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent home inspection compan
 productId: "inspection-access-readiness"
 productName: "Inspection Access Readiness"
 generationFingerprint: "10ccec90e4ab576f5c4d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for home inspection property access readiness should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent home inspection companies and small multi-inspector teams, the target outcome is **every inspection starts with property-specific access, utilities, scope, agreement, payment, and contacts confirmed or a documented limitation plan**.

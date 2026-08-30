@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent coworking spaces and s
 productId: "booking-credit-exception-queue"
 productName: "Booking Credit Exception Queue"
 generationFingerprint: "b86639e883f0e7cbcb4b"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for coworking booking credit exception handling should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent coworking spaces and small flexible-office operators, the target outcome is **every disputed or failed booking credit is reconciled to policy, service evidence, and the member balance**.

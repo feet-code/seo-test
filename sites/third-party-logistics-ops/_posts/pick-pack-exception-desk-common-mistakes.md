@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small third-party logistics wareho
 productId: "pick-pack-exception-desk"
 productName: "Pick-Pack Exception Desk"
 generationFingerprint: "8c14d396ec4968c7b38c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Short picks, barcode failures, damaged stock, missing packaging, client-rule conflicts, and address holds are repaired in supervisor chats without a durable order decision. The recurring failures are usually process-design problems rather than motivation problems. For small third-party logistics warehouses and fulfillment operators, these are the mistakes worth finding before buying or building software.

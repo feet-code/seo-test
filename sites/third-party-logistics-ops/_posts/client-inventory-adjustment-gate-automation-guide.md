@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for small third-party logistics wareho
 productId: "client-inventory-adjustment-gate"
 productName: "Client Inventory Adjustment Gate"
 generationFingerprint: "95e32539c7fb3d380205"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for 3PL client inventory adjustment approval should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For small third-party logistics warehouses and fulfillment operators, the target outcome is **every material inventory adjustment is evidenced, approved to client rules, posted once, and communicated with downstream impact**.

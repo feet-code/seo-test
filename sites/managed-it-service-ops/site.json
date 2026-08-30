@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets MSP access request workflow, client user access approval, IT access request template, and managed service provider onboarding access searches.",
-      "score": 89
+      "score": 89,
+      "contentBatch": "batch-002"
     },
     {
       "id": "maintenance-evidence-runbook",
@@ -31,7 +32,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets MSP maintenance checklist, IT maintenance evidence, managed services runbook, and recurring IT task audit searches.",
-      "score": 86
+      "score": 86,
+      "contentBatch": "batch-002"
     },
     {
       "id": "ticket-escalation-handoff",
@@ -45,7 +47,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets MSP ticket escalation, IT support handoff template, help desk escalation process, and ticket escalation checklist searches.",
-      "score": 87
+      "score": 87,
+      "contentBatch": "batch-002"
     }
   ],
   "articlesPerProduct": 10,
@@ -54,12 +57,7 @@
   "valueProposition": "Turns MSP client access request approval into a visible operating queue so every client access change is authorized by the right person, implemented to the approved scope, and evidenced in the client record.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

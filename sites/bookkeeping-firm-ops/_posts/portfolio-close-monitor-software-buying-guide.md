@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small bookkeeping firms and clien
 productId: "portfolio-close-monitor"
 productName: "Portfolio Close Monitor"
 generationFingerprint: "98f8e4e4a7f8b578968e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for bookkeeping month-end close checklist and portfolio tracking should be evaluated against the operating problem, not a generic feature checklist. For small bookkeeping firms and client accounting service teams, a useful trial must demonstrate this outcome: **the firm can identify the next action and delivery risk for every client close without reconstructing status manually**.

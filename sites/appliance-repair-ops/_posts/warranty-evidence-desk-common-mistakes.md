@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent appliance repair compa
 productId: "warranty-evidence-desk"
 productName: "Warranty Evidence Desk"
 generationFingerprint: "64170b502f8cf078413e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Manufacturer claim number, authorization, diagnostic codes, model and serial, parts, labor allowances, photos, signatures, invoice, and reimbursement status are re-entered across portals. The recurring failures are usually process-design problems rather than motivation problems. For independent appliance repair companies and small authorized-service teams, these are the mistakes worth finding before buying or building software.

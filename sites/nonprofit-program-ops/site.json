@@ -17,7 +17,8 @@
       "monetization": "$19-$79/month based on active records or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets nonprofit follow-up tracker, participant contact log, referral follow-up template, and program case workflow searches.",
-      "score": 82
+      "score": 82,
+      "contentBatch": "batch-001"
     },
     {
       "id": "grant-evidence-organizer",
@@ -31,7 +32,8 @@
       "monetization": "$19-$79/month based on active records or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets grant reporting checklist, nonprofit evidence tracker, program outcome documentation, and funder report workflow searches.",
-      "score": 84
+      "score": 84,
+      "contentBatch": "batch-001"
     }
   ],
   "articlesPerProduct": 10,
@@ -40,12 +42,7 @@
   "valueProposition": "Tracks the minimum necessary commitment, consent boundary, owner, next date, referral status, and outcome.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

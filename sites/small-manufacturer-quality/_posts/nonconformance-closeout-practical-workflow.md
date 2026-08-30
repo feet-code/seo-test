@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small manufacturers and lean qua
 productId: "nonconformance-closeout"
 productName: "Nonconformance Closeout"
 generationFingerprint: "1fc51d63706c2d44a850"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Small quality teams can log a defect but struggle to connect containment, disposition, cause, corrective work, and effectiveness evidence before closing the record. For small manufacturers and lean quality teams, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every nonconformance is contained, dispositioned by authority, corrected, and closed only after required effectiveness evidence**.

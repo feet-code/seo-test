@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent tutoring centers and 
 productId: "makeup-session-coordinator"
 productName: "Makeup Session Coordinator"
 generationFingerprint: "b583c6deaa720572443e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for tutoring makeup session scheduling should be evaluated against the operating problem, not a generic feature checklist. For independent tutoring centers and multi-tutor education businesses, a useful trial must demonstrate this outcome: **every eligible canceled session is rescheduled, credited, expired by policy, or closed with parent acknowledgment**.

@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent wedding planners and b
 productId: "vendor-deliverable-chaser"
 productName: "Vendor Deliverable Chaser"
 generationFingerprint: "5ecb5b5b09f9d15a6861"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Contracts name dozens of vendor deadlines, but questionnaires, certificates, floor plans, menus, and final counts are chased through unrelated email threads. The recurring failures are usually process-design problems rather than motivation problems. For independent wedding planners and boutique planning teams, these are the mistakes worth finding before buying or building software.

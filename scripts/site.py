@@ -92,12 +92,21 @@ def deploy(site_id: str, provider: str) -> None:
         deploy_dir = DEPLOY / "cloudflare-workers" / site_id
         deploy_dir.mkdir(parents=True, exist_ok=True)
         config_path = deploy_dir / "wrangler.jsonc"
-        config_path.write_text(json.dumps({
+        worker_config = {
             "name": project,
             "compatibility_date": "2026-08-22",
+            "workers_dev": True,
             "assets": {"directory": str(OUT.resolve())},
-        }, indent=2) + "\n", encoding="utf-8")
-        run(["npx", "wrangler", "deploy", "--config", str(config_path), "--yes"], env=env)
+        }
+        if config.get("domain"):
+            worker_config["routes"] = [
+                {"pattern": str(config["domain"]), "custom_domain": True}
+            ]
+        config_path.write_text(
+            json.dumps(worker_config, indent=2) + "\n",
+            encoding="utf-8",
+        )
+        run(["npx", "wrangler", "deploy", "--config", str(config_path)], env=env)
         return
     if provider == "vercel":
         run(["npx", "vercel", str(OUT), "--prod", "--yes"], env=env)

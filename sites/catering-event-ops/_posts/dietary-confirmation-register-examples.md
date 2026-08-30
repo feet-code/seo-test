@@ -4,13 +4,9 @@ excerpt: "Three realistic workflow test cases for independent caterers and small
 productId: "dietary-confirmation-register"
 productName: "Dietary Confirmation Register"
 generationFingerprint: "f301d76191c691b289d9"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Examples make catering dietary and allergen confirmation easier to design because they reveal where a neat diagram meets messy work. The scenarios below are not claims about a particular company; they are test cases independent caterers and small event-food teams can run against a template or software trial.

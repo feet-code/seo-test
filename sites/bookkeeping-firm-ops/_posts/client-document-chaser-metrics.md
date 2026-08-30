@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for small bookkeeping 
 productId: "client-document-chaser"
 productName: "Client Document Chaser"
 generationFingerprint: "97a6b66f05fef5e0096c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for bookkeeping client document collection and reminder tracking should help small bookkeeping firms and client accounting service teams decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

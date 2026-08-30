@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for community theaters and volunteer-l
 productId: "rehearsal-conflict-resolution"
 productName: "Rehearsal Conflict Resolution"
 generationFingerprint: "a66c5290c49a9ef998c7"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Cast and crew availability, scene requirements, music or fight calls, room access, volunteer schedules, and newly added conflicts cause calendar changes that do not reach everyone affected. The recurring failures are usually process-design problems rather than motivation problems. For community theaters and volunteer-led stage-production teams, these are the mistakes worth finding before buying or building software.

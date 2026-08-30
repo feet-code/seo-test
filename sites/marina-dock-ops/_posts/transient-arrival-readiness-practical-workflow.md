@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent marinas, yacht clubs
 productId: "transient-arrival-readiness"
 productName: "Transient Arrival Readiness"
 generationFingerprint: "68a6a5083bc5a3ee0c77"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A transient reservation can be confirmed while vessel dimensions, slip assignment, utilities, access instructions, arrival window, balance, and dockhand coverage remain incomplete. For independent marinas, yacht clubs, and small dock operations, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every transient arrival has a compatible assigned slip, current instructions, payment plan, and acknowledged dock handoff**.

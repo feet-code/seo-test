@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent salons, spas, and smal
 productId: "rebooking-recovery-list"
 productName: "Rebooking Recovery List"
 generationFingerprint: "ab96ed6ebb0acff2ea3b"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Clients who leave without a next appointment disappear into broad marketing lists even when the provider knows the right return window and service context. The recurring failures are usually process-design problems rather than motivation problems. For independent salons, spas, and small wellness studios, these are the mistakes worth finding before buying or building software.

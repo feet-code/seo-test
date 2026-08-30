@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent podcast producers and
 productId: "guest-asset-chaser"
 productName: "Guest Asset Chaser"
 generationFingerprint: "847c9b89f655836e541c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for podcast guest asset and release tracking should be evaluated against the operating problem, not a generic feature checklist. For independent podcast producers and small branded-podcast teams, a useful trial must demonstrate this outcome: **every scheduled guest has the minimum approved assets and permissions needed for recording, publishing, and promotion**.

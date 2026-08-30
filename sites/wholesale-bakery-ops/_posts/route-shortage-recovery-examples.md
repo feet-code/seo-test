@@ -4,13 +4,9 @@ excerpt: "Three realistic workflow test cases for small wholesale and direct-sto
 productId: "route-shortage-recovery"
 productName: "Route Shortage Recovery"
 generationFingerprint: "44ab9b35c23816f39c60"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Examples make wholesale bakery delivery shortage recovery easier to design because they reveal where a neat diagram meets messy work. The scenarios below are not claims about a particular company; they are test cases small wholesale and direct-store-delivery bakeries can run against a template or software trial.

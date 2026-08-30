@@ -1,0 +1,75 @@
+{
+  "id": "music-venue-ops",
+  "name": "Independent Music Venue Operations",
+  "domain": null,
+  "audience": "independent music venues, clubs, and small concert halls",
+  "topic": "show advancing, hospitality readiness, and settlement inputs for music venues",
+  "products": [
+    {
+      "id": "show-advance-readiness",
+      "name": "Show Advance Readiness",
+      "product": "A focused music venue show advancing workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent music venues, clubs, and small concert halls",
+      "problem": "Contacts, schedule, production inputs, ticket setup, staffing, access, merchandise, and settlement terms remain open across promoter and artist threads.",
+      "valueProposition": "Turns music venue show advancing into a visible operating queue so every show reaches event day with required advance decisions owned, versioned, and communicated.",
+      "topic": "music venue show advancing",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets music venue show advancing software, music venue show advancing tracker, music venue show advancing template, and music venue show advancing checklist searches.",
+      "score": 83,
+      "contentBatch": "batch-005"
+    },
+    {
+      "id": "artist-hospitality-board",
+      "name": "Artist Hospitality Board",
+      "product": "A focused music venue artist hospitality readiness workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent music venues, clubs, and small concert halls",
+      "problem": "Rider requirements, buyouts, dietary notes, room setup, runner tasks, delivery timing, and approvals are copied into informal checklists.",
+      "valueProposition": "Turns music venue artist hospitality readiness into a visible operating queue so every accepted hospitality requirement has an owner, budget decision, delivery plan, and completion evidence.",
+      "topic": "music venue artist hospitality readiness",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets music venue artist hospitality readiness software, music venue artist hospitality readiness tracker, music venue artist hospitality readiness template, and music venue artist hospitality readiness checklist searches.",
+      "score": 84,
+      "contentBatch": "batch-005"
+    },
+    {
+      "id": "show-settlement-inputs",
+      "name": "Show Settlement Inputs",
+      "product": "A focused music venue show settlement reconciliation workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent music venues, clubs, and small concert halls",
+      "problem": "Ticket counts, comps, fees, expenses, merchandise, guarantees, deposits, and approvals arrive from multiple systems after the show.",
+      "valueProposition": "Turns music venue show settlement reconciliation into a visible operating queue so every show settlement is built from reconciled inputs with documented variances and approval.",
+      "topic": "music venue show settlement reconciliation",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets music venue show settlement reconciliation software, music venue show settlement reconciliation tracker, music venue show settlement reconciliation template, and music venue show settlement reconciliation checklist searches.",
+      "score": 85,
+      "contentBatch": "batch-005"
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused music venue show advancing workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns music venue show advancing into a visible operating queue so every show reaches event day with required advance decisions owned, versioned, and communicated.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "music-venue-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

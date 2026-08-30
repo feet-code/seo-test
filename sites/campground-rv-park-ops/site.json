@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets campground site turnover, RV site inspection checklist, campsite cleaning tracker, and campground maintenance handoff searches.",
-      "score": 87
+      "score": 87,
+      "contentBatch": "batch-004"
     },
     {
       "id": "after-hours-arrival-handoff",
@@ -31,7 +32,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets campground late arrival, RV park after hours check in, campground lockbox instructions, and late check in workflow searches.",
-      "score": 85
+      "score": 85,
+      "contentBatch": "batch-004"
     },
     {
       "id": "cancellation-fill-queue",
@@ -45,7 +47,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets campground waitlist software, RV park cancellation fill, campsite waitlist tracker, and campground vacancy alert searches.",
-      "score": 84
+      "score": 84,
+      "contentBatch": "batch-004"
     }
   ],
   "articlesPerProduct": 10,
@@ -54,12 +57,7 @@
   "valueProposition": "Turns campground campsite turnover readiness into a visible operating queue so every departing site is inspected, serviced, reconciled, and released for the next arrival or held with a visible reason.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

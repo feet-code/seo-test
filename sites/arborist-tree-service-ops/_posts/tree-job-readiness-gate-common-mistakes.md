@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent arborist, pruning, rem
 productId: "tree-job-readiness-gate"
 productName: "Tree Job Readiness Gate"
 generationFingerprint: "2e0f5f8ab16f5ba2e200"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Approved tree work reaches the crew without confirmed permits, utility coordination, access, equipment, traffic control, neighbor constraints, or current tree scope. The recurring failures are usually process-design problems rather than motivation problems. For independent arborist, pruning, removal, and plant-health-care companies, these are the mistakes worth finding before buying or building software.

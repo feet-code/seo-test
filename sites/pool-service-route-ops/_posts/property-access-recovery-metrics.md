@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for independent pool m
 productId: "property-access-recovery"
 productName: "Property Access Recovery"
 generationFingerprint: "39d8217fde6f2773dc15"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:22Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for pool service gate and property access tracking should help independent pool maintenance and repair companies running recurring routes decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

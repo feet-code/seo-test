@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for community makerspa
 productId: "machine-downtime-handoff"
 productName: "Machine Downtime Handoff"
 generationFingerprint: "11b8f5dadce52d584268"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for makerspace machine downtime and maintenance tracking should help community makerspaces, fabrication labs, and shared technical workshops decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

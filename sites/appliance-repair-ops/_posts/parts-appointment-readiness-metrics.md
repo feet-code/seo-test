@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for independent applia
 productId: "parts-appointment-readiness"
 productName: "Parts Appointment Readiness"
 generationFingerprint: "897b962e251044b4d2c8"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for appliance repair parts appointment readiness should help independent appliance repair companies and small authorized-service teams decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

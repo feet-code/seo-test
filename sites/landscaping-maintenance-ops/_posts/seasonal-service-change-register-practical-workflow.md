@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small commercial landscaping and
 productId: "seasonal-service-change-register"
 productName: "Seasonal Service Change Register"
 generationFingerprint: "4faa0d5fd1ce16210bfc"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Frequency, task mix, irrigation checks, cleanup, snow or storm coverage, and property priorities change by season, yet crews may keep using an outdated recurring-service plan. For small commercial landscaping and recurring property-maintenance companies, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every seasonal contract change has an effective date, customer approval, route impact, crew acknowledgment, and verified first execution**.

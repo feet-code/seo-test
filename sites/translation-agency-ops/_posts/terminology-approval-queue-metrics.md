@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for boutique translati
 productId: "terminology-approval-queue"
 productName: "Terminology Approval Queue"
 generationFingerprint: "f9edb42facc71cd2e0ee"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for translation terminology approval workflow should help boutique translation agencies and localization project teams decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

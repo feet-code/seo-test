@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for owner-operated commercial cleaning
 productId: "crew-shift-handoff-log"
 productName: "Crew Shift Handoff Log"
 generationFingerprint: "3a60241865284dc0635d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Critical details are passed verbally or in group chat, so the next crew cannot distinguish a resolved issue from work that still needs attention. The recurring failures are usually process-design problems rather than motivation problems. For owner-operated commercial cleaning and janitorial companies, these are the mistakes worth finding before buying or building software.

@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent residential property m
 productId: "unit-turnover-runbook"
 productName: "Unit Turnover Runbook"
 generationFingerprint: "3e44f0845f3b33b83d1f"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for rental unit turnover checklist and make-ready tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent residential property managers and small property teams, the target outcome is **the unit reaches a documented ready state with every dependency and exception resolved**.

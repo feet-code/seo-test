@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for small architecture firms and 
 productId: "rfi-decision-register"
 productName: "RFI Decision Register"
 generationFingerprint: "47b7db28daa17a0bd8ea"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for architectural RFI decision tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for small architecture firms and design-project administrators and centers on one result: **every RFI response identifies the authoritative decision, impact, and required document updates before operational closure**.

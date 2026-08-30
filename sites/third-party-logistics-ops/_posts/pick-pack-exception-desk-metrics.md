@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for small third-party 
 productId: "pick-pack-exception-desk"
 productName: "Pick-Pack Exception Desk"
 generationFingerprint: "8c14d396ec4968c7b38c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for 3PL pick and pack exception tracking should help small third-party logistics warehouses and fulfillment operators decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

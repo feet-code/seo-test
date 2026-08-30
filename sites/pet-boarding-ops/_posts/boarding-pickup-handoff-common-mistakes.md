@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent pet boarding facilitie
 productId: "boarding-pickup-handoff"
 productName: "Boarding Pickup Handoff"
 generationFingerprint: "ce39d026a5203e987a51"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Pickup becomes a front-desk scramble when authorized collector, belongings, add-on services, stay notes, balance, and pet location are split across cards and messages. The recurring failures are usually process-design problems rather than motivation problems. For independent pet boarding facilities and dog daycare operators, these are the mistakes worth finding before buying or building software.

@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets nonconformance tracking, NCR closeout checklist, manufacturing quality action tracker, and nonconforming material workflow searches.",
-      "score": 88
+      "score": 88,
+      "contentBatch": "batch-002"
     },
     {
       "id": "work-instruction-acknowledgment",
@@ -31,7 +32,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets work instruction acknowledgment, manufacturing document control, SOP training tracker, and controlled document distribution searches.",
-      "score": 84
+      "score": 84,
+      "contentBatch": "batch-002"
     },
     {
       "id": "supplier-corrective-action-desk",
@@ -45,7 +47,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets supplier corrective action request, SCAR tracking software, supplier quality action, and 8D response tracker searches.",
-      "score": 87
+      "score": 87,
+      "contentBatch": "batch-002"
     }
   ],
   "articlesPerProduct": 10,
@@ -54,12 +57,7 @@
   "valueProposition": "Turns manufacturing nonconformance closeout into a visible operating queue so every nonconformance is contained, dispositioned by authority, corrected, and closed only after required effectiveness evidence.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

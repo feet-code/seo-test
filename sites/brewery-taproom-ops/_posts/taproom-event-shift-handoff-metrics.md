@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for independent craft 
 productId: "taproom-event-shift-handoff"
 productName: "Taproom Event Shift Handoff"
 generationFingerprint: "94a47a271e27fe4d5f1f"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for brewery taproom event shift handoff tracking should help independent craft breweries operating one or more taprooms decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

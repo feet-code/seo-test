@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for small specialty wh
 productId: "new-account-packet"
 productName: "New Account Packet"
 generationFingerprint: "d8896f52e8a0ff0b2923"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for wholesale customer onboarding and new account setup checklists should help small specialty wholesalers and B2B distributors decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

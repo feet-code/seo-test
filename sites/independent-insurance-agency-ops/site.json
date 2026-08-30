@@ -1,0 +1,75 @@
+{
+  "id": "independent-insurance-agency-ops",
+  "name": "Independent Insurance Agency Operations",
+  "domain": null,
+  "audience": "independent property-casualty insurance agencies and small brokerage teams",
+  "topic": "renewal inputs, certificate requests, and carrier submissions",
+  "products": [
+    {
+      "id": "insurance-renewal-inputs",
+      "name": "Insurance Renewal Inputs Desk",
+      "product": "A focused insurance agency renewal information tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent property-casualty insurance agencies and small brokerage teams",
+      "problem": "Exposure updates, schedules, loss information, questionnaires, carrier requests, client decisions, and effective dates create repeated chases.",
+      "valueProposition": "Turns insurance agency renewal information tracking into a visible operating queue so every renewal submission uses current client-confirmed information and has an owned carrier and decision timeline.",
+      "topic": "insurance agency renewal information tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets insurance agency renewal information tracking software, insurance agency renewal information tracking tracker, insurance agency renewal information tracking template, and insurance agency renewal information tracking checklist searches.",
+      "score": 85,
+      "contentBatch": "batch-005"
+    },
+    {
+      "id": "certificate-request-queue",
+      "name": "Certificate Request Queue",
+      "product": "A focused insurance certificate request tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent property-casualty insurance agencies and small brokerage teams",
+      "problem": "Holder details, wording requests, contract context, policy status, endorsements, approval, delivery, and requester questions arrive through informal channels.",
+      "valueProposition": "Turns insurance certificate request tracking into a visible operating queue so every certificate request receives a documented scope review and an accurate delivered, escalated, or declined outcome.",
+      "topic": "insurance certificate request tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets insurance certificate request tracking software, insurance certificate request tracking tracker, insurance certificate request tracking template, and insurance certificate request tracking checklist searches.",
+      "score": 86,
+      "contentBatch": "batch-005"
+    },
+    {
+      "id": "carrier-submission-board",
+      "name": "Carrier Submission Board",
+      "product": "A focused independent insurance agency carrier submission tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent property-casualty insurance agencies and small brokerage teams",
+      "problem": "Carrier appetite, application versions, attachments, underwriter questions, quotes, declinations, subjectivities, and client presentations are compared in spreadsheets.",
+      "valueProposition": "Turns independent insurance agency carrier submission tracking into a visible operating queue so every market submission has a current package, response state, next action, and comparable client-ready outcome.",
+      "topic": "independent insurance agency carrier submission tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets independent insurance agency carrier submission tracking software, independent insurance agency carrier submission tracking tracker, independent insurance agency carrier submission tracking template, and independent insurance agency carrier submission tracking checklist searches.",
+      "score": 87,
+      "contentBatch": "batch-005"
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused insurance agency renewal information tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns insurance agency renewal information tracking into a visible operating queue so every renewal submission uses current client-confirmed information and has an owned carrier and decision timeline.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "independent-insurance-agency-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

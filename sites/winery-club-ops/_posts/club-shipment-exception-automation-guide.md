@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for small wineries running direct-to-c
 productId: "club-shipment-exception"
 productName: "Club Shipment Exception"
 generationFingerprint: "e1ae5c2d665711e4249f"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for wine club shipment exception tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For small wineries running direct-to-consumer wine clubs and pickup programs, the target outcome is **every club shipment exception reaches a member-approved or policy-based fulfillment decision with payment, inventory, carrier, and communication reconciled**.

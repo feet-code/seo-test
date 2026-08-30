@@ -4,13 +4,9 @@ excerpt: "A practical record template for small bookkeeping firms and client acc
 productId: "portfolio-close-monitor"
 productName: "Portfolio Close Monitor"
 generationFingerprint: "98f8e4e4a7f8b578968e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful bookkeeping month-end close checklist and portfolio tracking template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for small manufacturers and lean quali
 productId: "work-instruction-acknowledgment"
 productName: "Work Instruction Acknowledgment"
 generationFingerprint: "b84683951f628342182b"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for controlled work instruction acknowledgment should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For small manufacturers and lean quality teams, the target outcome is **every effective instruction revision is distributed to the affected roles and acknowledged with required training before use**.

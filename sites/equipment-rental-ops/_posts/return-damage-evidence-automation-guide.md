@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent equipment, tool, and e
 productId: "return-damage-evidence"
 productName: "Return Damage Evidence"
 generationFingerprint: "4d1fad183504ccf15a47"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for equipment rental return damage documentation should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent equipment, tool, and event-rental businesses, the target outcome is **every returned asset is inspected against checkout evidence and any damage decision is documented before billing or release**.

@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for small managed serv
 productId: "maintenance-evidence-runbook"
 productName: "Maintenance Evidence Runbook"
 generationFingerprint: "69baced0d668f8e7194e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for MSP recurring maintenance evidence tracking should help small managed service providers and multi-client IT support teams decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

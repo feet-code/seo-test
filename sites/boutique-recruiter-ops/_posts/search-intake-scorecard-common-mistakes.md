@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent recruiters and boutiqu
 productId: "search-intake-scorecard"
 productName: "Search Intake Scorecard"
 generationFingerprint: "7cb5ad03fde7b2e6e454"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Recruiters start sourcing with vague or conflicting requirements, then lose time recalibrating after weak candidate submissions. The recurring failures are usually process-design problems rather than motivation problems. For independent recruiters and boutique recruiting firms, these are the mistakes worth finding before buying or building software.

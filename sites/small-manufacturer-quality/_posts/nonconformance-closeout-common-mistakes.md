@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small manufacturers and lean quali
 productId: "nonconformance-closeout"
 productName: "Nonconformance Closeout"
 generationFingerprint: "1fc51d63706c2d44a850"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Small quality teams can log a defect but struggle to connect containment, disposition, cause, corrective work, and effectiveness evidence before closing the record. The recurring failures are usually process-design problems rather than motivation problems. For small manufacturers and lean quality teams, these are the mistakes worth finding before buying or building software.

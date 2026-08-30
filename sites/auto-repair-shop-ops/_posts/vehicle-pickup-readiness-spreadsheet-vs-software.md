@@ -4,13 +4,9 @@ excerpt: "A spreadsheet-versus-software decision guide for independent auto repa
 productId: "vehicle-pickup-readiness"
 productName: "Vehicle Pickup Readiness"
 generationFingerprint: "8ceb8a1f8fc94410dccd"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A spreadsheet is often the right first implementation for auto repair vehicle pickup readiness. It is cheap, editable, and forces the team to define the workflow. The question is not whether spreadsheets are good or bad; it is when coordination costs become larger than the flexibility is worth.

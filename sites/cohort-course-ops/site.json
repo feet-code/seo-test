@@ -17,7 +17,8 @@
       "monetization": "$19-$79/month based on active records or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets cohort engagement tracker, student follow-up template, course completion intervention, and learner progress dashboard searches.",
-      "score": 83
+      "score": 83,
+      "contentBatch": "batch-001"
     }
   ],
   "articlesPerProduct": 10,
@@ -26,12 +27,7 @@
   "valueProposition": "Combines explicit engagement signals with a human-reviewed outreach queue, support plan, next date, and outcome.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

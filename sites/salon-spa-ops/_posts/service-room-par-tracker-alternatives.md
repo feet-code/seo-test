@@ -4,13 +4,9 @@ excerpt: "A practical alternatives comparison for independent salons, spas, and 
 productId: "service-room-par-tracker"
 productName: "Service Room Par Tracker"
 generationFingerprint: "485ef056754c91568324"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 There are several valid ways to manage salon and spa room inventory par tracking. The right choice depends on volume, exception rate, ownership, and how much coordination crosses systems. Start with the smallest approach that keeps the work reliable.

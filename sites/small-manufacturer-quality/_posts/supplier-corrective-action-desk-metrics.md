@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for small manufacturer
 productId: "supplier-corrective-action-desk"
 productName: "Supplier Corrective Action Desk"
 generationFingerprint: "3ba2631b3fd7c5b489ad"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for supplier corrective action request tracking should help small manufacturers and lean quality teams decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

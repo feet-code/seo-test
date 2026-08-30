@@ -4,13 +4,9 @@ excerpt: "A practical record template for independent bicycle repair shops and s
 productId: "bike-pickup-readiness"
 productName: "Bike Pickup Readiness"
 generationFingerprint: "123b82c86097e17bc4c5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful bike repair pickup readiness template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

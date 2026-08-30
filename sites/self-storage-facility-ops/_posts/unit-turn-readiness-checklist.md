@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent self-storage faci
 productId: "unit-turn-readiness"
 productName: "Unit Turn Readiness"
 generationFingerprint: "89066ee4c605764d0286"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for self-storage move-out inspection and unit turn tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent self-storage facilities and small multi-site operators and centers on one result: **every vacated unit is inspected, cleared, reconciled, and published as rentable or held with a named reason**.

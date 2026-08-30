@@ -4,13 +4,9 @@ excerpt: "A spreadsheet-versus-software decision guide for small nonprofit direc
 productId: "participant-followup-queue"
 productName: "Participant Follow-Up Queue"
 generationFingerprint: "d061246b903229f78d6c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A spreadsheet is often the right first implementation for nonprofit participant follow-up and referral tracking. It is cheap, editable, and forces the team to define the workflow. The question is not whether spreadsheets are good or bad; it is when coordination costs become larger than the flexibility is worth.

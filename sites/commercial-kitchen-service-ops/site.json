@@ -1,0 +1,60 @@
+{
+  "id": "commercial-kitchen-service-ops",
+  "name": "Commercial Kitchen Equipment Service",
+  "domain": null,
+  "audience": "independent commercial kitchen equipment repair companies",
+  "topic": "equipment identity, parts, and downtime decisions for kitchen-equipment service",
+  "products": [
+    {
+      "id": "kitchen-equipment-identity",
+      "name": "Kitchen Equipment Identity Desk",
+      "product": "A focused commercial kitchen equipment model and serial intake workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent commercial kitchen equipment repair companies",
+      "problem": "Dispatch notes describe symptoms but omit the exact unit, model, serial, utility context, and prior work needed for effective triage.",
+      "valueProposition": "Turns commercial kitchen equipment model and serial intake into a visible operating queue so every dispatched repair is tied to verified equipment identity and a usable diagnostic history.",
+      "topic": "commercial kitchen equipment model and serial intake",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets commercial kitchen equipment model and serial intake software, commercial kitchen equipment model and serial intake tracker, commercial kitchen equipment model and serial intake template, and commercial kitchen equipment model and serial intake checklist searches.",
+      "score": 85,
+      "contentBatch": "batch-005"
+    },
+    {
+      "id": "kitchen-downtime-authorization",
+      "name": "Kitchen Downtime Authorization Queue",
+      "product": "A focused commercial kitchen repair authorization workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent commercial kitchen equipment repair companies",
+      "problem": "Operations impact, temporary options, quoted scope, parts lead time, and customer authority change while critical equipment remains unavailable.",
+      "valueProposition": "Turns commercial kitchen repair authorization into a visible operating queue so every repair decision has current scope, authorized cost, downtime expectation, and a scheduled next step.",
+      "topic": "commercial kitchen repair authorization",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets commercial kitchen repair authorization software, commercial kitchen repair authorization tracker, commercial kitchen repair authorization template, and commercial kitchen repair authorization checklist searches.",
+      "score": 86,
+      "contentBatch": "batch-005"
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused commercial kitchen equipment model and serial intake workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns commercial kitchen equipment model and serial intake into a visible operating queue so every dispatched repair is tied to verified equipment identity and a usable diagnostic history.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "commercial-kitchen-service-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

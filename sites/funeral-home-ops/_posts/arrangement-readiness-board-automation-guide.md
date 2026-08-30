@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent funeral homes and smal
 productId: "arrangement-readiness-board"
 productName: "Arrangement Readiness Board"
 generationFingerprint: "f8cdeb14710adbfcca14"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for funeral arrangement document readiness tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent funeral homes and small death-care service teams, the target outcome is **every case has human-reviewed required decisions, documents, authorizations, and exceptions visible against the actual service timeline**.

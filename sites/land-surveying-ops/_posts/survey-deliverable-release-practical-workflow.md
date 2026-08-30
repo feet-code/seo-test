@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small land-surveying firms coord
 productId: "survey-deliverable-release"
 productName: "Survey Deliverable Release"
 generationFingerprint: "22244996dc4424f8c44c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Field files, calculations, CAD revisions, monument notes, legal descriptions, exhibits, certifications, client comments, and invoice milestones can move independently before final delivery. For small land-surveying firms coordinating field crews and office deliverables, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every survey deliverable is traceable to current field and office inputs, passes the firm's required professional review, and is delivered as a controlled version**.

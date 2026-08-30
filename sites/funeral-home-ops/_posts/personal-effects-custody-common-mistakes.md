@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent funeral homes and smal
 productId: "personal-effects-custody"
 productName: "Personal Effects Custody"
 generationFingerprint: "c4c84e92bb981056b5ea"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Jewelry, clothing, documents, devices, containers, keepsakes, and other personal effects can pass through removal, preparation, arrangement, service, and release without consistent item-level acknowledgment. The recurring failures are usually process-design problems rather than motivation problems. For independent funeral homes and small death-care service teams, these are the mistakes worth finding before buying or building software.

@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for community makerspaces, fabrication
 productId: "equipment-training-authorization"
 productName: "Equipment Training Authorization"
 generationFingerprint: "a12717ecdc524c8530f3"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Membership, waiver, orientation, machine-specific training, supervised practice, expiration, suspension, and access-control state can diverge before a member uses higher-risk equipment. The recurring failures are usually process-design problems rather than motivation problems. For community makerspaces, fabrication labs, and shared technical workshops, these are the mistakes worth finding before buying or building software.

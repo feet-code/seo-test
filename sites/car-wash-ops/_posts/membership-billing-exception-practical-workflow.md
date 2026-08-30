@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent express, tunnel, and
 productId: "membership-billing-exception"
 productName: "Membership Billing Exception"
 generationFingerprint: "d464de272caa742d908b"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Failed renewals, duplicate plans, plate changes, cancellation requests, refunds, disputed charges, and access status can diverge between POS, processor, and customer support. For independent express, tunnel, and multi-bay car wash operators, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every membership exception resolves billing, access, customer communication, and future renewal state with one documented decision**.

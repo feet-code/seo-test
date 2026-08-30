@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent household moving compa
 productId: "move-inventory-change-register"
 productName: "Move Inventory Change Register"
 generationFingerprint: "8d6790b87cc8fb8ffe73"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Added items, access conditions, packing work, dates, and address changes can alter labor and price after the estimate, but field and office teams may work from different scope versions. The recurring failures are usually process-design problems rather than motivation problems. For independent household moving companies and local moving crews, these are the mistakes worth finding before buying or building software.

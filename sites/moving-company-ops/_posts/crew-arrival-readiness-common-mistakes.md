@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent household moving compa
 productId: "crew-arrival-readiness"
 productName: "Crew Arrival Readiness"
 generationFingerprint: "d6f119d07aa79748a594"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Crews lose time when addresses, access windows, contacts, parking, inventory, equipment, paperwork, or customer confirmations are incomplete at dispatch. The recurring failures are usually process-design problems rather than motivation problems. For independent household moving companies and local moving crews, these are the mistakes worth finding before buying or building software.

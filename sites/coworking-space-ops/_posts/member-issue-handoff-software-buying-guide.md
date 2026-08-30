@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent coworking spaces and 
 productId: "member-issue-handoff"
 productName: "Member Issue Handoff"
 generationFingerprint: "0f6ee4e9e913480a7c5a"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for coworking member issue handoff tracking should be evaluated against the operating problem, not a generic feature checklist. For independent coworking spaces and small flexible-office operators, a useful trial must demonstrate this outcome: **every member issue has a current owner, response promise, resolution evidence, and member acknowledgment**.

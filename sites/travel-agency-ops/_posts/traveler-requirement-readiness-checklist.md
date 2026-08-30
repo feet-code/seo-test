@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent travel advisors a
 productId: "traveler-requirement-readiness"
 productName: "Traveler Requirement Readiness"
 generationFingerprint: "666e4312b385e3da265b"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for travel document requirement readiness tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent travel advisors and boutique travel agencies and centers on one result: **every traveler-facing booking requirement is acknowledged or completed by its supplier or departure cutoff without copying unnecessary sensitive data**.

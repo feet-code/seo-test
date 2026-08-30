@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent dance studios pro
 productId: "recital-readiness-board"
 productName: "Recital Readiness Board"
 generationFingerprint: "756275355c913ad83b46"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for dance studio recital readiness tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent dance studios producing multi-class recitals and centers on one result: **every recital number and performer reaches show day with approved music, participation, costume, call time, quick-change, volunteer, and backstage dependencies verified**.

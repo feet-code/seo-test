@@ -4,13 +4,9 @@ excerpt: "A practical alternatives comparison for independent residential proper
 productId: "unit-turnover-runbook"
 productName: "Unit Turnover Runbook"
 generationFingerprint: "3e44f0845f3b33b83d1f"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 There are several valid ways to manage rental unit turnover checklist and make-ready tracking. The right choice depends on volume, exception rate, ownership, and how much coordination crosses systems. Start with the smallest approach that keeps the work reliable.

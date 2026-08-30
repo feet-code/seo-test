@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for independent travel
 productId: "traveler-requirement-readiness"
 productName: "Traveler Requirement Readiness"
 generationFingerprint: "666e4312b385e3da265b"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for travel document requirement readiness tracking should help independent travel advisors and boutique travel agencies decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

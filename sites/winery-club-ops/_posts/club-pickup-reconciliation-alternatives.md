@@ -4,13 +4,9 @@ excerpt: "A practical alternatives comparison for small wineries running direct-
 productId: "club-pickup-reconciliation"
 productName: "Club Pickup Reconciliation"
 generationFingerprint: "ffe2a2bb9cb2473b88e9"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 There are several valid ways to manage wine club pickup order tracking. The right choice depends on volume, exception rate, ownership, and how much coordination crosses systems. Start with the smallest approach that keeps the work reliable.

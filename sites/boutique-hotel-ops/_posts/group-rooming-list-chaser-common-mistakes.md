@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent boutique hotels and sm
 productId: "group-rooming-list-chaser"
 productName: "Group Rooming List Chaser"
 generationFingerprint: "92a5c4ce77cf52b8410e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Names, room types, arrival details, accessibility notes, billing instructions, and changes arrive from group contacts in repeated spreadsheet versions near cutoff. The recurring failures are usually process-design problems rather than motivation problems. For independent boutique hotels and small hospitality teams, these are the mistakes worth finding before buying or building software.

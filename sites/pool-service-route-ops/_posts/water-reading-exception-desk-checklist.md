@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent pool maintenance 
 productId: "water-reading-exception-desk"
 productName: "Water Reading Exception Desk"
 generationFingerprint: "04eef3247c127a71febf"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:22Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for pool service water chemistry exception tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent pool maintenance and repair companies running recurring routes and centers on one result: **every material pool-reading exception has verified input, approved response, owner, customer notice, and a scheduled recheck**.

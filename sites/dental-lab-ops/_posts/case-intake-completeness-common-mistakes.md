@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent dental laboratories se
 productId: "case-intake-completeness"
 productName: "Case Intake Completeness"
 generationFingerprint: "ac444cb09821283ff79c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A case enters production with a missing or conflicting prescription, scan, impression, photos, material, shade, due date, shipping detail, or practice instruction, causing later stops and remakes. The recurring failures are usually process-design problems rather than motivation problems. For independent dental laboratories serving local dental practices, these are the mistakes worth finding before buying or building software.

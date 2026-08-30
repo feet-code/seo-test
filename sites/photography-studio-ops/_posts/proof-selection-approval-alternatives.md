@@ -4,13 +4,9 @@ excerpt: "A practical alternatives comparison for independent photography studio
 productId: "proof-selection-approval"
 productName: "Proof Selection Approval"
 generationFingerprint: "f134829b77ef8c17c3a5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 There are several valid ways to manage photography client proof selection and approval. The right choice depends on volume, exception rate, ownership, and how much coordination crosses systems. Start with the smallest approach that keeps the work reliable.

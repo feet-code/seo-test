@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for owner-operated commercial cleaning
 productId: "location-supply-par-tracker"
 productName: "Location Supply Par Tracker"
 generationFingerprint: "dffeb8e01f6c103f3284"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Supplies are reordered after crews report a shortage, while counts, storage locations, usage spikes, and delivery ownership remain inconsistent. The recurring failures are usually process-design problems rather than motivation problems. For owner-operated commercial cleaning and janitorial companies, these are the mistakes worth finding before buying or building software.

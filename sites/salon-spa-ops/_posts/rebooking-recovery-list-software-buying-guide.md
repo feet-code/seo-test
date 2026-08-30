@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent salons, spas, and sma
 productId: "rebooking-recovery-list"
 productName: "Rebooking Recovery List"
 generationFingerprint: "ab96ed6ebb0acff2ea3b"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for salon and spa rebooking follow-up should be evaluated against the operating problem, not a generic feature checklist. For independent salons, spas, and small wellness studios, a useful trial must demonstrate this outcome: **every eligible client receives a timely, contextual rebooking option or a documented no-contact reason**.

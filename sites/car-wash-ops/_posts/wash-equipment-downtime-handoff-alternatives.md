@@ -4,13 +4,9 @@ excerpt: "A practical alternatives comparison for independent express, tunnel, a
 productId: "wash-equipment-downtime-handoff"
 productName: "Wash Equipment Downtime Handoff"
 generationFingerprint: "21c57d543214b71eadb3"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 There are several valid ways to manage car wash equipment downtime tracking. The right choice depends on volume, exception rate, ownership, and how much coordination crosses systems. Start with the smallest approach that keeps the work reliable.

@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent wedding planners and b
 productId: "client-decision-register"
 productName: "Client Decision Register"
 generationFingerprint: "5a3e4660c86159bff7c5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for wedding client decision tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent wedding planners and boutique planning teams, the target outcome is **every decision that blocks budget, design, or vendor work has one approved answer, effective version, and downstream owner**.

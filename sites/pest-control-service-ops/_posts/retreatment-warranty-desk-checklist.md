@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent pest control comp
 productId: "retreatment-warranty-desk"
 productName: "Retreatment Warranty Desk"
 generationFingerprint: "3c4d36c875a6184352c0"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:22Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for pest control callback and retreatment tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent pest control companies and small recurring-service teams and centers on one result: **every callback is classified against the service agreement, routed with prior evidence, and closed only after the promised resolution is verified**.

@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent campgrounds, RV parks,
 productId: "cancellation-fill-queue"
 productName: "Cancellation Fill Queue"
 generationFingerprint: "85eed128d55b80f1b362"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for campground cancellation waitlist fill tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent campgrounds, RV parks, and small outdoor lodging properties, the target outcome is **every cancellation opportunity is offered to eligible waitlist guests in a fair visible sequence and returns to public inventory at a defined cutoff**.

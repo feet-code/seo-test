@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for portable restroom rental and recur
 productId: "unit-placement-readiness"
 productName: "Unit Placement Readiness"
 generationFingerprint: "b8ccd4dd7c4523946a7e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Drivers reach construction or event sites without an approved placement point, surface check, access route, onsite contact, service clearance, or pickup condition. The recurring failures are usually process-design problems rather than motivation problems. For portable restroom rental and recurring sanitation service operators, these are the mistakes worth finding before buying or building software.

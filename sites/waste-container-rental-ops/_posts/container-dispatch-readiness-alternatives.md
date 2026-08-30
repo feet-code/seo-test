@@ -4,13 +4,9 @@ excerpt: "A practical alternatives comparison for small roll-off dumpster and co
 productId: "container-dispatch-readiness"
 productName: "Container Dispatch Readiness"
 generationFingerprint: "048c739fb4484138baa4"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 There are several valid ways to manage roll off dumpster delivery swap and pickup readiness. The right choice depends on volume, exception rate, ownership, and how much coordination crosses systems. Start with the smallest approach that keeps the work reliable.

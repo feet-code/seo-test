@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for owner-operated commercial cleaning
 productId: "site-inspection-followup"
 productName: "Site Inspection Follow-Up"
 generationFingerprint: "c638d2a6d6abae7a6499"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Inspection scores and photos are collected, but individual findings are not consistently assigned and verified before the next service cycle. The recurring failures are usually process-design problems rather than motivation problems. For owner-operated commercial cleaning and janitorial companies, these are the mistakes worth finding before buying or building software.

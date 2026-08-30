@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small contract security companies 
 productId: "post-order-acknowledgment"
 productName: "Post Order Acknowledgment"
 generationFingerprint: "f7163fd1339cb8493076"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Updated post orders may sit in binders, messages, or portals without proof that every assigned guard received the effective instructions before the shift. The recurring failures are usually process-design problems rather than motivation problems. For small contract security companies and guard supervisors, these are the mistakes worth finding before buying or building software.

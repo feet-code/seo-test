@@ -4,13 +4,9 @@ excerpt: "Three realistic workflow test cases for independent dance studios prod
 productId: "recital-readiness-board"
 productName: "Recital Readiness Board"
 generationFingerprint: "756275355c913ad83b46"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Examples make dance studio recital readiness tracking easier to design because they reveal where a neat diagram meets messy work. The scenarios below are not claims about a particular company; they are test cases independent dance studios producing multi-class recitals can run against a template or software trial.

@@ -4,13 +4,9 @@ excerpt: "A practical record template for independent auto repair shops and serv
 productId: "vehicle-pickup-readiness"
 productName: "Vehicle Pickup Readiness"
 generationFingerprint: "8ceb8a1f8fc94410dccd"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful auto repair vehicle pickup readiness template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

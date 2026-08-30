@@ -4,13 +4,9 @@ excerpt: "A practical record template for small environmental consulting and fie
 productId: "custody-exception-desk"
 productName: "Custody Exception Desk"
 generationFingerprint: "0c01731d2898bf890584"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful environmental chain of custody exception tracking template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

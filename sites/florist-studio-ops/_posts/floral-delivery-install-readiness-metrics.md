@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for independent retail
 productId: "floral-delivery-install-readiness"
 productName: "Floral Delivery and Install Readiness"
 generationFingerprint: "051a70dad523e86765f0"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for florist delivery and event installation readiness should help independent retail, delivery, and event floral studios decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

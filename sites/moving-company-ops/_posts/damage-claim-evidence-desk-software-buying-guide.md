@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent household moving comp
 productId: "damage-claim-evidence-desk"
 productName: "Damage Claim Evidence Desk"
 generationFingerprint: "8a8b969b87f75615775a"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for moving company damage claim evidence tracking should be evaluated against the operating problem, not a generic feature checklist. For independent household moving companies and local moving crews, a useful trial must demonstrate this outcome: **every damage or loss claim is acknowledged, completed with required evidence, reviewed, and resolved with a documented decision**.

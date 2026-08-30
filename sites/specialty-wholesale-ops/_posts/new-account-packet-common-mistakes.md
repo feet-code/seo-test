@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small specialty wholesalers and B2
 productId: "new-account-packet"
 productName: "New Account Packet"
 generationFingerprint: "d8896f52e8a0ff0b2923"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 New accounts bounce between sales, operations, and accounting because required information and approvals are collected in separate emails. The recurring failures are usually process-design problems rather than motivation problems. For small specialty wholesalers and B2B distributors, these are the mistakes worth finding before buying or building software.

@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for community makerspa
 productId: "equipment-training-authorization"
 productName: "Equipment Training Authorization"
 generationFingerprint: "a12717ecdc524c8530f3"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for makerspace equipment training authorization tracking should help community makerspaces, fabrication labs, and shared technical workshops decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

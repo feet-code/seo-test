@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for owner-operated com
 productId: "site-inspection-followup"
 productName: "Site Inspection Follow-Up"
 generationFingerprint: "c638d2a6d6abae7a6499"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for commercial cleaning inspection corrective action tracking should help owner-operated commercial cleaning and janitorial companies decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

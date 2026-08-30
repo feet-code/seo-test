@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent tailoring, alteratio
 productId: "garment-pickup-readiness"
 productName: "Garment Pickup Readiness"
 generationFingerprint: "a47367ed1f2eaf9ad4e7"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A customer receives a ready message before final pressing, quality check, accessories, original material, balance, garment bag, or pickup authorization is reconciled. For independent tailoring, alteration, and garment-repair shops, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every finished garment is checked against approved work, packaged with customer property, financially reconciled, and staged before notification**.

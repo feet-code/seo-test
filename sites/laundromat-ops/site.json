@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets laundromat maintenance software, washer out of order tracker, laundromat machine repair log, and dryer downtime searches.",
-      "score": 88
+      "score": 88,
+      "contentBatch": "batch-004"
     },
     {
       "id": "wash-fold-handoff",
@@ -31,7 +32,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets wash dry fold tracking, laundromat drop off software, laundry order status, and wash and fold ticket searches.",
-      "score": 87
+      "score": 87,
+      "contentBatch": "batch-004"
     }
   ],
   "articlesPerProduct": 10,
@@ -40,12 +42,7 @@
   "valueProposition": "Turns laundromat washer and dryer outage tracking into a visible operating queue so every machine outage has immediate customer containment, repair ownership, status visibility, and a documented loaded-cycle return test.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

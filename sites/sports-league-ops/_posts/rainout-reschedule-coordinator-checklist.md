@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for community sports leagues and 
 productId: "rainout-reschedule-coordinator"
 productName: "Rainout Reschedule Coordinator"
 generationFingerprint: "9c568af6a0595f6334c2"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for sports league rainout rescheduling should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for community sports leagues and small tournament operators and centers on one result: **every weather-affected game is canceled, relocated, or rescheduled with all dependent assignments and communications reconciled**.

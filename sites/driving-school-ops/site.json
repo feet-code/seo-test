@@ -1,0 +1,60 @@
+{
+  "id": "driving-school-ops",
+  "name": "Driving School Operations",
+  "domain": null,
+  "audience": "independent driving schools and small instructor teams",
+  "topic": "lesson handoffs and road-test readiness for driving schools",
+  "products": [
+    {
+      "id": "instructor-lesson-handoff",
+      "name": "Instructor Lesson Handoff",
+      "product": "A focused driving lesson progress handoff workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent driving schools and small instructor teams",
+      "problem": "Student goals, prior practice, observed skills, agreed homework, and next-lesson focus live in individual instructor notes.",
+      "valueProposition": "Turns driving lesson progress handoff into a visible operating queue so every lesson ends with a concise progress handoff that the next assigned instructor can use.",
+      "topic": "driving lesson progress handoff",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets driving lesson progress handoff software, driving lesson progress handoff tracker, driving lesson progress handoff template, and driving lesson progress handoff checklist searches.",
+      "score": 84,
+      "contentBatch": "batch-005"
+    },
+    {
+      "id": "road-test-readiness-board",
+      "name": "Road-Test Readiness Board",
+      "product": "A focused driving school road test readiness workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent driving schools and small instructor teams",
+      "problem": "Eligibility documents, required practice, instructor judgment, vehicle booking, pickup details, and appointment timing are checked in separate places.",
+      "valueProposition": "Turns driving school road test readiness into a visible operating queue so every supported road test has its administrative, vehicle, scheduling, and instruction prerequisites confirmed.",
+      "topic": "driving school road test readiness",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets driving school road test readiness software, driving school road test readiness tracker, driving school road test readiness template, and driving school road test readiness checklist searches.",
+      "score": 85,
+      "contentBatch": "batch-005"
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused driving lesson progress handoff workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns driving lesson progress handoff into a visible operating queue so every lesson ends with a concise progress handoff that the next assigned instructor can use.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "driving-school-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

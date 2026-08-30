@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small nonprofit direct-service an
 productId: "grant-evidence-organizer"
 productName: "Grant Evidence Organizer"
 generationFingerprint: "9ec3bc43665b6698ccc5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for nonprofit grant reporting evidence and outcome documentation should be evaluated against the operating problem, not a generic feature checklist. For small nonprofit direct-service and program teams, a useful trial must demonstrate this outcome: **each reporting statement can be traced to reviewed, appropriately handled evidence for the correct period and program**.

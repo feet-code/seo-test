@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets vending route reconciliation, vending truck inventory, vending machine route sheet, and vending cash inventory audit searches.",
-      "score": 87
+      "score": 87,
+      "contentBatch": "batch-003"
     },
     {
       "id": "machine-service-exception",
@@ -31,7 +32,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets vending machine service tracker, vending machine repair workflow, vending telemetry alert, and vending refund issue searches.",
-      "score": 85
+      "score": 85,
+      "contentBatch": "batch-003"
     }
   ],
   "articlesPerProduct": 10,
@@ -40,12 +42,7 @@
   "valueProposition": "Turns vending route load and inventory reconciliation into a visible operating queue so every route reconciles planned product, actual machine fills, returns, waste, and reported sales to explain remaining variance.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

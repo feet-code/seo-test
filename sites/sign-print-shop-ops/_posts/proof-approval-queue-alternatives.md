@@ -4,13 +4,9 @@ excerpt: "A practical alternatives comparison for independent sign shops, commer
 productId: "proof-approval-queue"
 productName: "Proof Approval Queue"
 generationFingerprint: "d891422e2919df4cfa96"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 There are several valid ways to manage print and sign proof approval tracking. The right choice depends on volume, exception rate, ownership, and how much coordination crosses systems. Start with the smallest approach that keeps the work reliable.

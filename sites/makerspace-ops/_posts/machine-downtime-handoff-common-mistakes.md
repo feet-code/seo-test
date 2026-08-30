@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for community makerspaces, fabrication
 productId: "machine-downtime-handoff"
 productName: "Machine Downtime Handoff"
 generationFingerprint: "11b8f5dadce52d584268"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A CNC, laser cutter, printer, saw, kiln, or shop tool is tagged out, but bookings, member notices, diagnosis, parts, volunteer ownership, safety review, and return testing are not synchronized. The recurring failures are usually process-design problems rather than motivation problems. For community makerspaces, fabrication labs, and shared technical workshops, these are the mistakes worth finding before buying or building software.

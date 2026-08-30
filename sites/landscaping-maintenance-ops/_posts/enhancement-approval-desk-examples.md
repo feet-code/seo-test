@@ -4,13 +4,9 @@ excerpt: "Three realistic workflow test cases for small commercial landscaping a
 productId: "enhancement-approval-desk"
 productName: "Enhancement Approval Desk"
 generationFingerprint: "e7c620226846f251ad79"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Examples make landscape enhancement proposal approval tracking easier to design because they reveal where a neat diagram meets messy work. The scenarios below are not claims about a particular company; they are test cases small commercial landscaping and recurring property-maintenance companies can run against a template or software trial.

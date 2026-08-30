@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small bookkeeping firms and client
 productId: "portfolio-close-monitor"
 productName: "Portfolio Close Monitor"
 generationFingerprint: "98f8e4e4a7f8b578968e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Firm owners cannot see which client closes are truly at risk without opening multiple checklists, inboxes, and accounting files. The recurring failures are usually process-design problems rather than motivation problems. For small bookkeeping firms and client accounting service teams, these are the mistakes worth finding before buying or building software.

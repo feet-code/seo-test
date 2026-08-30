@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent marinas, yacht cl
 productId: "transient-arrival-readiness"
 productName: "Transient Arrival Readiness"
 generationFingerprint: "68a6a5083bc5a3ee0c77"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for marina transient arrival readiness should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent marinas, yacht clubs, and small dock operations and centers on one result: **every transient arrival has a compatible assigned slip, current instructions, payment plan, and acknowledged dock handoff**.

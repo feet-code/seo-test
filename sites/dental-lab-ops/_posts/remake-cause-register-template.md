@@ -4,13 +4,9 @@ excerpt: "A practical record template for independent dental laboratories servin
 productId: "remake-cause-register"
 productName: "Remake Cause Register"
 generationFingerprint: "5cd7ad53a59d21d6612f"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful dental laboratory remake cause tracking template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

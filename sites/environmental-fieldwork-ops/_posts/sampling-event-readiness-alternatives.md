@@ -4,13 +4,9 @@ excerpt: "A practical alternatives comparison for small environmental consulting
 productId: "sampling-event-readiness"
 productName: "Sampling Event Readiness"
 generationFingerprint: "4a05807fcb6753f210e2"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 There are several valid ways to manage environmental sampling event readiness. The right choice depends on volume, exception rate, ownership, and how much coordination crosses systems. Start with the smallest approach that keeps the work reliable.

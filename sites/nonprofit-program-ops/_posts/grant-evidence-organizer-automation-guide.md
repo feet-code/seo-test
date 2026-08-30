@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for small nonprofit direct-service and
 productId: "grant-evidence-organizer"
 productName: "Grant Evidence Organizer"
 generationFingerprint: "9ec3bc43665b6698ccc5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for nonprofit grant reporting evidence and outcome documentation should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For small nonprofit direct-service and program teams, the target outcome is **each reporting statement can be traced to reviewed, appropriately handled evidence for the correct period and program**.

@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent express, tunnel, 
 productId: "membership-billing-exception"
 productName: "Membership Billing Exception"
 generationFingerprint: "d464de272caa742d908b"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for car wash membership billing exception tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent express, tunnel, and multi-bay car wash operators and centers on one result: **every membership exception resolves billing, access, customer communication, and future renewal state with one documented decision**.

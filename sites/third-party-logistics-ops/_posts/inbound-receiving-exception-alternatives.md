@@ -4,13 +4,9 @@ excerpt: "A practical alternatives comparison for small third-party logistics wa
 productId: "inbound-receiving-exception"
 productName: "Inbound Receiving Exception"
 generationFingerprint: "b31d31abcf80b6fd60e5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 There are several valid ways to manage 3PL inbound receiving exception tracking. The right choice depends on volume, exception rate, ownership, and how much coordination crosses systems. Start with the smallest approach that keeps the work reliable.

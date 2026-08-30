@@ -4,13 +4,9 @@ excerpt: "Three realistic workflow test cases for independent tutoring centers a
 productId: "parent-progress-publisher"
 productName: "Parent Progress Publisher"
 generationFingerprint: "707db6510901eca2fa07"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Examples make tutoring parent progress reporting workflow easier to design because they reveal where a neat diagram meets messy work. The scenarios below are not claims about a particular company; they are test cases independent tutoring centers and multi-tutor education businesses can run against a template or software trial.

@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent boutique hotels and s
 productId: "group-rooming-list-chaser"
 productName: "Group Rooming List Chaser"
 generationFingerprint: "92a5c4ce77cf52b8410e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for hotel group rooming list tracking should be evaluated against the operating problem, not a generic feature checklist. For independent boutique hotels and small hospitality teams, a useful trial must demonstrate this outcome: **every contracted group block reaches a validated rooming list and reconciled reservation set by the operational cutoff**.

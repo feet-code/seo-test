@@ -4,13 +4,9 @@ excerpt: "Three realistic workflow test cases for small community-supported agri
 productId: "member-change-cutoff"
 productName: "Member Change Cutoff"
 generationFingerprint: "f44afdbf2a92d0b6b942"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Examples make CSA skip swap and pickup change tracking easier to design because they reveal where a neat diagram meets messy work. The scenarios below are not claims about a particular company; they are test cases small community-supported agriculture farms and farm-box programs can run against a template or software trial.

@@ -4,13 +4,9 @@ excerpt: "A practical record template for small creative, design, and digital ag
 productId: "client-asset-chaser"
 productName: "Client Asset Chaser"
 generationFingerprint: "6769802ceb38c88597d6"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful client asset collection and missing content tracking for agencies template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

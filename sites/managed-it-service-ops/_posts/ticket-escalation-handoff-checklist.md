@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for small managed service provide
 productId: "ticket-escalation-handoff"
 productName: "Ticket Escalation Handoff"
 generationFingerprint: "fc03dcc64bf911cfbfa5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for MSP ticket escalation handoff should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for small managed service providers and multi-client IT support teams and centers on one result: **every escalation transfers a reproducible problem statement, completed diagnostics, client promise, and explicit acceptance by the next owner**.

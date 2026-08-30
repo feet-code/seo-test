@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent laundromats offering 
 productId: "wash-fold-handoff"
 productName: "Wash-Fold Handoff"
 generationFingerprint: "f4f223f52d162f2598e3"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for laundromat wash dry fold order tracking should be evaluated against the operating problem, not a generic feature checklist. For independent laundromats offering self-service and wash-dry-fold, a useful trial must demonstrate this outcome: **every wash-dry-fold order preserves customer instructions and bag identity through processing, assembly, quality check, payment, and authorized release**.

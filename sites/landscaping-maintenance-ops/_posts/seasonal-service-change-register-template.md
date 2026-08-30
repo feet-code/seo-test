@@ -4,13 +4,9 @@ excerpt: "A practical record template for small commercial landscaping and recur
 productId: "seasonal-service-change-register"
 productName: "Seasonal Service Change Register"
 generationFingerprint: "4faa0d5fd1ce16210bfc"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful seasonal landscape service change tracking template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

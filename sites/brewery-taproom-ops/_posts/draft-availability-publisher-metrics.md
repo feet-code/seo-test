@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for independent craft 
 productId: "draft-availability-publisher"
 productName: "Draft Availability Publisher"
 generationFingerprint: "01e68dbb40ae388a4d92"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for brewery tap list availability tracking should help independent craft breweries operating one or more taprooms decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

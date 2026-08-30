@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for owner-operated HVAC, plumbing, el
 productId: "job-photo-handoff"
 productName: "Job Photo Handoff"
 generationFingerprint: "bd22fa439fee0cbce6b8"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for contractor job photo documentation and field office handoff should be evaluated against the operating problem, not a generic feature checklist. For owner-operated HVAC, plumbing, electrical, and repair contractors, a useful trial must demonstrate this outcome: **the office receives a job-linked, labeled photo record that is sufficient for the next billing, customer, or service decision**.

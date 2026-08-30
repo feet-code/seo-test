@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets septic pumping checklist, septic tank access preparation, septic service route notes, and septic job readiness searches.",
-      "score": 88
+      "score": 88,
+      "contentBatch": "batch-004"
     },
     {
       "id": "disposal-ticket-reconciliation",
@@ -31,7 +32,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets septic disposal ticket software, septage load tracking, septic pump record reconciliation, and liquid waste disposal log searches.",
-      "score": 87
+      "score": 87,
+      "contentBatch": "batch-004"
     }
   ],
   "articlesPerProduct": 10,
@@ -40,12 +42,7 @@
   "valueProposition": "Turns septic pumping property access readiness into a visible operating queue so every dispatched septic job has a usable tank location, access plan, service scope, and customer responsibility confirmed before truck commitment.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

@@ -4,13 +4,9 @@ excerpt: "A spreadsheet-versus-software decision guide for small water, fire, an
 productId: "moisture-log-handoff"
 productName: "Moisture Log Handoff"
 generationFingerprint: "06978ed3ffd0b3324be4"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A spreadsheet is often the right first implementation for water restoration moisture log handoff. It is cheap, editable, and forces the team to define the workflow. The question is not whether spreadsheets are good or bad; it is when coordination costs become larger than the flexibility is worth.

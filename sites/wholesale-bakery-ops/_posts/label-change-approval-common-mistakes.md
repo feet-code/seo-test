@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small wholesale and direct-store-d
 productId: "label-change-approval"
 productName: "Label Change Approval"
 generationFingerprint: "5e61ba41bf7549364b00"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Recipe, supplier, allergen, nutrition, claim, package size, customer, and regulatory text changes can produce multiple label files with no reliable effective lot or approval trail. The recurring failures are usually process-design problems rather than motivation problems. For small wholesale and direct-store-delivery bakeries, these are the mistakes worth finding before buying or building software.

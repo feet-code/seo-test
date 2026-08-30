@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for small third-party logistics wareho
 productId: "inbound-receiving-exception"
 productName: "Inbound Receiving Exception"
 generationFingerprint: "b31d31abcf80b6fd60e5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for 3PL inbound receiving exception tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For small third-party logistics warehouses and fulfillment operators, the target outcome is **every inbound discrepancy has scan and photo evidence, client disposition, inventory action, and billable-work outcome**.

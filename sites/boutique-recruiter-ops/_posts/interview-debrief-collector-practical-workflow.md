@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent recruiters and bouti
 productId: "interview-debrief-collector"
 productName: "Interview Debrief Collector"
 generationFingerprint: "c923ed22607d97ec3f20"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Interview feedback arrives late, lacks evidence, or is shaped by the loudest interviewer, delaying client decisions and weakening candidate communication. For independent recruiters and boutique recruiting firms, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **the client reaches an evidence-based candidate decision while the interview is still fresh**.

@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent recruiters and bouti
 productId: "search-intake-scorecard"
 productName: "Search Intake Scorecard"
 generationFingerprint: "7cb5ad03fde7b2e6e454"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Recruiters start sourcing with vague or conflicting requirements, then lose time recalibrating after weak candidate submissions. For independent recruiters and boutique recruiting firms, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **the recruiter and client can evaluate the same candidate evidence against the same explicit tradeoffs**.

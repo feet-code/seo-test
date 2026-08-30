@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent residential property 
 productId: "unit-turnover-runbook"
 productName: "Unit Turnover Runbook"
 generationFingerprint: "3e44f0845f3b33b83d1f"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for rental unit turnover checklist and make-ready tracking should be evaluated against the operating problem, not a generic feature checklist. For independent residential property managers and small property teams, a useful trial must demonstrate this outcome: **the unit reaches a documented ready state with every dependency and exception resolved**.

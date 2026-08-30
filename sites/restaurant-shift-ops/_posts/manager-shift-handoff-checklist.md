@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent restaurants and s
 productId: "manager-shift-handoff"
 productName: "Manager Shift Handoff"
 generationFingerprint: "08a0cbe60f3c1131ad16"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for restaurant manager shift handoff tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent restaurants and small multi-location restaurant groups and centers on one result: **every unresolved shift issue transfers with impact, owner, next action, due time, and explicit acceptance by the next manager**.

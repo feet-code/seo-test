@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for independent podcas
 productId: "guest-asset-chaser"
 productName: "Guest Asset Chaser"
 generationFingerprint: "847c9b89f655836e541c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for podcast guest asset and release tracking should help independent podcast producers and small branded-podcast teams decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

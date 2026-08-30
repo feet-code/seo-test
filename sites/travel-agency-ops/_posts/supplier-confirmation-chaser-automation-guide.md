@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent travel advisors and bo
 productId: "supplier-confirmation-chaser"
 productName: "Supplier Confirmation Chaser"
 generationFingerprint: "09752f454ad1a001134f"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for travel supplier confirmation tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent travel advisors and boutique travel agencies, the target outcome is **every itinerary component has a supplier confirmation, matching terms, and an owner for unresolved differences**.

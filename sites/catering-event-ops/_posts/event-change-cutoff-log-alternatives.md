@@ -4,13 +4,9 @@ excerpt: "A practical alternatives comparison for independent caterers and small
 productId: "event-change-cutoff-log"
 productName: "Event Change Cutoff Log"
 generationFingerprint: "c1bfee0a3ba17324e05f"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 There are several valid ways to manage catering event change control. The right choice depends on volume, exception rate, ownership, and how much coordination crosses systems. Start with the smallest approach that keeps the work reliable.

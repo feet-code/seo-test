@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for small land-surveying firms co
 productId: "survey-deliverable-release"
 productName: "Survey Deliverable Release"
 generationFingerprint: "22244996dc4424f8c44c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for land survey deliverable quality review should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for small land-surveying firms coordinating field crews and office deliverables and centers on one result: **every survey deliverable is traceable to current field and office inputs, passes the firm's required professional review, and is delivered as a controlled version**.

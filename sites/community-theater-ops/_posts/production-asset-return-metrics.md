@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for community theaters
 productId: "production-asset-return"
 productName: "Production Asset Return"
 generationFingerprint: "6d72e4b7e0c557eb01bc"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for theater prop and costume return tracking should help community theaters and volunteer-led stage-production teams decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

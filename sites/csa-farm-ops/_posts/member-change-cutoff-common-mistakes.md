@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small community-supported agricult
 productId: "member-change-cutoff"
 productName: "Member Change Cutoff"
 generationFingerprint: "f44afdbf2a92d0b6b942"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Skips, pickup moves, box swaps, donations, vacation holds, and address changes arrive around harvest and packing cutoffs through several member channels. The recurring failures are usually process-design problems rather than motivation problems. For small community-supported agriculture farms and farm-box programs, these are the mistakes worth finding before buying or building software.

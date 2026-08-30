@@ -4,13 +4,9 @@ excerpt: "A practical alternatives comparison for independent caterers and small
 productId: "dietary-confirmation-register"
 productName: "Dietary Confirmation Register"
 generationFingerprint: "f301d76191c691b289d9"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 There are several valid ways to manage catering dietary and allergen confirmation. The right choice depends on volume, exception rate, ownership, and how much coordination crosses systems. Start with the smallest approach that keeps the work reliable.

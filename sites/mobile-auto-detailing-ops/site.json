@@ -1,0 +1,60 @@
+{
+  "id": "mobile-auto-detailing-ops",
+  "name": "Mobile Auto Detailing Operations",
+  "domain": null,
+  "audience": "independent mobile detailers and small multi-van detailing teams",
+  "topic": "vehicle intake and location readiness for mobile detailing",
+  "products": [
+    {
+      "id": "detail-condition-intake",
+      "name": "Detail Condition Intake",
+      "product": "A focused vehicle detailing condition and service authorization workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent mobile detailers and small multi-van detailing teams",
+      "problem": "Package expectations, pre-existing condition, sensitive areas, add-ons, access, and customer priorities are often established through scattered texts.",
+      "valueProposition": "Turns vehicle detailing condition and service authorization into a visible operating queue so every detailing appointment begins with a shared condition record and authorized service scope.",
+      "topic": "vehicle detailing condition and service authorization",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets vehicle detailing condition and service authorization software, vehicle detailing condition and service authorization tracker, vehicle detailing condition and service authorization template, and vehicle detailing condition and service authorization checklist searches.",
+      "score": 87,
+      "contentBatch": "batch-005"
+    },
+    {
+      "id": "mobile-detail-site-readiness",
+      "name": "Mobile Detail Site Readiness",
+      "product": "A focused mobile detailing location readiness workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent mobile detailers and small multi-van detailing teams",
+      "problem": "Crews reach jobs without confirmed parking, water, power, weather cover, property permission, or vehicle availability.",
+      "valueProposition": "Turns mobile detailing location readiness into a visible operating queue so every mobile-detail stop is released with location resources and vehicle access confirmed or a recovery decision.",
+      "topic": "mobile detailing location readiness",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets mobile detailing location readiness software, mobile detailing location readiness tracker, mobile detailing location readiness template, and mobile detailing location readiness checklist searches.",
+      "score": 88,
+      "contentBatch": "batch-005"
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused vehicle detailing condition and service authorization workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns vehicle detailing condition and service authorization into a visible operating queue so every detailing appointment begins with a shared condition record and authorized service scope.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "mobile-auto-detailing-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for small day-tour, activity, and
 productId: "departure-manifest-readiness"
 productName: "Departure Manifest Readiness"
 generationFingerprint: "4a28ef7a420668ca3deb"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for tour departure manifest readiness should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for small day-tour, activity, and multi-day tour operators and centers on one result: **every departure has one frozen operational manifest with resolved blocking fields and controlled late changes**.

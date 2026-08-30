@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for boutique fitness studios and group
 productId: "trial-member-followup"
 productName: "Trial Member Follow-Up"
 generationFingerprint: "a661f5227017d68c7e41"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Trial visitors enter through forms, class bookings, guest passes, and walk-ins, but staff cannot see who attended, what they wanted, or whether someone followed up. The recurring failures are usually process-design problems rather than motivation problems. For boutique fitness studios and group-class operators, these are the mistakes worth finding before buying or building software.

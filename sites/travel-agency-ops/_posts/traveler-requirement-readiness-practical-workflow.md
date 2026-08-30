@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent travel advisors and 
 productId: "traveler-requirement-readiness"
 productName: "Traveler Requirement Readiness"
 generationFingerprint: "666e4312b385e3da265b"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Travelers receive scattered reminders for names, preferences, payments, supplier forms, and destination requirements without one minimum-data readiness view. For independent travel advisors and boutique travel agencies, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every traveler-facing booking requirement is acknowledged or completed by its supplier or departure cutoff without copying unnecessary sensitive data**.

@@ -4,13 +4,9 @@ excerpt: "A practical record template for independent retail, delivery, and even
 productId: "floral-delivery-install-readiness"
 productName: "Floral Delivery and Install Readiness"
 generationFingerprint: "051a70dad523e86765f0"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful florist delivery and event installation readiness template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

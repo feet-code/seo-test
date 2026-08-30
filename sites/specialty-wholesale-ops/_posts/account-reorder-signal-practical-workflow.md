@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small specialty wholesalers and 
 productId: "account-reorder-signal"
 productName: "Account Reorder Signal"
 generationFingerprint: "35f5833aa06254a2b04e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Repeat customers fall outside a rep's memory when expected reorder timing varies by account, item family, season, and open inventory issue. For small specialty wholesalers and B2B distributors, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **the rep reviews each plausible reorder opportunity at the right time without sending irrelevant automated messages**.

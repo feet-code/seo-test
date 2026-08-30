@@ -1,0 +1,75 @@
+{
+  "id": "equine-stable-ops",
+  "name": "Equine Stable Operations",
+  "domain": null,
+  "audience": "independent boarding stables and small equestrian facilities",
+  "topic": "care requests, service schedules, and turnout exceptions for boarding stables",
+  "products": [
+    {
+      "id": "boarder-care-request",
+      "name": "Boarder Care Request Desk",
+      "product": "A focused horse boarding care request tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent boarding stables and small equestrian facilities",
+      "problem": "Owner requests for feed, turnout, blanketing, supplements, appointments, or temporary changes reach barn staff through multiple channels.",
+      "valueProposition": "Turns horse boarding care request tracking into a visible operating queue so every accepted care request has an effective window, responsible staff member, acknowledgment, and verified completion.",
+      "topic": "horse boarding care request tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets horse boarding care request tracking software, horse boarding care request tracking tracker, horse boarding care request tracking template, and horse boarding care request tracking checklist searches.",
+      "score": 88,
+      "contentBatch": "batch-005"
+    },
+    {
+      "id": "equine-service-calendar",
+      "name": "Equine Service Calendar",
+      "product": "A focused boarding stable farrier and veterinary scheduling workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent boarding stables and small equestrian facilities",
+      "problem": "Horse availability, owner approval, provider timing, handling support, records, and follow-up tasks are coordinated separately.",
+      "valueProposition": "Turns boarding stable farrier and veterinary scheduling into a visible operating queue so every outside-service appointment has current authority, horse and handler readiness, and an owned follow-up.",
+      "topic": "boarding stable farrier and veterinary scheduling",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets boarding stable farrier and veterinary scheduling software, boarding stable farrier and veterinary scheduling tracker, boarding stable farrier and veterinary scheduling template, and boarding stable farrier and veterinary scheduling checklist searches.",
+      "score": 89,
+      "contentBatch": "batch-005"
+    },
+    {
+      "id": "turnout-exception-board",
+      "name": "Turnout Exception Board",
+      "product": "A focused horse turnout and blanketing exception tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent boarding stables and small equestrian facilities",
+      "problem": "Weather, footing, herd compatibility, horse condition, equipment, and owner instructions change faster than whiteboards and group messages.",
+      "valueProposition": "Turns horse turnout and blanketing exception tracking into a visible operating queue so every daily turnout exception is visible to all affected shifts with an owner and next review.",
+      "topic": "horse turnout and blanketing exception tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets horse turnout and blanketing exception tracking software, horse turnout and blanketing exception tracking tracker, horse turnout and blanketing exception tracking template, and horse turnout and blanketing exception tracking checklist searches.",
+      "score": 82,
+      "contentBatch": "batch-005"
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused horse boarding care request tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns horse boarding care request tracking into a visible operating queue so every accepted care request has an effective window, responsible staff member, acknowledgment, and verified completion.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "equine-stable-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

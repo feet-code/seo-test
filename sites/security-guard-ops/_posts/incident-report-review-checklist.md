@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for small contract security compa
 productId: "incident-report-review"
 productName: "Incident Report Review"
 generationFingerprint: "cbd50a0261c9afadb15e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for security incident report review workflow should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for small contract security companies and guard supervisors and centers on one result: **every submitted incident report is checked for completeness, corrected with an audit trail, and delivered to authorized recipients**.

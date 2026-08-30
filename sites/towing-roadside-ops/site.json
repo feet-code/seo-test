@@ -1,0 +1,75 @@
+{
+  "id": "towing-roadside-ops",
+  "name": "Towing and Roadside Operations",
+  "domain": null,
+  "audience": "independent towing, roadside-assistance, and vehicle-storage operators",
+  "topic": "vehicle custody, releases, and third-party payment evidence for towing companies",
+  "products": [
+    {
+      "id": "vehicle-release-authorization",
+      "name": "Vehicle Release Authorization",
+      "product": "A focused towing vehicle release authorization workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent towing, roadside-assistance, and vehicle-storage operators",
+      "problem": "Ownership, lienholder direction, fees, identification, property pickup, and release authority are reviewed across calls and paper records.",
+      "valueProposition": "Turns towing vehicle release authorization into a visible operating queue so every stored vehicle leaves only after the required authority, payment decision, identity, and custody handoff are documented.",
+      "topic": "towing vehicle release authorization",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets towing vehicle release authorization software, towing vehicle release authorization tracker, towing vehicle release authorization template, and towing vehicle release authorization checklist searches.",
+      "score": 89,
+      "contentBatch": "batch-005"
+    },
+    {
+      "id": "tow-yard-inventory-reconciliation",
+      "name": "Tow Yard Inventory Reconciliation",
+      "product": "A focused tow yard vehicle inventory tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent towing, roadside-assistance, and vehicle-storage operators",
+      "problem": "Dispatch, driver drop, yard position, keys, condition, holds, and release status drift as vehicles move through storage.",
+      "valueProposition": "Turns tow yard vehicle inventory tracking into a visible operating queue so every vehicle in custody has a verified location, key state, hold status, and next action.",
+      "topic": "tow yard vehicle inventory tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets tow yard vehicle inventory tracking software, tow yard vehicle inventory tracking tracker, tow yard vehicle inventory tracking template, and tow yard vehicle inventory tracking checklist searches.",
+      "score": 82,
+      "contentBatch": "batch-005"
+    },
+    {
+      "id": "motor-club-payment-evidence",
+      "name": "Motor Club Payment Evidence",
+      "product": "A focused towing motor club invoice evidence workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent towing, roadside-assistance, and vehicle-storage operators",
+      "problem": "Authorization numbers, timestamps, mileage, service outcome, signatures, and exceptions are assembled after the job when details are difficult to recover.",
+      "valueProposition": "Turns towing motor club invoice evidence into a visible operating queue so every third-party service claim is submitted with complete contract-specific evidence or a documented exception.",
+      "topic": "towing motor club invoice evidence",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets towing motor club invoice evidence software, towing motor club invoice evidence tracker, towing motor club invoice evidence template, and towing motor club invoice evidence checklist searches.",
+      "score": 83,
+      "contentBatch": "batch-005"
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused towing vehicle release authorization workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns towing vehicle release authorization into a visible operating queue so every stored vehicle leaves only after the required authority, payment decision, identity, and custody handoff are documented.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "towing-roadside-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

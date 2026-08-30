@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for independent reside
 productId: "maintenance-triage-board"
 productName: "Maintenance Triage Board"
 generationFingerprint: "cda6aa08f72fc2c28b01"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for rental property maintenance request triage should help independent residential property managers and small property teams decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

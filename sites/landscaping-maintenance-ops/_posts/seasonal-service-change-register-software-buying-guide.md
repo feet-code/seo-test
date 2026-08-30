@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small commercial landscaping and 
 productId: "seasonal-service-change-register"
 productName: "Seasonal Service Change Register"
 generationFingerprint: "4faa0d5fd1ce16210bfc"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for seasonal landscape service change tracking should be evaluated against the operating problem, not a generic feature checklist. For small commercial landscaping and recurring property-maintenance companies, a useful trial must demonstrate this outcome: **every seasonal contract change has an effective date, customer approval, route impact, crew acknowledgment, and verified first execution**.

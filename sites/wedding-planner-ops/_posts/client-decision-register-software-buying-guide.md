@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent wedding planners and 
 productId: "client-decision-register"
 productName: "Client Decision Register"
 generationFingerprint: "5a3e4660c86159bff7c5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for wedding client decision tracking should be evaluated against the operating problem, not a generic feature checklist. For independent wedding planners and boutique planning teams, a useful trial must demonstrate this outcome: **every decision that blocks budget, design, or vendor work has one approved answer, effective version, and downstream owner**.

@@ -4,13 +4,9 @@ excerpt: "A practical record template for small day-tour, activity, and multi-da
 productId: "guide-cover-board"
 productName: "Guide Cover Board"
 generationFingerprint: "0fa8921991b544dcfe7d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful tour guide scheduling and substitution template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

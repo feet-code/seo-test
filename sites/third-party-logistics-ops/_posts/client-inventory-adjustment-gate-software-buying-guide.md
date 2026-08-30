@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small third-party logistics wareh
 productId: "client-inventory-adjustment-gate"
 productName: "Client Inventory Adjustment Gate"
 generationFingerprint: "95e32539c7fb3d380205"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for 3PL client inventory adjustment approval should be evaluated against the operating problem, not a generic feature checklist. For small third-party logistics warehouses and fulfillment operators, a useful trial must demonstrate this outcome: **every material inventory adjustment is evidenced, approved to client rules, posted once, and communicated with downstream impact**.

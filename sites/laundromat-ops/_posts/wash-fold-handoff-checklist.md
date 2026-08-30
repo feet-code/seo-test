@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent laundromats offer
 productId: "wash-fold-handoff"
 productName: "Wash-Fold Handoff"
 generationFingerprint: "f4f223f52d162f2598e3"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for laundromat wash dry fold order tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent laundromats offering self-service and wash-dry-fold and centers on one result: **every wash-dry-fold order preserves customer instructions and bag identity through processing, assembly, quality check, payment, and authorized release**.

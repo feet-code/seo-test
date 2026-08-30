@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for freelancers and independent prof
 productId: "invoice-followup-queue"
 productName: "Invoice Follow-Up Queue"
 generationFingerprint: "65fd2a0562f039ff399c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Payment reminders depend on memory, while invoice delivery, client questions, promises, disputes, and next actions remain scattered. For freelancers and independent professional service businesses, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every unpaid invoice has a professional next action, documented client context, and clear resolution**.

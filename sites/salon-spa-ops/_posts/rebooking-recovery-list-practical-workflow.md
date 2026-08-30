@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent salons, spas, and sm
 productId: "rebooking-recovery-list"
 productName: "Rebooking Recovery List"
 generationFingerprint: "ab96ed6ebb0acff2ea3b"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Clients who leave without a next appointment disappear into broad marketing lists even when the provider knows the right return window and service context. For independent salons, spas, and small wellness studios, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every eligible client receives a timely, contextual rebooking option or a documented no-contact reason**.

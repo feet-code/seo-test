@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small nonprofit direct-service a
 productId: "grant-evidence-organizer"
 productName: "Grant Evidence Organizer"
 generationFingerprint: "9ec3bc43665b6698ccc5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Teams reconstruct grant reports from folders and spreadsheets because evidence is not linked to the reporting question, period, program, source, and reviewer. For small nonprofit direct-service and program teams, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **each reporting statement can be traced to reviewed, appropriately handled evidence for the correct period and program**.

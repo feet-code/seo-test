@@ -4,13 +4,9 @@ excerpt: "A practical record template for small wineries running direct-to-consu
 productId: "club-pickup-reconciliation"
 productName: "Club Pickup Reconciliation"
 generationFingerprint: "ffe2a2bb9cb2473b88e9"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful wine club pickup order tracking template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for small day-tour, ac
 productId: "departure-manifest-readiness"
 productName: "Departure Manifest Readiness"
 generationFingerprint: "4a28ef7a420668ca3deb"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for tour departure manifest readiness should help small day-tour, activity, and multi-day tour operators decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

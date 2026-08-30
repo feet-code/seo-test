@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for independent veteri
 productId: "treatment-followup-queue"
 productName: "Treatment Follow-Up Queue"
 generationFingerprint: "09608c54caa55cf366b7"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for veterinary client treatment follow-up tracking should help independent veterinary clinics and small client-service teams decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

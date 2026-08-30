@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent veterinary clinics an
 productId: "treatment-followup-queue"
 productName: "Treatment Follow-Up Queue"
 generationFingerprint: "09608c54caa55cf366b7"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for veterinary client treatment follow-up tracking should be evaluated against the operating problem, not a generic feature checklist. For independent veterinary clinics and small client-service teams, a useful trial must demonstrate this outcome: **every clinician-requested follow-up reaches the client, records the response, and routes concerns back to the care team**.

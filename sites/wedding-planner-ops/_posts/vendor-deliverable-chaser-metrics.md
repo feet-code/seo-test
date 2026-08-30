@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for independent weddin
 productId: "vendor-deliverable-chaser"
 productName: "Vendor Deliverable Chaser"
 generationFingerprint: "5ecb5b5b09f9d15a6861"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for wedding vendor deliverable tracking should help independent wedding planners and boutique planning teams decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

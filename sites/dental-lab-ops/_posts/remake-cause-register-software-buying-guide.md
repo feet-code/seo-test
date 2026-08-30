@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent dental laboratories s
 productId: "remake-cause-register"
 productName: "Remake Cause Register"
 generationFingerprint: "5cd7ad53a59d21d6612f"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for dental laboratory remake cause tracking should be evaluated against the operating problem, not a generic feature checklist. For independent dental laboratories serving local dental practices, a useful trial must demonstrate this outcome: **every remake receives a respectful evidence-based operational review, explicit responsibility and commercial treatment, and a prevention action when warranted**.

@@ -4,13 +4,9 @@ excerpt: "Three realistic workflow test cases for owner-operated HVAC, plumbing,
 productId: "estimate-followup-queue"
 productName: "Estimate Follow-Up Queue"
 generationFingerprint: "4eac085b965fb228f523"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Examples make contractor estimate follow-up and quote tracking easier to design because they reveal where a neat diagram meets messy work. The scenarios below are not claims about a particular company; they are test cases owner-operated HVAC, plumbing, electrical, and repair contractors can run against a template or software trial.

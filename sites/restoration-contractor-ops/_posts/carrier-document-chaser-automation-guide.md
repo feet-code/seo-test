@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for small water, fire, and property-re
 productId: "carrier-document-chaser"
 productName: "Carrier Document Chaser"
 generationFingerprint: "3755d85ce6576efa4f10"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for restoration insurance document tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For small water, fire, and property-restoration contractors, the target outcome is **every carrier document request has a defined artifact, owner, submitted version, acknowledgment, and resolved response**.

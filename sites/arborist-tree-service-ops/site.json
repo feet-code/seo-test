@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets tree service job checklist, arborist permit tracker, tree removal job readiness, and tree crew work packet searches.",
-      "score": 89
+      "score": 89,
+      "contentBatch": "batch-004"
     },
     {
       "id": "tree-job-closeout",
@@ -31,7 +32,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets tree service completion checklist, tree removal cleanup, stump grinding follow up, and arborist job closeout searches.",
-      "score": 86
+      "score": 86,
+      "contentBatch": "batch-004"
     }
   ],
   "articlesPerProduct": 10,
@@ -40,12 +42,7 @@
   "valueProposition": "Turns tree service permit utility and site readiness into a visible operating queue so every tree job is released only with site-specific scope, permissions, hazards, equipment, and access verified for the assigned crew.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent restaurants and small
 productId: "prep-shortage-recovery"
 productName: "Prep Shortage Recovery"
 generationFingerprint: "677d447bf38ddb9c54dc"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for restaurant prep shortage tracking should be evaluated against the operating problem, not a generic feature checklist. For independent restaurants and small multi-location restaurant groups, a useful trial must demonstrate this outcome: **every service-impacting prep shortage has a quantified gap, approved response, owner, and communicated menu consequence**.

@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for independent sign s
 productId: "install-readiness-board"
 productName: "Install Readiness Board"
 generationFingerprint: "2327a8a9aba184fc0b0d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for sign installation readiness tracking should help independent sign shops, commercial printers, and display fabricators decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

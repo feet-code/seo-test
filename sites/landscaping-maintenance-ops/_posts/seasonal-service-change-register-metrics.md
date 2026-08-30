@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for small commercial l
 productId: "seasonal-service-change-register"
 productName: "Seasonal Service Change Register"
 generationFingerprint: "4faa0d5fd1ce16210bfc"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for seasonal landscape service change tracking should help small commercial landscaping and recurring property-maintenance companies decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

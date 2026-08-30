@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent veterinary clinics and
 productId: "lab-callback-board"
 productName: "Lab Callback Board"
 generationFingerprint: "62c551b50d74d3638e9b"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Result availability, clinician review, and client communication are separate events, so staff can see a result without knowing whether the owner was actually informed. The recurring failures are usually process-design problems rather than motivation problems. For independent veterinary clinics and small client-service teams, these are the mistakes worth finding before buying or building software.

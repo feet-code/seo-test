@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent self-storage facilit
 productId: "unit-turn-readiness"
 productName: "Unit Turn Readiness"
 generationFingerprint: "89066ee4c605764d0286"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A vacated unit can remain unrentable because final access, inspection, cleaning, damage, billing, and availability updates do not close as one workflow. For independent self-storage facilities and small multi-site operators, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every vacated unit is inspected, cleared, reconciled, and published as rentable or held with a named reason**.

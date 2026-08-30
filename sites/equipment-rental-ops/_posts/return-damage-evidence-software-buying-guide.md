@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent equipment, tool, and 
 productId: "return-damage-evidence"
 productName: "Return Damage Evidence"
 generationFingerprint: "4d1fad183504ccf15a47"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for equipment rental return damage documentation should be evaluated against the operating problem, not a generic feature checklist. For independent equipment, tool, and event-rental businesses, a useful trial must demonstrate this outcome: **every returned asset is inspected against checkout evidence and any damage decision is documented before billing or release**.

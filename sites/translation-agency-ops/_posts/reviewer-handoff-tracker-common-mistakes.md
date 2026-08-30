@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for boutique translation agencies and 
 productId: "reviewer-handoff-tracker"
 productName: "Reviewer Handoff Tracker"
 generationFingerprint: "25f5d2324479f33454ce"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Files move among translator, editor, subject reviewer, client, and production teams without a consistent package, version, acceptance, or returned-comment record. The recurring failures are usually process-design problems rather than motivation problems. For boutique translation agencies and localization project teams, these are the mistakes worth finding before buying or building software.

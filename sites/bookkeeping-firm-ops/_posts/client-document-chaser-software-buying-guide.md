@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small bookkeeping firms and clien
 productId: "client-document-chaser"
 productName: "Client Document Chaser"
 generationFingerprint: "97a6b66f05fef5e0096c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for bookkeeping client document collection and reminder tracking should be evaluated against the operating problem, not a generic feature checklist. For small bookkeeping firms and client accounting service teams, a useful trial must demonstrate this outcome: **the firm receives usable client inputs early enough to complete the agreed recurring work**.

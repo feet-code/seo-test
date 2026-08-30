@@ -4,13 +4,9 @@ excerpt: "A practical record template for independent restaurants and small mult
 productId: "manager-shift-handoff"
 productName: "Manager Shift Handoff"
 generationFingerprint: "08a0cbe60f3c1131ad16"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful restaurant manager shift handoff tracking template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

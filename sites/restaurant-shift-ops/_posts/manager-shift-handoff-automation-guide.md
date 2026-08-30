@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent restaurants and small 
 productId: "manager-shift-handoff"
 productName: "Manager Shift Handoff"
 generationFingerprint: "08a0cbe60f3c1131ad16"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for restaurant manager shift handoff tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent restaurants and small multi-location restaurant groups, the target outcome is **every unresolved shift issue transfers with impact, owner, next action, due time, and explicit acceptance by the next manager**.

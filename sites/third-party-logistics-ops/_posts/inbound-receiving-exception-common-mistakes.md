@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small third-party logistics wareho
 productId: "inbound-receiving-exception"
 productName: "Inbound Receiving Exception"
 generationFingerprint: "b31d31abcf80b6fd60e5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Unexpected arrivals, missing ASNs, wrong labels, damaged cartons, quantity differences, and unknown SKUs block dock-to-stock work while clients and warehouses exchange evidence. The recurring failures are usually process-design problems rather than motivation problems. For small third-party logistics warehouses and fulfillment operators, these are the mistakes worth finding before buying or building software.

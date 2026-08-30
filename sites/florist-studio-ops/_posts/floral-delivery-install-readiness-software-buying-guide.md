@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent retail, delivery, and
 productId: "floral-delivery-install-readiness"
 productName: "Floral Delivery and Install Readiness"
 generationFingerprint: "051a70dad523e86765f0"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for florist delivery and event installation readiness should be evaluated against the operating problem, not a generic feature checklist. For independent retail, delivery, and event floral studios, a useful trial must demonstrate this outcome: **every delivery or installation departs with complete counted product, compatible transport, confirmed access, assigned crew, and proof requirements**.

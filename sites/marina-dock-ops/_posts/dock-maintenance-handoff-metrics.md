@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for independent marina
 productId: "dock-maintenance-handoff"
 productName: "Dock Maintenance Handoff"
 generationFingerprint: "097bcd7ad5519c7367a0"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for marina dock maintenance handoff should help independent marinas, yacht clubs, and small dock operations decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

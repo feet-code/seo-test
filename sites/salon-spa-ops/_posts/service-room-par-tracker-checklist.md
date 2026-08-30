@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent salons, spas, and
 productId: "service-room-par-tracker"
 productName: "Service Room Par Tracker"
 generationFingerprint: "485ef056754c91568324"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for salon and spa room inventory par tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent salons, spas, and small wellness studios and centers on one result: **each service room is replenished to an agreed par before its next booked service without hiding inventory variance**.

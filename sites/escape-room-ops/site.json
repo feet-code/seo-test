@@ -1,0 +1,60 @@
+{
+  "id": "escape-room-ops",
+  "name": "Escape Room Operations",
+  "domain": null,
+  "audience": "independent escape-room venues and small multi-room operators",
+  "topic": "room resets and group arrival readiness for escape rooms",
+  "products": [
+    {
+      "id": "escape-room-reset-check",
+      "name": "Escape Room Reset Check",
+      "product": "A focused escape room reset verification workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent escape-room venues and small multi-room operators",
+      "problem": "High-volume turnovers depend on memory for props, locks, electronics, consumables, clue states, and damage exceptions.",
+      "valueProposition": "Turns escape room reset verification into a visible operating queue so every room is released only after a second verifiable reset check or an explicit attraction closure.",
+      "topic": "escape room reset verification",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets escape room reset verification software, escape room reset verification tracker, escape room reset verification template, and escape room reset verification checklist searches.",
+      "score": 85,
+      "contentBatch": "batch-005"
+    },
+    {
+      "id": "group-arrival-readiness",
+      "name": "Group Arrival Readiness",
+      "product": "A focused escape room group arrival and waiver readiness workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent escape-room venues and small multi-room operators",
+      "problem": "Headcount, minors, waivers, room choice, language needs, accessibility notes, lateness, and payment changes converge at check-in.",
+      "valueProposition": "Turns escape room group arrival and waiver readiness into a visible operating queue so every group starts with current attendance, required acknowledgments, payment state, and briefing needs confirmed.",
+      "topic": "escape room group arrival and waiver readiness",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets escape room group arrival and waiver readiness software, escape room group arrival and waiver readiness tracker, escape room group arrival and waiver readiness template, and escape room group arrival and waiver readiness checklist searches.",
+      "score": 86,
+      "contentBatch": "batch-005"
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused escape room reset verification workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns escape room reset verification into a visible operating queue so every room is released only after a second verifiable reset check or an explicit attraction closure.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "escape-room-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

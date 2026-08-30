@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for small commercial landscaping 
 productId: "enhancement-approval-desk"
 productName: "Enhancement Approval Desk"
 generationFingerprint: "e7c620226846f251ad79"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for landscape enhancement proposal approval tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for small commercial landscaping and recurring property-maintenance companies and centers on one result: **every qualified enhancement request reaches a priced customer decision with field context, scope assumptions, and a scheduled or closed next action**.

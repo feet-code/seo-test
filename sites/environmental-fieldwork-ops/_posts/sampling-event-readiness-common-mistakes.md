@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small environmental consulting and
 productId: "sampling-event-readiness"
 productName: "Sampling Event Readiness"
 generationFingerprint: "4a05807fcb6753f210e2"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A field team mobilizes with an outdated plan, wrong containers or preservatives, missing labels, expired calibration, incomplete access or utility clearances, unsuitable shipping, or an unconfirmed laboratory window. The recurring failures are usually process-design problems rather than motivation problems. For small environmental consulting and field-sampling teams, these are the mistakes worth finding before buying or building software.

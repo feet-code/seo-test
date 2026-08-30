@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent cohort-course creators
 productId: "learner-intervention-queue"
 productName: "Learner Intervention Queue"
 generationFingerprint: "a42ae3cb43c757eb4877"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for cohort course learner engagement and intervention tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent cohort-course creators and small training businesses, the target outcome is **learners who may need support receive timely, respectful outreach tied to a concrete next step**.

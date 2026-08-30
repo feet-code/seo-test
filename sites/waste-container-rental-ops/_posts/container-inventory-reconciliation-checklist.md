@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for small roll-off dumpster and c
 productId: "container-inventory-reconciliation"
 productName: "Container Inventory Reconciliation"
 generationFingerprint: "22ba130e6b546eced140"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for roll off container inventory reconciliation should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for small roll-off dumpster and commercial waste-container rental companies and centers on one result: **every container has one verified physical location, service state, billing relationship, and next movement or review time**.

@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets wedding vendor checklist, vendor deliverable tracker, wedding planner deadline template, and wedding vendor follow up searches.",
-      "score": 87
+      "score": 87,
+      "contentBatch": "batch-002"
     },
     {
       "id": "client-decision-register",
@@ -31,7 +32,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets wedding decision tracker, client approval log wedding, wedding planning decisions, and wedding sign off template searches.",
-      "score": 83
+      "score": 83,
+      "contentBatch": "batch-002"
     }
   ],
   "articlesPerProduct": 10,
@@ -40,12 +42,7 @@
   "valueProposition": "Turns wedding vendor deliverable tracking into a visible operating queue so every contracted vendor deliverable is received, reviewed, and reflected in the current wedding plan before its dependency date.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

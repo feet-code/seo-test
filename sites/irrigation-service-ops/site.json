@@ -1,0 +1,60 @@
+{
+  "id": "irrigation-service-ops",
+  "name": "Irrigation Service Operations",
+  "domain": null,
+  "audience": "independent irrigation maintenance and repair companies",
+  "topic": "system mapping and seasonal service transitions for irrigation routes",
+  "products": [
+    {
+      "id": "irrigation-zone-map-desk",
+      "name": "Irrigation Zone Map Desk",
+      "product": "A focused irrigation zone map correction workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent irrigation maintenance and repair companies",
+      "problem": "Controller labels, valve locations, plant areas, and field behavior diverge over time, so each technician rediscovers the system differently.",
+      "valueProposition": "Turns irrigation zone map correction into a visible operating queue so every discovered zone discrepancy becomes a verified shared map update with evidence and an effective date.",
+      "topic": "irrigation zone map correction",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets irrigation zone map correction software, irrigation zone map correction tracker, irrigation zone map correction template, and irrigation zone map correction checklist searches.",
+      "score": 88,
+      "contentBatch": "batch-005"
+    },
+    {
+      "id": "seasonal-irrigation-transition",
+      "name": "Seasonal Irrigation Transition",
+      "product": "A focused irrigation startup and winterization tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent irrigation maintenance and repair companies",
+      "problem": "Startup and winterization work spans access, controller state, backflow or supply status, zone checks, repairs, and customer decisions across many properties.",
+      "valueProposition": "Turns irrigation startup and winterization tracking into a visible operating queue so every seasonal transition is completed, exceptioned, or rescheduled with property-specific evidence.",
+      "topic": "irrigation startup and winterization tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets irrigation startup and winterization tracking software, irrigation startup and winterization tracking tracker, irrigation startup and winterization tracking template, and irrigation startup and winterization tracking checklist searches.",
+      "score": 89,
+      "contentBatch": "batch-005"
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused irrigation zone map correction workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns irrigation zone map correction into a visible operating queue so every discovered zone discrepancy becomes a verified shared map update with evidence and an effective date.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "irrigation-service-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

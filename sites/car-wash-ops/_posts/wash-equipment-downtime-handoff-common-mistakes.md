@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent express, tunnel, and m
 productId: "wash-equipment-downtime-handoff"
 productName: "Wash Equipment Downtime Handoff"
 generationFingerprint: "21c57d543214b71eadb3"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A conveyor, pump, arch, pay station, dryer, reclaim system, or bay can remain degraded across shifts while containment, vendor response, parts, customer impact, and return-to-service testing live in separate messages. The recurring failures are usually process-design problems rather than motivation problems. For independent express, tunnel, and multi-bay car wash operators, these are the mistakes worth finding before buying or building software.

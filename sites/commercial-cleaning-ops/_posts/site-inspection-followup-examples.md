@@ -4,13 +4,9 @@ excerpt: "Three realistic workflow test cases for owner-operated commercial clea
 productId: "site-inspection-followup"
 productName: "Site Inspection Follow-Up"
 generationFingerprint: "c638d2a6d6abae7a6499"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Examples make commercial cleaning inspection corrective action tracking easier to design because they reveal where a neat diagram meets messy work. The scenarios below are not claims about a particular company; they are test cases owner-operated commercial cleaning and janitorial companies can run against a template or software trial.

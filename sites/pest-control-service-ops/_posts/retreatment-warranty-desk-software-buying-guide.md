@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent pest control companie
 productId: "retreatment-warranty-desk"
 productName: "Retreatment Warranty Desk"
 generationFingerprint: "3c4d36c875a6184352c0"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:22Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for pest control callback and retreatment tracking should be evaluated against the operating problem, not a generic feature checklist. For independent pest control companies and small recurring-service teams, a useful trial must demonstrate this outcome: **every callback is classified against the service agreement, routed with prior evidence, and closed only after the promised resolution is verified**.

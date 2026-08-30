@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small environmental consulting an
 productId: "custody-exception-desk"
 productName: "Custody Exception Desk"
 generationFingerprint: "0c01731d2898bf890584"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for environmental chain of custody exception tracking should be evaluated against the operating problem, not a generic feature checklist. For small environmental consulting and field-sampling teams, a useful trial must demonstrate this outcome: **every custody discrepancy is contained, reviewed by qualified personnel, linked to affected samples, and resolved without rewriting original evidence**.

@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small creative, design, and digi
 productId: "client-asset-chaser"
 productName: "Client Asset Chaser"
 generationFingerprint: "6769802ceb38c88597d6"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Teams repeatedly ask for missing client inputs without a shared definition of what is complete, which blocks delivery while making the agency look late. For small creative, design, and digital agencies, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **the agency receives usable client inputs by the date required for the dependent deliverable**.

@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent retail, delivery, an
 productId: "floral-delivery-install-readiness"
 productName: "Floral Delivery and Install Readiness"
 generationFingerprint: "051a70dad523e86765f0"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Orders leave with incomplete arrangements, missing rentals, wrong vehicle conditions, uncertain venue access, no onsite contact, or an installation sequence that conflicts with event timing. For independent retail, delivery, and event floral studios, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every delivery or installation departs with complete counted product, compatible transport, confirmed access, assigned crew, and proof requirements**.

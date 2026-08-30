@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for independent sign s
 productId: "proof-approval-queue"
 productName: "Proof Approval Queue"
 generationFingerprint: "d891422e2919df4cfa96"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for print and sign proof approval tracking should help independent sign shops, commercial printers, and display fabricators decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

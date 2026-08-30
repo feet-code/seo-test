@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent caterers and smal
 productId: "event-change-cutoff-log"
 productName: "Event Change Cutoff Log"
 generationFingerprint: "c1bfee0a3ba17324e05f"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for catering event change control should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent caterers and small event-food teams and centers on one result: **every accepted event change has authority, cost and production impact, an effective version, and acknowledgment from affected owners**.

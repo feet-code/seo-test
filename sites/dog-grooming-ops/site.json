@@ -1,0 +1,60 @@
+{
+  "id": "dog-grooming-ops",
+  "name": "Dog Grooming Operations",
+  "domain": null,
+  "audience": "independent dog groomers and small grooming salons",
+  "topic": "service authorization and pickup handoffs for dog grooming",
+  "products": [
+    {
+      "id": "grooming-service-authorization",
+      "name": "Grooming Service Authorization",
+      "product": "A focused dog grooming service authorization workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent dog groomers and small grooming salons",
+      "problem": "Coat condition, requested style, sensitivities, handling notes, add-ons, price changes, and owner expectations are established across conversations.",
+      "valueProposition": "Turns dog grooming service authorization into a visible operating queue so every grooming visit begins with an agreed service scope, current pet notes, and a documented exception path.",
+      "topic": "dog grooming service authorization",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets dog grooming service authorization software, dog grooming service authorization tracker, dog grooming service authorization template, and dog grooming service authorization checklist searches.",
+      "score": 84,
+      "contentBatch": "batch-005"
+    },
+    {
+      "id": "grooming-pickup-handoff",
+      "name": "Grooming Pickup Handoff",
+      "product": "A focused dog grooming pickup and aftercare handoff workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent dog groomers and small grooming salons",
+      "problem": "Completion time, final charges, aftercare notes, observed concerns, pickup authority, and late pickup plans can be missed during busy handoffs.",
+      "valueProposition": "Turns dog grooming pickup and aftercare handoff into a visible operating queue so every completed groom has a clear pickup owner, current total, relevant handoff notes, and verified collection.",
+      "topic": "dog grooming pickup and aftercare handoff",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets dog grooming pickup and aftercare handoff software, dog grooming pickup and aftercare handoff tracker, dog grooming pickup and aftercare handoff template, and dog grooming pickup and aftercare handoff checklist searches.",
+      "score": 85,
+      "contentBatch": "batch-005"
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused dog grooming service authorization workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns dog grooming service authorization into a visible operating queue so every grooming visit begins with an agreed service scope, current pet notes, and a documented exception path.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "dog-grooming-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

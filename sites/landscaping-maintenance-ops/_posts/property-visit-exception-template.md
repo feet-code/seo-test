@@ -4,13 +4,9 @@ excerpt: "A practical record template for small commercial landscaping and recur
 productId: "property-visit-exception"
 productName: "Property Visit Exception"
 generationFingerprint: "74b5353a963af3660cfa"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful landscape maintenance visit exception tracking template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

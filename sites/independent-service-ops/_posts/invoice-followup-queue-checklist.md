@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for freelancers and independent p
 productId: "invoice-followup-queue"
 productName: "Invoice Follow-Up Queue"
 generationFingerprint: "65fd2a0562f039ff399c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for freelancer invoice follow-up and overdue payment reminders should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for freelancers and independent professional service businesses and centers on one result: **every unpaid invoice has a professional next action, documented client context, and clear resolution**.

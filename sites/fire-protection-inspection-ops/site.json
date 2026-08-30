@@ -1,0 +1,75 @@
+{
+  "id": "fire-protection-inspection-ops",
+  "name": "Fire Protection Inspection Operations",
+  "domain": null,
+  "audience": "small fire-alarm, sprinkler, extinguisher, and life-safety inspection contractors",
+  "topic": "inspection deficiencies, evidence, and site readiness for fire-protection contractors",
+  "products": [
+    {
+      "id": "fire-deficiency-resolution",
+      "name": "Fire Deficiency Resolution Desk",
+      "product": "A focused fire protection inspection deficiency tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "small fire-alarm, sprinkler, extinguisher, and life-safety inspection contractors",
+      "problem": "Deficiencies leave inspection reports but estimates, approvals, repair scheduling, retest evidence, and final documentation are handled in separate systems.",
+      "valueProposition": "Turns fire protection inspection deficiency tracking into a visible operating queue so every recorded deficiency reaches an authorized resolution, verified retest, or documented customer decision.",
+      "topic": "fire protection inspection deficiency tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets fire protection inspection deficiency tracking software, fire protection inspection deficiency tracking tracker, fire protection inspection deficiency tracking template, and fire protection inspection deficiency tracking checklist searches.",
+      "score": 82,
+      "contentBatch": "batch-005"
+    },
+    {
+      "id": "inspection-tag-report-reconciliation",
+      "name": "Inspection Tag and Report Reconciliation",
+      "product": "A focused fire inspection tag and report reconciliation workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "small fire-alarm, sprinkler, extinguisher, and life-safety inspection contractors",
+      "problem": "Field tags, device results, technician notes, customer reports, and billing records can disagree after a multi-system inspection.",
+      "valueProposition": "Turns fire inspection tag and report reconciliation into a visible operating queue so every completed inspection has a consistent evidence package before customer release.",
+      "topic": "fire inspection tag and report reconciliation",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets fire inspection tag and report reconciliation software, fire inspection tag and report reconciliation tracker, fire inspection tag and report reconciliation template, and fire inspection tag and report reconciliation checklist searches.",
+      "score": 83,
+      "contentBatch": "batch-005"
+    },
+    {
+      "id": "life-safety-site-readiness",
+      "name": "Life-Safety Site Readiness",
+      "product": "A focused fire protection inspection site readiness workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "small fire-alarm, sprinkler, extinguisher, and life-safety inspection contractors",
+      "problem": "Inspections lose time when representatives, keys, panel access, testing notices, shutdown coordination, or prior records are unavailable onsite.",
+      "valueProposition": "Turns fire protection inspection site readiness into a visible operating queue so every inspection starts with access, contacts, notices, records, and coordination requirements confirmed.",
+      "topic": "fire protection inspection site readiness",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets fire protection inspection site readiness software, fire protection inspection site readiness tracker, fire protection inspection site readiness template, and fire protection inspection site readiness checklist searches.",
+      "score": 84,
+      "contentBatch": "batch-005"
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused fire protection inspection deficiency tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns fire protection inspection deficiency tracking into a visible operating queue so every recorded deficiency reaches an authorized resolution, verified retest, or documented customer decision.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "fire-protection-inspection-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

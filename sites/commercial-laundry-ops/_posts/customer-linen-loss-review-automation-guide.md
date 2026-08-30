@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for small commercial laundries and lin
 productId: "customer-linen-loss-review"
 productName: "Customer Linen Loss Review"
 generationFingerprint: "e4518ada35eca977510d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for commercial laundry linen loss and replacement tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For small commercial laundries and linen or uniform rental services, the target outcome is **every material textile-loss difference is reconstructed, reviewed with the customer, and resolved to count correction, replacement, charge, or process action**.

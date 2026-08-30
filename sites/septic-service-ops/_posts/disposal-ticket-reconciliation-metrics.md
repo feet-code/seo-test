@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for small septic pumpi
 productId: "disposal-ticket-reconciliation"
 productName: "Disposal Ticket Reconciliation"
 generationFingerprint: "319f2a94a04dacc4627c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for septic disposal ticket and pump record reconciliation should help small septic pumping, inspection, and liquid-waste service companies decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

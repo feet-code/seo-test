@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent self-storage facilit
 productId: "delinquency-promise-board"
 productName: "Delinquency Promise Board"
 generationFingerprint: "e6792f9ff583a53ae077"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Payment reminders, tenant promises, access changes, policy milestones, and manager exceptions are recorded in different places, making the next compliant action hard to see. For independent self-storage facilities and small multi-site operators, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every delinquent account has a policy-based next action, documented tenant response, and verified stop condition**.

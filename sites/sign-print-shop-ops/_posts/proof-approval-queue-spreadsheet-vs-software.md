@@ -4,13 +4,9 @@ excerpt: "A spreadsheet-versus-software decision guide for independent sign shop
 productId: "proof-approval-queue"
 productName: "Proof Approval Queue"
 generationFingerprint: "d891422e2919df4cfa96"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A spreadsheet is often the right first implementation for print and sign proof approval tracking. It is cheap, editable, and forces the team to define the workflow. The question is not whether spreadsheets are good or bad; it is when coordination costs become larger than the flexibility is worth.

@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for owner-operated HVAC, plumbing, e
 productId: "job-photo-handoff"
 productName: "Job Photo Handoff"
 generationFingerprint: "bd22fa439fee0cbce6b8"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Job photos remain on technicians' phones or in group chat without labels, making office review, invoicing, warranty response, and customer updates harder. For owner-operated HVAC, plumbing, electrical, and repair contractors, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **the office receives a job-linked, labeled photo record that is sufficient for the next billing, customer, or service decision**.

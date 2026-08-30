@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent tailoring, alteration,
 productId: "fitting-decision-register"
 productName: "Fitting Decision Register"
 generationFingerprint: "ef160cc1f1d9a8aef4c5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Pin changes, customer fit comments, garment posture, measurements, promised date, added work, and price decisions from successive fittings can overwrite or contradict one another. The recurring failures are usually process-design problems rather than motivation problems. For independent tailoring, alteration, and garment-repair shops, these are the mistakes worth finding before buying or building software.

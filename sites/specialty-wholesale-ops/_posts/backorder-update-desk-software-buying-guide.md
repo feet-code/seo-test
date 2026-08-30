@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small specialty wholesalers and B
 productId: "backorder-update-desk"
 productName: "Backorder Update Desk"
 generationFingerprint: "63247f236e78f65404cf"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for wholesale backorder customer update tracking should be evaluated against the operating problem, not a generic feature checklist. For small specialty wholesalers and B2B distributors, a useful trial must demonstrate this outcome: **every affected customer receives an accurate update and explicit option before a missed promise becomes a surprise**.

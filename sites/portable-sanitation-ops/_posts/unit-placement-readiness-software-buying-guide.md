@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for portable restroom rental and recu
 productId: "unit-placement-readiness"
 productName: "Unit Placement Readiness"
 generationFingerprint: "b8ccd4dd7c4523946a7e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for portable restroom delivery placement readiness should be evaluated against the operating problem, not a generic feature checklist. For portable restroom rental and recurring sanitation service operators, a useful trial must demonstrate this outcome: **every delivery is released with the correct units, approved placement evidence, safe access, onsite contact, and recurring-service clearance**.

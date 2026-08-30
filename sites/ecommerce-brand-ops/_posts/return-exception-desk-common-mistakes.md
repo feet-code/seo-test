@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small direct-to-consumer ecommerce
 productId: "return-exception-desk"
 productName: "Return Exception Desk"
 generationFingerprint: "24ac7b877c2f24ae51c1"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Returns that fall outside the happy path—missing scans, partial kits, damaged items, late arrivals, or disputed refunds—move between support, warehouse, and finance without one decision record. The recurring failures are usually process-design problems rather than motivation problems. For small direct-to-consumer ecommerce brands and lean operations teams, these are the mistakes worth finding before buying or building software.

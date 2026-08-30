@@ -4,13 +4,9 @@ excerpt: "A spreadsheet-versus-software decision guide for small architecture fi
 productId: "rfi-decision-register"
 productName: "RFI Decision Register"
 generationFingerprint: "47b7db28daa17a0bd8ea"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A spreadsheet is often the right first implementation for architectural RFI decision tracking. It is cheap, editable, and forces the team to define the workflow. The question is not whether spreadsheets are good or bad; it is when coordination costs become larger than the flexibility is worth.

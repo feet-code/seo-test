@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets theater rehearsal scheduling, cast availability tracker, community theater software, and rehearsal conflict management searches.",
-      "score": 86
+      "score": 86,
+      "contentBatch": "batch-004"
     },
     {
       "id": "production-asset-return",
@@ -31,7 +32,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets theater prop tracking, costume inventory software, community theater asset checkout, and theater strike checklist searches.",
-      "score": 87
+      "score": 87,
+      "contentBatch": "batch-004"
     }
   ],
   "articlesPerProduct": 10,
@@ -40,12 +42,7 @@
   "valueProposition": "Turns community theater rehearsal conflict tracking into a visible operating queue so every material rehearsal conflict is resolved against scene and role dependencies, published as one current schedule, and acknowledged by affected participants.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

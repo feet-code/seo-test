@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small contract security companie
 productId: "post-order-acknowledgment"
 productName: "Post Order Acknowledgment"
 generationFingerprint: "f7163fd1339cb8493076"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Updated post orders may sit in binders, messages, or portals without proof that every assigned guard received the effective instructions before the shift. For small contract security companies and guard supervisors, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every guard assigned to a post acknowledges the effective order and required briefing before working under it**.

@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small wholesale and direct-store-
 productId: "route-shortage-recovery"
 productName: "Route Shortage Recovery"
 generationFingerprint: "44ab9b35c23816f39c60"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for wholesale bakery delivery shortage recovery should be evaluated against the operating problem, not a generic feature checklist. For small wholesale and direct-store-delivery bakeries, a useful trial must demonstrate this outcome: **every delivery shortage has a quantified gap, product disposition, account-specific decision, route communication, and billing reconciliation**.

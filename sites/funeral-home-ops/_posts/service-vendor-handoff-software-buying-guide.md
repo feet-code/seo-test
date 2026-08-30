@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent funeral homes and sma
 productId: "service-vendor-handoff"
 productName: "Service Vendor Handoff"
 generationFingerprint: "b296f4c835478543abb7"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for funeral service vendor and facility handoff tracking should be evaluated against the operating problem, not a generic feature checklist. For independent funeral homes and small death-care service teams, a useful trial must demonstrate this outcome: **every external service commitment has current instructions, accountable contacts, accepted timing, change history, and verified completion**.

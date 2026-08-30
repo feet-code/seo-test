@@ -4,13 +4,9 @@ excerpt: "Three realistic workflow test cases for independent marinas, yacht clu
 productId: "dock-maintenance-handoff"
 productName: "Dock Maintenance Handoff"
 generationFingerprint: "097bcd7ad5519c7367a0"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Examples make marina dock maintenance handoff easier to design because they reveal where a neat diagram meets messy work. The scenarios below are not claims about a particular company; they are test cases independent marinas, yacht clubs, and small dock operations can run against a template or software trial.

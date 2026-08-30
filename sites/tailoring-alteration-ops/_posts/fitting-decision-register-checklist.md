@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent tailoring, altera
 productId: "fitting-decision-register"
 productName: "Fitting Decision Register"
 generationFingerprint: "ef160cc1f1d9a8aef4c5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for tailoring fitting change approval tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent tailoring, alteration, and garment-repair shops and centers on one result: **every fitting produces an agreed current alteration plan, price or date consequence, garment marking reference, and next checkpoint**.

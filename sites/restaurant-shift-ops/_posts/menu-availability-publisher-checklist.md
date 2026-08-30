@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent restaurants and s
 productId: "menu-availability-publisher"
 productName: "Menu Availability Publisher"
 generationFingerprint: "cef19eb8d1d46b337eed"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for restaurant 86 list and menu availability tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent restaurants and small multi-location restaurant groups and centers on one result: **every availability change is approved, published to all intended channels, acknowledged by service staff, and reversed only after supply is verified**.

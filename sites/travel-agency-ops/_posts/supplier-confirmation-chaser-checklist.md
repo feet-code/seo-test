@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent travel advisors a
 productId: "supplier-confirmation-chaser"
 productName: "Supplier Confirmation Chaser"
 generationFingerprint: "09752f454ad1a001134f"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for travel supplier confirmation tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent travel advisors and boutique travel agencies and centers on one result: **every itinerary component has a supplier confirmation, matching terms, and an owner for unresolved differences**.

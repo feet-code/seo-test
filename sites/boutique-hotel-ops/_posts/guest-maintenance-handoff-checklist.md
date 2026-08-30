@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent boutique hotels a
 productId: "guest-maintenance-handoff"
 productName: "Guest Maintenance Handoff"
 generationFingerprint: "29012b37403637ad204e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for hotel guest maintenance handoff should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent boutique hotels and small hospitality teams and centers on one result: **every guest-impacting maintenance issue has a coordinated access plan, verified repair, and completed guest follow-up**.

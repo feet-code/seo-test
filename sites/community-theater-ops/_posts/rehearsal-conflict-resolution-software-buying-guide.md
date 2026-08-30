@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for community theaters and volunteer-
 productId: "rehearsal-conflict-resolution"
 productName: "Rehearsal Conflict Resolution"
 generationFingerprint: "a66c5290c49a9ef998c7"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for community theater rehearsal conflict tracking should be evaluated against the operating problem, not a generic feature checklist. For community theaters and volunteer-led stage-production teams, a useful trial must demonstrate this outcome: **every material rehearsal conflict is resolved against scene and role dependencies, published as one current schedule, and acknowledged by affected participants**.

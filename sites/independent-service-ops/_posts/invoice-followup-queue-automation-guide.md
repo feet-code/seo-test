@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for freelancers and independent profes
 productId: "invoice-followup-queue"
 productName: "Invoice Follow-Up Queue"
 generationFingerprint: "65fd2a0562f039ff399c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for freelancer invoice follow-up and overdue payment reminders should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For freelancers and independent professional service businesses, the target outcome is **every unpaid invoice has a professional next action, documented client context, and clear resolution**.

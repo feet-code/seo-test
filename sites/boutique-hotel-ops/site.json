@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets hotel guest maintenance, hotel maintenance request workflow, room repair tracking, and hotel engineering handoff searches.",
-      "score": 87
+      "score": 87,
+      "contentBatch": "batch-002"
     },
     {
       "id": "lost-found-claim-desk",
@@ -31,7 +32,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets hotel lost and found software, lost property claim tracker, hotel found item log, and lost and found chain of custody searches.",
-      "score": 86
+      "score": 86,
+      "contentBatch": "batch-002"
     },
     {
       "id": "group-rooming-list-chaser",
@@ -45,7 +47,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets hotel rooming list tracker, group block rooming list, rooming list cutoff, and hotel group reservation workflow searches.",
-      "score": 85
+      "score": 85,
+      "contentBatch": "batch-002"
     }
   ],
   "articlesPerProduct": 10,
@@ -54,12 +57,7 @@
   "valueProposition": "Turns hotel guest maintenance handoff into a visible operating queue so every guest-impacting maintenance issue has a coordinated access plan, verified repair, and completed guest follow-up.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

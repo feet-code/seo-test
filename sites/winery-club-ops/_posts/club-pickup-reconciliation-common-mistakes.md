@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small wineries running direct-to-c
 productId: "club-pickup-reconciliation"
 productName: "Club Pickup Reconciliation"
 generationFingerprint: "ffe2a2bb9cb2473b88e9"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Pickup orders remain in storage for months while reminders, partial pickups, authorized collectors, converted shipping, inventory custody, payment, and cancellation rules are handled inconsistently. The recurring failures are usually process-design problems rather than motivation problems. For small wineries running direct-to-consumer wine clubs and pickup programs, these are the mistakes worth finding before buying or building software.

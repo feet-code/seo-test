@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for independent tutori
 productId: "makeup-session-coordinator"
 productName: "Makeup Session Coordinator"
 generationFingerprint: "b583c6deaa720572443e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for tutoring makeup session scheduling should help independent tutoring centers and multi-tutor education businesses decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

@@ -4,13 +4,9 @@ excerpt: "A practical alternatives comparison for small architecture firms and d
 productId: "consultant-deliverable-board"
 productName: "Consultant Deliverable Board"
 generationFingerprint: "42ab794d9922f5e43c20"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 There are several valid ways to manage architecture consultant deliverable tracking. The right choice depends on volume, exception rate, ownership, and how much coordination crosses systems. Start with the smallest approach that keeps the work reliable.

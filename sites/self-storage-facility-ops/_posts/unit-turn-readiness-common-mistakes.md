@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent self-storage facilitie
 productId: "unit-turn-readiness"
 productName: "Unit Turn Readiness"
 generationFingerprint: "89066ee4c605764d0286"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A vacated unit can remain unrentable because final access, inspection, cleaning, damage, billing, and availability updates do not close as one workflow. The recurring failures are usually process-design problems rather than motivation problems. For independent self-storage facilities and small multi-site operators, these are the mistakes worth finding before buying or building software.

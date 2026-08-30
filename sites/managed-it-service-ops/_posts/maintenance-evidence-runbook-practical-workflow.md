@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small managed service providers 
 productId: "maintenance-evidence-runbook"
 productName: "Maintenance Evidence Runbook"
 generationFingerprint: "69baced0d668f8e7194e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Recurring maintenance can show as completed in a task list even when scripts partially fail, devices are excluded, or client-facing evidence is never attached. For small managed service providers and multi-client IT support teams, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every scheduled maintenance control has scoped execution evidence, reviewed exceptions, and a client-record outcome**.

@@ -4,13 +4,9 @@ excerpt: "A practical alternatives comparison for independent pool maintenance a
 productId: "water-reading-exception-desk"
 productName: "Water Reading Exception Desk"
 generationFingerprint: "04eef3247c127a71febf"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:22Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 There are several valid ways to manage pool service water chemistry exception tracking. The right choice depends on volume, exception rate, ownership, and how much coordination crosses systems. Start with the smallest approach that keeps the work reliable.

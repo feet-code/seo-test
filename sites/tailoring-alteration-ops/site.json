@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets tailor fitting software, alteration fitting notes, garment measurement tracker, and tailoring change approval searches.",
-      "score": 86
+      "score": 86,
+      "contentBatch": "batch-004"
     },
     {
       "id": "garment-pickup-readiness",
@@ -31,7 +32,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets alteration pickup tracker, tailor order ready, garment quality checklist, and tailoring order status searches.",
-      "score": 82
+      "score": 82,
+      "contentBatch": "batch-004"
     }
   ],
   "articlesPerProduct": 10,
@@ -40,12 +42,7 @@
   "valueProposition": "Turns tailoring fitting change approval tracking into a visible operating queue so every fitting produces an agreed current alteration plan, price or date consequence, garment marking reference, and next checkpoint.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

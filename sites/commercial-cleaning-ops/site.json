@@ -17,7 +17,8 @@
       "monetization": "$19-$79/month based on active records or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets janitorial inspection checklist, cleaning quality corrective action, site audit template, and inspection follow-up software searches.",
-      "score": 84
+      "score": 84,
+      "contentBatch": "batch-001"
     },
     {
       "id": "location-supply-par-tracker",
@@ -31,7 +32,8 @@
       "monetization": "$19-$79/month based on active records or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets cleaning supply inventory spreadsheet, janitorial par level template, site supply checklist, and consumable reorder software searches.",
-      "score": 78
+      "score": 78,
+      "contentBatch": "batch-001"
     },
     {
       "id": "crew-shift-handoff-log",
@@ -45,7 +47,8 @@
       "monetization": "$19-$79/month based on active records or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets janitorial shift report template, cleaning crew handoff checklist, supervisor log book, and location communication app searches.",
-      "score": 80
+      "score": 80,
+      "contentBatch": "batch-001"
     }
   ],
   "articlesPerProduct": 10,
@@ -54,12 +57,7 @@
   "valueProposition": "Turns each finding into a traceable corrective action with location context, due date, proof, and closure review.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

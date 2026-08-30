@@ -4,13 +4,9 @@ excerpt: "A practical record template for independent podcast producers and smal
 productId: "guest-asset-chaser"
 productName: "Guest Asset Chaser"
 generationFingerprint: "847c9b89f655836e541c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful podcast guest asset and release tracking template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

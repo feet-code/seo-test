@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for portable restroom rental and recur
 productId: "route-service-exception"
 productName: "Route Service Exception"
 generationFingerprint: "f52a86874e8d15e80640"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for portable restroom route service exception tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For portable restroom rental and recurring sanitation service operators, the target outcome is **every incomplete or abnormal unit service has unit-level evidence, customer impact, owner, billing treatment, and a verified recovery outcome**.

@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent music schools and
 productId: "makeup-lesson-credit-board"
 productName: "Makeup Lesson Credit Board"
 generationFingerprint: "69d9f98a1de76522e6bd"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for music school makeup lesson credit tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent music schools and multi-teacher lesson studios and centers on one result: **every eligible missed lesson becomes one scheduled makeup, valid credit, policy closure, or billing adjustment with a clear expiration**.

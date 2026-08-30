@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for small day-tour, activity, and mult
 productId: "departure-manifest-readiness"
 productName: "Departure Manifest Readiness"
 generationFingerprint: "4a28ef7a420668ca3deb"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for tour departure manifest readiness should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For small day-tour, activity, and multi-day tour operators, the target outcome is **every departure has one frozen operational manifest with resolved blocking fields and controlled late changes**.

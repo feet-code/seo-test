@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for freelancers and independent p
 productId: "client-handoff-pack"
 productName: "Client Handoff Pack"
 generationFingerprint: "5aebd58026e80a21e859"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for freelancer client project handoff and offboarding checklists should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for freelancers and independent professional service businesses and centers on one result: **the client can operate the delivered work and locate every agreed artifact without depending on the freelancer's memory**.

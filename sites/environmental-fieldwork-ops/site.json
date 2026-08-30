@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets environmental sampling checklist, field sampling planning software, sampling event readiness, and environmental field data workflow searches.",
-      "score": 91
+      "score": 91,
+      "contentBatch": "batch-004"
     },
     {
       "id": "custody-exception-desk",
@@ -31,7 +32,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets chain of custody software, environmental sample tracking, sample custody discrepancy, and field to lab workflow searches.",
-      "score": 92
+      "score": 92,
+      "contentBatch": "batch-004"
     }
   ],
   "articlesPerProduct": 10,
@@ -40,12 +42,7 @@
   "valueProposition": "Turns environmental sampling event readiness into a visible operating queue so every sampling event is released by a qualified reviewer with current plan, locations, equipment, containers, laboratory coordination, access, and safety prerequisites.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

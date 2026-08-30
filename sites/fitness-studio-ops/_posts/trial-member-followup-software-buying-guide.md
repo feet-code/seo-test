@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for boutique fitness studios and grou
 productId: "trial-member-followup"
 productName: "Trial Member Follow-Up"
 generationFingerprint: "a661f5227017d68c7e41"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for fitness studio trial follow-up should be evaluated against the operating problem, not a generic feature checklist. For boutique fitness studios and group-class operators, a useful trial must demonstrate this outcome: **every attended trial receives one relevant membership next step or a documented no-contact outcome**.

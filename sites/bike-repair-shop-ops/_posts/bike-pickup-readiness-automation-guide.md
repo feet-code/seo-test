@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent bicycle repair shops a
 productId: "bike-pickup-readiness"
 productName: "Bike Pickup Readiness"
 generationFingerprint: "123b82c86097e17bc4c5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for bike repair pickup readiness should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent bicycle repair shops and service departments, the target outcome is **every completed bicycle is quality-checked, fully assembled with customer property, reconciled financially, and staged before pickup notification**.

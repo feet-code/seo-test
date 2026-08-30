@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent home inspection compan
 productId: "report-release-qa"
 productName: "Report Release QA"
 generationFingerprint: "dffb99cec42895fc0284"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for home inspection report quality review should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent home inspection companies and small multi-inspector teams, the target outcome is **every inspection report is released only after an accountable inspector reviews identity, completeness, consistency, media, recommendations, and client delivery**.

@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent conference organizer
 productId: "sponsor-deliverable-register"
 productName: "Sponsor Deliverable Register"
 generationFingerprint: "7b88b57ac2ebda718d2b"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Logo placements, booth entitlements, tickets, sessions, lead capture, signage, mentions, and post-event reporting are sold in contracts but fulfilled across separate teams. For independent conference organizers and small trade-show teams, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every contracted sponsor obligation has an approved input, delivery owner, placement evidence, and accepted outcome**.

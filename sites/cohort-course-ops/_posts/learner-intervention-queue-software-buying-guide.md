@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent cohort-course creator
 productId: "learner-intervention-queue"
 productName: "Learner Intervention Queue"
 generationFingerprint: "a42ae3cb43c757eb4877"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for cohort course learner engagement and intervention tracking should be evaluated against the operating problem, not a generic feature checklist. For independent cohort-course creators and small training businesses, a useful trial must demonstrate this outcome: **learners who may need support receive timely, respectful outreach tied to a concrete next step**.

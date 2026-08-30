@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small architecture firms and desi
 productId: "consultant-deliverable-board"
 productName: "Consultant Deliverable Board"
 generationFingerprint: "42ab794d9922f5e43c20"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for architecture consultant deliverable tracking should be evaluated against the operating problem, not a generic feature checklist. For small architecture firms and design-project administrators, a useful trial must demonstrate this outcome: **every consultant deliverable is received to the agreed milestone, reviewed against dependencies, and incorporated into the controlled project set**.

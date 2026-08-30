@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent home inspection c
 productId: "report-release-qa"
 productName: "Report Release QA"
 generationFingerprint: "dffb99cec42895fc0284"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for home inspection report quality review should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent home inspection companies and small multi-inspector teams and centers on one result: **every inspection report is released only after an accountable inspector reviews identity, completeness, consistency, media, recommendations, and client delivery**.

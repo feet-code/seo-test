@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets 3PL receiving exception, warehouse inbound discrepancy, ASN mismatch workflow, and 3PL dock to stock exception searches.",
-      "score": 89
+      "score": 89,
+      "contentBatch": "batch-003"
     },
     {
       "id": "pick-pack-exception-desk",
@@ -31,7 +32,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets 3PL fulfillment exception, pick pack exception, warehouse short pick workflow, and order fulfillment issue tracker searches.",
-      "score": 87
+      "score": 87,
+      "contentBatch": "batch-003"
     },
     {
       "id": "client-inventory-adjustment-gate",
@@ -45,7 +47,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets 3PL inventory adjustment, warehouse variance approval, client inventory discrepancy, and WMS adjustment workflow searches.",
-      "score": 88
+      "score": 88,
+      "contentBatch": "batch-003"
     }
   ],
   "articlesPerProduct": 10,
@@ -54,12 +57,7 @@
   "valueProposition": "Turns 3PL inbound receiving exception tracking into a visible operating queue so every inbound discrepancy has scan and photo evidence, client disposition, inventory action, and billable-work outcome.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

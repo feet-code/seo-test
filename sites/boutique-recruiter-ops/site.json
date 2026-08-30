@@ -17,7 +17,8 @@
       "monetization": "$19-$79/month based on active records or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets candidate follow-up spreadsheet, recruiter follow-up template, candidate communication tracker, and recruiting CRM reminder searches.",
-      "score": 84
+      "score": 84,
+      "contentBatch": "batch-001"
     },
     {
       "id": "search-intake-scorecard",
@@ -31,7 +32,8 @@
       "monetization": "$19-$79/month based on active records or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets recruiting intake form, job intake meeting checklist, candidate scorecard template, and recruiter calibration questions.",
-      "score": 82
+      "score": 82,
+      "contentBatch": "batch-001"
     },
     {
       "id": "interview-debrief-collector",
@@ -45,7 +47,8 @@
       "monetization": "$19-$79/month based on active records or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets interview feedback form, hiring debrief template, interviewer scorecard, and late feedback reminder searches.",
-      "score": 79
+      "score": 79,
+      "contentBatch": "batch-001"
     }
   ],
   "articlesPerProduct": 10,
@@ -54,12 +57,7 @@
   "valueProposition": "Turns candidate follow-up into a visible queue with owners, next dates, outcomes, and stop conditions.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

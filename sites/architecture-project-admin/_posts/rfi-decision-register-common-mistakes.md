@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for small architecture firms and desig
 productId: "rfi-decision-register"
 productName: "RFI Decision Register"
 generationFingerprint: "47b7db28daa17a0bd8ea"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 RFI questions, responses, sketches, cost impacts, and drawing updates are linked imperfectly, so a answered item can still leave unresolved design work. The recurring failures are usually process-design problems rather than motivation problems. For small architecture firms and design-project administrators, these are the mistakes worth finding before buying or building software.

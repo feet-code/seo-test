@@ -4,13 +4,9 @@ excerpt: "A spreadsheet-versus-software decision guide for small managed service
 productId: "ticket-escalation-handoff"
 productName: "Ticket Escalation Handoff"
 generationFingerprint: "fc03dcc64bf911cfbfa5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A spreadsheet is often the right first implementation for MSP ticket escalation handoff. It is cheap, editable, and forces the team to define the workflow. The question is not whether spreadsheets are good or bad; it is when coordination costs become larger than the flexibility is worth.

@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent pool maintenance and
 productId: "water-reading-exception-desk"
 productName: "Water Reading Exception Desk"
 generationFingerprint: "04eef3247c127a71febf"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:22Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Out-of-range readings, unusual chemical demand, equipment observations, and unsafe service conditions are logged at the stop but follow-up ownership and customer communication can remain unclear. For independent pool maintenance and repair companies running recurring routes, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every material pool-reading exception has verified input, approved response, owner, customer notice, and a scheduled recheck**.

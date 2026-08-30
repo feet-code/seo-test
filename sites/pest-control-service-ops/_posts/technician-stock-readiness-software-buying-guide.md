@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent pest control companie
 productId: "technician-stock-readiness"
 productName: "Technician Stock Readiness"
 generationFingerprint: "bf59102a8a4ce031ebff"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:22Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for pest control technician chemical and material stock readiness should be evaluated against the operating problem, not a generic feature checklist. For independent pest control companies and small recurring-service teams, a useful trial must demonstrate this outcome: **every released route has the required approved materials, quantities, and equipment assigned or an explicit service-plan adjustment**.

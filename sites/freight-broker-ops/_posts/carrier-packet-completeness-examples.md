@@ -4,13 +4,9 @@ excerpt: "Three realistic workflow test cases for small freight brokerages and s
 productId: "carrier-packet-completeness"
 productName: "Carrier Packet Completeness"
 generationFingerprint: "82cc371059776a3c0dba"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Examples make freight carrier packet completeness tracking easier to design because they reveal where a neat diagram meets messy work. The scenarios below are not claims about a particular company; they are test cases small freight brokerages and shipper-carrier coordination teams can run against a template or software trial.

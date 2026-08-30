@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent retail, delivery, and 
 productId: "floral-substitution-approval"
 productName: "Floral Substitution Approval"
 generationFingerprint: "9eee4f9dbefc835e3c2c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for florist substitution approval tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent retail, delivery, and event floral studios, the target outcome is **every material substitution preserves design intent and margin with documented internal or client approval before production**.

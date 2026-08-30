@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent retail, delivery, and
 productId: "floral-substitution-approval"
 productName: "Floral Substitution Approval"
 generationFingerprint: "9eee4f9dbefc835e3c2c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for florist substitution approval tracking should be evaluated against the operating problem, not a generic feature checklist. For independent retail, delivery, and event floral studios, a useful trial must demonstrate this outcome: **every material substitution preserves design intent and margin with documented internal or client approval before production**.

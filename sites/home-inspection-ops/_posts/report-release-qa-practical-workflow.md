@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent home inspection comp
 productId: "report-release-qa"
 productName: "Report Release QA"
 generationFingerprint: "dffb99cec42895fc0284"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A report can be sent with placeholder text, contradictory selections, missing media, wrong property details, unsupported language, broken links, or unreviewed automated draft content. For independent home inspection companies and small multi-inspector teams, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every inspection report is released only after an accountable inspector reviews identity, completeness, consistency, media, recommendations, and client delivery**.

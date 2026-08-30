@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent tailoring, alteration,
 productId: "garment-pickup-readiness"
 productName: "Garment Pickup Readiness"
 generationFingerprint: "a47367ed1f2eaf9ad4e7"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for alteration garment pickup readiness should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent tailoring, alteration, and garment-repair shops, the target outcome is **every finished garment is checked against approved work, packaged with customer property, financially reconciled, and staged before notification**.

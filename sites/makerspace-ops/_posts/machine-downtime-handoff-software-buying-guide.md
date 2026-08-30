@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for community makerspaces, fabricatio
 productId: "machine-downtime-handoff"
 productName: "Machine Downtime Handoff"
 generationFingerprint: "11b8f5dadce52d584268"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for makerspace machine downtime and maintenance tracking should be evaluated against the operating problem, not a generic feature checklist. For community makerspaces, fabrication labs, and shared technical workshops, a useful trial must demonstrate this outcome: **every equipment incident immediately blocks affected access and bookings, transfers with named repair ownership, and restores only after the required review and test**.

@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for small manufacturers and lean 
 productId: "nonconformance-closeout"
 productName: "Nonconformance Closeout"
 generationFingerprint: "1fc51d63706c2d44a850"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for manufacturing nonconformance closeout should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for small manufacturers and lean quality teams and centers on one result: **every nonconformance is contained, dispositioned by authority, corrected, and closed only after required effectiveness evidence**.

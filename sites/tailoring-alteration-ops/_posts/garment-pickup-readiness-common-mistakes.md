@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent tailoring, alteration,
 productId: "garment-pickup-readiness"
 productName: "Garment Pickup Readiness"
 generationFingerprint: "a47367ed1f2eaf9ad4e7"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A customer receives a ready message before final pressing, quality check, accessories, original material, balance, garment bag, or pickup authorization is reconciled. The recurring failures are usually process-design problems rather than motivation problems. For independent tailoring, alteration, and garment-repair shops, these are the mistakes worth finding before buying or building software.

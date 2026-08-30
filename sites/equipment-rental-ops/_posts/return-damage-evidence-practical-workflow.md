@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent equipment, tool, and
 productId: "return-damage-evidence"
 productName: "Return Damage Evidence"
 generationFingerprint: "4d1fad183504ccf15a47"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Return condition, checkout condition, photos, meter readings, customer acknowledgment, repair cost, and availability decisions often live in separate yard and office workflows. For independent equipment, tool, and event-rental businesses, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every returned asset is inspected against checkout evidence and any damage decision is documented before billing or release**.

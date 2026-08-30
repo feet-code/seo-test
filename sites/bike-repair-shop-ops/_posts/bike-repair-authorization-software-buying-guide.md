@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent bicycle repair shops 
 productId: "bike-repair-authorization"
 productName: "Bike Repair Authorization"
 generationFingerprint: "92b21b8dbce0682aeec8"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for bike repair estimate approval tracking should be evaluated against the operating problem, not a generic feature checklist. For independent bicycle repair shops and service departments, a useful trial must demonstrate this outcome: **every material repair change has an itemized current estimate, recorded customer decision, parts implication, and explicit mechanic release**.

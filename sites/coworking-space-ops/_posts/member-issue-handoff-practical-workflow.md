@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent coworking spaces and
 productId: "member-issue-handoff"
 productName: "Member Issue Handoff"
 generationFingerprint: "0f6ee4e9e913480a7c5a"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Access, noise, internet, billing, mail, and facility issues move between front desk, community, and vendors without one visible owner or member promise. For independent coworking spaces and small flexible-office operators, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every member issue has a current owner, response promise, resolution evidence, and member acknowledgment**.

@@ -1,0 +1,60 @@
+{
+  "id": "notary-signing-service-ops",
+  "name": "Notary Signing Service Operations",
+  "domain": null,
+  "audience": "independent notary signing services and mobile loan-signing coordinators",
+  "topic": "document-package readiness and scanback or shipping closeout",
+  "products": [
+    {
+      "id": "signing-package-readiness",
+      "name": "Signing Package Readiness",
+      "product": "A focused notary signing appointment package readiness workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent notary signing services and mobile loan-signing coordinators",
+      "problem": "Appointment contacts, location, document package, printing instructions, signer requirements, scanbacks, deadlines, fees, and notary acceptance arrive in fragments.",
+      "valueProposition": "Turns notary signing appointment package readiness into a visible operating queue so every accepted signing starts with a complete current package, confirmed appointment, instructions, and return plan.",
+      "topic": "notary signing appointment package readiness",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets notary signing appointment package readiness software, notary signing appointment package readiness tracker, notary signing appointment package readiness template, and notary signing appointment package readiness checklist searches.",
+      "score": 84,
+      "contentBatch": "batch-005"
+    },
+    {
+      "id": "scanback-shipping-closeout",
+      "name": "Scanback and Shipping Closeout",
+      "product": "A focused notary signing scanback and shipping tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent notary signing services and mobile loan-signing coordinators",
+      "problem": "Completion status, document checks, scanback approval, corrections, carrier label, drop-off cutoff, tracking, and client acknowledgment must occur in order.",
+      "valueProposition": "Turns notary signing scanback and shipping tracking into a visible operating queue so every completed signing reaches an accepted scanback when required and a verified document return or exception.",
+      "topic": "notary signing scanback and shipping tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets notary signing scanback and shipping tracking software, notary signing scanback and shipping tracking tracker, notary signing scanback and shipping tracking template, and notary signing scanback and shipping tracking checklist searches.",
+      "score": 85,
+      "contentBatch": "batch-005"
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused notary signing appointment package readiness workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns notary signing appointment package readiness into a visible operating queue so every accepted signing starts with a complete current package, confirmed appointment, instructions, and return plan.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "notary-signing-service-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

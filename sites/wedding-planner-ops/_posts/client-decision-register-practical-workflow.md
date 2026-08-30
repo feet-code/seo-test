@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent wedding planners and
 productId: "client-decision-register"
 productName: "Client Decision Register"
 generationFingerprint: "5a3e4660c86159bff7c5"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Important choices are discussed in meetings, texts, and mood boards, making it difficult to know what the couple approved and which vendor work can proceed. For independent wedding planners and boutique planning teams, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every decision that blocks budget, design, or vendor work has one approved answer, effective version, and downstream owner**.

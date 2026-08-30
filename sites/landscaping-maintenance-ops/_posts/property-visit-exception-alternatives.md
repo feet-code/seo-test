@@ -4,13 +4,9 @@ excerpt: "A practical alternatives comparison for small commercial landscaping a
 productId: "property-visit-exception"
 productName: "Property Visit Exception"
 generationFingerprint: "74b5353a963af3660cfa"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 There are several valid ways to manage landscape maintenance visit exception tracking. The right choice depends on volume, exception rate, ownership, and how much coordination crosses systems. Start with the smallest approach that keeps the work reliable.

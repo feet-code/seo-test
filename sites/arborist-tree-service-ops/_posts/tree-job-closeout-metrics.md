@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for independent arbori
 productId: "tree-job-closeout"
 productName: "Tree Job Closeout"
 generationFingerprint: "63fbceaed6f7d6db1cac"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for tree service cleanup and stump closeout tracking should help independent arborist, pruning, removal, and plant-health-care companies decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

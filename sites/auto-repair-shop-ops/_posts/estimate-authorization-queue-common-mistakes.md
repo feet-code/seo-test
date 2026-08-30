@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent auto repair shops and 
 productId: "estimate-authorization-queue"
 productName: "Estimate Authorization Queue"
 generationFingerprint: "4e1afb63fb72eaebd7a9"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Estimates waiting for customer approval are split across repair-order notes, calls, and texts, leaving bays idle and service promises uncertain. The recurring failures are usually process-design problems rather than motivation problems. For independent auto repair shops and service-advisor teams, these are the mistakes worth finding before buying or building software.

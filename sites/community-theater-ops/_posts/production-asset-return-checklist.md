@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for community theaters and volunt
 productId: "production-asset-return"
 productName: "Production Asset Return"
 generationFingerprint: "6d72e4b7e0c557eb01bc"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:24Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for theater prop and costume return tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for community theaters and volunteer-led stage-production teams and centers on one result: **every production asset has assigned custody, condition evidence, return deadline, storage destination, and an explicit lost damage repair or closed outcome**.

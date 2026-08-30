@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for community sports leagues and sma
 productId: "rainout-reschedule-coordinator"
 productName: "Rainout Reschedule Coordinator"
 generationFingerprint: "9c568af6a0595f6334c2"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A field closure changes games, teams, officials, facilities, standings, and family communications, but coordinators often update each dependency separately. For community sports leagues and small tournament operators, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every weather-affected game is canceled, relocated, or rescheduled with all dependent assignments and communications reconciled**.

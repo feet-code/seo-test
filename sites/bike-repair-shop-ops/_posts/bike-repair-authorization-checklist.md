@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent bicycle repair sh
 productId: "bike-repair-authorization"
 productName: "Bike Repair Authorization"
 generationFingerprint: "92b21b8dbce0682aeec8"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for bike repair estimate approval tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent bicycle repair shops and service departments and centers on one result: **every material repair change has an itemized current estimate, recorded customer decision, parts implication, and explicit mechanic release**.

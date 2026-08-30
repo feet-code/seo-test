@@ -4,13 +4,9 @@ excerpt: "A spreadsheet-versus-software decision guide for independent equipment
 productId: "overdue-rental-followup"
 productName: "Overdue Rental Follow-Up"
 generationFingerprint: "69e2a16f7956184e3ed4"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A spreadsheet is often the right first implementation for overdue equipment rental follow-up. It is cheap, editable, and forces the team to define the workflow. The question is not whether spreadsheets are good or bad; it is when coordination costs become larger than the flexibility is worth.

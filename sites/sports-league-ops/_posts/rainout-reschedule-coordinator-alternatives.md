@@ -4,13 +4,9 @@ excerpt: "A practical alternatives comparison for community sports leagues and s
 productId: "rainout-reschedule-coordinator"
 productName: "Rainout Reschedule Coordinator"
 generationFingerprint: "9c568af6a0595f6334c2"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 There are several valid ways to manage sports league rainout rescheduling. The right choice depends on volume, exception rate, ownership, and how much coordination crosses systems. Start with the smallest approach that keeps the work reliable.

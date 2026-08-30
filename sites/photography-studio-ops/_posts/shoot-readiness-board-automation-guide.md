@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent photography studios an
 productId: "shoot-readiness-board"
 productName: "Shoot Readiness Board"
 generationFingerprint: "672e3ea5ea70747da3ba"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for photography shoot readiness tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent photography studios and small commercial photo teams, the target outcome is **every scheduled shoot reaches a verified go, revised, or postponed decision with people, place, scope, and production resources aligned**.

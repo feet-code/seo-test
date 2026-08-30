@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for boutique fitness studios and gro
 productId: "instructor-cover-board"
 productName: "Instructor Cover Board"
 generationFingerprint: "ef7529acd7ea71c612e4"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Instructor absences are solved in group chats, so managers may not know whether a qualified substitute, access instructions, payroll changes, and member notices are all complete. For boutique fitness studios and group-class operators, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every instructor absence is covered by an eligible substitute or escalated to a documented class change before members arrive**.

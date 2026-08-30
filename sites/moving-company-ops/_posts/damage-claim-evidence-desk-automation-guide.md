@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent household moving compa
 productId: "damage-claim-evidence-desk"
 productName: "Damage Claim Evidence Desk"
 generationFingerprint: "8a8b969b87f75615775a"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for moving company damage claim evidence tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent household moving companies and local moving crews, the target outcome is **every damage or loss claim is acknowledged, completed with required evidence, reviewed, and resolved with a documented decision**.

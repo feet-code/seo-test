@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for small third-party logistics w
 productId: "pick-pack-exception-desk"
 productName: "Pick-Pack Exception Desk"
 generationFingerprint: "8c14d396ec4968c7b38c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for 3PL pick and pack exception tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for small third-party logistics warehouses and fulfillment operators and centers on one result: **every blocked fulfillment order is released, substituted, split, held, or canceled under client rules with inventory and shipment evidence reconciled**.

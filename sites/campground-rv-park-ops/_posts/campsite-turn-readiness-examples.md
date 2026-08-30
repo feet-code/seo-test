@@ -4,13 +4,9 @@ excerpt: "Three realistic workflow test cases for independent campgrounds, RV pa
 productId: "campsite-turn-readiness"
 productName: "Campsite Turn Readiness"
 generationFingerprint: "eaef2147e99bd9795162"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Examples make campground campsite turnover readiness easier to design because they reveal where a neat diagram meets messy work. The scenarios below are not claims about a particular company; they are test cases independent campgrounds, RV parks, and small outdoor lodging properties can run against a template or software trial.

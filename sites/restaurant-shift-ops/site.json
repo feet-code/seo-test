@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets restaurant prep shortage, kitchen prep tracker, restaurant par list exception, and prep recovery workflow searches.",
-      "score": 84
+      "score": 84,
+      "contentBatch": "batch-003"
     },
     {
       "id": "menu-availability-publisher",
@@ -31,7 +32,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets restaurant 86 list, menu item availability software, restaurant sold out tracking, and POS item out of stock searches.",
-      "score": 86
+      "score": 86,
+      "contentBatch": "batch-003"
     },
     {
       "id": "manager-shift-handoff",
@@ -45,7 +47,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets restaurant shift handoff, manager logbook restaurant, restaurant daily log, and restaurant issue tracker searches.",
-      "score": 85
+      "score": 85,
+      "contentBatch": "batch-003"
     }
   ],
   "articlesPerProduct": 10,
@@ -54,12 +57,7 @@
   "valueProposition": "Turns restaurant prep shortage tracking into a visible operating queue so every service-impacting prep shortage has a quantified gap, approved response, owner, and communicated menu consequence.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

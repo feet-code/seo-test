@@ -4,13 +4,9 @@ excerpt: "A practical alternatives comparison for small commercial laundries and
 productId: "customer-linen-loss-review"
 productName: "Customer Linen Loss Review"
 generationFingerprint: "e4518ada35eca977510d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 There are several valid ways to manage commercial laundry linen loss and replacement tracking. The right choice depends on volume, exception rate, ownership, and how much coordination crosses systems. Start with the smallest approach that keeps the work reliable.

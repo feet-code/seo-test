@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent laundromats offering s
 productId: "laundromat-machine-outage"
 productName: "Laundromat Machine Outage"
 generationFingerprint: "924a9a02dacace0ec345"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for laundromat washer and dryer outage tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent laundromats offering self-service and wash-dry-fold, the target outcome is **every machine outage has immediate customer containment, repair ownership, status visibility, and a documented loaded-cycle return test**.

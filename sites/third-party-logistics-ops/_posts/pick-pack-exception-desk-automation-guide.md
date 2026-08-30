@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for small third-party logistics wareho
 productId: "pick-pack-exception-desk"
 productName: "Pick-Pack Exception Desk"
 generationFingerprint: "8c14d396ec4968c7b38c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for 3PL pick and pack exception tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For small third-party logistics warehouses and fulfillment operators, the target outcome is **every blocked fulfillment order is released, substituted, split, held, or canceled under client rules with inventory and shipment evidence reconciled**.

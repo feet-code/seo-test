@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent cohort-course creators
 productId: "learner-intervention-queue"
 productName: "Learner Intervention Queue"
 generationFingerprint: "a42ae3cb43c757eb4877"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Attendance, assignment, and community signals live in separate tools, so struggling learners are noticed late or receive generic reminders. The recurring failures are usually process-design problems rather than motivation problems. For independent cohort-course creators and small training businesses, these are the mistakes worth finding before buying or building software.

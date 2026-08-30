@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small roll-off dumpster and comm
 productId: "overage-evidence-desk"
 productName: "Overage Evidence Desk"
 generationFingerprint: "7c8f858b3aab30c3176d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Overweight loads, prohibited material, blocked service, dry runs, extra days, and cleanup fees become billing disputes when the charge rule and field evidence are assembled after the fact. For small roll-off dumpster and commercial waste-container rental companies, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every exception charge is linked to the contract rule, timestamped field or scale evidence, reviewer decision, and customer notice before invoicing**.

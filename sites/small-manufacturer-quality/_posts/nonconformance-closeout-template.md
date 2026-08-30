@@ -4,13 +4,9 @@ excerpt: "A practical record template for small manufacturers and lean quality t
 productId: "nonconformance-closeout"
 productName: "Nonconformance Closeout"
 generationFingerprint: "1fc51d63706c2d44a850"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful manufacturing nonconformance closeout template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

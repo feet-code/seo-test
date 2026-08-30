@@ -17,7 +17,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets funeral arrangement checklist, funeral home case readiness, funeral document tracking, and funeral service planning software searches.",
-      "score": 88
+      "score": 88,
+      "contentBatch": "batch-004"
     },
     {
       "id": "service-vendor-handoff",
@@ -31,7 +32,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets funeral vendor coordination, funeral service checklist, cemetery confirmation tracker, and funeral event planning software searches.",
-      "score": 86
+      "score": 86,
+      "contentBatch": "batch-004"
     },
     {
       "id": "personal-effects-custody",
@@ -45,7 +47,8 @@
       "monetization": "$19-$99/month based on active records, locations, or team size",
       "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
       "seoAngle": "Targets funeral home personal effects, death care chain of custody, funeral property inventory, and personal effects release form searches.",
-      "score": 87
+      "score": 87,
+      "contentBatch": "batch-004"
     }
   ],
   "articlesPerProduct": 10,
@@ -54,12 +57,7 @@
   "valueProposition": "Turns funeral arrangement document readiness tracking into a visible operating queue so every case has human-reviewed required decisions, documents, authorizations, and exceptions visible against the actual service timeline.",
   "articleCount": 10,
   "author": {
-    "name": "John Smith",
-    "picture": "/assets/blog/authors/jj.jpeg"
-  },
-  "images": {
-    "coverImage": "/assets/blog/preview/cover.jpg",
-    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+    "name": "John Smith"
   },
   "signup": {
     "enabled": true,

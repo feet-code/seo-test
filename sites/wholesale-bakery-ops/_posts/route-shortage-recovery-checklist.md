@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for small wholesale and direct-st
 productId: "route-shortage-recovery"
 productName: "Route Shortage Recovery"
 generationFingerprint: "44ab9b35c23816f39c60"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for wholesale bakery delivery shortage recovery should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for small wholesale and direct-store-delivery bakeries and centers on one result: **every delivery shortage has a quantified gap, product disposition, account-specific decision, route communication, and billing reconciliation**.

@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small commercial laundries and li
 productId: "customer-linen-loss-review"
 productName: "Customer Linen Loss Review"
 generationFingerprint: "e4518ada35eca977510d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for commercial laundry linen loss and replacement tracking should be evaluated against the operating problem, not a generic feature checklist. For small commercial laundries and linen or uniform rental services, a useful trial must demonstrate this outcome: **every material textile-loss difference is reconstructed, reviewed with the customer, and resolved to count correction, replacement, charge, or process action**.

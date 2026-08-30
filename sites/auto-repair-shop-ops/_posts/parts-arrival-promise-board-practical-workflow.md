@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent auto repair shops an
 productId: "parts-arrival-promise-board"
 productName: "Parts Arrival Promise Board"
 generationFingerprint: "b13c2590920faa24619d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Ordered parts, supplier ETAs, vehicle status, and customer promises drift apart when updates live in vendor portals and individual service-advisor notes. For independent auto repair shops and service-advisor teams, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every ordered part has a verified ETA, affected repair order, customer promise, and exception owner**.

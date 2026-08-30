@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for small managed service providers an
 productId: "maintenance-evidence-runbook"
 productName: "Maintenance Evidence Runbook"
 generationFingerprint: "69baced0d668f8e7194e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for MSP recurring maintenance evidence tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For small managed service providers and multi-client IT support teams, the target outcome is **every scheduled maintenance control has scoped execution evidence, reviewed exceptions, and a client-record outcome**.

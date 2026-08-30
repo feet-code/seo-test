@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for small contract security compa
 productId: "post-order-acknowledgment"
 productName: "Post Order Acknowledgment"
 generationFingerprint: "f7163fd1339cb8493076"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for security guard post order acknowledgment should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for small contract security companies and guard supervisors and centers on one result: **every guard assigned to a post acknowledges the effective order and required briefing before working under it**.

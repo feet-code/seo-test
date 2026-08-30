@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small nonprofit direct-service an
 productId: "participant-followup-queue"
 productName: "Participant Follow-Up Queue"
 generationFingerprint: "d061246b903229f78d6c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for nonprofit participant follow-up and referral tracking should be evaluated against the operating problem, not a generic feature checklist. For small nonprofit direct-service and program teams, a useful trial must demonstrate this outcome: **every consented program follow-up reaches a documented next step or closed reason without unnecessary data collection**.

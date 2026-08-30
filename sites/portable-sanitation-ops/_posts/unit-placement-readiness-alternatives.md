@@ -4,13 +4,9 @@ excerpt: "A practical alternatives comparison for portable restroom rental and r
 productId: "unit-placement-readiness"
 productName: "Unit Placement Readiness"
 generationFingerprint: "b8ccd4dd7c4523946a7e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 There are several valid ways to manage portable restroom delivery placement readiness. The right choice depends on volume, exception rate, ownership, and how much coordination crosses systems. Start with the smallest approach that keeps the work reliable.

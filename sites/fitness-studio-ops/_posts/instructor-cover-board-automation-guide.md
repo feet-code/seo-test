@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for boutique fitness studios and group
 productId: "instructor-cover-board"
 productName: "Instructor Cover Board"
 generationFingerprint: "ef7529acd7ea71c612e4"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for fitness instructor substitution tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For boutique fitness studios and group-class operators, the target outcome is **every instructor absence is covered by an eligible substitute or escalated to a documented class change before members arrive**.

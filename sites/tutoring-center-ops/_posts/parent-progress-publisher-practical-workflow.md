@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent tutoring centers and
 productId: "parent-progress-publisher"
 productName: "Parent Progress Publisher"
 generationFingerprint: "707db6510901eca2fa07"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Tutor notes are inconsistent and arrive too late for center staff to send useful parent updates without chasing context after every session. For independent tutoring centers and multi-tutor education businesses, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **each reporting period produces an approved, evidence-based parent update with clear progress and next focus**.

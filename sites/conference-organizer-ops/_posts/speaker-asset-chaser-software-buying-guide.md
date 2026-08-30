@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for independent conference organizers
 productId: "speaker-asset-chaser"
 productName: "Speaker Asset Chaser"
 generationFingerprint: "b1a600f7c9fdae95e9c8"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for conference speaker asset tracking should be evaluated against the operating problem, not a generic feature checklist. For independent conference organizers and small trade-show teams, a useful trial must demonstrate this outcome: **every confirmed speaker has the approved assets and permissions required for agenda publication, production, and session delivery**.

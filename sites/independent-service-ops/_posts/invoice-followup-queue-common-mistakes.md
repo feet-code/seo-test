@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for freelancers and independent profes
 productId: "invoice-followup-queue"
 productName: "Invoice Follow-Up Queue"
 generationFingerprint: "65fd2a0562f039ff399c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Payment reminders depend on memory, while invoice delivery, client questions, promises, disputes, and next actions remain scattered. The recurring failures are usually process-design problems rather than motivation problems. For freelancers and independent professional service businesses, these are the mistakes worth finding before buying or building software.

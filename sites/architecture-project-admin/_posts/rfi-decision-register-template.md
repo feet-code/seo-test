@@ -4,13 +4,9 @@ excerpt: "A practical record template for small architecture firms and design-pr
 productId: "rfi-decision-register"
 productName: "RFI Decision Register"
 generationFingerprint: "47b7db28daa17a0bd8ea"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful architectural RFI decision tracking template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

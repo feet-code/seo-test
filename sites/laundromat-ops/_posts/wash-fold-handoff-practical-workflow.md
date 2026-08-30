@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent laundromats offering
 productId: "wash-fold-handoff"
 productName: "Wash-Fold Handoff"
 generationFingerprint: "f4f223f52d162f2598e3"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Drop-off orders can be mixed, delayed, underweighed, split across machines, missing a preference, assembled incorrectly, or released before payment because each production stage has a separate handoff. For independent laundromats offering self-service and wash-dry-fold, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every wash-dry-fold order preserves customer instructions and bag identity through processing, assembly, quality check, payment, and authorized release**.

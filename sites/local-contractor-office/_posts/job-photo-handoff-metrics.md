@@ -4,13 +4,9 @@ excerpt: "Definitions and calculations for useful metrics for owner-operated HVA
 productId: "job-photo-handoff"
 productName: "Job Photo Handoff"
 generationFingerprint: "bd22fa439fee0cbce6b8"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Metrics for contractor job photo documentation and field office handoff should help owner-operated HVAC, plumbing, electrical, and repair contractors decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.

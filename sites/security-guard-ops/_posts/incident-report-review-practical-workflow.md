@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for small contract security companie
 productId: "incident-report-review"
 productName: "Incident Report Review"
 generationFingerprint: "cbd50a0261c9afadb15e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Guard reports can be submitted with missing timeline, people, location, actions, or media, while supervisors need to review and deliver client-ready records quickly. For small contract security companies and guard supervisors, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every submitted incident report is checked for completeness, corrected with an audit trail, and delivered to authorized recipients**.

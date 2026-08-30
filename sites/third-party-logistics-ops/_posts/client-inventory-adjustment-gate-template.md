@@ -4,13 +4,9 @@ excerpt: "A practical record template for small third-party logistics warehouses
 productId: "client-inventory-adjustment-gate"
 productName: "Client Inventory Adjustment Gate"
 generationFingerprint: "95e32539c7fb3d380205"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:34:11Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful 3PL client inventory adjustment approval template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

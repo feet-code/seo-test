@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent pest control companies
 productId: "retreatment-warranty-desk"
 productName: "Retreatment Warranty Desk"
 generationFingerprint: "3c4d36c875a6184352c0"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:22Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Warranty callbacks can become repeated free visits because original service, covered pest, customer observations, technician findings, eligibility, and final outcome are not reviewed together. The recurring failures are usually process-design problems rather than motivation problems. For independent pest control companies and small recurring-service teams, these are the mistakes worth finding before buying or building software.

@@ -4,13 +4,9 @@ excerpt: "A practical record template for independent music schools and multi-te
 productId: "makeup-lesson-credit-board"
 productName: "Makeup Lesson Credit Board"
 generationFingerprint: "69d9f98a1de76522e6bd"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful music school makeup lesson credit tracking template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

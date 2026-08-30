@@ -4,13 +4,9 @@ excerpt: "A step-by-step operating workflow for independent laundromats offering
 productId: "laundromat-machine-outage"
 productName: "Laundromat Machine Outage"
 generationFingerprint: "924a9a02dacace0ec345"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Out-of-order signs reveal little about payment impact, customer claim, diagnosis, part or vendor status, repeated faults, and whether a washer or dryer was truly tested before reopening. For independent laundromats offering self-service and wash-dry-fold, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **every machine outage has immediate customer containment, repair ownership, status visibility, and a documented loaded-cycle return test**.

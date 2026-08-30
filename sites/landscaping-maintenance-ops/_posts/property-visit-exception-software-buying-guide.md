@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small commercial landscaping and 
 productId: "property-visit-exception"
 productName: "Property Visit Exception"
 generationFingerprint: "74b5353a963af3660cfa"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for landscape maintenance visit exception tracking should be evaluated against the operating problem, not a generic feature checklist. For small commercial landscaping and recurring property-maintenance companies, a useful trial must demonstrate this outcome: **every incomplete landscape visit has quantified skipped work, evidence, contract treatment, customer communication, and a recovery decision**.

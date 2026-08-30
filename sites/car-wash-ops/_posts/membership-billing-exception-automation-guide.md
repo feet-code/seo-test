@@ -4,13 +4,9 @@ excerpt: "A safe automation rollout guide for independent express, tunnel, and m
 productId: "membership-billing-exception"
 productName: "Membership Billing Exception"
 generationFingerprint: "d464de272caa742d908b"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Automation for car wash membership billing exception tracking should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For independent express, tunnel, and multi-bay car wash operators, the target outcome is **every membership exception resolves billing, access, customer communication, and future renewal state with one documented decision**.

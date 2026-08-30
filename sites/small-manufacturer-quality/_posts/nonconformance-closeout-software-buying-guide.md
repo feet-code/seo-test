@@ -4,13 +4,9 @@ excerpt: "A trial and evaluation framework for small manufacturers and lean qual
 productId: "nonconformance-closeout"
 productName: "Nonconformance Closeout"
 generationFingerprint: "1fc51d63706c2d44a850"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Software for manufacturing nonconformance closeout should be evaluated against the operating problem, not a generic feature checklist. For small manufacturers and lean quality teams, a useful trial must demonstrate this outcome: **every nonconformance is contained, dispositioned by authority, corrected, and closed only after required effectiveness evidence**.

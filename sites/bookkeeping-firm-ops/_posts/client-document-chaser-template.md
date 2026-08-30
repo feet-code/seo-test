@@ -4,13 +4,9 @@ excerpt: "A practical record template for small bookkeeping firms and client acc
 productId: "client-document-chaser"
 productName: "Client Document Chaser"
 generationFingerprint: "97a6b66f05fef5e0096c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful bookkeeping client document collection and reminder tracking template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.

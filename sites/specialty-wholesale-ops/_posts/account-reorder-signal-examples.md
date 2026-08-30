@@ -4,13 +4,9 @@ excerpt: "Three realistic workflow test cases for small specialty wholesalers an
 productId: "account-reorder-signal"
 productName: "Account Reorder Signal"
 generationFingerprint: "35f5833aa06254a2b04e"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Examples make wholesale customer reorder reminders and account follow-up easier to design because they reveal where a neat diagram meets messy work. The scenarios below are not claims about a particular company; they are test cases small specialty wholesalers and B2B distributors can run against a template or software trial.

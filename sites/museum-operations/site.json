@@ -1,0 +1,60 @@
+{
+  "id": "museum-operations",
+  "name": "Small Museum Operations",
+  "domain": null,
+  "audience": "small museums, historic sites, and nonprofit collections teams",
+  "topic": "loan conditions and exhibit-maintenance handoffs for small museums",
+  "products": [
+    {
+      "id": "museum-loan-condition-desk",
+      "name": "Museum Loan Condition Desk",
+      "product": "A focused museum object loan condition tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "small museums, historic sites, and nonprofit collections teams",
+      "problem": "Incoming and outgoing condition notes, packing, locations, display requirements, approvals, and return obligations are distributed across files.",
+      "valueProposition": "Turns museum object loan condition tracking into a visible operating queue so every loan object has a current condition, custody, location, requirement, and due-action record.",
+      "topic": "museum object loan condition tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets museum object loan condition tracking software, museum object loan condition tracking tracker, museum object loan condition tracking template, and museum object loan condition tracking checklist searches.",
+      "score": 83,
+      "contentBatch": "batch-005"
+    },
+    {
+      "id": "exhibit-maintenance-handoff",
+      "name": "Exhibit Maintenance Handoff",
+      "product": "A focused museum exhibit maintenance tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "small museums, historic sites, and nonprofit collections teams",
+      "problem": "Visitor reports, gallery checks, AV faults, case concerns, label damage, work restrictions, and reopening decisions cross front-of-house and collections teams.",
+      "valueProposition": "Turns museum exhibit maintenance tracking into a visible operating queue so every exhibit issue has an appropriate owner, treatment boundary, visitor plan, and verified closure.",
+      "topic": "museum exhibit maintenance tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets museum exhibit maintenance tracking software, museum exhibit maintenance tracking tracker, museum exhibit maintenance tracking template, and museum exhibit maintenance tracking checklist searches.",
+      "score": 84,
+      "contentBatch": "batch-005"
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused museum object loan condition tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns museum object loan condition tracking into a visible operating queue so every loan object has a current condition, custody, location, requirement, and due-action record.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "museum-operations"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for independent tailoring, altera
 productId: "garment-pickup-readiness"
 productName: "Garment Pickup Readiness"
 generationFingerprint: "a47367ed1f2eaf9ad4e7"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for alteration garment pickup readiness should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for independent tailoring, alteration, and garment-repair shops and centers on one result: **every finished garment is checked against approved work, packaged with customer property, financially reconciled, and staged before notification**.

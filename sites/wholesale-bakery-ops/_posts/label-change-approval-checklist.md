@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for small wholesale and direct-st
 productId: "label-change-approval"
 productName: "Label Change Approval"
 generationFingerprint: "5e61ba41bf7549364b00"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for wholesale bakery allergen and label change approval should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for small wholesale and direct-store-delivery bakeries and centers on one result: **every label change is reviewed by the responsible people, tied to effective product and lot boundaries, and verified at first production use**.

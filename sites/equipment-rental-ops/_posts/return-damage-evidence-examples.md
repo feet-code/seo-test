@@ -4,13 +4,9 @@ excerpt: "Three realistic workflow test cases for independent equipment, tool, a
 productId: "return-damage-evidence"
 productName: "Return Damage Evidence"
 generationFingerprint: "4d1fad183504ccf15a47"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Examples make equipment rental return damage documentation easier to design because they reveal where a neat diagram meets messy work. The scenarios below are not claims about a particular company; they are test cases independent equipment, tool, and event-rental businesses can run against a template or software trial.

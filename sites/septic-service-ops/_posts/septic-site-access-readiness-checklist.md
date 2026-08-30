@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for small septic pumping, inspect
 productId: "septic-site-access-readiness"
 productName: "Septic Site Access Readiness"
 generationFingerprint: "d24b47a41f3bac36462d"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for septic pumping property access readiness should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for small septic pumping, inspection, and liquid-waste service companies and centers on one result: **every dispatched septic job has a usable tank location, access plan, service scope, and customer responsibility confirmed before truck commitment**.

@@ -4,13 +4,9 @@ excerpt: "Process mistakes and guardrails for independent pool maintenance and r
 productId: "property-access-recovery"
 productName: "Property Access Recovery"
 generationFingerprint: "39d8217fde6f2773dc15"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:59:22Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Recurring stops fail when gate codes, lock instructions, pets, tenants, construction, or access windows change without reaching the routed technician. The recurring failures are usually process-design problems rather than motivation problems. For independent pool maintenance and repair companies running recurring routes, these are the mistakes worth finding before buying or building software.

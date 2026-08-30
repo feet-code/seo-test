@@ -4,13 +4,9 @@ excerpt: "A copyable quality-control checklist for small nonprofit direct-servic
 productId: "participant-followup-queue"
 productName: "Participant Follow-Up Queue"
 generationFingerprint: "d061246b903229f78d6c"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T20:04:23Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 A checklist for nonprofit participant follow-up and referral tracking should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for small nonprofit direct-service and program teams and centers on one result: **every consented program follow-up reaches a documented next step or closed reason without unnecessary data collection**.

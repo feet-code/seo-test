@@ -4,13 +4,9 @@ excerpt: "A practical record template for boutique fitness studios and group-cla
 productId: "trial-member-followup"
 productName: "Trial Member Follow-Up"
 generationFingerprint: "a661f5227017d68c7e41"
-coverImage: "/assets/blog/preview/cover.jpg"
 date: "2026-08-29T21:05:26Z"
 author:
   name: "John Smith"
-  picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 The most useful fitness studio trial follow-up template is a small operating record. It should answer what is happening, who owns it, what evidence exists, and when the next decision occurs. This structure works in a spreadsheet, database, or focused application.
