@@ -140,7 +140,7 @@ Edit `sites/SITE_ID/site.json`. These site-local fields survive portfolio import
 
 `cloudflare-auto` is the default for new sites. It preserves an already resolved host; otherwise it reuses an existing Pages project, creates Pages while the account is below its configured or observed project cap, and assigns overflow to Workers Static Assets on `*.workers.dev`. Cloudflare error `8000027` triggers the Workers fallback immediately, records the observed cap, and routes later new sites directly to Workers. If the live Pages count falls below that observed cap, the marker is cleared. The resulting `resolvedProvider` and `url` are saved in the config.
 
-You can select `cloudflare-pages` or `cloudflare-workers`, or override a run with `--provider`; a Pages capacity rejection still falls back safely to Workers. A Workers-capable API token needs Workers Scripts write access. If account-subdomain discovery is unavailable, set `CLOUDFLARE_WORKERS_SUBDOMAIN` to the part before `.workers.dev` and resume.
+You can select `cloudflare-pages` or `cloudflare-workers`, or override a run with `--provider`; a Pages capacity rejection still falls back safely to Workers. A Workers-capable API token needs `Account > Workers Scripts > Edit` for the selected account. Provider selection does not require listing all Worker scripts. If account-subdomain discovery is unavailable, set `CLOUDFLARE_WORKERS_SUBDOMAIN` to the part before `.workers.dev` and resume; the override does not replace the deploy permission.
 
 ## Keep blogs image-free
 

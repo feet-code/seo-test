@@ -24,7 +24,6 @@ MAX_GOOGLE_VERIFICATION_POLL_SECONDS = 20.0
 DEFAULT_CLOUDFLARE_PAGES_PROJECT_LIMIT = 100
 _pages_project_count_cache: int | None = None
 _pages_observed_limit: int | None = None
-_worker_names_cache: set[str] | None = None
 
 
 def _safe_headers(headers: dict | None) -> dict:
@@ -130,23 +129,22 @@ def pages_project_count() -> int:
         page += 1
 
 
-def worker_names() -> set[str]:
-    global _worker_names_cache
-    if _worker_names_cache is None:
-        response = cloudflare("GET", "/workers/scripts")
-        _worker_names_cache = {
-            str(item.get("id"))
-            for item in (response.get("result") or [])
-            if item.get("id")
-        }
-    return _worker_names_cache
-
-
 def workers_subdomain() -> str:
     override = os.environ.get("CLOUDFLARE_WORKERS_SUBDOMAIN", "").strip()
     if override:
         return override.removesuffix(".workers.dev").strip(".")
-    response = cloudflare("GET", "/workers/subdomain")
+    try:
+        response = cloudflare("GET", "/workers/subdomain")
+    except urllib.error.HTTPError as exc:
+        if exc.code == 403:
+            raise RuntimeError(
+                "Cloudflare could not read this account's workers.dev subdomain. "
+                "Give CLOUDFLARE_API_TOKEN Account > Workers Scripts > Edit for the "
+                "selected account. You may also set CLOUDFLARE_WORKERS_SUBDOMAIN to "
+                "skip subdomain discovery, but Workers Scripts Edit is still required "
+                "to deploy."
+            ) from exc
+        raise
     subdomain = str((response.get("result") or {}).get("subdomain", "")).strip()
     if not subdomain:
         raise RuntimeError(
@@ -258,10 +256,9 @@ def resolve_cloudflare_auto(config: dict) -> str:
         observed_limit if observed_limit is not None else _pages_limit(),
     )
     if count >= effective_limit:
-        action = "reusing existing Worker" if project in worker_names() else "using Workers Static Assets for"
         print(
             f"Cloudflare auto: Pages has {count} projects and its effective limit is "
-            f"{effective_limit}; {action} {project}."
+            f"{effective_limit}; using Workers Static Assets for {project}."
         )
         return "cloudflare-workers"
     print(f"Cloudflare auto: Pages has {count} projects; assigning {project} to Pages.")
@@ -274,7 +271,7 @@ def prepare_hosting(
     requested_provider: str | None = None,
 ) -> dict:
     """Resolve and provision one stable hosting provider before the tokenized build."""
-    global _pages_project_count_cache, _worker_names_cache
+    global _pages_project_count_cache
     deploy = config.setdefault("deploy", {})
     deploy.setdefault("project", config.get("id", site_dir.name))
     configured = str(requested_provider or deploy.get("provider") or "cloudflare-auto")
@@ -326,9 +323,6 @@ def prepare_hosting(
             if config.get("domain")
             else worker_url(project)
         )
-        if _worker_names_cache is not None:
-            _worker_names_cache.add(project)
-
     deploy["resolvedProvider"] = provider
     save(config, site_dir / "site.json")
     return config

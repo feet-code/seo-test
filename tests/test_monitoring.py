@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import importlib.util
+import os
 import sys
 import unittest
 import urllib.error
@@ -321,13 +322,33 @@ class CloudflareHostingTests(unittest.TestCase):
         monitoring = load_monitoring()
         with (
             patch.object(monitoring, "_page_project_exists", return_value=False),
-            patch.object(monitoring, "worker_names", return_value=set()),
             patch.object(monitoring, "pages_project_count", return_value=100),
             patch.object(monitoring, "_pages_limit", return_value=100),
+            patch.object(monitoring, "cloudflare") as cloudflare,
         ):
             provider = monitoring.resolve_cloudflare_auto(self.config())
 
         self.assertEqual(provider, "cloudflare-workers")
+        cloudflare.assert_not_called()
+
+    def test_workers_subdomain_403_explains_required_token_permission(self) -> None:
+        monitoring = load_monitoring()
+        error = urllib.error.HTTPError(
+            "https://api.cloudflare.com/client/v4/accounts/test/workers/subdomain",
+            403,
+            "Forbidden",
+            {},
+            None,
+        )
+        with (
+            patch.dict(os.environ, {}, clear=True),
+            patch.object(monitoring, "cloudflare", side_effect=error),
+        ):
+            with self.assertRaisesRegex(
+                RuntimeError,
+                "Account > Workers Scripts > Edit",
+            ):
+                monitoring.workers_subdomain()
 
     def test_pages_project_count_uses_supported_default_page_size(self) -> None:
         monitoring = load_monitoring()
@@ -454,7 +475,6 @@ class CloudflareHostingTests(unittest.TestCase):
         with (
             patch.object(monitoring, "_page_project_exists", return_value=False),
             patch.object(monitoring, "pages_project_count", return_value=37),
-            patch.object(monitoring, "worker_names", return_value=set()),
         ):
             provider = monitoring.resolve_cloudflare_auto(self.config())
 

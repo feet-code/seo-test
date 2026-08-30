@@ -446,6 +446,7 @@ def main() -> None:
         )
         try:
             config = load_config(site_dir)
+            save_checkpoint(site_ids, index, step="hosting")
             if args.mock:
                 requested_provider = args.provider or str(
                     config.get("deploy", {}).get("provider", "cloudflare-pages")
