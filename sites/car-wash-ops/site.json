@@ -1,0 +1,63 @@
+{
+  "id": "car-wash-ops",
+  "name": "Car Wash Operations",
+  "domain": null,
+  "audience": "independent express, tunnel, and multi-bay car wash operators",
+  "topic": "equipment downtime handoffs and membership billing exceptions",
+  "products": [
+    {
+      "id": "wash-equipment-downtime-handoff",
+      "name": "Wash Equipment Downtime Handoff",
+      "product": "A focused car wash equipment downtime tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent express, tunnel, and multi-bay car wash operators",
+      "problem": "A conveyor, pump, arch, pay station, dryer, reclaim system, or bay can remain degraded across shifts while containment, vendor response, parts, customer impact, and return-to-service testing live in separate messages.",
+      "valueProposition": "Turns car wash equipment downtime tracking into a visible operating queue so every equipment incident has contained customer impact, named repair ownership, shift-to-shift status, and verified return to service.",
+      "topic": "car wash equipment downtime tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets car wash maintenance software, car wash equipment downtime, car wash work order, and wash equipment repair log searches.",
+      "score": 89
+    },
+    {
+      "id": "membership-billing-exception",
+      "name": "Membership Billing Exception",
+      "product": "A focused car wash membership billing exception tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent express, tunnel, and multi-bay car wash operators",
+      "problem": "Failed renewals, duplicate plans, plate changes, cancellation requests, refunds, disputed charges, and access status can diverge between POS, processor, and customer support.",
+      "valueProposition": "Turns car wash membership billing exception tracking into a visible operating queue so every membership exception resolves billing, access, customer communication, and future renewal state with one documented decision.",
+      "topic": "car wash membership billing exception tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets car wash membership software, car wash billing dispute, unlimited wash plan cancellation, and car wash failed payment searches.",
+      "score": 87
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused car wash equipment downtime tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns car wash equipment downtime tracking into a visible operating queue so every equipment incident has contained customer impact, named repair ownership, shift-to-shift status, and verified return to service.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith",
+    "picture": "/assets/blog/authors/jj.jpeg"
+  },
+  "images": {
+    "coverImage": "/assets/blog/preview/cover.jpg",
+    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-pages",
+    "project": "car-wash-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

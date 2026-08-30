@@ -1,0 +1,63 @@
+{
+  "id": "tailoring-alteration-ops",
+  "name": "Tailoring and Alteration Operations",
+  "domain": null,
+  "audience": "independent tailoring, alteration, and garment-repair shops",
+  "topic": "fitting decisions and finished-garment pickup readiness",
+  "products": [
+    {
+      "id": "fitting-decision-register",
+      "name": "Fitting Decision Register",
+      "product": "A focused tailoring fitting change approval tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent tailoring, alteration, and garment-repair shops",
+      "problem": "Pin changes, customer fit comments, garment posture, measurements, promised date, added work, and price decisions from successive fittings can overwrite or contradict one another.",
+      "valueProposition": "Turns tailoring fitting change approval tracking into a visible operating queue so every fitting produces an agreed current alteration plan, price or date consequence, garment marking reference, and next checkpoint.",
+      "topic": "tailoring fitting change approval tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets tailor fitting software, alteration fitting notes, garment measurement tracker, and tailoring change approval searches.",
+      "score": 86
+    },
+    {
+      "id": "garment-pickup-readiness",
+      "name": "Garment Pickup Readiness",
+      "product": "A focused alteration garment pickup readiness workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent tailoring, alteration, and garment-repair shops",
+      "problem": "A customer receives a ready message before final pressing, quality check, accessories, original material, balance, garment bag, or pickup authorization is reconciled.",
+      "valueProposition": "Turns alteration garment pickup readiness into a visible operating queue so every finished garment is checked against approved work, packaged with customer property, financially reconciled, and staged before notification.",
+      "topic": "alteration garment pickup readiness",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets alteration pickup tracker, tailor order ready, garment quality checklist, and tailoring order status searches.",
+      "score": 82
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused tailoring fitting change approval tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns tailoring fitting change approval tracking into a visible operating queue so every fitting produces an agreed current alteration plan, price or date consequence, garment marking reference, and next checkpoint.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith",
+    "picture": "/assets/blog/authors/jj.jpeg"
+  },
+  "images": {
+    "coverImage": "/assets/blog/preview/cover.jpg",
+    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-pages",
+    "project": "tailoring-alteration-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

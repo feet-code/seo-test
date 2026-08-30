@@ -1,0 +1,63 @@
+{
+  "id": "arborist-tree-service-ops",
+  "name": "Arborist and Tree Service Operations",
+  "domain": null,
+  "audience": "independent arborist, pruning, removal, and plant-health-care companies",
+  "topic": "permit and utility readiness plus complete tree-job closeout",
+  "products": [
+    {
+      "id": "tree-job-readiness-gate",
+      "name": "Tree Job Readiness Gate",
+      "product": "A focused tree service permit utility and site readiness workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent arborist, pruning, removal, and plant-health-care companies",
+      "problem": "Approved tree work reaches the crew without confirmed permits, utility coordination, access, equipment, traffic control, neighbor constraints, or current tree scope.",
+      "valueProposition": "Turns tree service permit utility and site readiness into a visible operating queue so every tree job is released only with site-specific scope, permissions, hazards, equipment, and access verified for the assigned crew.",
+      "topic": "tree service permit utility and site readiness",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets tree service job checklist, arborist permit tracker, tree removal job readiness, and tree crew work packet searches.",
+      "score": 89
+    },
+    {
+      "id": "tree-job-closeout",
+      "name": "Tree Job Closeout",
+      "product": "A focused tree service cleanup and stump closeout tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent arborist, pruning, removal, and plant-health-care companies",
+      "problem": "A removal or pruning crew can leave while debris, stump work, wood disposition, property damage, permit conditions, customer walkthrough, or invoice evidence remains unresolved.",
+      "valueProposition": "Turns tree service cleanup and stump closeout tracking into a visible operating queue so every tree job closes with contracted scope, site cleanup, retained materials, follow-on work, and customer-facing evidence reconciled.",
+      "topic": "tree service cleanup and stump closeout tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets tree service completion checklist, tree removal cleanup, stump grinding follow up, and arborist job closeout searches.",
+      "score": 86
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused tree service permit utility and site readiness workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns tree service permit utility and site readiness into a visible operating queue so every tree job is released only with site-specific scope, permissions, hazards, equipment, and access verified for the assigned crew.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith",
+    "picture": "/assets/blog/authors/jj.jpeg"
+  },
+  "images": {
+    "coverImage": "/assets/blog/preview/cover.jpg",
+    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-pages",
+    "project": "arborist-tree-service-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

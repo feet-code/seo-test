@@ -1,0 +1,63 @@
+{
+  "id": "environmental-fieldwork-ops",
+  "name": "Environmental Fieldwork Operations",
+  "domain": null,
+  "audience": "small environmental consulting and field-sampling teams",
+  "topic": "sampling-event readiness and chain-of-custody exception handling",
+  "products": [
+    {
+      "id": "sampling-event-readiness",
+      "name": "Sampling Event Readiness",
+      "product": "A focused environmental sampling event readiness workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "small environmental consulting and field-sampling teams",
+      "problem": "A field team mobilizes with an outdated plan, wrong containers or preservatives, missing labels, expired calibration, incomplete access or utility clearances, unsuitable shipping, or an unconfirmed laboratory window.",
+      "valueProposition": "Turns environmental sampling event readiness into a visible operating queue so every sampling event is released by a qualified reviewer with current plan, locations, equipment, containers, laboratory coordination, access, and safety prerequisites.",
+      "topic": "environmental sampling event readiness",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets environmental sampling checklist, field sampling planning software, sampling event readiness, and environmental field data workflow searches.",
+      "score": 91
+    },
+    {
+      "id": "custody-exception-desk",
+      "name": "Custody Exception Desk",
+      "product": "A focused environmental chain of custody exception tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "small environmental consulting and field-sampling teams",
+      "problem": "Sample label, form, seal, temperature, preservation, transfer signature, received time, container count, or laboratory login can disagree, and the resolution trail may be rebuilt later.",
+      "valueProposition": "Turns environmental chain of custody exception tracking into a visible operating queue so every custody discrepancy is contained, reviewed by qualified personnel, linked to affected samples, and resolved without rewriting original evidence.",
+      "topic": "environmental chain of custody exception tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets chain of custody software, environmental sample tracking, sample custody discrepancy, and field to lab workflow searches.",
+      "score": 92
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused environmental sampling event readiness workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns environmental sampling event readiness into a visible operating queue so every sampling event is released by a qualified reviewer with current plan, locations, equipment, containers, laboratory coordination, access, and safety prerequisites.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith",
+    "picture": "/assets/blog/authors/jj.jpeg"
+  },
+  "images": {
+    "coverImage": "/assets/blog/preview/cover.jpg",
+    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-pages",
+    "project": "environmental-fieldwork-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

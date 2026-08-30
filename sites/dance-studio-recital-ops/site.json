@@ -1,0 +1,49 @@
+{
+  "id": "dance-studio-recital-ops",
+  "name": "Dance Studio Recital Operations",
+  "domain": null,
+  "audience": "independent dance studios producing multi-class recitals",
+  "topic": "recital costume, rehearsal, performer, and backstage readiness",
+  "products": [
+    {
+      "id": "recital-readiness-board",
+      "name": "Recital Readiness Board",
+      "product": "A focused dance studio recital readiness tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "independent dance studios producing multi-class recitals",
+      "problem": "Routines, music edits, dancer participation, costumes, shoes, quick changes, rehearsal calls, volunteers, tickets, program details, venue access, and backstage plans mature across many class and parent records.",
+      "valueProposition": "Turns dance studio recital readiness tracking into a visible operating queue so every recital number and performer reaches show day with approved music, participation, costume, call time, quick-change, volunteer, and backstage dependencies verified.",
+      "topic": "dance studio recital readiness tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets dance recital planning software, recital costume tracker, dance backstage checklist, and dance studio recital management searches.",
+      "score": 89
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused dance studio recital readiness tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns dance studio recital readiness tracking into a visible operating queue so every recital number and performer reaches show day with approved music, participation, costume, call time, quick-change, volunteer, and backstage dependencies verified.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith",
+    "picture": "/assets/blog/authors/jj.jpeg"
+  },
+  "images": {
+    "coverImage": "/assets/blog/preview/cover.jpg",
+    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-pages",
+    "project": "dance-studio-recital-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

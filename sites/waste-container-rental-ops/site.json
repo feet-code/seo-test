@@ -1,0 +1,77 @@
+{
+  "id": "waste-container-rental-ops",
+  "name": "Waste Container Rental Operations",
+  "domain": null,
+  "audience": "small roll-off dumpster and commercial waste-container rental companies",
+  "topic": "container dispatch, exception evidence, and fleet reconciliation",
+  "products": [
+    {
+      "id": "container-dispatch-readiness",
+      "name": "Container Dispatch Readiness",
+      "product": "A focused roll off dumpster delivery swap and pickup readiness workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "small roll-off dumpster and commercial waste-container rental companies",
+      "problem": "Delivery, swap, pickup, and live-load orders fail when container size, availability, site placement, truck access, material restrictions, disposal facility, or customer timing is unresolved.",
+      "valueProposition": "Turns roll off dumpster delivery swap and pickup readiness into a visible operating queue so every container movement is released with an available asset, compatible truck, approved site action, material path, and current customer promise.",
+      "topic": "roll off dumpster delivery swap and pickup readiness",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets dumpster dispatch software, roll off container tracking, dumpster swap scheduling, and container delivery checklist searches.",
+      "score": 90
+    },
+    {
+      "id": "overage-evidence-desk",
+      "name": "Overage Evidence Desk",
+      "product": "A focused dumpster contamination and overage evidence tracking workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "small roll-off dumpster and commercial waste-container rental companies",
+      "problem": "Overweight loads, prohibited material, blocked service, dry runs, extra days, and cleanup fees become billing disputes when the charge rule and field evidence are assembled after the fact.",
+      "valueProposition": "Turns dumpster contamination and overage evidence tracking into a visible operating queue so every exception charge is linked to the contract rule, timestamped field or scale evidence, reviewer decision, and customer notice before invoicing.",
+      "topic": "dumpster contamination and overage evidence tracking",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets dumpster overage charges, dumpster contamination photos, roll off dry run fee, and waste exception billing searches.",
+      "score": 91
+    },
+    {
+      "id": "container-inventory-reconciliation",
+      "name": "Container Inventory Reconciliation",
+      "product": "A focused roll off container inventory reconciliation workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "small roll-off dumpster and commercial waste-container rental companies",
+      "problem": "Yard counts, dispatched movements, customer sites, repair holds, lost units, and billing records diverge, making available inventory unreliable precisely when dispatch needs it.",
+      "valueProposition": "Turns roll off container inventory reconciliation into a visible operating queue so every container has one verified physical location, service state, billing relationship, and next movement or review time.",
+      "topic": "roll off container inventory reconciliation",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets roll off container inventory, dumpster fleet tracking, container reconciliation, and dumpster asset location searches.",
+      "score": 88
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused roll off dumpster delivery swap and pickup readiness workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns roll off dumpster delivery swap and pickup readiness into a visible operating queue so every container movement is released with an available asset, compatible truck, approved site action, material path, and current customer promise.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith",
+    "picture": "/assets/blog/authors/jj.jpeg"
+  },
+  "images": {
+    "coverImage": "/assets/blog/preview/cover.jpg",
+    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-pages",
+    "project": "waste-container-rental-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

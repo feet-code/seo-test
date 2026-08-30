@@ -1,0 +1,63 @@
+{
+  "id": "septic-service-ops",
+  "name": "Septic Service Operations",
+  "domain": null,
+  "audience": "small septic pumping, inspection, and liquid-waste service companies",
+  "topic": "property access readiness and disposal-record reconciliation for septic jobs",
+  "products": [
+    {
+      "id": "septic-site-access-readiness",
+      "name": "Septic Site Access Readiness",
+      "product": "A focused septic pumping property access readiness workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "small septic pumping, inspection, and liquid-waste service companies",
+      "problem": "Pump trucks arrive without verified tank location, lids exposed, gate access, hose distance, parking plan, occupant contact, or known site constraints.",
+      "valueProposition": "Turns septic pumping property access readiness into a visible operating queue so every dispatched septic job has a usable tank location, access plan, service scope, and customer responsibility confirmed before truck commitment.",
+      "topic": "septic pumping property access readiness",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets septic pumping checklist, septic tank access preparation, septic service route notes, and septic job readiness searches.",
+      "score": 88
+    },
+    {
+      "id": "disposal-ticket-reconciliation",
+      "name": "Disposal Ticket Reconciliation",
+      "product": "A focused septic disposal ticket and pump record reconciliation workflow that makes ownership, evidence, exceptions, and the next action visible.",
+      "productUrl": "",
+      "audience": "small septic pumping, inspection, and liquid-waste service companies",
+      "problem": "Pump volume, source jobs, truck loads, disposal facility tickets, fees, and customer billing can be recorded independently, leaving unmatched or duplicated disposal activity.",
+      "valueProposition": "Turns septic disposal ticket and pump record reconciliation into a visible operating queue so every pumped load reconciles to source jobs, truck custody, accepted disposal evidence, fees, and billable service records.",
+      "topic": "septic disposal ticket and pump record reconciliation",
+      "monetization": "$19-$99/month based on active records, locations, or team size",
+      "startupCost": "Static product probe, managed database, email integration, and lightweight scheduled jobs.",
+      "seoAngle": "Targets septic disposal ticket software, septage load tracking, septic pump record reconciliation, and liquid waste disposal log searches.",
+      "score": 87
+    }
+  ],
+  "articlesPerProduct": 10,
+  "product": "A focused septic pumping property access readiness workflow that makes ownership, evidence, exceptions, and the next action visible.",
+  "productUrl": "",
+  "valueProposition": "Turns septic pumping property access readiness into a visible operating queue so every dispatched septic job has a usable tank location, access plan, service scope, and customer responsibility confirmed before truck commitment.",
+  "articleCount": 10,
+  "author": {
+    "name": "John Smith",
+    "picture": "/assets/blog/authors/jj.jpeg"
+  },
+  "images": {
+    "coverImage": "/assets/blog/preview/cover.jpg",
+    "ogImage": "/assets/blog/dynamic-routing/cover.jpg"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-pages",
+    "project": "septic-service-ops"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}
