@@ -189,6 +189,18 @@ class PortfolioTests(unittest.TestCase):
         self.assertEqual(score, 80)
         self.assertEqual(sum(ideas.PROFIT_SCORE_WEIGHTS.values()), 100)
 
+    def test_grounded_json_mode_is_compatible_with_each_model_generation(self) -> None:
+        ideas = load_script("ideas")
+
+        self.assertEqual(
+            ideas._gemini_generation_config("gemini-3.7-flash"),
+            {"responseMimeType": "application/json"},
+        )
+        self.assertNotIn(
+            "responseMimeType",
+            ideas._gemini_generation_config("gemini-2.5-flash"),
+        )
+
     def test_sync_updates_portfolio_content_but_preserves_operations(self) -> None:
         ideas = load_script("ideas")
         document = ideas.mock_document()

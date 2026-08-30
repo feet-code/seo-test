@@ -93,6 +93,15 @@ def _clean_json(text: str) -> Any:
     return json.loads(text)
 
 
+def _gemini_generation_config(model: str) -> dict[str, Any]:
+    # Google currently limits structured output combined with built-in tools to
+    # Gemini 3. The 2.5 fallback remains Search-grounded and follows the strict
+    # JSON-only prompt, then _clean_json validates its text response.
+    if model.startswith("gemini-3"):
+        return {"responseMimeType": "application/json"}
+    return {"temperature": 0.65}
+
+
 def _call_model(model: str, prompt: str) -> str:
     key = os.getenv("GEMINI_API_KEY")
     if not key:
@@ -104,10 +113,7 @@ def _call_model(model: str, prompt: str) -> str:
     body = {
         "contents": [{"parts": [{"text": prompt}]}],
         "tools": [{"google_search": {}}],
-        "generationConfig": {
-            "temperature": 0.65,
-            "responseMimeType": "application/json",
-        },
+        "generationConfig": _gemini_generation_config(model),
     }
     request = urllib.request.Request(
         url,
