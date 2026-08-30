@@ -329,6 +329,41 @@ class CloudflareHostingTests(unittest.TestCase):
 
         self.assertEqual(provider, "cloudflare-workers")
 
+    def test_pages_project_count_uses_supported_default_page_size(self) -> None:
+        monitoring = load_monitoring()
+        response = {
+            "result": [{"name": "first"}],
+            "result_info": {"page": 1, "per_page": 20, "total_count": 73},
+        }
+
+        with patch.object(monitoring, "cloudflare", return_value=response) as cloudflare:
+            count = monitoring.pages_project_count()
+
+        self.assertEqual(count, 73)
+        cloudflare.assert_called_once_with("GET", "/pages/projects")
+
+    def test_pages_project_count_paginates_without_per_page_override(self) -> None:
+        monitoring = load_monitoring()
+        responses = [
+            {
+                "result": [{"name": "first"}, {"name": "second"}],
+                "result_info": {"page": 1, "per_page": 2, "total_pages": 2},
+            },
+            {
+                "result": [{"name": "third"}],
+                "result_info": {"page": 2, "per_page": 2, "total_pages": 2},
+            },
+        ]
+
+        with patch.object(monitoring, "cloudflare", side_effect=responses) as cloudflare:
+            count = monitoring.pages_project_count()
+
+        self.assertEqual(count, 3)
+        self.assertEqual(
+            [call.args for call in cloudflare.call_args_list],
+            [("GET", "/pages/projects"), ("GET", "/pages/projects?page=2")],
+        )
+
     def test_auto_reuses_existing_pages_project_even_at_capacity(self) -> None:
         monitoring = load_monitoring()
         with (
