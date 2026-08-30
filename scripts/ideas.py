@@ -301,6 +301,11 @@ def _profitability_score(raw: Any, index: int) -> tuple[dict[str, int], int]:
     return scores, total
 
 
+def _recommended_probe_count(scores: dict[str, int]) -> int:
+    """Map reviewed SEO content depth to a useful 2-5 post experiment."""
+    return max(2, min(5, int(scores.get("contentDepth", 7)) - 5))
+
+
 def _evidence_items(raw: Any, index: int) -> list[dict[str, str]]:
     if not isinstance(raw, list) or len(raw) < 2:
         raise ValueError(f"product {index} needs at least two marketEvidence items")
@@ -469,6 +474,7 @@ def _normalize_products(
                 "searchQueries": search_queries,
                 "scoreBreakdown": scores,
                 "score": score,
+                "probeArticleCount": _recommended_probe_count(scores),
                 "contentBatch": "profitability-generated",
                 "probeContext": _profit_probe_context(values),
                 "domain": None,
@@ -726,7 +732,7 @@ def generate_portfolio(
     ideas = [product for batch in plan for product in completed[batch["id"]]]
     document = {
         "version": 2,
-        "articlesPerProduct": 10,
+        "articlesPerProduct": 5,
         "generatedAt": _utc_timestamp(),
         "generation": {
             "source": "seo-test",
@@ -739,6 +745,7 @@ def generate_portfolio(
             "grouping": "none; every product is an independent one-product site",
             "grounding": "Google Search enabled for every Gemini model",
             "scoreWeights": PROFIT_SCORE_WEIGHTS,
+            "probePlanning": "2-5 posts per idea from reviewed SEO contentDepth",
         },
         "sites": [
             {
@@ -838,6 +845,17 @@ def validate_document(document: dict[str, Any]) -> None:
         for name in ("name", "product", "audience", "problem", "topic"):
             if not str(idea.get(name, "")).strip():
                 raise PortfolioError(f"Idea {idea_id!r} is missing {name}")
+        if "probeArticleCount" in idea:
+            try:
+                probe_count = int(idea["probeArticleCount"])
+            except (TypeError, ValueError) as exc:
+                raise PortfolioError(
+                    f"Idea {idea_id!r} probeArticleCount must be an integer"
+                ) from exc
+            if not 2 <= probe_count <= 5:
+                raise PortfolioError(
+                    f"Idea {idea_id!r} probeArticleCount must be between 2 and 5"
+                )
 
     if version < 2:
         return
@@ -965,6 +983,7 @@ def _product_config(idea: dict[str, Any]) -> dict[str, Any]:
         "primaryRisk": idea.get("primaryRisk", ""),
         "scoreBreakdown": idea.get("scoreBreakdown", {}),
         "score": idea.get("score"),
+        "probeArticleCount": idea.get("probeArticleCount"),
         "contentBatch": idea.get("contentBatch", ""),
     }
 
@@ -979,10 +998,14 @@ def _desired_config(
     primary = products[0]
     version = int(document.get("version", 1))
     default_articles = 10 if version >= 2 else 5
+    planned_articles = (
+        primary.get("probeArticleCount") if len(products) == 1 else None
+    )
     articles = int(
         site.get(
             "articlesPerProduct",
-            document.get("articlesPerProduct", default_articles),
+            planned_articles
+            or document.get("articlesPerProduct", default_articles),
         )
     )
     return {

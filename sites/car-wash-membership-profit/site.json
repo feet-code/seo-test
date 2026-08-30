@@ -1,0 +1,70 @@
+{
+  "id": "car-wash-membership-profit",
+  "name": "Car Wash Membership Profit",
+  "domain": null,
+  "audience": "independent and small-chain car wash operators",
+  "topic": "car wash membership profitability and pricing",
+  "products": [
+    {
+      "id": "car-wash-membership-profit",
+      "name": "Car Wash Membership Profit",
+      "product": "Measures membership cohort margin using price, wash frequency, chemical cost, payment fees, churn, discounts, and peak capacity.",
+      "productUrl": "",
+      "audience": "independent and small-chain car wash operators",
+      "problem": "Membership counts grow while high-frequency cohorts and promotions can quietly dilute profit or congest peak periods.",
+      "valueProposition": "Optimizes plan pricing, promotion limits, and churn interventions against contribution rather than subscriber count.",
+      "topic": "car wash membership profitability and pricing",
+      "monetization": "$199-$799/month by locations and members",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: car wash membership software; car wash membership pricing; car wash subscription profitability; car wash membership profitability and pricing software; car wash membership profitability and pricing calculator; car wash membership profitability and pricing pricing",
+      "seoThesis": "A narrow site for independent and small-chain car wash operators can connect commercial pages, calculators, comparisons, and implementation guides around car wash membership profitability and pricing to the same measurable retention outcome.",
+      "searchQueries": [
+        "car wash membership software",
+        "car wash membership pricing",
+        "car wash subscription profitability",
+        "car wash membership profitability and pricing software",
+        "car wash membership profitability and pricing calculator",
+        "car wash membership profitability and pricing pricing"
+      ],
+      "buyer": "owner, marketing director, or general manager",
+      "economicDriver": "retention",
+      "profitRationale": "Recurring payments, measurable cohort economics, and multi-location expansion create attractive recurring revenue.",
+      "primaryRisk": "Point-of-sale integrations and attribution of capacity cost can slow onboarding.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 10,
+        "monetizationExpansion": 9,
+        "searchDemand": 8,
+        "commercialIntent": 9,
+        "contentDepth": 9,
+        "serpWinnability": 7,
+        "buildSupportFeasibility": 7
+      },
+      "score": 85,
+      "probeArticleCount": 4,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 4,
+  "product": "Measures membership cohort margin using price, wash frequency, chemical cost, payment fees, churn, discounts, and peak capacity.",
+  "productUrl": "",
+  "valueProposition": "Optimizes plan pricing, promotion limits, and churn interventions against contribution rather than subscriber count.",
+  "articleCount": 4,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "car-wash-membership-profit"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

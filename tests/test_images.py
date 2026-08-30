@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import importlib.util
+import json
 import re
 import sys
 import unittest
@@ -24,14 +25,26 @@ class ImageFreeBlogTests(unittest.TestCase):
     def test_every_committed_blog_is_image_free(self) -> None:
         root_paths = sorted((ROOT / "_posts").glob("*.md"))
         site_paths = sorted((ROOT / "sites").glob("*/_posts/*.md"))
+        portfolio = json.loads(
+            (ROOT / "ideas" / "ideas.json").read_text(encoding="utf-8")
+        )
+        expected = sum(idea["probeArticleCount"] for idea in portfolio["ideas"])
         self.assertGreater(len(root_paths), 0)
-        self.assertEqual(site_paths, [])
+        self.assertEqual(len(site_paths), expected)
         paths = root_paths
         forbidden = re.compile(
             r"^(?:coverImage|ogImage):|^\s+picture:|!\[[^\]]*\]\(|<img\b",
             re.MULTILINE | re.IGNORECASE,
         )
         offenders = [str(path.relative_to(ROOT)) for path in paths if forbidden.search(path.read_text(encoding="utf-8"))]
+        self.assertEqual(offenders, [])
+
+    def test_committed_probe_posts_have_no_pipe_characters(self) -> None:
+        offenders = [
+            str(path.relative_to(ROOT))
+            for path in sorted((ROOT / "sites").glob("*/_posts/*.md"))
+            if "|" in path.read_text(encoding="utf-8")
+        ]
         self.assertEqual(offenders, [])
 
     def test_generator_strips_model_image_markup(self) -> None:
@@ -43,6 +56,20 @@ class ImageFreeBlogTests(unittest.TestCase):
         self.assertEqual(cleaned, "Before useful diagram after .")
         self.assertNotIn("![", cleaned)
         self.assertNotIn("<img", cleaned)
+
+    def test_generator_converts_markdown_tables_to_readable_lists(self) -> None:
+        generator = load_script("generate_posts")
+        table = (
+            "| Approach | Best when | Main limitation |\n"
+            "|---|---|---|\n"
+            "| Spreadsheet | One owner handles low volume | Depends on memory |"
+        )
+
+        cleaned = generator.strip_pipe_formatting(table)
+
+        self.assertNotIn("|", cleaned)
+        self.assertIn("**Spreadsheet**", cleaned)
+        self.assertIn("**Best when:** One owner handles low volume", cleaned)
 
     def test_site_configs_have_no_blog_image_defaults(self) -> None:
         offenders = []

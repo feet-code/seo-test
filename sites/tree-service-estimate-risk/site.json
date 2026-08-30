@@ -1,0 +1,70 @@
+{
+  "id": "tree-service-estimate-risk",
+  "name": "Tree Service Estimate Risk",
+  "domain": null,
+  "audience": "independent tree-care and arborist companies",
+  "topic": "tree service job pricing and profit estimating",
+  "products": [
+    {
+      "id": "tree-service-estimate-risk",
+      "name": "Tree Service Estimate Risk",
+      "product": "Prices jobs from crew, equipment, rigging complexity, access, disposal, traffic control, travel, and uncertainty allowances.",
+      "productUrl": "",
+      "audience": "independent tree-care and arborist companies",
+      "problem": "Estimators use broad day rates that miss access and rigging risks until the crew is committed.",
+      "valueProposition": "Builds a defendable price range and exposes the field questions most likely to change margin or duration.",
+      "topic": "tree service job pricing and profit estimating",
+      "monetization": "$49-$249/month by estimators",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: tree service estimate calculator; tree removal pricing software; arborist job costing; tree service job pricing and profit estimating software; tree service job pricing and profit estimating calculator; tree service job pricing and profit estimating pricing",
+      "seoThesis": "A narrow site for independent tree-care and arborist companies can connect commercial pages, calculators, comparisons, and implementation guides around tree service job pricing and profit estimating to the same measurable risk outcome.",
+      "searchQueries": [
+        "tree service estimate calculator",
+        "tree removal pricing software",
+        "arborist job costing",
+        "tree service job pricing and profit estimating software",
+        "tree service job pricing and profit estimating calculator",
+        "tree service job pricing and profit estimating pricing"
+      ],
+      "buyer": "owner or estimator",
+      "economicDriver": "risk",
+      "profitRationale": "Each estimate is financially meaningful, high-intent searches are direct, and no integration is required for initial value.",
+      "primaryRisk": "Safety-critical complexity cannot be reduced to an automated recommendation, and small operators have limited budgets.",
+      "scoreBreakdown": {
+        "economicPain": 8,
+        "buyerBudget": 6,
+        "recurrenceRetention": 8,
+        "monetizationExpansion": 6,
+        "searchDemand": 10,
+        "commercialIntent": 10,
+        "contentDepth": 9,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 9
+      },
+      "score": 81,
+      "probeArticleCount": 4,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 4,
+  "product": "Prices jobs from crew, equipment, rigging complexity, access, disposal, traffic control, travel, and uncertainty allowances.",
+  "productUrl": "",
+  "valueProposition": "Builds a defendable price range and exposes the field questions most likely to change margin or duration.",
+  "articleCount": 4,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "tree-service-estimate-risk"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

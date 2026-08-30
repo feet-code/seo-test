@@ -1,0 +1,70 @@
+{
+  "id": "brewery-batch-margin",
+  "name": "Brewery Batch Margin",
+  "domain": null,
+  "audience": "small craft breweries with taproom and wholesale channels",
+  "topic": "craft brewery batch costing and SKU profitability",
+  "products": [
+    {
+      "id": "brewery-batch-margin",
+      "name": "Brewery Batch Margin",
+      "product": "Calculates SKU and batch contribution across ingredients, yield loss, packaging, tank time, labor, excise, distribution, and channel price.",
+      "productUrl": "",
+      "audience": "small craft breweries with taproom and wholesale channels",
+      "problem": "Breweries know recipe cost but not the profit impact of yield, tank capacity, packaging format, and sales channel.",
+      "valueProposition": "Shows which products, batch sizes, packages, and channels make the best use of constrained tank capacity.",
+      "topic": "craft brewery batch costing and SKU profitability",
+      "monetization": "$99-$399/month by production volume",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: brewery costing software; beer batch profit calculator; craft brewery SKU profitability; craft brewery batch costing and SKU profitability software; craft brewery batch costing and SKU profitability calculator; craft brewery batch costing and SKU profitability pricing",
+      "seoThesis": "A narrow site for small craft breweries with taproom and wholesale channels can connect commercial pages, calculators, comparisons, and implementation guides around craft brewery batch costing and SKU profitability to the same measurable margin outcome.",
+      "searchQueries": [
+        "brewery costing software",
+        "beer batch profit calculator",
+        "craft brewery SKU profitability",
+        "craft brewery batch costing and SKU profitability software",
+        "craft brewery batch costing and SKU profitability calculator",
+        "craft brewery batch costing and SKU profitability pricing"
+      ],
+      "buyer": "owner, head brewer, or finance manager",
+      "economicDriver": "margin",
+      "profitRationale": "Repeated batches and constrained equipment create recurring decisions, while channel economics support deeper expansion.",
+      "primaryRisk": "Brewery software incumbents exist and accurate production loss data may be inconsistent.",
+      "scoreBreakdown": {
+        "economicPain": 8,
+        "buyerBudget": 6,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 8,
+        "searchDemand": 8,
+        "commercialIntent": 8,
+        "contentDepth": 8,
+        "serpWinnability": 6,
+        "buildSupportFeasibility": 8
+      },
+      "score": 77,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Calculates SKU and batch contribution across ingredients, yield loss, packaging, tank time, labor, excise, distribution, and channel price.",
+  "productUrl": "",
+  "valueProposition": "Shows which products, batch sizes, packages, and channels make the best use of constrained tank capacity.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "brewery-batch-margin"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

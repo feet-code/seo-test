@@ -1,0 +1,70 @@
+{
+  "id": "commercial-glass-job-margin",
+  "name": "Commercial Glass Job Margin",
+  "domain": null,
+  "audience": "commercial glazing and glass service contractors",
+  "topic": "commercial glass estimating and glazing job costing",
+  "products": [
+    {
+      "id": "commercial-glass-job-margin",
+      "name": "Commercial Glass Job Margin",
+      "product": "Prices replacement and installation from measured units, glass type, fabrication, access, lifts, crew time, breakage risk, travel, and lead time.",
+      "productUrl": "",
+      "audience": "commercial glazing and glass service contractors",
+      "problem": "Material volatility, access, and remake risk turn simple square-foot prices into unreliable bids.",
+      "valueProposition": "Creates a risk-adjusted quote floor and learns remake and production factors from completed jobs.",
+      "topic": "commercial glass estimating and glazing job costing",
+      "monetization": "$149-$599/month by estimators and annual jobs",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: glass estimating software; commercial glazing bid software; glass installation job costing; commercial glass estimating and glazing job costing software; commercial glass estimating and glazing job costing calculator; commercial glass estimating and glazing job costing pricing",
+      "seoThesis": "A narrow site for commercial glazing and glass service contractors can connect commercial pages, calculators, comparisons, and implementation guides around commercial glass estimating and glazing job costing to the same measurable margin outcome.",
+      "searchQueries": [
+        "glass estimating software",
+        "commercial glazing bid software",
+        "glass installation job costing",
+        "commercial glass estimating and glazing job costing software",
+        "commercial glass estimating and glazing job costing calculator",
+        "commercial glass estimating and glazing job costing pricing"
+      ],
+      "buyer": "owner or estimator",
+      "economicDriver": "margin",
+      "profitRationale": "Quotes are high-value and frequent enough to support paid software, with a narrow search vocabulary.",
+      "primaryRisk": "Takeoff and supplier pricing vary, so a solo MVP should start with quote validation rather than CAD automation.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 8,
+        "searchDemand": 8,
+        "commercialIntent": 9,
+        "contentDepth": 8,
+        "serpWinnability": 7,
+        "buildSupportFeasibility": 8
+      },
+      "score": 82,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Prices replacement and installation from measured units, glass type, fabrication, access, lifts, crew time, breakage risk, travel, and lead time.",
+  "productUrl": "",
+  "valueProposition": "Creates a risk-adjusted quote floor and learns remake and production factors from completed jobs.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "commercial-glass-job-margin"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

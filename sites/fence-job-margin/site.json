@@ -1,0 +1,70 @@
+{
+  "id": "fence-job-margin",
+  "name": "Fence Job Margin",
+  "domain": null,
+  "audience": "residential and light-commercial fence installers",
+  "topic": "fence estimating and job costing",
+  "products": [
+    {
+      "id": "fence-job-margin",
+      "name": "Fence Job Margin",
+      "product": "Prices fence jobs from footage, terrain, demolition, gates, post method, material waste, travel, and crew production.",
+      "productUrl": "",
+      "audience": "residential and light-commercial fence installers",
+      "problem": "Per-foot pricing misses site conditions and material volatility, producing avoidable margin losses.",
+      "valueProposition": "Calculates a transparent quote floor and compares estimated production with completed-job results.",
+      "topic": "fence estimating and job costing",
+      "monetization": "$99-$399/month by users or quote volume",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: fence estimating software; fence job cost calculator; fence contractor bidding software; fence estimating and job costing software; fence estimating and job costing calculator; fence estimating and job costing pricing",
+      "seoThesis": "A narrow site for residential and light-commercial fence installers can connect commercial pages, calculators, comparisons, and implementation guides around fence estimating and job costing to the same measurable margin outcome.",
+      "searchQueries": [
+        "fence estimating software",
+        "fence job cost calculator",
+        "fence contractor bidding software",
+        "fence estimating and job costing software",
+        "fence estimating and job costing calculator",
+        "fence estimating and job costing pricing"
+      ],
+      "buyer": "owner or estimator",
+      "economicDriver": "margin",
+      "profitRationale": "Search intent is explicit, quotes recur, and a focused estimator can monetize before deeper integrations exist.",
+      "primaryRisk": "Many basic calculators are free, so differentiation requires actual-cost learning and operational depth.",
+      "scoreBreakdown": {
+        "economicPain": 8,
+        "buyerBudget": 7,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 7,
+        "searchDemand": 9,
+        "commercialIntent": 9,
+        "contentDepth": 9,
+        "serpWinnability": 6,
+        "buildSupportFeasibility": 9
+      },
+      "score": 80,
+      "probeArticleCount": 4,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 4,
+  "product": "Prices fence jobs from footage, terrain, demolition, gates, post method, material waste, travel, and crew production.",
+  "productUrl": "",
+  "valueProposition": "Calculates a transparent quote floor and compares estimated production with completed-job results.",
+  "articleCount": 4,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "fence-job-margin"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

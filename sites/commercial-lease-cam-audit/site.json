@@ -1,0 +1,70 @@
+{
+  "id": "commercial-lease-cam-audit",
+  "name": "CAM Recapture Audit",
+  "domain": null,
+  "audience": "small commercial property owners and third-party managers",
+  "topic": "commercial lease CAM reconciliation and expense recovery",
+  "products": [
+    {
+      "id": "commercial-lease-cam-audit",
+      "name": "CAM Recapture Audit",
+      "product": "Reconciles lease clauses, property expenses, allocation rules, caps, and tenant billings for CAM recovery.",
+      "productUrl": "",
+      "audience": "small commercial property owners and third-party managers",
+      "problem": "Recoverable expenses are underbilled or disputed when lease terms and accounting categories are interpreted manually.",
+      "valueProposition": "Finds missed recoveries and produces a source-linked reconciliation that a manager can review before tenant billing.",
+      "topic": "commercial lease CAM reconciliation and expense recovery",
+      "monetization": "$300-$1,500/property/year plus portfolio subscription",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: CAM reconciliation software; commercial lease expense recovery audit; common area maintenance reconciliation tool; commercial lease CAM reconciliation and expense recovery software; commercial lease CAM reconciliation and expense recovery calculator; commercial lease CAM reconciliation and expense recovery pricing",
+      "seoThesis": "A narrow site for small commercial property owners and third-party managers can connect commercial pages, calculators, comparisons, and implementation guides around commercial lease CAM reconciliation and expense recovery to the same measurable revenue-capture outcome.",
+      "searchQueries": [
+        "CAM reconciliation software",
+        "commercial lease expense recovery audit",
+        "common area maintenance reconciliation tool",
+        "commercial lease CAM reconciliation and expense recovery software",
+        "commercial lease CAM reconciliation and expense recovery calculator",
+        "commercial lease CAM reconciliation and expense recovery pricing"
+      ],
+      "buyer": "asset manager, property manager, or controller",
+      "economicDriver": "revenue-capture",
+      "profitRationale": "The value is tied to recovered property income, with annual recurrence and portfolio expansion.",
+      "primaryRisk": "Lease abstraction is document-heavy and errors can damage tenant relationships.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 7,
+        "monetizationExpansion": 8,
+        "searchDemand": 8,
+        "commercialIntent": 9,
+        "contentDepth": 8,
+        "serpWinnability": 7,
+        "buildSupportFeasibility": 6
+      },
+      "score": 78,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Reconciles lease clauses, property expenses, allocation rules, caps, and tenant billings for CAM recovery.",
+  "productUrl": "",
+  "valueProposition": "Finds missed recoveries and produces a source-linked reconciliation that a manager can review before tenant billing.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "commercial-lease-cam-audit"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

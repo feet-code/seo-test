@@ -1,0 +1,70 @@
+{
+  "id": "pool-renovation-margin",
+  "name": "Pool Renovation Margin",
+  "domain": null,
+  "audience": "pool resurfacing and renovation contractors",
+  "topic": "pool renovation estimating and job costing",
+  "products": [
+    {
+      "id": "pool-renovation-margin",
+      "name": "Pool Renovation Margin",
+      "product": "Builds renovation quotes from measured area, finish, demolition, water handling, access, subcontractors, schedule, and change risk.",
+      "productUrl": "",
+      "audience": "pool resurfacing and renovation contractors",
+      "problem": "Large jobs are won with incomplete scope assumptions, then access and preparation costs consume margin.",
+      "valueProposition": "Creates a risk-adjusted quote and a structured change-price trail tied to actual job results.",
+      "topic": "pool renovation estimating and job costing",
+      "monetization": "$149-$599/month by estimators and projects",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: pool renovation estimating software; pool resurfacing cost calculator contractor; pool remodel job costing; pool renovation estimating and job costing software; pool renovation estimating and job costing calculator; pool renovation estimating and job costing pricing",
+      "seoThesis": "A narrow site for pool resurfacing and renovation contractors can connect commercial pages, calculators, comparisons, and implementation guides around pool renovation estimating and job costing to the same measurable margin outcome.",
+      "searchQueries": [
+        "pool renovation estimating software",
+        "pool resurfacing cost calculator contractor",
+        "pool remodel job costing",
+        "pool renovation estimating and job costing software",
+        "pool renovation estimating and job costing calculator",
+        "pool renovation estimating and job costing pricing"
+      ],
+      "buyer": "owner or estimator",
+      "economicDriver": "margin",
+      "profitRationale": "High-ticket projects make willingness to pay plausible, and one avoided estimating miss funds a long subscription.",
+      "primaryRisk": "Regional construction methods and finish catalogs require configurable rather than universal costing.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 8,
+        "monetizationExpansion": 9,
+        "searchDemand": 8,
+        "commercialIntent": 9,
+        "contentDepth": 8,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 7
+      },
+      "score": 83,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Builds renovation quotes from measured area, finish, demolition, water handling, access, subcontractors, schedule, and change risk.",
+  "productUrl": "",
+  "valueProposition": "Creates a risk-adjusted quote and a structured change-price trail tied to actual job results.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "pool-renovation-margin"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

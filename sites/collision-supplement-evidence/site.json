@@ -1,0 +1,70 @@
+{
+  "id": "collision-supplement-evidence",
+  "name": "Collision Supplement Evidence",
+  "domain": null,
+  "audience": "independent collision repair shops",
+  "topic": "collision repair supplement documentation and revenue recovery",
+  "products": [
+    {
+      "id": "collision-supplement-evidence",
+      "name": "Collision Supplement Evidence",
+      "product": "Maps repair discoveries, photos, scan results, procedures, parts changes, and labor evidence into supplement-ready records.",
+      "productUrl": "",
+      "audience": "independent collision repair shops",
+      "problem": "Legitimate repair revenue is delayed or lost when supplement evidence is incomplete, late, or disconnected from estimate lines.",
+      "valueProposition": "Finds missing documentation before submission and tracks the revenue outcome without making coverage decisions.",
+      "topic": "collision repair supplement documentation and revenue recovery",
+      "monetization": "$199-$799/month by estimators or repair orders",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: collision supplement software; auto body supplement documentation; repair estimate supplement checklist software; collision repair supplement documentation and revenue recovery software; collision repair supplement documentation and revenue recovery calculator; collision repair supplement documentation and revenue recovery pricing",
+      "seoThesis": "A narrow site for independent collision repair shops can connect commercial pages, calculators, comparisons, and implementation guides around collision repair supplement documentation and revenue recovery to the same measurable revenue-capture outcome.",
+      "searchQueries": [
+        "collision supplement software",
+        "auto body supplement documentation",
+        "repair estimate supplement checklist software",
+        "collision repair supplement documentation and revenue recovery software",
+        "collision repair supplement documentation and revenue recovery calculator",
+        "collision repair supplement documentation and revenue recovery pricing"
+      ],
+      "buyer": "shop owner, estimator, or supplement manager",
+      "economicDriver": "revenue-capture",
+      "profitRationale": "Supplement throughput is directly tied to revenue, and evidence requirements make a focused tool defensible.",
+      "primaryRisk": "Insurer and estimating-platform integrations are difficult, and the product must avoid promising claim approval.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 8,
+        "searchDemand": 8,
+        "commercialIntent": 9,
+        "contentDepth": 8,
+        "serpWinnability": 7,
+        "buildSupportFeasibility": 6
+      },
+      "score": 80,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Maps repair discoveries, photos, scan results, procedures, parts changes, and labor evidence into supplement-ready records.",
+  "productUrl": "",
+  "valueProposition": "Finds missing documentation before submission and tracks the revenue outcome without making coverage decisions.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "collision-supplement-evidence"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

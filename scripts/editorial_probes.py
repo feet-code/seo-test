@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from pathlib import Path
 from typing import Any, Callable
 
@@ -30,6 +31,37 @@ def _bullets(items: list[str]) -> str:
     return "\n".join(f"- {item}" for item in items)
 
 
+def _without_terminal(value: Any) -> str:
+    return str(value).strip().rstrip(".?!")
+
+
+def _inline(items: list[str]) -> str:
+    return "; ".join(_without_terminal(item) for item in items)
+
+
+def _headline(value: str) -> str:
+    acronyms = {
+        "3pl": "3PL",
+        "cam": "CAM",
+        "hoa": "HOA",
+        "hvac": "HVAC",
+        "msp": "MSP",
+        "sku": "SKU",
+    }
+    small = {"a", "an", "and", "for", "in", "of", "or", "the", "to", "with"}
+    words = value.strip().split()
+    result = []
+    for index, word in enumerate(words):
+        bare = word.lower()
+        if bare in acronyms:
+            result.append(acronyms[bare])
+        elif index and bare in small:
+            result.append(bare)
+        else:
+            result.append(word[:1].upper() + word[1:])
+    return " ".join(result)
+
+
 def _steps(items: list[str], fields: list[str]) -> str:
     sections = []
     for index, step in enumerate(items, 1):
@@ -45,45 +77,55 @@ def _steps(items: list[str], fields: list[str]) -> str:
 
 
 def _field_table(fields: list[str], workflow: list[str]) -> str:
-    rows = ["| Field | Why it exists | Update point |", "|---|---|---|"]
+    sections = []
     for index, field in enumerate(fields):
         step = workflow[index % len(workflow)]
-        rows.append(
-            f"| {field} | Prevents the record from depending on memory or an inbox search | {step} |"
+        sections.append(
+            f"### {field.capitalize()}\n\n"
+            "Capture this so the decision does not depend on memory or an inbox search.\n\n"
+            f"- **Update point:** {step}"
         )
-    return "\n".join(rows)
+    return "\n\n".join(sections)
 
 
 def _metric_table(metrics: list[dict[str, str]]) -> str:
-    rows = ["| Metric | Simple calculation | Decision it supports |", "|---|---|---|"]
+    sections = []
     for metric in metrics:
-        rows.append(
-            f"| {metric['name']} | {metric['formula']} | {metric['decision']} |"
+        sections.append(
+            f"### {metric['name'].capitalize()}\n\n"
+            f"- **Calculation:** {metric['formula']}\n"
+            f"- **Use it to:** {metric['decision']}"
         )
-    return "\n".join(rows)
+    return "\n\n".join(sections)
 
 
 def _alternative_table(alternatives: list[dict[str, str]]) -> str:
-    rows = ["| Approach | Best when | Main limitation |", "|---|---|---|"]
+    sections = []
     for alternative in alternatives:
-        rows.append(
-            f"| {alternative['name']} | {alternative['best']} | {alternative['limit']} |"
+        sections.append(
+            f"### {alternative['name']}\n\n"
+            f"- **Best when:** {alternative['best']}\n"
+            f"- **Main limitation:** {alternative['limit']}"
         )
-    return "\n".join(rows)
+    return "\n\n".join(sections)
 
 
 def _automation_table(context: dict[str, Any]) -> str:
-    rows = ["| Trigger | Safe automatic action | Keep a person involved when |", "|---|---|---|"]
+    sections = []
     for index, trigger in enumerate(context["triggers"]):
         action = context["workflow"][(index + 1) % len(context["workflow"])]
         exception = context["mistakes"][index % len(context["mistakes"])]
-        rows.append(f"| {trigger} | Queue or prompt: {action} | The risk is {exception.lower()} |")
-    return "\n".join(rows)
+        sections.append(
+            f"### When {trigger}\n\n"
+            f"- **Safe automatic action:** Queue or prompt: {action}\n"
+            f"- **Keep a person involved when:** The risk is {exception.lower()}"
+        )
+    return "\n\n".join(sections)
 
 
 def _cta(product: dict[str, Any], peer: dict[str, Any] | None) -> str:
     lines = [
-        f"[Explore the {product['name']} workflow concept](/products/{product['id']}) and record whether "
+        f"[Explore the {product['name']} product concept](/products/{product['id']}) and record whether "
         "this is painful enough to justify a focused tool."
     ]
     if peer:
@@ -94,7 +136,9 @@ def _cta(product: dict[str, Any], peer: dict[str, Any] | None) -> str:
 
 
 def _guide(product: dict[str, Any], context: dict[str, Any], peer: dict[str, Any] | None) -> str:
-    return f"""{product['problem']} For {product['audience']}, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **{context['outcome']}**.
+    return f"""{product['problem']} For {product['audience']}, the useful goal is not to add another dashboard. It is to create a small, visible process that produces this outcome: **{_without_terminal(context['outcome'])}**.
+
+The narrow product hypothesis is: {product['product']} Keep the first implementation focused on the named economic decision rather than expanding it into a general operations suite.
 
 ## Define the finish line first
 
@@ -126,7 +170,7 @@ Run the workflow for one client, location, role, order, or participant before st
 def _checklist(product: dict[str, Any], context: dict[str, Any], peer: dict[str, Any] | None) -> str:
     before = context["fields"][: max(2, len(context["fields"]) // 2)]
     after = context["fields"][len(before) :]
-    return f"""A checklist for {product['topic']} should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for {product['audience']} and centers on one result: **{context['outcome']}**.
+    return f"""A checklist for {product['topic']} should prevent missing decisions, not merely prove that somebody clicked boxes. The checklist below is designed for {product['audience']} and centers on one result: **{_without_terminal(context['outcome'])}**.
 
 ## Before the work starts
 
@@ -211,7 +255,7 @@ def _mistakes(product: dict[str, Any], context: dict[str, Any], peer: dict[str, 
             f"was meant to produce. Add **{field}** at the point of work and enforce this guardrail: {rule} "
             "When the exception occurs, keep it visible instead of repairing it privately in email."
         )
-    return f"""{product['problem']} The recurring failures are usually process-design problems rather than motivation problems. For {product['audience']}, these are the mistakes worth finding before buying or building software.
+    return f"""{product['problem']} The recurring failures are usually process-design problems rather than motivation problems. For {product['audience']}, these are the mistakes worth finding before buying or building software. The central risk to validate is **{product.get('primaryRisk') or 'whether the source data is reliable enough to support the decision'}**.
 
 {chr(10).join(chr(10) + section for section in sections)}
 
@@ -267,7 +311,13 @@ A broad platform can be valuable when workflows genuinely share data. It can als
 
 
 def _metrics(product: dict[str, Any], context: dict[str, Any], peer: dict[str, Any] | None) -> str:
-    return f"""Metrics for {product['topic']} should help {product['audience']} decide what to change next. Avoid universal benchmarks: volume, service model, and exception mix differ. Establish a baseline from your own records and compare the process against itself.
+    return f"""{product['problem']} A useful calculation for {product['topic']} should help {product['audience']} make a specific {product.get('economicDriver') or 'financial'} decision and produce this outcome: **{_without_terminal(context['outcome'])}**.
+
+The product hypothesis is: {product['product']} The model should expose its assumptions and compare the eventual result with the forecast. Avoid universal benchmarks because volume, service model, cost structure, and exception mix differ. Establish a baseline from the buyer's own records and compare the decision process against itself.
+
+## Start with the economic question
+
+{product.get('profitRationale') or 'The calculation should connect the recommended action to revenue, avoided loss, variable cost, and constrained capacity.'} Write that question at the top of the model. If an input cannot change the recommendation or explain the result, keep it out of the first version.
 
 ## Three useful measures
 
@@ -295,6 +345,12 @@ Choose one closed record and calculate every metric by hand from its timestamps 
 
 Repeat that spot check whenever a workflow status, integration, or reporting period changes.
 
+Test the model against these deliberately different cases before relying on it:
+
+{_bullets(context['examples'])}
+
+The point is not to produce one impressive answer. It is to show that the same definitions handle an attractive case, a constrained-capacity case, and an exception with incomplete evidence.
+
 ## A four-week measurement loop
 
 Week one defines fields and baselines. Week two fixes missing data. Week three tests one workflow change. Week four compares the same metric definitions and reviews exceptions. Keep the change only if it improves the intended outcome without shifting work somewhere invisible.
@@ -305,7 +361,7 @@ Week one defines fields and baselines. Week two fixes missing data. Week three t
 
 
 def _automation(product: dict[str, Any], context: dict[str, Any], peer: dict[str, Any] | None) -> str:
-    return f"""Automation for {product['topic']} should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For {product['audience']}, the target outcome is **{context['outcome']}**.
+    return f"""Automation for {product['topic']} should remove predictable coordination while preserving judgment for exceptions. Start from the workflow, not from a list of integrations. For {product['audience']}, the target outcome is **{_without_terminal(context['outcome'])}**.
 
 ## Separate rules from judgment
 
@@ -376,11 +432,13 @@ Use the normal case, waiting case, and closed-without-completion case in every s
 
 
 def _buying_guide(product: dict[str, Any], context: dict[str, Any], peer: dict[str, Any] | None) -> str:
-    return f"""Software for {product['topic']} should be evaluated against the operating problem, not a generic feature checklist. For {product['audience']}, a useful trial must demonstrate this outcome: **{context['outcome']}**.
+    return f"""Software for {product['topic']} should be evaluated against the operating problem, not a generic feature checklist. For {product['audience']}, a useful trial must demonstrate this outcome: **{_without_terminal(context['outcome'])}**.
 
 ## Write requirements from the workflow
 
-The tool must support these steps without hidden spreadsheets: {', '.join(context['workflow'])}. It must also make these fields easy to capture at the moment work happens: {', '.join(context['fields'])}.
+The tool must support these steps without hidden spreadsheets: {_inline(context['workflow'])}. It must also make these fields easy to capture at the moment work happens: {_inline(context['fields'])}.
+
+The economic test is whether it can improve **{product.get('economicDriver') or 'the named financial outcome'}** in a way the buyer can reconstruct. {product.get('profitRationale') or ''} Treat this as a hypothesis to verify with live records, not a promised return.
 
 ## Use a live demo script
 
@@ -402,6 +460,8 @@ Add setup time, recurring administration, export quality, permission clarity, an
 
 Also be cautious when the product requires broad process migration before it can solve the narrow problem, or when basic history/export controls are unavailable.
 
+For this concept, explicitly test the main adoption risk: **{_without_terminal(product.get('primaryRisk') or 'whether setup and source-data quality overwhelm the narrow benefit')}**.
+
 ## Make the decision with real records
 
 Run a small trial using current work, not sanitized sample data. Compare the realistic alternatives below and record why the winning approach fits now:
@@ -414,7 +474,7 @@ Run a small trial using current work, not sanitized sample data. Compare the rea
 
 
 def _alternatives(product: dict[str, Any], context: dict[str, Any], peer: dict[str, Any] | None) -> str:
-    return f"""There are several valid ways to manage {product['topic']}. The right choice depends on volume, exception rate, ownership, and how much coordination crosses systems. Start with the smallest approach that keeps the work reliable.
+    return f"""{product['problem']} There are several valid ways to manage {product['topic']}. The right choice depends on volume, exception rate, ownership, and how much coordination crosses systems. Start with the smallest approach that can reliably produce this outcome: **{_without_terminal(context['outcome'])}**.
 
 ## Option comparison
 
@@ -449,18 +509,101 @@ Record the decision date and the conditions that would justify reviewing the cho
 {_cta(product, peer)}"""
 
 
-ARTICLE_BUILDERS: list[tuple[str, str, str, Callable[..., str]]] = [
-    ("practical-workflow", "{topic}: A Practical Workflow", "A step-by-step operating workflow", _guide),
-    ("checklist", "{topic} Checklist for {audience}", "A copyable quality-control checklist", _checklist),
-    ("template", "{topic} Template: Fields, Statuses, and Rules", "A practical record template", _template),
-    ("common-mistakes", "Common {topic} Mistakes and How to Prevent Them", "Process mistakes and guardrails", _mistakes),
-    ("spreadsheet-vs-software", "{name} vs. a Spreadsheet: When Software Is Worth It", "A spreadsheet-versus-software decision guide", _spreadsheet),
-    ("metrics", "How to Measure {topic}: Practical Metrics", "Definitions and calculations for useful metrics", _metrics),
-    ("automation-guide", "How to Automate {topic} Without Losing Judgment", "A safe automation rollout guide", _automation),
-    ("examples", "{topic} Examples: Three Workflow Scenarios", "Three realistic workflow test cases", _examples),
-    ("software-buying-guide", "{topic} Software Buying Guide", "A trial and evaluation framework", _buying_guide),
-    ("alternatives", "{topic} Alternatives: Manual, General, or Focused Tools", "A practical alternatives comparison", _alternatives),
-]
+def probe_article_count(product: dict[str, Any]) -> int:
+    raw = product.get("probeArticleCount")
+    if raw is None:
+        raw = int((product.get("scoreBreakdown") or {}).get("contentDepth", 8)) - 5
+    try:
+        count = int(raw)
+    except (TypeError, ValueError) as exc:
+        raise ValueError(f"{product['id']} has an invalid probeArticleCount") from exc
+    if not 2 <= count <= 5:
+        raise ValueError(f"{product['id']} probeArticleCount must be between 2 and 5")
+    return count
+
+
+def _take_query(
+    queries: list[str],
+    used: set[str],
+    keywords: tuple[str, ...],
+    fallback: str,
+) -> str:
+    for query in queries:
+        lowered = query.lower()
+        if query not in used and any(keyword in lowered for keyword in keywords):
+            used.add(query)
+            return query
+    for query in queries:
+        if query not in used:
+            used.add(query)
+            return query
+    return fallback
+
+
+def article_plan(
+    product: dict[str, Any],
+) -> list[tuple[str, str, str, Callable[..., str]]]:
+    """Choose only distinct SEO intents justified by the reviewed content-depth score."""
+    queries = []
+    for raw_query in product.get("searchQueries") or []:
+        query = str(raw_query).strip()
+        if not query or re.search(r"\b([a-z]+)\s+\1\b", query.lower()):
+            continue
+        if query not in queries:
+            queries.append(query)
+    topic = str(product["topic"])
+    used: set[str] = set()
+    decision_query = _take_query(
+        queries,
+        used,
+        ("calculator", "cost", "margin", "profit", "price", "rate", "yield"),
+        f"{topic} calculator",
+    )
+    software_query = _take_query(
+        queries,
+        used,
+        ("software", "tool", "automation", "management", "optimization"),
+        f"{topic} software",
+    )
+    implementation_query = _take_query(
+        queries,
+        used,
+        ("how", "audit", "recovery", "forecast", "planning", "job costing"),
+        f"how to improve {topic}",
+    )
+    candidates: list[tuple[str, str, str, Callable[..., str]]] = [
+        (
+            "decision-model",
+            f"{_headline(topic)} Calculator: Inputs, Formula, and Decisions",
+            f"A practical decision model for {decision_query}, including inputs, calculations, and actions.",
+            _metrics,
+        ),
+        (
+            "software-buying-guide",
+            f"{_headline(topic)} Software: What to Evaluate Before You Buy",
+            f"A focused buying guide for {software_query}, built around real operating tests and financial outcomes.",
+            _buying_guide,
+        ),
+        (
+            "implementation-guide",
+            f"How to Improve {_headline(topic)}: A Practical Implementation Guide",
+            f"A step-by-step implementation guide for {implementation_query}, with fields, rules, and exceptions.",
+            _guide,
+        ),
+        (
+            "costly-mistakes",
+            f"{_headline(topic)}: Costly Mistakes and How to Catch Them",
+            f"The recurring mistakes that undermine {topic}, plus concrete controls and review questions.",
+            _mistakes,
+        ),
+        (
+            "alternatives",
+            f"{product['name']} Alternatives: Spreadsheet, Existing Software, or a Focused Tool",
+            f"A readable comparison of realistic alternatives for {topic} and when each approach is justified.",
+            _alternatives,
+        ),
+    ]
+    return candidates[: probe_article_count(product)]
 
 
 def articles_for(
@@ -485,22 +628,13 @@ def articles_for(
         if not isinstance(value, list) or len(value) < minimum:
             raise ValueError(f"{product['id']} probeContext.{key} needs {minimum}+ items")
 
-    values = {
-        "name": product["name"],
-        "topic": str(product["topic"]).title(),
-        "audience": str(product["audience"]).title(),
-    }
     articles = []
-    for slug, title_template, excerpt_prefix, builder in ARTICLE_BUILDERS:
-        title = title_template.format(**values)
+    for slug, title, excerpt, builder in article_plan(product):
         articles.append(
             {
                 "slug": slug,
                 "title": title,
-                "excerpt": (
-                    f"{excerpt_prefix} for {product['audience']}, with concrete fields, "
-                    "decision rules, and implementation steps."
-                ),
+                "excerpt": excerpt,
                 "content": builder(product, context, peer),
             }
         )
@@ -520,10 +654,6 @@ def generate_site(site_id: str, contexts: dict[str, dict[str, Any]], *, force: b
     site, directory = load_site(site_id)
     products = site_products(site)
     target = article_target(site)
-    if target != len(ARTICLE_BUILDERS):
-        raise ValueError(
-            f"{site_id} requests {target} posts/product; editorial batch provides {len(ARTICLE_BUILDERS)}"
-        )
     written = 0
     for index, product in enumerate(products):
         product_id = str(product["id"])
@@ -537,6 +667,10 @@ def generate_site(site_id: str, contexts: dict[str, dict[str, Any]], *, force: b
         peers = [item for item in products if item["id"] != product_id]
         peer = peers[index % len(peers)] if peers else None
         articles = articles_for(product, context, peer)
+        if len(articles) != target:
+            raise ValueError(
+                f"{site_id}/{product_id} plans {len(articles)} probes but site config requests {target}"
+            )
         fingerprint = generation_fingerprint(site, product, target)
         paths = write_product_posts(site, directory, product, articles, fingerprint)
         written += len(paths)

@@ -1,0 +1,70 @@
+{
+  "id": "repair-parts-stockout-cost",
+  "name": "Repair Parts Stockout Cost",
+  "domain": null,
+  "audience": "multi-technician appliance, HVAC, and equipment service companies",
+  "topic": "field service parts inventory and first-time-fix optimization",
+  "products": [
+    {
+      "id": "repair-parts-stockout-cost",
+      "name": "Repair Parts Stockout Cost",
+      "product": "Balances van and warehouse stock using demand, first-time-fix value, carrying cost, obsolescence, and emergency procurement.",
+      "productUrl": "",
+      "audience": "multi-technician appliance, HVAC, and equipment service companies",
+      "problem": "Inventory is reduced by unit cost while the far larger cost of repeat trips and idle technicians remains invisible.",
+      "valueProposition": "Recommends stocking levels from expected total service cost rather than parts usage alone.",
+      "topic": "field service parts inventory and first-time-fix optimization",
+      "monetization": "$199-$799/month by technicians and SKUs",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: field service parts inventory optimization; van stock first time fix; service parts stockout cost; field service parts inventory and first-time-fix optimization software; field service parts inventory and first-time-fix optimization calculator; field service parts inventory and first-time-fix optimization pricing",
+      "seoThesis": "A narrow site for multi-technician appliance, HVAC, and equipment service companies can connect commercial pages, calculators, comparisons, and implementation guides around field service parts inventory and first-time-fix optimization to the same measurable cost-reduction outcome.",
+      "searchQueries": [
+        "field service parts inventory optimization",
+        "van stock first time fix",
+        "service parts stockout cost",
+        "field service parts inventory and first-time-fix optimization software",
+        "field service parts inventory and first-time-fix optimization calculator",
+        "field service parts inventory and first-time-fix optimization pricing"
+      ],
+      "buyer": "parts manager or service operations director",
+      "economicDriver": "cost-reduction",
+      "profitRationale": "Parts decisions affect daily technician capacity, and service history creates a defensible optimization dataset.",
+      "primaryRisk": "Sparse demand, superseded parts, and inventory integrations make the model technically demanding.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 10,
+        "monetizationExpansion": 9,
+        "searchDemand": 7,
+        "commercialIntent": 8,
+        "contentDepth": 8,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 5
+      },
+      "score": 81,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Balances van and warehouse stock using demand, first-time-fix value, carrying cost, obsolescence, and emergency procurement.",
+  "productUrl": "",
+  "valueProposition": "Recommends stocking levels from expected total service cost rather than parts usage alone.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "repair-parts-stockout-cost"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

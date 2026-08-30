@@ -1,0 +1,70 @@
+{
+  "id": "recycling-load-profit",
+  "name": "Recycling Load Profit",
+  "domain": null,
+  "audience": "independent scrap and material recovery operators",
+  "topic": "scrap recycling load profitability and buy pricing",
+  "products": [
+    {
+      "id": "recycling-load-profit",
+      "name": "Recycling Load Profit",
+      "product": "Calculates load contribution from grade mix, contamination, inbound price, processing, freight, destination price, and commodity exposure.",
+      "productUrl": "",
+      "audience": "independent scrap and material recovery operators",
+      "problem": "Loads are bought on gross weight and headline price while contamination, handling, and freight destroy expected spread.",
+      "valueProposition": "Creates an auditable buy-price ceiling and destination comparison before material is accepted or shipped.",
+      "topic": "scrap recycling load profitability and buy pricing",
+      "monetization": "$399-$1,499/month by yards and loads",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: scrap metal pricing software; recycling load profit calculator; scrap yard management margin; scrap recycling load profitability and buy pricing software; scrap recycling load profitability and buy pricing calculator; scrap recycling load profitability and buy pricing pricing",
+      "seoThesis": "A narrow site for independent scrap and material recovery operators can connect commercial pages, calculators, comparisons, and implementation guides around scrap recycling load profitability and buy pricing to the same measurable margin outcome.",
+      "searchQueries": [
+        "scrap metal pricing software",
+        "recycling load profit calculator",
+        "scrap yard management margin",
+        "scrap recycling load profitability and buy pricing software",
+        "scrap recycling load profitability and buy pricing calculator",
+        "scrap recycling load profitability and buy pricing pricing"
+      ],
+      "buyer": "owner, trader, or scale manager",
+      "economicDriver": "margin",
+      "profitRationale": "Every load is a transaction with measurable value, and price/history data supports recurring high-value use.",
+      "primaryRisk": "Commodity data and grade definitions vary; the product should support decisions without executing trades.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 10,
+        "monetizationExpansion": 9,
+        "searchDemand": 7,
+        "commercialIntent": 8,
+        "contentDepth": 8,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 6
+      },
+      "score": 82,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Calculates load contribution from grade mix, contamination, inbound price, processing, freight, destination price, and commodity exposure.",
+  "productUrl": "",
+  "valueProposition": "Creates an auditable buy-price ceiling and destination comparison before material is accepted or shipped.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "recycling-load-profit"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

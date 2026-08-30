@@ -36,6 +36,7 @@ class EditorialProbeTests(unittest.TestCase):
         titles: set[str] = set()
         bodies: set[str] = set()
         article_count = 0
+        planned_counts: set[int] = set()
         for products in products_by_site.values():
             allowed_ids = {product["id"] for product in products}
             for index, product in enumerate(products):
@@ -43,13 +44,18 @@ class EditorialProbeTests(unittest.TestCase):
                 peer = peers[index % len(peers)] if peers else None
                 articles = generator.articles_for(product, product["probeContext"], peer)
 
-                self.assertEqual(len(articles), 10)
-                self.assertEqual(len({article["slug"] for article in articles}), 10)
+                expected = product["probeArticleCount"]
+                planned_counts.add(expected)
+                self.assertGreaterEqual(expected, 2)
+                self.assertLessEqual(expected, 5)
+                self.assertEqual(len(articles), expected)
+                self.assertEqual(len({article["slug"] for article in articles}), expected)
                 for article in articles:
                     linked_ids = set(re.findall(r"/products/([a-z0-9-]+)", article["content"]))
                     self.assertIn(product["id"], linked_ids)
                     self.assertLessEqual(linked_ids, allowed_ids)
                     self.assertGreaterEqual(len(re.findall(r"\b[\w’'-]+\b", article["content"])), 400)
+                    self.assertNotIn("|", article["content"])
                     self.assertNotIn(article["title"], titles)
                     self.assertNotIn(article["content"], bodies)
                     titles.add(article["title"])
@@ -59,8 +65,9 @@ class EditorialProbeTests(unittest.TestCase):
         self.assertEqual(len(products_by_site), len(document["sites"]))
         self.assertEqual(
             article_count,
-            len(document["ideas"]) * document["articlesPerProduct"],
+            sum(product["probeArticleCount"] for product in document["ideas"]),
         )
+        self.assertGreater(len(planned_counts), 1)
 
     def test_missing_probe_context_is_rejected(self) -> None:
         generator = load_editorial_probes()

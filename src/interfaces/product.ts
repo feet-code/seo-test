@@ -10,5 +10,12 @@ export type SiteProduct = {
   monetization?: string;
   startupCost?: string;
   seoAngle?: string;
+  seoThesis?: string;
+  buyer?: string;
+  economicDriver?: string;
+  profitRationale?: string;
+  primaryRisk?: string;
+  searchQueries?: string[];
+  probeArticleCount?: number;
   score?: number | null;
 };

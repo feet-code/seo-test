@@ -1,0 +1,70 @@
+{
+  "id": "home-care-shift-margin",
+  "name": "Home Care Shift Margin",
+  "domain": null,
+  "audience": "non-medical home-care agencies",
+  "topic": "non-medical home care shift and client profitability",
+  "products": [
+    {
+      "id": "home-care-shift-margin",
+      "name": "Home Care Shift Margin",
+      "product": "Calculates client and shift margin from bill rate, caregiver pay, overtime, travel, minimums, cancellations, and unfilled risk.",
+      "productUrl": "",
+      "audience": "non-medical home-care agencies",
+      "problem": "Agencies accept schedules whose travel and overtime patterns erase the apparent bill-pay spread.",
+      "valueProposition": "Flags unprofitable schedules before assignment and supports contract or schedule changes without giving care advice.",
+      "topic": "non-medical home care shift and client profitability",
+      "monetization": "$149-$599/month by caregivers or clients",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: home care profitability software; caregiver shift margin calculator; home care client pricing; non-medical home care shift and client profitability software; non-medical home care shift and client profitability calculator; non-medical home care shift and client profitability pricing",
+      "seoThesis": "A narrow site for non-medical home-care agencies can connect commercial pages, calculators, comparisons, and implementation guides around non-medical home care shift and client profitability to the same measurable margin outcome.",
+      "searchQueries": [
+        "home care profitability software",
+        "caregiver shift margin calculator",
+        "home care client pricing",
+        "non-medical home care shift and client profitability software",
+        "non-medical home care shift and client profitability calculator",
+        "non-medical home care shift and client profitability pricing"
+      ],
+      "buyer": "agency owner, scheduler, or finance lead",
+      "economicDriver": "margin",
+      "profitRationale": "The pay-bill spread is core to the business, scheduling repeats daily, and buyers have operational urgency.",
+      "primaryRisk": "Wage rules vary, health-related data raises security expectations, and scheduling vendors may compete.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 10,
+        "monetizationExpansion": 8,
+        "searchDemand": 8,
+        "commercialIntent": 9,
+        "contentDepth": 9,
+        "serpWinnability": 6,
+        "buildSupportFeasibility": 6
+      },
+      "score": 82,
+      "probeArticleCount": 4,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 4,
+  "product": "Calculates client and shift margin from bill rate, caregiver pay, overtime, travel, minimums, cancellations, and unfilled risk.",
+  "productUrl": "",
+  "valueProposition": "Flags unprofitable schedules before assignment and supports contract or schedule changes without giving care advice.",
+  "articleCount": 4,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "home-care-shift-margin"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

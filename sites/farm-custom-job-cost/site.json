@@ -1,0 +1,70 @@
+{
+  "id": "farm-custom-job-cost",
+  "name": "Farm Custom Job Cost",
+  "domain": null,
+  "audience": "custom harvesting, spraying, planting, and field-service operators",
+  "topic": "farm custom rate calculation and job costing",
+  "products": [
+    {
+      "id": "farm-custom-job-cost",
+      "name": "Farm Custom Job Cost",
+      "product": "Prices field jobs from acres, machine hours, fuel, labor, travel, setup, tendering, weather risk, and equipment replacement cost.",
+      "productUrl": "",
+      "audience": "custom harvesting, spraying, planting, and field-service operators",
+      "problem": "Per-acre rates fail to capture small fields, road time, setup, and rising ownership cost.",
+      "valueProposition": "Calculates a job-specific rate floor and compares estimated with actual machine and labor performance.",
+      "topic": "farm custom rate calculation and job costing",
+      "monetization": "$99-$499/month by machines and acres serviced",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: farm custom rate calculator; custom farming job costing software; ag equipment cost per acre calculator; farm custom rate calculation and job costing software; farm custom rate calculation and job costing calculator; farm custom rate calculation and job costing pricing",
+      "seoThesis": "A narrow site for custom harvesting, spraying, planting, and field-service operators can connect commercial pages, calculators, comparisons, and implementation guides around farm custom rate calculation and job costing to the same measurable margin outcome.",
+      "searchQueries": [
+        "farm custom rate calculator",
+        "custom farming job costing software",
+        "ag equipment cost per acre calculator",
+        "farm custom rate calculation and job costing software",
+        "farm custom rate calculation and job costing calculator",
+        "farm custom rate calculation and job costing pricing"
+      ],
+      "buyer": "owner or operations manager",
+      "economicDriver": "margin",
+      "profitRationale": "Calculator demand is durable, rates reset regularly, and equipment cost makes underpricing financially painful.",
+      "primaryRisk": "University rate guides compete for traffic, so the product must win on local actual-cost learning and job specificity.",
+      "scoreBreakdown": {
+        "economicPain": 8,
+        "buyerBudget": 7,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 8,
+        "searchDemand": 9,
+        "commercialIntent": 9,
+        "contentDepth": 9,
+        "serpWinnability": 6,
+        "buildSupportFeasibility": 8
+      },
+      "score": 81,
+      "probeArticleCount": 4,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 4,
+  "product": "Prices field jobs from acres, machine hours, fuel, labor, travel, setup, tendering, weather risk, and equipment replacement cost.",
+  "productUrl": "",
+  "valueProposition": "Calculates a job-specific rate floor and compares estimated with actual machine and labor performance.",
+  "articleCount": 4,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "farm-custom-job-cost"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

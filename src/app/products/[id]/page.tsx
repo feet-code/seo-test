@@ -25,6 +25,7 @@ export default async function ProductPage({ params }: Params) {
     description: product.valueProposition || product.problem,
     applicationCategory: "BusinessApplication",
     audience: { "@type": "Audience", audienceType: product.audience },
+    featureList: product.product,
   };
 
   return (
@@ -52,6 +53,39 @@ export default async function ProductPage({ params }: Params) {
               <p className="leading-relaxed">{product.product}</p>
             </div>
           </div>
+          <section className="mt-8 grid gap-5 md:grid-cols-3">
+            <div className="rounded-2xl bg-neutral-50 p-6 dark:bg-slate-800">
+              <h2 className="mb-2 text-lg font-bold">Who it is for</h2>
+              <p className="leading-relaxed">
+                {product.buyer ? `${product.buyer}, serving ` : "Teams serving "}
+                {product.audience}.
+              </p>
+            </div>
+            <div className="rounded-2xl bg-neutral-50 p-6 dark:bg-slate-800">
+              <h2 className="mb-2 text-lg font-bold">Economic case</h2>
+              <p className="leading-relaxed">
+                {product.profitRationale ||
+                  `The concept is designed to improve ${product.economicDriver || "a measurable business outcome"}.`}
+              </p>
+            </div>
+            <div className="rounded-2xl bg-neutral-50 p-6 dark:bg-slate-800">
+              <h2 className="mb-2 text-lg font-bold">What the probe must validate</h2>
+              <p className="leading-relaxed">
+                {product.primaryRisk ||
+                  "Whether this problem is frequent and expensive enough to justify focused software."}
+              </p>
+            </div>
+          </section>
+          {product.monetization ? (
+            <section className="mt-8 rounded-2xl border border-neutral-200 p-7 dark:border-slate-700">
+              <h2 className="mb-2 text-lg font-bold">Pricing hypothesis</h2>
+              <p className="leading-relaxed">{product.monetization}</p>
+              <p className="mt-3 text-sm leading-relaxed text-neutral-600 dark:text-slate-300">
+                This is an early validation hypothesis, not a published offer. The signup and search probes
+                determine whether the problem deserves a product build.
+              </p>
+            </section>
+          ) : null}
           <SignupForm
             endpoint={process.env.SIGNUP_ENDPOINT}
             fallbackEmail={process.env.SIGNUP_EMAIL}
@@ -90,7 +124,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const product = getSiteProduct(id);
   if (!product) return notFound();
   return {
-    title: `${product.name} | ${process.env.SITE_NAME || "Focused tools"}`,
+    title: `${product.name}: ${product.topic}`,
     description: product.valueProposition || product.problem,
   };
 }

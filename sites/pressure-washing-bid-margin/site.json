@@ -1,0 +1,70 @@
+{
+  "id": "pressure-washing-bid-margin",
+  "name": "Pressure Washing Bid Margin",
+  "domain": null,
+  "audience": "commercial pressure washing contractors",
+  "topic": "commercial pressure washing estimating and job costing",
+  "products": [
+    {
+      "id": "pressure-washing-bid-margin",
+      "name": "Pressure Washing Bid Margin",
+      "product": "Builds bids from surface type, production rate, chemicals, water access, travel, mobilization, and crew capacity.",
+      "productUrl": "",
+      "audience": "commercial pressure washing contractors",
+      "problem": "Contractors underbid unfamiliar commercial surfaces or omit mobilization and recurring-service costs.",
+      "valueProposition": "Turns site conditions into an explainable price floor and learns from estimated versus actual production rates.",
+      "topic": "commercial pressure washing estimating and job costing",
+      "monetization": "$79-$299/month or per-estimate pricing",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: commercial pressure washing estimating software; pressure washing bid calculator; pressure washing job costing; commercial pressure washing estimating and job costing software; commercial pressure washing estimating and job costing calculator; commercial pressure washing estimating and job costing pricing",
+      "seoThesis": "A narrow site for commercial pressure washing contractors can connect commercial pages, calculators, comparisons, and implementation guides around commercial pressure washing estimating and job costing to the same measurable margin outcome.",
+      "searchQueries": [
+        "commercial pressure washing estimating software",
+        "pressure washing bid calculator",
+        "pressure washing job costing",
+        "commercial pressure washing estimating and job costing software",
+        "commercial pressure washing estimating and job costing calculator",
+        "commercial pressure washing estimating and job costing pricing"
+      ],
+      "buyer": "owner or estimator",
+      "economicDriver": "margin",
+      "profitRationale": "Buyers actively seek calculators and estimating software, and better production-rate data compounds with each completed job.",
+      "primaryRisk": "Residential search traffic is noisy, so content must remain tightly commercial and operational.",
+      "scoreBreakdown": {
+        "economicPain": 8,
+        "buyerBudget": 6,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 7,
+        "searchDemand": 9,
+        "commercialIntent": 9,
+        "contentDepth": 9,
+        "serpWinnability": 7,
+        "buildSupportFeasibility": 9
+      },
+      "score": 80,
+      "probeArticleCount": 4,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 4,
+  "product": "Builds bids from surface type, production rate, chemicals, water access, travel, mobilization, and crew capacity.",
+  "productUrl": "",
+  "valueProposition": "Turns site conditions into an explainable price floor and learns from estimated versus actual production rates.",
+  "articleCount": 4,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "pressure-washing-bid-margin"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

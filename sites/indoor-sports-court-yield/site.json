@@ -1,0 +1,70 @@
+{
+  "id": "indoor-sports-court-yield",
+  "name": "Indoor Sports Court Yield",
+  "domain": null,
+  "audience": "independent pickleball, padel, tennis, and court-sport venues",
+  "topic": "indoor sports court utilization and pricing",
+  "products": [
+    {
+      "id": "indoor-sports-court-yield",
+      "name": "Indoor Sports Court Yield",
+      "product": "Tests court prices, memberships, leagues, blocks, cancellations, and programming against time-slot capacity and ancillary spend.",
+      "productUrl": "",
+      "audience": "independent pickleball, padel, tennis, and court-sport venues",
+      "problem": "Busy headline utilization can conceal low-yield recurring blocks and empty shoulder periods.",
+      "valueProposition": "Recommends price and inventory experiments from expected contribution per constrained court hour.",
+      "topic": "indoor sports court utilization and pricing",
+      "monetization": "$199-$799/month by courts and locations",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: court booking revenue management software; pickleball court profitability calculator; sports facility utilization software; indoor sports court utilization and pricing software; indoor sports court utilization and pricing calculator; indoor sports court utilization and pricing pricing",
+      "seoThesis": "A narrow site for independent pickleball, padel, tennis, and court-sport venues can connect commercial pages, calculators, comparisons, and implementation guides around indoor sports court utilization and pricing to the same measurable capacity outcome.",
+      "searchQueries": [
+        "court booking revenue management software",
+        "pickleball court profitability calculator",
+        "sports facility utilization software",
+        "indoor sports court utilization and pricing software",
+        "indoor sports court utilization and pricing calculator",
+        "indoor sports court utilization and pricing pricing"
+      ],
+      "buyer": "venue owner or general manager",
+      "economicDriver": "capacity",
+      "profitRationale": "Scarce perishable inventory, rising venue categories, and repeat pricing decisions support value-based pricing.",
+      "primaryRisk": "Booking platforms may add similar analytics and newer sports categories can have unstable demand.",
+      "scoreBreakdown": {
+        "economicPain": 8,
+        "buyerBudget": 8,
+        "recurrenceRetention": 10,
+        "monetizationExpansion": 9,
+        "searchDemand": 8,
+        "commercialIntent": 8,
+        "contentDepth": 9,
+        "serpWinnability": 7,
+        "buildSupportFeasibility": 7
+      },
+      "score": 82,
+      "probeArticleCount": 4,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 4,
+  "product": "Tests court prices, memberships, leagues, blocks, cancellations, and programming against time-slot capacity and ancillary spend.",
+  "productUrl": "",
+  "valueProposition": "Recommends price and inventory experiments from expected contribution per constrained court hour.",
+  "articleCount": 4,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "indoor-sports-court-yield"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

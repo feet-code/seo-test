@@ -1,0 +1,70 @@
+{
+  "id": "concrete-pour-cost",
+  "name": "Concrete Pour Cost Guard",
+  "domain": null,
+  "audience": "small concrete contractors and specialty flatwork crews",
+  "topic": "concrete pour cost volume and profit estimating",
+  "products": [
+    {
+      "id": "concrete-pour-cost",
+      "name": "Concrete Pour Cost Guard",
+      "product": "Estimates delivered volume, short-load fees, pump and crew time, waste, weather risk, finishing complexity, and callback exposure.",
+      "productUrl": "",
+      "audience": "small concrete contractors and specialty flatwork crews",
+      "problem": "Volume and production mistakes are discovered during the pour, when extra loads, idle labor, and quality risk are most expensive.",
+      "valueProposition": "Creates a pre-pour cost and contingency plan that protects bid margin and schedule commitments.",
+      "topic": "concrete pour cost volume and profit estimating",
+      "monetization": "$49-$249/month by crews or projects",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: concrete pour cost calculator contractor; concrete job profit calculator; concrete short load cost estimator; concrete pour cost volume and profit estimating software; concrete pour cost volume and profit estimating calculator; concrete pour cost volume and profit estimating pricing",
+      "seoThesis": "A narrow site for small concrete contractors and specialty flatwork crews can connect commercial pages, calculators, comparisons, and implementation guides around concrete pour cost volume and profit estimating to the same measurable risk outcome.",
+      "searchQueries": [
+        "concrete pour cost calculator contractor",
+        "concrete job profit calculator",
+        "concrete short load cost estimator",
+        "concrete pour cost volume and profit estimating software",
+        "concrete pour cost volume and profit estimating calculator",
+        "concrete pour cost volume and profit estimating pricing"
+      ],
+      "buyer": "owner, estimator, or project manager",
+      "economicDriver": "risk",
+      "profitRationale": "The calculator affects every bid and pour, with immediate value and high-intent search acquisition.",
+      "primaryRisk": "Liability-sensitive recommendations must remain conservative and region-specific material prices need maintenance.",
+      "scoreBreakdown": {
+        "economicPain": 8,
+        "buyerBudget": 6,
+        "recurrenceRetention": 8,
+        "monetizationExpansion": 6,
+        "searchDemand": 10,
+        "commercialIntent": 10,
+        "contentDepth": 9,
+        "serpWinnability": 7,
+        "buildSupportFeasibility": 9
+      },
+      "score": 80,
+      "probeArticleCount": 4,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 4,
+  "product": "Estimates delivered volume, short-load fees, pump and crew time, waste, weather risk, finishing complexity, and callback exposure.",
+  "productUrl": "",
+  "valueProposition": "Creates a pre-pour cost and contingency plan that protects bid margin and schedule commitments.",
+  "articleCount": 4,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "concrete-pour-cost"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

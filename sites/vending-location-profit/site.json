@@ -1,0 +1,70 @@
+{
+  "id": "vending-location-profit",
+  "name": "Vending Location Profit",
+  "domain": null,
+  "audience": "independent vending machine operators",
+  "topic": "vending machine location profitability and route optimization",
+  "products": [
+    {
+      "id": "vending-location-profit",
+      "name": "Vending Location Profit",
+      "product": "Ranks locations and machines using item margin, commissions, spoilage, stockouts, service time, card fees, and route miles.",
+      "productUrl": "",
+      "audience": "independent vending machine operators",
+      "problem": "Revenue reports hide the time and route cost required to keep each location stocked.",
+      "valueProposition": "Shows true location contribution and recommends product, visit-frequency, commission, or removal decisions.",
+      "topic": "vending machine location profitability and route optimization",
+      "monetization": "$99-$499/month by machines and routes",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: vending machine profit calculator; vending route management software; vending location profitability; vending machine location profitability and route optimization software; vending machine location profitability and route optimization calculator; vending machine location profitability and route optimization pricing",
+      "seoThesis": "A narrow site for independent vending machine operators can connect commercial pages, calculators, comparisons, and implementation guides around vending machine location profitability and route optimization to the same measurable margin outcome.",
+      "searchQueries": [
+        "vending machine profit calculator",
+        "vending route management software",
+        "vending location profitability",
+        "vending machine location profitability and route optimization software",
+        "vending machine location profitability and route optimization calculator",
+        "vending machine location profitability and route optimization pricing"
+      ],
+      "buyer": "route owner or operations manager",
+      "economicDriver": "margin",
+      "profitRationale": "Machine-level data recurs, location decisions directly affect cash flow, and the niche has strong calculator intent.",
+      "primaryRisk": "Telemetry formats differ and very small operators may prefer spreadsheets.",
+      "scoreBreakdown": {
+        "economicPain": 8,
+        "buyerBudget": 7,
+        "recurrenceRetention": 10,
+        "monetizationExpansion": 8,
+        "searchDemand": 9,
+        "commercialIntent": 9,
+        "contentDepth": 10,
+        "serpWinnability": 7,
+        "buildSupportFeasibility": 8
+      },
+      "score": 84,
+      "probeArticleCount": 5,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 5,
+  "product": "Ranks locations and machines using item margin, commissions, spoilage, stockouts, service time, card fees, and route miles.",
+  "productUrl": "",
+  "valueProposition": "Shows true location contribution and recommends product, visit-frequency, commission, or removal decisions.",
+  "articleCount": 5,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "vending-location-profit"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

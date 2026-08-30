@@ -1,0 +1,70 @@
+{
+  "id": "septic-route-profit",
+  "name": "Septic Route Profit",
+  "domain": null,
+  "audience": "septic pumping and maintenance companies",
+  "topic": "septic service route pricing and profitability",
+  "products": [
+    {
+      "id": "septic-route-profit",
+      "name": "Septic Route Profit",
+      "product": "Optimizes service-area pricing and route acceptance using drive time, disposal fees, tank size, crew time, and emergency premiums.",
+      "productUrl": "",
+      "audience": "septic pumping and maintenance companies",
+      "problem": "Long drives and disposal costs turn apparently full schedules into low-margin routes.",
+      "valueProposition": "Shows contribution margin before booking and recommends profitable route days, zones, and minimum charges.",
+      "topic": "septic service route pricing and profitability",
+      "monetization": "$199-$699/month by trucks and service volume",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: septic service pricing software; septic pumping price calculator; septic route optimization; septic service route pricing and profitability software; septic service route pricing and profitability calculator; septic service route pricing and profitability pricing",
+      "seoThesis": "A narrow site for septic pumping and maintenance companies can connect commercial pages, calculators, comparisons, and implementation guides around septic service route pricing and profitability to the same measurable margin outcome.",
+      "searchQueries": [
+        "septic service pricing software",
+        "septic pumping price calculator",
+        "septic route optimization",
+        "septic service route pricing and profitability software",
+        "septic service route pricing and profitability calculator",
+        "septic service route pricing and profitability pricing"
+      ],
+      "buyer": "owner or dispatcher",
+      "economicDriver": "margin",
+      "profitRationale": "Every booking creates a measurable accept-and-price decision, with expansion into routing and recurring maintenance plans.",
+      "primaryRisk": "Accurate travel and disposal-cost inputs are required, and dispatch integrations may be fragmented.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 10,
+        "monetizationExpansion": 9,
+        "searchDemand": 8,
+        "commercialIntent": 9,
+        "contentDepth": 9,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 7
+      },
+      "score": 86,
+      "probeArticleCount": 4,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 4,
+  "product": "Optimizes service-area pricing and route acceptance using drive time, disposal fees, tank size, crew time, and emergency premiums.",
+  "productUrl": "",
+  "valueProposition": "Shows contribution margin before booking and recommends profitable route days, zones, and minimum charges.",
+  "articleCount": 4,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "septic-route-profit"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

@@ -1,0 +1,70 @@
+{
+  "id": "property-vendor-cost-anomaly",
+  "name": "Property Vendor Cost Anomaly",
+  "domain": null,
+  "audience": "independent residential property managers",
+  "topic": "property management maintenance invoice anomaly detection",
+  "products": [
+    {
+      "id": "property-vendor-cost-anomaly",
+      "name": "Property Vendor Cost Anomaly",
+      "product": "Flags unusual maintenance invoice prices, repeat repairs, trip charges, unit costs, and vendor-location patterns before approval.",
+      "productUrl": "",
+      "audience": "independent residential property managers",
+      "problem": "Invoice review relies on memory, so duplicate, inflated, or repeatedly ineffective maintenance spend reaches owners.",
+      "valueProposition": "Ranks the invoices worth human review and quantifies avoidable cost without delaying routine approvals.",
+      "topic": "property management maintenance invoice anomaly detection",
+      "monetization": "$149-$599/month by units and invoice volume",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: property maintenance invoice audit software; property manager vendor cost analysis; duplicate maintenance invoice detection; property management maintenance invoice anomaly detection software; property management maintenance invoice anomaly detection calculator; property management maintenance invoice anomaly detection pricing",
+      "seoThesis": "A narrow site for independent residential property managers can connect commercial pages, calculators, comparisons, and implementation guides around property management maintenance invoice anomaly detection to the same measurable cost-reduction outcome.",
+      "searchQueries": [
+        "property maintenance invoice audit software",
+        "property manager vendor cost analysis",
+        "duplicate maintenance invoice detection",
+        "property management maintenance invoice anomaly detection software",
+        "property management maintenance invoice anomaly detection calculator",
+        "property management maintenance invoice anomaly detection pricing"
+      ],
+      "buyer": "portfolio manager, maintenance director, or owner",
+      "economicDriver": "cost-reduction",
+      "profitRationale": "Maintenance is a large recurring spend category, and each reviewed invoice improves the portfolio benchmark.",
+      "primaryRisk": "Sparse descriptions and owner-specific approval rules can create noisy flags.",
+      "scoreBreakdown": {
+        "economicPain": 8,
+        "buyerBudget": 7,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 8,
+        "searchDemand": 8,
+        "commercialIntent": 8,
+        "contentDepth": 8,
+        "serpWinnability": 7,
+        "buildSupportFeasibility": 7
+      },
+      "score": 78,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Flags unusual maintenance invoice prices, repeat repairs, trip charges, unit costs, and vendor-location patterns before approval.",
+  "productUrl": "",
+  "valueProposition": "Ranks the invoices worth human review and quantifies avoidable cost without delaying routine approvals.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "property-vendor-cost-anomaly"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

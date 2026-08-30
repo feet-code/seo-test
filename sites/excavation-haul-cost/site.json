@@ -1,0 +1,70 @@
+{
+  "id": "excavation-haul-cost",
+  "name": "Excavation Haul Cost",
+  "domain": null,
+  "audience": "small excavation and earthwork contractors",
+  "topic": "excavation hauling cost and earthwork estimating",
+  "products": [
+    {
+      "id": "excavation-haul-cost",
+      "name": "Excavation Haul Cost",
+      "product": "Models cut-fill quantities, truck cycles, disposal or import fees, wait time, equipment production, fuel, and haul distance.",
+      "productUrl": "",
+      "audience": "small excavation and earthwork contractors",
+      "problem": "Hauling assumptions are buried in estimates even though a small cycle-time miss can erase job profit.",
+      "valueProposition": "Compares haul scenarios and exposes the cost assumptions that must be validated before bidding.",
+      "topic": "excavation hauling cost and earthwork estimating",
+      "monetization": "$149-$699/month by estimators and bid volume",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: excavation haul cost calculator; earthwork estimating software; dump truck cycle time calculator; excavation hauling cost and earthwork estimating software; excavation hauling cost and earthwork estimating calculator; excavation hauling cost and earthwork estimating pricing",
+      "seoThesis": "A narrow site for small excavation and earthwork contractors can connect commercial pages, calculators, comparisons, and implementation guides around excavation hauling cost and earthwork estimating to the same measurable margin outcome.",
+      "searchQueries": [
+        "excavation haul cost calculator",
+        "earthwork estimating software",
+        "dump truck cycle time calculator",
+        "excavation hauling cost and earthwork estimating software",
+        "excavation hauling cost and earthwork estimating calculator",
+        "excavation hauling cost and earthwork estimating pricing"
+      ],
+      "buyer": "estimator or owner",
+      "economicDriver": "margin",
+      "profitRationale": "The calculator wedge matches strong search intent and expands into estimate-to-actual production learning.",
+      "primaryRisk": "Takeoff geometry and local disposal data can exceed a narrow solo-founder MVP.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 8,
+        "monetizationExpansion": 8,
+        "searchDemand": 9,
+        "commercialIntent": 10,
+        "contentDepth": 8,
+        "serpWinnability": 7,
+        "buildSupportFeasibility": 7
+      },
+      "score": 82,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Models cut-fill quantities, truck cycles, disposal or import fees, wait time, equipment production, fuel, and haul distance.",
+  "productUrl": "",
+  "valueProposition": "Compares haul scenarios and exposes the cost assumptions that must be validated before bidding.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "excavation-haul-cost"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

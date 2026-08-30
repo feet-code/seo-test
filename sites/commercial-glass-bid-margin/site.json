@@ -1,0 +1,70 @@
+{
+  "id": "commercial-glass-bid-margin",
+  "name": "Commercial Glass Bid Margin",
+  "domain": null,
+  "audience": "small glazing and commercial glass contractors",
+  "topic": "commercial glass estimating and glazing job profitability",
+  "products": [
+    {
+      "id": "commercial-glass-bid-margin",
+      "name": "Commercial Glass Bid Margin",
+      "product": "Prices jobs from takeoff, glass and hardware, fabrication, lift and access, breakage, crew production, delivery, and schedule risk.",
+      "productUrl": "",
+      "audience": "small glazing and commercial glass contractors",
+      "problem": "Material, access, and breakage assumptions are buried in estimates, making apparently competitive bids fragile.",
+      "valueProposition": "Shows the bid range and contingency required to protect margin before material is ordered.",
+      "topic": "commercial glass estimating and glazing job profitability",
+      "monetization": "$99-$499/month by estimators",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: commercial glass estimating software; glazing bid calculator; glass contractor job costing; commercial glass estimating and glazing job profitability software; commercial glass estimating and glazing job profitability calculator; commercial glass estimating and glazing job profitability pricing",
+      "seoThesis": "A narrow site for small glazing and commercial glass contractors can connect commercial pages, calculators, comparisons, and implementation guides around commercial glass estimating and glazing job profitability to the same measurable risk outcome.",
+      "searchQueries": [
+        "commercial glass estimating software",
+        "glazing bid calculator",
+        "glass contractor job costing",
+        "commercial glass estimating and glazing job profitability software",
+        "commercial glass estimating and glazing job profitability calculator",
+        "commercial glass estimating and glazing job profitability pricing"
+      ],
+      "buyer": "owner or estimator",
+      "economicDriver": "risk",
+      "profitRationale": "Projects have meaningful ticket values and specific estimating searches create a focused acquisition path.",
+      "primaryRisk": "Takeoff data and supplier catalogs vary, while incumbents serve larger glazing contractors.",
+      "scoreBreakdown": {
+        "economicPain": 8,
+        "buyerBudget": 7,
+        "recurrenceRetention": 8,
+        "monetizationExpansion": 7,
+        "searchDemand": 9,
+        "commercialIntent": 9,
+        "contentDepth": 8,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 8
+      },
+      "score": 80,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Prices jobs from takeoff, glass and hardware, fabrication, lift and access, breakage, crew production, delivery, and schedule risk.",
+  "productUrl": "",
+  "valueProposition": "Shows the bid range and contingency required to protect margin before material is ordered.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "commercial-glass-bid-margin"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

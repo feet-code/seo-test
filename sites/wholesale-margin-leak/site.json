@@ -1,0 +1,70 @@
+{
+  "id": "wholesale-margin-leak",
+  "name": "Wholesale Margin Leak Detector",
+  "domain": null,
+  "audience": "specialty wholesalers and regional distributors",
+  "topic": "wholesale distribution margin leakage analytics",
+  "products": [
+    {
+      "id": "wholesale-margin-leak",
+      "name": "Wholesale Margin Leak Detector",
+      "product": "Finds margin leakage from stale price lists, freight, small orders, overrides, rebates, rush handling, and customer-specific terms.",
+      "productUrl": "",
+      "audience": "specialty wholesalers and regional distributors",
+      "problem": "Reported gross margin masks order-line leakage that accumulates across thousands of routine transactions.",
+      "valueProposition": "Surfaces the exact customer, item, and rule causing leakage and ranks safe repricing or policy actions.",
+      "topic": "wholesale distribution margin leakage analytics",
+      "monetization": "$399-$1,500/month by revenue or order volume",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: distribution margin leakage software; wholesale pricing analytics; distributor gross margin improvement tool; wholesale distribution margin leakage analytics software; wholesale distribution margin leakage analytics calculator; wholesale distribution margin leakage analytics pricing",
+      "seoThesis": "A narrow site for specialty wholesalers and regional distributors can connect commercial pages, calculators, comparisons, and implementation guides around wholesale distribution margin leakage analytics to the same measurable margin outcome.",
+      "searchQueries": [
+        "distribution margin leakage software",
+        "wholesale pricing analytics",
+        "distributor gross margin improvement tool",
+        "wholesale distribution margin leakage analytics software",
+        "wholesale distribution margin leakage analytics calculator",
+        "wholesale distribution margin leakage analytics pricing"
+      ],
+      "buyer": "CFO, pricing manager, or sales director",
+      "economicDriver": "margin",
+      "profitRationale": "The product attaches to every order and can demonstrate recovered gross profit by action.",
+      "primaryRisk": "ERP data normalization and sales-team resistance can slow implementation.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 9,
+        "recurrenceRetention": 10,
+        "monetizationExpansion": 9,
+        "searchDemand": 7,
+        "commercialIntent": 8,
+        "contentDepth": 8,
+        "serpWinnability": 7,
+        "buildSupportFeasibility": 6
+      },
+      "score": 82,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Finds margin leakage from stale price lists, freight, small orders, overrides, rebates, rush handling, and customer-specific terms.",
+  "productUrl": "",
+  "valueProposition": "Surfaces the exact customer, item, and rule causing leakage and ranks safe repricing or policy actions.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "wholesale-margin-leak"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

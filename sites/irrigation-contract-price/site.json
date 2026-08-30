@@ -1,0 +1,70 @@
+{
+  "id": "irrigation-contract-price",
+  "name": "Irrigation Contract Price",
+  "domain": null,
+  "audience": "commercial irrigation maintenance contractors",
+  "topic": "commercial irrigation maintenance contract pricing",
+  "products": [
+    {
+      "id": "irrigation-contract-price",
+      "name": "Irrigation Contract Price",
+      "product": "Prices maintenance agreements from zone count, visit frequency, travel, seasonal labor, included repairs, and water-management scope.",
+      "productUrl": "",
+      "audience": "commercial irrigation maintenance contractors",
+      "problem": "Annual agreements quietly lose margin when included service and seasonal demand exceed assumptions.",
+      "valueProposition": "Forecasts contract contribution and supplies renewal options for scope, frequency, and price.",
+      "topic": "commercial irrigation maintenance contract pricing",
+      "monetization": "$129-$499/month by contracts and crews",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: irrigation maintenance pricing software; irrigation service contract calculator; irrigation contract profitability; commercial irrigation maintenance contract pricing software; commercial irrigation maintenance contract pricing calculator; commercial irrigation maintenance contract pricing pricing",
+      "seoThesis": "A narrow site for commercial irrigation maintenance contractors can connect commercial pages, calculators, comparisons, and implementation guides around commercial irrigation maintenance contract pricing to the same measurable margin outcome.",
+      "searchQueries": [
+        "irrigation maintenance pricing software",
+        "irrigation service contract calculator",
+        "irrigation contract profitability",
+        "commercial irrigation maintenance contract pricing software",
+        "commercial irrigation maintenance contract pricing calculator",
+        "commercial irrigation maintenance contract pricing pricing"
+      ],
+      "buyer": "owner or account manager",
+      "economicDriver": "margin",
+      "profitRationale": "Recurring contracts create retention and annual repricing events with clear avoided-loss value.",
+      "primaryRisk": "Service records may be incomplete and regional seasonality changes the model.",
+      "scoreBreakdown": {
+        "economicPain": 8,
+        "buyerBudget": 7,
+        "recurrenceRetention": 10,
+        "monetizationExpansion": 8,
+        "searchDemand": 8,
+        "commercialIntent": 8,
+        "contentDepth": 9,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 8
+      },
+      "score": 82,
+      "probeArticleCount": 4,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 4,
+  "product": "Prices maintenance agreements from zone count, visit frequency, travel, seasonal labor, included repairs, and water-management scope.",
+  "productUrl": "",
+  "valueProposition": "Forecasts contract contribution and supplies renewal options for scope, frequency, and price.",
+  "articleCount": 4,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "irrigation-contract-price"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

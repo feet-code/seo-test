@@ -1,0 +1,70 @@
+{
+  "id": "dental-lab-case-margin",
+  "name": "Dental Lab Case Margin",
+  "domain": null,
+  "audience": "independent dental laboratories",
+  "topic": "dental laboratory case costing and profitability",
+  "products": [
+    {
+      "id": "dental-lab-case-margin",
+      "name": "Dental Lab Case Margin",
+      "product": "Measures case and account contribution from technician time, material, remake, rush, shipping, outsourcing, and equipment capacity.",
+      "productUrl": "",
+      "audience": "independent dental laboratories",
+      "problem": "Labs price by restoration type while account-specific remakes, rushes, and service demands quietly erase margin.",
+      "valueProposition": "Finds unprofitable case types and accounts and supports evidence-based price or process changes.",
+      "topic": "dental laboratory case costing and profitability",
+      "monetization": "$149-$599/month by technicians or cases",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: dental lab case costing software; dental laboratory profitability; dental lab remake cost tracking; dental laboratory case costing and profitability software; dental laboratory case costing and profitability calculator; dental laboratory case costing and profitability pricing",
+      "seoThesis": "A narrow site for independent dental laboratories can connect commercial pages, calculators, comparisons, and implementation guides around dental laboratory case costing and profitability to the same measurable margin outcome.",
+      "searchQueries": [
+        "dental lab case costing software",
+        "dental laboratory profitability",
+        "dental lab remake cost tracking",
+        "dental laboratory case costing and profitability software",
+        "dental laboratory case costing and profitability calculator",
+        "dental laboratory case costing and profitability pricing"
+      ],
+      "buyer": "lab owner or production manager",
+      "economicDriver": "margin",
+      "profitRationale": "Per-case economics recur daily, buyer budgets are meaningful, and vertical data can make the product sticky.",
+      "primaryRisk": "Lab-management integrations and health-data handling increase security expectations.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 10,
+        "monetizationExpansion": 8,
+        "searchDemand": 7,
+        "commercialIntent": 8,
+        "contentDepth": 8,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 6
+      },
+      "score": 80,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Measures case and account contribution from technician time, material, remake, rush, shipping, outsourcing, and equipment capacity.",
+  "productUrl": "",
+  "valueProposition": "Finds unprofitable case types and accounts and supports evidence-based price or process changes.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "dental-lab-case-margin"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

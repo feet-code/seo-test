@@ -1,0 +1,70 @@
+{
+  "id": "propane-route-profit",
+  "name": "Propane Route Profit",
+  "domain": null,
+  "audience": "independent propane delivery companies",
+  "topic": "propane delivery route profitability and forecasting",
+  "products": [
+    {
+      "id": "propane-route-profit",
+      "name": "Propane Route Profit",
+      "product": "Combines gallons, tank telemetry or forecasts, route miles, stop time, driver cost, and customer price to prioritize profitable deliveries.",
+      "productUrl": "",
+      "audience": "independent propane delivery companies",
+      "problem": "Low-volume and premature deliveries consume route capacity while account economics remain hidden.",
+      "valueProposition": "Ranks deliveries by service risk and contribution, and exposes accounts that need minimums or repricing.",
+      "topic": "propane delivery route profitability and forecasting",
+      "monetization": "$499-$1,999/month by trucks and accounts",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: propane delivery routing software; propane route profitability; propane delivery forecasting software; propane delivery route profitability and forecasting software; propane delivery route profitability and forecasting calculator; propane delivery route profitability and forecasting pricing",
+      "seoThesis": "A narrow site for independent propane delivery companies can connect commercial pages, calculators, comparisons, and implementation guides around propane delivery route profitability and forecasting to the same measurable capacity outcome.",
+      "searchQueries": [
+        "propane delivery routing software",
+        "propane route profitability",
+        "propane delivery forecasting software",
+        "propane delivery route profitability and forecasting software",
+        "propane delivery route profitability and forecasting calculator",
+        "propane delivery route profitability and forecasting pricing"
+      ],
+      "buyer": "operations manager or owner",
+      "economicDriver": "capacity",
+      "profitRationale": "Delivery decisions recur daily, fuel volume supports pricing, and operational history creates a data advantage.",
+      "primaryRisk": "Telemetry and back-office integrations are fragmented, and safety-critical routing must remain operator controlled.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 9,
+        "recurrenceRetention": 10,
+        "monetizationExpansion": 9,
+        "searchDemand": 7,
+        "commercialIntent": 8,
+        "contentDepth": 8,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 6
+      },
+      "score": 83,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Combines gallons, tank telemetry or forecasts, route miles, stop time, driver cost, and customer price to prioritize profitable deliveries.",
+  "productUrl": "",
+  "valueProposition": "Ranks deliveries by service risk and contribution, and exposes accounts that need minimums or repricing.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "propane-route-profit"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

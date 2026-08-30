@@ -13,6 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SITES = ROOT / "sites"
 OUT = ROOT / "out"
+NEXT_BUILD = ROOT / ".next"
 DEPLOY = ROOT / ".deploy"
 
 
@@ -68,8 +69,9 @@ def build(site_id: str, env_overrides: dict[str, str] | None = None) -> None:
     })
     if env_overrides:
         env.update(env_overrides)
-    if OUT.exists():
-        shutil.rmtree(OUT)
+    for generated in (OUT, NEXT_BUILD):
+        if generated.exists():
+            shutil.rmtree(generated)
     run(["npm", "run", "build"], env=env)
     if not OUT.exists():
         raise SystemExit("Build completed but out/ was not produced.")

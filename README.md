@@ -27,19 +27,21 @@ The first command uses Google Search-grounded Gemini calls in restart-safe five-
 
 Before deploying, inspect and freely edit the file. Every generated idea has one authoritative `"siteId"` matching its own entry in `sites[]`. `python scripts/ideas.py --plan` validates the file and previews site-config changes without writing them; `launch.py` applies the sync automatically. Legacy imported portfolios may still place several products on one site, but the built-in generator does not optimize for grouping.
 
-### Included profitability seed
+### Included profitability portfolio and probes
 
-This branch starts over with 100 independent ideas selected from 109 curated candidates. Every idea has a direct economic driver, monetization hypothesis, explicit buyer, six query hypotheses, SEO thesis, score breakdown, and structured `probeContext`. No managed site configs or blog probes are committed yet; the root `_posts/` examples remain only as generator format fixtures.
+This branch contains 100 independent ideas selected from 109 curated candidates. Every idea has a direct economic driver, monetization hypothesis, explicit buyer, six query hypotheses, SEO thesis, score breakdown, and structured `probeContext`.
 
-When the ideas are approved, materialize their site configs and generate probes in a separate review step:
+The 100 one-product site configs and 340 editorial probes are committed. Each site has an indexable product page plus 2–5 articles selected from the idea's reviewed SEO content depth: 2 ideas have 2 posts, 60 have 3, 34 have 4, and 4 have 5. The planner prioritizes the useful search intents available for that product—decision model, buying guide, implementation, mistakes, and alternatives—without padding the corpus to a quota. Probes use normal headings and lists rather than Markdown tables or pipe characters.
+
+Validate or intentionally rebuild the reviewed corpus with:
 
 ```bash
 python scripts/ideas.py --plan
 python scripts/ideas.py
-python scripts/editorial_probes.py --batch profitability-001 --limit 1
+python scripts/editorial_probes.py --batch profitability-001
 ```
 
-Review those posts before any launch. The normal launcher generates missing probes, while reviewed batches can be reproduced from each idea's `probeContext` with `python scripts/editorial_probes.py --batch BATCH_ID`; use `--site SITE_ID` for one website and `--force` only when intentionally replacing existing probes.
+The normal launcher recognizes the committed probes and only generates content that is missing or invalidated by a changed input. Reviewed batches can be reproduced from each idea's `probeContext` with `python scripts/editorial_probes.py --batch BATCH_ID`; use `--site SITE_ID` for one website and `--force` only when intentionally replacing existing probes.
 
 Idea generation checkpoints after every independent batch in `.deploy/state/ideas-generation.json`. Rerun the same `--generate` command to resume. Use `--regenerate` only when you intentionally want a completely new portfolio:
 
@@ -85,7 +87,7 @@ Repeated imports update portfolio-managed content while preserving site-local op
 - updated from `ideas.json`: site name, audience, topic, product membership, and product research/copy;
 - preserved from `sites/<site-id>/site.json`: domain, hosting project/provider, signup, GSC/PostHog state, author name, lifecycle status, and article count.
 
-Blog photos are intentionally disabled. Existing Markdown has no cover, author-picture, Open Graph image, Markdown-image, or HTML-image data; both generators enforce the same rule for future posts. Run `python scripts/remove_blog_images.py` after importing older content to make it image-free.
+Blog photos are intentionally disabled. Existing Markdown has no cover, author-picture, Open Graph image, Markdown-image, or HTML-image data; both generators enforce the same rule for future posts. Future model-generated prose also strips pipe-based table formatting and renders comparisons as headings and lists. Run `python scripts/remove_blog_images.py` after importing older content to make it image-free.
 
 Sites missing from a newer export are reported as `STALE (kept)`. They are never silently deleted. Review them and explicitly retire or tear them down.
 
@@ -126,6 +128,8 @@ For every product, the build creates:
 - cross-discovery links when a legacy imported site contains complementary products.
 
 Generated post frontmatter includes `productId`, `productName`, and a generation fingerprint. It deliberately contains no image metadata.
+
+Every product page states the target buyer, economic case, validation hypothesis, primary risk, and pricing hypothesis. This keeps each probe commercially specific while the related articles target narrow, rankable search decisions.
 
 ## Google Search Console
 

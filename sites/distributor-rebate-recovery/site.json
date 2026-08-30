@@ -1,0 +1,70 @@
+{
+  "id": "distributor-rebate-recovery",
+  "name": "Distributor Rebate Recovery",
+  "domain": null,
+  "audience": "specialty wholesale distributors with vendor rebate programs",
+  "topic": "vendor rebate accrual reconciliation for distributors",
+  "products": [
+    {
+      "id": "distributor-rebate-recovery",
+      "name": "Distributor Rebate Recovery",
+      "product": "Reconciles purchases, tier rules, claims, and credits to surface earned vendor rebates that are missing or at risk.",
+      "productUrl": "",
+      "audience": "specialty wholesale distributors with vendor rebate programs",
+      "problem": "Rebate terms sit in PDFs and spreadsheets, so distributors miss thresholds, deadlines, and short-paid claims.",
+      "valueProposition": "Creates an auditable expected-versus-received rebate ledger and prioritizes the claims worth pursuing.",
+      "topic": "vendor rebate accrual reconciliation for distributors",
+      "monetization": "$500-$2,000/month by vendors and purchase volume, plus onboarding",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: vendor rebate management software distributors; rebate accrual reconciliation; missing supplier rebate audit; vendor rebate accrual reconciliation for distributors software; vendor rebate accrual reconciliation for distributors calculator; vendor rebate accrual reconciliation for distributors pricing",
+      "seoThesis": "A narrow site for specialty wholesale distributors with vendor rebate programs can connect commercial pages, calculators, comparisons, and implementation guides around vendor rebate accrual reconciliation for distributors to the same measurable margin outcome.",
+      "searchQueries": [
+        "vendor rebate management software distributors",
+        "rebate accrual reconciliation",
+        "missing supplier rebate audit",
+        "vendor rebate accrual reconciliation for distributors software",
+        "vendor rebate accrual reconciliation for distributors calculator",
+        "vendor rebate accrual reconciliation for distributors pricing"
+      ],
+      "buyer": "CFO, controller, or purchasing director",
+      "economicDriver": "margin",
+      "profitRationale": "The product recovers gross margin already contractually earned and can expand into purchasing and pricing analytics.",
+      "primaryRisk": "Contract terms are messy, customer data is sensitive, and extraction errors require transparent review.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 9,
+        "recurrenceRetention": 8,
+        "monetizationExpansion": 9,
+        "searchDemand": 6,
+        "commercialIntent": 8,
+        "contentDepth": 7,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 6
+      },
+      "score": 79,
+      "probeArticleCount": 2,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 2,
+  "product": "Reconciles purchases, tier rules, claims, and credits to surface earned vendor rebates that are missing or at risk.",
+  "productUrl": "",
+  "valueProposition": "Creates an auditable expected-versus-received rebate ledger and prioritizes the claims worth pursuing.",
+  "articleCount": 2,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "distributor-rebate-recovery"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

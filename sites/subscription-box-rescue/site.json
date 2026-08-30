@@ -1,0 +1,70 @@
+{
+  "id": "subscription-box-rescue",
+  "name": "Subscription Box Rescue Offers",
+  "domain": null,
+  "audience": "subscription-box brands with meaningful recurring revenue",
+  "topic": "subscription box churn save offer optimization",
+  "products": [
+    {
+      "id": "subscription-box-rescue",
+      "name": "Subscription Box Rescue Offers",
+      "product": "Selects save offers from tenure, margin, inventory, reason, cohort behavior, and expected post-offer value.",
+      "productUrl": "",
+      "audience": "subscription-box brands with meaningful recurring revenue",
+      "problem": "Brands use blanket cancellation discounts that save low-value subscribers and over-discount customers who needed a different option.",
+      "valueProposition": "Recommends the least-cost viable save action and measures incremental retained contribution margin.",
+      "topic": "subscription box churn save offer optimization",
+      "monetization": "$149-$699/month by subscribers, with usage-based testing",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: subscription box churn software; cancellation save offer optimization; subscription retention offer tool; subscription box churn save offer optimization software; subscription box churn save offer optimization calculator; subscription box churn save offer optimization pricing",
+      "seoThesis": "A narrow site for subscription-box brands with meaningful recurring revenue can connect commercial pages, calculators, comparisons, and implementation guides around subscription box churn save offer optimization to the same measurable retention outcome.",
+      "searchQueries": [
+        "subscription box churn software",
+        "cancellation save offer optimization",
+        "subscription retention offer tool",
+        "subscription box churn save offer optimization software",
+        "subscription box churn save offer optimization calculator",
+        "subscription box churn save offer optimization pricing"
+      ],
+      "buyer": "founder, retention lead, or ecommerce manager",
+      "economicDriver": "retention",
+      "profitRationale": "Recurring revenue makes retention measurable and experimentation can compound into proprietary cohort knowledge.",
+      "primaryRisk": "Shopify subscription platforms may add similar features and causal measurement requires disciplined experiments.",
+      "scoreBreakdown": {
+        "economicPain": 8,
+        "buyerBudget": 8,
+        "recurrenceRetention": 10,
+        "monetizationExpansion": 9,
+        "searchDemand": 7,
+        "commercialIntent": 8,
+        "contentDepth": 8,
+        "serpWinnability": 6,
+        "buildSupportFeasibility": 7
+      },
+      "score": 80,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Selects save offers from tenure, margin, inventory, reason, cohort behavior, and expected post-offer value.",
+  "productUrl": "",
+  "valueProposition": "Recommends the least-cost viable save action and measures incremental retained contribution margin.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "subscription-box-rescue"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

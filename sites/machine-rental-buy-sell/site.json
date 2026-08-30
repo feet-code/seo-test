@@ -1,0 +1,70 @@
+{
+  "id": "machine-rental-buy-sell",
+  "name": "Rental Fleet Buy Sell Planner",
+  "domain": null,
+  "audience": "independent tool and equipment rental businesses",
+  "topic": "equipment rental fleet purchase and disposal planning",
+  "products": [
+    {
+      "id": "machine-rental-buy-sell",
+      "name": "Rental Fleet Buy Sell Planner",
+      "product": "Ranks fleet purchase and disposal decisions using utilization, rate, maintenance, downtime, age, demand denials, and resale value.",
+      "productUrl": "",
+      "audience": "independent tool and equipment rental businesses",
+      "problem": "Capital decisions rely on fleet age or intuition instead of the incremental cash return of another or fewer units.",
+      "valueProposition": "Shows which assets to buy, retain, transfer, or sell and the assumptions required for the decision to pay back.",
+      "topic": "equipment rental fleet purchase and disposal planning",
+      "monetization": "$199-$799/month by fleet value",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: rental fleet planning software; equipment rental buy sell analysis; rental asset ROI calculator; equipment rental fleet purchase and disposal planning software; equipment rental fleet purchase and disposal planning calculator; equipment rental fleet purchase and disposal planning pricing",
+      "seoThesis": "A narrow site for independent tool and equipment rental businesses can connect commercial pages, calculators, comparisons, and implementation guides around equipment rental fleet purchase and disposal planning to the same measurable capacity outcome.",
+      "searchQueries": [
+        "rental fleet planning software",
+        "equipment rental buy sell analysis",
+        "rental asset ROI calculator",
+        "equipment rental fleet purchase and disposal planning software",
+        "equipment rental fleet purchase and disposal planning calculator",
+        "equipment rental fleet purchase and disposal planning pricing"
+      ],
+      "buyer": "owner or fleet manager",
+      "economicDriver": "capacity",
+      "profitRationale": "The product influences large capital decisions and expands naturally from rate and utilization analytics.",
+      "primaryRisk": "Purchase recommendations need enough history and must not imply guaranteed future demand or resale value.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 7,
+        "monetizationExpansion": 8,
+        "searchDemand": 7,
+        "commercialIntent": 8,
+        "contentDepth": 7,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 7
+      },
+      "score": 78,
+      "probeArticleCount": 2,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 2,
+  "product": "Ranks fleet purchase and disposal decisions using utilization, rate, maintenance, downtime, age, demand denials, and resale value.",
+  "productUrl": "",
+  "valueProposition": "Shows which assets to buy, retain, transfer, or sell and the assumptions required for the decision to pay back.",
+  "articleCount": 2,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "machine-rental-buy-sell"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

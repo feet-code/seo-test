@@ -1,0 +1,70 @@
+{
+  "id": "ecommerce-return-router",
+  "name": "Ecommerce Return Cost Router",
+  "domain": null,
+  "audience": "mid-sized Shopify brands shipping physical products",
+  "topic": "ecommerce return cost and keep-it refund optimization",
+  "products": [
+    {
+      "id": "ecommerce-return-router",
+      "name": "Ecommerce Return Cost Router",
+      "product": "Chooses return, exchange, keep-it, repair, resale, or refund paths using item margin, shipping, condition, fraud risk, and recovery value.",
+      "productUrl": "",
+      "audience": "mid-sized Shopify brands shipping physical products",
+      "problem": "Uniform return policies spend more on reverse logistics than the item can recover and miss better exchange outcomes.",
+      "valueProposition": "Selects a policy-compliant resolution that minimizes expected loss while preserving customer experience.",
+      "topic": "ecommerce return cost and keep-it refund optimization",
+      "monetization": "$299-$1,500/month by return volume, with usage pricing",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: returnless refund software; ecommerce return cost calculator; Shopify return optimization; ecommerce return cost and keep-it refund optimization software; ecommerce return cost and keep-it refund optimization calculator; ecommerce return cost and keep-it refund optimization pricing",
+      "seoThesis": "A narrow site for mid-sized Shopify brands shipping physical products can connect commercial pages, calculators, comparisons, and implementation guides around ecommerce return cost and keep-it refund optimization to the same measurable margin outcome.",
+      "searchQueries": [
+        "returnless refund software",
+        "ecommerce return cost calculator",
+        "Shopify return optimization",
+        "ecommerce return cost and keep-it refund optimization software",
+        "ecommerce return cost and keep-it refund optimization calculator",
+        "ecommerce return cost and keep-it refund optimization pricing"
+      ],
+      "buyer": "operations, CX, or ecommerce director",
+      "economicDriver": "margin",
+      "profitRationale": "Every return has measurable cost, transaction volume drives expansion, and policy learning creates data advantage.",
+      "primaryRisk": "Returns software is competitive and fraud or customer-fairness mistakes can be costly.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 10,
+        "monetizationExpansion": 9,
+        "searchDemand": 8,
+        "commercialIntent": 9,
+        "contentDepth": 9,
+        "serpWinnability": 5,
+        "buildSupportFeasibility": 6
+      },
+      "score": 82,
+      "probeArticleCount": 4,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 4,
+  "product": "Chooses return, exchange, keep-it, repair, resale, or refund paths using item margin, shipping, condition, fraud risk, and recovery value.",
+  "productUrl": "",
+  "valueProposition": "Selects a policy-compliant resolution that minimizes expected loss while preserving customer experience.",
+  "articleCount": 4,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "ecommerce-return-router"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

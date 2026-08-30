@@ -1,0 +1,70 @@
+{
+  "id": "construction-rental-damage",
+  "name": "Rental Damage Charge Recovery",
+  "domain": null,
+  "audience": "independent equipment rental companies",
+  "topic": "equipment rental damage charge documentation and recovery",
+  "products": [
+    {
+      "id": "construction-rental-damage",
+      "name": "Rental Damage Charge Recovery",
+      "product": "Links checkout condition, return inspection, photos, repair work, contract terms, and customer billing for damage recovery.",
+      "productUrl": "",
+      "audience": "independent equipment rental companies",
+      "problem": "Repairable customer damage is absorbed because evidence, responsibility, estimates, and invoicing are assembled too late.",
+      "valueProposition": "Creates a complete, reviewable charge package and measures recovered repair cost without deciding liability automatically.",
+      "topic": "equipment rental damage charge documentation and recovery",
+      "monetization": "$199-$799/month by locations and returns",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: equipment rental damage tracking; rental damage charge software; equipment return inspection billing; equipment rental damage charge documentation and recovery software; equipment rental damage charge documentation and recovery calculator; equipment rental damage charge documentation and recovery pricing",
+      "seoThesis": "A narrow site for independent equipment rental companies can connect commercial pages, calculators, comparisons, and implementation guides around equipment rental damage charge documentation and recovery to the same measurable revenue-capture outcome.",
+      "searchQueries": [
+        "equipment rental damage tracking",
+        "rental damage charge software",
+        "equipment return inspection billing",
+        "equipment rental damage charge documentation and recovery software",
+        "equipment rental damage charge documentation and recovery calculator",
+        "equipment rental damage charge documentation and recovery pricing"
+      ],
+      "buyer": "rental owner, service manager, or controller",
+      "economicDriver": "revenue-capture",
+      "profitRationale": "Recovered damage directly protects asset margin and repeat return volume supports ongoing use.",
+      "primaryRisk": "Customer disputes and contract variation require conservative human approval.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 8,
+        "monetizationExpansion": 8,
+        "searchDemand": 8,
+        "commercialIntent": 9,
+        "contentDepth": 8,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 7
+      },
+      "score": 82,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Links checkout condition, return inspection, photos, repair work, contract terms, and customer billing for damage recovery.",
+  "productUrl": "",
+  "valueProposition": "Creates a complete, reviewable charge package and measures recovered repair cost without deciding liability automatically.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "construction-rental-damage"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

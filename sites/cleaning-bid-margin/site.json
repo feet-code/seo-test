@@ -1,0 +1,70 @@
+{
+  "id": "cleaning-bid-margin",
+  "name": "Commercial Cleaning Bid Margin",
+  "domain": null,
+  "audience": "small commercial janitorial contractors",
+  "topic": "commercial cleaning bid pricing and profit calculator",
+  "products": [
+    {
+      "id": "cleaning-bid-margin",
+      "name": "Commercial Cleaning Bid Margin",
+      "product": "Prices contracts from production rates, scope frequency, wage burden, supplies, travel, supervision, and inspection cost.",
+      "productUrl": "",
+      "audience": "small commercial janitorial contractors",
+      "problem": "Underestimated labor minutes and hidden service requirements turn multi-year cleaning contracts unprofitable.",
+      "valueProposition": "Produces a defendable bid range and shows exactly which scope assumptions drive margin risk.",
+      "topic": "commercial cleaning bid pricing and profit calculator",
+      "monetization": "$79-$299/month plus optional per-bid usage",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: commercial cleaning bid calculator; janitorial pricing software; cleaning contract profit calculator; commercial cleaning bid pricing and profit calculator software; commercial cleaning bid pricing and profit calculator calculator; commercial cleaning bid pricing and profit calculator pricing",
+      "seoThesis": "A narrow site for small commercial janitorial contractors can connect commercial pages, calculators, comparisons, and implementation guides around commercial cleaning bid pricing and profit calculator to the same measurable margin outcome.",
+      "searchQueries": [
+        "commercial cleaning bid calculator",
+        "janitorial pricing software",
+        "cleaning contract profit calculator",
+        "commercial cleaning bid pricing and profit calculator software",
+        "commercial cleaning bid pricing and profit calculator calculator",
+        "commercial cleaning bid pricing and profit calculator pricing"
+      ],
+      "buyer": "owner or estimator",
+      "economicDriver": "margin",
+      "profitRationale": "Bidding is close to revenue, high-intent searches are natural, and the MVP can deliver value before integrations.",
+      "primaryRisk": "Production-rate assumptions differ by facility and must not create false precision.",
+      "scoreBreakdown": {
+        "economicPain": 8,
+        "buyerBudget": 7,
+        "recurrenceRetention": 8,
+        "monetizationExpansion": 7,
+        "searchDemand": 10,
+        "commercialIntent": 10,
+        "contentDepth": 9,
+        "serpWinnability": 7,
+        "buildSupportFeasibility": 9
+      },
+      "score": 82,
+      "probeArticleCount": 4,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 4,
+  "product": "Prices contracts from production rates, scope frequency, wage burden, supplies, travel, supervision, and inspection cost.",
+  "productUrl": "",
+  "valueProposition": "Produces a defendable bid range and shows exactly which scope assumptions drive margin risk.",
+  "articleCount": 4,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "cleaning-bid-margin"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

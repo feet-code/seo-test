@@ -1,0 +1,70 @@
+{
+  "id": "commercial-laundry-route-margin",
+  "name": "Commercial Laundry Route Margin",
+  "domain": null,
+  "audience": "linen, uniform, and commercial laundry route operators",
+  "topic": "commercial laundry account and route profitability",
+  "products": [
+    {
+      "id": "commercial-laundry-route-margin",
+      "name": "Commercial Laundry Route Margin",
+      "product": "Measures account margin from pieces, pounds, replacements, route time, energy, rewash, losses, and service exceptions.",
+      "productUrl": "",
+      "audience": "linen, uniform, and commercial laundry route operators",
+      "problem": "Contract prices fail to reflect changing volume, textile loss, processing cost, and delivery effort.",
+      "valueProposition": "Creates a source-backed account repricing case and shows the route impact before renewal.",
+      "topic": "commercial laundry account and route profitability",
+      "monetization": "$299-$999/month by routes and plants",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: commercial laundry route software profitability; linen service account pricing; laundry contract margin analysis; commercial laundry account and route profitability software; commercial laundry account and route profitability calculator; commercial laundry account and route profitability pricing",
+      "seoThesis": "A narrow site for linen, uniform, and commercial laundry route operators can connect commercial pages, calculators, comparisons, and implementation guides around commercial laundry account and route profitability to the same measurable margin outcome.",
+      "searchQueries": [
+        "commercial laundry route software profitability",
+        "linen service account pricing",
+        "laundry contract margin analysis",
+        "commercial laundry account and route profitability software",
+        "commercial laundry account and route profitability calculator",
+        "commercial laundry account and route profitability pricing"
+      ],
+      "buyer": "owner, route manager, or controller",
+      "economicDriver": "margin",
+      "profitRationale": "High-frequency contracts, physical processing cost, and route density create recurring measurable value.",
+      "primaryRisk": "Plant and route data may live in older systems with difficult exports.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 8,
+        "searchDemand": 7,
+        "commercialIntent": 8,
+        "contentDepth": 8,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 6
+      },
+      "score": 80,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Measures account margin from pieces, pounds, replacements, route time, energy, rewash, losses, and service exceptions.",
+  "productUrl": "",
+  "valueProposition": "Creates a source-backed account repricing case and shows the route impact before renewal.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "commercial-laundry-route-margin"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

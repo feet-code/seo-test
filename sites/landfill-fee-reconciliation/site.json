@@ -1,0 +1,70 @@
+{
+  "id": "landfill-fee-reconciliation",
+  "name": "Disposal Fee Reconciliation",
+  "domain": null,
+  "audience": "roll-off, junk removal, and waste-hauling companies",
+  "topic": "waste disposal fee billing reconciliation",
+  "products": [
+    {
+      "id": "landfill-fee-reconciliation",
+      "name": "Disposal Fee Reconciliation",
+      "product": "Matches scale tickets, material type, job, customer allowance, disposal markup, and invoice to find unrecovered fees.",
+      "productUrl": "",
+      "audience": "roll-off, junk removal, and waste-hauling companies",
+      "problem": "Disposal cost is paid at the facility but not fully passed through when tickets and customer invoices are reconciled manually.",
+      "valueProposition": "Finds missing or underbilled disposal charges and produces the supporting ticket before the billing period closes.",
+      "topic": "waste disposal fee billing reconciliation",
+      "monetization": "$99-$499/month by tickets and trucks",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: landfill ticket reconciliation software; disposal fee billing audit; dumpster overage charge tracking; waste disposal fee billing reconciliation software; waste disposal fee billing reconciliation calculator; waste disposal fee billing reconciliation pricing",
+      "seoThesis": "A narrow site for roll-off, junk removal, and waste-hauling companies can connect commercial pages, calculators, comparisons, and implementation guides around waste disposal fee billing reconciliation to the same measurable revenue-capture outcome.",
+      "searchQueries": [
+        "landfill ticket reconciliation software",
+        "disposal fee billing audit",
+        "dumpster overage charge tracking",
+        "waste disposal fee billing reconciliation software",
+        "waste disposal fee billing reconciliation calculator",
+        "waste disposal fee billing reconciliation pricing"
+      ],
+      "buyer": "owner or controller",
+      "economicDriver": "revenue-capture",
+      "profitRationale": "The product recovers a direct variable cost on every eligible job and can work from document uploads before integrations.",
+      "primaryRisk": "Ticket OCR and customer-specific allowance rules must be reliable and reviewable.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 7,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 8,
+        "searchDemand": 8,
+        "commercialIntent": 9,
+        "contentDepth": 8,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 8
+      },
+      "score": 82,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Matches scale tickets, material type, job, customer allowance, disposal markup, and invoice to find unrecovered fees.",
+  "productUrl": "",
+  "valueProposition": "Finds missing or underbilled disposal charges and produces the supporting ticket before the billing period closes.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "landfill-fee-reconciliation"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

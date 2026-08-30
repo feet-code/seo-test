@@ -1,0 +1,70 @@
+{
+  "id": "equipment-rental-rate-yield",
+  "name": "Equipment Rental Rate Yield",
+  "domain": null,
+  "audience": "independent equipment rental companies",
+  "topic": "equipment rental utilization and rate optimization",
+  "products": [
+    {
+      "id": "equipment-rental-rate-yield",
+      "name": "Equipment Rental Rate Yield",
+      "product": "Recommends rate and fleet actions from utilization, quote demand, season, maintenance downtime, and asset carrying cost.",
+      "productUrl": "",
+      "audience": "independent equipment rental companies",
+      "problem": "Static price sheets leave high-demand assets underpriced and low-demand capital idle.",
+      "valueProposition": "Explains when to raise a rate, discount a gap, transfer equipment, sell an asset, or buy another unit.",
+      "topic": "equipment rental utilization and rate optimization",
+      "monetization": "$300-$1,500/month by locations and fleet value",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: equipment rental rate optimization; rental fleet utilization software; equipment rental pricing calculator; equipment rental utilization and rate optimization software; equipment rental utilization and rate optimization calculator; equipment rental utilization and rate optimization pricing",
+      "seoThesis": "A narrow site for independent equipment rental companies can connect commercial pages, calculators, comparisons, and implementation guides around equipment rental utilization and rate optimization to the same measurable capacity outcome.",
+      "searchQueries": [
+        "equipment rental rate optimization",
+        "rental fleet utilization software",
+        "equipment rental pricing calculator",
+        "equipment rental utilization and rate optimization software",
+        "equipment rental utilization and rate optimization calculator",
+        "equipment rental utilization and rate optimization pricing"
+      ],
+      "buyer": "owner, fleet manager, or revenue manager",
+      "economicDriver": "capacity",
+      "profitRationale": "Small pricing and utilization improvements compound across expensive assets and create strong willingness to pay.",
+      "primaryRisk": "Rental-management integrations and sparse demand data can limit early recommendation quality.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 9,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 9,
+        "searchDemand": 7,
+        "commercialIntent": 8,
+        "contentDepth": 8,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 6
+      },
+      "score": 82,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Recommends rate and fleet actions from utilization, quote demand, season, maintenance downtime, and asset carrying cost.",
+  "productUrl": "",
+  "valueProposition": "Explains when to raise a rate, discount a gap, transfer equipment, sell an asset, or buy another unit.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "equipment-rental-rate-yield"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

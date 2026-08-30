@@ -1,0 +1,70 @@
+{
+  "id": "nursery-shrink-margin",
+  "name": "Nursery Shrink Margin",
+  "domain": null,
+  "audience": "wholesale plant nurseries and growers",
+  "topic": "wholesale nursery inventory shrink and order profitability",
+  "products": [
+    {
+      "id": "nursery-shrink-margin",
+      "name": "Nursery Shrink Margin",
+      "product": "Combines crop cost, availability, shrink, substitutions, freight, customer price, and aging to protect order and SKU margin.",
+      "productUrl": "",
+      "audience": "wholesale plant nurseries and growers",
+      "problem": "Biological shrink and substitutions make nominal catalog margin unreliable by the time plants ship.",
+      "valueProposition": "Flags low-margin orders and aging inventory actions using current sellable quantity and expected loss.",
+      "topic": "wholesale nursery inventory shrink and order profitability",
+      "monetization": "$299-$999/month by locations and inventory volume",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: nursery inventory management software wholesale; plant nursery shrink tracking; nursery order profitability; wholesale nursery inventory shrink and order profitability software; wholesale nursery inventory shrink and order profitability calculator; wholesale nursery inventory shrink and order profitability pricing",
+      "seoThesis": "A narrow site for wholesale plant nurseries and growers can connect commercial pages, calculators, comparisons, and implementation guides around wholesale nursery inventory shrink and order profitability to the same measurable margin outcome.",
+      "searchQueries": [
+        "nursery inventory management software wholesale",
+        "plant nursery shrink tracking",
+        "nursery order profitability",
+        "wholesale nursery inventory shrink and order profitability software",
+        "wholesale nursery inventory shrink and order profitability calculator",
+        "wholesale nursery inventory shrink and order profitability pricing"
+      ],
+      "buyer": "owner, sales manager, or inventory manager",
+      "economicDriver": "margin",
+      "profitRationale": "Perishable inventory and recurring wholesale orders create measurable savings and a defensible operational dataset.",
+      "primaryRisk": "Plant taxonomy, seasonality, and legacy inventory systems complicate normalization.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 10,
+        "monetizationExpansion": 9,
+        "searchDemand": 7,
+        "commercialIntent": 8,
+        "contentDepth": 8,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 6
+      },
+      "score": 82,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Combines crop cost, availability, shrink, substitutions, freight, customer price, and aging to protect order and SKU margin.",
+  "productUrl": "",
+  "valueProposition": "Flags low-margin orders and aging inventory actions using current sellable quantity and expected loss.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "nursery-shrink-margin"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

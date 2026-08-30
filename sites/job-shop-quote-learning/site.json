@@ -1,0 +1,70 @@
+{
+  "id": "job-shop-quote-learning",
+  "name": "Job Shop Quote Learning",
+  "domain": null,
+  "audience": "small CNC, fabrication, and custom manufacturing job shops",
+  "topic": "job shop estimating accuracy and quote profitability",
+  "products": [
+    {
+      "id": "job-shop-quote-learning",
+      "name": "Job Shop Quote Learning",
+      "product": "Learns from quoted versus actual setup, run time, scrap, outside processing, and material cost to improve future bids.",
+      "productUrl": "",
+      "audience": "small CNC, fabrication, and custom manufacturing job shops",
+      "problem": "Estimators repeat pricing mistakes because actual job outcomes are not converted into explainable quoting feedback.",
+      "valueProposition": "Shows which assumptions caused margin misses and recommends evidence-based ranges for comparable future work.",
+      "topic": "job shop estimating accuracy and quote profitability",
+      "monetization": "$299-$1,200/month by machines and quote volume",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: job shop quoting software; machine shop estimate vs actual; CNC quote profitability calculator; job shop estimating accuracy and quote profitability software; job shop estimating accuracy and quote profitability calculator; job shop estimating accuracy and quote profitability pricing",
+      "seoThesis": "A narrow site for small CNC, fabrication, and custom manufacturing job shops can connect commercial pages, calculators, comparisons, and implementation guides around job shop estimating accuracy and quote profitability to the same measurable margin outcome.",
+      "searchQueries": [
+        "job shop quoting software",
+        "machine shop estimate vs actual",
+        "CNC quote profitability calculator",
+        "job shop estimating accuracy and quote profitability software",
+        "job shop estimating accuracy and quote profitability calculator",
+        "job shop estimating accuracy and quote profitability pricing"
+      ],
+      "buyer": "owner, estimator, or operations manager",
+      "economicDriver": "margin",
+      "profitRationale": "Every new quote affects margin, historical data compounds in value, and the product can become a defensible decision layer.",
+      "primaryRisk": "ERP exports are inconsistent and part similarity must be explainable rather than a black box.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 9,
+        "searchDemand": 8,
+        "commercialIntent": 9,
+        "contentDepth": 8,
+        "serpWinnability": 7,
+        "buildSupportFeasibility": 6
+      },
+      "score": 82,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Learns from quoted versus actual setup, run time, scrap, outside processing, and material cost to improve future bids.",
+  "productUrl": "",
+  "valueProposition": "Shows which assumptions caused margin misses and recommends evidence-based ranges for comparable future work.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "job-shop-quote-learning"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

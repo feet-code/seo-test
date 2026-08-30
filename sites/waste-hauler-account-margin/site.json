@@ -1,0 +1,70 @@
+{
+  "id": "waste-hauler-account-margin",
+  "name": "Waste Hauler Account Margin",
+  "domain": null,
+  "audience": "independent commercial waste and recycling haulers",
+  "topic": "commercial waste hauling account profitability",
+  "products": [
+    {
+      "id": "waste-hauler-account-margin",
+      "name": "Waste Hauler Account Margin",
+      "product": "Measures account margin from container size, service frequency, contamination, disposal, route time, extras, and fuel.",
+      "productUrl": "",
+      "audience": "independent commercial waste and recycling haulers",
+      "problem": "Recurring accounts remain on legacy rates while disposal cost, contamination, and route effort rise.",
+      "valueProposition": "Identifies contracts to reprice or service differently and quantifies the route-level effect.",
+      "topic": "commercial waste hauling account profitability",
+      "monetization": "$299-$999/month by routes and accounts",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: waste hauling profitability software; commercial trash route pricing; waste account margin analysis; commercial waste hauling account profitability software; commercial waste hauling account profitability calculator; commercial waste hauling account profitability pricing",
+      "seoThesis": "A narrow site for independent commercial waste and recycling haulers can connect commercial pages, calculators, comparisons, and implementation guides around commercial waste hauling account profitability to the same measurable margin outcome.",
+      "searchQueries": [
+        "waste hauling profitability software",
+        "commercial trash route pricing",
+        "waste account margin analysis",
+        "commercial waste hauling account profitability software",
+        "commercial waste hauling account profitability calculator",
+        "commercial waste hauling account profitability pricing"
+      ],
+      "buyer": "owner, route manager, or controller",
+      "economicDriver": "margin",
+      "profitRationale": "Recurring contracts and expensive route capacity make repricing financially urgent and sticky.",
+      "primaryRisk": "Scale integrations and municipal contract terms vary; customer repricing needs human judgment.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 8,
+        "searchDemand": 7,
+        "commercialIntent": 8,
+        "contentDepth": 8,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 7
+      },
+      "score": 80,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Measures account margin from container size, service frequency, contamination, disposal, route time, extras, and fuel.",
+  "productUrl": "",
+  "valueProposition": "Identifies contracts to reprice or service differently and quantifies the route-level effect.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "waste-hauler-account-margin"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

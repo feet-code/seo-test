@@ -1,0 +1,70 @@
+{
+  "id": "crane-rental-quote-yield",
+  "name": "Crane Rental Quote Yield",
+  "domain": null,
+  "audience": "independent crane rental operators",
+  "topic": "crane rental quoting and equipment yield",
+  "products": [
+    {
+      "id": "crane-rental-quote-yield",
+      "name": "Crane Rental Quote Yield",
+      "product": "Prices crane jobs from equipment class, mobilization, permits, rigging crew, overtime, utilization, travel, and displacement cost.",
+      "productUrl": "",
+      "audience": "independent crane rental operators",
+      "problem": "Complex mobilization and scarce equipment time make revenue-only quotes misleading.",
+      "valueProposition": "Shows contribution and displaced-capacity cost before a quote is approved, then learns from actual job duration.",
+      "topic": "crane rental quoting and equipment yield",
+      "monetization": "$399-$1,499/month by cranes and branches",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: crane rental quoting software; crane rental rate calculator; crane fleet utilization software; crane rental quoting and equipment yield software; crane rental quoting and equipment yield calculator; crane rental quoting and equipment yield pricing",
+      "seoThesis": "A narrow site for independent crane rental operators can connect commercial pages, calculators, comparisons, and implementation guides around crane rental quoting and equipment yield to the same measurable capacity outcome.",
+      "searchQueries": [
+        "crane rental quoting software",
+        "crane rental rate calculator",
+        "crane fleet utilization software",
+        "crane rental quoting and equipment yield software",
+        "crane rental quoting and equipment yield calculator",
+        "crane rental quoting and equipment yield pricing"
+      ],
+      "buyer": "sales manager or owner",
+      "economicDriver": "capacity",
+      "profitRationale": "A single quote is valuable, equipment is scarce, and fleet history supports premium pricing and deep retention.",
+      "primaryRisk": "Safety and lift planning remain outside scope; scheduling data and quote workflows vary.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 9,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 9,
+        "searchDemand": 7,
+        "commercialIntent": 8,
+        "contentDepth": 8,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 6
+      },
+      "score": 82,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Prices crane jobs from equipment class, mobilization, permits, rigging crew, overtime, utilization, travel, and displacement cost.",
+  "productUrl": "",
+  "valueProposition": "Shows contribution and displaced-capacity cost before a quote is approved, then learns from actual job duration.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "crane-rental-quote-yield"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

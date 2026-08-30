@@ -1,0 +1,70 @@
+{
+  "id": "wholesale-reorder-prediction",
+  "name": "Wholesale Reorder Prediction",
+  "domain": null,
+  "audience": "specialty distributors with repeat B2B customers",
+  "topic": "B2B wholesale reorder prediction and account growth",
+  "products": [
+    {
+      "id": "wholesale-reorder-prediction",
+      "name": "Wholesale Reorder Prediction",
+      "product": "Ranks account-item reorder opportunities using cadence, seasonality, stock position, prior exceptions, and rep context.",
+      "productUrl": "",
+      "audience": "specialty distributors with repeat B2B customers",
+      "problem": "Repeat revenue is missed when expected reorders depend on a rep remembering thousands of account and item patterns.",
+      "valueProposition": "Creates explainable outreach opportunities and measures incremental reordered gross profit.",
+      "topic": "B2B wholesale reorder prediction and account growth",
+      "monetization": "$299-$1,200/month by accounts and order volume",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: wholesale reorder prediction software; distributor customer reorder alerts; B2B reorder analytics; B2B wholesale reorder prediction and account growth software; B2B wholesale reorder prediction and account growth calculator; B2B wholesale reorder prediction and account growth pricing",
+      "seoThesis": "A narrow site for specialty distributors with repeat B2B customers can connect commercial pages, calculators, comparisons, and implementation guides around B2B wholesale reorder prediction and account growth to the same measurable revenue-capture outcome.",
+      "searchQueries": [
+        "wholesale reorder prediction software",
+        "distributor customer reorder alerts",
+        "B2B reorder analytics",
+        "B2B wholesale reorder prediction and account growth software",
+        "B2B wholesale reorder prediction and account growth calculator",
+        "B2B wholesale reorder prediction and account growth pricing"
+      ],
+      "buyer": "sales director or distributor owner",
+      "economicDriver": "revenue-capture",
+      "profitRationale": "The product grows existing revenue without new lead cost and improves as transaction history accumulates.",
+      "primaryRisk": "False positives annoy customers unless seasonality, inventory, and rep judgment are respected.",
+      "scoreBreakdown": {
+        "economicPain": 8,
+        "buyerBudget": 9,
+        "recurrenceRetention": 10,
+        "monetizationExpansion": 9,
+        "searchDemand": 7,
+        "commercialIntent": 8,
+        "contentDepth": 8,
+        "serpWinnability": 7,
+        "buildSupportFeasibility": 6
+      },
+      "score": 80,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Ranks account-item reorder opportunities using cadence, seasonality, stock position, prior exceptions, and rep context.",
+  "productUrl": "",
+  "valueProposition": "Creates explainable outreach opportunities and measures incremental reordered gross profit.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "wholesale-reorder-prediction"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

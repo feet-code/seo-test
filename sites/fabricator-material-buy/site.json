@@ -1,0 +1,70 @@
+{
+  "id": "fabricator-material-buy",
+  "name": "Fabricator Material Buy Planner",
+  "domain": null,
+  "audience": "small metal fabrication and sheet shops",
+  "topic": "metal fabrication material purchasing and remnant optimization",
+  "products": [
+    {
+      "id": "fabricator-material-buy",
+      "name": "Fabricator Material Buy Planner",
+      "product": "Chooses material buy quantities and timing from job demand, remnants, nesting yield, price breaks, lead time, and carrying cost.",
+      "productUrl": "",
+      "audience": "small metal fabrication and sheet shops",
+      "problem": "Shops overbuy for discounts while usable remnants and scheduled demand remain disconnected.",
+      "valueProposition": "Minimizes expected material and stockout cost and makes the purchase assumptions auditable.",
+      "topic": "metal fabrication material purchasing and remnant optimization",
+      "monetization": "$199-$799/month by material families and work centers",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: fabrication material optimization software; sheet metal remnant inventory; metal purchasing quantity calculator; metal fabrication material purchasing and remnant optimization software; metal fabrication material purchasing and remnant optimization calculator; metal fabrication material purchasing and remnant optimization pricing",
+      "seoThesis": "A narrow site for small metal fabrication and sheet shops can connect commercial pages, calculators, comparisons, and implementation guides around metal fabrication material purchasing and remnant optimization to the same measurable margin outcome.",
+      "searchQueries": [
+        "fabrication material optimization software",
+        "sheet metal remnant inventory",
+        "metal purchasing quantity calculator",
+        "metal fabrication material purchasing and remnant optimization software",
+        "metal fabrication material purchasing and remnant optimization calculator",
+        "metal fabrication material purchasing and remnant optimization pricing"
+      ],
+      "buyer": "purchasing manager, estimator, or owner",
+      "economicDriver": "margin",
+      "profitRationale": "Material is a major cost, purchase decisions recur, and remnant/job history creates a defensible dataset.",
+      "primaryRisk": "Nesting geometry and remnant accuracy can make the advanced product technically difficult.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 9,
+        "searchDemand": 7,
+        "commercialIntent": 8,
+        "contentDepth": 8,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 5
+      },
+      "score": 80,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Chooses material buy quantities and timing from job demand, remnants, nesting yield, price breaks, lead time, and carrying cost.",
+  "productUrl": "",
+  "valueProposition": "Minimizes expected material and stockout cost and makes the purchase assumptions auditable.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "fabricator-material-buy"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

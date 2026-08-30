@@ -1,0 +1,70 @@
+{
+  "id": "laundromat-machine-yield",
+  "name": "Laundromat Machine Yield",
+  "domain": null,
+  "audience": "independent laundromat owners and small operators",
+  "topic": "laundromat machine profitability and pricing",
+  "products": [
+    {
+      "id": "laundromat-machine-yield",
+      "name": "Laundromat Machine Yield",
+      "product": "Models machine, daypart, vend-price, utility, payment, downtime, and capacity data to test pricing and replacement decisions.",
+      "productUrl": "",
+      "audience": "independent laundromat owners and small operators",
+      "problem": "Owners see total collections but cannot isolate the profit effect of price, downtime, cycle mix, and constrained peak capacity.",
+      "valueProposition": "Quantifies price and equipment scenarios with a transparent machine-level profit model.",
+      "topic": "laundromat machine profitability and pricing",
+      "monetization": "$99-$399/month by locations and machine count",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: laundromat profit calculator; laundromat management software; laundromat washer pricing strategy; laundromat machine profitability and pricing software; laundromat machine profitability and pricing calculator; laundromat machine profitability and pricing pricing",
+      "seoThesis": "A narrow site for independent laundromat owners and small operators can connect commercial pages, calculators, comparisons, and implementation guides around laundromat machine profitability and pricing to the same measurable margin outcome.",
+      "searchQueries": [
+        "laundromat profit calculator",
+        "laundromat management software",
+        "laundromat washer pricing strategy",
+        "laundromat machine profitability and pricing software",
+        "laundromat machine profitability and pricing calculator",
+        "laundromat machine profitability and pricing pricing"
+      ],
+      "buyer": "owner or general manager",
+      "economicDriver": "margin",
+      "profitRationale": "High search demand, asset-level recurring data, and capital decisions support both SEO acquisition and retention.",
+      "primaryRisk": "Payment-system integrations vary and simple calculator traffic may include prospective owners rather than buyers.",
+      "scoreBreakdown": {
+        "economicPain": 8,
+        "buyerBudget": 7,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 8,
+        "searchDemand": 10,
+        "commercialIntent": 10,
+        "contentDepth": 10,
+        "serpWinnability": 6,
+        "buildSupportFeasibility": 8
+      },
+      "score": 84,
+      "probeArticleCount": 5,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 5,
+  "product": "Models machine, daypart, vend-price, utility, payment, downtime, and capacity data to test pricing and replacement decisions.",
+  "productUrl": "",
+  "valueProposition": "Quantifies price and equipment scenarios with a transparent machine-level profit model.",
+  "articleCount": 5,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "laundromat-machine-yield"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

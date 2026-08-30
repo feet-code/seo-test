@@ -1,0 +1,70 @@
+{
+  "id": "apartment-turn-cost-forecast",
+  "name": "Apartment Turn Cost Forecast",
+  "domain": null,
+  "audience": "independent apartment operators and property managers",
+  "topic": "apartment unit turn cost and vacancy forecasting",
+  "products": [
+    {
+      "id": "apartment-turn-cost-forecast",
+      "name": "Apartment Turn Cost Forecast",
+      "product": "Forecasts unit-turn cost and ready date from inspection findings, vendor history, unit attributes, material, season, and dependency risk.",
+      "productUrl": "",
+      "audience": "independent apartment operators and property managers",
+      "problem": "Operators learn turn cost and vacancy duration only after work begins, when vendor and leasing decisions are constrained.",
+      "valueProposition": "Provides an early cost and downtime range so the operator can approve scope, price vendors, and set a realistic ready date.",
+      "topic": "apartment unit turn cost and vacancy forecasting",
+      "monetization": "$99-$499/month by units or turns",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: apartment turnover cost calculator; unit turn forecasting software; make ready cost per unit; apartment unit turn cost and vacancy forecasting software; apartment unit turn cost and vacancy forecasting calculator; apartment unit turn cost and vacancy forecasting pricing",
+      "seoThesis": "A narrow site for independent apartment operators and property managers can connect commercial pages, calculators, comparisons, and implementation guides around apartment unit turn cost and vacancy forecasting to the same measurable risk outcome.",
+      "searchQueries": [
+        "apartment turnover cost calculator",
+        "unit turn forecasting software",
+        "make ready cost per unit",
+        "apartment unit turn cost and vacancy forecasting software",
+        "apartment unit turn cost and vacancy forecasting calculator",
+        "apartment unit turn cost and vacancy forecasting pricing"
+      ],
+      "buyer": "regional manager, maintenance director, or owner",
+      "economicDriver": "risk",
+      "profitRationale": "Vacancy and turn spend are measurable, every move-out creates a new decision, and portfolio history improves forecasts.",
+      "primaryRisk": "Inspection descriptions are inconsistent and property software may provide basic turn tracking.",
+      "scoreBreakdown": {
+        "economicPain": 8,
+        "buyerBudget": 7,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 8,
+        "searchDemand": 8,
+        "commercialIntent": 8,
+        "contentDepth": 8,
+        "serpWinnability": 7,
+        "buildSupportFeasibility": 8
+      },
+      "score": 79,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Forecasts unit-turn cost and ready date from inspection findings, vendor history, unit attributes, material, season, and dependency risk.",
+  "productUrl": "",
+  "valueProposition": "Provides an early cost and downtime range so the operator can approve scope, price vendors, and set a realistic ready date.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "apartment-turn-cost-forecast"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

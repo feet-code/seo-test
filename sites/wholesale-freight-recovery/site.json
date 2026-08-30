@@ -1,0 +1,70 @@
+{
+  "id": "wholesale-freight-recovery",
+  "name": "Wholesale Freight Recovery",
+  "domain": null,
+  "audience": "specialty wholesalers that deliver or ship customer orders",
+  "topic": "wholesale freight cost recovery and delivery pricing",
+  "products": [
+    {
+      "id": "wholesale-freight-recovery",
+      "name": "Wholesale Freight Recovery",
+      "product": "Compares actual freight, delivery, fuel, liftgate, and accessorial cost with customer charges and free-freight rules.",
+      "productUrl": "",
+      "audience": "specialty wholesalers that deliver or ship customer orders",
+      "problem": "Freight policies and overrides leave orders below target margin even when product pricing is correct.",
+      "valueProposition": "Finds under-recovered freight and models customer, order-minimum, or zone policy changes.",
+      "topic": "wholesale freight cost recovery and delivery pricing",
+      "monetization": "$299-$999/month by shipments and revenue",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: freight recovery software distributor; wholesale delivery fee calculator; customer freight charge audit; wholesale freight cost recovery and delivery pricing software; wholesale freight cost recovery and delivery pricing calculator; wholesale freight cost recovery and delivery pricing pricing",
+      "seoThesis": "A narrow site for specialty wholesalers that deliver or ship customer orders can connect commercial pages, calculators, comparisons, and implementation guides around wholesale freight cost recovery and delivery pricing to the same measurable margin outcome.",
+      "searchQueries": [
+        "freight recovery software distributor",
+        "wholesale delivery fee calculator",
+        "customer freight charge audit",
+        "wholesale freight cost recovery and delivery pricing software",
+        "wholesale freight cost recovery and delivery pricing calculator",
+        "wholesale freight cost recovery and delivery pricing pricing"
+      ],
+      "buyer": "controller, operations director, or pricing manager",
+      "economicDriver": "margin",
+      "profitRationale": "Freight touches recurring orders, recovery is measurable, and the product can expand into full order-margin analytics.",
+      "primaryRisk": "Shipment matching and customer-specific policies require careful normalization.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 10,
+        "monetizationExpansion": 9,
+        "searchDemand": 7,
+        "commercialIntent": 8,
+        "contentDepth": 8,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 7
+      },
+      "score": 83,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Compares actual freight, delivery, fuel, liftgate, and accessorial cost with customer charges and free-freight rules.",
+  "productUrl": "",
+  "valueProposition": "Finds under-recovered freight and models customer, order-minimum, or zone policy changes.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "wholesale-freight-recovery"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

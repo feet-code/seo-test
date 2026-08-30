@@ -1,0 +1,70 @@
+{
+  "id": "portable-storage-yield",
+  "name": "Portable Storage Yield",
+  "domain": null,
+  "audience": "independent portable storage container operators",
+  "topic": "portable storage container pricing and fleet utilization",
+  "products": [
+    {
+      "id": "portable-storage-yield",
+      "name": "Portable Storage Yield",
+      "product": "Optimizes container price and placement from inventory, delivery miles, dwell time, turns, seasonality, damage, and alternative demand.",
+      "productUrl": "",
+      "audience": "independent portable storage container operators",
+      "problem": "Cheap long-term rentals strand scarce containers and delivery capacity while aggregate utilization looks healthy.",
+      "valueProposition": "Ranks quotes and repricing opportunities by lifetime contribution per container and delivery slot.",
+      "topic": "portable storage container pricing and fleet utilization",
+      "monetization": "$199-$799/month by containers and locations",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: portable storage rental software; storage container rental pricing; container fleet utilization software; portable storage container pricing and fleet utilization software; portable storage container pricing and fleet utilization calculator; portable storage container pricing and fleet utilization pricing",
+      "seoThesis": "A narrow site for independent portable storage container operators can connect commercial pages, calculators, comparisons, and implementation guides around portable storage container pricing and fleet utilization to the same measurable capacity outcome.",
+      "searchQueries": [
+        "portable storage rental software",
+        "storage container rental pricing",
+        "container fleet utilization software",
+        "portable storage container pricing and fleet utilization software",
+        "portable storage container pricing and fleet utilization calculator",
+        "portable storage container pricing and fleet utilization pricing"
+      ],
+      "buyer": "owner or operations manager",
+      "economicDriver": "capacity",
+      "profitRationale": "Recurring rental revenue and constrained mobile assets support retention, expansion, and value-based pricing.",
+      "primaryRisk": "Demand is local and dispatch integrations may be proprietary.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 10,
+        "monetizationExpansion": 9,
+        "searchDemand": 7,
+        "commercialIntent": 8,
+        "contentDepth": 8,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 7
+      },
+      "score": 83,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Optimizes container price and placement from inventory, delivery miles, dwell time, turns, seasonality, damage, and alternative demand.",
+  "productUrl": "",
+  "valueProposition": "Ranks quotes and repricing opportunities by lifetime contribution per container and delivery slot.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "portable-storage-yield"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

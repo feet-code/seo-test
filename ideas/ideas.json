@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "articlesPerProduct": 10,
+  "articlesPerProduct": 5,
   "generatedAt": "2026-08-30T19:54:18.625771+00:00",
   "generation": {
     "source": "codex-profitability-seed",
@@ -23,7 +23,8 @@
       "serpWinnability": 10,
       "buildSupportFeasibility": 10
     },
-    "notes": "Scores are structured priors, not market facts. SEO and signup data should replace them after deployment."
+    "notes": "Scores are structured priors, not market facts. SEO and signup data should replace them after deployment.",
+    "probePlanning": "2-5 posts per idea from reviewed SEO contentDepth; no filler quota"
   },
   "sites": [
     {
@@ -846,7 +847,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "custom-cabinet-quote-margin",
@@ -966,7 +968,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 4
     },
     {
       "id": "hvac-quote-margin",
@@ -1086,7 +1089,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 4
     },
     {
       "id": "pool-route-profit",
@@ -1206,7 +1210,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 4
     },
     {
       "id": "security-guard-post-margin",
@@ -1326,7 +1331,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 4
     },
     {
       "id": "septic-route-profit",
@@ -1446,7 +1452,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 4
     },
     {
       "id": "staffing-bill-rate-margin",
@@ -1566,7 +1573,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 4
     },
     {
       "id": "car-wash-membership-profit",
@@ -1686,7 +1694,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 4
     },
     {
       "id": "childcare-room-capacity",
@@ -1806,7 +1815,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 4
     },
     {
       "id": "commercial-painting-bid-margin",
@@ -1926,7 +1936,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 4
     },
     {
       "id": "agency-scope-overage",
@@ -2046,7 +2057,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 4
     },
     {
       "id": "auto-bay-yield",
@@ -2166,7 +2178,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 4
     },
     {
       "id": "auto-estimate-recovery",
@@ -2286,7 +2299,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 4
     },
     {
       "id": "commercial-paving-bid-risk",
@@ -2406,7 +2420,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 4
     },
     {
       "id": "dumpster-fleet-yield",
@@ -2526,7 +2541,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "embroidery-order-margin",
@@ -2646,7 +2662,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 5
     },
     {
       "id": "laundromat-machine-yield",
@@ -2766,7 +2783,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 5
     },
     {
       "id": "manufacturing-expedite-cost",
@@ -2886,7 +2904,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "msp-agreement-margin",
@@ -3006,7 +3025,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "vending-location-profit",
@@ -3126,7 +3146,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 5
     },
     {
       "id": "warehouse-labor-forecast",
@@ -3246,7 +3267,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 4
     },
     {
       "id": "agency-fee-burn",
@@ -3366,7 +3388,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "calibration-contract-margin",
@@ -3486,7 +3509,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "commercial-kitchen-service-margin",
@@ -3606,7 +3630,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "fuel-delivery-margin",
@@ -3726,7 +3751,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "hood-cleaning-contract-price",
@@ -3846,7 +3872,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 4
     },
     {
       "id": "job-shop-bottleneck",
@@ -3966,7 +3993,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 4
     },
     {
       "id": "moving-job-margin",
@@ -4086,7 +4114,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 5
     },
     {
       "id": "pool-renovation-margin",
@@ -4206,7 +4235,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "portable-storage-yield",
@@ -4326,7 +4356,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "propane-route-profit",
@@ -4446,7 +4477,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "water-restoration-job-margin",
@@ -4566,7 +4598,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "wholesale-freight-recovery",
@@ -4686,7 +4719,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "window-cleaning-contract-margin",
@@ -4806,7 +4840,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 4
     },
     {
       "id": "appliance-repair-route-profit",
@@ -4926,7 +4961,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 4
     },
     {
       "id": "bookkeeping-client-profit",
@@ -5046,7 +5082,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "catering-event-margin",
@@ -5166,7 +5203,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 4
     },
     {
       "id": "cleaning-bid-margin",
@@ -5286,7 +5324,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 4
     },
     {
       "id": "commercial-glass-job-margin",
@@ -5406,7 +5445,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "construction-rental-damage",
@@ -5526,7 +5566,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "crane-rental-quote-yield",
@@ -5646,7 +5687,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "ecommerce-return-router",
@@ -5766,7 +5808,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 4
     },
     {
       "id": "equipment-rental-rate-yield",
@@ -5886,7 +5929,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "excavation-haul-cost",
@@ -6006,7 +6050,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "field-service-membership-price",
@@ -6126,7 +6171,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "food-distributor-spoilage",
@@ -6246,7 +6292,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "freight-accessorial-recovery",
@@ -6366,7 +6413,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "freight-lane-margin-anomaly",
@@ -6486,7 +6534,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "garage-door-job-margin",
@@ -6606,7 +6655,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "grease-trap-route-profit",
@@ -6726,7 +6776,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 4
     },
     {
       "id": "home-care-shift-margin",
@@ -6846,7 +6897,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 4
     },
     {
       "id": "indoor-sports-court-yield",
@@ -6966,7 +7018,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 4
     },
     {
       "id": "irrigation-contract-price",
@@ -7086,7 +7139,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 4
     },
     {
       "id": "job-shop-quote-learning",
@@ -7206,7 +7260,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "landfill-fee-reconciliation",
@@ -7326,7 +7381,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "landscape-crew-profit",
@@ -7446,7 +7502,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 4
     },
     {
       "id": "nursery-shrink-margin",
@@ -7566,7 +7623,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "recycling-load-profit",
@@ -7686,7 +7744,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "wholesale-margin-leak",
@@ -7806,7 +7865,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "event-rental-order-margin",
@@ -7926,7 +7986,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 4
     },
     {
       "id": "farm-custom-job-cost",
@@ -8046,7 +8107,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 4
     },
     {
       "id": "repair-parts-stockout-cost",
@@ -8166,7 +8228,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "scaffold-rental-yield",
@@ -8286,7 +8349,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "tree-service-estimate-risk",
@@ -8406,7 +8470,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 4
     },
     {
       "id": "wedding-venue-date-yield",
@@ -8526,7 +8591,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "collision-supplement-evidence",
@@ -8646,7 +8712,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "commercial-glass-bid-margin",
@@ -8766,7 +8833,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "commercial-laundry-route-margin",
@@ -8886,7 +8954,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "concrete-pour-cost",
@@ -9006,7 +9075,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 4
     },
     {
       "id": "contractor-change-order-capture",
@@ -9126,7 +9196,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "courier-zone-pricing",
@@ -9246,7 +9317,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "dental-lab-case-margin",
@@ -9366,7 +9438,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "fabricator-material-buy",
@@ -9486,7 +9559,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "fence-job-margin",
@@ -9606,7 +9680,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 4
     },
     {
       "id": "fire-inspection-contract-price",
@@ -9726,7 +9801,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "local-lead-profit-attribution",
@@ -9846,7 +9922,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "portable-toilet-route-profit",
@@ -9966,7 +10043,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "pressure-washing-bid-margin",
@@ -10086,7 +10164,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 4
     },
     {
       "id": "roofing-margin-estimator",
@@ -10206,7 +10285,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 4
     },
     {
       "id": "salon-service-profit",
@@ -10326,7 +10406,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 4
     },
     {
       "id": "self-storage-rent-yield",
@@ -10446,7 +10527,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "sign-install-route-profit",
@@ -10566,7 +10648,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "snow-contract-risk-price",
@@ -10686,7 +10769,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "subscription-box-rescue",
@@ -10806,7 +10890,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "waste-hauler-account-margin",
@@ -10926,7 +11011,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "wholesale-reorder-prediction",
@@ -11046,7 +11132,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "apartment-turn-cost-forecast",
@@ -11166,7 +11253,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "distributor-rebate-recovery",
@@ -11286,7 +11374,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 2
     },
     {
       "id": "pest-route-density",
@@ -11406,7 +11495,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "pet-boarding-capacity-yield",
@@ -11526,7 +11616,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "architecture-fee-burn",
@@ -11646,7 +11737,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "charter-flight-quote-margin",
@@ -11766,7 +11858,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "commercial-lease-cam-audit",
@@ -11886,7 +11979,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "machine-rental-buy-sell",
@@ -12006,7 +12100,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 2
     },
     {
       "id": "marina-slip-yield",
@@ -12126,7 +12221,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "mobile-detailing-fleet-margin",
@@ -12246,7 +12342,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "packaging-moq-landed-cost",
@@ -12366,7 +12463,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "print-shop-quote-learning",
@@ -12486,7 +12584,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "property-vendor-cost-anomaly",
@@ -12606,7 +12705,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     },
     {
       "id": "brewery-batch-margin",
@@ -12726,7 +12826,8 @@
           "Recalculate after the realized outcome so future recommendations can improve."
         ]
       },
-      "domain": null
+      "domain": null,
+      "probeArticleCount": 3
     }
   ]
 }

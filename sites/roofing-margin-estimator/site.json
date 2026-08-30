@@ -1,0 +1,70 @@
+{
+  "id": "roofing-margin-estimator",
+  "name": "Roofing Margin Estimator",
+  "domain": null,
+  "audience": "small residential and commercial roofing contractors",
+  "topic": "roofing estimate cost and profit margin calculator",
+  "products": [
+    {
+      "id": "roofing-margin-estimator",
+      "name": "Roofing Margin Estimator",
+      "product": "Prices jobs from measured quantities, waste, crew production, steepness, access, disposal, material volatility, and overhead.",
+      "productUrl": "",
+      "audience": "small residential and commercial roofing contractors",
+      "problem": "Simple per-square pricing hides labor, waste, and access differences that turn apparently strong jobs into margin losses.",
+      "valueProposition": "Builds an explainable cost range and shows which field assumptions need verification before the bid is committed.",
+      "topic": "roofing estimate cost and profit margin calculator",
+      "monetization": "$79-$399/month by estimators",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: roofing profit margin calculator; roofing estimate cost software; roofing labor and waste calculator; roofing estimate cost and profit margin calculator software; roofing estimate cost and profit margin calculator calculator; roofing estimate cost and profit margin calculator pricing",
+      "seoThesis": "A narrow site for small residential and commercial roofing contractors can connect commercial pages, calculators, comparisons, and implementation guides around roofing estimate cost and profit margin calculator to the same measurable margin outcome.",
+      "searchQueries": [
+        "roofing profit margin calculator",
+        "roofing estimate cost software",
+        "roofing labor and waste calculator",
+        "roofing estimate cost and profit margin calculator software",
+        "roofing estimate cost and profit margin calculator calculator",
+        "roofing estimate cost and profit margin calculator pricing"
+      ],
+      "buyer": "owner or estimator",
+      "economicDriver": "margin",
+      "profitRationale": "Search intent is strong, each bid carries meaningful value, and the initial product can work without replacing CRM software.",
+      "primaryRisk": "Roof-measurement competitors are established, so the product must focus on profit assumptions rather than measurements alone.",
+      "scoreBreakdown": {
+        "economicPain": 8,
+        "buyerBudget": 7,
+        "recurrenceRetention": 8,
+        "monetizationExpansion": 7,
+        "searchDemand": 10,
+        "commercialIntent": 10,
+        "contentDepth": 9,
+        "serpWinnability": 5,
+        "buildSupportFeasibility": 9
+      },
+      "score": 80,
+      "probeArticleCount": 4,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 4,
+  "product": "Prices jobs from measured quantities, waste, crew production, steepness, access, disposal, material volatility, and overhead.",
+  "productUrl": "",
+  "valueProposition": "Builds an explainable cost range and shows which field assumptions need verification before the bid is committed.",
+  "articleCount": 4,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "roofing-margin-estimator"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

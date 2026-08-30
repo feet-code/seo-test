@@ -1,0 +1,70 @@
+{
+  "id": "mobile-detailing-fleet-margin",
+  "name": "Mobile Detailing Fleet Margin",
+  "domain": null,
+  "audience": "mobile detailing businesses serving commercial fleets",
+  "topic": "mobile fleet detailing contract pricing",
+  "products": [
+    {
+      "id": "mobile-detailing-fleet-margin",
+      "name": "Mobile Detailing Fleet Margin",
+      "product": "Prices fleet contracts from vehicle mix, service package, travel, water, chemicals, crew speed, frequency, and site constraints.",
+      "productUrl": "",
+      "audience": "mobile detailing businesses serving commercial fleets",
+      "problem": "Per-vehicle discounts win volume but can hide travel, setup, and production-rate losses.",
+      "valueProposition": "Models contract contribution and the schedule density needed for a profitable fleet account.",
+      "topic": "mobile fleet detailing contract pricing",
+      "monetization": "$99-$399/month by crews and contracts",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: fleet detailing pricing calculator; mobile detailing estimating software; commercial fleet wash contract pricing; mobile fleet detailing contract pricing software; mobile fleet detailing contract pricing calculator; mobile fleet detailing contract pricing pricing",
+      "seoThesis": "A narrow site for mobile detailing businesses serving commercial fleets can connect commercial pages, calculators, comparisons, and implementation guides around mobile fleet detailing contract pricing to the same measurable margin outcome.",
+      "searchQueries": [
+        "fleet detailing pricing calculator",
+        "mobile detailing estimating software",
+        "commercial fleet wash contract pricing",
+        "mobile fleet detailing contract pricing software",
+        "mobile fleet detailing contract pricing calculator",
+        "mobile fleet detailing contract pricing pricing"
+      ],
+      "buyer": "owner or sales manager",
+      "economicDriver": "margin",
+      "profitRationale": "The B2B niche avoids consumer noise, contracts recur, and calculators provide an SEO wedge into paid software.",
+      "primaryRisk": "Many operators are price sensitive and reported production data may be inconsistent.",
+      "scoreBreakdown": {
+        "economicPain": 8,
+        "buyerBudget": 6,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 7,
+        "searchDemand": 8,
+        "commercialIntent": 8,
+        "contentDepth": 8,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 9
+      },
+      "score": 78,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Prices fleet contracts from vehicle mix, service package, travel, water, chemicals, crew speed, frequency, and site constraints.",
+  "productUrl": "",
+  "valueProposition": "Models contract contribution and the schedule density needed for a profitable fleet account.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "mobile-detailing-fleet-margin"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

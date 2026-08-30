@@ -1,0 +1,70 @@
+{
+  "id": "commercial-kitchen-service-margin",
+  "name": "Commercial Kitchen Service Margin",
+  "domain": null,
+  "audience": "commercial kitchen equipment service companies",
+  "topic": "commercial kitchen equipment service contract profitability",
+  "products": [
+    {
+      "id": "commercial-kitchen-service-margin",
+      "name": "Commercial Kitchen Service Margin",
+      "product": "Measures repair and preventive-maintenance profitability from technician time, parts, travel, callbacks, SLA terms, and asset mix.",
+      "productUrl": "",
+      "audience": "commercial kitchen equipment service companies",
+      "problem": "Service agreements appear profitable until travel, callbacks, and included parts are allocated by account.",
+      "valueProposition": "Surfaces renewal repricing and dispatch decisions using auditable account and asset economics.",
+      "topic": "commercial kitchen equipment service contract profitability",
+      "monetization": "$249-$899/month by technicians and agreements",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: commercial kitchen service software profitability; equipment maintenance contract pricing; field service agreement margin; commercial kitchen equipment service contract profitability software; commercial kitchen equipment service contract profitability calculator; commercial kitchen equipment service contract profitability pricing",
+      "seoThesis": "A narrow site for commercial kitchen equipment service companies can connect commercial pages, calculators, comparisons, and implementation guides around commercial kitchen equipment service contract profitability to the same measurable margin outcome.",
+      "searchQueries": [
+        "commercial kitchen service software profitability",
+        "equipment maintenance contract pricing",
+        "field service agreement margin",
+        "commercial kitchen equipment service contract profitability software",
+        "commercial kitchen equipment service contract profitability calculator",
+        "commercial kitchen equipment service contract profitability pricing"
+      ],
+      "buyer": "service manager or owner",
+      "economicDriver": "margin",
+      "profitRationale": "Recurring agreements and expensive skilled labor create high retention and clear willingness to pay.",
+      "primaryRisk": "Field-service data quality and equipment taxonomy can make onboarding labor intensive.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 10,
+        "monetizationExpansion": 9,
+        "searchDemand": 7,
+        "commercialIntent": 8,
+        "contentDepth": 8,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 7
+      },
+      "score": 83,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Measures repair and preventive-maintenance profitability from technician time, parts, travel, callbacks, SLA terms, and asset mix.",
+  "productUrl": "",
+  "valueProposition": "Surfaces renewal repricing and dispatch decisions using auditable account and asset economics.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "commercial-kitchen-service-margin"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

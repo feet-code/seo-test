@@ -1,0 +1,70 @@
+{
+  "id": "staffing-bill-rate-margin",
+  "name": "Staffing Bill Rate Margin",
+  "domain": null,
+  "audience": "small staffing agencies and temporary labor firms",
+  "topic": "staffing agency bill rate and gross margin calculator",
+  "products": [
+    {
+      "id": "staffing-bill-rate-margin",
+      "name": "Staffing Bill Rate Margin",
+      "product": "Models bill rates using pay, payroll burden, overtime, markup rules, benefits, and client-specific fees.",
+      "productUrl": "",
+      "audience": "small staffing agencies and temporary labor firms",
+      "problem": "Agencies accept assignments whose apparent markup collapses after burden, overtime, and contract-specific costs.",
+      "valueProposition": "Prevents underpriced placements and flags existing assignments that need renewal repricing.",
+      "topic": "staffing agency bill rate and gross margin calculator",
+      "monetization": "$199-$699/month by branches or active workers",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: staffing bill rate calculator software; temporary staffing gross margin calculator; pay rate to bill rate tool; staffing agency bill rate and gross margin calculator software; staffing agency bill rate and gross margin calculator calculator; staffing agency bill rate and gross margin calculator pricing",
+      "seoThesis": "A narrow site for small staffing agencies and temporary labor firms can connect commercial pages, calculators, comparisons, and implementation guides around staffing agency bill rate and gross margin calculator to the same measurable margin outcome.",
+      "searchQueries": [
+        "staffing bill rate calculator software",
+        "temporary staffing gross margin calculator",
+        "pay rate to bill rate tool",
+        "staffing agency bill rate and gross margin calculator software",
+        "staffing agency bill rate and gross margin calculator calculator",
+        "staffing agency bill rate and gross margin calculator pricing"
+      ],
+      "buyer": "agency owner, finance lead, or branch manager",
+      "economicDriver": "margin",
+      "profitRationale": "The tool protects recurring gross profit on every placed worker and fits a buyer already focused on spread.",
+      "primaryRisk": "Payroll burden inputs change by jurisdiction and must be maintained carefully without becoming payroll software.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 8,
+        "searchDemand": 9,
+        "commercialIntent": 10,
+        "contentDepth": 9,
+        "serpWinnability": 7,
+        "buildSupportFeasibility": 8
+      },
+      "score": 86,
+      "probeArticleCount": 4,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 4,
+  "product": "Models bill rates using pay, payroll burden, overtime, markup rules, benefits, and client-specific fees.",
+  "productUrl": "",
+  "valueProposition": "Prevents underpriced placements and flags existing assignments that need renewal repricing.",
+  "articleCount": 4,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "staffing-bill-rate-margin"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

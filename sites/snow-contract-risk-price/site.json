@@ -1,0 +1,70 @@
+{
+  "id": "snow-contract-risk-price",
+  "name": "Snow Contract Risk Price",
+  "domain": null,
+  "audience": "regional snow and ice management contractors",
+  "topic": "snow removal contract pricing and weather risk",
+  "products": [
+    {
+      "id": "snow-contract-risk-price",
+      "name": "Snow Contract Risk Price",
+      "product": "Prices seasonal, per-push, and hybrid contracts from weather exposure, trigger depth, route density, labor, salt, equipment, and service terms.",
+      "productUrl": "",
+      "audience": "regional snow and ice management contractors",
+      "problem": "Contract structures shift weather risk without showing the contractor how a mild or severe season changes profit.",
+      "valueProposition": "Simulates weather and cost scenarios so the contractor chooses a price and contract structure with visible downside.",
+      "topic": "snow removal contract pricing and weather risk",
+      "monetization": "$79-$399/month with seasonal planning tiers",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: snow removal contract pricing calculator; seasonal snow contract risk; snow plowing profit calculator; snow removal contract pricing and weather risk software; snow removal contract pricing and weather risk calculator; snow removal contract pricing and weather risk pricing",
+      "seoThesis": "A narrow site for regional snow and ice management contractors can connect commercial pages, calculators, comparisons, and implementation guides around snow removal contract pricing and weather risk to the same measurable risk outcome.",
+      "searchQueries": [
+        "snow removal contract pricing calculator",
+        "seasonal snow contract risk",
+        "snow plowing profit calculator",
+        "snow removal contract pricing and weather risk software",
+        "snow removal contract pricing and weather risk calculator",
+        "snow removal contract pricing and weather risk pricing"
+      ],
+      "buyer": "owner, estimator, or operations manager",
+      "economicDriver": "risk",
+      "profitRationale": "One underpriced seasonal contract can be costly, and scenario modeling offers a math-heavy defensible wedge.",
+      "primaryRisk": "Use is seasonal and historical weather does not guarantee future outcomes.",
+      "scoreBreakdown": {
+        "economicPain": 8,
+        "buyerBudget": 7,
+        "recurrenceRetention": 6,
+        "monetizationExpansion": 7,
+        "searchDemand": 10,
+        "commercialIntent": 10,
+        "contentDepth": 8,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 8
+      },
+      "score": 80,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Prices seasonal, per-push, and hybrid contracts from weather exposure, trigger depth, route density, labor, salt, equipment, and service terms.",
+  "productUrl": "",
+  "valueProposition": "Simulates weather and cost scenarios so the contractor chooses a price and contract structure with visible downside.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "snow-contract-risk-price"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

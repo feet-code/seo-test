@@ -1,0 +1,70 @@
+{
+  "id": "dumpster-fleet-yield",
+  "name": "Dumpster Fleet Yield",
+  "domain": null,
+  "audience": "roll-off dumpster rental operators",
+  "topic": "roll-off dumpster fleet utilization and pricing",
+  "products": [
+    {
+      "id": "dumpster-fleet-yield",
+      "name": "Dumpster Fleet Yield",
+      "product": "Optimizes container allocation, swap schedules, idle days, delivery zones, and price from fleet capacity and trip cost.",
+      "productUrl": "",
+      "audience": "roll-off dumpster rental operators",
+      "problem": "Containers sit idle or make low-margin trips while operators lack a forward view of availability and true delivery cost.",
+      "valueProposition": "Recommends which orders to accept, how to price zones, and when to turn or reposition each container.",
+      "topic": "roll-off dumpster fleet utilization and pricing",
+      "monetization": "$149-$699/month by trucks and containers",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: dumpster rental dispatch optimization; roll off container utilization software; dumpster delivery pricing calculator; roll-off dumpster fleet utilization and pricing software; roll-off dumpster fleet utilization and pricing calculator; roll-off dumpster fleet utilization and pricing pricing",
+      "seoThesis": "A narrow site for roll-off dumpster rental operators can connect commercial pages, calculators, comparisons, and implementation guides around roll-off dumpster fleet utilization and pricing to the same measurable capacity outcome.",
+      "searchQueries": [
+        "dumpster rental dispatch optimization",
+        "roll off container utilization software",
+        "dumpster delivery pricing calculator",
+        "roll-off dumpster fleet utilization and pricing software",
+        "roll-off dumpster fleet utilization and pricing calculator",
+        "roll-off dumpster fleet utilization and pricing pricing"
+      ],
+      "buyer": "owner, dispatcher, or fleet manager",
+      "economicDriver": "capacity",
+      "profitRationale": "Revenue is constrained by expensive physical capacity, making utilization and zone pricing economically urgent.",
+      "primaryRisk": "Dispatch integrations and uncertain customer pickup dates complicate optimization.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 9,
+        "searchDemand": 8,
+        "commercialIntent": 9,
+        "contentDepth": 8,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 7
+      },
+      "score": 84,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Optimizes container allocation, swap schedules, idle days, delivery zones, and price from fleet capacity and trip cost.",
+  "productUrl": "",
+  "valueProposition": "Recommends which orders to accept, how to price zones, and when to turn or reposition each container.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "dumpster-fleet-yield"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

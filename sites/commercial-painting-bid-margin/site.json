@@ -1,0 +1,70 @@
+{
+  "id": "commercial-painting-bid-margin",
+  "name": "Commercial Painting Bid Margin",
+  "domain": null,
+  "audience": "small commercial painting contractors",
+  "topic": "commercial painting estimating and job profitability",
+  "products": [
+    {
+      "id": "commercial-painting-bid-margin",
+      "name": "Commercial Painting Bid Margin",
+      "product": "Models production rates, coatings, lifts, prep, crew mix, travel, phasing, and schedule risk for commercial bids.",
+      "productUrl": "",
+      "audience": "small commercial painting contractors",
+      "problem": "Small misses in production rate or access cost erase profit across large multi-day projects.",
+      "valueProposition": "Creates a risk-adjusted bid floor and learns estimating factors from actual labor and material use.",
+      "topic": "commercial painting estimating and job profitability",
+      "monetization": "$149-$599/month by estimators and annual bid volume",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: commercial painting estimating software; commercial painting bid calculator; painting job costing software; commercial painting estimating and job profitability software; commercial painting estimating and job profitability calculator; commercial painting estimating and job profitability pricing",
+      "seoThesis": "A narrow site for small commercial painting contractors can connect commercial pages, calculators, comparisons, and implementation guides around commercial painting estimating and job profitability to the same measurable margin outcome.",
+      "searchQueries": [
+        "commercial painting estimating software",
+        "commercial painting bid calculator",
+        "painting job costing software",
+        "commercial painting estimating and job profitability software",
+        "commercial painting estimating and job profitability calculator",
+        "commercial painting estimating and job profitability pricing"
+      ],
+      "buyer": "owner or estimator",
+      "economicDriver": "margin",
+      "profitRationale": "High-value bids support meaningful pricing, and estimate-to-actual history deepens the product over time.",
+      "primaryRisk": "Estimating is competitive and project scope is inconsistent, so the niche must stay focused on margin learning.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 9,
+        "searchDemand": 9,
+        "commercialIntent": 10,
+        "contentDepth": 9,
+        "serpWinnability": 6,
+        "buildSupportFeasibility": 7
+      },
+      "score": 85,
+      "probeArticleCount": 4,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 4,
+  "product": "Models production rates, coatings, lifts, prep, crew mix, travel, phasing, and schedule risk for commercial bids.",
+  "productUrl": "",
+  "valueProposition": "Creates a risk-adjusted bid floor and learns estimating factors from actual labor and material use.",
+  "articleCount": 4,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "commercial-painting-bid-margin"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

@@ -1,0 +1,70 @@
+{
+  "id": "bookkeeping-client-profit",
+  "name": "Bookkeeping Client Profit",
+  "domain": null,
+  "audience": "bookkeeping firms and outsourced accounting practices",
+  "topic": "bookkeeping client profitability and pricing analysis",
+  "products": [
+    {
+      "id": "bookkeeping-client-profit",
+      "name": "Bookkeeping Client Profit",
+      "product": "Measures client-level profit from fixed fees, transaction volume, cleanup, support load, close complexity, and staff time.",
+      "productUrl": "",
+      "audience": "bookkeeping firms and outsourced accounting practices",
+      "problem": "Legacy client prices drift away from service effort, but owners lack evidence for repricing or scope changes.",
+      "valueProposition": "Identifies unprofitable accounts and produces a clear renewal pricing case tied to actual service drivers.",
+      "topic": "bookkeeping client profitability and pricing analysis",
+      "monetization": "$99-$399/month by clients or staff",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: bookkeeping client profitability software; accounting firm pricing calculator; bookkeeping client repricing; bookkeeping client profitability and pricing analysis software; bookkeeping client profitability and pricing analysis calculator; bookkeeping client profitability and pricing analysis pricing",
+      "seoThesis": "A narrow site for bookkeeping firms and outsourced accounting practices can connect commercial pages, calculators, comparisons, and implementation guides around bookkeeping client profitability and pricing analysis to the same measurable margin outcome.",
+      "searchQueries": [
+        "bookkeeping client profitability software",
+        "accounting firm pricing calculator",
+        "bookkeeping client repricing",
+        "bookkeeping client profitability and pricing analysis software",
+        "bookkeeping client profitability and pricing analysis calculator",
+        "bookkeeping client profitability and pricing analysis pricing"
+      ],
+      "buyer": "firm owner or practice manager",
+      "economicDriver": "margin",
+      "profitRationale": "Recurring client contracts, standardized source systems, and annual repricing create a strong retention loop.",
+      "primaryRisk": "Firm owners may resist time capture, so value must work with imperfect operational data.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 8,
+        "searchDemand": 8,
+        "commercialIntent": 9,
+        "contentDepth": 8,
+        "serpWinnability": 7,
+        "buildSupportFeasibility": 8
+      },
+      "score": 82,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Measures client-level profit from fixed fees, transaction volume, cleanup, support load, close complexity, and staff time.",
+  "productUrl": "",
+  "valueProposition": "Identifies unprofitable accounts and produces a clear renewal pricing case tied to actual service drivers.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "bookkeeping-client-profit"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

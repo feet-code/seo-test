@@ -1,0 +1,70 @@
+{
+  "id": "garage-door-job-margin",
+  "name": "Garage Door Job Margin",
+  "domain": null,
+  "audience": "independent garage door service companies",
+  "topic": "garage door repair pricing and job profitability",
+  "products": [
+    {
+      "id": "garage-door-job-margin",
+      "name": "Garage Door Job Margin",
+      "product": "Prices repairs and replacements from parts, labor, travel, warranty risk, and schedule capacity.",
+      "productUrl": "",
+      "audience": "independent garage door service companies",
+      "problem": "Flat-rate books and intuition hide job-level margin as parts and labor costs change.",
+      "valueProposition": "Produces a defensible quote floor and shows which job types, technicians, and service zones create gross profit.",
+      "topic": "garage door repair pricing and job profitability",
+      "monetization": "$149-$499/month by technicians and locations",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: garage door pricing software; garage door repair price calculator; garage door job costing; garage door repair pricing and job profitability software; garage door repair pricing and job profitability calculator; garage door repair pricing and job profitability pricing",
+      "seoThesis": "A narrow site for independent garage door service companies can connect commercial pages, calculators, comparisons, and implementation guides around garage door repair pricing and job profitability to the same measurable margin outcome.",
+      "searchQueries": [
+        "garage door pricing software",
+        "garage door repair price calculator",
+        "garage door job costing",
+        "garage door repair pricing and job profitability software",
+        "garage door repair pricing and job profitability calculator",
+        "garage door repair pricing and job profitability pricing"
+      ],
+      "buyer": "owner or service manager",
+      "economicDriver": "margin",
+      "profitRationale": "Quotes recur daily, price changes have immediate impact, and one corrected underpriced job can pay for the tool.",
+      "primaryRisk": "Parts catalogs and local price expectations vary; recommendations need editable assumptions.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 7,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 8,
+        "searchDemand": 8,
+        "commercialIntent": 9,
+        "contentDepth": 8,
+        "serpWinnability": 7,
+        "buildSupportFeasibility": 8
+      },
+      "score": 82,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Prices repairs and replacements from parts, labor, travel, warranty risk, and schedule capacity.",
+  "productUrl": "",
+  "valueProposition": "Produces a defensible quote floor and shows which job types, technicians, and service zones create gross profit.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "garage-door-job-margin"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

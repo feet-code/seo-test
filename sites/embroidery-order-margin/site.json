@@ -1,0 +1,70 @@
+{
+  "id": "embroidery-order-margin",
+  "name": "Embroidery Order Margin",
+  "domain": null,
+  "audience": "custom embroidery and decorated-apparel shops",
+  "topic": "embroidery pricing and order profitability",
+  "products": [
+    {
+      "id": "embroidery-order-margin",
+      "name": "Embroidery Order Margin",
+      "product": "Prices orders from stitch count, digitizing, blanks, thread, hooping, machine time, spoilage, setup, and rush capacity.",
+      "productUrl": "",
+      "audience": "custom embroidery and decorated-apparel shops",
+      "problem": "Per-piece prices ignore artwork complexity, setup, spoilage, and small-run machine downtime.",
+      "valueProposition": "Calculates an order floor and learns realistic production time by garment and design type.",
+      "topic": "embroidery pricing and order profitability",
+      "monetization": "$69-$299/month by machines and quotes",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: embroidery pricing calculator; embroidery estimating software; embroidery shop job costing; embroidery pricing and order profitability software; embroidery pricing and order profitability calculator; embroidery pricing and order profitability pricing",
+      "seoThesis": "A narrow site for custom embroidery and decorated-apparel shops can connect commercial pages, calculators, comparisons, and implementation guides around embroidery pricing and order profitability to the same measurable margin outcome.",
+      "searchQueries": [
+        "embroidery pricing calculator",
+        "embroidery estimating software",
+        "embroidery shop job costing",
+        "embroidery pricing and order profitability software",
+        "embroidery pricing and order profitability calculator",
+        "embroidery pricing and order profitability pricing"
+      ],
+      "buyer": "owner or estimator",
+      "economicDriver": "margin",
+      "profitRationale": "Clear calculator intent enables low-cost acquisition and each completed order improves quoting accuracy.",
+      "primaryRisk": "Small shops are price sensitive and existing shop systems may bundle basic estimating.",
+      "scoreBreakdown": {
+        "economicPain": 8,
+        "buyerBudget": 6,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 7,
+        "searchDemand": 10,
+        "commercialIntent": 10,
+        "contentDepth": 10,
+        "serpWinnability": 7,
+        "buildSupportFeasibility": 9
+      },
+      "score": 84,
+      "probeArticleCount": 5,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 5,
+  "product": "Prices orders from stitch count, digitizing, blanks, thread, hooping, machine time, spoilage, setup, and rush capacity.",
+  "productUrl": "",
+  "valueProposition": "Calculates an order floor and learns realistic production time by garment and design type.",
+  "articleCount": 5,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "embroidery-order-margin"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

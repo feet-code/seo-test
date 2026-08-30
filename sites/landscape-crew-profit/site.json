@@ -1,0 +1,70 @@
+{
+  "id": "landscape-crew-profit",
+  "name": "Landscape Crew Profit",
+  "domain": null,
+  "audience": "landscaping and lawn-care company owners",
+  "topic": "landscaping job costing and crew profitability",
+  "products": [
+    {
+      "id": "landscape-crew-profit",
+      "name": "Landscape Crew Profit",
+      "product": "Compares estimated versus actual crew time, travel, material, disposal, and rework to improve future prices and routes.",
+      "productUrl": "",
+      "audience": "landscaping and lawn-care company owners",
+      "problem": "Job and maintenance-contract margins erode because field outcomes never update estimating assumptions.",
+      "valueProposition": "Shows which customers, job types, and estimate assumptions need repricing or operating changes.",
+      "topic": "landscaping job costing and crew profitability",
+      "monetization": "$99-$399/month by crews",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: landscaping job costing software; lawn care route profitability; landscape estimate vs actual; landscaping job costing and crew profitability software; landscaping job costing and crew profitability calculator; landscaping job costing and crew profitability pricing",
+      "seoThesis": "A narrow site for landscaping and lawn-care company owners can connect commercial pages, calculators, comparisons, and implementation guides around landscaping job costing and crew profitability to the same measurable margin outcome.",
+      "searchQueries": [
+        "landscaping job costing software",
+        "lawn care route profitability",
+        "landscape estimate vs actual",
+        "landscaping job costing and crew profitability software",
+        "landscaping job costing and crew profitability calculator",
+        "landscaping job costing and crew profitability pricing"
+      ],
+      "buyer": "owner, estimator, or operations manager",
+      "economicDriver": "margin",
+      "profitRationale": "The tool links daily field data to future bid quality and recurring customer repricing.",
+      "primaryRisk": "Field time capture and job coding must be effortless enough for crews to adopt.",
+      "scoreBreakdown": {
+        "economicPain": 8,
+        "buyerBudget": 7,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 8,
+        "searchDemand": 9,
+        "commercialIntent": 9,
+        "contentDepth": 9,
+        "serpWinnability": 7,
+        "buildSupportFeasibility": 8
+      },
+      "score": 82,
+      "probeArticleCount": 4,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 4,
+  "product": "Compares estimated versus actual crew time, travel, material, disposal, and rework to improve future prices and routes.",
+  "productUrl": "",
+  "valueProposition": "Shows which customers, job types, and estimate assumptions need repricing or operating changes.",
+  "articleCount": 4,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "landscape-crew-profit"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

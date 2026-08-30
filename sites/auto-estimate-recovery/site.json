@@ -1,0 +1,70 @@
+{
+  "id": "auto-estimate-recovery",
+  "name": "Auto Estimate Recovery",
+  "domain": null,
+  "audience": "independent auto repair shops",
+  "topic": "auto repair declined estimate follow-up and recovery",
+  "products": [
+    {
+      "id": "auto-estimate-recovery",
+      "name": "Auto Estimate Recovery",
+      "product": "Prioritizes declined estimates by value, safety relevance, customer intent, vehicle context, and best follow-up timing.",
+      "productUrl": "",
+      "audience": "independent auto repair shops",
+      "problem": "High-value recommended work disappears after the first decline because shop systems do not distinguish timing objections from lost demand.",
+      "valueProposition": "Recovers repair revenue with contextual outreach and measures incremental gross profit rather than message volume.",
+      "topic": "auto repair declined estimate follow-up and recovery",
+      "monetization": "$99-$399/month by shop, with optional usage pricing",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: declined auto repair estimate follow up; auto shop estimate recovery software; recommended service follow up tool; auto repair declined estimate follow-up and recovery software; auto repair declined estimate follow-up and recovery calculator; auto repair declined estimate follow-up and recovery pricing",
+      "seoThesis": "A narrow site for independent auto repair shops can connect commercial pages, calculators, comparisons, and implementation guides around auto repair declined estimate follow-up and recovery to the same measurable revenue-capture outcome.",
+      "searchQueries": [
+        "declined auto repair estimate follow up",
+        "auto shop estimate recovery software",
+        "recommended service follow up tool",
+        "auto repair declined estimate follow-up and recovery software",
+        "auto repair declined estimate follow-up and recovery calculator",
+        "auto repair declined estimate follow-up and recovery pricing"
+      ],
+      "buyer": "shop owner or service manager",
+      "economicDriver": "revenue-capture",
+      "profitRationale": "The opportunity already exists in shop data, conversion is measurable, and one recovered job can fund the product.",
+      "primaryRisk": "Incumbent shop-management CRMs may offer reminders, so prioritization and attribution must be materially better.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 7,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 8,
+        "searchDemand": 9,
+        "commercialIntent": 10,
+        "contentDepth": 9,
+        "serpWinnability": 6,
+        "buildSupportFeasibility": 8
+      },
+      "score": 84,
+      "probeArticleCount": 4,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 4,
+  "product": "Prioritizes declined estimates by value, safety relevance, customer intent, vehicle context, and best follow-up timing.",
+  "productUrl": "",
+  "valueProposition": "Recovers repair revenue with contextual outreach and measures incremental gross profit rather than message volume.",
+  "articleCount": 4,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "auto-estimate-recovery"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

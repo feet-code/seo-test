@@ -1,0 +1,70 @@
+{
+  "id": "3pl-unbilled-service",
+  "name": "3PL Unbilled Service Detector",
+  "domain": null,
+  "audience": "small warehouse and fulfillment 3PLs",
+  "topic": "3PL unbilled warehouse service revenue recovery",
+  "products": [
+    {
+      "id": "3pl-unbilled-service",
+      "name": "3PL Unbilled Service Detector",
+      "product": "Matches warehouse events to contract charge rules for storage, handling, projects, packaging, minimums, and exceptions.",
+      "productUrl": "",
+      "audience": "small warehouse and fulfillment 3PLs",
+      "problem": "Custom customer work is performed but never invoiced because WMS events and contract billing rules are disconnected.",
+      "valueProposition": "Finds evidence-backed missing charges before the billing period closes and shows recovered revenue by customer.",
+      "topic": "3PL unbilled warehouse service revenue recovery",
+      "monetization": "$499-$2,000/month by customers and order volume, plus onboarding",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: 3PL billing audit software; unbilled warehouse services; fulfillment billing automation; 3PL unbilled warehouse service revenue recovery software; 3PL unbilled warehouse service revenue recovery calculator; 3PL unbilled warehouse service revenue recovery pricing",
+      "seoThesis": "A narrow site for small warehouse and fulfillment 3PLs can connect commercial pages, calculators, comparisons, and implementation guides around 3PL unbilled warehouse service revenue recovery to the same measurable revenue-capture outcome.",
+      "searchQueries": [
+        "3PL billing audit software",
+        "unbilled warehouse services",
+        "fulfillment billing automation",
+        "3PL unbilled warehouse service revenue recovery software",
+        "3PL unbilled warehouse service revenue recovery calculator",
+        "3PL unbilled warehouse service revenue recovery pricing"
+      ],
+      "buyer": "3PL owner, controller, or billing manager",
+      "economicDriver": "revenue-capture",
+      "profitRationale": "Revenue recovery is immediate, rules recur every billing period, and contract depth creates high switching cost.",
+      "primaryRisk": "WMS event quality and customer-specific contracts create substantial implementation work.",
+      "scoreBreakdown": {
+        "economicPain": 10,
+        "buyerBudget": 9,
+        "recurrenceRetention": 10,
+        "monetizationExpansion": 10,
+        "searchDemand": 7,
+        "commercialIntent": 9,
+        "contentDepth": 8,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 5
+      },
+      "score": 86,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Matches warehouse events to contract charge rules for storage, handling, projects, packaging, minimums, and exceptions.",
+  "productUrl": "",
+  "valueProposition": "Finds evidence-backed missing charges before the billing period closes and shows recovered revenue by customer.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "3pl-unbilled-service"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

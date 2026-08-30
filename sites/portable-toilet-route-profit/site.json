@@ -1,0 +1,70 @@
+{
+  "id": "portable-toilet-route-profit",
+  "name": "Portable Toilet Route Profit",
+  "domain": null,
+  "audience": "portable sanitation rental companies",
+  "topic": "portable toilet route profitability and pricing",
+  "products": [
+    {
+      "id": "portable-toilet-route-profit",
+      "name": "Portable Toilet Route Profit",
+      "product": "Calculates contract and route profit from service frequency, units, waste fees, drive time, events, and missed-access cost.",
+      "productUrl": "",
+      "audience": "portable sanitation rental companies",
+      "problem": "Long-lived rental accounts hide margin erosion when servicing frequency and route distance change.",
+      "valueProposition": "Finds contracts to reprice, reroute, consolidate, or renegotiate before another service cycle.",
+      "topic": "portable toilet route profitability and pricing",
+      "monetization": "$149-$599/month by routes or units",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: portable toilet rental pricing software; portable sanitation route optimization; toilet rental route profitability; portable toilet route profitability and pricing software; portable toilet route profitability and pricing calculator; portable toilet route profitability and pricing pricing",
+      "seoThesis": "A narrow site for portable sanitation rental companies can connect commercial pages, calculators, comparisons, and implementation guides around portable toilet route profitability and pricing to the same measurable margin outcome.",
+      "searchQueries": [
+        "portable toilet rental pricing software",
+        "portable sanitation route optimization",
+        "toilet rental route profitability",
+        "portable toilet route profitability and pricing software",
+        "portable toilet route profitability and pricing calculator",
+        "portable toilet route profitability and pricing pricing"
+      ],
+      "buyer": "owner or route manager",
+      "economicDriver": "margin",
+      "profitRationale": "Recurring service contracts and route economics make the product sticky and financially measurable.",
+      "primaryRisk": "Operators may use specialized software with limited export APIs.",
+      "scoreBreakdown": {
+        "economicPain": 8,
+        "buyerBudget": 7,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 8,
+        "searchDemand": 8,
+        "commercialIntent": 8,
+        "contentDepth": 8,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 8
+      },
+      "score": 80,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Calculates contract and route profit from service frequency, units, waste fees, drive time, events, and missed-access cost.",
+  "productUrl": "",
+  "valueProposition": "Finds contracts to reprice, reroute, consolidate, or renegotiate before another service cycle.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "portable-toilet-route-profit"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

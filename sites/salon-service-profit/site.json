@@ -1,0 +1,70 @@
+{
+  "id": "salon-service-profit",
+  "name": "Salon Service Profit",
+  "domain": null,
+  "audience": "independent salons and multi-chair beauty studios",
+  "topic": "salon service profitability and pricing calculator",
+  "products": [
+    {
+      "id": "salon-service-profit",
+      "name": "Salon Service Profit",
+      "product": "Calculates service and provider contribution from booked time, commission, product use, rework, discount, and room capacity.",
+      "productUrl": "",
+      "audience": "independent salons and multi-chair beauty studios",
+      "problem": "Popular services can be unprofitable after commission, product, cleanup, and schedule displacement are included.",
+      "valueProposition": "Shows which services, packages, providers, and prices create sustainable contribution margin.",
+      "topic": "salon service profitability and pricing calculator",
+      "monetization": "$49-$249/month by chairs or locations",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: salon service cost calculator; salon profitability software; beauty service pricing calculator; salon service profitability and pricing calculator software; salon service profitability and pricing calculator calculator; salon service profitability and pricing calculator pricing",
+      "seoThesis": "A narrow site for independent salons and multi-chair beauty studios can connect commercial pages, calculators, comparisons, and implementation guides around salon service profitability and pricing calculator to the same measurable margin outcome.",
+      "searchQueries": [
+        "salon service cost calculator",
+        "salon profitability software",
+        "beauty service pricing calculator",
+        "salon service profitability and pricing calculator software",
+        "salon service profitability and pricing calculator calculator",
+        "salon service profitability and pricing calculator pricing"
+      ],
+      "buyer": "salon owner or general manager",
+      "economicDriver": "margin",
+      "profitRationale": "Pricing and menu decisions recur, source data is accessible, and a single corrected service price can pay back quickly.",
+      "primaryRisk": "Many salon platforms offer reports, while very small salons have low software budgets.",
+      "scoreBreakdown": {
+        "economicPain": 8,
+        "buyerBudget": 5,
+        "recurrenceRetention": 8,
+        "monetizationExpansion": 7,
+        "searchDemand": 10,
+        "commercialIntent": 10,
+        "contentDepth": 9,
+        "serpWinnability": 6,
+        "buildSupportFeasibility": 9
+      },
+      "score": 80,
+      "probeArticleCount": 4,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 4,
+  "product": "Calculates service and provider contribution from booked time, commission, product use, rework, discount, and room capacity.",
+  "productUrl": "",
+  "valueProposition": "Shows which services, packages, providers, and prices create sustainable contribution margin.",
+  "articleCount": 4,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "salon-service-profit"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

@@ -9,7 +9,7 @@ Run commands from the repository root. Start with `python scripts/portfolio.py s
 | Generate/resume 100 products | `python scripts/ideas.py --generate --count 100` | `ideas/ideas.json`, generation checkpoint, managed site/product fields |
 | Intentionally start over | `python scripts/ideas.py --regenerate --count 100` | Replaces the generation checkpoint and, after success, `ideas/ideas.json` |
 | Validate/preview manual edits | `python scripts/ideas.py --plan` | Nothing |
-| Rebuild reviewed probes from `probeContext` | `python scripts/editorial_probes.py --batch BATCH_ID` | Missing posts only for that editorial batch |
+| Rebuild reviewed probes from `probeContext` | `python scripts/editorial_probes.py --batch BATCH_ID` | Missing 2–5 planned posts per product in that editorial batch |
 | Preview a NicheScout handoff | `python scripts/ideas.py --portfolio ../NicheScout/exports/ideas.json --plan` | Nothing |
 | Apply a handoff | `python scripts/ideas.py --portfolio ../NicheScout/exports/ideas.json` | Portfolio file and managed site/product fields |
 | Smoke-test one generated site | `python scripts/launch.py --limit 1` | Complete pipeline for the first active site |
@@ -44,6 +44,14 @@ python scripts/ideas.py --regenerate --count 150 --batch-size 5
 ```
 
 An interrupted idea run is safe to resume with the exact same `--generate` command. `ideas/ideas.json` is replaced atomically only after every independent batch is complete.
+
+The committed `profitability-001` portfolio already includes 100 site configs, one product page per site, and 340 reviewed probes. Per-product counts range from 2–5 according to reviewed SEO content depth. Rebuild them only when you intend to replace or repair the committed corpus:
+
+```bash
+python scripts/editorial_probes.py --batch profitability-001
+```
+
+Editorial probes and future Gemini output use headings and lists for comparisons. Markdown tables and pipe characters are rejected or normalized before posts are written.
 
 Before deploying, inspect `ideas/ideas.json`. Each idea's `siteId` is its single source of truth for website membership. You can change copy, add ideas, remove ideas, or move an idea to another existing audience website without editing a second membership list. Run `python scripts/ideas.py --plan` after manual edits; the launcher applies the same validated sync automatically.
 
@@ -123,7 +131,8 @@ Edit `sites/SITE_ID/site.json`. These site-local fields survive portfolio import
 ```json
 {
   "domain": "tools.example.com",
-  "articlesPerProduct": 6,
+  "articlesPerProduct": 4,
+  "products": [{"probeArticleCount": 4}],
   "signup": {"endpoint": "https://example.com/subscribe"},
   "deploy": {"provider": "cloudflare-auto", "project": "stable-project"}
 }
@@ -147,7 +156,7 @@ The command is idempotent and strips image fields from all root and site-local p
 
 For domain/signup/presentation changes, use `python scripts/launch.py --frontend-only --site SITE_ID`.
 
-For an article-count change, run the normal launch. Products below the new count regenerate; use `--blogs-only` to replace every probe.
+For an article-count change, update both the site's `articlesPerProduct` and its product's `probeArticleCount`, then run the normal launch. Products below the new count regenerate; use `--blogs-only` to replace every probe.
 
 ## Change one product's posts immediately
 

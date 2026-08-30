@@ -1,0 +1,70 @@
+{
+  "id": "hvac-quote-margin",
+  "name": "HVAC Quote Margin Guard",
+  "domain": null,
+  "audience": "residential HVAC replacement contractors",
+  "topic": "HVAC replacement quote pricing and gross margin",
+  "products": [
+    {
+      "id": "hvac-quote-margin",
+      "name": "HVAC Quote Margin Guard",
+      "product": "Models replacement proposal margin across equipment, labor, accessories, rebates, callbacks, commission, and discount scenarios.",
+      "productUrl": "",
+      "audience": "residential HVAC replacement contractors",
+      "problem": "Sales teams discount or configure replacements without seeing the gross-profit and capacity consequences.",
+      "valueProposition": "Gives advisors an approved proposal range that preserves margin while making tradeoffs clear to the homeowner.",
+      "topic": "HVAC replacement quote pricing and gross margin",
+      "monetization": "$149-$599/month by sales advisors or locations",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: HVAC replacement pricing calculator; HVAC gross margin calculator; HVAC proposal software pricing; HVAC replacement quote pricing and gross margin software; HVAC replacement quote pricing and gross margin calculator; HVAC replacement quote pricing and gross margin pricing",
+      "seoThesis": "A narrow site for residential HVAC replacement contractors can connect commercial pages, calculators, comparisons, and implementation guides around HVAC replacement quote pricing and gross margin to the same measurable margin outcome.",
+      "searchQueries": [
+        "HVAC replacement pricing calculator",
+        "HVAC gross margin calculator",
+        "HVAC proposal software pricing",
+        "HVAC replacement quote pricing and gross margin software",
+        "HVAC replacement quote pricing and gross margin calculator",
+        "HVAC replacement quote pricing and gross margin pricing"
+      ],
+      "buyer": "owner, sales manager, or comfort advisor",
+      "economicDriver": "margin",
+      "profitRationale": "Replacement tickets are valuable, quoting is frequent, and the tool can improve both margin and close-rate discipline.",
+      "primaryRisk": "Equipment catalogs, rebates, and local pricing change frequently.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 8,
+        "searchDemand": 9,
+        "commercialIntent": 10,
+        "contentDepth": 9,
+        "serpWinnability": 7,
+        "buildSupportFeasibility": 8
+      },
+      "score": 86,
+      "probeArticleCount": 4,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 4,
+  "product": "Models replacement proposal margin across equipment, labor, accessories, rebates, callbacks, commission, and discount scenarios.",
+  "productUrl": "",
+  "valueProposition": "Gives advisors an approved proposal range that preserves margin while making tradeoffs clear to the homeowner.",
+  "articleCount": 4,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "hvac-quote-margin"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

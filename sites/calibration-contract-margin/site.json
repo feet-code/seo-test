@@ -1,0 +1,70 @@
+{
+  "id": "calibration-contract-margin",
+  "name": "Calibration Contract Margin",
+  "domain": null,
+  "audience": "independent calibration and metrology service labs",
+  "topic": "calibration service contract pricing and profitability",
+  "products": [
+    {
+      "id": "calibration-contract-margin",
+      "name": "Calibration Contract Margin",
+      "product": "Measures contract and asset profitability from technician time, standards, travel, certificates, subcontracting, pickup, and turnaround commitments.",
+      "productUrl": "",
+      "audience": "independent calibration and metrology service labs",
+      "problem": "Recurring agreements hide loss-making asset mixes, travel, and rush obligations behind one annual price.",
+      "valueProposition": "Supports renewal repricing and route or lab allocation with auditable contract economics.",
+      "topic": "calibration service contract pricing and profitability",
+      "monetization": "$299-$999/month by technicians and contracts",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: calibration management software profitability; calibration service pricing; metrology lab job costing; calibration service contract pricing and profitability software; calibration service contract pricing and profitability calculator; calibration service contract pricing and profitability pricing",
+      "seoThesis": "A narrow site for independent calibration and metrology service labs can connect commercial pages, calculators, comparisons, and implementation guides around calibration service contract pricing and profitability to the same measurable margin outcome.",
+      "searchQueries": [
+        "calibration management software profitability",
+        "calibration service pricing",
+        "metrology lab job costing",
+        "calibration service contract pricing and profitability software",
+        "calibration service contract pricing and profitability calculator",
+        "calibration service contract pricing and profitability pricing"
+      ],
+      "buyer": "lab owner, service manager, or finance lead",
+      "economicDriver": "margin",
+      "profitRationale": "Technical service contracts recur, buyers have budget, and niche operational language makes focused SEO plausible.",
+      "primaryRisk": "Quality-system requirements and lab software integrations demand careful, non-destructive data handling.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 10,
+        "monetizationExpansion": 9,
+        "searchDemand": 7,
+        "commercialIntent": 8,
+        "contentDepth": 8,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 7
+      },
+      "score": 83,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Measures contract and asset profitability from technician time, standards, travel, certificates, subcontracting, pickup, and turnaround commitments.",
+  "productUrl": "",
+  "valueProposition": "Supports renewal repricing and route or lab allocation with auditable contract economics.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "calibration-contract-margin"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

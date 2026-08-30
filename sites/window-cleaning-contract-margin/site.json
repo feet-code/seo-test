@@ -1,0 +1,70 @@
+{
+  "id": "window-cleaning-contract-margin",
+  "name": "Window Cleaning Contract Margin",
+  "domain": null,
+  "audience": "commercial window cleaning companies",
+  "topic": "commercial window cleaning bidding and contract profitability",
+  "products": [
+    {
+      "id": "window-cleaning-contract-margin",
+      "name": "Window Cleaning Contract Margin",
+      "product": "Prices recurring contracts from pane counts, access method, frequency, travel, crew speed, equipment, and safety overhead.",
+      "productUrl": "",
+      "audience": "commercial window cleaning companies",
+      "problem": "Recurring contracts stay underpriced because estimators cannot connect building conditions with realized labor hours.",
+      "valueProposition": "Sets a profitable contract price and updates production assumptions after every completed visit.",
+      "topic": "commercial window cleaning bidding and contract profitability",
+      "monetization": "$99-$399/month by crews and contracts",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: window cleaning bidding software; commercial window cleaning estimate calculator; window cleaning contract pricing; commercial window cleaning bidding and contract profitability software; commercial window cleaning bidding and contract profitability calculator; commercial window cleaning bidding and contract profitability pricing",
+      "seoThesis": "A narrow site for commercial window cleaning companies can connect commercial pages, calculators, comparisons, and implementation guides around commercial window cleaning bidding and contract profitability to the same measurable margin outcome.",
+      "searchQueries": [
+        "window cleaning bidding software",
+        "commercial window cleaning estimate calculator",
+        "window cleaning contract pricing",
+        "commercial window cleaning bidding and contract profitability software",
+        "commercial window cleaning bidding and contract profitability calculator",
+        "commercial window cleaning bidding and contract profitability pricing"
+      ],
+      "buyer": "owner or estimator",
+      "economicDriver": "margin",
+      "profitRationale": "The pain repeats at every bid and renewal, while contract history creates retention and a useful pricing moat.",
+      "primaryRisk": "Access complexity and safety requirements need human validation rather than automated promises.",
+      "scoreBreakdown": {
+        "economicPain": 8,
+        "buyerBudget": 7,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 8,
+        "searchDemand": 9,
+        "commercialIntent": 9,
+        "contentDepth": 9,
+        "serpWinnability": 7,
+        "buildSupportFeasibility": 9
+      },
+      "score": 83,
+      "probeArticleCount": 4,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 4,
+  "product": "Prices recurring contracts from pane counts, access method, frequency, travel, crew speed, equipment, and safety overhead.",
+  "productUrl": "",
+  "valueProposition": "Sets a profitable contract price and updates production assumptions after every completed visit.",
+  "articleCount": 4,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "window-cleaning-contract-margin"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

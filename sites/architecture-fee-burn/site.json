@@ -1,0 +1,70 @@
+{
+  "id": "architecture-fee-burn",
+  "name": "Architecture Fee Burn",
+  "domain": null,
+  "audience": "small architecture and engineering firms",
+  "topic": "architecture project fee and utilization forecasting",
+  "products": [
+    {
+      "id": "architecture-fee-burn",
+      "name": "Architecture Fee Burn",
+      "product": "Forecasts phase-level fee exhaustion from staffing plans, percent complete, consultant cost, and revision risk.",
+      "productUrl": "",
+      "audience": "small architecture and engineering firms",
+      "problem": "Project teams confuse hours spent with progress and discover fee overruns too late to change staffing or scope.",
+      "valueProposition": "Predicts phase margin and makes the staffing, scope, or client decision required to protect the remaining fee.",
+      "topic": "architecture project fee and utilization forecasting",
+      "monetization": "$199-$799/month by professionals or active projects",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: architecture project profitability software; architect fee burn report; A&E project budget forecasting; architecture project fee and utilization forecasting software; architecture project fee and utilization forecasting calculator; architecture project fee and utilization forecasting pricing",
+      "seoThesis": "A narrow site for small architecture and engineering firms can connect commercial pages, calculators, comparisons, and implementation guides around architecture project fee and utilization forecasting to the same measurable margin outcome.",
+      "searchQueries": [
+        "architecture project profitability software",
+        "architect fee burn report",
+        "A&E project budget forecasting",
+        "architecture project fee and utilization forecasting software",
+        "architecture project fee and utilization forecasting calculator",
+        "architecture project fee and utilization forecasting pricing"
+      ],
+      "buyer": "principal, project manager, or finance lead",
+      "economicDriver": "margin",
+      "profitRationale": "Professional labor is expensive, fee burn recurs weekly, and firms already budget for project systems.",
+      "primaryRisk": "Progress estimates are subjective and incumbents may cover basic budget reporting.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 8,
+        "searchDemand": 7,
+        "commercialIntent": 8,
+        "contentDepth": 8,
+        "serpWinnability": 6,
+        "buildSupportFeasibility": 7
+      },
+      "score": 78,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Forecasts phase-level fee exhaustion from staffing plans, percent complete, consultant cost, and revision risk.",
+  "productUrl": "",
+  "valueProposition": "Predicts phase margin and makes the staffing, scope, or client decision required to protect the remaining fee.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "architecture-fee-burn"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

@@ -1,0 +1,70 @@
+{
+  "id": "moving-job-margin",
+  "name": "Moving Job Margin",
+  "domain": null,
+  "audience": "independent local and regional moving companies",
+  "topic": "moving company estimating and job profitability",
+  "products": [
+    {
+      "id": "moving-job-margin",
+      "name": "Moving Job Margin",
+      "product": "Prices moves from inventory estimate, crew mix, stairs, access, travel, packing, truck capacity, season, and overrun risk.",
+      "productUrl": "",
+      "audience": "independent local and regional moving companies",
+      "problem": "Booked revenue masks overtime, travel, access delays, and inaccurate inventory estimates.",
+      "valueProposition": "Creates a risk-adjusted quote and learns the factors that drive estimate-to-actual variance.",
+      "topic": "moving company estimating and job profitability",
+      "monetization": "$149-$599/month by crews and estimates",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: moving company estimating software; moving job cost calculator; moving company profitability; moving company estimating and job profitability software; moving company estimating and job profitability calculator; moving company estimating and job profitability pricing",
+      "seoThesis": "A narrow site for independent local and regional moving companies can connect commercial pages, calculators, comparisons, and implementation guides around moving company estimating and job profitability to the same measurable margin outcome.",
+      "searchQueries": [
+        "moving company estimating software",
+        "moving job cost calculator",
+        "moving company profitability",
+        "moving company estimating and job profitability software",
+        "moving company estimating and job profitability calculator",
+        "moving company estimating and job profitability pricing"
+      ],
+      "buyer": "owner, sales manager, or dispatcher",
+      "economicDriver": "margin",
+      "profitRationale": "High query demand and daily quotes support acquisition, while actual-job learning can differentiate from static calculators.",
+      "primaryRisk": "Consumer search competition is high and regulatory pricing rules vary by jurisdiction.",
+      "scoreBreakdown": {
+        "economicPain": 8,
+        "buyerBudget": 7,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 8,
+        "searchDemand": 10,
+        "commercialIntent": 10,
+        "contentDepth": 10,
+        "serpWinnability": 5,
+        "buildSupportFeasibility": 8
+      },
+      "score": 83,
+      "probeArticleCount": 5,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 5,
+  "product": "Prices moves from inventory estimate, crew mix, stairs, access, travel, packing, truck capacity, season, and overrun risk.",
+  "productUrl": "",
+  "valueProposition": "Creates a risk-adjusted quote and learns the factors that drive estimate-to-actual variance.",
+  "articleCount": 5,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "moving-job-margin"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

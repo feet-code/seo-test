@@ -1,0 +1,70 @@
+{
+  "id": "scaffold-rental-yield",
+  "name": "Scaffold Rental Yield",
+  "domain": null,
+  "audience": "independent scaffold rental and erection contractors",
+  "topic": "scaffold rental estimating and inventory utilization",
+  "products": [
+    {
+      "id": "scaffold-rental-yield",
+      "name": "Scaffold Rental Yield",
+      "product": "Prices rental and erection jobs from inventory allocation, transport, crew hours, duration risk, lost pieces, utilization, and alternative demand.",
+      "productUrl": "",
+      "audience": "independent scaffold rental and erection contractors",
+      "problem": "Long or delayed jobs consume scarce components while quotes omit displacement and recovery costs.",
+      "valueProposition": "Calculates full job contribution and the opportunity cost of committing inventory to each quote.",
+      "topic": "scaffold rental estimating and inventory utilization",
+      "monetization": "$299-$999/month by branches and inventory volume",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: scaffold rental software; scaffolding estimate calculator; scaffold inventory utilization; scaffold rental estimating and inventory utilization software; scaffold rental estimating and inventory utilization calculator; scaffold rental estimating and inventory utilization pricing",
+      "seoThesis": "A narrow site for independent scaffold rental and erection contractors can connect commercial pages, calculators, comparisons, and implementation guides around scaffold rental estimating and inventory utilization to the same measurable capacity outcome.",
+      "searchQueries": [
+        "scaffold rental software",
+        "scaffolding estimate calculator",
+        "scaffold inventory utilization",
+        "scaffold rental estimating and inventory utilization software",
+        "scaffold rental estimating and inventory utilization calculator",
+        "scaffold rental estimating and inventory utilization pricing"
+      ],
+      "buyer": "owner, estimator, or fleet manager",
+      "economicDriver": "capacity",
+      "profitRationale": "Scarce reusable assets, high-value quotes, and job duration create strong recurring decision value.",
+      "primaryRisk": "Inventory configuration and safety engineering are complex; the product must not design scaffolds.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 9,
+        "searchDemand": 7,
+        "commercialIntent": 8,
+        "contentDepth": 8,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 6
+      },
+      "score": 81,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Prices rental and erection jobs from inventory allocation, transport, crew hours, duration risk, lost pieces, utilization, and alternative demand.",
+  "productUrl": "",
+  "valueProposition": "Calculates full job contribution and the opportunity cost of committing inventory to each quote.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "scaffold-rental-yield"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

@@ -1,0 +1,70 @@
+{
+  "id": "agency-fee-burn",
+  "name": "Agency Fee Burn Forecast",
+  "domain": null,
+  "audience": "small marketing, design, and development agencies",
+  "topic": "agency project profitability and fee burn forecasting",
+  "products": [
+    {
+      "id": "agency-fee-burn",
+      "name": "Agency Fee Burn Forecast",
+      "product": "Forecasts project margin from scope progress, team mix, remaining uncertainty, and unapproved overages.",
+      "productUrl": "",
+      "audience": "small marketing, design, and development agencies",
+      "problem": "Agencies discover fixed-fee overruns after the budget is already consumed because hours are lagging evidence.",
+      "valueProposition": "Warns when fee burn is outpacing deliverable progress and quantifies the intervention needed to preserve margin.",
+      "topic": "agency project profitability and fee burn forecasting",
+      "monetization": "$99-$499/month by active projects or employees",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: agency project profitability software; fixed fee project burn calculator; agency margin forecasting; agency project profitability and fee burn forecasting software; agency project profitability and fee burn forecasting calculator; agency project profitability and fee burn forecasting pricing",
+      "seoThesis": "A narrow site for small marketing, design, and development agencies can connect commercial pages, calculators, comparisons, and implementation guides around agency project profitability and fee burn forecasting to the same measurable margin outcome.",
+      "searchQueries": [
+        "agency project profitability software",
+        "fixed fee project burn calculator",
+        "agency margin forecasting",
+        "agency project profitability and fee burn forecasting software",
+        "agency project profitability and fee burn forecasting calculator",
+        "agency project profitability and fee burn forecasting pricing"
+      ],
+      "buyer": "agency owner or operations director",
+      "economicDriver": "margin",
+      "profitRationale": "The buyer feels project overruns directly, uses the forecast weekly, and can expand into pricing and capacity planning.",
+      "primaryRisk": "Time-tracking fatigue and subjective progress estimates can degrade trust.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 9,
+        "searchDemand": 8,
+        "commercialIntent": 9,
+        "contentDepth": 8,
+        "serpWinnability": 6,
+        "buildSupportFeasibility": 8
+      },
+      "score": 83,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Forecasts project margin from scope progress, team mix, remaining uncertainty, and unapproved overages.",
+  "productUrl": "",
+  "valueProposition": "Warns when fee burn is outpacing deliverable progress and quantifies the intervention needed to preserve margin.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "agency-fee-burn"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

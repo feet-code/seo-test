@@ -1,0 +1,70 @@
+{
+  "id": "auto-bay-yield",
+  "name": "Auto Repair Bay Yield",
+  "domain": null,
+  "audience": "independent auto repair shops",
+  "topic": "auto repair bay utilization and schedule optimization",
+  "products": [
+    {
+      "id": "auto-bay-yield",
+      "name": "Auto Repair Bay Yield",
+      "product": "Models bay and technician schedules using job duration uncertainty, parts readiness, skill constraints, and gross profit.",
+      "productUrl": "",
+      "audience": "independent auto repair shops",
+      "problem": "Shops lose capacity when low-value jobs, missing parts, and uncertain durations block the wrong bays and technicians.",
+      "valueProposition": "Builds a feasible daily schedule that prioritizes gross profit without making unrealistic completion promises.",
+      "topic": "auto repair bay utilization and schedule optimization",
+      "monetization": "$149-$599/month by shop location",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: auto repair shop scheduling optimization; repair bay utilization software; mechanic shop capacity planning; auto repair bay utilization and schedule optimization software; auto repair bay utilization and schedule optimization calculator; auto repair bay utilization and schedule optimization pricing",
+      "seoThesis": "A narrow site for independent auto repair shops can connect commercial pages, calculators, comparisons, and implementation guides around auto repair bay utilization and schedule optimization to the same measurable capacity outcome.",
+      "searchQueries": [
+        "auto repair shop scheduling optimization",
+        "repair bay utilization software",
+        "mechanic shop capacity planning",
+        "auto repair bay utilization and schedule optimization software",
+        "auto repair bay utilization and schedule optimization calculator",
+        "auto repair bay utilization and schedule optimization pricing"
+      ],
+      "buyer": "shop owner or service manager",
+      "economicDriver": "capacity",
+      "profitRationale": "A single additional completed repair can justify the subscription, and daily scheduling creates retention.",
+      "primaryRisk": "Reliable duration estimates and shop-management data access vary widely.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 10,
+        "monetizationExpansion": 8,
+        "searchDemand": 8,
+        "commercialIntent": 9,
+        "contentDepth": 9,
+        "serpWinnability": 7,
+        "buildSupportFeasibility": 7
+      },
+      "score": 84,
+      "probeArticleCount": 4,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 4,
+  "product": "Models bay and technician schedules using job duration uncertainty, parts readiness, skill constraints, and gross profit.",
+  "productUrl": "",
+  "valueProposition": "Builds a feasible daily schedule that prioritizes gross profit without making unrealistic completion promises.",
+  "articleCount": 4,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "auto-bay-yield"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

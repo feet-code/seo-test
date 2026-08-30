@@ -1,0 +1,70 @@
+{
+  "id": "packaging-moq-landed-cost",
+  "name": "Packaging MOQ Landed Cost",
+  "domain": null,
+  "audience": "growing consumer brands buying custom packaging",
+  "topic": "custom packaging MOQ and landed cost comparison",
+  "products": [
+    {
+      "id": "packaging-moq-landed-cost",
+      "name": "Packaging MOQ Landed Cost",
+      "product": "Compares packaging quotes across MOQs, tooling, freight, duties, storage, obsolescence, lead time, and cash tied up.",
+      "productUrl": "",
+      "audience": "growing consumer brands buying custom packaging",
+      "problem": "Low unit-price quotes become expensive after inventory risk, freight, storage, and design changes are included.",
+      "valueProposition": "Calculates the financially best order scenario and the demand assumptions required for it to win.",
+      "topic": "custom packaging MOQ and landed cost comparison",
+      "monetization": "$49-$199/month plus paid supplier-comparison projects",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: packaging MOQ calculator; custom packaging landed cost; compare packaging supplier quotes; custom packaging MOQ and landed cost comparison software; custom packaging MOQ and landed cost comparison calculator; custom packaging MOQ and landed cost comparison pricing",
+      "seoThesis": "A narrow site for growing consumer brands buying custom packaging can connect commercial pages, calculators, comparisons, and implementation guides around custom packaging MOQ and landed cost comparison to the same measurable margin outcome.",
+      "searchQueries": [
+        "packaging MOQ calculator",
+        "custom packaging landed cost",
+        "compare packaging supplier quotes",
+        "custom packaging MOQ and landed cost comparison software",
+        "custom packaging MOQ and landed cost comparison calculator",
+        "custom packaging MOQ and landed cost comparison pricing"
+      ],
+      "buyer": "operations manager, founder, or procurement lead",
+      "economicDriver": "margin",
+      "profitRationale": "The calculator influences a meaningful purchase and can lead into recurring procurement and reorder monitoring.",
+      "primaryRisk": "Use may be episodic and tariff/freight inputs require current external data.",
+      "scoreBreakdown": {
+        "economicPain": 8,
+        "buyerBudget": 7,
+        "recurrenceRetention": 6,
+        "monetizationExpansion": 7,
+        "searchDemand": 9,
+        "commercialIntent": 9,
+        "contentDepth": 8,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 9
+      },
+      "score": 78,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Compares packaging quotes across MOQs, tooling, freight, duties, storage, obsolescence, lead time, and cash tied up.",
+  "productUrl": "",
+  "valueProposition": "Calculates the financially best order scenario and the demand assumptions required for it to win.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "packaging-moq-landed-cost"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

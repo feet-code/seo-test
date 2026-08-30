@@ -1,0 +1,70 @@
+{
+  "id": "freight-lane-margin-anomaly",
+  "name": "Freight Lane Margin Anomaly",
+  "domain": null,
+  "audience": "small freight brokers and managed transportation providers",
+  "topic": "freight broker lane margin analytics",
+  "products": [
+    {
+      "id": "freight-lane-margin-anomaly",
+      "name": "Freight Lane Margin Anomaly",
+      "product": "Detects unusual lane, carrier, customer, and rep margin shifts before quotes or tenders repeat the loss.",
+      "productUrl": "",
+      "audience": "small freight brokers and managed transportation providers",
+      "problem": "Aggregate margin reports arrive after bad buy rates, accessorials, and customer prices have already repeated.",
+      "valueProposition": "Explains the source of each margin anomaly and directs pricing or carrier actions to the affected lane.",
+      "topic": "freight broker lane margin analytics",
+      "monetization": "$299-$1,200/month by monthly loads",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: freight broker margin analytics; lane profitability software; freight pricing anomaly detection; freight broker lane margin analytics software; freight broker lane margin analytics calculator; freight broker lane margin analytics pricing",
+      "seoThesis": "A narrow site for small freight brokers and managed transportation providers can connect commercial pages, calculators, comparisons, and implementation guides around freight broker lane margin analytics to the same measurable margin outcome.",
+      "searchQueries": [
+        "freight broker margin analytics",
+        "lane profitability software",
+        "freight pricing anomaly detection",
+        "freight broker lane margin analytics software",
+        "freight broker lane margin analytics calculator",
+        "freight broker lane margin analytics pricing"
+      ],
+      "buyer": "brokerage owner, pricing lead, or CFO",
+      "economicDriver": "margin",
+      "profitRationale": "Brokerage margin is measured per load, data recurs daily, and actionable anomalies can pay back quickly.",
+      "primaryRisk": "Market-rate context may require paid data, so the MVP must work from customer history first.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 10,
+        "monetizationExpansion": 9,
+        "searchDemand": 7,
+        "commercialIntent": 8,
+        "contentDepth": 8,
+        "serpWinnability": 7,
+        "buildSupportFeasibility": 7
+      },
+      "score": 82,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Detects unusual lane, carrier, customer, and rep margin shifts before quotes or tenders repeat the loss.",
+  "productUrl": "",
+  "valueProposition": "Explains the source of each margin anomaly and directs pricing or carrier actions to the affected lane.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "freight-lane-margin-anomaly"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

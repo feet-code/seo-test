@@ -1,0 +1,70 @@
+{
+  "id": "pool-route-profit",
+  "name": "Pool Route Profit Optimizer",
+  "domain": null,
+  "audience": "residential pool service company owners",
+  "topic": "pool service route profitability and account repricing",
+  "products": [
+    {
+      "id": "pool-route-profit",
+      "name": "Pool Route Profit Optimizer",
+      "product": "Calculates account-level profit from drive time, service time, chemicals, frequency, add-ons, and seasonal cost changes.",
+      "productUrl": "",
+      "audience": "residential pool service company owners",
+      "problem": "Route revenue looks healthy while distant or chemical-heavy accounts quietly destroy margin.",
+      "valueProposition": "Identifies accounts to reprice, reroute, upsell, or release and previews the route-level profit impact.",
+      "topic": "pool service route profitability and account repricing",
+      "monetization": "$99-$399/month by routes or technicians",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: pool route profitability calculator; pool service pricing software; how to price pool service accounts; pool service route profitability and account repricing software; pool service route profitability and account repricing calculator; pool service route profitability and account repricing pricing",
+      "seoThesis": "A narrow site for residential pool service company owners can connect commercial pages, calculators, comparisons, and implementation guides around pool service route profitability and account repricing to the same measurable margin outcome.",
+      "searchQueries": [
+        "pool route profitability calculator",
+        "pool service pricing software",
+        "how to price pool service accounts",
+        "pool service route profitability and account repricing software",
+        "pool service route profitability and account repricing calculator",
+        "pool service route profitability and account repricing pricing"
+      ],
+      "buyer": "owner or general manager",
+      "economicDriver": "margin",
+      "profitRationale": "The owner can act directly on recurring account economics, and route density creates defensible vertical specificity.",
+      "primaryRisk": "Accurate chemical and labor inputs may require disciplined weekly capture.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 7,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 8,
+        "searchDemand": 9,
+        "commercialIntent": 10,
+        "contentDepth": 9,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 9
+      },
+      "score": 86,
+      "probeArticleCount": 4,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 4,
+  "product": "Calculates account-level profit from drive time, service time, chemicals, frequency, add-ons, and seasonal cost changes.",
+  "productUrl": "",
+  "valueProposition": "Identifies accounts to reprice, reroute, upsell, or release and previews the route-level profit impact.",
+  "articleCount": 4,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "pool-route-profit"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

@@ -1,0 +1,70 @@
+{
+  "id": "wedding-venue-date-yield",
+  "name": "Wedding Venue Date Yield",
+  "domain": null,
+  "audience": "independent wedding and event venues",
+  "topic": "wedding venue dynamic pricing and date profitability",
+  "products": [
+    {
+      "id": "wedding-venue-date-yield",
+      "name": "Wedding Venue Date Yield",
+      "product": "Prices dates and packages from season, day, lead time, capacity, inquiry velocity, close probability, and displacement cost.",
+      "productUrl": "",
+      "audience": "independent wedding and event venues",
+      "problem": "Static packages underprice scarce dates while discounts on weak dates are not tied to incremental margin.",
+      "valueProposition": "Shows the financially defensible price and concession range for each date before a proposal is sent.",
+      "topic": "wedding venue dynamic pricing and date profitability",
+      "monetization": "$99-$499/month by venue and event volume",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: wedding venue pricing calculator; event venue revenue management; wedding venue package pricing software; wedding venue dynamic pricing and date profitability software; wedding venue dynamic pricing and date profitability calculator; wedding venue dynamic pricing and date profitability pricing",
+      "seoThesis": "A narrow site for independent wedding and event venues can connect commercial pages, calculators, comparisons, and implementation guides around wedding venue dynamic pricing and date profitability to the same measurable revenue-capture outcome.",
+      "searchQueries": [
+        "wedding venue pricing calculator",
+        "event venue revenue management",
+        "wedding venue package pricing software",
+        "wedding venue dynamic pricing and date profitability software",
+        "wedding venue dynamic pricing and date profitability calculator",
+        "wedding venue dynamic pricing and date profitability pricing"
+      ],
+      "buyer": "venue owner or sales director",
+      "economicDriver": "revenue-capture",
+      "profitRationale": "A single booking or protected premium date can justify the subscription, with clear search-led acquisition.",
+      "primaryRisk": "Sparse data and owner sensitivity to automated pricing require transparent scenarios.",
+      "scoreBreakdown": {
+        "economicPain": 8,
+        "buyerBudget": 7,
+        "recurrenceRetention": 8,
+        "monetizationExpansion": 8,
+        "searchDemand": 9,
+        "commercialIntent": 9,
+        "contentDepth": 8,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 8
+      },
+      "score": 81,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Prices dates and packages from season, day, lead time, capacity, inquiry velocity, close probability, and displacement cost.",
+  "productUrl": "",
+  "valueProposition": "Shows the financially defensible price and concession range for each date before a proposal is sent.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "wedding-venue-date-yield"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

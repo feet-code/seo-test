@@ -1,0 +1,70 @@
+{
+  "id": "job-shop-bottleneck",
+  "name": "Job Shop Bottleneck Simulator",
+  "domain": null,
+  "audience": "small custom manufacturers and fabrication shops",
+  "topic": "finite capacity scheduling for small job shops",
+  "products": [
+    {
+      "id": "job-shop-bottleneck",
+      "name": "Job Shop Bottleneck Simulator",
+      "product": "Simulates finite-capacity schedules across machines, labor skills, setup families, outside processing, and due dates.",
+      "productUrl": "",
+      "audience": "small custom manufacturers and fabrication shops",
+      "problem": "Spreadsheet schedules promise impossible dates and hide which resource actually limits profitable throughput.",
+      "valueProposition": "Tests schedule changes before release and shows the tradeoff among lateness, setup, utilization, and contribution margin.",
+      "topic": "finite capacity scheduling for small job shops",
+      "monetization": "$399-$1,500/month by work centers",
+      "startupCost": "Higher-complexity MVP: CSV/ERP import, constraint solver, managed database, and explainable scenario UI.",
+      "seoAngle": "Targets purchase and problem-aware searches including: job shop finite capacity scheduling; machine shop bottleneck software; production schedule simulator small manufacturer; finite capacity scheduling for small job shops software; finite capacity scheduling for small job shops calculator; finite capacity scheduling for small job shops pricing",
+      "seoThesis": "A narrow site for small custom manufacturers and fabrication shops can connect commercial pages, calculators, comparisons, and implementation guides around finite capacity scheduling for small job shops to the same measurable capacity outcome.",
+      "searchQueries": [
+        "job shop finite capacity scheduling",
+        "machine shop bottleneck software",
+        "production schedule simulator small manufacturer",
+        "finite capacity scheduling for small job shops software",
+        "finite capacity scheduling for small job shops calculator",
+        "finite capacity scheduling for small job shops pricing"
+      ],
+      "buyer": "owner, scheduler, or operations manager",
+      "economicDriver": "capacity",
+      "profitRationale": "Throughput on constrained equipment is highly valuable and the scheduling model becomes operationally sticky.",
+      "primaryRisk": "Scheduling optimization is technically complex and poor master data can undermine trust.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 9,
+        "recurrenceRetention": 10,
+        "monetizationExpansion": 9,
+        "searchDemand": 8,
+        "commercialIntent": 9,
+        "contentDepth": 9,
+        "serpWinnability": 7,
+        "buildSupportFeasibility": 4
+      },
+      "score": 83,
+      "probeArticleCount": 4,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 4,
+  "product": "Simulates finite-capacity schedules across machines, labor skills, setup families, outside processing, and due dates.",
+  "productUrl": "",
+  "valueProposition": "Tests schedule changes before release and shows the tradeoff among lateness, setup, utilization, and contribution margin.",
+  "articleCount": 4,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "job-shop-bottleneck"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

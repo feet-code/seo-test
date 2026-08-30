@@ -1,0 +1,70 @@
+{
+  "id": "warehouse-labor-forecast",
+  "name": "Warehouse Labor Forecast",
+  "domain": null,
+  "audience": "small 3PL and wholesale warehouses",
+  "topic": "warehouse labor planning and workload forecasting",
+  "products": [
+    {
+      "id": "warehouse-labor-forecast",
+      "name": "Warehouse Labor Forecast",
+      "product": "Forecasts labor by receiving, putaway, pick, pack, projects, cutoff, SKU profile, and backlog rather than order count alone.",
+      "productUrl": "",
+      "audience": "small 3PL and wholesale warehouses",
+      "problem": "Simple volume forecasts miss workload mix, causing overtime, late orders, or excess scheduled labor.",
+      "valueProposition": "Produces a shift-level staffing range and explains which incoming workload drives it.",
+      "topic": "warehouse labor planning and workload forecasting",
+      "monetization": "$299-$1,200/month by facilities and headcount",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: warehouse labor forecasting software; warehouse staffing calculator; 3PL labor planning tool; warehouse labor planning and workload forecasting software; warehouse labor planning and workload forecasting calculator; warehouse labor planning and workload forecasting pricing",
+      "seoThesis": "A narrow site for small 3PL and wholesale warehouses can connect commercial pages, calculators, comparisons, and implementation guides around warehouse labor planning and workload forecasting to the same measurable capacity outcome.",
+      "searchQueries": [
+        "warehouse labor forecasting software",
+        "warehouse staffing calculator",
+        "3PL labor planning tool",
+        "warehouse labor planning and workload forecasting software",
+        "warehouse labor planning and workload forecasting calculator",
+        "warehouse labor planning and workload forecasting pricing"
+      ],
+      "buyer": "warehouse manager or operations director",
+      "economicDriver": "capacity",
+      "profitRationale": "Labor is a major recurring cost, forecasts are used weekly or daily, and model accuracy improves with history.",
+      "primaryRisk": "WMS data and late customer forecasts limit accuracy; labor decisions remain manager-approved.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 10,
+        "monetizationExpansion": 9,
+        "searchDemand": 8,
+        "commercialIntent": 9,
+        "contentDepth": 9,
+        "serpWinnability": 7,
+        "buildSupportFeasibility": 6
+      },
+      "score": 84,
+      "probeArticleCount": 4,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 4,
+  "product": "Forecasts labor by receiving, putaway, pick, pack, projects, cutoff, SKU profile, and backlog rather than order count alone.",
+  "productUrl": "",
+  "valueProposition": "Produces a shift-level staffing range and explains which incoming workload drives it.",
+  "articleCount": 4,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "warehouse-labor-forecast"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

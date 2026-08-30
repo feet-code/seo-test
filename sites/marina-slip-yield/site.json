@@ -1,0 +1,70 @@
+{
+  "id": "marina-slip-yield",
+  "name": "Marina Slip Yield",
+  "domain": null,
+  "audience": "independent marinas and boat-storage operators",
+  "topic": "marina slip pricing and occupancy optimization",
+  "products": [
+    {
+      "id": "marina-slip-yield",
+      "name": "Marina Slip Yield",
+      "product": "Optimizes slip and storage pricing from dimensions, utilities, season, waitlist, vacancy, services, and customer tenure.",
+      "productUrl": "",
+      "audience": "independent marinas and boat-storage operators",
+      "problem": "Scarce waterfront capacity is renewed with legacy prices that ignore waitlist demand and service cost.",
+      "valueProposition": "Models renewal, transfer, and new-customer rate actions without losing sight of occupancy and customer risk.",
+      "topic": "marina slip pricing and occupancy optimization",
+      "monetization": "$149-$599/month by locations and slips",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: marina slip pricing software; boat slip rent calculator; marina occupancy management analytics; marina slip pricing and occupancy optimization software; marina slip pricing and occupancy optimization calculator; marina slip pricing and occupancy optimization pricing",
+      "seoThesis": "A narrow site for independent marinas and boat-storage operators can connect commercial pages, calculators, comparisons, and implementation guides around marina slip pricing and occupancy optimization to the same measurable capacity outcome.",
+      "searchQueries": [
+        "marina slip pricing software",
+        "boat slip rent calculator",
+        "marina occupancy management analytics",
+        "marina slip pricing and occupancy optimization software",
+        "marina slip pricing and occupancy optimization calculator",
+        "marina slip pricing and occupancy optimization pricing"
+      ],
+      "buyer": "marina owner or general manager",
+      "economicDriver": "capacity",
+      "profitRationale": "Fixed scarce capacity and recurring annual contracts create strong economics and low churn once data is loaded.",
+      "primaryRisk": "The niche is smaller and seasonality varies sharply by geography.",
+      "scoreBreakdown": {
+        "economicPain": 8,
+        "buyerBudget": 8,
+        "recurrenceRetention": 8,
+        "monetizationExpansion": 7,
+        "searchDemand": 7,
+        "commercialIntent": 8,
+        "contentDepth": 8,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 8
+      },
+      "score": 78,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Optimizes slip and storage pricing from dimensions, utilities, season, waitlist, vacancy, services, and customer tenure.",
+  "productUrl": "",
+  "valueProposition": "Models renewal, transfer, and new-customer rate actions without losing sight of occupancy and customer risk.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "marina-slip-yield"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

@@ -1,0 +1,70 @@
+{
+  "id": "freight-accessorial-recovery",
+  "name": "Freight Accessorial Recovery",
+  "domain": null,
+  "audience": "small freight brokers and regional 3PLs",
+  "topic": "freight accessorial charge recovery and unbilled revenue",
+  "products": [
+    {
+      "id": "freight-accessorial-recovery",
+      "name": "Freight Accessorial Recovery",
+      "product": "Detects detention, layover, TONU, lumper, and redelivery charges that have evidence but were never billed.",
+      "productUrl": "",
+      "audience": "small freight brokers and regional 3PLs",
+      "problem": "Accessorial revenue is lost when events, documents, carrier invoices, and customer billing live in different systems.",
+      "valueProposition": "Matches operational evidence to billable rules and produces a reviewable recovery queue before invoicing closes.",
+      "topic": "freight accessorial charge recovery and unbilled revenue",
+      "monetization": "$399-$1,499/month by shipment volume, with an optional percentage of recovered revenue",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: freight accessorial audit software; unbilled detention charge recovery; 3PL accessorial billing automation; freight accessorial charge recovery and unbilled revenue software; freight accessorial charge recovery and unbilled revenue calculator; freight accessorial charge recovery and unbilled revenue pricing",
+      "seoThesis": "A narrow site for small freight brokers and regional 3PLs can connect commercial pages, calculators, comparisons, and implementation guides around freight accessorial charge recovery and unbilled revenue to the same measurable revenue-capture outcome.",
+      "searchQueries": [
+        "freight accessorial audit software",
+        "unbilled detention charge recovery",
+        "3PL accessorial billing automation",
+        "freight accessorial charge recovery and unbilled revenue software",
+        "freight accessorial charge recovery and unbilled revenue calculator",
+        "freight accessorial charge recovery and unbilled revenue pricing"
+      ],
+      "buyer": "brokerage owner or operations director",
+      "economicDriver": "revenue-capture",
+      "profitRationale": "One recovered charge can cover the subscription, while repeated shipment volume creates retention and usage expansion.",
+      "primaryRisk": "TMS and document integrations vary, and contract rules must remain human-reviewable.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 9,
+        "searchDemand": 7,
+        "commercialIntent": 8,
+        "contentDepth": 8,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 7
+      },
+      "score": 82,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Detects detention, layover, TONU, lumper, and redelivery charges that have evidence but were never billed.",
+  "productUrl": "",
+  "valueProposition": "Matches operational evidence to billable rules and produces a reviewable recovery queue before invoicing closes.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "freight-accessorial-recovery"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

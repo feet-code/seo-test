@@ -1,0 +1,70 @@
+{
+  "id": "commercial-paving-bid-risk",
+  "name": "Paving Bid Risk",
+  "domain": null,
+  "audience": "small asphalt paving and maintenance contractors",
+  "topic": "asphalt paving bid cost and profit calculator",
+  "products": [
+    {
+      "id": "commercial-paving-bid-risk",
+      "name": "Paving Bid Risk",
+      "product": "Models bid margin from tonnage, plant distance, trucking, crew production, mobilization, traffic control, weather, and material escalation.",
+      "productUrl": "",
+      "audience": "small asphalt paving and maintenance contractors",
+      "problem": "Per-ton pricing hides haul, mobilization, and production risk until the crew and trucks are already committed.",
+      "valueProposition": "Creates a defendable bid range and identifies the assumptions requiring supplier or site confirmation.",
+      "topic": "asphalt paving bid cost and profit calculator",
+      "monetization": "$79-$399/month by estimators",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: asphalt paving bid calculator; paving job cost estimator; asphalt contractor profit calculator; asphalt paving bid cost and profit calculator software; asphalt paving bid cost and profit calculator calculator; asphalt paving bid cost and profit calculator pricing",
+      "seoThesis": "A narrow site for small asphalt paving and maintenance contractors can connect commercial pages, calculators, comparisons, and implementation guides around asphalt paving bid cost and profit calculator to the same measurable risk outcome.",
+      "searchQueries": [
+        "asphalt paving bid calculator",
+        "paving job cost estimator",
+        "asphalt contractor profit calculator",
+        "asphalt paving bid cost and profit calculator software",
+        "asphalt paving bid cost and profit calculator calculator",
+        "asphalt paving bid cost and profit calculator pricing"
+      ],
+      "buyer": "owner or estimator",
+      "economicDriver": "risk",
+      "profitRationale": "Each bid is valuable, search intent is direct, and the standalone calculator can validate demand before integrations.",
+      "primaryRisk": "Local material and trucking rates change often, and field complexity prevents perfect estimates.",
+      "scoreBreakdown": {
+        "economicPain": 8,
+        "buyerBudget": 7,
+        "recurrenceRetention": 8,
+        "monetizationExpansion": 7,
+        "searchDemand": 10,
+        "commercialIntent": 10,
+        "contentDepth": 9,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 9
+      },
+      "score": 84,
+      "probeArticleCount": 4,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 4,
+  "product": "Models bid margin from tonnage, plant distance, trucking, crew production, mobilization, traffic control, weather, and material escalation.",
+  "productUrl": "",
+  "valueProposition": "Creates a defendable bid range and identifies the assumptions requiring supplier or site confirmation.",
+  "articleCount": 4,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "commercial-paving-bid-risk"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

@@ -1,0 +1,70 @@
+{
+  "id": "food-distributor-spoilage",
+  "name": "Food Distributor Spoilage Optimizer",
+  "domain": null,
+  "audience": "small refrigerated and specialty food distributors",
+  "topic": "food distribution spoilage and short-dated inventory optimization",
+  "products": [
+    {
+      "id": "food-distributor-spoilage",
+      "name": "Food Distributor Spoilage Optimizer",
+      "product": "Recommends transfer, promotion, markdown, or purchasing actions from shelf life, demand, margin, and customer commitments.",
+      "productUrl": "",
+      "audience": "small refrigerated and specialty food distributors",
+      "problem": "Short-dated inventory loses value while purchasing, sales, and warehouse teams see different signals.",
+      "valueProposition": "Prioritizes explainable actions that preserve contribution margin before product expires.",
+      "topic": "food distribution spoilage and short-dated inventory optimization",
+      "monetization": "$500-$2,000/month by warehouse and SKU volume",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: food distributor spoilage software; short dated inventory optimization; perishable inventory markdown tool; food distribution spoilage and short-dated inventory optimization software; food distribution spoilage and short-dated inventory optimization calculator; food distribution spoilage and short-dated inventory optimization pricing",
+      "seoThesis": "A narrow site for small refrigerated and specialty food distributors can connect commercial pages, calculators, comparisons, and implementation guides around food distribution spoilage and short-dated inventory optimization to the same measurable margin outcome.",
+      "searchQueries": [
+        "food distributor spoilage software",
+        "short dated inventory optimization",
+        "perishable inventory markdown tool",
+        "food distribution spoilage and short-dated inventory optimization software",
+        "food distribution spoilage and short-dated inventory optimization calculator",
+        "food distribution spoilage and short-dated inventory optimization pricing"
+      ],
+      "buyer": "operations director, purchaser, or CFO",
+      "economicDriver": "margin",
+      "profitRationale": "Avoided spoilage is measurable, the problem repeats daily, and data creates a defensible forecasting asset.",
+      "primaryRisk": "Accurate lot-level shelf-life and demand data may be incomplete.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 9,
+        "recurrenceRetention": 10,
+        "monetizationExpansion": 9,
+        "searchDemand": 7,
+        "commercialIntent": 8,
+        "contentDepth": 8,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 5
+      },
+      "score": 82,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Recommends transfer, promotion, markdown, or purchasing actions from shelf life, demand, margin, and customer commitments.",
+  "productUrl": "",
+  "valueProposition": "Prioritizes explainable actions that preserve contribution margin before product expires.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "food-distributor-spoilage"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

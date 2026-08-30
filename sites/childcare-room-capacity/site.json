@@ -1,0 +1,70 @@
+{
+  "id": "childcare-room-capacity",
+  "name": "Childcare Room Capacity",
+  "domain": null,
+  "audience": "independent childcare centers and small groups",
+  "topic": "childcare enrollment capacity and room profitability",
+  "products": [
+    {
+      "id": "childcare-room-capacity",
+      "name": "Childcare Room Capacity",
+      "product": "Models enrollment offers, waitlist movement, room transitions, staffing cost, schedule patterns, and tuition against licensed capacity.",
+      "productUrl": "",
+      "audience": "independent childcare centers and small groups",
+      "problem": "A nominally full center can leave profitable room-days unused because age transitions and attendance schedules do not align.",
+      "valueProposition": "Forecasts capacity and tuition contribution while keeping licensing and staffing decisions under human control.",
+      "topic": "childcare enrollment capacity and room profitability",
+      "monetization": "$199-$699/month by centers and enrolled children",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: childcare capacity planning software; daycare enrollment forecasting; daycare profitability calculator; childcare enrollment capacity and room profitability software; childcare enrollment capacity and room profitability calculator; childcare enrollment capacity and room profitability pricing",
+      "seoThesis": "A narrow site for independent childcare centers and small groups can connect commercial pages, calculators, comparisons, and implementation guides around childcare enrollment capacity and room profitability to the same measurable capacity outcome.",
+      "searchQueries": [
+        "childcare capacity planning software",
+        "daycare enrollment forecasting",
+        "daycare profitability calculator",
+        "childcare enrollment capacity and room profitability software",
+        "childcare enrollment capacity and room profitability calculator",
+        "childcare enrollment capacity and room profitability pricing"
+      ],
+      "buyer": "center owner or operations director",
+      "economicDriver": "capacity",
+      "profitRationale": "Enrollment planning is recurring and economically material, with strong retention once room and waitlist data are established.",
+      "primaryRisk": "Regulations vary and child data is sensitive; the tool must avoid compliance determinations and minimize personal data.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 10,
+        "monetizationExpansion": 9,
+        "searchDemand": 8,
+        "commercialIntent": 9,
+        "contentDepth": 9,
+        "serpWinnability": 7,
+        "buildSupportFeasibility": 7
+      },
+      "score": 85,
+      "probeArticleCount": 4,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 4,
+  "product": "Models enrollment offers, waitlist movement, room transitions, staffing cost, schedule patterns, and tuition against licensed capacity.",
+  "productUrl": "",
+  "valueProposition": "Forecasts capacity and tuition contribution while keeping licensing and staffing decisions under human control.",
+  "articleCount": 4,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "childcare-room-capacity"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

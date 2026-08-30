@@ -1,0 +1,70 @@
+{
+  "id": "print-shop-quote-learning",
+  "name": "Print Shop Quote Learning",
+  "domain": null,
+  "audience": "independent commercial print and sign shops",
+  "topic": "print shop estimating accuracy and job profitability",
+  "products": [
+    {
+      "id": "print-shop-quote-learning",
+      "name": "Print Shop Quote Learning",
+      "product": "Compares quote assumptions with actual setup, run speed, substrate waste, finishing, outsourcing, shipping, and rework.",
+      "productUrl": "",
+      "audience": "independent commercial print and sign shops",
+      "problem": "Shops repeat underpriced work because actual production performance never updates the next estimate.",
+      "valueProposition": "Explains quote misses and recommends evidence-based cost ranges for similar future jobs.",
+      "topic": "print shop estimating accuracy and job profitability",
+      "monetization": "$99-$499/month by devices or quotes",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: print shop estimating software; printing job cost estimate vs actual; sign shop profitability calculator; print shop estimating accuracy and job profitability software; print shop estimating accuracy and job profitability calculator; print shop estimating accuracy and job profitability pricing",
+      "seoThesis": "A narrow site for independent commercial print and sign shops can connect commercial pages, calculators, comparisons, and implementation guides around print shop estimating accuracy and job profitability to the same measurable margin outcome.",
+      "searchQueries": [
+        "print shop estimating software",
+        "printing job cost estimate vs actual",
+        "sign shop profitability calculator",
+        "print shop estimating accuracy and job profitability software",
+        "print shop estimating accuracy and job profitability calculator",
+        "print shop estimating accuracy and job profitability pricing"
+      ],
+      "buyer": "owner or estimator",
+      "economicDriver": "margin",
+      "profitRationale": "Every quote affects margin, job data repeats, and print-specific setup and finishing logic differentiate the tool.",
+      "primaryRisk": "MIS exports and product variety make job similarity difficult.",
+      "scoreBreakdown": {
+        "economicPain": 8,
+        "buyerBudget": 7,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 8,
+        "searchDemand": 8,
+        "commercialIntent": 8,
+        "contentDepth": 8,
+        "serpWinnability": 7,
+        "buildSupportFeasibility": 7
+      },
+      "score": 78,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Compares quote assumptions with actual setup, run speed, substrate waste, finishing, outsourcing, shipping, and rework.",
+  "productUrl": "",
+  "valueProposition": "Explains quote misses and recommends evidence-based cost ranges for similar future jobs.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "print-shop-quote-learning"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

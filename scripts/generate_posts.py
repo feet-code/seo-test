@@ -18,12 +18,12 @@ ROOT = Path(__file__).resolve().parents[1]
 SITES = ROOT / "sites"
 STATE = ROOT / ".deploy" / "state"
 DEFAULT_MODELS = [
-    "gemini-3.5-flash-lite",
-    "gemini-3.1-flash-lite",
-    "gemini-2.5-flash-lite",
+    "gemini-3.7-flash",
+    "gemini-3.6-flash",
+    "gemini-3.5-flash",
     "gemini-2.5-flash",
 ]
-GENERATION_VERSION = 2
+GENERATION_VERSION = 3
 
 
 class GeminiExhausted(Exception):
@@ -126,7 +126,9 @@ SEO ranking thesis: {product.get('seoThesis', '')}
 Validated query hypotheses: {json.dumps(product.get('searchQueries', []), ensure_ascii=False)}
 Complementary product pages: {json.dumps(peers, ensure_ascii=False)}
 
-The posts are demand probes. Use the query hypotheses as intent evidence, not as phrases to stuff. Cover distinct
+The posts are demand probes. Use Google Search grounding to inspect what current results already cover, then
+answer concrete evaluation or implementation questions those results leave unresolved. Do not copy or closely
+paraphrase a result. Use the query hypotheses as intent evidence, not as phrases to stuff. Cover distinct
 high-intent searches across templates, calculators/checklists, problem diagnosis, comparisons/alternatives,
 implementation instructions, and purchase-ready software terms. Every post needs a different primary intent
 and must naturally connect that intent to the product's measurable economic outcome. Each post must be genuinely
@@ -134,7 +136,8 @@ useful and specific enough to rank independently. Where contextually helpful, in
 one natural Markdown link to a complementary product page. Do not force cross-links. Do not invent statistics,
 customers, quotes, laws, product capabilities, or keyword-volume numbers. Do not keyword-stuff or write generic
 filler. Do not include photos, image Markdown, HTML image tags, or image placeholders. Return ONLY a JSON array
-with slug, title, excerpt, and content (Markdown); no YAML frontmatter.
+with slug, title, excerpt, and content (Markdown); no YAML frontmatter. Never use Markdown tables and never emit
+the pipe character. Present comparisons as short headings with ordinary bullets so they render readably.
 
 Match this structural example: {example_format()}"""
 
@@ -177,12 +180,15 @@ def call_model(model: str, prompt: str) -> str:
     if not key:
         raise GeminiExhausted("GEMINI_API_KEY is not set")
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+    generation_config = (
+        {"responseMimeType": "application/json"}
+        if model.startswith("gemini-3")
+        else {"temperature": 0.75}
+    )
     body = {
         "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {
-            "temperature": 0.75,
-            "responseMimeType": "application/json",
-        },
+        "tools": [{"google_search": {}}],
+        "generationConfig": generation_config,
     }
     request = urllib.request.Request(
         url,
@@ -212,8 +218,10 @@ def call_gemini(
                 attempts.append(
                     {"model": model, "attempt": attempt + 1, "status": exc.code}
                 )
-                if exc.code in {401, 403}:
+                if exc.code == 401:
                     raise SystemExit(f"Gemini authentication failed: HTTP {exc.code}") from exc
+                if exc.code == 403:
+                    break  # A valid free-tier key may not have access to every model.
                 if exc.code in {400, 404, 422}:
                     break  # Unsupported model/schema: advance to the next model.
                 if exc.code not in {408, 409, 425, 429, 500, 502, 503, 504}:
@@ -274,6 +282,40 @@ def strip_images(content: str) -> str:
     return _HTML_IMAGE.sub("", content).strip()
 
 
+def strip_pipe_formatting(content: str) -> str:
+    """Convert accidental Markdown tables to readable lists and remove all pipes."""
+    lines = content.splitlines()
+    output: list[str] = []
+    index = 0
+    separator = re.compile(r"^:?-{3,}:?$")
+    while index < len(lines):
+        if lines[index].count("|") < 2:
+            output.append(lines[index].replace("|", " — "))
+            index += 1
+            continue
+
+        block: list[list[str]] = []
+        while index < len(lines) and lines[index].count("|") >= 2:
+            block.append(
+                [cell.strip() for cell in lines[index].strip().strip("|").split("|")]
+            )
+            index += 1
+
+        if len(block) >= 2 and all(separator.fullmatch(cell or "---") for cell in block[1]):
+            headers = block[0]
+            for row in block[2:]:
+                if not any(row):
+                    continue
+                label = row[0] if row else "Option"
+                output.append(f"- **{label}**")
+                for header, value in zip(headers[1:], row[1:]):
+                    if value:
+                        output.append(f"  - **{header}:** {value}")
+        else:
+            output.extend(" — ".join(cell for cell in row if cell) for row in block)
+    return "\n".join(output).replace("|", " — ").strip()
+
+
 def existing_product_posts(directory: Path, product_id: str) -> list[Path]:
     result = []
     marker = f"productId: {json.dumps(product_id, ensure_ascii=False)}"
@@ -319,7 +361,9 @@ def write_product_posts(
     for index, article in enumerate(articles):
         title = str(article.get("title", "")).strip()
         excerpt = str(article.get("excerpt", "")).strip()
-        content = strip_images(str(article.get("content", "")).strip())
+        content = strip_pipe_formatting(
+            strip_images(str(article.get("content", "")).strip())
+        )
         article_slug = safe_slug(str(article.get("slug", title)))
         product_prefix = product_id[:48].rstrip("-")
         article_limit = max(24, 116 - len(product_prefix))

@@ -1,0 +1,70 @@
+{
+  "id": "fuel-delivery-margin",
+  "name": "Fuel Delivery Margin",
+  "domain": null,
+  "audience": "regional heating-oil and commercial fuel distributors",
+  "topic": "fuel delivery pricing and order profitability",
+  "products": [
+    {
+      "id": "fuel-delivery-margin",
+      "name": "Fuel Delivery Margin",
+      "product": "Calculates order contribution from rack cost, taxes, delivery distance, volume, payment cost, price commitment, and route capacity.",
+      "productUrl": "",
+      "audience": "regional heating-oil and commercial fuel distributors",
+      "problem": "Commodity-price movement and delivery cost cause small orders or stale quotes to lose money.",
+      "valueProposition": "Sets an explainable order floor and flags booked deliveries whose economics changed before dispatch.",
+      "topic": "fuel delivery pricing and order profitability",
+      "monetization": "$499-$1,999/month by trucks and order volume",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: fuel delivery pricing software; heating oil delivery profit calculator; fuel distributor margin software; fuel delivery pricing and order profitability software; fuel delivery pricing and order profitability calculator; fuel delivery pricing and order profitability pricing",
+      "seoThesis": "A narrow site for regional heating-oil and commercial fuel distributors can connect commercial pages, calculators, comparisons, and implementation guides around fuel delivery pricing and order profitability to the same measurable margin outcome.",
+      "searchQueries": [
+        "fuel delivery pricing software",
+        "heating oil delivery profit calculator",
+        "fuel distributor margin software",
+        "fuel delivery pricing and order profitability software",
+        "fuel delivery pricing and order profitability calculator",
+        "fuel delivery pricing and order profitability pricing"
+      ],
+      "buyer": "owner, pricing manager, or dispatcher",
+      "economicDriver": "margin",
+      "profitRationale": "The decision is frequent and financially material, with expansion into account and route profitability.",
+      "primaryRisk": "Tax treatment and pricing feeds vary; the tool must avoid commodity trading or automated customer pricing.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 9,
+        "recurrenceRetention": 10,
+        "monetizationExpansion": 9,
+        "searchDemand": 7,
+        "commercialIntent": 8,
+        "contentDepth": 8,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 6
+      },
+      "score": 83,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Calculates order contribution from rack cost, taxes, delivery distance, volume, payment cost, price commitment, and route capacity.",
+  "productUrl": "",
+  "valueProposition": "Sets an explainable order floor and flags booked deliveries whose economics changed before dispatch.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "fuel-delivery-margin"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

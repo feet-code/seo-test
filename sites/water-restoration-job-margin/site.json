@@ -1,0 +1,70 @@
+{
+  "id": "water-restoration-job-margin",
+  "name": "Water Restoration Job Margin",
+  "domain": null,
+  "audience": "independent water and property restoration contractors",
+  "topic": "water restoration job costing and equipment billing",
+  "products": [
+    {
+      "id": "water-restoration-job-margin",
+      "name": "Water Restoration Job Margin",
+      "product": "Tracks labor, equipment-days, subcontractors, materials, documentation, and approved scope against job-level expected margin.",
+      "productUrl": "",
+      "audience": "independent water and property restoration contractors",
+      "problem": "Long-running mitigation jobs accumulate unrecovered equipment and labor while billing evidence falls behind operations.",
+      "valueProposition": "Flags documentation and scope gaps early enough to protect collectible revenue and crew capacity.",
+      "topic": "water restoration job costing and equipment billing",
+      "monetization": "$299-$999/month by active jobs and branches",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: restoration job costing software; water mitigation equipment billing; restoration company profitability; water restoration job costing and equipment billing software; water restoration job costing and equipment billing calculator; water restoration job costing and equipment billing pricing",
+      "seoThesis": "A narrow site for independent water and property restoration contractors can connect commercial pages, calculators, comparisons, and implementation guides around water restoration job costing and equipment billing to the same measurable revenue-capture outcome.",
+      "searchQueries": [
+        "restoration job costing software",
+        "water mitigation equipment billing",
+        "restoration company profitability",
+        "water restoration job costing and equipment billing software",
+        "water restoration job costing and equipment billing calculator",
+        "water restoration job costing and equipment billing pricing"
+      ],
+      "buyer": "owner, estimator, or operations manager",
+      "economicDriver": "revenue-capture",
+      "profitRationale": "High-value jobs and direct revenue recovery support strong pricing, retention, and performance-based expansion.",
+      "primaryRisk": "Carrier and estimating-platform processes are complex; the tool must organize evidence without making coverage claims.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 9,
+        "searchDemand": 8,
+        "commercialIntent": 9,
+        "contentDepth": 8,
+        "serpWinnability": 7,
+        "buildSupportFeasibility": 7
+      },
+      "score": 83,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Tracks labor, equipment-days, subcontractors, materials, documentation, and approved scope against job-level expected margin.",
+  "productUrl": "",
+  "valueProposition": "Flags documentation and scope gaps early enough to protect collectible revenue and crew capacity.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "water-restoration-job-margin"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

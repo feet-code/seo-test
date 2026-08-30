@@ -1,0 +1,70 @@
+{
+  "id": "pet-boarding-capacity-yield",
+  "name": "Pet Boarding Capacity Yield",
+  "domain": null,
+  "audience": "independent pet boarding and daycare facilities",
+  "topic": "pet boarding capacity planning and pricing",
+  "products": [
+    {
+      "id": "pet-boarding-capacity-yield",
+      "name": "Pet Boarding Capacity Yield",
+      "product": "Forecasts enclosure, playgroup, staffing, and service capacity to price peak stays and accept profitable bookings safely.",
+      "productUrl": "",
+      "audience": "independent pet boarding and daycare facilities",
+      "problem": "Nominal kennel availability can exceed safe operational capacity, while peak dates and add-ons remain underpriced.",
+      "valueProposition": "Shows the true sellable capacity and package price for each date, pet profile, and staffing plan.",
+      "topic": "pet boarding capacity planning and pricing",
+      "monetization": "$99-$399/month by facility",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: pet boarding pricing software; kennel capacity planning; dog daycare staffing calculator; pet boarding capacity planning and pricing software; pet boarding capacity planning and pricing calculator; pet boarding capacity planning and pricing pricing",
+      "seoThesis": "A narrow site for independent pet boarding and daycare facilities can connect commercial pages, calculators, comparisons, and implementation guides around pet boarding capacity planning and pricing to the same measurable capacity outcome.",
+      "searchQueries": [
+        "pet boarding pricing software",
+        "kennel capacity planning",
+        "dog daycare staffing calculator",
+        "pet boarding capacity planning and pricing software",
+        "pet boarding capacity planning and pricing calculator",
+        "pet boarding capacity planning and pricing pricing"
+      ],
+      "buyer": "facility owner or general manager",
+      "economicDriver": "capacity",
+      "profitRationale": "Peak inventory is perishable, reservations recur, and facilities can measure incremental revenue and overtime avoided.",
+      "primaryRisk": "Safety constraints and existing booking software integrations require conservative defaults.",
+      "scoreBreakdown": {
+        "economicPain": 8,
+        "buyerBudget": 7,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 8,
+        "searchDemand": 8,
+        "commercialIntent": 8,
+        "contentDepth": 8,
+        "serpWinnability": 7,
+        "buildSupportFeasibility": 8
+      },
+      "score": 79,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Forecasts enclosure, playgroup, staffing, and service capacity to price peak stays and accept profitable bookings safely.",
+  "productUrl": "",
+  "valueProposition": "Shows the true sellable capacity and package price for each date, pet profile, and staffing plan.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "pet-boarding-capacity-yield"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

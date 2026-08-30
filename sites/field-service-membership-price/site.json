@@ -1,0 +1,70 @@
+{
+  "id": "field-service-membership-price",
+  "name": "Service Membership Price",
+  "domain": null,
+  "audience": "HVAC, plumbing, and electrical service companies",
+  "topic": "home service membership plan pricing and profitability",
+  "products": [
+    {
+      "id": "field-service-membership-price",
+      "name": "Service Membership Price",
+      "product": "Models membership price from visit labor, discounts, utilization, renewal, dispatch priority, add-on conversion, and churn.",
+      "productUrl": "",
+      "audience": "HVAC, plumbing, and electrical service companies",
+      "problem": "Membership plans are copied from competitors without knowing whether included service and discounts produce profitable lifetime value.",
+      "valueProposition": "Shows a sustainable price and benefit structure under realistic renewal and service-use scenarios.",
+      "topic": "home service membership plan pricing and profitability",
+      "monetization": "$79-$399/month by members or locations",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: HVAC membership pricing calculator; service agreement profitability; home service membership software; home service membership plan pricing and profitability software; home service membership plan pricing and profitability calculator; home service membership plan pricing and profitability pricing",
+      "seoThesis": "A narrow site for HVAC, plumbing, and electrical service companies can connect commercial pages, calculators, comparisons, and implementation guides around home service membership plan pricing and profitability to the same measurable margin outcome.",
+      "searchQueries": [
+        "HVAC membership pricing calculator",
+        "service agreement profitability",
+        "home service membership software",
+        "home service membership plan pricing and profitability software",
+        "home service membership plan pricing and profitability calculator",
+        "home service membership plan pricing and profitability pricing"
+      ],
+      "buyer": "owner, CFO, or service manager",
+      "economicDriver": "margin",
+      "profitRationale": "Memberships are strategic recurring revenue and the tool can expand into renewal and capacity analytics.",
+      "primaryRisk": "Lifetime assumptions are uncertain and field-service suites may add basic membership reports.",
+      "scoreBreakdown": {
+        "economicPain": 8,
+        "buyerBudget": 8,
+        "recurrenceRetention": 8,
+        "monetizationExpansion": 8,
+        "searchDemand": 9,
+        "commercialIntent": 9,
+        "contentDepth": 8,
+        "serpWinnability": 7,
+        "buildSupportFeasibility": 9
+      },
+      "score": 82,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Models membership price from visit labor, discounts, utilization, renewal, dispatch priority, add-on conversion, and churn.",
+  "productUrl": "",
+  "valueProposition": "Shows a sustainable price and benefit structure under realistic renewal and service-use scenarios.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "field-service-membership-price"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

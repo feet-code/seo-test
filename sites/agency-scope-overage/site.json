@@ -1,0 +1,70 @@
+{
+  "id": "agency-scope-overage",
+  "name": "Agency Scope Overage Recovery",
+  "domain": null,
+  "audience": "small creative, marketing, and software agencies",
+  "topic": "agency scope overage and change fee recovery",
+  "products": [
+    {
+      "id": "agency-scope-overage",
+      "name": "Agency Scope Overage Recovery",
+      "product": "Detects deliverable and revision patterns that exceed contracted scope and prepares a client-ready impact and fee decision.",
+      "productUrl": "",
+      "audience": "small creative, marketing, and software agencies",
+      "problem": "Teams absorb incremental requests because scope evidence, remaining fee, and client conversation are disconnected.",
+      "valueProposition": "Turns ambiguous overage into a timely approved fee, tradeoff, or explicit write-off with measured recovered margin.",
+      "topic": "agency scope overage and change fee recovery",
+      "monetization": "$79-$399/month by active clients or projects",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: agency scope creep software; bill out of scope work; agency change request fee tracking; agency scope overage and change fee recovery software; agency scope overage and change fee recovery calculator; agency scope overage and change fee recovery pricing",
+      "seoThesis": "A narrow site for small creative, marketing, and software agencies can connect commercial pages, calculators, comparisons, and implementation guides around agency scope overage and change fee recovery to the same measurable revenue-capture outcome.",
+      "searchQueries": [
+        "agency scope creep software",
+        "bill out of scope work",
+        "agency change request fee tracking",
+        "agency scope overage and change fee recovery software",
+        "agency scope overage and change fee recovery calculator",
+        "agency scope overage and change fee recovery pricing"
+      ],
+      "buyer": "agency owner, account director, or project lead",
+      "economicDriver": "revenue-capture",
+      "profitRationale": "Recovered fees are measurable, the problem recurs across clients, and the product can layer onto existing project tools.",
+      "primaryRisk": "Automatic scope classification can damage client trust, so every recommendation needs human review.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 7,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 8,
+        "searchDemand": 9,
+        "commercialIntent": 10,
+        "contentDepth": 9,
+        "serpWinnability": 7,
+        "buildSupportFeasibility": 8
+      },
+      "score": 84,
+      "probeArticleCount": 4,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 4,
+  "product": "Detects deliverable and revision patterns that exceed contracted scope and prepares a client-ready impact and fee decision.",
+  "productUrl": "",
+  "valueProposition": "Turns ambiguous overage into a timely approved fee, tradeoff, or explicit write-off with measured recovered margin.",
+  "articleCount": 4,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "agency-scope-overage"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

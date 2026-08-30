@@ -1,0 +1,70 @@
+{
+  "id": "local-lead-profit-attribution",
+  "name": "Local Lead Profit Attribution",
+  "domain": null,
+  "audience": "multi-crew home-service businesses",
+  "topic": "home service lead source profitability attribution",
+  "products": [
+    {
+      "id": "local-lead-profit-attribution",
+      "name": "Local Lead Profit Attribution",
+      "product": "Connects lead source to booked work, technician capacity, job gross profit, callback, and repeat revenue instead of revenue alone.",
+      "productUrl": "",
+      "audience": "multi-crew home-service businesses",
+      "problem": "Marketing channels are judged by leads or booked revenue even when they produce low-margin jobs, poor geography, or capacity strain.",
+      "valueProposition": "Shows contribution profit by source and service so the owner can reallocate spend with evidence.",
+      "topic": "home service lead source profitability attribution",
+      "monetization": "$149-$699/month by ad spend or locations",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: home service marketing ROI software; lead source job profitability; contractor advertising profit attribution; home service lead source profitability attribution software; home service lead source profitability attribution calculator; home service lead source profitability attribution pricing",
+      "seoThesis": "A narrow site for multi-crew home-service businesses can connect commercial pages, calculators, comparisons, and implementation guides around home service lead source profitability attribution to the same measurable margin outcome.",
+      "searchQueries": [
+        "home service marketing ROI software",
+        "lead source job profitability",
+        "contractor advertising profit attribution",
+        "home service lead source profitability attribution software",
+        "home service lead source profitability attribution calculator",
+        "home service lead source profitability attribution pricing"
+      ],
+      "buyer": "owner, marketing manager, or general manager",
+      "economicDriver": "margin",
+      "profitRationale": "The product controls recurring marketing spend and can prove value through budget reallocation.",
+      "primaryRisk": "Accurate attribution across calls, forms, CRMs, and accounting requires several integrations.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 9,
+        "searchDemand": 8,
+        "commercialIntent": 9,
+        "contentDepth": 8,
+        "serpWinnability": 6,
+        "buildSupportFeasibility": 5
+      },
+      "score": 80,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Connects lead source to booked work, technician capacity, job gross profit, callback, and repeat revenue instead of revenue alone.",
+  "productUrl": "",
+  "valueProposition": "Shows contribution profit by source and service so the owner can reallocate spend with evidence.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "local-lead-profit-attribution"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

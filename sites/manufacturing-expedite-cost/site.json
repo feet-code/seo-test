@@ -1,0 +1,70 @@
+{
+  "id": "manufacturing-expedite-cost",
+  "name": "Manufacturing Expedite Cost",
+  "domain": null,
+  "audience": "small manufacturers with frequent rush orders and schedule changes",
+  "topic": "manufacturing rush order and expedite cost calculator",
+  "products": [
+    {
+      "id": "manufacturing-expedite-cost",
+      "name": "Manufacturing Expedite Cost",
+      "product": "Calculates the true cost of a rush request across overtime, setup disruption, displaced jobs, premium freight, and late-order exposure.",
+      "productUrl": "",
+      "audience": "small manufacturers with frequent rush orders and schedule changes",
+      "problem": "Rush fees are guessed even though an expedite can disrupt multiple profitable jobs and create downstream late penalties.",
+      "valueProposition": "Produces an explainable accept, price, or decline range before the schedule is changed.",
+      "topic": "manufacturing rush order and expedite cost calculator",
+      "monetization": "$149-$599/month by work centers or orders",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: rush order pricing calculator manufacturing; expedite cost calculator; manufacturing schedule disruption cost; manufacturing rush order and expedite cost calculator software; manufacturing rush order and expedite cost calculator calculator; manufacturing rush order and expedite cost calculator pricing",
+      "seoThesis": "A narrow site for small manufacturers with frequent rush orders and schedule changes can connect commercial pages, calculators, comparisons, and implementation guides around manufacturing rush order and expedite cost calculator to the same measurable margin outcome.",
+      "searchQueries": [
+        "rush order pricing calculator manufacturing",
+        "expedite cost calculator",
+        "manufacturing schedule disruption cost",
+        "manufacturing rush order and expedite cost calculator software",
+        "manufacturing rush order and expedite cost calculator calculator",
+        "manufacturing rush order and expedite cost calculator pricing"
+      ],
+      "buyer": "operations manager, estimator, or controller",
+      "economicDriver": "margin",
+      "profitRationale": "The decision is close to revenue and capacity, repeats often, and can layer onto existing ERP exports.",
+      "primaryRisk": "Displacement cost requires a feasible baseline schedule and reliable job priorities.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 8,
+        "monetizationExpansion": 8,
+        "searchDemand": 9,
+        "commercialIntent": 10,
+        "contentDepth": 8,
+        "serpWinnability": 8,
+        "buildSupportFeasibility": 7
+      },
+      "score": 84,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Calculates the true cost of a rush request across overtime, setup disruption, displaced jobs, premium freight, and late-order exposure.",
+  "productUrl": "",
+  "valueProposition": "Produces an explainable accept, price, or decline range before the schedule is changed.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "manufacturing-expedite-cost"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

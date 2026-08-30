@@ -1,0 +1,70 @@
+{
+  "id": "custom-cabinet-quote-margin",
+  "name": "Custom Cabinet Quote Margin",
+  "domain": null,
+  "audience": "independent custom cabinet and millwork shops",
+  "topic": "custom cabinet estimating and job costing",
+  "products": [
+    {
+      "id": "custom-cabinet-quote-margin",
+      "name": "Custom Cabinet Quote Margin",
+      "product": "Builds quotes from boxes, doors, finish, hardware, design, install, material yield, outsourced work, and shop capacity.",
+      "productUrl": "",
+      "audience": "independent custom cabinet and millwork shops",
+      "problem": "Complexity and finish labor are undercounted while generic per-foot pricing ignores constrained shop time.",
+      "valueProposition": "Produces a capacity-aware quote and learns labor and material factors from completed jobs.",
+      "topic": "custom cabinet estimating and job costing",
+      "monetization": "$149-$599/month by estimators and shops",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: cabinet estimating software; custom cabinet price calculator; cabinet shop job costing; custom cabinet estimating and job costing software; custom cabinet estimating and job costing calculator; custom cabinet estimating and job costing pricing",
+      "seoThesis": "A narrow site for independent custom cabinet and millwork shops can connect commercial pages, calculators, comparisons, and implementation guides around custom cabinet estimating and job costing to the same measurable margin outcome.",
+      "searchQueries": [
+        "cabinet estimating software",
+        "custom cabinet price calculator",
+        "cabinet shop job costing",
+        "custom cabinet estimating and job costing software",
+        "custom cabinet estimating and job costing calculator",
+        "custom cabinet estimating and job costing pricing"
+      ],
+      "buyer": "owner or estimator",
+      "economicDriver": "margin",
+      "profitRationale": "High-ticket custom work and explicit software/calculator searches create a strong wedge and willingness to pay.",
+      "primaryRisk": "Design-system integrations and highly custom scope can make automatic takeoff impractical.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 8,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 9,
+        "searchDemand": 9,
+        "commercialIntent": 10,
+        "contentDepth": 9,
+        "serpWinnability": 7,
+        "buildSupportFeasibility": 7
+      },
+      "score": 86,
+      "probeArticleCount": 4,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 4,
+  "product": "Builds quotes from boxes, doors, finish, hardware, design, install, material yield, outsourced work, and shop capacity.",
+  "productUrl": "",
+  "valueProposition": "Produces a capacity-aware quote and learns labor and material factors from completed jobs.",
+  "articleCount": 4,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "custom-cabinet-quote-margin"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

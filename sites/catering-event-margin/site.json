@@ -1,0 +1,70 @@
+{
+  "id": "catering-event-margin",
+  "name": "Catering Event Margin Forecaster",
+  "domain": null,
+  "audience": "independent caterers and restaurant catering teams",
+  "topic": "catering event cost and profit estimating",
+  "products": [
+    {
+      "id": "catering-event-margin",
+      "name": "Catering Event Margin Forecaster",
+      "product": "Forecasts event profit from menu yield, staffing curves, rentals, delivery, venue constraints, waste, and change requests.",
+      "productUrl": "",
+      "audience": "independent caterers and restaurant catering teams",
+      "problem": "Event quotes hide labor and execution costs until after the event, when pricing can no longer change.",
+      "valueProposition": "Shows margin before sending a proposal and reprices changes while preserving an auditable customer explanation.",
+      "topic": "catering event cost and profit estimating",
+      "monetization": "$79-$399/month by event volume",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: catering cost calculator software; catering event profit calculator; catering proposal pricing tool; catering event cost and profit estimating software; catering event cost and profit estimating calculator; catering event cost and profit estimating pricing",
+      "seoThesis": "A narrow site for independent caterers and restaurant catering teams can connect commercial pages, calculators, comparisons, and implementation guides around catering event cost and profit estimating to the same measurable margin outcome.",
+      "searchQueries": [
+        "catering cost calculator software",
+        "catering event profit calculator",
+        "catering proposal pricing tool",
+        "catering event cost and profit estimating software",
+        "catering event cost and profit estimating calculator",
+        "catering event cost and profit estimating pricing"
+      ],
+      "buyer": "owner, catering director, or estimator",
+      "economicDriver": "margin",
+      "profitRationale": "Every accepted event has measurable economics and repeat quoting creates recurring use.",
+      "primaryRisk": "Recipe yields and labor plans require setup, while smaller caterers may have limited budgets.",
+      "scoreBreakdown": {
+        "economicPain": 8,
+        "buyerBudget": 7,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 8,
+        "searchDemand": 9,
+        "commercialIntent": 9,
+        "contentDepth": 9,
+        "serpWinnability": 7,
+        "buildSupportFeasibility": 8
+      },
+      "score": 82,
+      "probeArticleCount": 4,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 4,
+  "product": "Forecasts event profit from menu yield, staffing curves, rentals, delivery, venue constraints, waste, and change requests.",
+  "productUrl": "",
+  "valueProposition": "Shows margin before sending a proposal and reprices changes while preserving an auditable customer explanation.",
+  "articleCount": 4,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "catering-event-margin"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

@@ -189,6 +189,14 @@ class PortfolioTests(unittest.TestCase):
         self.assertEqual(score, 80)
         self.assertEqual(sum(ideas.PROFIT_SCORE_WEIGHTS.values()), 100)
 
+    def test_probe_count_follows_reviewed_content_depth_without_a_fixed_quota(self) -> None:
+        ideas = load_script("ideas")
+
+        self.assertEqual(ideas._recommended_probe_count({"contentDepth": 7}), 2)
+        self.assertEqual(ideas._recommended_probe_count({"contentDepth": 8}), 3)
+        self.assertEqual(ideas._recommended_probe_count({"contentDepth": 9}), 4)
+        self.assertEqual(ideas._recommended_probe_count({"contentDepth": 10}), 5)
+
     def test_grounded_json_mode_is_compatible_with_each_model_generation(self) -> None:
         ideas = load_script("ideas")
 

@@ -1,0 +1,70 @@
+{
+  "id": "msp-agreement-margin",
+  "name": "MSP Agreement Margin",
+  "domain": null,
+  "audience": "managed service providers with recurring client agreements",
+  "topic": "MSP contract profitability and agreement margin analysis",
+  "products": [
+    {
+      "id": "msp-agreement-margin",
+      "name": "MSP Agreement Margin",
+      "product": "Combines contract revenue, technician time, cloud licenses, vendor costs, and ticket load to expose account-level margin.",
+      "productUrl": "",
+      "audience": "managed service providers with recurring client agreements",
+      "problem": "Unprofitable managed-service agreements remain hidden because labor and license consumption are separated from billing.",
+      "valueProposition": "Shows true agreement margin and supplies evidence for renewal repricing, scope changes, or service redesign.",
+      "topic": "MSP contract profitability and agreement margin analysis",
+      "monetization": "$299-$999/month by managed endpoints or agreements",
+      "startupCost": "Solo MVP: web app, CSV import, managed database, and optional read-only integrations.",
+      "seoAngle": "Targets purchase and problem-aware searches including: MSP profitability software; managed services agreement margin calculator; MSP client profitability analysis; MSP contract profitability and agreement margin analysis software; MSP contract profitability and agreement margin analysis calculator; MSP contract profitability and agreement margin analysis pricing",
+      "seoThesis": "A narrow site for managed service providers with recurring client agreements can connect commercial pages, calculators, comparisons, and implementation guides around MSP contract profitability and agreement margin analysis to the same measurable margin outcome.",
+      "searchQueries": [
+        "MSP profitability software",
+        "managed services agreement margin calculator",
+        "MSP client profitability analysis",
+        "MSP contract profitability and agreement margin analysis software",
+        "MSP contract profitability and agreement margin analysis calculator",
+        "MSP contract profitability and agreement margin analysis pricing"
+      ],
+      "buyer": "MSP owner, CFO, or service operations lead",
+      "economicDriver": "margin",
+      "profitRationale": "MSPs have recurring software budgets and an ongoing need to protect gross margin across every client renewal.",
+      "primaryRisk": "PSA, RMM, accounting, and distributor data mappings can create onboarding work.",
+      "scoreBreakdown": {
+        "economicPain": 9,
+        "buyerBudget": 9,
+        "recurrenceRetention": 9,
+        "monetizationExpansion": 9,
+        "searchDemand": 8,
+        "commercialIntent": 9,
+        "contentDepth": 8,
+        "serpWinnability": 7,
+        "buildSupportFeasibility": 7
+      },
+      "score": 84,
+      "probeArticleCount": 3,
+      "contentBatch": "profitability-001"
+    }
+  ],
+  "articlesPerProduct": 3,
+  "product": "Combines contract revenue, technician time, cloud licenses, vendor costs, and ticket load to expose account-level margin.",
+  "productUrl": "",
+  "valueProposition": "Shows true agreement margin and supplies evidence for renewal repricing, scope changes, or service redesign.",
+  "articleCount": 3,
+  "author": {
+    "name": "John Smith"
+  },
+  "signup": {
+    "enabled": true,
+    "headline": "Interested? Get notified when this is available.",
+    "endpoint": "",
+    "email": ""
+  },
+  "deploy": {
+    "provider": "cloudflare-auto",
+    "project": "msp-agreement-margin"
+  },
+  "status": "active",
+  "portfolioManaged": true,
+  "portfolioVersion": 2
+}

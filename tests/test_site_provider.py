@@ -23,6 +23,40 @@ def load_site_script():
 
 
 class WorkersStaticAssetsTests(unittest.TestCase):
+    def test_build_removes_previous_output_and_next_cache(self) -> None:
+        site = load_site_script()
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            site.ROOT = root
+            site.SITES = root / "sites"
+            site.OUT = root / "out"
+            site.NEXT_BUILD = root / ".next"
+            site_dir = site.SITES / "fresh-site"
+            site_dir.mkdir(parents=True)
+            (site_dir / "site.json").write_text(
+                json.dumps({"id": "fresh-site", "name": "Fresh Site"}),
+                encoding="utf-8",
+            )
+            site.OUT.mkdir()
+            site.NEXT_BUILD.mkdir()
+            (site.OUT / "previous-site.html").write_text("stale", encoding="utf-8")
+            (site.NEXT_BUILD / "previous-site.txt").write_text("stale", encoding="utf-8")
+
+            def fake_build(command, *, env=None):
+                self.assertEqual(command, ["npm", "run", "build"])
+                self.assertFalse(site.OUT.exists())
+                self.assertFalse(site.NEXT_BUILD.exists())
+                self.assertEqual(env["SITE_NAME"], "Fresh Site")
+                site.OUT.mkdir()
+                (site.OUT / "index.html").write_text("fresh", encoding="utf-8")
+
+            with patch.object(site, "run", side_effect=fake_build) as run:
+                site.build("fresh-site")
+
+            run.assert_called_once()
+            self.assertFalse((site.OUT / "previous-site.html").exists())
+            self.assertEqual((site.OUT / "index.html").read_text(), "fresh")
+
     def test_worker_deploy_uses_static_assets_and_workers_dev(self) -> None:
         site = load_site_script()
         with TemporaryDirectory() as directory:
