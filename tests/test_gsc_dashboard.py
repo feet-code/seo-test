@@ -24,6 +24,7 @@ class GscDashboardTests(unittest.TestCase):
     def test_dashboard_loads_properties_from_gsc_not_local_sites(self) -> None:
         worker = (DASHBOARD / "worker.ts").read_text(encoding="utf-8")
         browser = (DASHBOARD / "public" / "app.js").read_text(encoding="utf-8")
+        document = (DASHBOARD / "public" / "index.html").read_text(encoding="utf-8")
 
         self.assertIn("https://www.googleapis.com/webmasters/v3/sites", worker)
         self.assertIn('/api/properties', browser)
@@ -32,6 +33,7 @@ class GscDashboardTests(unittest.TestCase):
         self.assertNotIn('!item.siteUrl.startsWith("sc-domain:")', worker)
         self.assertIn("safePageUrl", browser)
         self.assertIn("id.replace(/-([a-z])/g", browser)
+        self.assertIn('<option value="1">Latest finalized day (24 hours)</option>', document)
         self.assertNotIn("ideas.json", worker)
 
 
