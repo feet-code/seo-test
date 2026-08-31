@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow,noarchive" />
+    <title>Search Portfolio</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <main class="shell">
+      <section id="login-view" class="login-view hidden" aria-labelledby="login-title">
+        <div class="login-card">
+          <div class="brand-mark">SC</div>
+          <p class="eyebrow">Private analytics</p>
+          <h1 id="login-title">Search Portfolio</h1>
+          <p class="muted">One view across every website in your Google Search Console account.</p>
+          <form id="login-form">
+            <label for="password">Dashboard password</label>
+            <input id="password" name="password" type="password" autocomplete="current-password" required />
+            <button type="submit" class="button button-primary">Open dashboard</button>
+            <p id="login-error" class="form-error" role="alert"></p>
+          </form>
+        </div>
+      </section>
+
+      <section id="dashboard-view" class="hidden">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Google Search Console</p>
+            <h1>Search Portfolio</h1>
+          </div>
+          <div class="topbar-actions">
+            <span id="last-updated" class="muted small"></span>
+            <button id="logout" class="button button-quiet" type="button">Sign out</button>
+          </div>
+        </header>
+
+        <section class="control-panel" aria-label="Report controls">
+          <div class="field-group">
+            <label for="period">Period</label>
+            <select id="period">
+              <option value="7">Last 7 finalized days</option>
+              <option value="28" selected>Last 28 finalized days</option>
+              <option value="90">Last 90 finalized days</option>
+            </select>
+          </div>
+          <div class="field-group">
+            <label for="sort-by">Rank by</label>
+            <select id="sort-by">
+              <option value="impressions" selected>Impressions</option>
+              <option value="clicks">Clicks</option>
+            </select>
+          </div>
+          <div class="field-group grow">
+            <label for="filter">Filter current table</label>
+            <input id="filter" type="search" placeholder="Search sites, queries, or pages" />
+          </div>
+          <button id="refresh" class="button button-primary control-button" type="button">Refresh data</button>
+        </section>
+
+        <section id="status-panel" class="status-panel" aria-live="polite">
+          <div>
+            <strong id="status-title">Preparing report</strong>
+            <p id="status-detail" class="muted">Connecting to Search Console…</p>
+          </div>
+          <div class="progress-track"><div id="progress-bar" class="progress-bar"></div></div>
+        </section>
+
+        <section class="metrics" aria-label="Portfolio summary">
+          <article class="metric-card">
+            <p>Properties</p>
+            <strong id="metric-sites">—</strong>
+            <span id="metric-errors">Accessible in GSC</span>
+          </article>
+          <article class="metric-card accent-card">
+            <p>Clicks</p>
+            <strong id="metric-clicks">—</strong>
+            <span>Across selected period</span>
+          </article>
+          <article class="metric-card">
+            <p>Impressions</p>
+            <strong id="metric-impressions">—</strong>
+            <span>Google Search visibility</span>
+          </article>
+          <article class="metric-card">
+            <p>CTR</p>
+            <strong id="metric-ctr">—</strong>
+            <span>Clicks ÷ impressions</span>
+          </article>
+        </section>
+
+        <section class="results-card">
+          <div class="results-header">
+            <div class="tabs" role="tablist" aria-label="Report view">
+              <button class="tab active" data-view="sites" role="tab" type="button">Sites</button>
+              <button class="tab" data-view="queries" role="tab" type="button">Queries</button>
+              <button class="tab" data-view="pages" role="tab" type="button">Pages</button>
+            </div>
+            <p id="row-count" class="muted small"></p>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead id="table-head"></thead>
+              <tbody id="table-body"></tbody>
+            </table>
+          </div>
+          <div id="empty-state" class="empty-state hidden">No matching Search Console data.</div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

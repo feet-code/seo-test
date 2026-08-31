@@ -174,6 +174,19 @@ python scripts/gsc_report.py --site https://example.pages.dev/
 
 The default `--property-kind url-prefix` matches properties registered by this launcher and prevents matching domain properties from double-counting the same traffic. Use `--property-kind all` only when that overlap is intentional.
 
+### Private GSC web dashboard
+
+Deploy a password-protected dashboard to Cloudflare Workers to view the same portfolio from any browser:
+
+```bash
+npm ci
+python scripts/deploy_gsc_dashboard.py
+```
+
+The dashboard lists properties from GSC rather than the repository, loads site/query/page performance progressively, supports 7/28/90-day finalized windows, ranks by clicks or impressions, and caches property results for 15 minutes. It includes old properties whose local blogs were deleted, provided the property still exists in your GSC account.
+
+Use Workers rather than a static Pages-only deployment because Google refresh credentials must remain server-side. The deployment helper transfers the existing cached OAuth values, a password you choose, and a generated cookie-signing key through encrypted Worker secrets; none are written to source or browser JavaScript. See [`dashboard/README.md`](dashboard/README.md) for deployment and local-development details.
+
 ## Deployment providers
 
 The build produces a static `out/` artifact:
