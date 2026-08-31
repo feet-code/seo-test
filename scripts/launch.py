@@ -183,15 +183,38 @@ def _has_explicit_selection(args: argparse.Namespace) -> bool:
     )
 
 
+def _resume_start_index(checkpoint: dict[str, Any], site_ids: list[str]) -> int:
+    """Translate checkpoint progress after removed sites have been pruned."""
+    checkpoint_ids = [str(value) for value in checkpoint.get("siteIds", [])]
+    old_next_index = min(
+        max(int(checkpoint.get("nextIndex", 0)), 0),
+        len(checkpoint_ids),
+    )
+    completed = set(checkpoint_ids[:old_next_index])
+    return sum(1 for site_id in site_ids if site_id in completed)
+
+
 def selected_sites(args: argparse.Namespace) -> list[Path]:
     configured = _configured_sites()
     requested = _requested_site_ids(args)
+    resume_order: list[str] | None = None
     if args.resume and CHECKPOINT.exists() and not _has_explicit_selection(args):
         checkpoint = json.loads(CHECKPOINT.read_text(encoding="utf-8"))
-        requested.update(str(value) for value in checkpoint.get("siteIds", []))
+        checkpoint_ids = [str(value) for value in checkpoint.get("siteIds", [])]
+        missing_checkpoint_ids = [
+            site_id for site_id in checkpoint_ids if site_id not in configured
+        ]
+        if missing_checkpoint_ids:
+            print(
+                "Skipping checkpoint site(s) no longer configured: "
+                + ", ".join(missing_checkpoint_ids),
+                flush=True,
+            )
+        resume_order = [site_id for site_id in checkpoint_ids if site_id in configured]
+        requested.update(resume_order)
         if requested:
             print(
-                f"Restored {len(requested)} sites from the saved launch checkpoint.",
+                f"Restored {len(requested)} deployable sites from the saved launch checkpoint.",
                 flush=True,
             )
     missing = requested - configured.keys()
@@ -265,18 +288,30 @@ def selected_sites(args: argparse.Namespace) -> list[Path]:
         if str(value[1].get("status", "active")).lower() not in INACTIVE_STATUSES
     }
     inactive_requested = requested - active.keys()
-    if inactive_requested:
+    if inactive_requested and resume_order is not None:
+        print(
+            "Skipping inactive checkpoint site(s): "
+            + ", ".join(sorted(inactive_requested)),
+            flush=True,
+        )
+        requested -= inactive_requested
+        resume_order = [site_id for site_id in resume_order if site_id in active]
+    elif inactive_requested:
         raise SystemExit(
             "Inactive site(s) cannot deploy: "
             + ", ".join(sorted(inactive_requested))
             + ". Run scripts/portfolio.py activate SITE_ID first."
         )
 
-    selected = [
-        value[0]
-        for site_id, value in active.items()
-        if not requested or site_id in requested
-    ]
+    selected = (
+        [active[site_id][0] for site_id in resume_order]
+        if resume_order is not None
+        else [
+            value[0]
+            for site_id, value in active.items()
+            if not requested or site_id in requested
+        ]
+    )
     return selected[: args.limit] if args.limit else selected
 
 
@@ -406,7 +441,11 @@ def main() -> None:
     start = 0
     if args.resume and CHECKPOINT.exists():
         checkpoint = json.loads(CHECKPOINT.read_text(encoding="utf-8"))
-        if checkpoint.get("siteIds") == site_ids:
+        if not _has_explicit_selection(args):
+            start = _resume_start_index(checkpoint, site_ids)
+            next_site = site_ids[start] if start < len(site_ids) else "complete"
+            print(f"Resuming at {start + 1}/{len(site_ids)}: {next_site}")
+        elif checkpoint.get("siteIds") == site_ids:
             start = min(int(checkpoint.get("nextIndex", 0)), len(site_ids))
             next_site = site_ids[start] if start < len(site_ids) else "complete"
             print(f"Resuming at {start + 1}/{len(site_ids)}: {next_site}")

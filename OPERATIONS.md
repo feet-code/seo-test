@@ -18,7 +18,7 @@ Run commands from the repository root. Start with `python scripts/portfolio.py s
 | Smoke-test a batch | `python scripts/launch.py --batch BATCH_ID --limit 1` | Complete pipeline for the first site in that batch |
 | Deploy one batch | `python scripts/launch.py --batch BATCH_ID` | Only websites containing that `contentBatch` |
 | Deploy several batches | `python scripts/launch.py --batches BATCH_A,BATCH_B` | Union of affected websites, each deployed once |
-| Resume a stopped batch | `python scripts/launch.py --resume` | Restores and continues the exact saved subset |
+| Resume a stopped batch | `python scripts/launch.py --resume` | Continues the saved subset, skipping sites deleted or retired since the checkpoint |
 | Publish a shared UI change | `python scripts/launch.py --frontend-only` | Every active site, no Gemini |
 | Rebuild one UI/config change | `python scripts/launch.py --frontend-only --site SITE_ID` | One site, no Gemini |
 | Regenerate one product | `python scripts/launch.py --product PRODUCT_ID` | That product's posts and containing site |

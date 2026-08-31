@@ -106,6 +106,42 @@ class LaunchSelectionTests(unittest.TestCase):
 
             self.assertEqual([path.name for path in selected], ["beta"])
 
+    def test_plain_resume_skips_removed_sites_and_preserves_checkpoint_order(self) -> None:
+        launch = load_launch()
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            launch.SITES = root / "sites"
+            launch.CHECKPOINT = root / "checkpoint.json"
+            self.make_site(root, "alpha", [{"id": "a"}])
+            self.make_site(root, "beta", [{"id": "b"}])
+            launch.CHECKPOINT.write_text(
+                json.dumps(
+                    {
+                        "siteIds": ["beta", "example-invoice-followup", "alpha"],
+                        "nextIndex": 0,
+                    }
+                ),
+                encoding="utf-8",
+            )
+
+            selected = launch.selected_sites(arguments(resume=True))
+
+            self.assertEqual([path.name for path in selected], ["beta", "alpha"])
+
+    def test_resume_index_tracks_completed_sites_after_pruning(self) -> None:
+        launch = load_launch()
+        checkpoint = {
+            "siteIds": ["alpha", "removed-site", "beta", "gamma"],
+            "nextIndex": 2,
+        }
+
+        start = launch._resume_start_index(
+            checkpoint,
+            ["alpha", "beta", "gamma"],
+        )
+
+        self.assertEqual(start, 1)
+
     def test_unknown_batch_is_rejected_with_available_values(self) -> None:
         launch = load_launch()
         with TemporaryDirectory() as directory:

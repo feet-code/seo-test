@@ -51,7 +51,7 @@ python scripts/ideas.py --regenerate --count 100
 
 The one-site launch runs the complete production pipeline: product posts, build, deployment, Google verification/`sites.add`, sitemap submission, and health check. Only after it passes should you run the full launch. The full run safely skips already-complete product generation by fingerprint, so the smoke-tested site does not consume duplicate Gemini work.
 
-A failed deployment stops and writes a separate launch checkpoint. After fixing the failure, resume with the same selection flags. For a full rollout:
+A failed deployment stops and writes a separate launch checkpoint. After fixing the failure, resume with the same selection flags. A plain resume skips checkpoint sites that have since been deleted or retired and keeps progress by site ID, so pruning the portfolio does not restart completed deployments. For a full rollout:
 
 ```bash
 python scripts/launch.py --resume
