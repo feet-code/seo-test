@@ -151,6 +151,29 @@ You do not register every site manually. Each successful launch calls `sites.add
 
 A service account remains supported with `GOOGLE_APPLICATION_CREDENTIALS`, but its properties do not automatically appear in a human account. `GOOGLE_SEARCH_CONSOLE_OWNER_EMAIL` can delegate verified ownership; desktop OAuth is preferred.
 
+### Portfolio-wide GSC report
+
+Export the highest-performing sites, queries, and pages across every URL-prefix property accessible to the configured Google account:
+
+```bash
+python scripts/gsc_report.py
+```
+
+The script calls Search Console `sites.list`; it does not depend on `sites/` or `ideas.json`. Properties for old websites remain in the report after their local folders or blogs are deleted, as long as the property still exists in that Google account. The default window is the latest 28 finalized days, ending three days ago. Reports are written under `.deploy/reports/` as `sites.csv`, `queries.csv`, `site-queries.csv`, `pages.csv`, and `summary.json`.
+
+Useful variants:
+
+```bash
+python scripts/gsc_report.py --days 90 --top 50
+python scripts/gsc_report.py --sort-by impressions
+python scripts/gsc_report.py --start-date 2026-06-01 --end-date 2026-08-31
+python scripts/gsc_report.py --fresh
+python scripts/gsc_report.py --property-kind all
+python scripts/gsc_report.py --site https://example.pages.dev/
+```
+
+The default `--property-kind url-prefix` matches properties registered by this launcher and prevents matching domain properties from double-counting the same traffic. Use `--property-kind all` only when that overlap is intentional.
+
 ## Deployment providers
 
 The build produces a static `out/` artifact:
