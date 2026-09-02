@@ -16,28 +16,32 @@ const workerSource = ts.transpileModule(readFileSync(new URL("worker.ts", import
 const env = { GOOGLE_CLIENT_ID: "test", GOOGLE_CLIENT_SECRET: "test",
   GOOGLE_REFRESH_TOKEN: "test", SESSION_SECRET: "test-session", DASHBOARD_PASSWORD: "test-password" };
 
-function workerHarness(responder = () => ({ rows: [] })) {
-  const calls = [], pending = [], cacheKeys = [];
+function workerHarness(responder = () => ({ rows: [] }), options = {}) {
+  const calls = [], pending = [], cacheKeys = [], tokenCalls = [], delays = [];
   const cached = new Map();
   const sandbox = vm.createContext({ exports: {}, Request, Response, Headers, URL, URLSearchParams,
-    TextEncoder, crypto: webcrypto, console, Date: FixedDate,
+    TextEncoder, crypto: webcrypto, console, Date: FixedDate, AbortController,
+    setTimeout(fn, ms) { delays.push(ms); return setTimeout(fn, ms < 10_000 || options.fastTimeout ? 0 : ms); }, clearTimeout,
     caches: { default: {
       async match(key) { cacheKeys.push(key.url); return cached.get(key.url)?.clone(); },
       async put(key, value) { cached.set(key.url, value.clone()); },
     } },
     async fetch(url, init) {
       if (url === "https://oauth2.googleapis.com/token") {
-        return Response.json({ access_token: "test-token", expires_in: 3600 });
+        tokenCalls.push(init);
+        return options.token ? options.token(tokenCalls.length) : Response.json({ access_token: "test-token", expires_in: 3600 });
       }
-      const body = JSON.parse(init.body);
+      const body = init.body ? JSON.parse(init.body) : null;
       calls.push(body);
-      return Response.json(responder(body));
+      const result = await responder(body, init, url);
+      return result instanceof Response ? result : Response.json(result);
     },
   });
   vm.runInContext(workerSource, sandbox);
-  const functions = vm.runInContext("({ propertyStats, searchAnalytics, sumMetrics, inWindow, breakdown, api })", sandbox);
+  const functions = vm.runInContext("({ propertyStats, searchAnalytics, sumMetrics, inWindow, breakdown, api, googleJson, googleRequest })", sandbox);
   const context = { waitUntil(promise) { pending.push(promise); } };
-  return { ...functions, calls, cacheKeys, cached, pending,
+  return { ...functions, calls, cacheKeys, cached, pending, tokenCalls, delays, sandbox,
+    dispatch(path, options = {}) { return sandbox.exports.default.fetch(new Request(`https://dashboard.test${path}`, options), env, context); },
     request(body) { return functions.propertyStats(new Request("https://dashboard.test/api/property-stats", {
       method: "POST", body: JSON.stringify(body),
     }), env, context); },
@@ -151,7 +155,9 @@ function browserHarness() {
       return elements.get(id);
     }, querySelectorAll() { return []; },
   };
-  const sandbox = vm.createContext({ document, Date: FixedDate, Intl, URL, console,
+  const delays = [];
+  const sandbox = vm.createContext({ document, Date: FixedDate, Intl, URL, console, AbortController, DOMException,
+    setTimeout(fn, ms) { delays.push(ms); return setTimeout(fn, ms < 10_000 ? 0 : ms); }, clearTimeout,
     async fetch(path, options) {
       if (path === "/api/session") return Response.json({}, { status: 401 });
       if (path === "/api/properties") return Response.json({ properties: [{ property: daily.property }] });
@@ -160,8 +166,10 @@ function browserHarness() {
         queries: [], pages: [], fetchedAt: "2026-09-01T15:28:00Z" });
     },
   });
-  vm.runInContext(readFileSync(new URL("public/app.js", import.meta.url), "utf8"), sandbox);
-  return { elements, calls, sandbox, ...vm.runInContext("({ dateRange, loadDashboard, state })", sandbox) };
+  const ready = vm.runInContext(readFileSync(new URL("public/app.js", import.meta.url), "utf8"), sandbox);
+  const functions = vm.runInContext("({ dateRange, loadDashboard, state, request })", sandbox);
+  return { elements, calls, sandbox, delays, ready, ...functions,
+    async loadDashboard(...args) { await ready; return functions.loadDashboard(...args); } };
 }
 
 test("browser daily periods include Pacific today even before UTC/Pacific midnight align", () => {
@@ -217,4 +225,226 @@ test("a slow previous load cannot mix stale data into a refreshed report", async
   await oldLoad;
   assert.equal(h.state.sites.length, 1);
   assert.equal(h.state.sites[0].total.impressions, 1);
+});
+
+const googleFailure = (status, reason, headers = {}) => Response.json({
+  error: { code: status, errors: [{ reason }], message: "upstream details" },
+}, { status, headers });
+
+test("Google retries 429 and rate-limit 403 with backoff; honors Retry-After", async () => {
+  for (const status of [429, 403]) {
+    let attempts = 0;
+    const h = workerHarness(() => ++attempts === 1
+      ? googleFailure(status, "userRateLimitExceeded", { "Retry-After": "2" })
+      : { siteEntry: [] });
+    await h.googleJson(env, "https://www.googleapis.com/webmasters/v3/sites");
+    assert.equal(h.calls.length, 2);
+    assert.ok(h.delays.includes(2000));
+  }
+});
+
+test("Google permanent permissions and daily quota failures are not retried", async () => {
+  for (const reason of ["insufficientPermissions", "dailyLimitExceeded"]) {
+    const h = workerHarness(() => googleFailure(403, reason));
+    await assert.rejects(h.googleJson(env, "https://www.googleapis.com/webmasters/v3/sites"),
+      (error) => error.code === "GOOGLE_PERMISSION_DENIED" && error.retryable === false);
+    assert.equal(h.calls.length, 1);
+  }
+});
+
+test("Google retries network errors and malformed 502 responses", async () => {
+  let attempts = 0;
+  const h = workerHarness(() => {
+    attempts += 1;
+    if (attempts === 1) throw new Error("socket closed");
+    if (attempts === 2) return new Response("upstream HTML error", { status: 502 });
+    return { rows: [] };
+  });
+  await h.googleJson(env, "https://www.googleapis.com/webmasters/v3/sites");
+  assert.equal(attempts, 3);
+});
+
+test("Google retries are bounded and do not ignore a long Retry-After", async () => {
+  const h = workerHarness(() => googleFailure(503, "backendError"));
+  await assert.rejects(h.googleJson(env, "https://www.googleapis.com/webmasters/v3/sites"),
+    (error) => error.retryable === true);
+  assert.equal(h.calls.length, 3);
+  const rateLimited = workerHarness(() => googleFailure(429, "rateLimitExceeded", { "Retry-After": "120" }));
+  await assert.rejects(rateLimited.googleJson(env, "https://www.googleapis.com/webmasters/v3/sites"),
+    (error) => error.retryAfterMs === 120_000);
+  assert.equal(rateLimited.calls.length, 1);
+});
+
+test("hung Google requests time out and stop after three attempts", async () => {
+  const h = workerHarness((body, init) => new Promise((resolve, reject) => {
+    init.signal.addEventListener("abort", () => reject(new DOMException("Timeout", "AbortError")), { once: true });
+  }), { fastTimeout: true });
+  await assert.rejects(h.googleJson(env, "https://www.googleapis.com/webmasters/v3/sites"),
+    (error) => error.code === "GOOGLE_TIMEOUT");
+  assert.equal(h.calls.length, 3);
+});
+
+test("parallel property queries share one OAuth refresh and refresh a rejected token once", async () => {
+  const h = workerHarness((body, init) => init.headers.Authorization === "Bearer old-token"
+    ? googleFailure(401, "authError") : { rows: [] }, {
+    token: (attempt) => Response.json({ access_token: attempt === 1 ? "old-token" : "new-token", expires_in: 3600 }),
+  });
+  assert.equal((await h.request(daily)).status, 200);
+  assert.equal(h.tokenCalls.length, 2);
+  assert.equal(h.calls.length, 6);
+  const success = workerHarness();
+  await success.request(daily);
+  assert.equal(success.tokenCalls.length, 1);
+});
+
+test("revoked OAuth grants return an actionable non-retryable error, not dashboard HTTP 401", async () => {
+  const h = workerHarness(() => ({ rows: [] }), {
+    token: () => Response.json({ error: "invalid_grant" }, { status: 400 }),
+  });
+  const login = await h.api("/api/login", { method: "POST", body: JSON.stringify({ password: env.DASHBOARD_PASSWORD }) });
+  const response = await h.dispatch("/api/properties", { headers: { Cookie: login.headers.get("set-cookie").split(";")[0] } });
+  assert.equal(response.status, 502);
+  const result = await response.json();
+  assert.equal(result.code, "GOOGLE_RECONNECT_REQUIRED");
+  assert.equal(result.retryable, false);
+  assert.equal(h.tokenCalls.length, 1);
+});
+
+test("one failed breakdown does not discard site totals or the other breakdown; partial results aren't cached", async () => {
+  const h = workerHarness((body) => body.dimensions?.[0] === "query"
+    ? googleFailure(503, "backendError")
+    : { rows: [{ keys: ["https://example.test/page"], impressions: 13, clicks: 1 }] });
+  const result = await (await h.request(daily)).json();
+  assert.equal(result.total.impressions, 13);
+  assert.equal(result.pages[0].impressions, 13);
+  assert.equal(result.queries.length, 0);
+  assert.equal(result.errors[0].component, "queries");
+  assert.equal(result.errors[0].retryable, true);
+  await Promise.all(h.pending);
+  assert.equal(h.cached.size, 0);
+});
+
+test("failed totals are unknown, not zero, while successful breakdowns remain available", async () => {
+  const h = workerHarness((body) => !body.dimensions ? googleFailure(403, "insufficientPermissions")
+    : { rows: [{ keys: ["term"], impressions: 5 }] });
+  const result = await (await h.request(daily)).json();
+  assert.equal(result.total, null);
+  assert.equal(result.queries[0].impressions, 5);
+  assert.equal(result.errors[0].component, "totals");
+});
+
+test("cache read and write failures don't discard Google results", async () => {
+  const h = workerHarness(() => ({ rows: [{ impressions: 3 }] }));
+  h.sandbox.caches.default.match = async () => { throw new Error("cache read failed"); };
+  h.sandbox.caches.default.put = async () => { throw new Error("cache write failed"); };
+  assert.equal((await (await h.request(daily)).json()).total.impressions, 3);
+  await Promise.all(h.pending);
+});
+
+test("subrequest budgets stop before the Worker platform limit", async () => {
+  const h = workerHarness();
+  const scope = h.googleRequest();
+  scope.requests = 40;
+  await assert.rejects(h.googleJson(env, "https://www.googleapis.com/webmasters/v3/sites", {}, scope),
+    (error) => error.code === "GOOGLE_TIMEOUT");
+  assert.equal(h.calls.length + h.tokenCalls.length, 0);
+});
+
+test("failed property listing preserves the previous report and can recover without a page reload", async () => {
+  const h = browserHarness();
+  await h.loadDashboard();
+  const fetch = h.sandbox.fetch;
+  h.sandbox.fetch = (path, options) => path === "/api/properties"
+    ? Response.json({ error: "Google unavailable", retryable: true }, { status: 503 }) : fetch(path, options);
+  await h.loadDashboard(true);
+  assert.equal(h.state.sites.length, 1);
+  assert.equal(h.state.sites[0].total.impressions, 1);
+  assert.equal(h.state.sites[0].stale, true);
+  assert.match(h.elements.get("error-list").innerHTML, /Google unavailable/);
+  assert.match(h.elements.get("status-detail").textContent, /Previous results/);
+  h.sandbox.fetch = fetch;
+  await h.elements.get("retry-failed").listeners.click();
+  assert.equal(h.state.listError, null);
+  assert.equal(h.state.sites[0].stale, false);
+});
+
+test("retry failed properties only; keep successes and never duplicate their totals", async () => {
+  const h = browserHarness();
+  await h.ready;
+  const fetch = h.sandbox.fetch;
+  const failed = "https://failing.test/";
+  let broken = true;
+  const requested = [];
+  h.sandbox.fetch = (path, options) => {
+    if (path === "/api/properties") return Response.json({ properties: [daily.property, failed].map((property) => ({ property })) });
+    if (path === "/api/property-stats") {
+      const body = JSON.parse(options.body); requested.push(body.property);
+      if (body.property === failed && broken) return Response.json({ error: "Try later", retryable: false }, { status: 503 });
+      return Response.json({ property: body.property, total: { clicks: 1, impressions: 10 }, queries: [], pages: [], fetchedAt: "2026-09-01T15:28:00Z" });
+    }
+    return fetch(path, options);
+  };
+  await h.loadDashboard();
+  assert.equal(h.state.sites.length, 1);
+  assert.equal(h.state.errors.length, 1);
+  assert.match(h.elements.get("status-title").textContent, /incomplete/);
+  assert.match(h.elements.get("error-list").innerHTML, /failing.test/);
+  broken = false; requested.length = 0;
+  await h.elements.get("retry-failed").listeners.click();
+  assert.deepEqual(requested, [failed]);
+  assert.equal(h.state.sites.length, 2);
+  assert.equal(h.state.errors.length, 0);
+  assert.equal(h.elements.get("metric-impressions").textContent, "20");
+});
+
+test("frontend retries network failures and HTML 502 once, but not permanent Google errors", async () => {
+  const h = browserHarness();
+  await h.ready;
+  let count = 0;
+  h.sandbox.fetch = () => ++count === 1 ? new Response("bad gateway", { status: 502 }) : Response.json({ ok: true });
+  assert.equal((await h.request("/api/properties", { retry: true })).ok, true);
+  assert.equal(count, 2);
+  count = 0;
+  h.sandbox.fetch = () => { count += 1; return Response.json({ error: "Renew OAuth", code: "GOOGLE_RECONNECT_REQUIRED", retryable: false }, { status: 502 }); };
+  await assert.rejects(h.request("/api/properties", { retry: true }), /Renew OAuth/);
+  assert.equal(count, 1);
+});
+
+test("new periods do not reuse old values after failure; failure is not an empty zero report", async () => {
+  const h = browserHarness();
+  await h.loadDashboard();
+  h.elements.get("period").value = "7";
+  h.sandbox.fetch = () => Response.json({ error: "No access", retryable: false }, { status: 502 });
+  await h.loadDashboard();
+  assert.equal(h.state.sites.length, 0);
+  assert.equal(h.elements.get("metric-impressions").textContent, "—");
+  assert.match(h.elements.get("empty-state").textContent, /could not be loaded/);
+});
+
+test("partial results with missing totals show unavailable metrics and actionable component errors", async () => {
+  const h = browserHarness();
+  await h.ready;
+  const fetch = h.sandbox.fetch;
+  h.sandbox.fetch = (path, options) => path === "/api/property-stats"
+    ? Response.json({ property: daily.property, total: null, queries: [{ key: "term", clicks: 1, impressions: 4, position: 2 }], pages: [],
+      errors: [{ component: "totals", error: "Timed out", retryable: true }], fetchedAt: "2026-09-01T15:28:00Z" }) : fetch(path, options);
+  await h.loadDashboard();
+  assert.equal(h.elements.get("metric-impressions").textContent, "—");
+  assert.equal(h.state.queries.length, 1);
+  assert.match(h.elements.get("error-list").innerHTML, /totals/);
+  assert.match(h.elements.get("table-body").innerHTML, /Partial result/);
+});
+
+test("a failed totals refresh keeps previous same-period totals with a stale warning", async () => {
+  const h = browserHarness();
+  await h.loadDashboard();
+  const fetch = h.sandbox.fetch;
+  h.sandbox.fetch = (path, options) => path === "/api/property-stats"
+    ? Response.json({ property: daily.property, total: null, queries: [], pages: [],
+      errors: [{ component: "totals", error: "Timed out", retryable: true }], fetchedAt: "2026-09-01T15:30:00Z" }) : fetch(path, options);
+  await h.loadDashboard(true);
+  assert.equal(h.elements.get("metric-impressions").textContent, "1");
+  assert.equal(h.state.sites[0].stale, true);
+  assert.equal(h.state.sites[0].fetchedAt, "2026-09-01T15:28:00Z");
+  assert.match(h.elements.get("table-body").innerHTML, /Includes previous data/);
 });

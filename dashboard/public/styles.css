@@ -88,6 +88,12 @@ input, select {
 }
 input:focus, select:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(102, 242, 174, 0.09); }
 .form-error { min-height: 1.3rem; margin: 0.25rem 0 0; color: var(--danger); font-size: 0.88rem; }
+.load-errors { padding: 1rem; margin-bottom: 1rem; border: 1px solid var(--danger); border-radius: 0.75rem; }
+.load-errors p { margin-top: 0; }
+.load-errors ul { max-height: 14rem; overflow: auto; padding-left: 1.5rem; }
+.load-errors li { margin-top: 0.5rem; overflow-wrap: anywhere; }
+.load-note { display: block; color: var(--danger); font-size: 0.875rem; }
+.button:disabled { opacity: 0.5; cursor: wait; transform: none; }
 
 .control-panel {
   display: flex;

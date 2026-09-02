@@ -74,6 +74,12 @@
           <div class="progress-track"><div id="progress-bar" class="progress-bar"></div></div>
         </section>
 
+        <section id="load-errors" class="load-errors hidden" aria-label="Loading errors" aria-live="polite">
+          <p>Some requests failed. Available results remain visible; missing data is not counted as zero.</p>
+          <button id="retry-failed" class="button button-quiet" type="button">Retry failed properties</button>
+          <ul id="error-list"></ul>
+        </section>
+
         <section class="metrics" aria-label="Portfolio summary">
           <article class="metric-card">
             <p>Properties</p>

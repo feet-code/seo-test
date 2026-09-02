@@ -39,6 +39,16 @@ npx wrangler deploy --config dashboard/wrangler.jsonc
 
 API reference: https://developers.google.com/webmaster-tools/v1/searchanalytics/query
 
+## Loading and recovery
+
+- Google network failures, timeouts, 429s, rate-limit 403s and 5xx responses retry up to three attempts with backoff/jitter and `Retry-After` support. Permission errors, daily-quota errors and invalid/revoked OAuth grants are not retried automatically.
+- Requests have a 15-second upstream timeout and a shared 45-second deadline / 40-subrequest budget, including pagination and OAuth. Parallel queries share a token refresh within one Worker invocation. A Google 401 triggers one token refresh and replay; a failed Google grant is shown as a Google connection error, not a dashboard logout.
+- The browser loads at most three properties concurrently. Read-only requests have a 60-second timeout and at most one additional retry for transient failures (long `Retry-After` delays require a later manual retry). Changing periods or refreshing cancels old browser requests and prevents stale responses from overwriting the report.
+- Totals, queries and pages fail independently. A missing total is displayed as unavailable, never zero. Successful breakdowns and totals remain usable; partial results are not written into the normal result cache. Cache read/write failures do not block Google results.
+- Refreshing the same date/hour range preserves previous property results while loading. A property that fails to refresh keeps its previous result with a visible warning; those values may still be included in the incomplete portfolio totals. Changing the date/hour range clears old values so different periods never mix.
+- The error panel identifies the property and failed component. **Retry failed properties** retries only affected properties in the same time window, bypassing cache and preserving successful properties. If listing properties failed, the button retries discovery instead. A successful property-list response is authoritative, including removal of properties no longer accessible.
+- Previous results are held only in this browser page's memory; this is not an offline archive. A full reload still requires a successful Google property-list request. The Worker logs retain server errors for troubleshooting.
+
 ## Local checks
 
 ```bash

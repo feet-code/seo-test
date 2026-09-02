@@ -44,10 +44,85 @@ const SESSION_SECONDS = 60 * 60 * 24 * 7;
 const encoder = new TextEncoder();
 let accessTokenCache: { token: string; expiresAt: number } | undefined;
 
+interface GoogleRequest {
+  requests: number;
+  deadline: number;
+  tokenRefresh?: Promise<string>;
+}
+
+function googleRequest(): GoogleRequest {
+  return { requests: 0, deadline: Date.now() + 45_000 };
+}
+
+class GoogleError extends Error {
+  constructor(message: string, readonly code: string, readonly retryable = false,
+    readonly upstreamStatus = 0, readonly retryAfterMs = 0) { super(message); }
+}
+
+function errorDetails(error: unknown) {
+  return error instanceof GoogleError
+    ? { error: error.message, code: error.code, retryable: error.retryable,
+        retryAfterMs: error.retryAfterMs, upstreamStatus: error.upstreamStatus }
+    : { error: "Unexpected dashboard error. Retry or inspect the Worker logs.",
+        code: "INTERNAL_ERROR", retryable: false };
+}
+
+function retryDelay(header: string | null): number {
+  if (!header) return 0;
+  const seconds = Number(header);
+  const delay = Number.isFinite(seconds) ? seconds * 1000 : Date.parse(header) - Date.now();
+  return Number.isFinite(delay) ? Math.max(0, delay) : 0;
+}
+
+async function googleFetch(url: string, init: RequestInit, scope: GoogleRequest): Promise<unknown> {
+  for (let attempt = 0; ; attempt += 1) {
+    // Shared across pagination, retries and OAuth; never consume the Worker's full budget.
+    if (scope.requests >= 40 || scope.deadline <= Date.now()) {
+      throw new GoogleError("Google requests reached the retry/time limit. Retry this property.", "GOOGLE_TIMEOUT", true);
+    }
+    scope.requests += 1;
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), Math.min(15_000, scope.deadline - Date.now()));
+    let failure: GoogleError;
+    try {
+      const response = await fetch(url, { ...init, signal: controller.signal });
+      // Consume the body before retrying so the outgoing connection is released.
+      const text = await response.text();
+      let payload: any;
+      try { payload = JSON.parse(text); } catch { payload = undefined; }
+      if (response.ok && payload && typeof payload === "object") return payload;
+      const reasons: string[] = payload?.error?.errors?.map((item: { reason?: string }) => item.reason) || [];
+      const rateLimited = response.status === 429 || (response.status === 403 &&
+        reasons.some((reason) => ["rateLimitExceeded", "userRateLimitExceeded", "concurrentLimitExceeded", "servingLimitExceeded"].includes(reason)));
+      const transient = rateLimited || response.status === 408 || response.status >= 500 || response.ok;
+      const oauth = url === "https://oauth2.googleapis.com/token";
+      const code = rateLimited ? "GOOGLE_RATE_LIMIT" : transient ? "GOOGLE_UNAVAILABLE"
+        : oauth ? "GOOGLE_RECONNECT_REQUIRED" : response.status === 401 ? "GOOGLE_ACCESS_TOKEN_EXPIRED"
+        : response.status === 403 ? "GOOGLE_PERMISSION_DENIED" : "GOOGLE_REQUEST_REJECTED";
+      const message = rateLimited ? "Google temporarily rate-limited requests. Wait and retry."
+        : transient ? "Google is temporarily unavailable or returned an invalid response. Retry."
+        : oauth ? "Google authorization expired or was revoked. Renew the local Google OAuth grant and redeploy its secrets."
+        : response.status === 401 ? "Google rejected the access token."
+        : response.status === 403 ? `Google denied access (${reasons[0] || "forbidden"}). Check property permissions, API access, or quota.`
+        : `Google rejected the request (HTTP ${response.status}; ${reasons[0] || "unknown reason"}).`;
+      failure = new GoogleError(message, code, transient, response.status, retryDelay(response.headers.get("Retry-After")));
+    } catch (error) {
+      failure = error instanceof GoogleError ? error : new GoogleError(
+        controller.signal.aborted ? "Google request timed out. Retry." : "Could not reach Google. Retry.",
+        controller.signal.aborted ? "GOOGLE_TIMEOUT" : "GOOGLE_NETWORK_ERROR", true);
+    } finally {
+      clearTimeout(timeout);
+    }
+    const delay = Math.max(failure.retryAfterMs, 500 * 2 ** attempt + Math.floor(Math.random() * 250));
+    if (!failure.retryable || attempt >= 2 || Date.now() + delay >= scope.deadline) throw failure;
+    await new Promise((resolve) => setTimeout(resolve, delay));
+  }
+}
+
 function required(env: Env, key: keyof Env): string {
   const value = env[key];
   if (typeof value !== "string" || !value.trim()) {
-    throw new Error(`Missing Worker secret: ${String(key)}`);
+    throw new GoogleError(`Missing Worker secret: ${String(key)}. Run the dashboard setup script.`, "CONFIGURATION_ERROR");
   }
   return value;
 }
@@ -137,47 +212,62 @@ async function isAuthenticated(request: Request, env: Env): Promise<boolean> {
   return constantTimeEqual(suppliedSignature, expected);
 }
 
-async function googleAccessToken(env: Env): Promise<string> {
+async function googleAccessToken(env: Env, scope: GoogleRequest): Promise<string> {
   if (accessTokenCache && accessTokenCache.expiresAt > Date.now() + 60_000) {
     return accessTokenCache.token;
   }
+  if (scope.tokenRefresh) return scope.tokenRefresh;
+  // Deduplicate the three parallel queries in this invocation, without sharing I/O
+  // promises across unrelated Cloudflare Worker requests.
+  scope.tokenRefresh = (async () => {
   const form = new URLSearchParams({
     client_id: required(env, "GOOGLE_CLIENT_ID"),
     client_secret: required(env, "GOOGLE_CLIENT_SECRET"),
     refresh_token: required(env, "GOOGLE_REFRESH_TOKEN"),
     grant_type: "refresh_token",
   });
-  const response = await fetch("https://oauth2.googleapis.com/token", {
+  const payload = await googleFetch("https://oauth2.googleapis.com/token", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: form,
-  });
-  const payload = (await response.json()) as GoogleTokenResponse;
-  if (!response.ok || !payload.access_token) {
-    throw new Error(payload.error_description || payload.error || "Google token refresh failed");
+  }, scope) as GoogleTokenResponse;
+  if (!payload.access_token) {
+    throw new GoogleError("Google returned no access token. Renew the Google OAuth grant.", "GOOGLE_RECONNECT_REQUIRED");
   }
   accessTokenCache = {
     token: payload.access_token,
     expiresAt: Date.now() + (payload.expires_in || 3600) * 1000,
   };
   return payload.access_token;
+  })();
+  try { return await scope.tokenRefresh; }
+  finally { scope.tokenRefresh = undefined; }
 }
 
-async function googleJson<T>(env: Env, url: string, init: RequestInit = {}): Promise<T> {
-  const token = await googleAccessToken(env);
-  const response = await fetch(url, {
+async function googleJson<T>(env: Env, url: string, init: RequestInit = {}, scope = googleRequest()): Promise<T> {
+  let token = await googleAccessToken(env, scope);
+  const fetchData = () => googleFetch(url, {
     ...init,
     headers: {
       Authorization: `Bearer ${token}`,
       "Content-Type": "application/json",
       ...(init.headers || {}),
     },
-  });
-  if (!response.ok) {
-    const detail = await response.text();
-    throw new Error(`Google API ${response.status}: ${detail.slice(0, 500)}`);
+  }, scope) as Promise<T>;
+  try { return await fetchData(); }
+  catch (error) {
+    if (!(error instanceof GoogleError) || error.code !== "GOOGLE_ACCESS_TOKEN_EXPIRED") throw error;
+    // Invalidate only the token this request used; another query may have refreshed it.
+    if (accessTokenCache?.token === token) accessTokenCache = undefined;
+    token = await googleAccessToken(env, scope);
+    try { return await fetchData(); }
+    catch (retryError) {
+      if (retryError instanceof GoogleError && retryError.code === "GOOGLE_ACCESS_TOKEN_EXPIRED") {
+        throw new GoogleError("Google authorization was rejected after refreshing. Renew the Google OAuth grant.", "GOOGLE_RECONNECT_REQUIRED");
+      }
+      throw retryError;
+    }
   }
-  return (await response.json()) as T;
 }
 
 function normalizedMetric(row: SearchRow | undefined) {
@@ -196,6 +286,7 @@ async function searchAnalytics(
   endDate: string,
   dataState: DataState,
   dimension?: "query" | "page",
+  scope = googleRequest(),
 ): Promise<SearchResponse & { rows: SearchRow[]; truncated: boolean }> {
   const hourly = dataState === "hourly_all";
   const pageSize = hourly && dimension ? 25_000 : dimension || hourly ? 250 : 1;
@@ -218,6 +309,7 @@ async function searchAnalytics(
       env,
       `https://www.googleapis.com/webmasters/v3/sites/${encoded}/searchAnalytics/query`,
       { method: "POST", body: JSON.stringify({ ...body, startRow: rows.length }) },
+      scope,
     );
     metadata = response.metadata || metadata;
     const page = response.rows || [];
@@ -318,37 +410,49 @@ async function propertyStats(request: Request, env: Env, context: WorkerContext)
   }
   const cacheKey = new Request(cacheUrl.toString());
   const cache = (caches as CacheStorage & { default: Cache }).default;
-  const cached = body.forceRefresh === true ? undefined : await cache.match(cacheKey);
-  if (cached) return json(await cached.json());
+  try {
+    const cached = body.forceRefresh === true ? undefined : await cache.match(cacheKey);
+    if (cached) return json(await cached.json());
+  } catch { /* Cache is an optimization; an edge-cache failure must not block Google. */ }
 
-  const [totals, queries, pages] = await Promise.all([
-    searchAnalytics(env, property, startDate, endDate, dataState),
-    searchAnalytics(env, property, startDate, endDate, dataState, "query"),
-    searchAnalytics(env, property, startDate, endDate, dataState, "page"),
+  const scope = googleRequest();
+  const results = await Promise.allSettled([
+    searchAnalytics(env, property, startDate, endDate, dataState, undefined, scope),
+    searchAnalytics(env, property, startDate, endDate, dataState, "query", scope),
+    searchAnalytics(env, property, startDate, endDate, dataState, "page", scope),
   ]);
+  if (results.every((result) => result.status === "rejected")) {
+    throw (results[0] as PromiseRejectedResult).reason;
+  }
+  const components = ["totals", "queries", "pages"];
+  const errors = results.flatMap((result, index) => result.status === "rejected"
+    ? [{ component: components[index], ...errorDetails(result.reason) }] : []);
+  const [totals, queries, pages] = results.map((result) => result.status === "fulfilled" ? result.value : undefined);
   const selectRows = (response: SearchResponse) => window
     ? inWindow(response.rows || [], window) : response.rows || [];
   const payload = {
     property,
-    total: sumMetrics(selectRows(totals)),
-    queries: breakdown(selectRows(queries), Boolean(window)),
-    pages: breakdown(selectRows(pages), Boolean(window)),
+    total: totals ? sumMetrics(selectRows(totals)) : null,
+    queries: queries ? breakdown(selectRows(queries), Boolean(window)) : [],
+    pages: pages ? breakdown(selectRows(pages), Boolean(window)) : [],
+    errors,
     dataState,
     preliminary: dataState !== "final",
-    metadata: totals.metadata,
+    metadata: totals?.metadata,
     startDate, endDate,
     startHour: window ? new Date(window.start).toISOString() : undefined,
     endHour: window ? new Date(window.end).toISOString() : undefined,
-    breakdownsTruncated: queries.truncated || pages.truncated,
+    breakdownsTruncated: Boolean(queries?.truncated || pages?.truncated),
     fetchedAt: new Date().toISOString(),
   };
-  context.waitUntil(
+  // Partial failures must be retried rather than cached as complete/empty data.
+  if (!errors.length) context.waitUntil(
     cache.put(
       cacheKey,
       new Response(JSON.stringify(payload), {
         headers: { "Cache-Control": "public, max-age=300", "Content-Type": "application/json" },
       }),
-    ),
+    ).catch(() => { /* Cache writes are best-effort. */ }),
   );
   return json(payload);
 }
@@ -412,8 +516,12 @@ export default {
       return withSecurityHeaders(await env.ASSETS.fetch(request));
     } catch (error) {
       console.error(error);
-      const message = error instanceof Error ? error.message : "Unexpected dashboard error";
-      return json({ error: message }, 500);
+      const detail = errorDetails(error);
+      // Only the dashboard's own expired session is HTTP 401. Google OAuth errors
+      // must stay visible in the dashboard, not kick the user back to the password form.
+      return json(detail, detail.retryable ? 503 : 502,
+        error instanceof GoogleError && error.retryAfterMs
+          ? { "Retry-After": String(Math.ceil(error.retryAfterMs / 1000)) } : {});
     }
   },
 };
