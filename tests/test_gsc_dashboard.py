@@ -33,7 +33,8 @@ class GscDashboardTests(unittest.TestCase):
         self.assertNotIn('!item.siteUrl.startsWith("sc-domain:")', worker)
         self.assertIn("safePageUrl", browser)
         self.assertIn("id.replace(/-([a-z])/g", browser)
-        self.assertIn('<option value="1">Latest finalized day (24 hours)</option>', document)
+        self.assertIn('<option value="1">Last 24 hours (hourly)</option>', document)
+        self.assertNotIn("finalized days", document)
         self.assertNotIn("ideas.json", worker)
 
 

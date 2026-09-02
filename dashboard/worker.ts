@@ -28,7 +28,11 @@ interface SearchRow {
 
 interface SearchResponse {
   rows?: SearchRow[];
+  metadata?: { first_incomplete_hour?: string; first_incomplete_date?: string };
 }
+
+type DataState = "final" | "all" | "hourly_all";
+interface HourWindow { start: number; end: number }
 
 interface PropertyEntry {
   siteUrl?: string;
@@ -190,29 +194,80 @@ async function searchAnalytics(
   property: string,
   startDate: string,
   endDate: string,
-  dataState: "final" | "all",
+  dataState: DataState,
   dimension?: "query" | "page",
-): Promise<SearchRow[]> {
+): Promise<SearchResponse & { rows: SearchRow[]; truncated: boolean }> {
+  const hourly = dataState === "hourly_all";
+  const pageSize = hourly && dimension ? 25_000 : dimension || hourly ? 250 : 1;
+  // Up to four pages per breakdown: bounded well below Worker subrequest limits.
+  const maxRows = hourly && dimension ? 100_000 : pageSize;
   const body: Record<string, unknown> = {
     startDate,
     endDate,
     type: "web",
     dataState,
-    rowLimit: dimension ? 250 : 1,
+    rowLimit: pageSize,
   };
-  if (dimension) body.dimensions = [dimension];
+  if (hourly) body.dimensions = dimension ? ["hour", dimension] : ["hour"];
+  else if (dimension) body.dimensions = [dimension];
   const encoded = encodeURIComponent(property);
-  const response = await googleJson<SearchResponse>(
-    env,
-    `https://www.googleapis.com/webmasters/v3/sites/${encoded}/searchAnalytics/query`,
-    { method: "POST", body: JSON.stringify(body) },
-  );
-  return response.rows || [];
+  const rows: SearchRow[] = [];
+  let metadata: SearchResponse["metadata"];
+  while (rows.length < maxRows) {
+    const response = await googleJson<SearchResponse>(
+      env,
+      `https://www.googleapis.com/webmasters/v3/sites/${encoded}/searchAnalytics/query`,
+      { method: "POST", body: JSON.stringify({ ...body, startRow: rows.length }) },
+    );
+    metadata = response.metadata || metadata;
+    const page = response.rows || [];
+    rows.push(...page);
+    if (page.length < pageSize) return { rows, metadata, truncated: false };
+  }
+  return { rows, metadata, truncated: Boolean(dimension) };
+}
+
+function sumMetrics(rows: SearchRow[]) {
+  let clicks = 0, impressions = 0, weightedPosition = 0;
+  for (const row of rows) {
+    const metric = normalizedMetric(row);
+    clicks += metric.clicks;
+    impressions += metric.impressions;
+    weightedPosition += metric.position * metric.impressions;
+  }
+  return { clicks, impressions, ctr: impressions ? clicks / impressions : 0,
+    position: impressions ? weightedPosition / impressions : 0 };
+}
+
+function inWindow(rows: SearchRow[], window: HourWindow): SearchRow[] {
+  return rows.filter((row) => {
+    const hour = Date.parse(row.keys?.[0] || "");
+    return hour >= window.start && hour < window.end;
+  });
+}
+
+function breakdown(rows: SearchRow[], hourly: boolean) {
+  const grouped = new Map<string, SearchRow[]>();
+  for (const row of rows) {
+    const key = String(row.keys?.[hourly ? 1 : 0] || "");
+    const group = grouped.get(key) || [];
+    group.push(row);
+    grouped.set(key, group);
+  }
+  return [...grouped.entries()].map(([key, group]) => ({ key, ...sumMetrics(group) }));
+}
+
+function pacificDate(milliseconds: number): string {
+  const parts = Object.fromEntries(new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/Los_Angeles", year: "numeric", month: "2-digit", day: "2-digit",
+  }).formatToParts(new Date(milliseconds)).map((part) => [part.type, part.value]));
+  return `${parts.year}-${parts.month}-${parts.day}`;
 }
 
 function validDate(value: unknown): value is string {
   if (typeof value !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
-  return !Number.isNaN(Date.parse(`${value}T00:00:00Z`));
+  const time = Date.parse(`${value}T00:00:00Z`);
+  return Number.isFinite(time) && new Date(time).toISOString().slice(0, 10) === value;
 }
 
 function validProperty(value: unknown): value is string {
@@ -231,44 +286,67 @@ async function propertyStats(request: Request, env: Env, context: WorkerContext)
   const property = body.property;
   const startDate = body.startDate;
   const endDate = body.endDate;
-  const dataState = body.dataState === "all" ? "all" : "final";
+  const dataState = body.dataState ?? "all";
+  if (dataState !== "all" && dataState !== "hourly_all" && dataState !== "final") {
+    return json({ error: "Invalid data state" }, 400);
+  }
   if (!validProperty(property) || !validDate(startDate) || !validDate(endDate) || startDate > endDate) {
     return json({ error: "Invalid property or date range" }, 400);
   }
 
-  const cacheUrl = new URL("https://gsc-dashboard-cache.internal/property");
+  let window: HourWindow | undefined;
+  if (dataState === "hourly_all") {
+    const start = typeof body.startHour === "string" ? Date.parse(body.startHour) : NaN;
+    const end = typeof body.endHour === "string" ? Date.parse(body.endHour) : NaN;
+    if (!Number.isFinite(start) || !Number.isFinite(end) ||
+        start % 3_600_000 !== 0 || end - start !== 24 * 3_600_000 ||
+        end > Date.now() || start < Date.now() - 10 * 24 * 3_600_000 ||
+        startDate !== pacificDate(start) || endDate !== pacificDate(end - 1)) {
+      return json({ error: "Invalid 24-hour window" }, 400);
+    }
+    window = { start, end };
+  }
+
+  const cacheUrl = new URL("https://gsc-dashboard-cache.internal/property-v2");
   cacheUrl.searchParams.set("property", property);
   cacheUrl.searchParams.set("start", startDate);
   cacheUrl.searchParams.set("end", endDate);
   cacheUrl.searchParams.set("state", dataState);
+  if (window) {
+    cacheUrl.searchParams.set("hourStart", String(window.start));
+    cacheUrl.searchParams.set("hourEnd", String(window.end));
+  }
   const cacheKey = new Request(cacheUrl.toString());
   const cache = (caches as CacheStorage & { default: Cache }).default;
-  const cached = await cache.match(cacheKey);
+  const cached = body.forceRefresh === true ? undefined : await cache.match(cacheKey);
   if (cached) return json(await cached.json());
 
-  const [totalRows, queryRows, pageRows] = await Promise.all([
+  const [totals, queries, pages] = await Promise.all([
     searchAnalytics(env, property, startDate, endDate, dataState),
     searchAnalytics(env, property, startDate, endDate, dataState, "query"),
     searchAnalytics(env, property, startDate, endDate, dataState, "page"),
   ]);
+  const selectRows = (response: SearchResponse) => window
+    ? inWindow(response.rows || [], window) : response.rows || [];
   const payload = {
     property,
-    total: normalizedMetric(totalRows[0]),
-    queries: queryRows.map((row) => ({
-      key: String(row.keys?.[0] || ""),
-      ...normalizedMetric(row),
-    })),
-    pages: pageRows.map((row) => ({
-      key: String(row.keys?.[0] || ""),
-      ...normalizedMetric(row),
-    })),
+    total: sumMetrics(selectRows(totals)),
+    queries: breakdown(selectRows(queries), Boolean(window)),
+    pages: breakdown(selectRows(pages), Boolean(window)),
+    dataState,
+    preliminary: dataState !== "final",
+    metadata: totals.metadata,
+    startDate, endDate,
+    startHour: window ? new Date(window.start).toISOString() : undefined,
+    endHour: window ? new Date(window.end).toISOString() : undefined,
+    breakdownsTruncated: queries.truncated || pages.truncated,
     fetchedAt: new Date().toISOString(),
   };
   context.waitUntil(
     cache.put(
       cacheKey,
       new Response(JSON.stringify(payload), {
-        headers: { "Cache-Control": "public, max-age=900", "Content-Type": "application/json" },
+        headers: { "Cache-Control": "public, max-age=300", "Content-Type": "application/json" },
       }),
     ),
   );

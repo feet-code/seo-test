@@ -6,6 +6,7 @@
     "start": "next start",
     "site": "python scripts/site.py",
     "dashboard:check": "tsc -p dashboard/tsconfig.json && node --check dashboard/public/app.js",
+    "dashboard:test": "node --test dashboard/tests.mjs",
     "dashboard:dry-run": "wrangler deploy --dry-run --config dashboard/wrangler.jsonc",
     "dashboard:dev": "wrangler dev --config dashboard/wrangler.jsonc",
     "dashboard:deploy": "python scripts/deploy_gsc_dashboard.py"

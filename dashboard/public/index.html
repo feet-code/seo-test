@@ -44,10 +44,10 @@
           <div class="field-group">
             <label for="period">Period</label>
             <select id="period">
-              <option value="1">Latest finalized day (24 hours)</option>
-              <option value="7">Last 7 finalized days</option>
-              <option value="28" selected>Last 28 finalized days</option>
-              <option value="90">Last 90 finalized days</option>
+              <option value="1">Last 24 hours (hourly)</option>
+              <option value="7">Last 7 days, including today</option>
+              <option value="28" selected>Last 28 days, including today</option>
+              <option value="90">Last 90 days, including today</option>
             </select>
           </div>
           <div class="field-group">
@@ -63,6 +63,8 @@
           </div>
           <button id="refresh" class="button button-primary control-button" type="button">Refresh data</button>
         </section>
+
+        <p class="muted small">Includes preliminary data, which Google may revise. The 24-hour window ends at the start of this hour; recent hours may not be available yet. Refresh fetches fresh data from Google. Query and page rankings show top rows, not every impression.</p>
 
         <section id="status-panel" class="status-panel" aria-live="polite">
           <div>

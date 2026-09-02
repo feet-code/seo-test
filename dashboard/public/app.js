@@ -83,15 +83,30 @@ async function request(path, options = {}) {
   return payload;
 }
 
-function dateRange() {
+function pacificDate(date) {
+  const parts = Object.fromEntries(new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/Los_Angeles", year: "numeric", month: "2-digit", day: "2-digit",
+  }).formatToParts(date).map((part) => [part.type, part.value]));
+  return `${parts.year}-${parts.month}-${parts.day}`;
+}
+
+function dateRange(now = new Date()) {
   const days = Number(elements.period.value);
-  const end = new Date();
-  end.setUTCDate(end.getUTCDate() - 3);
-  const start = new Date(end);
+  if (days === 1) {
+    // A shared, fixed window for every property; never slide back to its last traffic event.
+    const end = new Date(Math.floor(now.getTime() / 3_600_000) * 3_600_000);
+    const start = new Date(end.getTime() - 24 * 3_600_000);
+    return {
+      startDate: pacificDate(start),
+      endDate: pacificDate(new Date(end.getTime() - 1)),
+      startHour: start.toISOString(), endHour: end.toISOString(), dataState: "hourly_all",
+    };
+  }
+  const endDate = pacificDate(now);
+  const start = new Date(`${endDate}T00:00:00Z`);
   start.setUTCDate(start.getUTCDate() - days + 1);
   return {
-    startDate: start.toISOString().slice(0, 10),
-    endDate: end.toISOString().slice(0, 10),
+    startDate: start.toISOString().slice(0, 10), endDate, dataState: "all",
   };
 }
 
@@ -206,19 +221,21 @@ function renderTable() {
   elements.emptyState.classList.toggle("hidden", rows.length > 0);
 }
 
-async function loadProperty(property, range) {
+async function loadProperty(property, range, forceRefresh = false) {
   return request("/api/property-stats", {
     method: "POST",
-    body: JSON.stringify({ property, ...range, dataState: "final" }),
+    body: JSON.stringify({ property, ...range, forceRefresh }),
   });
 }
 
-async function loadDashboard() {
+async function loadDashboard(forceRefresh = false) {
   const generation = ++state.generation;
+  const range = dateRange();
   state.sites = [];
   state.queries = [];
   state.pages = [];
   state.errors = [];
+  elements.lastUpdated.textContent = "";
   updateMetrics();
   renderTable();
   status("Loading properties", "Reading the websites available in your GSC account…", 2);
@@ -226,17 +243,20 @@ async function loadDashboard() {
     const response = await request("/api/properties");
     if (generation !== state.generation) return;
     state.properties = response.properties.map((item) => item.property);
-    const range = dateRange();
+    const properties = [...state.properties];
     let nextIndex = 0;
     let completed = 0;
     const worker = async () => {
-      while (nextIndex < state.properties.length && generation === state.generation) {
+      while (nextIndex < properties.length && generation === state.generation) {
         const index = nextIndex++;
-        const property = state.properties[index];
+        const property = properties[index];
         try {
-          state.sites.push(await loadProperty(property, range));
+          const result = await loadProperty(property, range, forceRefresh);
+          if (generation !== state.generation) return;
+          state.sites.push(result);
         } catch (error) {
-          if (error.status === 401) return showLogin();
+          if (generation !== state.generation) return;
+          if (error.status === 401) { state.generation += 1; return showLogin(); }
           state.errors.push({ property, error: error.message });
         }
         completed += 1;
@@ -255,16 +275,18 @@ async function loadDashboard() {
     aggregate();
     updateMetrics();
     renderTable();
-    status(
-      "Report ready",
-      `${state.sites.length} properties loaded for ${range.startDate} through ${range.endDate}`,
-      100,
-    );
-    elements.lastUpdated.textContent = `Updated ${new Date().toLocaleTimeString([], {
-      hour: "numeric",
-      minute: "2-digit",
-    })}`;
+    const interval = range.dataState === "hourly_all"
+      ? `${range.startHour.slice(0, 16)} to ${range.endHour.slice(0, 16)} UTC (end exclusive)`
+      : `${range.startDate} through ${range.endDate} (Pacific Time)`;
+    const limited = state.sites.filter((site) => site.breakdownsTruncated).length;
+    status("Report ready · preliminary data", `${state.sites.length} properties loaded · ${interval}` +
+      (state.errors.length ? ` · ${state.errors.length} failed` : "") +
+      (limited ? ` · ${limited} properties have partial query/page rankings` : ""), 100);
+    const fetchedTimes = state.sites.map((site) => Date.parse(site.fetchedAt)).filter(Number.isFinite);
+    elements.lastUpdated.textContent = fetchedTimes.length
+      ? `Oldest fetch: ${new Date(Math.min(...fetchedTimes)).toLocaleString()}` : "No data fetched";
   } catch (error) {
+    if (generation !== state.generation) return;
     if (error.status === 401) return showLogin();
     status("Could not load GSC", error.message, 0);
   }
@@ -292,8 +314,8 @@ elements.logout.addEventListener("click", async () => {
   showLogin();
 });
 
-elements.refresh.addEventListener("click", loadDashboard);
-elements.period.addEventListener("change", loadDashboard);
+elements.refresh.addEventListener("click", () => loadDashboard(true));
+elements.period.addEventListener("change", () => loadDashboard());
 elements.sortBy.addEventListener("change", renderTable);
 elements.filter.addEventListener("input", renderTable);
 document.querySelectorAll(".tab").forEach((tab) => {
